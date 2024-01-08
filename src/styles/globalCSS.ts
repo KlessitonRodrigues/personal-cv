@@ -1,6 +1,6 @@
-import { createGlobalStyle, css } from "styled-components";
+import { createGlobalStyle, css } from 'styled-components';
 
-import "../UI/assets/fonts/quicksand.ttf";
+import '../UI/assets/fonts/quicksand.ttf';
 
 export default createGlobalStyle(
   ({ theme }) => css`
@@ -23,7 +23,7 @@ export default createGlobalStyle(
     }
     html,
     body {
-      font-family: "Quicksand", sans-serif;
+      font-family: 'Quicksand', sans-serif;
       background-color: ${theme.colors.bg1};
       color: ${theme.colors.text1};
       font-weight: 500;
@@ -57,17 +57,19 @@ export default createGlobalStyle(
       text-decoration: none;
       color: unset;
     }
-    button {
-      font-family: "Quicksand", sans-serif;
-      font-weight: 500;
+    button,
+    select {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      min-height: ${theme.size(9)};
       display: flex;
       align-items: center;
       gap: ${theme.size(1)};
-      padding: ${theme.size(0.5)} ${theme.size(1.5)};
+      padding: 0 ${theme.size(2)};
       background-color: transparent;
       outline: none;
       border: none;
-      border-radius: ${theme.radius.small};
+      border-radius: ${theme.radius.verySmall};
       cursor: pointer;
     }
     div::-webkit-scrollbar {
@@ -89,5 +91,5 @@ export default createGlobalStyle(
       display: flex;
       flex-direction: column;
     }
-  `
+  `,
 );
