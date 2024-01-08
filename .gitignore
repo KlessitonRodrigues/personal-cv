@@ -1,0 +1,9 @@
+# Folders
+node_modules/
+out/
+dist/
+
+# Files
+*.log
+*.env
+
