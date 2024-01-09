@@ -61,7 +61,7 @@ export default createGlobalStyle(
     select {
       font-family: 'Quicksand', sans-serif;
       font-weight: 600;
-      min-height: ${theme.size(9)};
+      min-height: ${theme.size(8)};
       display: flex;
       align-items: center;
       gap: ${theme.size(1)};

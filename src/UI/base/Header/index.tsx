@@ -1,7 +1,7 @@
 import { openPrintDialog } from 'src/utils/pdf';
 import Icons from '../Icons';
 import { Container, DownloadButton, Selector } from './styled';
-import { changeLanguage } from 'src/utils/url';
+import { changeLanguage, currentLang } from 'src/utils/url';
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
         <option>Template 1</option>
       </Selector>
 
-      <Selector onChange={e => changeLanguage(e.target.value)}>
+      <Selector defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
         <option value="en">English</option>
         <option value="pt">Português</option>
       </Selector>

@@ -4,6 +4,8 @@ export const getLangQuery = () => {
   return url.get('lang') || '';
 };
 
+export const currentLang = getLangQuery();
+
 export const changeLanguage = (lang: string) => {
   const [path, params] = location.href.split('?');
   const newParams = new URLSearchParams(params);

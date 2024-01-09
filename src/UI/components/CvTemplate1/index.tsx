@@ -1,4 +1,4 @@
-import Text from "src/UI/base/Text";
+import Text from 'src/UI/base/Text';
 import {
   Body,
   Column,
@@ -10,13 +10,13 @@ import {
   List,
   Resume,
   Title,
-} from "./styled";
+} from './styled';
 
 const CvTemplate1 = () => {
   return (
     <Container>
       <Header>
-        <h1>KLESSITON RODRIGUES DA SILVA</h1>
+        <h1>KLÉSSITON RODRIGUES DA SILVA</h1>
         <h3>Fullstack Javascript Developer</h3>
 
         <Columns gap={12}>
@@ -61,10 +61,9 @@ const CvTemplate1 = () => {
       <Body>
         <Resume>
           <Text>
-            Resume, Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Asperiores, fuga ea veniam harum repellendus fugiat illo error
-            laboriosam ducimus accusamus inventore beatae vero quod
-            necessitatibus facilis unde rerum quis. Corporis?
+            Resume, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, fuga ea
+            veniam harum repellendus fugiat illo error laboriosam ducimus accusamus inventore beatae
+            vero quod necessitatibus facilis unde rerum quis. Corporis?
           </Text>
         </Resume>
 
@@ -72,7 +71,7 @@ const CvTemplate1 = () => {
           <Text>Experience</Text>
         </Title>
 
-        <Columns mb={6}>
+        <Columns mb={3}>
           <div>
             <Dates>
               <Text>2021/12 - 2023/12</Text>
@@ -83,10 +82,7 @@ const CvTemplate1 = () => {
               <Text>Westpoint</Text>
             </h6>
             <p>
-              <Text>
-                United Kingdown componany that provides software development
-                services
-              </Text>
+              <Text>United Kingdown componany that provides software development services</Text>
             </p>
 
             <List>
@@ -118,7 +114,7 @@ const CvTemplate1 = () => {
           </div>
         </Columns>
 
-        <Columns mb={6}>
+        <Columns mb={3}>
           <div>
             <Dates>
               <Text>2018/08 - 2020/01</Text>
@@ -129,10 +125,7 @@ const CvTemplate1 = () => {
               <Text>WTCS</Text>
             </h6>
             <p>
-              <Text>
-                Application with geolocation to map waring point at city
-                streats.
-              </Text>
+              <Text>Application with geolocation to map waring point at city streats.</Text>
             </p>
           </div>
         </Columns>
@@ -141,26 +134,23 @@ const CvTemplate1 = () => {
           <Text>Education</Text>
         </Title>
 
-        <Columns mb={6}>
+        <Columns mb={3}>
           <div>
             <Dates>
-              <Text>2018/08 - 2020/01</Text>
+              <Text>2017/01 - 2019/11</Text>
             </Dates>
           </div>
           <div>
             <h6>
-              <Text>WTCS</Text>
+              <Text>IFPI - Instituto Federal do Piauí</Text>
             </h6>
             <p>
-              <Text>
-                Application with geolocation to map waring point at city
-                streats.
-              </Text>
+              <Text>Ensino Superior, Análise de Sistemas de Computação.</Text>
             </p>
           </div>
         </Columns>
 
-        <Columns mb={6}>
+        <Columns mb={3}>
           <div>
             <Dates>
               <Text>2018/08 - 2020/01</Text>
@@ -168,13 +158,10 @@ const CvTemplate1 = () => {
           </div>
           <div>
             <h6>
-              <Text>WTCS</Text>
+              <Text>Centro Estadual de Educação Profissional Professora Maria Amália</Text>
             </h6>
             <p>
-              <Text>
-                Application with geolocation to map waring point at city
-                streats.
-              </Text>
+              <Text>Ensino Médio, Técnico em Informatica.</Text>
             </p>
           </div>
         </Columns>
@@ -183,20 +170,36 @@ const CvTemplate1 = () => {
           <Text>Extra Works</Text>
         </Title>
 
-        <Columns mb={6}>
+        <Columns mb={3}>
           <div>
             <Dates>
-              <Text>2018/08 - 2020/01</Text>
+              <Text>2024</Text>
             </Dates>
           </div>
           <div>
             <h6>
-              <Text>WTCS</Text>
+              <Text>Personal CV</Text>
+            </h6>
+            <p>
+              <Text>This document wronte in react with support to multiple languages.</Text>
+            </p>
+          </div>
+        </Columns>
+
+        <Columns mb={3}>
+          <div>
+            <Dates>
+              <Text>2023</Text>
+            </Dates>
+          </div>
+          <div>
+            <h6>
+              <Text>Console UI for desktops</Text>
             </h6>
             <p>
               <Text>
-                Application with geolocation to map waring point at city
-                streats.
+                Desktop application using electron and react to provide console experience like
+                PS5/Xbox for PCs.
               </Text>
             </p>
           </div>
