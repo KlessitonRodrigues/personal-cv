@@ -74,8 +74,8 @@ export const Column = styled.div<{ gap?: number }>(
 
 export const Dates = styled.div(
   ({ theme }) => css`
-    width: ${theme.size(50)};
-    font-size: ${theme.fontSize.small};
+    width: ${theme.size(45)};
+    font-size: ${theme.fontSize.verySmall};
   `,
 );
 
@@ -86,7 +86,7 @@ export const List = styled.ul(
     margin: ${theme.size(2)} 0;
 
     li {
-      margin-bottom: ${theme.size(1)};
+      margin-bottom: ${theme.size(4)};
     }
   `,
 );
