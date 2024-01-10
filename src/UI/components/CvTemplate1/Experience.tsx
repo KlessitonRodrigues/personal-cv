@@ -8,20 +8,21 @@ export const CVExperience = () => {
         <Text>Experience</Text>
       </Title>
 
-      <Columns mb={4}>
+      <Columns>
         <div>
           <Dates>
             <Text>2021/12 - 2023/12</Text>
           </Dates>
         </div>
         <div>
-          <h6>
-            <a href="https://www.westpoint.io/">
-              <Text>Westpoint</Text>
-            </a>
-          </h6>
+          <Title>
+            <Text>WestPoint Software Solutions</Text>
+          </Title>
           <p>
-            <Text>United Kingdown componany that provides software development services</Text>
+            <Text>
+              UK software company that provides software development services to third-party
+              companies.
+            </Text>
           </p>
 
           <List>
@@ -31,7 +32,7 @@ export const CVExperience = () => {
               </Label>
               <Text>
                 &nbsp;Online platform used to manage Aesthetic clinics with more than 11 franchises
-                as client, built using ReactJS, NodeJS, Mongodb and Docker.
+                as client, built with ReactJS, NodeJS, Mongodb and Docker.
               </Text>
             </li>
             <li>
@@ -39,17 +40,8 @@ export const CVExperience = () => {
                 <Text>Vouch IO</Text>
               </Label>
               <Text>
-                &nbsp;Mobile Application used to handles vehicles like Lightyear one and Vitage
-                broncos
-              </Text>
-            </li>
-            <li>
-              <Label>
-                <Text>Quarx</Text>
-              </Label>
-              <Text>
-                &nbsp;Browser extension that provides real-time guides to help users to do complex
-                tasks on many Websites, built using React, Chrome APIs and AWS services.
+                &nbsp;Mobile Application used to handles vehicles (open/close doors, start/stop
+                engine, etc), built with ClojureScript, Blockchain API, Android/IOS APIs.
               </Text>
             </li>
             <li>
@@ -57,8 +49,8 @@ export const CVExperience = () => {
                 <Text>TalentId</Text>
               </Label>
               <Text>
-                &nbsp;Online platform that uses the powers of chat GPT to evaluate candidates' CVs
-                and assign them a score. built using NextJS with MatineUI, OpenAI API and AWS
+                &nbsp;Online platform that uses the powers of GPT chat to evaluate candidates' CVs
+                and assign them a score. built with NextJS with MatineUI, OpenAI API and AWS
                 services.
               </Text>
             </li>
@@ -67,32 +59,45 @@ export const CVExperience = () => {
                 <Text>Vintage Acquisitions</Text>
               </Label>
               <Text>
-                &nbsp;Dashboard to handle stock and sales of casks, sychonized with Google
-                spreadsheets, built using ViteJS with MantineUI, Google APIs and AWS services.
+                &nbsp;Dashboard for inventory management and barrel sales, synchronized with Google
+                spreadsheets, built with ViteJS with MantineUI, Google APIs and AWS services.
+              </Text>
+            </li>
+            <li>
+              <Label>
+                <Text>Quarx</Text>
+              </Label>
+              <Text>
+                &nbsp;Browser extension that provides real-time guides to help users perform complex
+                tasks across many Websites (AWS, Google cloud, etc), built with React, Chrome APIs
+                and AWS services.
               </Text>
             </li>
             <li>
               <Label>
                 <Text>Westpoint Website</Text>
               </Label>
-              <Text>&nbsp;Company website built using NextJS and Styled Components.</Text>
+              <Text>&nbsp;Company website built with NextJS and Styled Components.</Text>
             </li>
           </List>
         </div>
       </Columns>
 
-      <Columns mb={4}>
+      <Columns>
         <div>
           <Dates>
-            <Text>2018/08 - 2020/01</Text>
+            <Text>2018/08 - 2019/11</Text>
           </Dates>
         </div>
         <div>
-          <h6>
-            <Text>WTCS</Text>
-          </h6>
+          <Title>
+            <Text>SocialPower</Text>
+          </Title>
           <p>
-            <Text>Application with geolocation to map waring point at city streats.</Text>
+            <Text>
+              Web application with geolocation to map streets points that need attention from the
+              city hall, built using nodeJS and AngularJS.
+            </Text>
           </p>
         </div>
       </Columns>

@@ -54,8 +54,8 @@ export default createGlobalStyle(
       list-style: none;
     }
     a {
-      text-decoration: underline;
       color: unset;
+      text-decoration: underline;
     }
     button,
     select {

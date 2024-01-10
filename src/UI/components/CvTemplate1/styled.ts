@@ -37,7 +37,7 @@ export const Resume = styled.div(
 
 export const Title = styled.h4(
   ({ theme }) => css`
-    margin: ${theme.size(4)} 0;
+    margin-bottom: ${theme.size(2)};
   `,
 );
 
@@ -49,10 +49,6 @@ export const Label = styled.div(
     span {
       font-weight: bold;
     }
-
-    a {
-      text-decoration: underline;
-    }
   `,
 );
 
@@ -60,7 +56,7 @@ export const Columns = styled.div<{ gap?: number; mb?: number }>(
   ({ theme, gap, mb }) => css`
     display: flex;
     gap: ${theme.size(gap)};
-    margin-bottom: ${theme.size(mb)};
+    margin-bottom: ${theme.size(mb || 2)};
   `,
 );
 
@@ -74,8 +70,9 @@ export const Column = styled.div<{ gap?: number }>(
 
 export const Dates = styled.div(
   ({ theme }) => css`
-    width: ${theme.size(45)};
+    width: ${theme.size(40)};
     font-size: ${theme.fontSize.verySmall};
+    margin-top: ${theme.size(0.75)};
   `,
 );
 
@@ -86,7 +83,7 @@ export const List = styled.ul(
     margin: ${theme.size(2)} 0;
 
     li {
-      margin-bottom: ${theme.size(4)};
+      margin-bottom: ${theme.size(2)};
     }
   `,
 );

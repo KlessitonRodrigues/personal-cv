@@ -8,7 +8,7 @@ export const CVExtraWorks = () => {
         <Text>Extra Works</Text>
       </Title>
 
-      <Columns mb={4}>
+      <Columns>
         <div>
           <Dates>
             <Text>2024</Text>
@@ -22,7 +22,7 @@ export const CVExtraWorks = () => {
         </div>
       </Columns>
 
-      <Columns mb={4}>
+      <Columns>
         <div>
           <Dates>
             <Text>2023</Text>
@@ -36,6 +36,45 @@ export const CVExtraWorks = () => {
             &nbsp;Desktop application using electron and react to provide console experience like
             PS5/Xbox for PCs.
           </Text>
+        </div>
+      </Columns>
+      <Columns>
+        <div>
+          <Dates>
+            <Text>2023</Text>
+          </Dates>
+        </div>
+        <div>
+          <Label>
+            <Text>Easy Encrypt</Text>
+          </Label>
+          <Text>&nbsp;Web and Mobile application to encrypt plan text.</Text>
+        </div>
+      </Columns>
+      <Columns>
+        <div>
+          <Dates>
+            <Text>2022</Text>
+          </Dates>
+        </div>
+        <div>
+          <Label>
+            <Text>Task Manager</Text>
+          </Label>
+          <Text>&nbsp;Todo application with calendar and notes.</Text>
+        </div>
+      </Columns>
+      <Columns>
+        <div>
+          <Dates>
+            <Text>2021</Text>
+          </Dates>
+        </div>
+        <div>
+          <Label>
+            <Text>Translation PWA</Text>
+          </Label>
+          <Text>&nbsp;Translation website with multiple language support.</Text>
         </div>
       </Columns>
     </>
