@@ -8,6 +8,9 @@ export const openPrintDialog = async () => {
   iFrameDocument.body.innerHTML = docContent.innerHTML;
 
   iFrame.style.position = 'absolute';
-  iFrame.style.left = '100vh';
+  iFrame.style.left = '100%';
+  iFrame.style.top = '0';
+
+  await new Promise(r => setTimeout(r, 1000));
   iFrame.contentWindow.print();
 };

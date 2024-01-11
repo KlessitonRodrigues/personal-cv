@@ -9,7 +9,7 @@ const App = () => {
   return (
     <AppProvider>
       <RoutesProvider>
-        <StyleSheetManager>
+        <StyleSheetManager disableCSSOMInjection>
           <BrowserRouter>
             <Router />
           </BrowserRouter>
