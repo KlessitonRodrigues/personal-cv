@@ -7,11 +7,11 @@ export const CVHeader = () => {
       <h1>KLÉSSITON RODRIGUES DA SILVA</h1>
       <h3>Fullstack Javascript Developer</h3>
 
-      <Columns gap={12} mb={1}>
+      <Columns gap={8} mb={1}>
         <Column gap={2}>
           <Label>
             <Text>Address</Text>
-            Rua Pernambuco Bairro Geraldão
+            Rua Pernambuco Bairro Geraldão, Bertolínia Piauí
           </Label>
           <Label>
             <Text>Phone</Text>
