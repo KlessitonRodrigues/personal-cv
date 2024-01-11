@@ -41,7 +41,8 @@ export const CVExperience = () => {
               </Label>
               <Text>
                 &nbsp;Mobile Application used to handles vehicles (open/close doors, start/stop
-                engine, etc), built with ClojureScript, Blockchain API, Android/IOS APIs.
+                engine, etc), built with ClojureScript, React Native, Blockchain API, Android/IOS
+                APIs.
               </Text>
             </li>
             <li>

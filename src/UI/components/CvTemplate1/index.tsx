@@ -9,16 +9,15 @@ const CvTemplate1 = () => {
   return (
     <Container>
       <CVHeader />
-
       <Body>
         <Resume>
           <Text>
-            Resume, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, fuga ea
-            veniam harum repellendus fugiat illo error laboriosam ducimus accusamus inventore beatae
-            vero quod necessitatibus facilis unde rerum quis. Corporis?
+            A small guy from a small town with big dreams who loves programming any kind of ideas
+            and like to spent hours trying to improve his own code, like to always code his own
+            solution to the problem but keeping everthing as simple as possible, like to learn new
+            ways to coding and build applications and of course like games.
           </Text>
         </Resume>
-
         <CVExperience />
         <CVEducation />
         <CVExtraWorks />

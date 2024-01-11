@@ -18,7 +18,10 @@ export const CVExtraWorks = () => {
           <Label>
             <Text>Personal CV</Text>
           </Label>
-          <Text>&nbsp;This document wronte in react with support to multiple languages.</Text>
+          <Text>
+            &nbsp;This document wronte in react with support to multiple languages. built with
+            ReactJS.
+          </Text>
         </div>
       </Columns>
 
@@ -34,7 +37,7 @@ export const CVExtraWorks = () => {
           </Label>
           <Text>
             &nbsp;Desktop application using electron and react to provide console experience like
-            PS5/Xbox for PCs.
+            PS5/Xbox for PCs. built with React and Electron.
           </Text>
         </div>
       </Columns>
@@ -48,7 +51,10 @@ export const CVExtraWorks = () => {
           <Label>
             <Text>Easy Encrypt</Text>
           </Label>
-          <Text>&nbsp;Web and Mobile application to encrypt plan text.</Text>
+          <Text>
+            &nbsp;Web and Mobile application to encrypt plan text. built with React, React Native
+            and CryptoJS.
+          </Text>
         </div>
       </Columns>
       <Columns>
@@ -61,7 +67,7 @@ export const CVExtraWorks = () => {
           <Label>
             <Text>Task Manager</Text>
           </Label>
-          <Text>&nbsp;Todo application with calendar and notes.</Text>
+          <Text>&nbsp;Todo application with calendar and notes. built with React.</Text>
         </div>
       </Columns>
       <Columns>
@@ -74,7 +80,10 @@ export const CVExtraWorks = () => {
           <Label>
             <Text>Translation PWA</Text>
           </Label>
-          <Text>&nbsp;Translation website with multiple language support.</Text>
+          <Text>
+            &nbsp;Translation website with multiple language support. built with React and Google
+            APIs.
+          </Text>
         </div>
       </Columns>
     </>
