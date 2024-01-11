@@ -11,7 +11,11 @@ export const CVHeader = () => {
         <Column gap={2}>
           <Label>
             <Text>Address</Text>
-            Rua Pernambuco Bairro Geraldão, Bertolínia Piauí
+            Rua Pernambuco Bairro Geraldão
+          </Label>
+          <Label>
+            <Text>City</Text>
+            Bertolínia, Piauí, Brasil
           </Label>
           <Label>
             <Text>Phone</Text>
