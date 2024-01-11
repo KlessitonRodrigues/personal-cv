@@ -10,19 +10,25 @@ export const CVHeader = () => {
       <Columns gap={8} mb={1}>
         <Column gap={2}>
           <Label>
-            <Text>Address</Text>
+            <span>
+              <Text path="header_address" />
+            </span>
             Rua Pernambuco Bairro Geraldão
           </Label>
           <Label>
-            <Text>City</Text>
+            <span>
+              <Text path="header_city" />
+            </span>
             Bertolínia, Piauí, Brasil
           </Label>
           <Label>
-            <Text>Phone</Text>
+            <span>
+              <Text path="header_phone" />
+            </span>
             +55 89994009646
           </Label>
           <Label>
-            <Text>Email</Text>
+            <span>Email</span>
             <a href="mailto:klessitonrds@gmail.com" target="blank">
               klessitonrds@gmail.com
             </a>
@@ -31,13 +37,13 @@ export const CVHeader = () => {
 
         <Column gap={2}>
           <Label>
-            <Text>GitHub</Text>
+            <span>GitHub</span>
             <a href="http://github.com/KlessitonRodrigues" target="blank">
               KlessitonRodrigues
             </a>
           </Label>
           <Label>
-            <Text>Linkedin</Text>
+            <span>Linkedin</span>
             <a href="http://linkedin.com/in/klessitonrds" target="blank">
               Klessitonrds
             </a>

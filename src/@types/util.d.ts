@@ -1,5 +1,7 @@
 declare namespace Utils {
   type Paths = '/home';
+
+  type LangJson = Record<string, string>;
 }
 
 declare module '*.png';

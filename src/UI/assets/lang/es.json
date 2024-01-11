@@ -1,0 +1,22 @@
+{
+  "header_address": "Dirección ÓN",
+  "header_city": "Ciudad",
+  "header_phone": "Teléfono",
+  "cv_resume": "Un chico pequeño de un pueblo pequeño con grandes sueños a quien le encanta programar cualquier tipo de idea y le gusta pasar horas tratando de mejorar su propio código, le gusta codificar siempre su propia solución al problema pero manteniendo todo lo más simple posible, le gusta aprender. ",
+  "experience_title": "Experiencia",
+  "experience_westpoint_text": "Empresa de software del Reino Unido que proporciona servicios de desarrollo de software a empresas de terceros.",
+  "experience_collums_text": "Plataforma online utilizada para gestionar clínicas de Estética con más de 11 franquicias como cliente, construida con ReactJS, NodeJS, Mongodb y Docker.",
+  "experience_vouchio_text": "Aplicación móvil utilizada para manejar vehículos (abrir/cerrar puertas, arrancar/parar motor, etc.), construida con ClojureScript, React Native, API Blockchain, API de Android/IOS.",
+  "experience_talentId_text": "Plataforma online que utiliza las potencias del chat GPT para evaluar los CV de los candidatos y asignarles una puntuación. ",
+  "experience_vintage_text": "Dashboard para gestión de inventario y venta de barriles, sincronizado con hojas de cálculo de Google, construido con ViteJS con MantineUI, API de Google y servicios de AWS.",
+  "experience_quarx_text": "Extensión del navegador que proporciona guías en tiempo real para ayudar a los usuarios a realizar tareas complejas en muchos sitios web (AWS, nube de Google, etc.), creada con React, API de Chrome y servicios de AWS.",
+  "experience_website_text": "Sitio web de la empresa creado con NextJS y Styled Components.",
+  "experience_socialpower_text": " Aplicación web con geolocalización para mapear puntos de calles que necesitan atención del ayuntamiento, construida usando nodeJS y AngularJS.",
+  "education_title": "Educación",
+  "extraworks_title": "Trabajos adicionales",
+  "extraworks_personalcv_text": "Este documento está disponible en varios idiomas. ",
+  "extraworks_consoleui_text": "Aplicación que proporciona una interfaz de consola como PS5/Xbox para PC. ",
+  "extraworks_easyencrypt_text": "Aplicación web y móvil para cifrar texto del plan. ",
+  "extraworks_taskmanage_text": "Aplicación Todo con calendario y notas. ",
+  "extraworks_translationpwa_text": "Sitio web de traducción con soporte para múltiples idiomas. "
+}

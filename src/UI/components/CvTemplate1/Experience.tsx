@@ -5,80 +5,43 @@ export const CVExperience = () => {
   return (
     <>
       <Title>
-        <Text>Experience</Text>
+        <Text path="experience_title" />
       </Title>
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2021/12 - 2023/12</Text>
-          </Dates>
+          <Dates>2021/12 - 2023/12</Dates>
         </div>
         <div>
-          <Title>
-            <Text>WestPoint Software Solutions</Text>
-          </Title>
+          <Title>WestPoint Software Solutions</Title>
           <p>
-            <Text>
-              UK software company that provides software development services to third-party
-              companies.
-            </Text>
+            <Text path="experience_westpoint_text" />
           </p>
 
           <List>
             <li>
-              <Label>
-                <Text>Collums</Text>
-              </Label>
-              <Text>
-                &nbsp;Online platform used to manage Aesthetic clinics with more than 11 franchises
-                as client, built with ReactJS, NodeJS, Mongodb and Docker.
-              </Text>
+              <Label>Collums</Label>
+              <Text path="experience_collums_text" />
             </li>
             <li>
-              <Label>
-                <Text>Vouch IO</Text>
-              </Label>
-              <Text>
-                &nbsp;Mobile Application used to handles vehicles (open/close doors, start/stop
-                engine, etc), built with ClojureScript, React Native, Blockchain API, Android/IOS
-                APIs.
-              </Text>
+              <Label>Vouch IO</Label>
+              <Text path="experience_vouchio_text" />
             </li>
             <li>
-              <Label>
-                <Text>TalentId</Text>
-              </Label>
-              <Text>
-                &nbsp;Online platform that uses the powers of GPT chat to evaluate candidates' CVs
-                and assign them a score. built with NextJS with MatineUI, OpenAI API and AWS
-                services.
-              </Text>
+              <Label>TalentId</Label>
+              <Text path="experience_talentId_text" />
             </li>
             <li>
-              <Label>
-                <Text>Vintage Acquisitions</Text>
-              </Label>
-              <Text>
-                &nbsp;Dashboard for inventory management and barrel sales, synchronized with Google
-                spreadsheets, built with ViteJS with MantineUI, Google APIs and AWS services.
-              </Text>
+              <Label>Vintage Acquisitions</Label>
+              <Text path="experience_vintage_text" />
             </li>
             <li>
-              <Label>
-                <Text>Quarx</Text>
-              </Label>
-              <Text>
-                &nbsp;Browser extension that provides real-time guides to help users perform complex
-                tasks across many Websites (AWS, Google cloud, etc), built with React, Chrome APIs
-                and AWS services.
-              </Text>
+              <Label>Quarx</Label>
+              <Text path="experience_quarx_text" />
             </li>
             <li>
-              <Label>
-                <Text>Westpoint Website</Text>
-              </Label>
-              <Text>&nbsp;Company website built with NextJS and Styled Components.</Text>
+              <Label>Westpoint Website</Label>
+              <Text path="experience_website_text" />
             </li>
           </List>
         </div>
@@ -86,19 +49,12 @@ export const CVExperience = () => {
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2018/08 - 2019/11</Text>
-          </Dates>
+          <Dates>2018/08 - 2019/11</Dates>
         </div>
         <div>
-          <Title>
-            <Text>SocialPower</Text>
-          </Title>
+          <Title>SocialPower </Title>
           <p>
-            <Text>
-              Web application with geolocation to map streets points that need attention from the
-              city hall, built using nodeJS and AngularJS.
-            </Text>
+            <Text path="experience_socialpower_text" />
           </p>
         </div>
       </Columns>

@@ -2,12 +2,11 @@ declare namespace Props {
   type Icons = {
     size?: number;
     onPress?: () => void;
-    type: "download" | "selector";
+    type: 'download' | 'selector';
     style?: React.CSSProperties;
   };
 
   type Text = {
-    textId?: string;
-    children?: string;
+    path?: string;
   };
 }

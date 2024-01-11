@@ -5,7 +5,7 @@ export const CVExtraWorks = () => {
   return (
     <>
       <Title>
-        <Text>Extra Works</Text>
+        <Text path="extraworks_title" />
       </Title>
 
       <Columns>
@@ -16,7 +16,7 @@ export const CVExtraWorks = () => {
           <Label>
             <span>Personal CV</span>
           </Label>
-          <Text>&nbsp;This document available in multiple languages. built with ReactJS.</Text>
+          <Text path="extraworks_personalcv_text" />
         </div>
       </Columns>
 
@@ -28,10 +28,7 @@ export const CVExtraWorks = () => {
           <Label>
             <span>Console UI for desktops</span>
           </Label>
-          <Text>
-            &nbsp;Application that provide console interface like PS5/Xbox for PCs. built with React
-            and Electron.
-          </Text>
+          <Text path="extraworks_consoleui_text" />
         </div>
       </Columns>
       <Columns>
@@ -42,10 +39,7 @@ export const CVExtraWorks = () => {
           <Label>
             <span>Easy Encrypt</span>
           </Label>
-          <Text>
-            &nbsp;Web and Mobile application to encrypt plan text. built with React, React Native
-            and CryptoJS.
-          </Text>
+          <Text path="extraworks_easyencrypt_text" />
         </div>
       </Columns>
       <Columns>
@@ -56,7 +50,7 @@ export const CVExtraWorks = () => {
           <Label>
             <span> Task Manager</span>
           </Label>
-          <Text>&nbsp;Todo application with calendar and notes. built with React.</Text>
+          <Text path="extraworks_taskmanage_text" />
         </div>
       </Columns>
       <Columns>
@@ -67,10 +61,7 @@ export const CVExtraWorks = () => {
           <Label>
             <span>Translation PWA</span>
           </Label>
-          <Text>
-            &nbsp;Translation website with multiple language support. built with React and Google
-            APIs.
-          </Text>
+          <Text path="extraworks_translationpwa_text" />
         </div>
       </Columns>
     </>

@@ -5,19 +5,15 @@ export const CVEducation = () => {
   return (
     <>
       <Title>
-        <Text>Education</Text>
+        <Text path="education_title" />
       </Title>
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2020/01 - 2023/12</Text>
-          </Dates>
+          <Dates>2020/01 - 2023/12</Dates>
         </div>
         <div>
-          <Title>
-            <Text>Udemy Certificates</Text>
-          </Title>
+          <Title>Udemy Certificates</Title>
           <p>
             <List>
               <li>Clojure Introduction</li>
@@ -33,33 +29,21 @@ export const CVEducation = () => {
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2017/01 - 2019/11</Text>
-          </Dates>
+          <Dates>2017/01 - 2019/11</Dates>
         </div>
         <div>
-          <Title>
-            <Text>IFPI - Instituto Federal do Piauí</Text>
-          </Title>
-          <p>
-            <Text>Ensino Superior, Análise de Sistemas de Computação.</Text>
-          </p>
+          <Title>IFPI - Instituto Federal do Piauí</Title>
+          <p>Ensino Superior, Análise de Sistemas de Computação.</p>
         </div>
       </Columns>
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2018/08 - 2020/01</Text>
-          </Dates>
+          <Dates>2018/08 - 2020/01</Dates>
         </div>
         <div>
-          <Title>
-            <Text>Centro Estadual de Educação Profissional Professora Maria Amália</Text>
-          </Title>
-          <p>
-            <Text>Ensino Médio, Técnico em Informatica.</Text>
-          </p>
+          <Title>Centro Estadual de Educação Profissional Professora Maria Amália</Title>
+          <p>Ensino Médio, Técnico em Informatica.</p>
         </div>
       </Columns>
     </>
