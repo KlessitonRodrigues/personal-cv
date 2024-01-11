@@ -10,46 +10,37 @@ export const CVExtraWorks = () => {
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2024</Text>
-          </Dates>
+          <Dates>2024</Dates>
         </div>
         <div>
           <Label>
-            <Text>Personal CV</Text>
+            <span>Personal CV</span>
           </Label>
-          <Text>
-            &nbsp;This document wronte in react with support to multiple languages. built with
-            ReactJS.
-          </Text>
+          <Text>&nbsp;This document available in multiple languages. built with ReactJS.</Text>
         </div>
       </Columns>
 
       <Columns>
         <div>
-          <Dates>
-            <Text>2023</Text>
-          </Dates>
+          <Dates>2023</Dates>
         </div>
         <div>
           <Label>
-            <Text>Console UI for desktops</Text>
+            <span>Console UI for desktops</span>
           </Label>
           <Text>
-            &nbsp;Desktop application using electron and react to provide console experience like
-            PS5/Xbox for PCs. built with React and Electron.
+            &nbsp;Application that provide console interface like PS5/Xbox for PCs. built with React
+            and Electron.
           </Text>
         </div>
       </Columns>
       <Columns>
         <div>
-          <Dates>
-            <Text>2023</Text>
-          </Dates>
+          <Dates>2023</Dates>
         </div>
         <div>
           <Label>
-            <Text>Easy Encrypt</Text>
+            <span>Easy Encrypt</span>
           </Label>
           <Text>
             &nbsp;Web and Mobile application to encrypt plan text. built with React, React Native
@@ -59,26 +50,22 @@ export const CVExtraWorks = () => {
       </Columns>
       <Columns>
         <div>
-          <Dates>
-            <Text>2022</Text>
-          </Dates>
+          <Dates>2022</Dates>
         </div>
         <div>
           <Label>
-            <Text>Task Manager</Text>
+            <span> Task Manager</span>
           </Label>
           <Text>&nbsp;Todo application with calendar and notes. built with React.</Text>
         </div>
       </Columns>
       <Columns>
         <div>
-          <Dates>
-            <Text>2021</Text>
-          </Dates>
+          <Dates>2021</Dates>
         </div>
         <div>
           <Label>
-            <Text>Translation PWA</Text>
+            <span>Translation PWA</span>
           </Label>
           <Text>
             &nbsp;Translation website with multiple language support. built with React and Google
