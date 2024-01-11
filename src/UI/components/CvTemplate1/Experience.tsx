@@ -20,28 +20,40 @@ export const CVExperience = () => {
 
           <List>
             <li>
-              <Label>Collums</Label>
-              <Text path="experience_collums_text" />
+              <Label>
+                <b>Collums</b>
+                <Text path="experience_collums_text" />
+              </Label>
             </li>
             <li>
-              <Label>Vouch IO</Label>
-              <Text path="experience_vouchio_text" />
+              <Label>
+                <b>Vouch IO</b>
+                <Text path="experience_vouchio_text" />
+              </Label>
             </li>
             <li>
-              <Label>TalentId</Label>
-              <Text path="experience_talentId_text" />
+              <Label>
+                <b>TalentId</b>
+                <Text path="experience_talentId_text" />
+              </Label>
             </li>
             <li>
-              <Label>Vintage Acquisitions</Label>
-              <Text path="experience_vintage_text" />
+              <Label>
+                <b>Vintage Acquisitions</b>
+                <Text path="experience_vintage_text" />
+              </Label>
             </li>
             <li>
-              <Label>Quarx</Label>
-              <Text path="experience_quarx_text" />
+              <Label>
+                <b>Quarx</b>
+                <Text path="experience_quarx_text" />
+              </Label>
             </li>
             <li>
-              <Label>Westpoint Website</Label>
-              <Text path="experience_website_text" />
+              <Label>
+                <b>Westpoint Website</b>
+                <Text path="experience_website_text" />
+              </Label>
             </li>
           </List>
         </div>

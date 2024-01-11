@@ -41,13 +41,10 @@ export const Title = styled.h4(
   `,
 );
 
-export const Label = styled.div(
+export const Label = styled.span(
   ({ theme }) => css`
-    display: inline-flex;
-    gap: ${theme.size(2)};
-
-    span {
-      font-weight: bold;
+    b {
+      margin-right: ${theme.size(2)};
     }
   `,
 );

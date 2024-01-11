@@ -14,9 +14,9 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
-            <span>Personal CV</span>
+            <b>Personal CV</b>
+            <Text path="extraworks_personalcv_text" />
           </Label>
-          <Text path="extraworks_personalcv_text" />
         </div>
       </Columns>
 
@@ -26,9 +26,9 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
-            <span>Console UI for desktops</span>
+            <b>Console UI for desktops</b>
+            <Text path="extraworks_consoleui_text" />
           </Label>
-          <Text path="extraworks_consoleui_text" />
         </div>
       </Columns>
       <Columns>
@@ -37,9 +37,9 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
-            <span>Easy Encrypt</span>
+            <b>Easy Encrypt</b>
+            <Text path="extraworks_easyencrypt_text" />
           </Label>
-          <Text path="extraworks_easyencrypt_text" />
         </div>
       </Columns>
       <Columns>
@@ -48,9 +48,9 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
-            <span> Task Manager</span>
+            <b>Task Manager</b>
+            <Text path="extraworks_taskmanage_text" />
           </Label>
-          <Text path="extraworks_taskmanage_text" />
         </div>
       </Columns>
       <Columns>
@@ -59,9 +59,9 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
-            <span>Translation PWA</span>
+            <b>Translation PWA</b>
+            <Text path="extraworks_translationpwa_text" />
           </Label>
-          <Text path="extraworks_translationpwa_text" />
         </div>
       </Columns>
     </>
