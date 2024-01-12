@@ -11,10 +11,9 @@ const ESLang = ESJSON as Utils.LangJson;
 const Text = (props: Props.Text) => {
   const { path } = props;
 
-  if (lang === 'en') return <>{ENLang[path] || 'NO TEXT'}</>;
   if (lang === 'es') return <>{ESLang[path] || 'NO TEXT'}</>;
   if (lang === 'pt') return <>{PTLang[path] || 'NO TEXT'}</>;
-  return <>NO TEXT</>;
+  return <>{ENLang[path] || 'NO TEXT'}</>;
 };
 
 export default Text;

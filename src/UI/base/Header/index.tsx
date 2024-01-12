@@ -13,6 +13,7 @@ const Header = () => {
       <Selector defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
         <option value="en">English</option>
         <option value="pt">Português</option>
+        <option value="es">Spanish</option>
       </Selector>
 
       <DownloadButton onClick={openPrintDialog}>
