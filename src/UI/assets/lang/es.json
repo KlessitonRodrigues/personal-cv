@@ -13,6 +13,7 @@
   "experience_website_text": "Sitio web de la empresa creado con NextJS y Styled Components.",
   "experience_socialpower_text": " Aplicación web con geolocalización para mapear puntos de calles que necesitan atención del ayuntamiento, construida usando nodeJS y AngularJS.",
   "education_title": "Educación",
+  "education_udemy_title": "Certificates da la Udemy",
   "extraworks_title": "Trabajos adicionales",
   "extraworks_personalcv_text": "Este documento está disponible en varios idiomas, creado con React.",
   "extraworks_consoleui_text": "Aplicación que proporciona una interfaz de consola como PS5/Xbox para PC, construida con React y Electron.",

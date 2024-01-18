@@ -13,7 +13,9 @@ export const CVEducation = () => {
           <Dates>2020/01 - 2023/12</Dates>
         </div>
         <div>
-          <Title>Udemy Certificates</Title>
+          <Title>
+            <Text path="education_udemy_title" />
+          </Title>
           <p>
             <List>
               <li>Clojure Introduction</li>
@@ -39,7 +41,7 @@ export const CVEducation = () => {
 
       <Columns>
         <div>
-          <Dates>2018/08 - 2020/01</Dates>
+          <Dates>2014/02 - 2016/11</Dates>
         </div>
         <div>
           <Title>Centro Estadual de Educação Profissional Professora Maria Amália</Title>
