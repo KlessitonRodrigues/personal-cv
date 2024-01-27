@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div(
   ({ theme }) => css`
@@ -6,5 +6,5 @@ export const Container = styled.div(
     height: 100%;
     padding: ${theme.size(4)};
     background-color: ${theme.colors.bg4};
-  `
+  `,
 );

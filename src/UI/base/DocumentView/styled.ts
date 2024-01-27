@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div(
   ({ theme }) => css`
@@ -6,14 +6,14 @@ export const Container = styled.div(
     width: fit-content;
     margin: auto;
     padding-bottom: ${theme.size(15)};
-  `
+  `,
 );
 
 export const Scroll = styled.div(
   () => css`
     height: 100%;
     overflow-y: auto;
-  `
+  `,
 );
 
 export const Content = styled.div(
@@ -22,5 +22,5 @@ export const Content = styled.div(
     max-width: ${theme.size(300)};
     border-radius: ${theme.radius.small};
     background-color: ${theme.colors.white};
-  `
+  `,
 );

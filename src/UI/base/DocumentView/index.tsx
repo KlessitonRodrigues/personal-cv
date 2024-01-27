@@ -1,5 +1,6 @@
-import { PropsWithChildren } from "react";
-import { Container, Content, Scroll } from "./styled";
+import { PropsWithChildren } from 'react';
+
+import { Container, Content, Scroll } from './styled';
 
 const DocumentView = (props: PropsWithChildren) => {
   return (

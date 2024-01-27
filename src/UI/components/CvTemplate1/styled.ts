@@ -1,5 +1,6 @@
-import { materialColors as mcolors } from 'src/styles/lib/palettes';
 import styled, { css } from 'styled-components';
+
+import { materialColors as mcolors } from 'src/styles/lib/palettes';
 
 export const Container = styled.div(() => css``);
 

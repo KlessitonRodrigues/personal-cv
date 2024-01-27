@@ -1,5 +1,5 @@
-import { iconMap } from "./services/iconMap";
-import { Container } from "./styled";
+import { iconMap } from './services/iconMap';
+import { Container } from './styled';
 
 const Icons = (props: Props.Icons) => {
   const { type, size, style, onPress } = props;

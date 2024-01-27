@@ -11,7 +11,7 @@
   "experience_vintage_text": "Dashboard for inventory management and barrel sales, synchronized with Google spreadsheets, built with ViteJS with MantineUI, Google APIs and AWS services.",
   "experience_quarx_text": "Browser extension that provides real-time guides to help users perform complex tasks across many Websites (AWS, Google cloud, etc), built with React, Chrome APIs and AWS services.",
   "experience_website_text": "Company website built with NextJS and Styled Components.",
-  "experience_socialpower_text": " Web application with geolocation to map streets points that need attention from the city hall, built using nodeJS and AngularJS.",
+  "experience_socialpower_text": " Web application with geolocation to map streets points that need attention from the city hall, built with nodeJS and AngularJS.",
   "education_title": "Education",
   "education_udemy_title": "Udemy Certificates",
   "extraworks_title": "Extra Works",

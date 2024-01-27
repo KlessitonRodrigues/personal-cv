@@ -1,4 +1,5 @@
 import Text from 'src/UI/base/Text';
+
 import { Columns, Dates, List, Title } from './styled';
 
 export const CVEducation = () => {

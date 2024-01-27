@@ -1,9 +1,11 @@
-import { openPrintDialog } from 'src/utils/pdf';
-import Icons from '../Icons';
-import { Centered, Container, DownloadButton, GitHubButton, Selector } from './styled';
-import { changeLanguage, currentLang } from 'src/utils/url';
-import Loading from '../Loading';
 import { useState } from 'react';
+
+import { openPrintDialog } from 'src/utils/pdf';
+import { changeLanguage, currentLang } from 'src/utils/url';
+
+import Icons from '../Icons';
+import Loading from '../Loading';
+import { Centered, Container, DownloadButton, GitHubButton, Selector } from './styled';
 
 const Header = () => {
   const [loading, setLoading] = useState(false);

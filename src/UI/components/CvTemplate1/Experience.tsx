@@ -1,5 +1,8 @@
 import Text from 'src/UI/base/Text';
-import { Columns, Label, Dates, List, Title } from './styled';
+
+import { ListItem } from 'UI/base/StyledComponents/List';
+
+import { Columns, Dates, Label, List, Title } from './styled';
 
 export const CVExperience = () => {
   return (
@@ -19,12 +22,12 @@ export const CVExperience = () => {
           </p>
 
           <List>
-            <li>
+            <ListItem>
               <Label>
                 <b>Collums</b>
                 <Text path="experience_collums_text" />
               </Label>
-            </li>
+            </ListItem>
             <li>
               <Label>
                 <b>Vouch IO</b>

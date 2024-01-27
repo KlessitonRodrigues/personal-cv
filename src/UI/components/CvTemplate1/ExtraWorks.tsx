@@ -1,4 +1,5 @@
 import Text from 'src/UI/base/Text';
+
 import { Columns, Dates, Label, Title } from './styled';
 
 export const CVExtraWorks = () => {

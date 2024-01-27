@@ -1,5 +1,6 @@
 import Text from 'src/UI/base/Text';
-import { Header, Column, Columns, Label } from './styled';
+
+import { Column, Columns, Header, Label } from './styled';
 
 export const CVHeader = () => {
   return (
