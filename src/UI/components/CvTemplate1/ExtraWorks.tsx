@@ -15,6 +15,18 @@ export const CVExtraWorks = () => {
         </div>
         <div>
           <Label>
+            <b>Game Finder</b>
+            <Text path="extraworks_gamefinder_text" />
+          </Label>
+        </div>
+      </Columns>
+
+      <Columns>
+        <div>
+          <Dates>2024</Dates>
+        </div>
+        <div>
+          <Label>
             <b>Personal CV</b>
             <Text path="extraworks_personalcv_text" />
           </Label>

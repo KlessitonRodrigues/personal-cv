@@ -5,7 +5,7 @@ import { animations } from 'src/styles/lib/animations';
 export const Container = styled.div(() => css``);
 
 export const FullScreen = styled.div(
-  () => css`
+  ({ theme }) => css`
     position: fixed;
     top: 0;
     left: 0;
@@ -15,15 +15,16 @@ export const FullScreen = styled.div(
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #000b;
+    background-color: ${theme.colors.black + '88'};
+    color: ${theme.colors.white};
     backdrop-filter: blur(10px);
+    z-index: 2;
   `,
 );
 
 export const Spinner = styled.div(
   props => css`
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,7 +43,6 @@ export const Title = styled.p(
 
 export const Description = styled.p(
   props => css`
-    color: ${props.theme.colors.text4};
     font-size: ${props.theme.fontSize.verySmall};
     animation: ${animations.slideUpLarge} 0.5s ease-out;
   `,

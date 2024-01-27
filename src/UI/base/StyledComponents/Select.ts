@@ -4,7 +4,7 @@ export const SelectBox = styled.label(
   ({ theme }) => css`
     display: flex;
     align-items: center;
-    padding: 0 ${theme.size(1)};
+    padding: 0 ${theme.size(2)};
     font-size: ${theme.fontSize.label};
     background-color: ${theme.colors.bg3};
     color: ${theme.colors.text1};

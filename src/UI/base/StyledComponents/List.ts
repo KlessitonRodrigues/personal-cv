@@ -20,12 +20,12 @@ export const ListItem = styled.li(
     &::after {
       content: '';
       padding: 2px;
-      border: 1px solid ${theme.colors.text3};
+      border: 1px solid ${theme.colors.text1};
       background-color: ${theme.colors.text1};
       border-radius: 50%;
       position: absolute;
       left: -15px;
-      top: 6px;
+      top: 7px;
     }
 
     b {

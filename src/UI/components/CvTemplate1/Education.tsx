@@ -21,10 +21,10 @@ export const CVEducation = () => {
           <List>
             <ListItem>Clojure Introduction</ListItem>
             <ListItem>Java with SQL Databases</ListItem>
-            <ListItem>Saverless AppListItemcations on AWS</ListItem>
+            <ListItem>Saverless Applications on AWS</ListItem>
             <ListItem>Typescript with NodeJS, SQL and noSQL Databases</ListItem>
             <ListItem>ReactJS with Redux</ListItem>
-            <ListItem>EngListItemsh Step-by-Step</ListItem>
+            <ListItem>English Step-by-Step</ListItem>
           </List>
         </div>
       </Columns>
@@ -35,7 +35,9 @@ export const CVEducation = () => {
         </div>
         <div>
           <Title>IFPI - Instituto Federal do Piauí</Title>
-          <p>Ensino Superior, Análise de Sistemas de Computação.</p>
+          <p>
+            <Text path="education_ifpi" />
+          </p>
         </div>
       </Columns>
 
@@ -45,7 +47,7 @@ export const CVEducation = () => {
         </div>
         <div>
           <Title>Centro Estadual de Educação Profissional Professora Maria Amália</Title>
-          <p>Ensino Médio, Técnico em Informatica.</p>
+          <Text path="education_school" />
         </div>
       </Columns>
     </>
