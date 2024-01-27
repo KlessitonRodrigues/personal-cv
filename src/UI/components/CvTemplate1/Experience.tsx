@@ -1,8 +1,7 @@
+import { List, ListItem } from 'src/UI/base/StyledComponents/List';
 import Text from 'src/UI/base/Text';
 
-import { ListItem } from 'UI/base/StyledComponents/List';
-
-import { Columns, Dates, Label, List, Title } from './styled';
+import { Columns, Dates, Label, Title } from './styled';
 
 export const CVExperience = () => {
   return (
@@ -23,41 +22,29 @@ export const CVExperience = () => {
 
           <List>
             <ListItem>
-              <Label>
-                <b>Collums</b>
-                <Text path="experience_collums_text" />
-              </Label>
+              <b>Collums</b>
+              <Text path="experience_collums_text" />
             </ListItem>
-            <li>
-              <Label>
-                <b>Vouch IO</b>
-                <Text path="experience_vouchio_text" />
-              </Label>
-            </li>
-            <li>
-              <Label>
-                <b>TalentId</b>
-                <Text path="experience_talentId_text" />
-              </Label>
-            </li>
-            <li>
-              <Label>
-                <b>Vintage Acquisitions</b>
-                <Text path="experience_vintage_text" />
-              </Label>
-            </li>
-            <li>
-              <Label>
-                <b>Quarx</b>
-                <Text path="experience_quarx_text" />
-              </Label>
-            </li>
-            <li>
-              <Label>
-                <b>Westpoint Website</b>
-                <Text path="experience_website_text" />
-              </Label>
-            </li>
+            <ListItem>
+              <b>Vouch IO</b>
+              <Text path="experience_vouchio_text" />
+            </ListItem>
+            <ListItem>
+              <b>TalentId</b>
+              <Text path="experience_talentId_text" />
+            </ListItem>
+            <ListItem>
+              <b>Vintage Acquisitions</b>
+              <Text path="experience_vintage_text" />
+            </ListItem>
+            <ListItem>
+              <b>Quarx</b>
+              <Text path="experience_quarx_text" />
+            </ListItem>
+            <ListItem>
+              <b>Westpoint Website</b>
+              <Text path="experience_website_text" />
+            </ListItem>
           </List>
         </div>
       </Columns>

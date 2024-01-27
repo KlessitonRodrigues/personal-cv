@@ -73,15 +73,3 @@ export const Dates = styled.div(
     margin-top: ${theme.size(0.75)};
   `,
 );
-
-export const List = styled.ul(
-  ({ theme }) => css`
-    list-style: disc inside;
-    padding-left: ${theme.size(1)};
-    margin: ${theme.size(2)} 0;
-
-    li {
-      margin-bottom: ${theme.size(2)};
-    }
-  `,
-);

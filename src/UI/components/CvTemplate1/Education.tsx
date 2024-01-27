@@ -1,6 +1,7 @@
+import { List, ListItem } from 'src/UI/base/StyledComponents/List';
 import Text from 'src/UI/base/Text';
 
-import { Columns, Dates, List, Title } from './styled';
+import { Columns, Dates, Title } from './styled';
 
 export const CVEducation = () => {
   return (
@@ -17,16 +18,14 @@ export const CVEducation = () => {
           <Title>
             <Text path="education_udemy_title" />
           </Title>
-          <p>
-            <List>
-              <li>Clojure Introduction</li>
-              <li>Java with SQL Databases</li>
-              <li>Saverless Applications on AWS</li>
-              <li>Typescript with NodeJS, SQL and noSQL Databases</li>
-              <li>ReactJS with Redux</li>
-              <li>English Step-by-Step</li>
-            </List>
-          </p>
+          <List>
+            <ListItem>Clojure Introduction</ListItem>
+            <ListItem>Java with SQL Databases</ListItem>
+            <ListItem>Saverless AppListItemcations on AWS</ListItem>
+            <ListItem>Typescript with NodeJS, SQL and noSQL Databases</ListItem>
+            <ListItem>ReactJS with Redux</ListItem>
+            <ListItem>EngListItemsh Step-by-Step</ListItem>
+          </List>
         </div>
       </Columns>
 
