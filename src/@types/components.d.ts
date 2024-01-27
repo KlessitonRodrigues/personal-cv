@@ -2,7 +2,7 @@ declare namespace Props {
   type Icons = {
     size?: number;
     onPress?: () => void;
-    type: 'download' | 'selector' | 'spinner' | 'github';
+    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language';
     style?: React.CSSProperties;
   };
 

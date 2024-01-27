@@ -65,7 +65,7 @@ export default createGlobalStyle(
       display: flex;
       align-items: center;
       gap: ${theme.size(1)};
-      padding: 0 ${theme.size(2)};
+      padding: 0 ${theme.size(1)};
       background-color: transparent;
       outline: none;
       border: none;

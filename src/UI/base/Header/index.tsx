@@ -5,6 +5,8 @@ import { changeLanguage, currentLang } from 'src/utils/url';
 
 import Icons from '../Icons';
 import Loading from '../Loading';
+import { Select, SelectBox, SelectItem, SelectTitle } from '../StyledComponents/Select';
+import Text from '../Text';
 import { Centered, Container, DownloadButton, GitHubButton, Selector } from './styled';
 
 const Header = () => {
@@ -19,17 +21,25 @@ const Header = () => {
   return (
     <Container>
       <Centered>
-        <Selector>
-          <option>Template 1</option>
-        </Selector>
-        <Selector defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
-          <option value="en">English</option>
-          <option value="pt">Português</option>
-          <option value="es">Spanish</option>
-        </Selector>
+        <SelectBox>
+          <Icons type="language" />
+          <Select defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
+            <SelectItem value="en">English</SelectItem>
+            <SelectItem value="pt">Português</SelectItem>
+            <SelectItem value="es">Spanish</SelectItem>
+          </Select>
+        </SelectBox>
+
+        <SelectBox>
+          <Icons type="template" />
+          <Select>
+            <SelectItem>Template 1</SelectItem>
+          </Select>
+        </SelectBox>
+
         <DownloadButton onClick={onDownload}>
           <Icons type="download" />
-          Save as PDF
+          <Text path="header_pdf_btn" />
         </DownloadButton>
       </Centered>
 
