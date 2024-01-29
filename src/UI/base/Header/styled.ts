@@ -42,6 +42,7 @@ export const GitHubButton = styled.a(
     text-decoration: none;
     gap: ${theme.size(1)};
     color: ${theme.colors.bg2};
+    font-size: ${theme.fontSize.label};
 
     &:hover {
       text-decoration: underline;

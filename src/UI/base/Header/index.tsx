@@ -24,17 +24,17 @@ const Header = () => {
         <SelectBox>
           <Icons type="language" />
           <Select defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
-            <SelectItem value="en">English</SelectItem>
-            <SelectItem value="pt">Português</SelectItem>
-            <SelectItem value="es">Spanish (auto)</SelectItem>
-            <SelectItem value="fr">French (auto)</SelectItem>
+            <SelectItem label="English" value="en" selected />
+            <SelectItem label="Português" value="pt" />
+            <SelectItem label="Spanish (auto)" value="es" />
+            <SelectItem label="French (auto)" value="fr" />
           </Select>
         </SelectBox>
 
         <SelectBox>
           <Icons type="template" />
           <Select>
-            <SelectItem>Template 1</SelectItem>
+            <SelectItem label="Template 1" value="0" />
           </Select>
         </SelectBox>
 
@@ -45,7 +45,7 @@ const Header = () => {
       </Centered>
 
       <GitHubButton href="https://github.com/KlessitonRodrigues/personal-cv" target="_blank">
-        <Icons type="github" />
+        <Icons size={7} type="github" />
         GitHub
       </GitHubButton>
 
