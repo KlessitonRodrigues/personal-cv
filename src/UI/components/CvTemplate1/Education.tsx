@@ -20,10 +20,12 @@ export const CVEducation = () => {
           </Title>
           <List>
             <ListItem>Clojure Introduction</ListItem>
-            <ListItem>Java with SQL Databases</ListItem>
-            <ListItem>Saverless Applications on AWS</ListItem>
-            <ListItem>Typescript with NodeJS, SQL and noSQL Databases</ListItem>
-            <ListItem>ReactJS with Redux</ListItem>
+            <ListItem>Java With SQL Databases</ListItem>
+            <ListItem>Saverless Applications On AWS</ListItem>
+            <ListItem>Agile Software Development</ListItem>
+            <ListItem>Typescript With NodeJS, SQL And NoSQL Databases</ListItem>
+            <ListItem>Design Of MVP With Figma</ListItem>
+            <ListItem>ReactJS With Redux</ListItem>
             <ListItem>English Step-by-Step</ListItem>
           </List>
         </div>
