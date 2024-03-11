@@ -5,9 +5,9 @@ import { changeLanguage, currentLang } from 'src/utils/url';
 
 import Icons from '../Icons';
 import Loading from '../Loading';
-import { Select, SelectBox, SelectItem, SelectTitle } from '../StyledComponents/Select';
+import { Select, SelectBox, SelectItem } from '../StyledComponents/Select';
 import Text from '../Text';
-import { Centered, Container, DownloadButton, GitHubButton, Selector } from './styled';
+import { Centered, Container, DownloadButton, GitHubButton } from './styled';
 
 const Header = () => {
   const [loading, setLoading] = useState(false);

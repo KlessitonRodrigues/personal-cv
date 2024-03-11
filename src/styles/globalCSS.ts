@@ -61,7 +61,7 @@ export default createGlobalStyle(
     select {
       font-family: 'Quicksand', sans-serif;
       font-weight: 600;
-      min-height: ${theme.size(8)};
+      min-height: ${theme.size(9)};
       display: flex;
       align-items: center;
       gap: ${theme.size(1)};
@@ -69,7 +69,7 @@ export default createGlobalStyle(
       background-color: transparent;
       outline: none;
       border: none;
-      border-radius: ${theme.radius.verySmall};
+      border-radius: ${theme.radius.medium};
       cursor: pointer;
     }
     div::-webkit-scrollbar {

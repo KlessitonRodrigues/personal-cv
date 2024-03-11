@@ -8,7 +8,7 @@ export const SelectBox = styled.label(
     font-size: ${theme.fontSize.label};
     background-color: ${theme.colors.bg3};
     color: ${theme.colors.text1};
-    border-radius: ${theme.radius.verySmall};
+    border-radius: ${theme.radius.medium};
     box-shadow: ${theme.shadow.medium};
   `,
 );
@@ -17,7 +17,6 @@ export const Select = styled.select(
   ({ theme }) => css`
     color: ${theme.colors.text1};
     font-size: ${theme.fontSize.small};
-    padding-top: ${theme.size(0.5)};
     font-weight: 600;
 
     &::-webkit-scrollbar {

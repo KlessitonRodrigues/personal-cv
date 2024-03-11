@@ -11,7 +11,7 @@
   "experience_talentId_text": "Plataforma online que utiliza os poderes do chat GPT para avaliar currículos de candidatos e atribuir-lhes uma pontuação, desenvolvida em NextJS com MatineUI, API OpenAI e AWS services.",
   "experience_vintage_text": "Dashboard para gestão de estoque e vendas de barris, sincronizado com planilhas Google, desenvolvida em ViteJS com MantineUI, Google APIs e AWS services.",
   "experience_quarx_text": "Extensão de navegador que fornece guias em tempo real para ajudar os usuários a realizar tarefas complexas em muitos sites (AWS, Google Cloud, etc.), desenvolvidos em React, Chrome APIs e AWS services.",
-  "experience_website_text": "Site da empresa construído com NextJS e Styled Components.",
+  "experience_website_text": "Site da empresa desenvolvido em NextJS e Styled Components.",
   "experience_socialpower_text": " Aplicação web com geolocalização para mapear pontos de ruas que necessitam de atenção da prefeitura, desenvolvidos em nodeJS e AngularJS.",
   "education_title": "Educação",
   "education_udemy_title": "Certificados da Udemy",
