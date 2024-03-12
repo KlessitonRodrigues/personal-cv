@@ -42,6 +42,15 @@ export const Title = styled.h4(
   `,
 );
 
+export const SubTitle = styled.div(
+  ({ theme }) => css`
+    width: ${theme.size(45)};
+    margin-top: ${theme.size(0.75)};
+    font-size: ${theme.fontSize.small};
+    font-weight: bold;
+  `,
+);
+
 export const Label = styled.span(
   ({ theme }) => css`
     b {
@@ -68,7 +77,7 @@ export const Column = styled.div<{ gap?: number }>(
 
 export const Dates = styled.div(
   ({ theme }) => css`
-    width: ${theme.size(40)};
+    width: ${theme.size(45)};
     font-size: ${theme.fontSize.verySmall};
     margin-top: ${theme.size(0.75)};
   `,

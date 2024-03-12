@@ -19,14 +19,33 @@ export const CVEducation = () => {
             <Text path="education_udemy_title" />
           </Title>
           <List>
-            <ListItem>Clojure Introduction</ListItem>
-            <ListItem>Java with SQL databases</ListItem>
-            <ListItem>Serverless Applications on AWS</ListItem>
-            <ListItem>Agile Software Development</ListItem>
-            <ListItem>Typescript with NodeJS, SQL and NoSQL databases</ListItem>
-            <ListItem>Design of MVP with Figma</ListItem>
-            <ListItem>ReactJS with Redux</ListItem>
-            <ListItem>English Step-by-Step</ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_1" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_2" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_3" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_4" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_5" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_6" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_7" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_8" />
+            </ListItem>
+            <ListItem>
+              <Text path="education_udemy_course_9" />
+            </ListItem>
           </List>
         </div>
       </Columns>

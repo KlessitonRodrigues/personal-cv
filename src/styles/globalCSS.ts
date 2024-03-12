@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import '../UI/assets/fonts/quicksand.ttf';
+import '../UI/assets/fonts/inter.ttf';
 
 export default createGlobalStyle(
   ({ theme }) => css`
@@ -23,7 +23,7 @@ export default createGlobalStyle(
     }
     html,
     body {
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: ${theme.colors.bg1};
       color: ${theme.colors.text1};
       font-weight: 500;

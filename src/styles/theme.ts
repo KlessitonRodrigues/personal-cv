@@ -24,7 +24,7 @@ export const defaultTheme: Styles.Theme = {
   fontSize: {
     body: '1rem',
     small: '0.95rem',
-    verySmall: '0.85rem',
+    verySmall: '0.82rem',
     label: '0.9rem',
     h1: '1.6rem',
     h2: '1.4rem',

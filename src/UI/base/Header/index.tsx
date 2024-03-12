@@ -26,8 +26,6 @@ const Header = () => {
           <Select defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
             <SelectItem label="English" value="en" selected />
             <SelectItem label="Português" value="pt" />
-            <SelectItem label="Spanish (auto)" value="es" />
-            <SelectItem label="French (auto)" value="fr" />
           </Select>
         </SelectBox>
 

@@ -12,6 +12,18 @@ export const CVExperience = () => {
 
       <Columns>
         <div>
+          <Dates>2024/01 - 2024/02</Dates>
+        </div>
+        <div>
+          <Title>Centro Educacional De Floriano</Title>
+          <p>
+            <Text path="experience_cef_text" />
+          </p>
+        </div>
+      </Columns>
+
+      <Columns>
+        <div>
           <Dates>2021/12 - 2023/12</Dates>
         </div>
         <div>
@@ -42,7 +54,7 @@ export const CVExperience = () => {
               <Text path="experience_quarx_text" />
             </ListItem>
             <ListItem>
-              <b>Westpoint Website</b>
+              <b>WestPoint Website</b>
               <Text path="experience_website_text" />
             </ListItem>
           </List>
@@ -51,10 +63,22 @@ export const CVExperience = () => {
 
       <Columns>
         <div>
-          <Dates>2018/08 - 2019/11</Dates>
+          <Dates>2021/03 - 2021/09</Dates>
         </div>
         <div>
-          <Title>SocialPower </Title>
+          <Title>Central Fitness</Title>
+          <p>
+            <Text path="experience_centralacademy_text" />
+          </p>
+        </div>
+      </Columns>
+
+      <Columns>
+        <div>
+          <Dates>2018/11 - 2019/11</Dates>
+        </div>
+        <div>
+          <Title>SocialPower</Title>
           <p>
             <Text path="experience_socialpower_text" />
           </p>
