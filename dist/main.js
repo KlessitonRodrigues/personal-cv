@@ -264,7 +264,6 @@
     width: ${e.size(45)};
     margin-top: ${e.size(.75)};
     font-size: ${e.fontSize.small};
-    font-weight: bold;
   `)),me=r.ZP.span((({theme:e})=>r.iv`
     b {
       margin-right: ${e.size(2)};

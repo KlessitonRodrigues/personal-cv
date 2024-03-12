@@ -47,7 +47,6 @@ export const SubTitle = styled.div(
     width: ${theme.size(45)};
     margin-top: ${theme.size(0.75)};
     font-size: ${theme.fontSize.small};
-    font-weight: bold;
   `,
 );
 
