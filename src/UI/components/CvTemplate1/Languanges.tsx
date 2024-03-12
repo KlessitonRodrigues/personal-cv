@@ -11,7 +11,9 @@ export const CVLanguanges = () => {
 
       <Columns>
         <div>
-          <SubTitle>Portuguese</SubTitle>
+          <SubTitle>
+            <Text path="language_pt_title" />
+          </SubTitle>
         </div>
         <div>
           <Text path="language_pt_text" />
@@ -20,19 +22,12 @@ export const CVLanguanges = () => {
 
       <Columns>
         <div>
-          <SubTitle>English</SubTitle>
+          <SubTitle>
+            <Text path="language_en_title" />
+          </SubTitle>
         </div>
         <div>
           <Text path="language_en_text" />
-        </div>
-      </Columns>
-
-      <Columns>
-        <div>
-          <SubTitle>Japonese</SubTitle>
-        </div>
-        <div>
-          <Text path="language_jp_text" />
         </div>
       </Columns>
     </>
