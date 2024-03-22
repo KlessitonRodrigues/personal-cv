@@ -1,4 +1,4 @@
-import Text from 'src/UI/base/Text';
+import Text from 'src/lib/base/Text';
 
 import { CVEducation } from './Education';
 import { CVExperience } from './Experience';

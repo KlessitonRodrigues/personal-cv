@@ -1,4 +1,4 @@
-import { atlassianColors, materialColors } from './lib/palettes';
+import { atlassianColors, materialColors } from './colors';
 
 export const defaultTheme: Styles.Theme = {
   size: (n: number) => `${(n * 0.2).toFixed(1)}rem`,

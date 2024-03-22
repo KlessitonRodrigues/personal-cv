@@ -10,12 +10,16 @@ export const SelectBox = styled.label(
     color: ${theme.colors.text1};
     border-radius: ${theme.radius.medium};
     box-shadow: ${theme.shadow.medium};
+
+    &:hover {
+      background-color: ${theme.colors.bg4};
+    }
   `,
 );
 
 export const Select = styled.select(
   ({ theme }) => css`
-    color: ${theme.colors.text1};
+    color: ${theme.colors.text2};
     font-size: ${theme.fontSize.small};
     font-weight: 600;
 

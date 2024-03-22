@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { materialColors as mcolors } from 'src/styles/lib/palettes';
+import { materialColors as mcolors } from 'src/styles/colors';
 
 export const Container = styled.div(
   ({ theme }) => css`
@@ -32,6 +32,11 @@ export const Selector = styled.select(
 export const DownloadButton = styled.button(
   ({ theme }) => css`
     background-color: ${theme.colors.bg2};
+    color: ${theme.colors.text2};
+
+    &:hover {
+      background-color: ${theme.colors.bg4};
+    }
   `,
 );
 
@@ -41,11 +46,12 @@ export const GitHubButton = styled.a(
     align-items: center;
     text-decoration: none;
     gap: ${theme.size(1)};
-    color: ${theme.colors.bg2};
+    color: ${theme.colors.white};
     font-size: ${theme.fontSize.label};
 
     &:hover {
       text-decoration: underline;
+      background-color: ${theme.colors.bg4};
     }
   `,
 );

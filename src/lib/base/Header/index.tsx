@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
+import { changeLanguage, getLanguage } from 'src/utils/i18n';
 import { openPrintDialog } from 'src/utils/pdf';
-import { changeLanguage, currentLang } from 'src/utils/url';
 
 import Icons from '../Icons';
 import Loading from '../Loading';
@@ -23,7 +23,7 @@ const Header = () => {
       <Centered>
         <SelectBox>
           <Icons type="language" />
-          <Select defaultValue={currentLang} onChange={e => changeLanguage(e.target.value)}>
+          <Select defaultValue={getLanguage()} onChange={e => changeLanguage(e.target.value)}>
             <SelectItem label="English" value="en" selected />
             <SelectItem label="Português" value="pt" />
           </Select>

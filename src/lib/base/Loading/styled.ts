@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { animations } from 'src/styles/lib/animations';
+import { animations } from 'src/styles/utils';
 
 export const Container = styled.div(() => css``);
 
@@ -37,13 +37,13 @@ export const Title = styled.p(
   props => css`
     font-size: ${props.theme.fontSize.label};
     margin-bottom: ${props.theme.size(2)};
-    animation: ${animations.slideUpLarge} 0.5s ease-out;
+    animation: ${animations.slideUp} 0.5s ease-out;
   `,
 );
 
 export const Description = styled.p(
   props => css`
     font-size: ${props.theme.fontSize.verySmall};
-    animation: ${animations.slideUpLarge} 0.5s ease-out;
+    animation: ${animations.slideUp} 0.5s ease-out;
   `,
 );

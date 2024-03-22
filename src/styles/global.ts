@@ -1,6 +1,6 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import '../UI/assets/fonts/inter.ttf';
+import '../lib/assets/fonts/inter.ttf';
 
 export default createGlobalStyle(
   ({ theme }) => css`

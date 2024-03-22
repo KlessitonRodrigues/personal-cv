@@ -1,5 +1,5 @@
-import { List, ListItem } from 'src/UI/base/StyledComponents/List';
-import Text from 'src/UI/base/Text';
+import { List, ListItem } from 'src/lib/base/StyledComponents/List';
+import Text from 'src/lib/base/Text';
 
 import { Columns, Dates, Title } from './styled';
 
