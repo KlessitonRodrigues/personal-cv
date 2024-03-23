@@ -44,7 +44,7 @@ const Header = () => {
 
       <GitHubButton href="https://github.com/KlessitonRodrigues/personal-cv" target="_blank">
         <Icons size={7} type="github" />
-        GitHub
+        Github
       </GitHubButton>
 
       <Loading type="fullScreen" show={loading} />

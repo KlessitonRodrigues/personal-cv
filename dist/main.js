@@ -179,14 +179,14 @@
     color: ${e.colors.text1};
     font-family: sans-serif;
     font-weight: bold;
-  `))),Q=e=>{const{path:t}=e,i=(e=>{const t=R(),i=O;return"pt"===t?I[e]||"NO_TEXT":i[e]||"NO_TEXT"})(t);return(0,o.jsx)(o.Fragment,{children:i})},H=r.ZP.div((({theme:e})=>r.iv`
+  `))),Q=e=>{const{path:t}=e,i=(e=>{const t=R(),i=O;return"pt"===t?I[e]||"NO_TEXT":i[e]||"NO_TEXT"})(t);return(0,o.jsx)(o.Fragment,{children:i})},K=r.ZP.div((({theme:e})=>r.iv`
     width: 100%;
     display: flex;
     background-color: ${y};
     color: ${e.colors.white};
     padding: ${e.size(2)} ${e.size(6)};
     font-size: ${e.fontSize.verySmall};
-  `)),K=r.ZP.button((({theme:e})=>r.iv`
+  `)),H=r.ZP.button((({theme:e})=>r.iv`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -211,9 +211,8 @@
 
     &:hover {
       text-decoration: underline;
-      background-color: ${e.colors.bg4};
     }
-  `));const ee=()=>{const[e,t]=(0,a.useState)(!1);return(0,o.jsxs)(H,{children:[(0,o.jsxs)(K,{children:[(0,o.jsxs)(q,{children:[(0,o.jsx)(Z,{type:"language"}),(0,o.jsxs)(V,Object.assign({defaultValue:R(),onChange:e=>(e=>{try{localStorage.setItem("lang",e),location.reload()}catch(e){}})(e.target.value)},{children:[(0,o.jsx)(U,{label:"English",value:"en",selected:!0}),(0,o.jsx)(U,{label:"Português",value:"pt"})]}))]}),(0,o.jsxs)(q,{children:[(0,o.jsx)(Z,{type:"template"}),(0,o.jsx)(V,{children:(0,o.jsx)(U,{label:"Template 1",value:"0"})})]}),(0,o.jsxs)(X,Object.assign({onClick:()=>{return e=void 0,i=void 0,s=function*(){var e,i,o,s;t(!0),yield(e=void 0,i=void 0,o=void 0,s=function*(){const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const i=t.contentDocument;i.head.innerHTML=document.head.innerHTML,i.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",yield new Promise((e=>setTimeout(e,1e3))),t.contentWindow.print()},new(o||(o=Promise))((function(t,n){function r(e){try{c(s.next(e))}catch(e){n(e)}}function a(e){try{c(s.throw(e))}catch(e){n(e)}}function c(e){var i;e.done?t(e.value):(i=e.value,i instanceof o?i:new o((function(e){e(i)}))).then(r,a)}c((s=s.apply(e,i||[])).next())}))),t(!1)},new((o=void 0)||(o=Promise))((function(t,n){function r(e){try{c(s.next(e))}catch(e){n(e)}}function a(e){try{c(s.throw(e))}catch(e){n(e)}}function c(e){var i;e.done?t(e.value):(i=e.value,i instanceof o?i:new o((function(e){e(i)}))).then(r,a)}c((s=s.apply(e,i||[])).next())}));var e,i,o,s}},{children:[(0,o.jsx)(Z,{type:"download"}),(0,o.jsx)(Q,{path:"header_pdf_btn"})]}))]}),(0,o.jsxs)(Y,Object.assign({href:"https://github.com/KlessitonRodrigues/personal-cv",target:"_blank"},{children:[(0,o.jsx)(Z,{size:7,type:"github"}),"GitHub"]})),(0,o.jsx)(D,{type:"fullScreen",show:e})]})},te=r.ZP.div((({theme:e})=>r.iv`
+  `));const ee=()=>{const[e,t]=(0,a.useState)(!1);return(0,o.jsxs)(K,{children:[(0,o.jsxs)(H,{children:[(0,o.jsxs)(q,{children:[(0,o.jsx)(Z,{type:"language"}),(0,o.jsxs)(V,Object.assign({defaultValue:R(),onChange:e=>(e=>{try{localStorage.setItem("lang",e),location.reload()}catch(e){}})(e.target.value)},{children:[(0,o.jsx)(U,{label:"English",value:"en",selected:!0}),(0,o.jsx)(U,{label:"Português",value:"pt"})]}))]}),(0,o.jsxs)(q,{children:[(0,o.jsx)(Z,{type:"template"}),(0,o.jsx)(V,{children:(0,o.jsx)(U,{label:"Template 1",value:"0"})})]}),(0,o.jsxs)(X,Object.assign({onClick:()=>{return e=void 0,i=void 0,s=function*(){var e,i,o,s;t(!0),yield(e=void 0,i=void 0,o=void 0,s=function*(){const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const i=t.contentDocument;i.head.innerHTML=document.head.innerHTML,i.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",yield new Promise((e=>setTimeout(e,1e3))),t.contentWindow.print()},new(o||(o=Promise))((function(t,n){function r(e){try{c(s.next(e))}catch(e){n(e)}}function a(e){try{c(s.throw(e))}catch(e){n(e)}}function c(e){var i;e.done?t(e.value):(i=e.value,i instanceof o?i:new o((function(e){e(i)}))).then(r,a)}c((s=s.apply(e,i||[])).next())}))),t(!1)},new((o=void 0)||(o=Promise))((function(t,n){function r(e){try{c(s.next(e))}catch(e){n(e)}}function a(e){try{c(s.throw(e))}catch(e){n(e)}}function c(e){var i;e.done?t(e.value):(i=e.value,i instanceof o?i:new o((function(e){e(i)}))).then(r,a)}c((s=s.apply(e,i||[])).next())}));var e,i,o,s}},{children:[(0,o.jsx)(Z,{type:"download"}),(0,o.jsx)(Q,{path:"header_pdf_btn"})]}))]}),(0,o.jsxs)(Y,Object.assign({href:"https://github.com/KlessitonRodrigues/personal-cv",target:"_blank"},{children:[(0,o.jsx)(Z,{size:7,type:"github"}),"Github"]})),(0,o.jsx)(D,{type:"fullScreen",show:e})]})},te=r.ZP.div((({theme:e})=>r.iv`
     width: 100%;
     height: 100%;
     padding: ${e.size(4)};

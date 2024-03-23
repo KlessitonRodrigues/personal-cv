@@ -51,7 +51,6 @@ export const GitHubButton = styled.a(
 
     &:hover {
       text-decoration: underline;
-      background-color: ${theme.colors.bg4};
     }
   `,
 );
