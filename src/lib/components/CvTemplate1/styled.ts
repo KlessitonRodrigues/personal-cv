@@ -1,83 +1,84 @@
 import styled, { css } from 'styled-components';
 
 import { materialColors as mcolors } from 'src/styles/colors';
+import { cssSize } from 'src/styles/utils';
 
 export const Container = styled.div(() => css``);
 
 export const Header = styled.div(
-  ({ theme }) => css`
+  () => css`
     width: 100%;
-    padding: ${theme.size(6)} ${theme.size(12)};
+    padding: ${cssSize(6)} ${cssSize(12)};
     background-color: ${mcolors.blueGrey['800']};
     color: ${mcolors.grey['200']};
 
     h1 {
-      margin-bottom: ${theme.size(2)};
+      margin-bottom: ${cssSize(2)};
       color: ${mcolors.grey['100']};
     }
 
     h3 {
-      margin-bottom: ${theme.size(4)};
+      margin-bottom: ${cssSize(4)};
     }
   `,
 );
 
 export const Body = styled.div(
-  ({ theme }) => css`
-    padding: ${theme.size(6)} ${theme.size(12)};
+  () => css`
+    padding: ${cssSize(6)} ${cssSize(12)};
     background-color: ${mcolors.grey['50']};
     color: ${mcolors.grey['800']};
   `,
 );
 
 export const Resume = styled.div(
-  ({ theme }) => css`
-    margin: ${theme.size(4)} 0;
+  () => css`
+    margin: ${cssSize(4)} 0;
   `,
 );
 
 export const Title = styled.h4(
-  ({ theme }) => css`
-    margin-bottom: ${theme.size(2)};
+  () => css`
+    margin-bottom: ${cssSize(2)};
   `,
 );
 
 export const SubTitle = styled.div(
   ({ theme }) => css`
-    width: ${theme.size(45)};
-    margin-top: ${theme.size(0.75)};
+    width: ${cssSize(45)};
+    margin-top: ${cssSize(0.75)};
     font-size: ${theme.fontSize.small};
   `,
 );
 
 export const Label = styled.span(
-  ({ theme }) => css`
+  () => css`
     b {
-      margin-right: ${theme.size(2)};
+      margin-right: ${cssSize(2)};
     }
   `,
 );
 
-export const Columns = styled.div<{ gap?: number; mb?: number }>(
-  ({ theme, gap, mb }) => css`
+export const Columns = styled.div<Props.CssProps>(
+  ({ gap, mb }) => css`
     display: flex;
-    gap: ${theme.size(gap)};
-    margin-bottom: ${theme.size(mb || 2)};
+    gap: ${cssSize(gap || 4)};
+    margin-bottom: ${cssSize(mb || 2)};
   `,
 );
 
-export const Column = styled.div<{ gap?: number }>(
-  ({ theme, gap }) => css`
+export const Column = styled.div<Props.CssProps>(
+  ({ gap }) => css`
     display: flex;
     flex-direction: column;
-    gap: ${theme.size(gap)};
+    gap: ${cssSize(gap || 4)};
   `,
 );
 
 export const Dates = styled.div(
   ({ theme }) => css`
-    width: ${theme.size(45)};
+    width: ${cssSize(45)};
     font-size: ${theme.fontSize.verySmall};
-    margin-top: ${theme.size(0.75)};
+    margin-top: ${cssSize(0.75)};
   `,
 );

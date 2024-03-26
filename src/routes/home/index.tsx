@@ -1,18 +1,18 @@
 import DocumentView from 'src/lib/base/DocumentView';
 import Header from 'src/lib/base/Header';
-import PageContainer from 'src/lib/base/PageContainer';
+import { Page, PageContent } from 'src/lib/base/StyledComponents/Containers';
 import CvTemplate1 from 'src/lib/components/CvTemplate1';
 
 const HomePage = () => {
   return (
-    <>
+    <Page>
       <Header />
-      <PageContainer>
+      <PageContent>
         <DocumentView>
           <CvTemplate1 />
         </DocumentView>
-      </PageContainer>
-    </>
+      </PageContent>
+    </Page>
   );
 };
 

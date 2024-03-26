@@ -4,6 +4,7 @@ export const openPrintDialog = async () => {
   document.body.appendChild(iFrame);
 
   const iFrameDocument = iFrame.contentDocument;
+  if (!iFrame || !docContent || !iFrameDocument) return;
   iFrameDocument.head.innerHTML = document.head.innerHTML;
   iFrameDocument.body.innerHTML = docContent.innerHTML;
 
@@ -12,5 +13,6 @@ export const openPrintDialog = async () => {
   iFrame.style.top = '0';
 
   await new Promise(r => setTimeout(r, 1000));
-  iFrame.contentWindow.print();
+  // @ts-ignore
+  iFrame?.contentWindow.print();
 };

@@ -1,9 +1,9 @@
 declare namespace Styles {
   type Theme = {
-    size: (n: number) => string;
     colors: {
       main: string;
       mainBg: string;
+      mainText: string;
       bg1: string;
       bg2: string;
       bg3: string;
@@ -20,14 +20,6 @@ declare namespace Styles {
       white: string;
       black: string;
     };
-    radius: {
-      verySmall: string;
-      small: string;
-      medium: string;
-      large: string;
-      veryLarge: string;
-      full: string;
-    };
     fontSize: {
       body: string;
       label: string;
@@ -40,13 +32,21 @@ declare namespace Styles {
       h5: string;
       h6: string;
     };
-    shadow?: {
-      low: string;
+    border: {
+      small: string;
       medium: string;
-      high: string;
-      mediumGray: string;
-      mediumLeft: string;
-      lowRight: string;
+      large: string;
+    };
+    radius: {
+      small: string;
+      medium: string;
+      large: string;
+      full: string;
+    };
+    shadow: {
+      small: string;
+      medium: string;
+      large: string;
     };
   };
 }

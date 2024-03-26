@@ -1,13 +1,15 @@
 import styled, { css } from 'styled-components';
 
+import { cssSize } from 'src/styles/utils';
+
 export const List = styled.ul(
   ({ theme }) => css`
     list-style: none;
-    padding-left: ${theme.size(5)};
-    margin: ${theme.size(2)} 0;
+    padding-left: ${cssSize(5)};
+    margin: ${cssSize(2)} 0;
 
     li {
-      margin-bottom: ${theme.size(2)};
+      margin-bottom: ${cssSize(2)};
     }
   `,
 );
@@ -29,7 +31,7 @@ export const ListItem = styled.li(
     }
 
     b {
-      margin-right: ${theme.size(2)};
+      margin-right: ${cssSize(2)};
     }
   `,
 );

@@ -1,14 +1,16 @@
 import styled, { css } from 'styled-components';
 
+import { cssSize } from 'src/styles/utils';
+
 export const SelectBox = styled.label(
   ({ theme }) => css`
     display: flex;
     align-items: center;
-    padding: 0 ${theme.size(2)};
+    padding: 0 ${cssSize(2)};
     font-size: ${theme.fontSize.label};
     background-color: ${theme.colors.bg3};
     color: ${theme.colors.text1};
-    border-radius: ${theme.radius.medium};
+    border-radius: ${theme.radius.small};
     box-shadow: ${theme.shadow.medium};
 
     &:hover {
@@ -24,7 +26,7 @@ export const Select = styled.select(
     font-weight: 600;
 
     &::-webkit-scrollbar {
-      width: ${theme.size(2)};
+      width: ${cssSize(2)};
     }
 
     &::-webkit-scrollbar-track {

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { materialColors as mcolors } from 'src/styles/colors';
+import { cssSize } from 'src/styles/utils';
 
 export const Container = styled.div(
   ({ theme }) => css`
@@ -8,7 +9,7 @@ export const Container = styled.div(
     display: flex;
     background-color: ${mcolors.grey['800']};
     color: ${theme.colors.white};
-    padding: ${theme.size(2)} ${theme.size(6)};
+    padding: ${cssSize(2)} ${cssSize(6)};
     font-size: ${theme.fontSize.verySmall};
   `,
 );
@@ -19,7 +20,7 @@ export const Centered = styled.button(
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: ${theme.size(4)};
+    gap: ${cssSize(4)};
   `,
 );
 
@@ -45,7 +46,7 @@ export const GitHubButton = styled.a(
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: ${theme.size(1)};
+    gap: ${cssSize(1)};
     color: ${theme.colors.white};
     font-size: ${theme.fontSize.label};
 

@@ -1,9 +1,23 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import '../lib/assets/fonts/inter.ttf';
+// @ts-ignore
+import roboto500 from '../lib/assets/fonts/roboto500.ttf';
+// @ts-ignore
+import roboto700 from '../lib/assets/fonts/roboto700.ttf';
+import { cssSize } from './utils';
 
 export default createGlobalStyle(
   ({ theme }) => css`
+    @font-face {
+      font-family: Roboto;
+      src: url(${roboto500});
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: Roboto;
+      src: url(${roboto700});
+      font-weight: bold;
+    }
     * {
       margin: 0;
       padding: 0;
@@ -23,7 +37,7 @@ export default createGlobalStyle(
     }
     html,
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: ${theme.colors.bg1};
       color: ${theme.colors.text1};
       font-weight: 500;
@@ -48,7 +62,7 @@ export default createGlobalStyle(
     }
     p {
       font-size: ${theme.fontSize.body};
-      max-width: ${theme.size(200)};
+      max-width: ${cssSize(200)};
     }
     ul {
       list-style: none;
@@ -61,19 +75,19 @@ export default createGlobalStyle(
     select {
       font-family: 'Quicksand', sans-serif;
       font-weight: 600;
-      min-height: ${theme.size(9)};
+      min-height: ${cssSize(9)};
       display: flex;
       align-items: center;
-      gap: ${theme.size(1)};
-      padding: 0 ${theme.size(2)};
+      gap: ${cssSize(1)};
+      padding: 0 ${cssSize(2)};
       background-color: transparent;
       outline: none;
       border: none;
-      border-radius: ${theme.radius.medium};
+      border-radius: ${theme.radius.small};
       cursor: pointer;
     }
     div::-webkit-scrollbar {
-      width: ${theme.size(2)};
+      width: ${cssSize(2)};
     }
     div::-webkit-scrollbar-track {
       background: #0000;

@@ -1,9 +1,16 @@
 declare namespace Props {
+  type CssProps = {
+    active?: boolean;
+    size?: number;
+    gap?: number;
+    mb?: number;
+  };
+
   type Icons = {
     size?: number;
     onPress?: () => void;
-    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language';
     style?: React.CSSProperties;
+    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language';
   };
 
   type Text = {
