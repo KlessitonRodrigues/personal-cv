@@ -1,16 +1,22 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { StyleSheetManager } from 'styled-components';
+import { StyleSheetManager, ThemeProvider } from 'styled-components';
 
-import Router from 'src/routes';
+import Router from 'src/pages/routes';
+import GlobalCSS from 'src/styles/global';
+
+import { defaultTheme } from './styles/theme';
 
 const App = () => {
   return (
-    <StyleSheetManager disableCSSOMInjection>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
-    </StyleSheetManager>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalCSS />
+      <StyleSheetManager disableCSSOMInjection>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
+      </StyleSheetManager>
+    </ThemeProvider>
   );
 };
 
