@@ -1,23 +1,11 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-// @ts-ignore
-import roboto500 from '../lib/assets/fonts/roboto500.ttf';
-// @ts-ignore
-import roboto700 from '../lib/assets/fonts/roboto700.ttf';
+import '../lib/assets/fonts/roboto500.ttf';
+import '../lib/assets/fonts/roboto700.ttf';
 import { cssSize } from './utils';
 
 export default createGlobalStyle(
   ({ theme }) => css`
-    @font-face {
-      font-family: Roboto;
-      src: url(${roboto500});
-      font-weight: 500;
-    }
-    @font-face {
-      font-family: Roboto;
-      src: url(${roboto700});
-      font-weight: bold;
-    }
     * {
       margin: 0;
       padding: 0;

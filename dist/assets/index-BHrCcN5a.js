@@ -72,212 +72,7 @@ Error generating stack: `+l.message+`
     to { opacity: 1; }`,fadeIn:wo`
     from { opacity: 0; } 
     to { opacity: 1; }`,spinning:wo`
-    to { transform: rotateZ(360deg); }`},Rm=B.div(()=>D`
-    height: 100%;
-    width: fit-content;
-    margin: auto;
-    padding-bottom: ${I(15)};
-  `),zm=B.div(()=>D`
-    height: 100%;
-    overflow-y: auto;
-  `),Fm=B.div(({theme:e})=>D`
-    margin: 0 ${I(2)};
-    max-width: ${I(300)};
-    border-radius: ${e.radius.small};
-    background-color: ${e.colors.white};
-  `),Im=e=>c.jsx(Rm,{children:c.jsx(zm,{children:c.jsx(Fm,{id:"doc-content",children:e.children})})}),Tm="Save as PDF",Lm="Address",Om="City",Dm="Phone",Am="Fullstack developer with experience in Web and Mobile applications using ReactJS ecosystem and also developing APIs through frameworks such as NestJS or Spring Boot, good knowledge of AWS and cloud systems. I like to be creative and always try to develop my own solution for the problem and also to learn different kind of technologies and more productive ways to improve code quality and deliver applications faster.",Mm="Experience",Bm="UK software company that provides software development services to third-party companies. some projects:",Um="Online platform used to manage Aesthetic clinics with more than 11 franchises as client, built with React, NodeJS, Mongodb and Docker.",Vm="Mobile Application used to handles vehicles (open/close doors, start/stop engine, etc), built with ClojureScript, React Native, Blockchain API, Android/IOS APIs.",Wm="Online platform that uses the powers of GPT chat to evaluate candidates' CVs and assign them a score, built with NextJS with MatineUI, OpenAI API and AWS services.",Hm="Dashboard for inventory management and barrel sales, synchronized with Google spreadsheets, built with ViteJS with MantineUI, Google APIs and AWS services.",Qm="Browser extension that provides real-time guides to help users perform complex tasks across many Websites (AWS, Google cloud, etc), built with React, Chrome APIs and AWS services.",Gm="Company website built with NextJS and Styled Components.",Km="Web application with calendar to schedule workout time, built with React and AWS services.",Ym="Online platform to manage students and it's class activities, with professor dashhboard, blog section and course payments, built with NextJS and Django.",Jm="Web application with geolocation to map streets points that need attention from the city hall, built with nodeJS and AngularJS.",Zm="Education",Xm="Udemy Certificates",qm="ReactJS Applications with Redux",bm="Design of MVP with Figma",eg="NestJS Fundamentals",tg="Serverless Applications on AWS",ng="Agile Software Development",rg="Typescript with NodeJS, SQL and NoSQL databases",og="Introduction to Clojure language",lg="Java and Spring Boot with SQL databases",ig="English Step-by-Step",ug="Graduation, Analysis and development of systems.",sg="School, Computer Technician.",ag="Languages",cg="Portuguese",fg="Fluent Language.",dg="English",pg="Good writing and reading, advanced speaking.",hg="Basic writing and reading.",mg="Extra Works",gg="Web application to discovery new games with more than 50,000 games filtered by platform, category and release year, built with React.",vg="This document that was made in React and available in multiple languages, built with React.",yg="Application that provide console interface like PS5/Xbox for PCs, built with React and Electron.",xg="Web and Mobile application to encrypt plan text, built with React, React Native and CryptoJS.",wg="Todo application with calendar and notes, built with React.",_g="Translation website with multiple language support, built with React and GoogleAPIs.",Sg={header_pdf_btn:Tm,header_address:Lm,header_city:Om,header_phone:Dm,cv_resume:Am,experience_title:Mm,experience_westpoint_text:Bm,experience_collums_text:Um,experience_vouchio_text:Vm,experience_talentId_text:Wm,experience_vintage_text:Hm,experience_quarx_text:Qm,experience_website_text:Gm,experience_centralacademy_text:Km,experience_cef_text:Ym,experience_socialpower_text:Jm,education_title:Zm,education_udemy_title:Xm,education_udemy_course_1:qm,education_udemy_course_2:bm,education_udemy_course_3:eg,education_udemy_course_4:tg,education_udemy_course_5:ng,education_udemy_course_6:rg,education_udemy_course_7:og,education_udemy_course_8:lg,education_udemy_course_9:ig,education_ifpi:ug,education_school:sg,language_title:ag,language_pt_title:cg,language_pt_text:fg,language_en_title:dg,language_en_text:pg,language_jp_text:hg,extraworks_title:mg,extraworks_gamefinder_text:gg,extraworks_personalcv_text:vg,extraworks_consoleui_text:yg,extraworks_easyencrypt_text:xg,extraworks_taskmanage_text:wg,extraworks_translationpwa_text:_g},kg="Salvar como PDF",Cg="Endereço",Eg="Cidade",jg="Telefone",Pg="Desenvolvedor Fullstack com experiência em aplicações Web e Mobile utilizando o ecossistema ReactJS e no desenvolvendo APIs através de frameworks como NestJS ou Spring Boot, bom conhecimento em AWS e sistemas em nuvem. Gosto de ser criativo e sempre tento desenvolver minha própria solução para o problema, também gosto de aprender diferentes tipos de tecnologias e formas mais produtivas de melhorar a qualidade do código e entregar aplicações mais rapidamente.",$g="Experiência",Ng="Empresa de software do Reino Unido que fornece serviços de desenvolvimento de software para empresas de terceiros. Alguns projetos:",Rg="Plataforma online usada para gerenciar clínicas estéticas com mais de 11 franquias como cliente, construída com React, NodeJS, Mongodb e Docker.",zg="Aplicativo móvel usado para controlar veículos (abrir/fechar portas, ligar/desligar o motor, etc), construído com ClojureScript, React Native, Blockchain API, APIs Android/IOS.",Fg="Plataforma online que utiliza os poderes do chat GPT para avaliar CVs de candidatos e atribuir-lhes uma pontuação, construída com NextJS com MatineUI, OpenAI API e serviços AWS.",Ig="Dashboard para gestão de inventário e vendas de barril, sincronizado com planilhas do Google, construído com ViteJS com MantineUI, APIs do Google e serviços AWS.",Tg="Extensão do navegador que fornece guias em tempo real para ajudar os usuários a realizar tarefas complexas em muitos sites (AWS, Google cloud, etc), construída com React, APIs do Chrome e serviços AWS.",Lg="Site da empresa construído com NextJS e Styled Components.",Og="Aplicativo web com calendário para agendar tempo de treino, construído com React e serviços AWS.",Dg="Plataforma online para gerenciar alunos e suas atividades de classe, com painel de professor, seção de blog e pagamento de cursos, construída com NextJS e Django.",Ag="Aplicativo web com geolocalização para mapear pontos de ruas que precisam de atenção da prefeitura, construído com nodeJS e AngularJS.",Mg="Educação",Bg="Certificados Udemy",Ug="Aplicações ReactJS com Redux",Vg="Design de MVP com Figma",Wg="Fundamentos do NestJS",Hg="Aplicações sem servidor na AWS",Qg="Desenvolvimento Ágil de Software",Gg="Typescript com NodeJS, bancos de dados SQL e NoSQL",Kg="Introdução à linguagem Clojure",Yg="Java e Spring Boot com bancos de dados SQL",Jg="Inglês Passo a Passo",Zg="Graduação, Análise e desenvolvimento de sistemas.",Xg="Escola, Técnico em Informática.",qg="Idiomas",bg="Português",ev="Língua fluente.",tv="Inglês",nv="Boa escrita e leitura, fala avançada.",rv="Escrita e leitura básicas.",ov="Trabalhos Extras",lv="Aplicativo web para descobrir novos jogos com mais de 50.000 jogos filtrados por plataforma, categoria e ano de lançamento, construído com React.",iv="Este documento foi feito em React e está disponível em vários idiomas, construído com React.",uv="Aplicativo que fornece interface de console como PS5/Xbox para PCs, construído com React e Electron.",sv="Aplicativo web e móvel para criptografar texto plano, construído com React, React Native e CryptoJS.",av="Aplicativo de tarefas com calendário e notas, construído com React.",cv="Site de tradução com suporte a vários idiomas, construído com React e GoogleAPIs.",fv={header_pdf_btn:kg,header_address:Cg,header_city:Eg,header_phone:jg,cv_resume:Pg,experience_title:$g,experience_westpoint_text:Ng,experience_collums_text:Rg,experience_vouchio_text:zg,experience_talentId_text:Fg,experience_vintage_text:Ig,experience_quarx_text:Tg,experience_website_text:Lg,experience_centralacademy_text:Og,experience_cef_text:Dg,experience_socialpower_text:Ag,education_title:Mg,education_udemy_title:Bg,education_udemy_course_1:Ug,education_udemy_course_2:Vg,education_udemy_course_3:Wg,education_udemy_course_4:Hg,education_udemy_course_5:Qg,education_udemy_course_6:Gg,education_udemy_course_7:Kg,education_udemy_course_8:Yg,education_udemy_course_9:Jg,education_ifpi:Zg,education_school:Xg,language_title:qg,language_pt_title:bg,language_pt_text:ev,language_en_title:tv,language_en_text:nv,language_jp_text:rv,extraworks_title:ov,extraworks_gamefinder_text:lv,extraworks_personalcv_text:iv,extraworks_consoleui_text:uv,extraworks_easyencrypt_text:sv,extraworks_taskmanage_text:av,extraworks_translationpwa_text:cv},ap=()=>{try{return localStorage.getItem("lang")||"en"}catch{return"en"}},dv=e=>{try{localStorage.setItem("lang",e),location.reload()}catch{}},pv=e=>{const t=ap(),n=Sg,r=fv;return t==="pt"?r[e]||"NO_TEXT":n[e]||"NO_TEXT"},hv=async()=>{const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const n=t.contentDocument;!t||!e||!n||(n.head.innerHTML=document.head.innerHTML,n.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",await new Promise(r=>setTimeout(r,1e3)),t==null||t.contentWindow.print())};var cp={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},oc=ne.createContext&&ne.createContext(cp),mv=["attr","size","title"];function gv(e,t){if(e==null)return{};var n=vv(e,t),r,o;if(Object.getOwnPropertySymbols){var l=Object.getOwnPropertySymbols(e);for(o=0;o<l.length;o++)r=l[o],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function vv(e,t){if(e==null)return{};var n={},r=Object.keys(e),o,l;for(l=0;l<r.length;l++)o=r[l],!(t.indexOf(o)>=0)&&(n[o]=e[o]);return n}function ml(){return ml=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ml.apply(this,arguments)}function lc(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(o){return Object.getOwnPropertyDescriptor(e,o).enumerable})),n.push.apply(n,r)}return n}function gl(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?lc(Object(n),!0).forEach(function(r){yv(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):lc(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function yv(e,t,n){return t=xv(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function xv(e){var t=wv(e,"string");return typeof t=="symbol"?t:String(t)}function wv(e,t){if(typeof e!="object"||e===null)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(typeof r!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function fp(e){return e&&e.map((t,n)=>ne.createElement(t.tag,gl({key:n},t.attr),fp(t.child)))}function nr(e){return t=>ne.createElement(_v,ml({attr:gl({},e.attr)},t),fp(e.child))}function _v(e){var t=n=>{var{attr:r,size:o,title:l}=e,i=gv(e,mv),u=o||n.size||"1em",s;return n.className&&(s=n.className),e.className&&(s=(s?s+" ":"")+e.className),ne.createElement("svg",ml({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},n.attr,r,i,{className:s,style:gl(gl({color:e.color||n.color},n.style),e.style),height:u,width:u,xmlns:"http://www.w3.org/2000/svg"}),l&&ne.createElement("title",null,l),e.children)};return oc!==void 0?ne.createElement(oc.Consumer,null,n=>t(n)):t(cp)}function Sv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M18 9 12 3 6 9H18ZM18 15 12 21 6 15H18Z"},child:[]}]})(e)}function kv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"},child:[]}]})(e)}function Cv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M21 8V20.9932C21 21.5501 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.4487 2 4.00221 2H14.9968L21 8ZM19 9H14V4H5V20H19V9ZM8 7H11V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z"},child:[]}]})(e)}function Ev(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M18.5 10L22.9 21H20.745L19.544 18H15.454L14.255 21H12.101L16.5 10H18.5ZM10 2V4H16V6L14.0322 6.0006C13.2425 8.36616 11.9988 10.5057 10.4115 12.301C11.1344 12.9457 11.917 13.5176 12.7475 14.0079L11.9969 15.8855C10.9237 15.2781 9.91944 14.5524 8.99961 13.7249C7.21403 15.332 5.10914 16.5553 2.79891 17.2734L2.26257 15.3442C4.2385 14.7203 6.04543 13.6737 7.59042 12.3021C6.46277 11.0281 5.50873 9.57985 4.76742 8.00028L7.00684 8.00037C7.57018 9.03885 8.23979 10.0033 8.99967 10.877C10.2283 9.46508 11.2205 7.81616 11.9095 6.00101L2 6V4H8V2H10ZM17.5 12.8852L16.253 16H18.745L17.5 12.8852Z"},child:[]}]})(e)}function jv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M5.88401 18.6531C5.58404 18.4523 5.32587 18.1972 5.0239 17.8366C4.91473 17.7062 4.47283 17.1521 4.55811 17.258C4.09533 16.6831 3.80296 16.4168 3.50156 16.3087C2.9817 16.1223 2.7114 15.5497 2.89784 15.0298C3.08428 14.51 3.65685 14.2397 4.17672 14.4261C4.92936 14.696 5.43847 15.1609 6.12425 16.0141C6.03025 15.8972 6.46364 16.4408 6.55731 16.5526C6.74784 16.7802 6.88732 16.918 6.99629 16.9909C7.20118 17.128 7.58451 17.1871 8.14709 17.1308C8.17065 16.7487 8.24136 16.378 8.34919 16.0355C5.38097 15.3101 3.70116 13.3949 3.70116 9.63947C3.70116 8.4006 4.0704 7.28368 4.75917 6.34756C4.5415 5.45368 4.57433 4.37259 5.06092 3.15611C5.1725 2.87715 5.40361 2.66314 5.69031 2.57328C5.77242 2.54949 5.81791 2.5389 5.89878 2.52648C6.70167 2.40319 7.83573 2.69681 9.31449 3.62311C10.181 3.41855 11.0885 3.31476 12.0012 3.31476C12.9129 3.31476 13.8196 3.41835 14.6854 3.62253C16.1619 2.68976 17.2986 2.39625 18.1072 2.52627C18.1919 2.53988 18.2645 2.55758 18.3249 2.57741C18.6059 2.66967 18.8316 2.88155 18.9414 3.15611C19.4279 4.37232 19.4608 5.45319 19.2433 6.34695C19.9342 7.28313 20.3012 8.39184 20.3012 9.63947C20.3012 13.3966 18.627 15.3046 15.6588 16.0318C15.7837 16.4467 15.8496 16.9103 15.8496 17.4118C15.8496 18.0763 15.8471 18.7108 15.8424 19.4223C15.8412 19.6124 15.8397 19.8156 15.8375 20.1279C16.2129 20.2107 16.5229 20.5074 16.6031 20.9086C16.7114 21.4502 16.3602 21.977 15.8186 22.0853C14.6794 22.3132 13.8353 21.5535 13.8353 20.5608C13.8353 20.4705 13.836 20.3414 13.8375 20.1142C13.8398 19.8012 13.8412 19.5987 13.8425 19.4092C13.8471 18.7017 13.8496 18.0714 13.8496 17.4118C13.8496 16.7145 13.6664 16.26 13.4237 16.0508C12.7627 15.481 13.0977 14.3971 13.965 14.2996C16.9314 13.9663 18.3012 12.8174 18.3012 9.63947C18.3012 8.68484 17.9893 7.89547 17.3881 7.23534C17.1301 6.95209 17.0567 6.54634 17.199 6.19062C17.3647 5.77639 17.4354 5.2336 17.2941 4.57678L17.2847 4.57944C16.7928 4.71861 16.1744 5.01956 15.4261 5.52826C15.182 5.69413 14.8772 5.74377 14.5932 5.66388C13.7729 5.43319 12.8913 5.31476 12.0012 5.31476C11.111 5.31476 10.2294 5.43319 9.40916 5.66388C9.12662 5.74335 8.82344 5.69468 8.57997 5.53077C7.8274 5.02414 7.2056 4.72355 6.71079 4.58352C6.56735 5.23672 6.63814 5.77758 6.80336 6.19062C6.94565 6.54634 6.87219 6.95209 6.61423 7.23534C6.01715 7.89096 5.70116 8.69352 5.70116 9.63947C5.70116 12.8114 7.07225 13.9681 10.023 14.2996C10.8883 14.3969 11.2246 15.4767 10.5675 16.048C10.3751 16.2153 10.1384 16.7799 10.1384 17.4118V20.5608C10.1384 21.5472 9.30356 22.2866 8.17878 22.0898C7.63476 21.9946 7.27093 21.4764 7.36613 20.9324C7.43827 20.5201 7.75331 20.2114 8.13841 20.1274V19.1379C7.22829 19.1991 6.47656 19.0496 5.88401 18.6531Z"},child:[]}]})(e)}function Pv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M12 3C16.9706 3 21 7.02944 21 12H19C19 8.13401 15.866 5 12 5V3Z"},child:[]}]})(e)}const $v={download:c.jsx(kv,{}),selector:c.jsx(Sv,{}),spinner:c.jsx(Pv,{}),github:c.jsx(jv,{}),template:c.jsx(Cv,{}),language:c.jsx(Ev,{})},Nv=B.span(({size:e})=>D`
-    display: inline-flex;
-    font-size: ${I(e||6)};
-    cursor: pointer;
-  `),Fn=e=>{const{type:t,size:n,style:r,onPress:o}=e,l=N.useMemo(()=>$v[t],[]);return c.jsx(Nv,{className:"icon",size:n,style:r,onClick:o,children:l})},ic=e=>e.check?e.true||e.children:e.false,Rv=B.div(()=>D``),zv=B.div(({theme:e})=>D`
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: ${e.colors.black+"88"};
-    color: ${e.colors.white};
-    backdrop-filter: blur(10px);
-    z-index: 2;
-  `),uc=B.div(()=>D`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: ${I(8)};
-    animation: ${$s.spinning} 0.8s infinite linear;
-  `),Fv=B.p(({theme:e})=>D`
-    font-size: ${e.fontSize.label};
-    margin-bottom: ${I(2)};
-    animation: ${$s.slideUp} 0.5s ease-out;
-  `),Iv=B.p(({theme:e})=>D`
-    font-size: ${e.fontSize.verySmall};
-    animation: ${$s.slideUp} 0.5s ease-out;
-  `),Tv=e=>{const{show:t,type:n,title:r,description:o}=e;return c.jsxs(Rv,{children:[c.jsx(ic,{check:t&&n==="icon",children:c.jsx(uc,{children:c.jsx(Fn,{type:"spinner",size:12})})}),c.jsx(ic,{check:t&&n==="fullScreen",children:c.jsxs(zv,{children:[c.jsx(uc,{children:c.jsx(Fn,{type:"spinner",size:12})}),c.jsx(Fv,{children:r}),c.jsx(Iv,{children:o})]})})]})},sc=B.label(({theme:e})=>D`
-    display: flex;
-    align-items: center;
-    padding: 0 ${I(2)};
-    font-size: ${e.fontSize.label};
-    background-color: ${e.colors.bg3};
-    color: ${e.colors.text1};
-    border-radius: ${e.radius.small};
-    box-shadow: ${e.shadow.medium};
-
-    &:hover {
-      background-color: ${e.colors.bg4};
-    }
-  `),ac=B.select(({theme:e})=>D`
-    color: ${e.colors.text2};
-    font-size: ${e.fontSize.small};
-    font-weight: 600;
-
-    &::-webkit-scrollbar {
-      width: ${I(2)};
-    }
-
-    &::-webkit-scrollbar-track {
-      background: ${e.colors.bg1};
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: ${e.colors.gray};
-      border-radius: 2px;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background: ${e.colors.white};
-    }
-  `);B.div(()=>D`
-    min-width: max-content;
-  `);const _i=B.option(({theme:e})=>D`
-    background-color: ${e.colors.bg1};
-    color: ${e.colors.text1};
-    font-family: sans-serif;
-    font-weight: bold;
-  `),F=e=>{const{path:t}=e,n=pv(t);return c.jsx(c.Fragment,{children:n})},Lv=B.div(({theme:e})=>D`
-    width: 100%;
-    display: flex;
-    background-color: ${A.grey[800]};
-    color: ${e.colors.white};
-    padding: ${I(2)} ${I(6)};
-    font-size: ${e.fontSize.verySmall};
-  `),Ov=B.button(({theme:e})=>D`
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: ${I(4)};
-  `);B.select(({theme:e})=>D`
-    background-color: ${e.colors.bg2};
-  `);const Dv=B.button(({theme:e})=>D`
-    background-color: ${e.colors.bg2};
-    color: ${e.colors.text2};
-
-    &:hover {
-      background-color: ${e.colors.bg4};
-    }
-  `),Av=B.a(({theme:e})=>D`
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    gap: ${I(1)};
-    color: ${e.colors.white};
-    font-size: ${e.fontSize.label};
-
-    &:hover {
-      text-decoration: underline;
-    }
-  `),Mv=()=>{const[e,t]=N.useState(!1),n=async()=>{t(!0),await hv(),t(!1)};return c.jsxs(Lv,{children:[c.jsxs(Ov,{children:[c.jsxs(sc,{children:[c.jsx(Fn,{type:"language"}),c.jsxs(ac,{defaultValue:ap(),onChange:r=>dv(r.target.value),children:[c.jsx(_i,{label:"English",value:"en",selected:!0}),c.jsx(_i,{label:"Português",value:"pt"})]})]}),c.jsxs(sc,{children:[c.jsx(Fn,{type:"template"}),c.jsx(ac,{children:c.jsx(_i,{label:"Template 1",value:"0"})})]}),c.jsxs(Dv,{onClick:n,children:[c.jsx(Fn,{type:"download"}),c.jsx(F,{path:"header_pdf_btn"})]})]}),c.jsxs(Av,{href:"https://github.com/KlessitonRodrigues/personal-cv",target:"_blank",children:[c.jsx(Fn,{size:7,type:"github"}),"Github"]}),c.jsx(Tv,{type:"fullScreen",show:e})]})},Bv=B.div(()=>D`
-    width: 100%;
-    height: 100%;
-  `),Uv=B.div(({theme:e})=>D`
-    width: 100%;
-    height: 100%;
-    padding: ${I(4)};
-    background-color: ${e.colors.bg4};
-  `),dp=B.ul(({theme:e})=>D`
-    list-style: none;
-    padding-left: ${I(5)};
-    margin: ${I(2)} 0;
-
-    li {
-      margin-bottom: ${I(2)};
-    }
-  `),we=B.li(({theme:e})=>D`
-    list-style: none;
-    position: relative;
-
-    &::after {
-      content: '';
-      padding: 2px;
-      border: 1px solid ${e.colors.text1};
-      background-color: ${e.colors.text1};
-      border-radius: 50%;
-      position: absolute;
-      left: -15px;
-      top: 7px;
-    }
-
-    b {
-      margin-right: ${I(2)};
-    }
-  `),Vv=B.div(()=>D``),Wv=B.div(()=>D`
-    width: 100%;
-    padding: ${I(6)} ${I(12)};
-    background-color: ${A.blueGrey[800]};
-    color: ${A.grey[200]};
-
-    h1 {
-      margin-bottom: ${I(2)};
-      color: ${A.grey[100]};
-    }
-
-    h3 {
-      margin-bottom: ${I(4)};
-    }
-  `),Hv=B.div(()=>D`
-    padding: ${I(6)} ${I(12)};
-    background-color: ${A.grey[50]};
-    color: ${A.grey[800]};
-  `),Qv=B.div(()=>D`
-    margin: ${I(4)} 0;
-  `),be=B.h4(()=>D`
-    margin-bottom: ${I(2)};
-  `),cc=B.div(({theme:e})=>D`
-    width: ${I(45)};
-    margin-top: ${I(.75)};
-    font-size: ${e.fontSize.small};
-  `),Ve=B.span(()=>D`
-    b {
-      margin-right: ${I(2)};
-    }
-  `),ve=B.div(({gap:e,mb:t})=>D`
-    display: flex;
-    gap: ${I(e||4)};
-    margin-bottom: ${I(t||2)};
-  `),fc=B.div(({gap:e})=>D`
-    display: flex;
-    flex-direction: column;
-    gap: ${I(e||4)};
-  `),Te=B.div(({theme:e})=>D`
-    width: ${I(45)};
-    font-size: ${e.fontSize.verySmall};
-    margin-top: ${I(.75)};
-  `),Gv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"education_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2020/01 - 2023/12"})}),c.jsxs("div",{children:[c.jsx(be,{children:c.jsx(F,{path:"education_udemy_title"})}),c.jsxs(dp,{children:[c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_1"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_2"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_3"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_4"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_5"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_6"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_7"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_8"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_9"})})]})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2017/01 - 2019/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"IFPI - Instituto Federal do Piauí"}),c.jsx("p",{children:c.jsx(F,{path:"education_ifpi"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2014/02 - 2016/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Centro Estadual de Educação Profissional Professora Maria Amália"}),c.jsx(F,{path:"education_school"})]})]})]}),Kv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"experience_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024/01 - 2024/02"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Centro Educacional De Floriano"}),c.jsx("p",{children:c.jsx(F,{path:"experience_cef_text"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021/12 - 2023/12"})}),c.jsxs("div",{children:[c.jsx(be,{children:"WestPoint Software Solutions"}),c.jsx("p",{children:c.jsx(F,{path:"experience_westpoint_text"})}),c.jsxs(dp,{children:[c.jsxs(we,{children:[c.jsx("b",{children:"Collums"}),c.jsx(F,{path:"experience_collums_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Vouch IO"}),c.jsx(F,{path:"experience_vouchio_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"TalentId"}),c.jsx(F,{path:"experience_talentId_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Vintage Acquisitions"}),c.jsx(F,{path:"experience_vintage_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Quarx"}),c.jsx(F,{path:"experience_quarx_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"WestPoint Website"}),c.jsx(F,{path:"experience_website_text"})]})]})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021/03 - 2021/09"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Central Fitness"}),c.jsx("p",{children:c.jsx(F,{path:"experience_centralacademy_text"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2018/11 - 2019/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"SocialPower"}),c.jsx("p",{children:c.jsx(F,{path:"experience_socialpower_text"})})]})]})]}),Yv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"extraworks_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Game Finder"}),c.jsx(F,{path:"extraworks_gamefinder_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Personal CV"}),c.jsx(F,{path:"extraworks_personalcv_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2023"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Console UI for desktops"}),c.jsx(F,{path:"extraworks_consoleui_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2023"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Easy Encrypt"}),c.jsx(F,{path:"extraworks_easyencrypt_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2022"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Task Manager"}),c.jsx(F,{path:"extraworks_taskmanage_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Translation PWA"}),c.jsx(F,{path:"extraworks_translationpwa_text"})]})})]})]}),Jv=()=>c.jsxs(Wv,{children:[c.jsx("h1",{children:"KLÉSSITON RODRIGUES DA SILVA"}),c.jsx("h3",{children:"Fullstack JavaScript Developer"}),c.jsxs(ve,{gap:8,mb:1,children:[c.jsxs(fc,{gap:2,children:[c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_address"})}),"Rua Pernambuco Bairro Geraldão"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_city"})}),"Bertolínia, Piauí, Brasil"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_phone"})}),"+55 89994009646"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:"Email"}),c.jsx("a",{href:"mailto:klessitonrds@gmail.com",target:"blank",children:"klessitonrds@gmail.com"})]})]}),c.jsxs(fc,{gap:2,children:[c.jsxs(Ve,{children:[c.jsx("b",{children:"GitHub"}),c.jsx("a",{href:"http://github.com/KlessitonRodrigues",target:"blank",children:"KlessitonRodrigues"})]}),c.jsxs(Ve,{children:[c.jsx("b",{children:"Linkedin"}),c.jsx("a",{href:"http://linkedin.com/in/klessitonrds",target:"blank",children:"Klessitonrds"})]})]})]})]}),Zv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"language_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(cc,{children:c.jsx(F,{path:"language_pt_title"})})}),c.jsx("div",{children:c.jsx(F,{path:"language_pt_text"})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(cc,{children:c.jsx(F,{path:"language_en_title"})})}),c.jsx("div",{children:c.jsx(F,{path:"language_en_text"})})]})]}),Xv=()=>c.jsxs(Vv,{children:[c.jsx(Jv,{}),c.jsxs(Hv,{children:[c.jsx(Qv,{children:c.jsx(F,{path:"cv_resume"})}),c.jsx(Kv,{}),c.jsx(Gv,{}),c.jsx(Yv,{}),c.jsx(Zv,{})]})]}),qv=()=>c.jsxs(Bv,{children:[c.jsx(Mv,{}),c.jsx(Uv,{children:c.jsx(Im,{children:c.jsx(Xv,{})})})]}),bv=()=>c.jsx(S1,{location,children:c.jsx(Dd,{path:"/*",element:c.jsx(qv,{})})}),ey=""+new URL("roboto500-BHeBnKzs.ttf",import.meta.url).href,ty=""+new URL("roboto700-BKtbn9Wi.ttf",import.meta.url).href,ny=Nm(({theme:e})=>D`
-    @font-face {
-      font-family: Roboto;
-      src: url(${ey});
-      font-weight: 500;
-    }
-    @font-face {
-      font-family: Roboto;
-      src: url(${ty});
-      font-weight: bold;
-    }
+    to { transform: rotateZ(360deg); }`},Rm=Nm(({theme:e})=>D`
     * {
       margin: 0;
       padding: 0;
@@ -365,4 +160,199 @@ Error generating stack: `+l.message+`
       display: flex;
       flex-direction: column;
     }
-  `),Cu={colors:{main:A.blue[600],mainBg:A.blue[700],mainText:A.grey[200],bg1:A.grey[50],bg2:A.grey[100],bg3:A.grey[200],bg4:A.grey[300],text1:A.grey[900],text2:A.grey[800],text3:A.grey[700],text4:A.grey[500],gray:A.grey[500],yellow:wi.yellow[600],red:wi.red[800],blue:wi.blue[500],green:A.lightGreen[800],white:A.grey[50],black:A.black},fontSize:{h1:"1.3rem",h2:"1.25rem",h3:"1.2rem",h4:"1.15rem",h5:"1.1rem",h6:"1.05rem",body:"1rem",small:"0.95rem",verySmall:"0.9rem",label:"0.9rem"},shadow:{large:"1px 1px 4px 0 #000a",medium:"1px 1px 4px 0 #0007",small:"1px 1px 4px 0 #0004"},border:{large:`solid 1px ${A.grey[300]}`,medium:`solid 1px ${A.grey[500]}`,small:`solid 2px ${A.grey[500]}`},radius:{full:"50%",large:I(4),medium:I(3),small:I(2)}};({...Cu,colors:{...Cu.colors,bg1:A.black,bg2:A.grey[800]+"",bg3:A.grey[700]+"",bg4:A.grey[600]+"",text1:A.grey[300],text2:A.grey[400],text3:A.grey[500],text4:A.grey[700],gray:A.grey[600],white:A.grey[300]}});const ry=()=>c.jsxs(jm,{theme:Cu,children:[c.jsx(ny,{}),c.jsx(Sm,{disableCSSOMInjection:!0,children:c.jsx(E1,{children:c.jsx(bv,{})})})]}),dc=document.getElementById("root");dc&&$d(dc).render(c.jsx(ry,{}));
+  `),Cu={colors:{main:A.blue[600],mainBg:A.blue[700],mainText:A.grey[200],bg1:A.grey[50],bg2:A.grey[100],bg3:A.grey[200],bg4:A.grey[300],text1:A.grey[900],text2:A.grey[800],text3:A.grey[700],text4:A.grey[500],gray:A.grey[500],yellow:wi.yellow[600],red:wi.red[800],blue:wi.blue[500],green:A.lightGreen[800],white:A.grey[50],black:A.black},fontSize:{h1:"1.3rem",h2:"1.25rem",h3:"1.2rem",h4:"1.15rem",h5:"1.1rem",h6:"1.05rem",body:"1rem",small:"0.95rem",verySmall:"0.9rem",label:"0.9rem"},shadow:{large:"1px 1px 4px 0 #000a",medium:"1px 1px 4px 0 #0007",small:"1px 1px 4px 0 #0004"},border:{large:`solid 1px ${A.grey[300]}`,medium:`solid 1px ${A.grey[500]}`,small:`solid 2px ${A.grey[500]}`},radius:{full:"50%",large:I(4),medium:I(3),small:I(2)}};({...Cu,colors:{...Cu.colors,bg1:A.black,bg2:A.grey[800]+"",bg3:A.grey[700]+"",bg4:A.grey[600]+"",text1:A.grey[300],text2:A.grey[400],text3:A.grey[500],text4:A.grey[700],gray:A.grey[600],white:A.grey[300]}});const zm=e=>c.jsx(Sm,{disableCSSOMInjection:!0,children:c.jsxs(jm,{theme:Cu,children:[c.jsx(Rm,{}),e.children]})}),Fm=B.div(()=>D`
+    height: 100%;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: ${I(15)};
+  `),Im=B.div(()=>D`
+    height: 100%;
+    overflow-y: auto;
+  `),Tm=B.div(({theme:e})=>D`
+    margin: 0 ${I(2)};
+    max-width: ${I(300)};
+    border-radius: ${e.radius.small};
+    background-color: ${e.colors.white};
+  `),Lm=e=>c.jsx(Fm,{children:c.jsx(Im,{children:c.jsx(Tm,{id:"doc-content",children:e.children})})}),Om="Save as PDF",Dm="Address",Am="City",Mm="Phone",Bm="Fullstack developer with experience in Web and Mobile applications using ReactJS ecosystem and also developing APIs through frameworks such as NestJS or Spring Boot, good knowledge of AWS and cloud systems. I like to be creative and always try to develop my own solution for the problem and also to learn different kind of technologies and more productive ways to improve code quality and deliver applications faster.",Um="Experience",Vm="UK software company that provides software development services to third-party companies. some projects:",Wm="Online platform used to manage Aesthetic clinics with more than 11 franchises as client, built with React, NodeJS, Mongodb and Docker.",Hm="Mobile Application used to handles vehicles (open/close doors, start/stop engine, etc), built with ClojureScript, React Native, Blockchain API, Android/IOS APIs.",Qm="Online platform that uses the powers of GPT chat to evaluate candidates' CVs and assign them a score, built with NextJS with MatineUI, OpenAI API and AWS services.",Gm="Dashboard for inventory management and barrel sales, synchronized with Google spreadsheets, built with ViteJS with MantineUI, Google APIs and AWS services.",Km="Browser extension that provides real-time guides to help users perform complex tasks across many Websites (AWS, Google cloud, etc), built with React, Chrome APIs and AWS services.",Ym="Company website built with NextJS and Styled Components.",Jm="Web application with calendar to schedule workout time, built with React and AWS services.",Zm="Online platform to manage students and it's class activities, with professor dashhboard, blog section and course payments, built with NextJS and Django.",Xm="Web application with geolocation to map streets points that need attention from the city hall, built with nodeJS and AngularJS.",qm="Education",bm="Udemy Certificates",eg="ReactJS Applications with Redux",tg="Design of MVP with Figma",ng="NestJS Fundamentals",rg="Serverless Applications on AWS",og="Agile Software Development",lg="Typescript with NodeJS, SQL and NoSQL databases",ig="Introduction to Clojure language",ug="Java and Spring Boot with SQL databases",sg="English Step-by-Step",ag="Graduation, Analysis and development of systems.",cg="School, Computer Technician.",fg="Languages",dg="Portuguese",pg="Fluent Language.",hg="English",mg="Good writing and reading, advanced speaking.",gg="Basic writing and reading.",vg="Extra Works",yg="Web application to discovery new games with more than 50,000 games filtered by platform, category and release year, built with React.",xg="This document that was made in React and available in multiple languages, built with React.",wg="Application that provide console interface like PS5/Xbox for PCs, built with React and Electron.",_g="Web and Mobile application to encrypt plan text, built with React, React Native and CryptoJS.",Sg="Todo application with calendar and notes, built with React.",kg="Translation website with multiple language support, built with React and GoogleAPIs.",Cg={header_pdf_btn:Om,header_address:Dm,header_city:Am,header_phone:Mm,cv_resume:Bm,experience_title:Um,experience_westpoint_text:Vm,experience_collums_text:Wm,experience_vouchio_text:Hm,experience_talentId_text:Qm,experience_vintage_text:Gm,experience_quarx_text:Km,experience_website_text:Ym,experience_centralacademy_text:Jm,experience_cef_text:Zm,experience_socialpower_text:Xm,education_title:qm,education_udemy_title:bm,education_udemy_course_1:eg,education_udemy_course_2:tg,education_udemy_course_3:ng,education_udemy_course_4:rg,education_udemy_course_5:og,education_udemy_course_6:lg,education_udemy_course_7:ig,education_udemy_course_8:ug,education_udemy_course_9:sg,education_ifpi:ag,education_school:cg,language_title:fg,language_pt_title:dg,language_pt_text:pg,language_en_title:hg,language_en_text:mg,language_jp_text:gg,extraworks_title:vg,extraworks_gamefinder_text:yg,extraworks_personalcv_text:xg,extraworks_consoleui_text:wg,extraworks_easyencrypt_text:_g,extraworks_taskmanage_text:Sg,extraworks_translationpwa_text:kg},Eg="Salvar como PDF",jg="Endereço",Pg="Cidade",$g="Telefone",Ng="Desenvolvedor Fullstack com experiência em aplicações Web e Mobile utilizando o ecossistema ReactJS e no desenvolvendo APIs através de frameworks como NestJS ou Spring Boot, bom conhecimento em AWS e sistemas em nuvem. Gosto de ser criativo e sempre tento desenvolver minha própria solução para o problema, também gosto de aprender diferentes tipos de tecnologias e formas mais produtivas de melhorar a qualidade do código e entregar aplicações mais rapidamente.",Rg="Experiência",zg="Empresa de software do Reino Unido que fornece serviços de desenvolvimento de software para empresas de terceiros. Alguns projetos:",Fg="Plataforma online usada para gerenciar clínicas estéticas com mais de 11 franquias como cliente, construída com React, NodeJS, Mongodb e Docker.",Ig="Aplicativo móvel usado para controlar veículos (abrir/fechar portas, ligar/desligar o motor, etc), construído com ClojureScript, React Native, Blockchain API, APIs Android/IOS.",Tg="Plataforma online que utiliza os poderes do chat GPT para avaliar CVs de candidatos e atribuir-lhes uma pontuação, construída com NextJS com MatineUI, OpenAI API e serviços AWS.",Lg="Dashboard para gestão de inventário e vendas de barril, sincronizado com planilhas do Google, construído com ViteJS com MantineUI, APIs do Google e serviços AWS.",Og="Extensão do navegador que fornece guias em tempo real para ajudar os usuários a realizar tarefas complexas em muitos sites (AWS, Google cloud, etc), construída com React, APIs do Chrome e serviços AWS.",Dg="Site da empresa construído com NextJS e Styled Components.",Ag="Aplicativo web com calendário para agendar tempo de treino, construído com React e serviços AWS.",Mg="Plataforma online para gerenciar alunos e suas atividades de classe, com painel de professor, seção de blog e pagamento de cursos, construída com NextJS e Django.",Bg="Aplicativo web com geolocalização para mapear pontos de ruas que precisam de atenção da prefeitura, construído com nodeJS e AngularJS.",Ug="Educação",Vg="Certificados Udemy",Wg="Aplicações ReactJS com Redux",Hg="Design de MVP com Figma",Qg="Fundamentos do NestJS",Gg="Aplicações sem servidor na AWS",Kg="Desenvolvimento Ágil de Software",Yg="Typescript com NodeJS, bancos de dados SQL e NoSQL",Jg="Introdução à linguagem Clojure",Zg="Java e Spring Boot com bancos de dados SQL",Xg="Inglês Passo a Passo",qg="Graduação, Análise e desenvolvimento de sistemas.",bg="Escola, Técnico em Informática.",ev="Idiomas",tv="Português",nv="Língua fluente.",rv="Inglês",ov="Boa escrita e leitura, fala avançada.",lv="Escrita e leitura básicas.",iv="Trabalhos Extras",uv="Aplicativo web para descobrir novos jogos com mais de 50.000 jogos filtrados por plataforma, categoria e ano de lançamento, construído com React.",sv="Este documento foi feito em React e está disponível em vários idiomas, construído com React.",av="Aplicativo que fornece interface de console como PS5/Xbox para PCs, construído com React e Electron.",cv="Aplicativo web e móvel para criptografar texto plano, construído com React, React Native e CryptoJS.",fv="Aplicativo de tarefas com calendário e notas, construído com React.",dv="Site de tradução com suporte a vários idiomas, construído com React e GoogleAPIs.",pv={header_pdf_btn:Eg,header_address:jg,header_city:Pg,header_phone:$g,cv_resume:Ng,experience_title:Rg,experience_westpoint_text:zg,experience_collums_text:Fg,experience_vouchio_text:Ig,experience_talentId_text:Tg,experience_vintage_text:Lg,experience_quarx_text:Og,experience_website_text:Dg,experience_centralacademy_text:Ag,experience_cef_text:Mg,experience_socialpower_text:Bg,education_title:Ug,education_udemy_title:Vg,education_udemy_course_1:Wg,education_udemy_course_2:Hg,education_udemy_course_3:Qg,education_udemy_course_4:Gg,education_udemy_course_5:Kg,education_udemy_course_6:Yg,education_udemy_course_7:Jg,education_udemy_course_8:Zg,education_udemy_course_9:Xg,education_ifpi:qg,education_school:bg,language_title:ev,language_pt_title:tv,language_pt_text:nv,language_en_title:rv,language_en_text:ov,language_jp_text:lv,extraworks_title:iv,extraworks_gamefinder_text:uv,extraworks_personalcv_text:sv,extraworks_consoleui_text:av,extraworks_easyencrypt_text:cv,extraworks_taskmanage_text:fv,extraworks_translationpwa_text:dv},ap=()=>{try{return localStorage.getItem("lang")||"en"}catch{return"en"}},hv=e=>{try{localStorage.setItem("lang",e),location.reload()}catch{}},mv=e=>{const t=ap(),n=Cg,r=pv;return t==="pt"?r[e]||"NO_TEXT":n[e]||"NO_TEXT"},gv=async()=>{const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const n=t.contentDocument;!t||!e||!n||(n.head.innerHTML=document.head.innerHTML,n.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",await new Promise(r=>setTimeout(r,1e3)),t==null||t.contentWindow.print())};var cp={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},oc=ne.createContext&&ne.createContext(cp),vv=["attr","size","title"];function yv(e,t){if(e==null)return{};var n=xv(e,t),r,o;if(Object.getOwnPropertySymbols){var l=Object.getOwnPropertySymbols(e);for(o=0;o<l.length;o++)r=l[o],!(t.indexOf(r)>=0)&&Object.prototype.propertyIsEnumerable.call(e,r)&&(n[r]=e[r])}return n}function xv(e,t){if(e==null)return{};var n={},r=Object.keys(e),o,l;for(l=0;l<r.length;l++)o=r[l],!(t.indexOf(o)>=0)&&(n[o]=e[o]);return n}function ml(){return ml=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e},ml.apply(this,arguments)}function lc(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var r=Object.getOwnPropertySymbols(e);t&&(r=r.filter(function(o){return Object.getOwnPropertyDescriptor(e,o).enumerable})),n.push.apply(n,r)}return n}function gl(e){for(var t=1;t<arguments.length;t++){var n=arguments[t]!=null?arguments[t]:{};t%2?lc(Object(n),!0).forEach(function(r){wv(e,r,n[r])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(n)):lc(Object(n)).forEach(function(r){Object.defineProperty(e,r,Object.getOwnPropertyDescriptor(n,r))})}return e}function wv(e,t,n){return t=_v(t),t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _v(e){var t=Sv(e,"string");return typeof t=="symbol"?t:String(t)}function Sv(e,t){if(typeof e!="object"||e===null)return e;var n=e[Symbol.toPrimitive];if(n!==void 0){var r=n.call(e,t||"default");if(typeof r!="object")return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return(t==="string"?String:Number)(e)}function fp(e){return e&&e.map((t,n)=>ne.createElement(t.tag,gl({key:n},t.attr),fp(t.child)))}function nr(e){return t=>ne.createElement(kv,ml({attr:gl({},e.attr)},t),fp(e.child))}function kv(e){var t=n=>{var{attr:r,size:o,title:l}=e,i=yv(e,vv),u=o||n.size||"1em",s;return n.className&&(s=n.className),e.className&&(s=(s?s+" ":"")+e.className),ne.createElement("svg",ml({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},n.attr,r,i,{className:s,style:gl(gl({color:e.color||n.color},n.style),e.style),height:u,width:u,xmlns:"http://www.w3.org/2000/svg"}),l&&ne.createElement("title",null,l),e.children)};return oc!==void 0?ne.createElement(oc.Consumer,null,n=>t(n)):t(cp)}function Cv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M18 9 12 3 6 9H18ZM18 15 12 21 6 15H18Z"},child:[]}]})(e)}function Ev(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M13 12H16L12 16L8 12H11V8H13V12ZM15 4H5V20H19V8H15V4ZM3 2.9918C3 2.44405 3.44749 2 3.9985 2H16L20.9997 7L21 20.9925C21 21.5489 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918Z"},child:[]}]})(e)}function jv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M21 8V20.9932C21 21.5501 20.5552 22 20.0066 22H3.9934C3.44495 22 3 21.556 3 21.0082V2.9918C3 2.45531 3.4487 2 4.00221 2H14.9968L21 8ZM19 9H14V4H5V20H19V9ZM8 7H11V9H8V7ZM8 11H16V13H8V11ZM8 15H16V17H8V15Z"},child:[]}]})(e)}function Pv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M18.5 10L22.9 21H20.745L19.544 18H15.454L14.255 21H12.101L16.5 10H18.5ZM10 2V4H16V6L14.0322 6.0006C13.2425 8.36616 11.9988 10.5057 10.4115 12.301C11.1344 12.9457 11.917 13.5176 12.7475 14.0079L11.9969 15.8855C10.9237 15.2781 9.91944 14.5524 8.99961 13.7249C7.21403 15.332 5.10914 16.5553 2.79891 17.2734L2.26257 15.3442C4.2385 14.7203 6.04543 13.6737 7.59042 12.3021C6.46277 11.0281 5.50873 9.57985 4.76742 8.00028L7.00684 8.00037C7.57018 9.03885 8.23979 10.0033 8.99967 10.877C10.2283 9.46508 11.2205 7.81616 11.9095 6.00101L2 6V4H8V2H10ZM17.5 12.8852L16.253 16H18.745L17.5 12.8852Z"},child:[]}]})(e)}function $v(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M5.88401 18.6531C5.58404 18.4523 5.32587 18.1972 5.0239 17.8366C4.91473 17.7062 4.47283 17.1521 4.55811 17.258C4.09533 16.6831 3.80296 16.4168 3.50156 16.3087C2.9817 16.1223 2.7114 15.5497 2.89784 15.0298C3.08428 14.51 3.65685 14.2397 4.17672 14.4261C4.92936 14.696 5.43847 15.1609 6.12425 16.0141C6.03025 15.8972 6.46364 16.4408 6.55731 16.5526C6.74784 16.7802 6.88732 16.918 6.99629 16.9909C7.20118 17.128 7.58451 17.1871 8.14709 17.1308C8.17065 16.7487 8.24136 16.378 8.34919 16.0355C5.38097 15.3101 3.70116 13.3949 3.70116 9.63947C3.70116 8.4006 4.0704 7.28368 4.75917 6.34756C4.5415 5.45368 4.57433 4.37259 5.06092 3.15611C5.1725 2.87715 5.40361 2.66314 5.69031 2.57328C5.77242 2.54949 5.81791 2.5389 5.89878 2.52648C6.70167 2.40319 7.83573 2.69681 9.31449 3.62311C10.181 3.41855 11.0885 3.31476 12.0012 3.31476C12.9129 3.31476 13.8196 3.41835 14.6854 3.62253C16.1619 2.68976 17.2986 2.39625 18.1072 2.52627C18.1919 2.53988 18.2645 2.55758 18.3249 2.57741C18.6059 2.66967 18.8316 2.88155 18.9414 3.15611C19.4279 4.37232 19.4608 5.45319 19.2433 6.34695C19.9342 7.28313 20.3012 8.39184 20.3012 9.63947C20.3012 13.3966 18.627 15.3046 15.6588 16.0318C15.7837 16.4467 15.8496 16.9103 15.8496 17.4118C15.8496 18.0763 15.8471 18.7108 15.8424 19.4223C15.8412 19.6124 15.8397 19.8156 15.8375 20.1279C16.2129 20.2107 16.5229 20.5074 16.6031 20.9086C16.7114 21.4502 16.3602 21.977 15.8186 22.0853C14.6794 22.3132 13.8353 21.5535 13.8353 20.5608C13.8353 20.4705 13.836 20.3414 13.8375 20.1142C13.8398 19.8012 13.8412 19.5987 13.8425 19.4092C13.8471 18.7017 13.8496 18.0714 13.8496 17.4118C13.8496 16.7145 13.6664 16.26 13.4237 16.0508C12.7627 15.481 13.0977 14.3971 13.965 14.2996C16.9314 13.9663 18.3012 12.8174 18.3012 9.63947C18.3012 8.68484 17.9893 7.89547 17.3881 7.23534C17.1301 6.95209 17.0567 6.54634 17.199 6.19062C17.3647 5.77639 17.4354 5.2336 17.2941 4.57678L17.2847 4.57944C16.7928 4.71861 16.1744 5.01956 15.4261 5.52826C15.182 5.69413 14.8772 5.74377 14.5932 5.66388C13.7729 5.43319 12.8913 5.31476 12.0012 5.31476C11.111 5.31476 10.2294 5.43319 9.40916 5.66388C9.12662 5.74335 8.82344 5.69468 8.57997 5.53077C7.8274 5.02414 7.2056 4.72355 6.71079 4.58352C6.56735 5.23672 6.63814 5.77758 6.80336 6.19062C6.94565 6.54634 6.87219 6.95209 6.61423 7.23534C6.01715 7.89096 5.70116 8.69352 5.70116 9.63947C5.70116 12.8114 7.07225 13.9681 10.023 14.2996C10.8883 14.3969 11.2246 15.4767 10.5675 16.048C10.3751 16.2153 10.1384 16.7799 10.1384 17.4118V20.5608C10.1384 21.5472 9.30356 22.2866 8.17878 22.0898C7.63476 21.9946 7.27093 21.4764 7.36613 20.9324C7.43827 20.5201 7.75331 20.2114 8.13841 20.1274V19.1379C7.22829 19.1991 6.47656 19.0496 5.88401 18.6531Z"},child:[]}]})(e)}function Nv(e){return nr({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M12 3C16.9706 3 21 7.02944 21 12H19C19 8.13401 15.866 5 12 5V3Z"},child:[]}]})(e)}const Rv={download:c.jsx(Ev,{}),selector:c.jsx(Cv,{}),spinner:c.jsx(Nv,{}),github:c.jsx($v,{}),template:c.jsx(jv,{}),language:c.jsx(Pv,{})},zv=B.span(({size:e})=>D`
+    display: inline-flex;
+    font-size: ${I(e||6)};
+    cursor: pointer;
+  `),Fn=e=>{const{type:t,size:n,style:r,onPress:o}=e,l=N.useMemo(()=>Rv[t],[]);return c.jsx(zv,{className:"icon",size:n,style:r,onClick:o,children:l})},ic=e=>e.check?e.true||e.children:e.false,Fv=B.div(()=>D``),Iv=B.div(({theme:e})=>D`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: ${e.colors.black+"88"};
+    color: ${e.colors.white};
+    backdrop-filter: blur(10px);
+    z-index: 2;
+  `),uc=B.div(()=>D`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: ${I(8)};
+    animation: ${$s.spinning} 0.8s infinite linear;
+  `),Tv=B.p(({theme:e})=>D`
+    font-size: ${e.fontSize.label};
+    margin-bottom: ${I(2)};
+    animation: ${$s.slideUp} 0.5s ease-out;
+  `),Lv=B.p(({theme:e})=>D`
+    font-size: ${e.fontSize.verySmall};
+    animation: ${$s.slideUp} 0.5s ease-out;
+  `),Ov=e=>{const{show:t,type:n,title:r,description:o}=e;return c.jsxs(Fv,{children:[c.jsx(ic,{check:t&&n==="icon",children:c.jsx(uc,{children:c.jsx(Fn,{type:"spinner",size:12})})}),c.jsx(ic,{check:t&&n==="fullScreen",children:c.jsxs(Iv,{children:[c.jsx(uc,{children:c.jsx(Fn,{type:"spinner",size:12})}),c.jsx(Tv,{children:r}),c.jsx(Lv,{children:o})]})})]})},sc=B.label(({theme:e})=>D`
+    display: flex;
+    align-items: center;
+    padding: 0 ${I(2)};
+    font-size: ${e.fontSize.label};
+    background-color: ${e.colors.bg3};
+    color: ${e.colors.text1};
+    border-radius: ${e.radius.small};
+    box-shadow: ${e.shadow.medium};
+
+    &:hover {
+      background-color: ${e.colors.bg4};
+    }
+  `),ac=B.select(({theme:e})=>D`
+    color: ${e.colors.text2};
+    font-size: ${e.fontSize.small};
+    font-weight: 600;
+
+    &::-webkit-scrollbar {
+      width: ${I(2)};
+    }
+
+    &::-webkit-scrollbar-track {
+      background: ${e.colors.bg1};
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${e.colors.gray};
+      border-radius: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: ${e.colors.white};
+    }
+  `);B.div(()=>D`
+    min-width: max-content;
+  `);const _i=B.option(({theme:e})=>D`
+    background-color: ${e.colors.bg1};
+    color: ${e.colors.text1};
+    font-family: sans-serif;
+    font-weight: bold;
+  `),F=e=>{const{path:t}=e,n=mv(t);return c.jsx(c.Fragment,{children:n})},Dv=B.div(({theme:e})=>D`
+    width: 100%;
+    display: flex;
+    background-color: ${A.grey[800]};
+    color: ${e.colors.white};
+    padding: ${I(2)} ${I(6)};
+    font-size: ${e.fontSize.verySmall};
+  `),Av=B.button(({theme:e})=>D`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: ${I(4)};
+  `);B.select(({theme:e})=>D`
+    background-color: ${e.colors.bg2};
+  `);const Mv=B.button(({theme:e})=>D`
+    background-color: ${e.colors.bg2};
+    color: ${e.colors.text2};
+
+    &:hover {
+      background-color: ${e.colors.bg4};
+    }
+  `),Bv=B.a(({theme:e})=>D`
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: ${I(1)};
+    color: ${e.colors.white};
+    font-size: ${e.fontSize.label};
+
+    &:hover {
+      text-decoration: underline;
+    }
+  `),Uv=()=>{const[e,t]=N.useState(!1),n=async()=>{t(!0),await gv(),t(!1)};return c.jsxs(Dv,{children:[c.jsxs(Av,{children:[c.jsxs(sc,{children:[c.jsx(Fn,{type:"language"}),c.jsxs(ac,{defaultValue:ap(),onChange:r=>hv(r.target.value),children:[c.jsx(_i,{label:"English",value:"en",selected:!0}),c.jsx(_i,{label:"Português",value:"pt"})]})]}),c.jsxs(sc,{children:[c.jsx(Fn,{type:"template"}),c.jsx(ac,{children:c.jsx(_i,{label:"Template 1",value:"0"})})]}),c.jsxs(Mv,{onClick:n,children:[c.jsx(Fn,{type:"download"}),c.jsx(F,{path:"header_pdf_btn"})]})]}),c.jsxs(Bv,{href:"https://github.com/KlessitonRodrigues/personal-cv",target:"_blank",children:[c.jsx(Fn,{size:7,type:"github"}),"Github"]}),c.jsx(Ov,{type:"fullScreen",show:e})]})},Vv=B.div(()=>D`
+    width: 100%;
+    height: 100%;
+  `),Wv=B.div(({theme:e})=>D`
+    width: 100%;
+    height: 100%;
+    padding: ${I(4)};
+    background-color: ${e.colors.bg4};
+  `),dp=B.ul(({theme:e})=>D`
+    list-style: none;
+    padding-left: ${I(5)};
+    margin: ${I(2)} 0;
+
+    li {
+      margin-bottom: ${I(2)};
+    }
+  `),we=B.li(({theme:e})=>D`
+    list-style: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      padding: 2px;
+      border: 1px solid ${e.colors.text1};
+      background-color: ${e.colors.text1};
+      border-radius: 50%;
+      position: absolute;
+      left: -15px;
+      top: 7px;
+    }
+
+    b {
+      margin-right: ${I(2)};
+    }
+  `),Hv=B.div(()=>D``),Qv=B.div(()=>D`
+    width: 100%;
+    padding: ${I(6)} ${I(12)};
+    background-color: ${A.blueGrey[800]};
+    color: ${A.grey[200]};
+
+    h1 {
+      margin-bottom: ${I(2)};
+      color: ${A.grey[100]};
+    }
+
+    h3 {
+      margin-bottom: ${I(4)};
+    }
+  `),Gv=B.div(()=>D`
+    padding: ${I(6)} ${I(12)};
+    background-color: ${A.grey[50]};
+    color: ${A.grey[800]};
+  `),Kv=B.div(()=>D`
+    margin: ${I(4)} 0;
+  `),be=B.h4(()=>D`
+    margin-bottom: ${I(2)};
+  `),cc=B.div(({theme:e})=>D`
+    width: ${I(45)};
+    margin-top: ${I(.75)};
+    font-size: ${e.fontSize.small};
+  `),Ve=B.span(()=>D`
+    b {
+      margin-right: ${I(2)};
+    }
+  `),ve=B.div(({gap:e,mb:t})=>D`
+    display: flex;
+    gap: ${I(e||4)};
+    margin-bottom: ${I(t||2)};
+  `),fc=B.div(({gap:e})=>D`
+    display: flex;
+    flex-direction: column;
+    gap: ${I(e||4)};
+  `),Te=B.div(({theme:e})=>D`
+    width: ${I(45)};
+    font-size: ${e.fontSize.verySmall};
+    margin-top: ${I(.75)};
+  `),Yv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"education_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2020/01 - 2023/12"})}),c.jsxs("div",{children:[c.jsx(be,{children:c.jsx(F,{path:"education_udemy_title"})}),c.jsxs(dp,{children:[c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_1"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_2"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_3"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_4"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_5"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_6"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_7"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_8"})}),c.jsx(we,{children:c.jsx(F,{path:"education_udemy_course_9"})})]})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2017/01 - 2019/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"IFPI - Instituto Federal do Piauí"}),c.jsx("p",{children:c.jsx(F,{path:"education_ifpi"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2014/02 - 2016/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Centro Estadual de Educação Profissional Professora Maria Amália"}),c.jsx(F,{path:"education_school"})]})]})]}),Jv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"experience_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024/01 - 2024/02"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Centro Educacional De Floriano"}),c.jsx("p",{children:c.jsx(F,{path:"experience_cef_text"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021/12 - 2023/12"})}),c.jsxs("div",{children:[c.jsx(be,{children:"WestPoint Software Solutions"}),c.jsx("p",{children:c.jsx(F,{path:"experience_westpoint_text"})}),c.jsxs(dp,{children:[c.jsxs(we,{children:[c.jsx("b",{children:"Collums"}),c.jsx(F,{path:"experience_collums_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Vouch IO"}),c.jsx(F,{path:"experience_vouchio_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"TalentId"}),c.jsx(F,{path:"experience_talentId_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Vintage Acquisitions"}),c.jsx(F,{path:"experience_vintage_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"Quarx"}),c.jsx(F,{path:"experience_quarx_text"})]}),c.jsxs(we,{children:[c.jsx("b",{children:"WestPoint Website"}),c.jsx(F,{path:"experience_website_text"})]})]})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021/03 - 2021/09"})}),c.jsxs("div",{children:[c.jsx(be,{children:"Central Fitness"}),c.jsx("p",{children:c.jsx(F,{path:"experience_centralacademy_text"})})]})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2018/11 - 2019/11"})}),c.jsxs("div",{children:[c.jsx(be,{children:"SocialPower"}),c.jsx("p",{children:c.jsx(F,{path:"experience_socialpower_text"})})]})]})]}),Zv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"extraworks_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Game Finder"}),c.jsx(F,{path:"extraworks_gamefinder_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2024"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Personal CV"}),c.jsx(F,{path:"extraworks_personalcv_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2023"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Console UI for desktops"}),c.jsx(F,{path:"extraworks_consoleui_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2023"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Easy Encrypt"}),c.jsx(F,{path:"extraworks_easyencrypt_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2022"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Task Manager"}),c.jsx(F,{path:"extraworks_taskmanage_text"})]})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(Te,{children:"2021"})}),c.jsx("div",{children:c.jsxs(Ve,{children:[c.jsx("b",{children:"Translation PWA"}),c.jsx(F,{path:"extraworks_translationpwa_text"})]})})]})]}),Xv=()=>c.jsxs(Qv,{children:[c.jsx("h1",{children:"KLÉSSITON RODRIGUES DA SILVA"}),c.jsx("h3",{children:"Fullstack JavaScript Developer"}),c.jsxs(ve,{gap:8,mb:1,children:[c.jsxs(fc,{gap:2,children:[c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_address"})}),"Rua Pernambuco Bairro Geraldão"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_city"})}),"Bertolínia, Piauí, Brasil"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:c.jsx(F,{path:"header_phone"})}),"+55 89994009646"]}),c.jsxs(Ve,{children:[c.jsx("b",{children:"Email"}),c.jsx("a",{href:"mailto:klessitonrds@gmail.com",target:"blank",children:"klessitonrds@gmail.com"})]})]}),c.jsxs(fc,{gap:2,children:[c.jsxs(Ve,{children:[c.jsx("b",{children:"GitHub"}),c.jsx("a",{href:"http://github.com/KlessitonRodrigues",target:"blank",children:"KlessitonRodrigues"})]}),c.jsxs(Ve,{children:[c.jsx("b",{children:"Linkedin"}),c.jsx("a",{href:"http://linkedin.com/in/klessitonrds",target:"blank",children:"Klessitonrds"})]})]})]})]}),qv=()=>c.jsxs(c.Fragment,{children:[c.jsx(be,{children:c.jsx(F,{path:"language_title"})}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(cc,{children:c.jsx(F,{path:"language_pt_title"})})}),c.jsx("div",{children:c.jsx(F,{path:"language_pt_text"})})]}),c.jsxs(ve,{children:[c.jsx("div",{children:c.jsx(cc,{children:c.jsx(F,{path:"language_en_title"})})}),c.jsx("div",{children:c.jsx(F,{path:"language_en_text"})})]})]}),bv=()=>c.jsxs(Hv,{children:[c.jsx(Xv,{}),c.jsxs(Gv,{children:[c.jsx(Kv,{children:c.jsx(F,{path:"cv_resume"})}),c.jsx(Jv,{}),c.jsx(Yv,{}),c.jsx(Zv,{}),c.jsx(qv,{})]})]}),ey=()=>c.jsxs(Vv,{children:[c.jsx(Uv,{}),c.jsx(Wv,{children:c.jsx(Lm,{children:c.jsx(bv,{})})})]}),ty=()=>c.jsx(S1,{location,children:c.jsx(Dd,{path:"/*",element:c.jsx(ey,{})})}),ny=()=>c.jsx(zm,{children:c.jsx(E1,{children:c.jsx(ty,{})})}),dc=document.getElementById("root");dc&&$d(dc).render(c.jsx(ny,{}));
