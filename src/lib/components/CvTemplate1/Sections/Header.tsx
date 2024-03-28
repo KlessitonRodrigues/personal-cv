@@ -1,6 +1,6 @@
 import Text from 'src/lib/base/Text';
 
-import { Column, Columns, Header, Label } from './styled';
+import { Column, Columns, Header, Label } from '../styled';
 
 export const CVHeader = () => {
   return (

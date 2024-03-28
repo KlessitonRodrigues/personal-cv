@@ -1,6 +1,6 @@
 import Text from 'src/lib/base/Text';
 
-import { Columns, Dates, Label, Title } from './styled';
+import { Columns, Dates, Label, Title } from '../styled';
 
 export const CVExtraWorks = () => {
   return (

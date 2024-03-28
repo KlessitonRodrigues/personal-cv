@@ -1,10 +1,10 @@
 import Text from 'src/lib/base/Text';
 
-import { CVEducation } from './Education';
-import { CVExperience } from './Experience';
-import { CVExtraWorks } from './ExtraWorks';
-import { CVHeader } from './Header';
-import { CVLanguanges } from './Languanges';
+import { CVEducation } from './Sections/Education';
+import { CVExperience } from './Sections/Experience';
+import { CVExtraWorks } from './Sections/ExtraWorks';
+import { CVHeader } from './Sections/Header';
+import { CVLanguanges } from './Sections/Languanges';
 import { Body, Container, Resume } from './styled';
 
 const CvTemplate1 = () => {

@@ -14,8 +14,8 @@ export const Container = styled.div(
   `,
 );
 
-export const Centered = styled.button(
-  ({ theme }) => css`
+export const Centered = styled.div(
+  () => css`
     width: 100%;
     display: flex;
     justify-content: center;

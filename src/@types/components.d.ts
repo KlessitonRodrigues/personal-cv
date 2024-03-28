@@ -10,11 +10,11 @@ declare namespace Props {
     size?: number;
     onPress?: () => void;
     style?: React.CSSProperties;
-    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language';
+    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language' | 'link';
   };
 
   type Text = {
-    path?: string;
+    path: string;
   };
 
   type Loading = {

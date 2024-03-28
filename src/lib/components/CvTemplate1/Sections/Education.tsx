@@ -1,7 +1,7 @@
 import { List, ListItem } from 'src/lib/base/StyledComponents/List';
 import Text from 'src/lib/base/Text';
 
-import { Columns, Dates, Title } from './styled';
+import { Columns, Dates, Title } from '../styled';
 
 export const CVEducation = () => {
   return (

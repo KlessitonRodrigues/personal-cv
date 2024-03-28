@@ -1,6 +1,6 @@
 import Text from 'src/lib/base/Text';
 
-import { Columns, SubTitle, Title } from './styled';
+import { Columns, SubTitle, Title } from '../styled';
 
 export const CVLanguanges = () => {
   return (
