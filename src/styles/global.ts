@@ -26,9 +26,9 @@ export default createGlobalStyle(
     html,
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: ${theme.colors.bg1};
-      color: ${theme.colors.text1};
       font-weight: 500;
+      background-color: ${theme.colors.bg3};
+      color: ${theme.colors.text4};
     }
     h1 {
       font-size: ${theme.fontSize.h1};
@@ -59,6 +59,12 @@ export default createGlobalStyle(
       color: unset;
       text-decoration: underline;
     }
+    label > b {
+      font-size: ${theme.fontSize.label};
+      color: ${theme.colors.main};
+      font-weight: bold;
+      opacity: 0.75;
+    }
     button,
     select {
       font-family: 'Quicksand', sans-serif;
@@ -75,7 +81,7 @@ export default createGlobalStyle(
       cursor: pointer;
     }
     div::-webkit-scrollbar {
-      width: ${cssSize(2)};
+      width: ${cssSize(3)};
     }
     div::-webkit-scrollbar-track {
       background: #0000;

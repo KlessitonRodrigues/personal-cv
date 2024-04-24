@@ -1,8 +1,13 @@
 {
   "header_pdf_btn": "Save as PDF",
+  "header_name": "KLÉSSITON RODRIGUES DA SILVA",
   "header_address": "Address",
+  "header_address_name": "Rua Pernambuco, Geraldão",
   "header_city": "City",
+  "header_city_name": "Bertolínia, Piauí, Brasil",
   "header_phone": "Phone",
+  "header_phone_number": "+55 (89) 994009646",
+  "cv_resume_title": "Resume",
   "cv_resume": "Fullstack developer with experience in Web and Mobile applications using ReactJS ecosystem and also developing APIs through frameworks such as NestJS or Spring Boot, good knowledge of AWS and cloud systems. I like to be creative and always try to develop my own solution for the problem and also to learn different kind of technologies and more productive ways to improve code quality and deliver applications faster.",
   "experience_title": "Experience",
   "experience_westpoint_text": "UK software company that provides software development services to third-party companies. some projects:",

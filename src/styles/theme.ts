@@ -32,23 +32,23 @@ export const defaultTheme: Styles.Theme = {
     body: '1rem',
     small: '0.95rem',
     verySmall: '0.9rem',
-    label: '0.9rem',
+    label: '0.8rem',
   },
   shadow: {
-    large: '1px 1px 4px 0 #000a',
-    medium: '1px 1px 4px 0 #0007',
-    small: '1px 1px 4px 0 #0004',
+    large: '0 1px 3px 0 #000a',
+    medium: '0 1px 3px 0 #0007',
+    small: '0 1px 3px 0 #0004',
   },
   border: {
-    large: `solid 1px ${mcolors.grey['300']}`,
-    medium: `solid 1px ${mcolors.grey['500']}`,
-    small: `solid 2px ${mcolors.grey['500']}`,
+    large: `solid 1px ${mcolors.grey['600']}`,
+    medium: `solid 1px ${mcolors.grey['400']}`,
+    small: `solid 1px ${mcolors.grey['100']}`,
   },
   radius: {
     full: '50%',
-    large: cssSize(4),
-    medium: cssSize(3),
-    small: cssSize(2),
+    large: cssSize(5),
+    medium: cssSize(4),
+    small: cssSize(3),
   },
 };
 

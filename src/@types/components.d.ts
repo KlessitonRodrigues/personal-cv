@@ -4,6 +4,10 @@ declare namespace Props {
     size?: number;
     gap?: number;
     mb?: number;
+    w?: string;
+    h?: string;
+    p?: string;
+    m?: string;
   };
 
   type Icons = {
@@ -15,6 +19,7 @@ declare namespace Props {
 
   type Text = {
     path: string;
+    tag?: 'b' | 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   };
 
   type Loading = {
