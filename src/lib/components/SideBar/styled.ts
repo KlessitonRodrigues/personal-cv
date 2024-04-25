@@ -30,6 +30,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     border-radius: ${theme.radius.large};
     transition: 0.3s ease-out;
     overflow: hidden;
+    text-transform: capitalize;
 
     &:hover {
       width: ${cssSize(sidebarSizeOpen)};

@@ -1,10 +1,11 @@
+import { currenMainColor } from 'src/utils/theme';
+
 import { atlassianColors as acolors, materialColors as mcolors } from './colors';
 import { cssSize } from './utils';
 
 export const defaultTheme: Styles.Theme = {
   colors: {
-    main: mcolors.blue['700'],
-    mainBg: mcolors.blue['800'],
+    ...currenMainColor,
     mainText: mcolors.grey['200'],
     bg1: mcolors.grey['50'],
     bg2: mcolors.grey['100'],

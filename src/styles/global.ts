@@ -23,7 +23,7 @@ export default createGlobalStyle(
     body {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
-      background-color: ${theme.colors.bg3};
+      background-color: ${theme.colors.bg4};
       color: ${theme.colors.text4};
     }
     h1 {

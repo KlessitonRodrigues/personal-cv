@@ -1,10 +1,9 @@
 import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
-import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
-import { changeLanguage, lang } from 'src/utils/i18n';
-import { setColor } from 'src/utils/theme';
+import { lang, toggleLang } from 'src/utils/i18n';
+import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
 
 import { Container, Content, SidebarBox, SidebarItem } from './styled';
 
@@ -26,17 +25,17 @@ const SideBar = (props: PropsWithChildren) => {
         </Column>
 
         <Column bottom left gap={8}>
-          <SidebarItem onClick={() => changeLanguage('en')}>
+          <SidebarItem onClick={toggleLang}>
             <Icons type="language" size={8} />
-            <p>{lang.toLocaleUpperCase()}</p>
+            <p>{lang}</p>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem onClick={toggleTheme}>
             <Icons type="sun" size={8} />
-            <p>Light</p>
+            <p>{currentTheme}</p>
           </SidebarItem>
-          <SidebarItem onClick={() => setColor('blue')}>
+          <SidebarItem onClick={toggleColor}>
             <Icons type="theme" size={8} />
-            <p>Blue</p>
+            <p>{currentColor}</p>
           </SidebarItem>
           <SidebarItem>
             <Icons type="github" size={8} />
