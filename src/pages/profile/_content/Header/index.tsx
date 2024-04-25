@@ -1,6 +1,6 @@
 import { Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
-import { ColumnLeft, Row } from 'src/lib/base/StyledComponents/Flex';
+import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import { Avatar } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
 
@@ -8,12 +8,15 @@ const ProfileHeader = () => {
   return (
     <Section>
       <Card>
-        <Row gap={4}>
+        <Row top gap={8} responsive>
           <Avatar />
-          <ColumnLeft>
-            <Text tag="h1" path="header_name" />
-            <Row>
-              <ColumnLeft gap={2}>
+          <Column left>
+            <b>
+              <Text tag="h1" path="header_name" />
+            </b>
+            <Text tag="h4" path="header_work" />
+            <Row top responsive>
+              <Column left gap={2}>
                 <label>
                   <Text tag="b" path="header_city" />
                   <Text tag="h6" path="header_city_name" />
@@ -26,21 +29,13 @@ const ProfileHeader = () => {
                   <Text tag="b" path="header_phone" />
                   <Text tag="h6" path="header_phone_number" />
                 </label>
+              </Column>
+              <Column left gap={2}>
                 <label>
                   <b>Email</b>
                   <h6>
                     <a href="mailto:klessitonrds@gmail.com" target="blank">
                       klessitonrds@gmail.com
-                    </a>
-                  </h6>
-                </label>
-              </ColumnLeft>
-              <ColumnLeft gap={2}>
-                <label>
-                  <b>Github</b>
-                  <h6>
-                    <a href="http://github.com/KlessitonRodrigues" target="blank">
-                      KlessitonRodrigues
                     </a>
                   </h6>
                 </label>
@@ -52,23 +47,33 @@ const ProfileHeader = () => {
                     </a>
                   </h6>
                 </label>
+              </Column>
+              <Column left>
+                <label>
+                  <b>Github</b>
+                  <h6>
+                    <a href="http://github.com/KlessitonRodrigues" target="blank">
+                      KlessitonRodrigues
+                    </a>
+                  </h6>
+                </label>
                 <label>
                   <b>Page</b>
                   <h6>
                     <a href="http://github.com/KlessitonRodrigues" target="blank">
-                      Github
+                      Profile Page
                     </a>
                   </h6>
                 </label>
-              </ColumnLeft>
+              </Column>
             </Row>
-          </ColumnLeft>
+          </Column>
         </Row>
-        <ColumnLeft gap={0}>
-          <Text tag="h2" path="cv_resume_title" />
+        <Column left>
+          <Text tag="h3" path="cv_resume_title" />
           <Hr />
-          <Text tag="span" path="cv_resume" />
-        </ColumnLeft>
+          <Text tag="p" path="cv_resume" />
+        </Column>
       </Card>
     </Section>
   );

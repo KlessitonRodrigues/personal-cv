@@ -13,6 +13,9 @@ const Text = (props: Props.Text) => {
   if (tag === 'h5') return <h5>{text}</h5>;
   if (tag === 'h6') return <h6>{text}</h6>;
   if (tag === 'span') return <span>{text}</span>;
+  if (tag === 'small') return <small>{text}</small>;
+  if (tag === 'strong') return <strong>{text}</strong>;
+  if (tag === 'mark') return <mark>{text}</mark>;
   return <>{text}</>;
 };
 

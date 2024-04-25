@@ -25,19 +25,22 @@ export default createGlobalStyle(
     }
     html,
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 500;
       background-color: ${theme.colors.bg3};
       color: ${theme.colors.text4};
     }
     h1 {
       font-size: ${theme.fontSize.h1};
+      font-weight: bolder;
     }
     h2 {
       font-size: ${theme.fontSize.h2};
+      font-weight: bolder;
     }
     h3 {
       font-size: ${theme.fontSize.h3};
+      font-weight: bolder;
     }
     h4 {
       font-size: ${theme.fontSize.h4};
@@ -50,7 +53,6 @@ export default createGlobalStyle(
     }
     p {
       font-size: ${theme.fontSize.body};
-      max-width: ${cssSize(200)};
     }
     ul {
       list-style: none;
@@ -59,15 +61,24 @@ export default createGlobalStyle(
       color: unset;
       text-decoration: underline;
     }
-    label > b {
-      font-size: ${theme.fontSize.label};
+    b,
+    small,
+    mark {
       color: ${theme.colors.main};
       font-weight: bold;
-      opacity: 0.75;
+    }
+    mark {
+      font-size: ${theme.fontSize.small};
+    }
+    small {
+      font-size: ${theme.fontSize.verySmall};
+    }
+    label > b {
+      font-size: ${theme.fontSize.label};
     }
     button,
     select {
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       min-height: ${cssSize(9)};
       display: flex;

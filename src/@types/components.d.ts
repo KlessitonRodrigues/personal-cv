@@ -8,6 +8,14 @@ declare namespace Props {
     h?: string;
     p?: string;
     m?: string;
+    left?: boolean;
+    right?: boolean;
+    top?: boolean;
+    bottom?: boolean;
+    wrap?: boolean;
+    rows?: number;
+    cols?: number;
+    responsive?: boolean;
   };
 
   type Icons = {
@@ -19,7 +27,19 @@ declare namespace Props {
 
   type Text = {
     path: string;
-    tag?: 'b' | 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+    tag?:
+      | 'b'
+      | 'span'
+      | 'small'
+      | 'strong'
+      | 'mark'
+      | 'p'
+      | 'h1'
+      | 'h2'
+      | 'h3'
+      | 'h4'
+      | 'h5'
+      | 'h6';
   };
 
   type Loading = {

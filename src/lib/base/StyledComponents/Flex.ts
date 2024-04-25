@@ -1,40 +1,51 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { cssSize, screenSize } from 'src/styles/utils';
 
-export const Row = styled.div<Props.CssProps>(
-  ({ gap }) => css`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+const FlexItems = styled.div<Props.CssProps>`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Row = styled(FlexItems)(
+  ({ gap, left, right, top, bottom, wrap, responsive }) => css`
     gap: ${cssSize(gap ?? 2)};
+    ${left && 'justify-content: flex-start;'}
+    ${right && 'justify-content: flex-end;'}
+    ${top && 'align-items: flex-start;'}
+    ${bottom && 'align-items: flex-end;'}
+    ${wrap && 'flex-wrap: wrap;'}
+
+    @media (max-width: ${screenSize.laptopS}px) {
+      ${responsive && 'flex-direction: column;'}
+    }
   `,
 );
 
-export const RowLeft = styled(Row)`
-  justify-content: flex-start;
-`;
+export const Column = styled(FlexItems)(
+  ({ gap, left, right, top, bottom }) => css`
+    flex-direction: column;
+    gap: ${cssSize(gap ?? 2)};
+    ${top && 'justify-content: flex-start;'}
+    ${bottom && 'justify-content: flex-end;'}
+    ${left && 'align-items: flex-start;'}
+    ${right && 'align-items: flex-end;'}
+  `,
+);
 
-export const RowRight = styled(Row)`
-  justify-content: flex-start;
-`;
+export const Grid = styled.div<Props.CssProps>(
+  ({ gap, rows, cols }) => css`
+    width: 100%;
+    display: grid;
+    gap: ${cssSize(gap ?? 4)};
+    grid-template-columns: repeat(${cols}, 1fr);
+    grid-template-rows: repeat(${rows}, 1fr);
 
-export const RowWrap = styled(Row)`
-  justify-content: flex-start;
-  flex-wrap: wrap;
-`;
-
-export const Column = styled(Row)`
-  flex-direction: column;
-  justify-content: flex-start;
-`;
-
-export const ColumnLeft = styled(Column)`
-  align-items: flex-start;
-`;
-
-export const ColumnRight = styled(Column)`
-  align-items: flex-end;
-`;
+    @media (max-width: ${screenSize.laptopM}px) {
+      grid-template-columns: 1fr;
+    }
+  `,
+);

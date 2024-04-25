@@ -6,6 +6,6 @@ export const Hr = styled.hr<Props.CssProps>(
   ({ theme }) => css`
     width: 100%;
     border-bottom: ${theme.border.small};
-    margin-bottom: ${cssSize(4)};
+    margin-bottom: ${cssSize(2)};
   `,
 );
