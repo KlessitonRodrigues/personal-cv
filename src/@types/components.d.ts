@@ -22,7 +22,18 @@ declare namespace Props {
     size?: number;
     onPress?: () => void;
     style?: React.CSSProperties;
-    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language' | 'link';
+    type:
+      | 'download'
+      | 'selector'
+      | 'spinner'
+      | 'github'
+      | 'template'
+      | 'language'
+      | 'link'
+      | 'textDocument'
+      | 'image'
+      | 'user'
+      | 'theme';
   };
 
   type Text = {

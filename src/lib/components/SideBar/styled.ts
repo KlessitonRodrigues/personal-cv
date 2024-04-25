@@ -15,18 +15,19 @@ export const Container = styled.div(
 export const SidebarBox = styled.aside<Props.CssProps>(
   ({ theme, active }) => css`
     position: fixed;
-    left: 0;
-    top: 0;
+    left: ${cssSize(2)};
+    top: ${cssSize(1)};
     z-index: 2;
-    height: 100%;
+    height: 99%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
-    padding: ${cssSize(5)};
+    padding: ${cssSize(6)};
     background-color: ${theme.colors.mainBg};
-    color: ${theme.colors.gray};
+    color: ${theme.colors.mainText};
     box-shadow: ${theme.shadow.large};
+    border-radius: ${theme.radius.large};
     transition: 0.3s ease-out;
     overflow: hidden;
 
@@ -37,14 +38,15 @@ export const SidebarBox = styled.aside<Props.CssProps>(
 );
 
 export const SidebarItem = styled.div(
-  ({ theme }) => css`
+  () => css`
     display: flex;
     align-items: center;
-    gap: ${cssSize(5)};
+    gap: ${cssSize(6)};
     cursor: pointer;
+    min-width: ${cssSize(sidebarSizeOpen)};
 
     &:hover {
-      color: ${theme.colors.mainText};
+      opacity: 0.7;
     }
   `,
 );

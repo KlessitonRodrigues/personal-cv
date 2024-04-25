@@ -1,9 +1,9 @@
 import { useMemo } from 'react';
+import { LuFileText, LuGithub, LuImage, LuPaintBucket, LuUser } from 'react-icons/lu';
 import {
   RiExpandUpDownFill,
   RiFileDownloadLine,
   RiFileTextLine,
-  RiGithubLine,
   RiLink,
   RiLoader5Line,
   RiTranslate2,
@@ -15,10 +15,14 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   download: <RiFileDownloadLine />,
   selector: <RiExpandUpDownFill />,
   spinner: <RiLoader5Line />,
-  github: <RiGithubLine />,
+  github: <LuGithub />,
   template: <RiFileTextLine />,
   language: <RiTranslate2 />,
   link: <RiLink />,
+  textDocument: <LuFileText />,
+  image: <LuImage />,
+  user: <LuUser />,
+  theme: <LuPaintBucket />,
 };
 
 const Icons = (props: Props.Icons) => {

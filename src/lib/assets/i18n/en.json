@@ -39,7 +39,7 @@
   "experience_cef": "Centro Educacional de Floriano",
   "experience_cef_date": "2024/01 - 2024/03",
   "experience_cef_text": "Online platform to manage students and it's class activities, with professor dashhboard, blog section and course payments.",
-  "experience_cef_tech": "NextJS and Django.",
+  "experience_cef_tech": "NextJS, TailwindCSS, MaterialUI and Django.",
   "experience_socialpower": "SocialPower",
   "experience_socialpower_date": "2018/11 - 2019/11",
   "experience_socialpower_text": "Web application with geolocation to map streets points that need attention from the city hall.",
@@ -64,7 +64,7 @@
   "language_en_text": "Good writing and reading, advanced speaking.",
   "language_jp_text": "Basic writing and reading.",
   "extraworks_title": "Extra Works",
-  "extraworks_text": "Some personal projects made to study and improve new technologies.",
+  "extraworks_text": "Some personal projects made to study new technologies and improve my acknowledgement.",
   "extraworks_gamefinder": "Game Finder",
   "extraworks_gamefinder_text": "Web application to discovery new games with more than 50,000 games filtered by platform, category and release year.",
   "extraworks_gamefinder_tech": "ReactJS, ViteJS and Styled Components.",
@@ -79,6 +79,8 @@
   "extraworks_easyencrypt_tech": "React Native, Styled Components and CryptoJS.",
   "extraworks_taskmanage": "Task Manager",
   "extraworks_taskmanage_text": "Todo application with calendar and notes, built with React.",
+  "extraworks_taskmanage_tech": "ReactJS, ViteJS and Styled Components.",
   "extraworks_translationpwa": "Translation App",
-  "extraworks_translationpwa_text": "Translation website with multiple language support, built with React and GoogleAPIs."
+  "extraworks_translationpwa_text": "Translation website with multiple language support, built with React and GoogleAPIs.",
+  "extraworks_translationpwa_tech": "ReactJS, Webpack, Styled Components, Google Translation API."
 }

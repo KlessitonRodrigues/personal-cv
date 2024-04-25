@@ -19,7 +19,7 @@ export const changeLanguage = (lang: string) => {
   } catch (err) {}
 };
 
-const lang = getLanguage();
+export const lang = getLanguage();
 
 export const getText = (path: string) => {
   if (lang === 'pt') return PTText[path] || 'NO_TEXT';

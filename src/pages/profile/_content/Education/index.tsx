@@ -9,7 +9,7 @@ const ProfileEducation = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h3" path="experience_title" />
+          <Text tag="h4" path="education_title" />
           <Hr />
         </Column>
 

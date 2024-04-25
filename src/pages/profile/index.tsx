@@ -5,6 +5,7 @@ import ProfileEducation from './_content/Education';
 import ProfileExperience from './_content/Experience';
 import ProfileExtraWorks from './_content/ExtraWorks';
 import ProfileHeader from './_content/Header';
+import ProfileLanguages from './_content/Languages';
 
 const ProfilePage = () => {
   return (
@@ -15,6 +16,7 @@ const ProfilePage = () => {
           <ProfileExperience />
           <ProfileEducation />
           <ProfileExtraWorks />
+          <ProfileLanguages />
         </PageContent>
       </SideBar>
     </Page>

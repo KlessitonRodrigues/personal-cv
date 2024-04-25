@@ -3,6 +3,7 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import { Avatar } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
+import { urls } from 'src/utils/constants/urls';
 
 const ProfileHeader = () => {
   return (
@@ -34,7 +35,7 @@ const ProfileHeader = () => {
                 <label>
                   <b>Email</b>
                   <h6>
-                    <a href="mailto:klessitonrds@gmail.com" target="blank">
+                    <a href={urls.krdsEmail} target="blank">
                       klessitonrds@gmail.com
                     </a>
                   </h6>
@@ -42,7 +43,7 @@ const ProfileHeader = () => {
                 <label>
                   <b>LinkedIn</b>
                   <h6>
-                    <a href="http://linkedin.com/in/klessitonrds" target="blank">
+                    <a href={urls.linkedin} target="blank">
                       Klessitonrds
                     </a>
                   </h6>
@@ -52,7 +53,7 @@ const ProfileHeader = () => {
                 <label>
                   <b>Github</b>
                   <h6>
-                    <a href="http://github.com/KlessitonRodrigues" target="blank">
+                    <a href={urls.github} target="blank">
                       KlessitonRodrigues
                     </a>
                   </h6>
@@ -60,7 +61,7 @@ const ProfileHeader = () => {
                 <label>
                   <b>Page</b>
                   <h6>
-                    <a href="http://github.com/KlessitonRodrigues" target="blank">
+                    <a href={urls.githubProfile} target="blank">
                       Profile Page
                     </a>
                   </h6>
