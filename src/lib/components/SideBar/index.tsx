@@ -1,8 +1,10 @@
 import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
+import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
 import { changeLanguage, lang } from 'src/utils/i18n';
+import { setColor } from 'src/utils/theme';
 
 import { Container, Content, SidebarBox, SidebarItem } from './styled';
 
@@ -12,19 +14,12 @@ const SideBar = (props: PropsWithChildren) => {
   return (
     <Container>
       <SidebarBox active={open} onClick={() => setOpen(!open)}>
-        <Column top left>
-          <SidebarItem>
-            <Icons type="user" size={8} />
-            <p>Personal Page</p>
-          </SidebarItem>
-        </Column>
-
-        <Column left gap={8}>
-          <SidebarItem>
+        <Column top left gap={12}>
+          <SidebarItem active={false}>
             <Icons type="image" size={8} />
             <p>Portifolio</p>
           </SidebarItem>
-          <SidebarItem>
+          <SidebarItem active>
             <Icons type="textDocument" size={8} />
             <p>Curriculo</p>
           </SidebarItem>
@@ -36,8 +31,12 @@ const SideBar = (props: PropsWithChildren) => {
             <p>{lang.toLocaleUpperCase()}</p>
           </SidebarItem>
           <SidebarItem>
+            <Icons type="sun" size={8} />
+            <p>Light</p>
+          </SidebarItem>
+          <SidebarItem onClick={() => setColor('blue')}>
             <Icons type="theme" size={8} />
-            <p>Theme</p>
+            <p>Blue</p>
           </SidebarItem>
           <SidebarItem>
             <Icons type="github" size={8} />

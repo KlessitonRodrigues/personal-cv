@@ -33,7 +33,9 @@ declare namespace Props {
       | 'textDocument'
       | 'image'
       | 'user'
-      | 'theme';
+      | 'theme'
+      | 'sun'
+      | 'moon';
   };
 
   type Text = {

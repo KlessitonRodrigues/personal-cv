@@ -23,7 +23,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     flex-direction: column;
     justify-content: space-between;
     width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
-    padding: ${cssSize(6)};
+    padding: ${cssSize(10)} ${cssSize(6)};
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
     box-shadow: ${theme.shadow.large};
@@ -37,16 +37,21 @@ export const SidebarBox = styled.aside<Props.CssProps>(
   `,
 );
 
-export const SidebarItem = styled.div(
-  () => css`
+export const SidebarItem = styled.div<Props.CssProps>(
+  ({ theme, active }) => css`
     display: flex;
     align-items: center;
     gap: ${cssSize(6)};
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
+    ${active === false && `opacity: 0.6;`}
+
+    .icon {
+      ${active && `padding-bottom: 4px; border-bottom: 4px solid ${theme.colors.mainText};`}
+    }
 
     &:hover {
-      opacity: 0.7;
+      opacity: 0.8;
     }
   `,
 );

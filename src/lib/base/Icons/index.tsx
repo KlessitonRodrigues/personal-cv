@@ -1,5 +1,13 @@
 import { useMemo } from 'react';
-import { LuFileText, LuGithub, LuImage, LuPaintBucket, LuUser } from 'react-icons/lu';
+import {
+  LuFileText,
+  LuGithub,
+  LuImage,
+  LuMoon,
+  LuPaintbrush2,
+  LuSun,
+  LuUser,
+} from 'react-icons/lu';
 import {
   RiExpandUpDownFill,
   RiFileDownloadLine,
@@ -22,7 +30,9 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   textDocument: <LuFileText />,
   image: <LuImage />,
   user: <LuUser />,
-  theme: <LuPaintBucket />,
+  theme: <LuPaintbrush2 />,
+  sun: <LuSun />,
+  moon: <LuMoon />,
 };
 
 const Icons = (props: Props.Icons) => {
