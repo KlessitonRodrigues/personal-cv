@@ -2,13 +2,17 @@ import styled, { css } from 'styled-components';
 
 import { cssSize, screenSize } from 'src/styles/utils';
 
-const FlexItems = styled.div<Props.CssProps>`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+const FlexItems = styled.div<Props.CssProps>(
+  ({ w, h }) => css`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ${w && `width: ${w};`}
+    ${h && `height: ${h};`}
+  `,
+);
 
 export const Row = styled(FlexItems)(
   ({ gap, left, right, top, bottom, wrap, responsive }) => css`

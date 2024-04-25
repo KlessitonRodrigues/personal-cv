@@ -17,11 +17,7 @@ export default createGlobalStyle(
     }
     body {
       font-size: ${theme.fontSize.body};
-      height: 100vh;
-      width: 100vw;
-      max-height: 100vh;
-      max-width: 100vw;
-      overflow: hidden;
+      min-height: 100vh;
     }
     html,
     body {

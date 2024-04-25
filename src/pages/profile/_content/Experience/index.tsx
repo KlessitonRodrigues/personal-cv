@@ -11,8 +11,18 @@ const ProfileExperience = () => {
           <Text tag="h3" path="experience_title" />
           <Hr />
         </Column>
+
+        <Column left>
+          <Row left>
+            <Text tag="h5" path="experience_cef" />
+            <Text tag="small" path="experience_cef_date" />
+          </Row>
+          <Text tag="p" path="experience_cef_text" />
+          <Text tag="small" path="experience_cef_tech" />
+        </Column>
+
         <Column left gap={2}>
-          <Row left gap={4}>
+          <Row left>
             <Text tag="h5" path="experience_westpoint" />
             <Text tag="small" path="experience_westpoint_date" />
           </Row>
@@ -44,7 +54,7 @@ const ProfileExperience = () => {
               <Text tag="small" path="experience_quarx_tech" />
             </Box>
             <Box>
-              <h6>WestPoint Website</h6>
+              <Text tag="h6" path="experience_website" />
               <Text tag="p" path="experience_website_text" />
               <Text tag="small" path="experience_website_tech" />
             </Box>
@@ -52,27 +62,21 @@ const ProfileExperience = () => {
         </Column>
 
         <Column left>
-          <Row left gap={4}>
+          <Row left>
             <Text tag="h5" path="experience_centralacademy" />
             <Text tag="small" path="experience_centralacademy_date" />
           </Row>
           <Text tag="p" path="experience_centralacademy_text" />
+          <Text tag="small" path="experience_centralacademy_tech" />
         </Column>
 
         <Column left>
-          <Row left gap={4}>
-            <Text tag="h5" path="experience_centralacademy" />
-            <Text tag="small" path="experience_centralacademy_date" />
+          <Row left>
+            <Text tag="h5" path="experience_socialpower" />
+            <Text tag="small" path="experience_socialpower_date" />
           </Row>
-          <Text tag="p" path="experience_centralacademy_text" />
-        </Column>
-
-        <Column left>
-          <Row left gap={4}>
-            <Text tag="h5" path="experience_centralacademy" />
-            <Text tag="small" path="experience_centralacademy_date" />
-          </Row>
-          <Text tag="p" path="experience_centralacademy_text" />
+          <Text tag="p" path="experience_socialpower_text" />
+          <Text tag="small" path="experience_socialpower_tech" />
         </Column>
       </Card>
     </Section>

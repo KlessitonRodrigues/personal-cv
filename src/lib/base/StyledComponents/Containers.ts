@@ -13,7 +13,6 @@ export const PageContent = styled.div(
   () => css`
     width: 100%;
     height: 100%;
-    overflow-y: auto;
     margin: auto;
     max-width: ${screenSize.laptopM}px;
   `,
@@ -32,7 +31,7 @@ export const Card = styled.div(
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: ${cssSize(4)};
+    gap: ${cssSize(6)};
     padding: ${cssSize(8)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
