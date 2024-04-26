@@ -266,7 +266,7 @@ Error generating stack: `+i.message+`
   `),jg=B(vp)(({theme:e})=>M`
     background-color: ${e.colors.mainBg};
     color: ${e.colors.mainText};
-  `),$g=async()=>{const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const n=t.contentDocument;!t||!e||!n||(n.head.innerHTML=document.head.innerHTML,n.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",await new Promise(r=>setTimeout(r,1e3)),t==null||t.contentWindow.print())},Pg=B.div(()=>M`
+  `),$g=async()=>{const e=document.getElementById("doc-content"),t=document.createElement("iframe");document.body.appendChild(t);const n=t.contentDocument;!t||!e||!n||(n.head.innerHTML=document.head.innerHTML,n.body.innerHTML=e.innerHTML,t.style.position="absolute",t.style.left="100%",t.style.top="0",await new Promise(r=>setTimeout(r,1e3)),t==null||t.contentWindow.print(),await new Promise(r=>setTimeout(r,100)),t.remove())},Pg=B.div(()=>M`
     width: 100%;
     margin: auto;
     position: relative;
