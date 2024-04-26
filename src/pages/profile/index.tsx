@@ -1,4 +1,5 @@
 import { Page, PageContent } from 'src/lib/base/StyledComponents/Containers';
+import DocumentView from 'src/lib/components/DocumentView';
 import SideBar from 'src/lib/components/SideBar';
 
 import ProfileEducation from './_content/Education';
@@ -12,11 +13,13 @@ const ProfilePage = () => {
     <Page>
       <SideBar>
         <PageContent>
-          <ProfileHeader />
-          <ProfileExperience />
-          <ProfileEducation />
-          <ProfileExtraWorks />
-          <ProfileLanguages />
+          <DocumentView>
+            <ProfileHeader />
+            <ProfileExperience />
+            <ProfileEducation />
+            <ProfileExtraWorks />
+            <ProfileLanguages />
+          </DocumentView>
         </PageContent>
       </SideBar>
     </Page>

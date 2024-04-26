@@ -1,7 +1,9 @@
 import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
+import If from 'src/lib/base/If';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
+import Text from 'src/lib/base/Text';
 import { lang, toggleLang } from 'src/utils/i18n';
 import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
 
@@ -12,15 +14,15 @@ const SideBar = (props: PropsWithChildren) => {
 
   return (
     <Container>
-      <SidebarBox active={open} onClick={() => setOpen(!open)}>
+      <SidebarBox active={open}>
         <Column top left gap={12}>
-          <SidebarItem active={false}>
+          <SidebarItem active={false} title="In progress">
             <Icons type="image" size={8} />
-            <p>Portifolio</p>
+            <Text tag="p" path="sidebar_link_profile" />
           </SidebarItem>
           <SidebarItem active>
             <Icons type="textDocument" size={8} />
-            <p>Curriculo</p>
+            <Text tag="p" path="sidebar_link_cv" />
           </SidebarItem>
         </Column>
 
@@ -30,7 +32,12 @@ const SideBar = (props: PropsWithChildren) => {
             <p>{lang}</p>
           </SidebarItem>
           <SidebarItem onClick={toggleTheme}>
-            <Icons type="sun" size={8} />
+            <If check={currentTheme === 'light'}>
+              <Icons type="sun" size={8} />
+            </If>
+            <If check={currentTheme === 'dark'}>
+              <Icons type="moon" size={8} />
+            </If>
             <p>{currentTheme}</p>
           </SidebarItem>
           <SidebarItem onClick={toggleColor}>

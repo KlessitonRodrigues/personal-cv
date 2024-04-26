@@ -6,7 +6,7 @@ import { cssSize } from './utils';
 export const defaultTheme: Styles.Theme = {
   colors: {
     ...currenMainColor,
-    mainText: mcolors.grey['200'],
+    mainText: mcolors.grey['300'],
     bg1: mcolors.grey['50'],
     bg2: mcolors.grey['100'],
     bg3: mcolors.grey['200'],

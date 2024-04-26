@@ -1,32 +1,28 @@
 import { useMemo } from 'react';
 import {
+  LuDownload,
   LuFileText,
   LuGithub,
   LuImage,
+  LuLanguages,
+  LuLink,
   LuMoon,
   LuPaintbrush2,
   LuSun,
   LuUser,
 } from 'react-icons/lu';
-import {
-  RiExpandUpDownFill,
-  RiFileDownloadLine,
-  RiFileTextLine,
-  RiLink,
-  RiLoader5Line,
-  RiTranslate2,
-} from 'react-icons/ri';
+import { RiExpandUpDownFill, RiFileTextLine, RiLoader2Fill } from 'react-icons/ri';
 
 import { Container } from './styled';
 
 export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
-  download: <RiFileDownloadLine />,
+  download: <LuDownload />,
   selector: <RiExpandUpDownFill />,
-  spinner: <RiLoader5Line />,
+  spinner: <RiLoader2Fill />,
   github: <LuGithub />,
   template: <RiFileTextLine />,
-  language: <RiTranslate2 />,
-  link: <RiLink />,
+  language: <LuLanguages />,
+  link: <LuLink />,
   textDocument: <LuFileText />,
   image: <LuImage />,
   user: <LuUser />,
