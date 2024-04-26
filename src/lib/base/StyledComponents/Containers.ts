@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize, screenSize } from 'src/styles/utils';
+import { animations, cssSize, screenSize } from 'src/styles/utils';
 
 export const Page = styled.div(
   () => css`
@@ -15,6 +15,7 @@ export const PageContent = styled.div(
     height: 100%;
     margin: auto;
     max-width: ${screenSize.laptopM}px;
+    animation: 0.75s ${animations.fadeUp} ease-out;
   `,
 );
 

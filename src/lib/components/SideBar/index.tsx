@@ -2,12 +2,13 @@ import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
-import { Column } from 'src/lib/base/StyledComponents/Flex';
+import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
+import { urls } from 'src/utils/constants/urls';
 import { lang, toggleLang } from 'src/utils/i18n';
 import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
 
-import { Container, Content, SidebarBox, SidebarItem } from './styled';
+import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
@@ -15,9 +16,9 @@ const SideBar = (props: PropsWithChildren) => {
   return (
     <Container>
       <SidebarBox active={open}>
-        <Column top left gap={12}>
+        <Column top left gap={8}>
           <SidebarItem active={false} title="In progress">
-            <Icons type="image" size={8} />
+            <Icons type="website" size={8} />
             <Text tag="p" path="sidebar_link_profile" />
           </SidebarItem>
           <SidebarItem active>
@@ -44,14 +45,26 @@ const SideBar = (props: PropsWithChildren) => {
             <Icons type="theme" size={8} />
             <p>{currentColor}</p>
           </SidebarItem>
-          <SidebarItem>
-            <Icons type="github" size={8} />
-            <p>Github</p>
-          </SidebarItem>
+          <a href={urls.personalPage} target="_blank">
+            <SidebarItem>
+              <Icons type="github" size={8} />
+              <p>Github</p>
+            </SidebarItem>
+          </a>
         </Column>
       </SidebarBox>
 
-      <Content active={open}>{props.children}</Content>
+      <Content active={open}>
+        <MenuBtn active={open} onClick={() => setOpen(!open)}>
+          <If check={!open}>
+            <Icons size={11} type="menu" />
+          </If>
+          <If check={open}>
+            <Icons size={11} type="close" />
+          </If>
+        </MenuBtn>
+        {props.children}
+      </Content>
     </Container>
   );
 };

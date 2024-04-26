@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { cssSize, screenSize } from 'src/styles/utils';
 
 export const Container = styled.div(
   () => css`
-    position: relative;
     width: 100%;
     margin: auto;
+    position: relative;
   `,
 );
 
@@ -15,18 +15,25 @@ export const Document = styled.div(() => css``);
 export const Content = styled.div(
   () => css`
     padding: 0 ${cssSize(6)};
+    @media (max-width: ${screenSize.tablet}px) {
+      padding: 0 ${cssSize(2)};
+    }
   `,
 );
 
 export const DocumentButtons = styled.div(
-  ({ theme }) => css`
+  () => css`
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    gap: ${cssSize(2)};
     position: absolute;
     top: 0;
-    left: 99%;
-    color: ${theme.colors.text1};
-    font-size: ${theme.fontSize.verySmall};
+    left: 100%;
+
+    @media (max-width: ${screenSize.laptopL}px) {
+      display: none;
+    }
   `,
 );

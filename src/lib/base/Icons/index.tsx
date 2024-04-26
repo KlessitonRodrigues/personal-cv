@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { CgWebsite } from 'react-icons/cg';
 import {
   LuDownload,
   LuFileText,
@@ -6,10 +7,12 @@ import {
   LuImage,
   LuLanguages,
   LuLink,
+  LuMenu,
   LuMoon,
   LuPaintbrush2,
   LuSun,
   LuUser,
+  LuX,
 } from 'react-icons/lu';
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader2Fill } from 'react-icons/ri';
 
@@ -29,6 +32,9 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   theme: <LuPaintbrush2 />,
   sun: <LuSun />,
   moon: <LuMoon />,
+  website: <CgWebsite />,
+  menu: <LuMenu />,
+  close: <LuX />,
 };
 
 const Icons = (props: Props.Icons) => {

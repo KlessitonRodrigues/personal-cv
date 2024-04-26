@@ -59,12 +59,10 @@ const ProfileHeader = () => {
                   </h6>
                 </label>
                 <label>
-                  <b>Page</b>
-                  <h6>
-                    <a href={urls.githubProfile} target="blank">
-                      Profile Page
-                    </a>
-                  </h6>
+                  <Text tag="b" path="header_page" />
+                  <a href={urls.githubProfile} target="blank">
+                    <Text tag="h6" path="header_page_text" />
+                  </a>
                 </label>
               </Column>
             </Row>

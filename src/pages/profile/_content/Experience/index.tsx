@@ -13,7 +13,7 @@ const ProfileExperience = () => {
         </Column>
 
         <Column left>
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="experience_cef" />
             <Text tag="small" path="experience_cef_date" />
           </Row>
@@ -22,7 +22,7 @@ const ProfileExperience = () => {
         </Column>
 
         <Column left gap={2}>
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="experience_westpoint" />
             <Text tag="small" path="experience_westpoint_date" />
           </Row>
@@ -62,7 +62,7 @@ const ProfileExperience = () => {
         </Column>
 
         <Column left>
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="experience_centralacademy" />
             <Text tag="small" path="experience_centralacademy_date" />
           </Row>
@@ -71,7 +71,7 @@ const ProfileExperience = () => {
         </Column>
 
         <Column left>
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="experience_socialpower" />
             <Text tag="small" path="experience_socialpower_date" />
           </Row>

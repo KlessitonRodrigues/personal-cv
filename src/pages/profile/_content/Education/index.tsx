@@ -14,9 +14,9 @@ const ProfileEducation = () => {
         </Column>
 
         <Column left gap={0}>
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="education_udemy_title" />
-            <small>2020/01 - 2023/12</small>
+            <Text tag="small" path="education_udemy_date" />
           </Row>
           <List>
             <ListItem>
@@ -50,17 +50,17 @@ const ProfileEducation = () => {
         </Column>
 
         <Column left>
-          <Row left>
-            <h6>IFPI - Instituto Federal do Piauí</h6>
-            <small>2017/01 - 2019/11</small>
+          <Row left responsive>
+            <Text tag="h6" path="education_ifpi_title" />
+            <Text tag="small" path="education_ifpi_date" />
           </Row>
           <Text tag="p" path="education_ifpi" />
         </Column>
 
         <Column left>
-          <Row left>
-            <h6>Centro Estadual de Educação Profissional Professora Maria Amália</h6>
-            <small>2014/02 - 2016/11</small>
+          <Row left responsive>
+            <Text tag="h6" path="education_school_title" />
+            <Text tag="small" path="education_school_date" />
           </Row>
           <Text tag="p" path="education_school" />
         </Column>

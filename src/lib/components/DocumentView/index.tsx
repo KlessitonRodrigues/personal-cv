@@ -2,7 +2,7 @@ import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
 import Loading from 'src/lib/base/Loading';
-import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
+import { MainRoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { openPrintDialog } from 'src/utils/pdf';
 
 import { Container, Content, Document, DocumentButtons } from './styled';
@@ -19,9 +19,9 @@ const DocumentView = (props: PropsWithChildren) => {
   return (
     <Container>
       <DocumentButtons>
-        <RoundedBtn onClick={onDownload}>
+        <MainRoundedBtn onClick={onDownload}>
           <Icons size={7} type="download" />
-        </RoundedBtn>
+        </MainRoundedBtn>
       </DocumentButtons>
 
       <Document id="doc-content">

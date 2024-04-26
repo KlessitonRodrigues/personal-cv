@@ -3,4 +3,5 @@ export const urls = {
   linkedin: 'http://linkedin.com/in/klessitonrds',
   github: 'http://github.com/KlessitonRodrigues',
   githubProfile: 'http://github.com/KlessitonRodrigues',
+  personalPage: 'https://github.com/KlessitonRodrigues/personal-cv',
 };

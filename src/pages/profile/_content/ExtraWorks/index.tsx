@@ -16,19 +16,19 @@ const ProfileExtraWorks = () => {
 
         <Grid cols={2}>
           <Box>
+            <Text tag="h6" path="extraworks_personalcv" />
+            <Text tag="p" path="extraworks_personalcv_text" />
+            <Text tag="small" path="extraworks_personalcv_tech" />
+          </Box>
+          <Box>
             <Row left>
               <Text tag="h6" path="extraworks_gamefinder" />
               <a href="" target="_blank">
-                <Icons type="link" />
+                <Icons size={5} type="link" />
               </a>
             </Row>
             <Text tag="p" path="extraworks_gamefinder_text" />
             <Text tag="small" path="extraworks_gamefinder_tech" />
-          </Box>
-          <Box>
-            <Text tag="h6" path="extraworks_personalcv" />
-            <Text tag="p" path="extraworks_personalcv_text" />
-            <Text tag="small" path="extraworks_personalcv_tech" />
           </Box>
           <Box>
             <Text tag="h6" path="extraworks_consoleui" />

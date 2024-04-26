@@ -25,6 +25,10 @@ export const Row = styled(FlexItems)(
 
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'flex-direction: column;'}
+      ${top && 'justify-content: flex-start;'}
+      ${bottom && 'justify-content: flex-end;'}
+      ${left && 'align-items: flex-start;'}
+      ${right && 'align-items: flex-end;'}
     }
   `,
 );

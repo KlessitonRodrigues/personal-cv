@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from 'styled-components';
 
 import '../lib/assets/fonts/roboto500.ttf';
 import '../lib/assets/fonts/roboto700.ttf';
-import { cssSize } from './utils';
+import { cssSize, screenSize } from './utils';
 
 export default createGlobalStyle(
   ({ theme }) => css`
@@ -49,6 +49,7 @@ export default createGlobalStyle(
     }
     p {
       font-size: ${theme.fontSize.body};
+      line-height: 20px;
     }
     ul {
       list-style: none;
@@ -105,6 +106,12 @@ export default createGlobalStyle(
       height: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    @media (max-width: ${screenSize.tablet}px) {
+      html {
+        font-size: 14px;
+      }
     }
   `,
 );

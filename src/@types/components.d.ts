@@ -35,7 +35,10 @@ declare namespace Props {
       | 'user'
       | 'theme'
       | 'sun'
-      | 'moon';
+      | 'moon'
+      | 'website'
+      | 'menu'
+      | 'close';
   };
 
   type Text = {
