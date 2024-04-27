@@ -9,13 +9,13 @@ const ProfileEducation = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h3" path="education_title" />
+          <Text tag="h4" path="education_title" />
           <Hr />
         </Column>
 
         <Column left gap={0}>
           <Row left responsive>
-            <Text tag="h5" path="education_udemy_title" />
+            <Text tag="h6" path="education_udemy_title" />
             <Text tag="small" path="education_udemy_date" />
           </Row>
           <List>

@@ -16,7 +16,7 @@ const ProfileHeader = () => {
             <b>
               <Text tag="h1" path="header_name" />
             </b>
-            <Text tag="h4" path="header_work" />
+            <Text tag="h3" path="header_work" />
             <Row top responsive>
               <Column left gap={2}>
                 <label>
@@ -70,7 +70,7 @@ const ProfileHeader = () => {
           </Column>
         </Row>
         <Column left>
-          <Text tag="h3" path="cv_resume_title" />
+          <Text tag="h4" path="cv_resume_title" />
           <Hr />
           <Text tag="p" path="cv_resume" />
         </Column>

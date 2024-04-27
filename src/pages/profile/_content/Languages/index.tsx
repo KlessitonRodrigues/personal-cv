@@ -8,7 +8,7 @@ const ProfileLanguages = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h3" path="language_title" />
+          <Text tag="h4" path="language_title" />
           <Hr />
 
           <Row left responsive>

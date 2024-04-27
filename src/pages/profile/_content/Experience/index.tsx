@@ -8,13 +8,13 @@ const ProfileExperience = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h3" path="experience_title" />
+          <Text tag="h4" path="experience_title" />
           <Hr />
         </Column>
 
         <Column left>
           <Row left responsive>
-            <Text tag="h5" path="experience_cef" />
+            <Text tag="h6" path="experience_cef" />
             <Text tag="small" path="experience_cef_date" />
           </Row>
           <Text tag="p" path="experience_cef_text" />
@@ -23,7 +23,7 @@ const ProfileExperience = () => {
 
         <Column left gap={2}>
           <Row left responsive>
-            <Text tag="h5" path="experience_westpoint" />
+            <Text tag="h6" path="experience_westpoint" />
             <Text tag="small" path="experience_westpoint_date" />
           </Row>
           <Text tag="p" path="experience_westpoint_text" />
@@ -63,12 +63,17 @@ const ProfileExperience = () => {
               <Text tag="p" path="experience_website_text" />
               <Text tag="small" path="experience_website_tech" />
             </Box>
+            <Box>
+              <Text tag="h6" path="experience_scrap" />
+              <Text tag="p" path="experience_scrap_text" />
+              <Text tag="small" path="experience_scrap_tech" />
+            </Box>
           </Grid>
         </Column>
 
         <Column left>
           <Row left responsive>
-            <Text tag="h5" path="experience_centralacademy" />
+            <Text tag="h6" path="experience_centralacademy" />
             <Text tag="small" path="experience_centralacademy_date" />
           </Row>
           <Text tag="p" path="experience_centralacademy_text" />
@@ -77,7 +82,7 @@ const ProfileExperience = () => {
 
         <Column left>
           <Row left responsive>
-            <Text tag="h5" path="experience_socialpower" />
+            <Text tag="h6" path="experience_socialpower" />
             <Text tag="small" path="experience_socialpower_date" />
           </Row>
           <Text tag="p" path="experience_socialpower_text" />

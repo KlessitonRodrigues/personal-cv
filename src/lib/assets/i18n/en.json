@@ -46,6 +46,9 @@
   "experience_website": "WestPoint Website",
   "experience_website_text": "New landing page to the company publicity",
   "experience_website_tech": "NextJS, Styled Components and AWS services.",
+  "experience_scrap": "Social Media Scrap",
+  "experience_scrap_text": "Social media bots to scrap top treading videos from Youtube, Instagram, Tiktok.",
+  "experience_scrap_tech": "NextJS, MantineUI, NodeJS, AWS Lambdas, PuppeterJS",
   "experience_centralacademy": "Central Fitness",
   "experience_centralacademy_date": "2021/03 - 2021/09",
   "experience_centralacademy_text": "Web application with calendar to schedule workout time.",
@@ -83,6 +86,9 @@
 
   "extraworks_title": "Extra Works",
   "extraworks_text": "Some personal projects made to study new technologies and improve my acknowledgement.",
+  "extraworks_jsbackup": "Javascript Backup Repository",
+  "extraworks_jsbackup_text": "Repository to save tests related to javascript language and frameworks, with more than 100 subprojects.",
+  "extraworks_jsbackup_tech": "Javascript and TypeScript",
   "extraworks_gamefinder": "Game Finder",
   "extraworks_gamefinder_text": "Web application to discovery new games with more than 50,000 games filtered by platform, category and release year.",
   "extraworks_gamefinder_tech": "ReactJS, ViteJS and Styled Components.",
@@ -92,7 +98,7 @@
   "extraworks_consoleui": "ConsoleUI",
   "extraworks_consoleui_text": "Application that provide console interface like PS5/Xbox for PCs.",
   "extraworks_consoleui_tech": "ReactJS, Webpack, Styled Components and ElectronJS.",
-  "extraworks_easyencrypt": "EasyEncrypt",
+  "extraworks_easyencrypt": "EncryptEasy",
   "extraworks_easyencrypt_text": "Web and Mobile application to encrypt plan text.",
   "extraworks_easyencrypt_tech": "React Native, Styled Components and CryptoJS.",
   "extraworks_taskmanage": "Task Manager",
@@ -100,5 +106,8 @@
   "extraworks_taskmanage_tech": "ReactJS, ViteJS and Styled Components.",
   "extraworks_translationpwa": "Translation App",
   "extraworks_translationpwa_text": "Translation website with multiple language support, built with React and GoogleAPIs.",
-  "extraworks_translationpwa_tech": "ReactJS, Webpack, Styled Components, Google Translation API."
+  "extraworks_translationpwa_tech": "ReactJS, Webpack, Styled Components, Google Translation API.",
+  "extraworks_quiz": "Simple Quiz App",
+  "extraworks_quiz_text": "Simple Quiz app about HTML, CSS and Javascript technologies.",
+  "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker"
 }
