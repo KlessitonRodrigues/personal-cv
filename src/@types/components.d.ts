@@ -16,6 +16,8 @@ declare namespace Props {
     rows?: number;
     cols?: number;
     responsive?: boolean;
+    reverse?: boolean;
+    src?: string;
   };
 
   type Icons = {

@@ -1,3 +1,4 @@
+import profileImg from 'src/lib/assets/jpg/profile.jpg';
 import { Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
@@ -10,7 +11,7 @@ const ProfileHeader = () => {
     <Section>
       <Card>
         <Row top gap={8} responsive>
-          <Avatar />
+          <Avatar src={profileImg} />
           <Column left>
             <b>
               <Text tag="h1" path="header_name" />

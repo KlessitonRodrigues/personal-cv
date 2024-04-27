@@ -86,7 +86,7 @@ export const Content = styled.div<Props.CssProps>(
 );
 
 export const MenuBtn = styled(RoundedBtn)(
-  ({ theme, active }) => css`
+  ({ theme, active, reverse }) => css`
     position: fixed;
     top: ${cssSize(1)};
     left: ${cssSize(4)};
@@ -101,7 +101,8 @@ export const MenuBtn = styled(RoundedBtn)(
     box-shadow: ${theme.shadow.medium};
 
     .icon {
-      animation: 0.3s ${animations.spinningFadeIn} linear;
+      animation: 0.3s ${animations.spinningFadeIn} linear reverse;
+      ${reverse && 'animation-direction: reverse;'}
     }
 
     @media (max-width: ${screenSize.tablet}px) {

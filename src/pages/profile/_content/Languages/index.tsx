@@ -11,12 +11,12 @@ const ProfileLanguages = () => {
           <Text tag="h4" path="language_title" />
           <Hr />
 
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="language_pt_title" />
             <Text tag="p" path="language_pt_text" />
           </Row>
 
-          <Row left>
+          <Row left responsive>
             <Text tag="h5" path="language_en_title" />
             <Text tag="p" path="language_en_text" />
           </Row>
