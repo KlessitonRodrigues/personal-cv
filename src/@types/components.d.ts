@@ -51,6 +51,7 @@ declare namespace Props {
       | 'small'
       | 'strong'
       | 'mark'
+      | 'em'
       | 'p'
       | 'h1'
       | 'h2'

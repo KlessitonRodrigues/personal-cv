@@ -8,7 +8,7 @@ const ProfileExperience = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h4" path="experience_title" />
+          <Text tag="h3" path="experience_title" />
           <Hr />
         </Column>
 
@@ -32,6 +32,11 @@ const ProfileExperience = () => {
               <Text tag="h6" path="experience_collums" />
               <Text tag="p" path="experience_collums_text" />
               <Text tag="small" path="experience_collums_tech" />
+            </Box>
+            <Box>
+              <Text tag="h6" path="experience_broncos" />
+              <Text tag="p" path="experience_broncos_text" />
+              <Text tag="small" path="experience_broncos_tech" />
             </Box>
             <Box>
               <Text tag="h6" path="experience_vouchio" />

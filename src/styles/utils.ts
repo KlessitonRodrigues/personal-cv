@@ -19,8 +19,11 @@ export const screenSize = {
 
 export const animations = {
   fadeUp: keyframes`
-    from { transform: translateY(6rem); opacity: 0.4; } 
+    from { transform: translateY(3rem); opacity: 0; } 
     to { opacity: 1 }`,
+  fadeLeft: keyframes`
+   from { transform: translateX(3rem); opacity: 0; } 
+   to { opacity: 1 }`,
   slideUp: keyframes`
     from { transform: translateY(12rem); opacity: 0.4; } 
     to { opacity: 1; }`,

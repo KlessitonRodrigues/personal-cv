@@ -16,7 +16,7 @@ export const PageContent = styled.div(
     margin: auto;
     margin-bottom: ${cssSize(10)};
     max-width: ${screenSize.laptopM}px;
-    animation: 0.75s ${animations.fadeUp} ease-out;
+    animation: 0.5s ${animations.fadeLeft} ease-out;
   `,
 );
 

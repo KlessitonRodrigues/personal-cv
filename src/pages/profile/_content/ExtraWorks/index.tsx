@@ -9,7 +9,7 @@ const ProfileExtraWorks = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h4" path="extraworks_title" />
+          <Text tag="h3" path="extraworks_title" />
           <Hr />
           <Text tag="p" path="extraworks_text" />
         </Column>

@@ -61,7 +61,7 @@ const ProfileHeader = () => {
                 </label>
                 <label>
                   <Text tag="b" path="header_page" />
-                  <a href={urls.githubProfile} target="blank">
+                  <a href={urls.personalPage} target="blank">
                     <Text tag="h6" path="header_page_text" />
                   </a>
                 </label>

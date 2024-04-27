@@ -1,13 +1,13 @@
 import { materialColors as mc } from 'src/styles/colors';
 
 export const themeColors: Record<string, { main: string; mainBg: string }> = {
-  blue: { main: mc.blue['600'], mainBg: mc.blue['700'] },
-  purple: { main: mc.purple['600'], mainBg: mc.purple['700'] },
-  green: { main: mc.green['600'], mainBg: mc.green['700'] },
-  pink: { main: mc.pink['600'], mainBg: mc.pink['700'] },
-  teal: { main: mc.teal['600'], mainBg: mc.teal['700'] },
-  indigo: { main: mc.indigo['600'], mainBg: mc.indigo['700'] },
-  brown: { main: mc.brown['600'], mainBg: mc.brown['700'] },
+  blue: { main: mc.blue['500'], mainBg: mc.blue['700'] },
+  purple: { main: mc.purple['500'], mainBg: mc.purple['700'] },
+  green: { main: mc.green['500'], mainBg: mc.green['700'] },
+  pink: { main: mc.pink['500'], mainBg: mc.pink['700'] },
+  teal: { main: mc.teal['500'], mainBg: mc.teal['700'] },
+  indigo: { main: mc.indigo['500'], mainBg: mc.indigo['700'] },
+  brown: { main: mc.brown['500'], mainBg: mc.brown['700'] },
 };
 
 export const getColor = () => {

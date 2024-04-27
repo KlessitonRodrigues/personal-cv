@@ -2,7 +2,7 @@ import { PropsWithChildren, useState } from 'react';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
-import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
+import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 import { urls } from 'src/utils/constants/urls';
 import { lang, toggleLang } from 'src/utils/i18n';
@@ -45,7 +45,7 @@ const SideBar = (props: PropsWithChildren) => {
             <Icons type="theme" size={8} />
             <p>{currentColor}</p>
           </SidebarItem>
-          <a href={urls.personalPage} target="_blank">
+          <a href={urls.personalPageRep} target="_blank">
             <SidebarItem>
               <Icons type="github" size={8} />
               <p>Github</p>
