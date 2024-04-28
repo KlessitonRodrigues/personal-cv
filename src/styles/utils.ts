@@ -19,16 +19,21 @@ export const screenSize = {
 
 export const animations = {
   fadeUp: keyframes`
-    from { transform: translateY(6rem); opacity: 0; } 
+    from { transform: translateY(3rem); opacity: 0; } 
     to { opacity: 1 }`,
+  fadeLeft: keyframes`
+   from { transform: translateX(3rem); opacity: 0; } 
+   to { opacity: 1 }`,
   slideUp: keyframes`
-    from { transform: translateY(12rem); opacity: 0; } 
+    from { transform: translateY(12rem); opacity: 0.4; } 
     to { opacity: 1; }`,
   fadeIn: keyframes`
     from { opacity: 0; } 
     to { opacity: 1; }`,
   spinning: keyframes`
     to { transform: rotateZ(360deg); }`,
+  halfSpinning: keyframes`
+    to { transform: rotateZ(180deg); }`,
 };
 
 export const gradients = {

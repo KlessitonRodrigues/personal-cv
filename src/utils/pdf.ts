@@ -15,4 +15,7 @@ export const openPrintDialog = async () => {
   await new Promise(r => setTimeout(r, 1000));
   // @ts-ignore
   iFrame?.contentWindow.print();
+
+  await new Promise(r => setTimeout(r, 100));
+  iFrame.remove();
 };

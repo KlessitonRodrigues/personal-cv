@@ -2,7 +2,7 @@ import { createGlobalStyle, css } from 'styled-components';
 
 import '../lib/assets/fonts/roboto500.ttf';
 import '../lib/assets/fonts/roboto700.ttf';
-import { cssSize } from './utils';
+import { cssSize, screenSize } from './utils';
 
 export default createGlobalStyle(
   ({ theme }) => css`
@@ -17,27 +17,27 @@ export default createGlobalStyle(
     }
     body {
       font-size: ${theme.fontSize.body};
-      height: 100vh;
-      width: 100vw;
-      max-height: 100vh;
-      max-width: 100vw;
-      overflow: hidden;
+      min-height: 100vh;
     }
     html,
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: ${theme.colors.bg1};
-      color: ${theme.colors.text1};
       font-weight: 500;
+      background-color: ${theme.colors.bg4};
+      color: ${theme.colors.text4};
+      overflow-x: hidden;
     }
     h1 {
       font-size: ${theme.fontSize.h1};
+      font-weight: bolder;
     }
     h2 {
       font-size: ${theme.fontSize.h2};
+      font-weight: bolder;
     }
     h3 {
       font-size: ${theme.fontSize.h3};
+      font-weight: bolder;
     }
     h4 {
       font-size: ${theme.fontSize.h4};
@@ -50,7 +50,7 @@ export default createGlobalStyle(
     }
     p {
       font-size: ${theme.fontSize.body};
-      max-width: ${cssSize(200)};
+      line-height: 22px;
     }
     ul {
       list-style: none;
@@ -59,10 +59,26 @@ export default createGlobalStyle(
       color: unset;
       text-decoration: underline;
     }
+    b,
+    small {
+      color: ${theme.colors.main};
+    }
+    em {
+      font-style: normal;
+      font-weight: normal;
+      font-size: ${theme.fontSize.small};
+    }
+    mark {
+      font-size: ${theme.fontSize.small};
+    }
+    small {
+      font-size: ${theme.fontSize.small};
+    }
+    label > b {
+      font-size: ${theme.fontSize.label};
+    }
     button,
     select {
-      font-family: 'Quicksand', sans-serif;
-      font-weight: 600;
       min-height: ${cssSize(9)};
       display: flex;
       align-items: center;
@@ -75,7 +91,7 @@ export default createGlobalStyle(
       cursor: pointer;
     }
     div::-webkit-scrollbar {
-      width: ${cssSize(2)};
+      width: ${cssSize(3)};
     }
     div::-webkit-scrollbar-track {
       background: #0000;
@@ -92,6 +108,12 @@ export default createGlobalStyle(
       height: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    @media (max-width: ${screenSize.tablet}px) {
+      html {
+        font-size: 15px;
+      }
     }
   `,
 );

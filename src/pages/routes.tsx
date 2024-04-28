@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 
-import HomePage from './home';
+import ProfilePage from './profile';
 
 const Router = () => {
   return (
     <Routes location={location}>
-      <Route path="/*" element={<HomePage />} />
+      <Route path="/" element={<ProfilePage />} />
     </Routes>
   );
 };

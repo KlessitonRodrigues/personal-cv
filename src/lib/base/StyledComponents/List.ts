@@ -3,14 +3,10 @@ import styled, { css } from 'styled-components';
 import { cssSize } from 'src/styles/utils';
 
 export const List = styled.ul(
-  ({ theme }) => css`
+  () => css`
     list-style: none;
     padding-left: ${cssSize(5)};
     margin: ${cssSize(2)} 0;
-
-    li {
-      margin-bottom: ${cssSize(2)};
-    }
   `,
 );
 
@@ -18,6 +14,7 @@ export const ListItem = styled.li(
   ({ theme }) => css`
     list-style: none;
     position: relative;
+    margin-bottom: ${cssSize(2)};
 
     &::after {
       content: '';
@@ -29,9 +26,17 @@ export const ListItem = styled.li(
       left: -15px;
       top: 7px;
     }
+  `,
+);
 
-    b {
-      margin-right: ${cssSize(2)};
+export const ListItemBox = styled(ListItem)(
+  ({ theme }) => css`
+    padding: ${cssSize(4)};
+    border: ${theme.border.small};
+    border-radius: ${theme.radius.small};
+
+    &::after {
+      display: none;
     }
   `,
 );

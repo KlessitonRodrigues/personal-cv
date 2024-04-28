@@ -1,6 +1,9 @@
 import ENJSON from 'src/lib/assets/i18n/en.json';
 import PTJSON from 'src/lib/assets/i18n/pt.json';
 
+const ENText = ENJSON as Utils.TranslationFile;
+const PTText = PTJSON as Utils.TranslationFile;
+
 export const getLanguage = () => {
   try {
     return localStorage.getItem('lang') || 'en';
@@ -16,11 +19,17 @@ export const changeLanguage = (lang: string) => {
   } catch (err) {}
 };
 
-export const getText = (path: string) => {
-  const lang = getLanguage();
-  const ENText = ENJSON as Utils.TranslationFile;
-  const PTText = PTJSON as Utils.TranslationFile;
+export const lang = getLanguage();
 
+export const toggleLang = () => {
+  const lang = getLanguage();
+  const langs = ['pt', 'en'];
+  const colorIndex = langs.indexOf(lang);
+  const nextLang = colorIndex < langs.length - 1 ? langs[colorIndex + 1] : langs[0];
+  changeLanguage(nextLang);
+};
+
+export const getText = (path: string) => {
   if (lang === 'pt') return PTText[path] || 'NO_TEXT';
   return ENText[path] || 'NO_TEXT';
 };

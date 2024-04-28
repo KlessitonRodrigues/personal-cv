@@ -1,19 +1,20 @@
+import { currenMainColor } from 'src/utils/theme';
+
 import { atlassianColors as acolors, materialColors as mcolors } from './colors';
 import { cssSize } from './utils';
 
 export const defaultTheme: Styles.Theme = {
   colors: {
-    main: mcolors.blue['600'],
-    mainBg: mcolors.blue['700'],
-    mainText: mcolors.grey['200'],
+    ...currenMainColor,
+    mainText: mcolors.grey['300'],
     bg1: mcolors.grey['50'],
     bg2: mcolors.grey['100'],
     bg3: mcolors.grey['200'],
     bg4: mcolors.grey['300'],
-    text1: mcolors.grey['900'],
-    text2: mcolors.grey['800'],
-    text3: mcolors.grey['700'],
-    text4: mcolors.grey['500'],
+    text1: mcolors.grey['800'],
+    text2: mcolors.grey['700'],
+    text3: mcolors.grey['600'],
+    text4: mcolors.grey['400'],
     gray: mcolors.grey['500'],
     yellow: acolors.yellow['600'],
     red: acolors.red['800'],
@@ -23,32 +24,32 @@ export const defaultTheme: Styles.Theme = {
     black: mcolors.black,
   },
   fontSize: {
-    h1: '1.3rem',
-    h2: '1.25rem',
-    h3: '1.2rem',
+    h1: '1.5rem',
+    h2: '1.35rem',
+    h3: '1.25rem',
     h4: '1.15rem',
     h5: '1.1rem',
-    h6: '1.05rem',
+    h6: '1rem',
     body: '1rem',
     small: '0.95rem',
     verySmall: '0.9rem',
-    label: '0.9rem',
+    label: '0.8rem',
   },
   shadow: {
-    large: '1px 1px 4px 0 #000a',
-    medium: '1px 1px 4px 0 #0007',
-    small: '1px 1px 4px 0 #0004',
+    large: '0 1px 7px 0 #0007',
+    medium: '0 1px 5px 0 #0005',
+    small: '0 1px 3px 0 #0003',
   },
   border: {
-    large: `solid 1px ${mcolors.grey['300']}`,
-    medium: `solid 1px ${mcolors.grey['500']}`,
-    small: `solid 2px ${mcolors.grey['500']}`,
+    large: `solid 1px ${mcolors.grey['800']}`,
+    medium: `solid 1px ${mcolors.grey['600']}`,
+    small: `solid 1px ${mcolors.grey['400']}`,
   },
   radius: {
     full: '50%',
-    large: cssSize(4),
-    medium: cssSize(3),
-    small: cssSize(2),
+    large: cssSize(5),
+    medium: cssSize(4),
+    small: cssSize(3),
   },
 };
 
@@ -57,14 +58,19 @@ export const defaultThemeDark = {
   colors: {
     ...defaultTheme.colors,
     bg1: mcolors.black,
-    bg2: mcolors.grey['800'] + '44',
-    bg3: mcolors.grey['700'] + '44',
-    bg4: mcolors.grey['600'] + '44',
+    bg2: mcolors.grey['900'],
+    bg3: mcolors.grey['800'],
+    bg4: mcolors.grey['700'],
     text1: mcolors.grey['300'],
     text2: mcolors.grey['400'],
     text3: mcolors.grey['500'],
-    text4: mcolors.grey['700'],
+    text4: mcolors.grey['600'],
     gray: mcolors.grey['600'],
     white: mcolors.grey['300'],
+  },
+  border: {
+    large: `solid 1px ${mcolors.grey['500']}`,
+    medium: `solid 1px ${mcolors.grey['600']}`,
+    small: `solid 1px ${mcolors.grey['700']}`,
   },
 };

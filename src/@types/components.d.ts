@@ -4,17 +4,63 @@ declare namespace Props {
     size?: number;
     gap?: number;
     mb?: number;
+    w?: string;
+    h?: string;
+    maxw?: string;
+    maxh?: string;
+    p?: string;
+    m?: string;
+    left?: boolean;
+    right?: boolean;
+    top?: boolean;
+    bottom?: boolean;
+    wrap?: boolean;
+    rows?: number;
+    cols?: number;
+    responsive?: boolean;
+    reverse?: boolean;
+    src?: string;
   };
 
   type Icons = {
     size?: number;
     onPress?: () => void;
     style?: React.CSSProperties;
-    type: 'download' | 'selector' | 'spinner' | 'github' | 'template' | 'language' | 'link';
+    type:
+      | 'download'
+      | 'selector'
+      | 'spinner'
+      | 'github'
+      | 'template'
+      | 'language'
+      | 'link'
+      | 'textDocument'
+      | 'image'
+      | 'user'
+      | 'theme'
+      | 'sun'
+      | 'moon'
+      | 'website'
+      | 'menu'
+      | 'close';
   };
 
   type Text = {
     path: string;
+    tag?:
+      | 'b'
+      | 'span'
+      | 'small'
+      | 'strong'
+      | 'mark'
+      | 'em'
+      | 'p'
+      | 'h1'
+      | 'h2'
+      | 'h3'
+      | 'h4'
+      | 'h5'
+      | 'h6';
   };
 
   type Loading = {
