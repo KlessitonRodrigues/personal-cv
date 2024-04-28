@@ -32,8 +32,8 @@ export const animations = {
     to { opacity: 1; }`,
   spinning: keyframes`
     to { transform: rotateZ(360deg); }`,
-  spinningFadeIn: keyframes`
-    to { transform: rotateZ(180deg);}`,
+  halfSpinning: keyframes`
+    to { transform: rotateZ(180deg); }`,
 };
 
 export const gradients = {

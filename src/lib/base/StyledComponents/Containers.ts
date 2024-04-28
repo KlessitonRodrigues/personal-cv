@@ -48,13 +48,20 @@ export const Card = styled.div(
 );
 
 export const Box = styled.div<Props.CssProps>(
-  ({ theme, w }) => css`
+  ({ theme, w, maxw, responsive }) => css`
     width: ${w ?? '100%'};
+    max-width: ${maxw ?? '100%'};
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: ${cssSize(2)};
     padding: ${cssSize(4)};
     border: ${theme.border.small};
     border-radius: ${theme.radius.small};
+
+    @media (max-width: ${screenSize.laptopS}px) {
+      ${responsive && 'max-width: 100%;'}
+    }
   `,
 );

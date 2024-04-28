@@ -6,6 +6,8 @@ declare namespace Props {
     mb?: number;
     w?: string;
     h?: string;
+    maxw?: string;
+    maxh?: string;
     p?: string;
     m?: string;
     left?: boolean;

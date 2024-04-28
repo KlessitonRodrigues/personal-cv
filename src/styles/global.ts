@@ -25,6 +25,7 @@ export default createGlobalStyle(
       font-weight: 500;
       background-color: ${theme.colors.bg4};
       color: ${theme.colors.text4};
+      overflow-x: hidden;
     }
     h1 {
       font-size: ${theme.fontSize.h1};

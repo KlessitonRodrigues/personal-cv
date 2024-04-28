@@ -56,6 +56,7 @@ export const SidebarItem = styled.div<Props.CssProps>(
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
     ${active === false && `opacity: 0.6;`}
+
     &:hover {
       opacity: 0.8;
     }
@@ -86,7 +87,7 @@ export const Content = styled.div<Props.CssProps>(
 );
 
 export const MenuBtn = styled(RoundedBtn)(
-  ({ theme, active, reverse }) => css`
+  ({ theme, active }) => css`
     position: fixed;
     top: ${cssSize(1)};
     left: ${cssSize(4)};
@@ -101,8 +102,7 @@ export const MenuBtn = styled(RoundedBtn)(
     box-shadow: ${theme.shadow.medium};
 
     .icon {
-      animation: 0.3s ${animations.spinningFadeIn} linear reverse;
-      ${reverse && 'animation-direction: reverse;'}
+      animation: 0.5s ${animations.halfSpinning} ease-in;
     }
 
     @media (max-width: ${screenSize.tablet}px) {

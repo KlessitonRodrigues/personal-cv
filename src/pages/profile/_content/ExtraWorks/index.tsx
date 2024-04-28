@@ -15,7 +15,7 @@ const ProfileExtraWorks = () => {
           <Text tag="p" path="extraworks_text" />
         </Column>
 
-        <Grid top cols={2}>
+        <Grid cols={2}>
           <Box>
             <Row left>
               <a href={urls.jsBackupRep} target="_blank">
