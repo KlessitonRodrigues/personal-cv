@@ -5,7 +5,7 @@ import ProfilePage from './profile';
 const Router = () => {
   return (
     <Routes location={location}>
-      <Route path="/" element={<ProfilePage />} />
+      <Route path="/*" element={<ProfilePage />} />
     </Routes>
   );
 };
