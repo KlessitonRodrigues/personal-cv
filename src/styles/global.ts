@@ -109,6 +109,9 @@ export default createGlobalStyle(
       display: flex;
       flex-direction: column;
     }
+    .custom-bg {
+      fill: ${theme.colors.mainBg};
+    }
 
     @media (max-width: ${screenSize.tablet}px) {
       html {

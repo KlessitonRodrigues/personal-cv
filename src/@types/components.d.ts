@@ -42,7 +42,9 @@ declare namespace Props {
       | 'moon'
       | 'website'
       | 'menu'
-      | 'close';
+      | 'close'
+      | 'linkedin'
+      | 'facebook';
   };
 
   type Text = {

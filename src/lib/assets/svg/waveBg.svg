@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100%" height="100%" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="transparent" width="1600" height="900"/>
+  <polygon points="883.668 511.096 465.668 898.211 1322.668 898.211" style="fill: rgb(234, 189, 90);"/>
+  <polygon fill="#aa1c7d" points="883.668 511.096 799.568 898.211 1322.668 898.211" style=""/>
+  <polygon points="-133.332 898.211 324.668 660.211 742.668 898.211" style="fill: rgb(223, 186, 144);"/>
+  <polygon fill="#a31776" points="263.668 898.211 324.668 660.211 742.668 898.211"/>
+  <polygon points="1129.668 544.211 1478.668 898.211 802.668 898.211" style="fill: rgb(226, 153, 136);"/>
+  <polygon points="1129.668 544.211 1478.668 898.211 1088.668 898.211" style="fill: rgb(153, 73, 127);"/>
+  <polygon points="567.668 693.211 812.668 898.211 293.668 898.211" style="fill: rgb(209, 109, 166);"/>
+  <polygon points="513.668 898.211 567.668 693.211 812.668 898.211" style="fill: rgb(158, 74, 131);"/>
+  <polygon points="1636.668 898.211 1327.668 630.211 1022.668 898.211" style="fill: rgb(187, 123, 202);"/>
+  <polygon points="1636.668 898.211 1327.668 630.211 1291.668 898.211" style="fill: rgb(160, 66, 128);"/>
+  <polygon points="1136.668 898.211 897.668 685.211 651.668 898.211" style="fill: rgb(178, 140, 209);"/>
+  <polygon points="869.668 898.211 1136.668 898.211 897.668 685.211" style="fill: rgb(151, 66, 121);"/>
+</svg>

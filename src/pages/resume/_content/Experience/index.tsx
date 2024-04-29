@@ -39,14 +39,14 @@ const ProfileExperience = () => {
               <Text tag="small" path="experience_broncos_tech" />
             </Box>
             <Box>
-              <Text tag="h6" path="experience_vouchio" />
-              <Text tag="p" path="experience_vouchio_text" />
-              <Text tag="small" path="experience_vouchio_tech" />
-            </Box>
-            <Box>
               <Text tag="h6" path="experience_talentId" />
               <Text tag="p" path="experience_talentId_text" />
               <Text tag="small" path="experience_talentId_tech" />
+            </Box>
+            <Box>
+              <Text tag="h6" path="experience_vouchio" />
+              <Text tag="p" path="experience_vouchio_text" />
+              <Text tag="small" path="experience_vouchio_tech" />
             </Box>
             <Box>
               <Text tag="h6" path="experience_vintage" />

@@ -73,7 +73,6 @@ export const SidebarItem = styled.div<Props.CssProps>(
 
 export const Content = styled.div<Props.CssProps>(
   ({ active }) => css`
-    position: relative;
     width: 100%;
     height: 100%;
     padding-left: ${active ? cssSize(sidebarSizeOpen + 4) : cssSize(sidebarSize)};

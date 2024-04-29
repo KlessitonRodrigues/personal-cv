@@ -6,6 +6,7 @@ export const Page = styled.div(
   () => css`
     width: 100%;
     height: 100%;
+    z-index: 3;
   `,
 );
 
@@ -30,6 +31,7 @@ export const Section = styled.section(
 
 export const Card = styled.div(
   ({ theme }) => css`
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -44,6 +46,13 @@ export const Card = styled.div(
     &:hover {
       box-shadow: ${theme.shadow.medium};
     }
+  `,
+);
+
+export const TransparentCard = styled(Card)(
+  ({ theme }) => css`
+    background-color: ${theme.colors.bg1}dd;
+    backdrop-filter: blur(3px);
   `,
 );
 
