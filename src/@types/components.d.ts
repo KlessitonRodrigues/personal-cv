@@ -19,6 +19,7 @@ declare namespace Props {
     cols?: number;
     responsive?: boolean;
     reverse?: boolean;
+    half?: boolean;
     src?: string;
   };
 
@@ -26,43 +27,12 @@ declare namespace Props {
     size?: number;
     onPress?: () => void;
     style?: React.CSSProperties;
-    type:
-      | 'download'
-      | 'selector'
-      | 'spinner'
-      | 'github'
-      | 'template'
-      | 'language'
-      | 'link'
-      | 'textDocument'
-      | 'image'
-      | 'user'
-      | 'theme'
-      | 'sun'
-      | 'moon'
-      | 'website'
-      | 'menu'
-      | 'close'
-      | 'linkedin'
-      | 'facebook';
+    type: Utils.IconTypes;
   };
 
   type Text = {
     path: string;
-    tag?:
-      | 'b'
-      | 'span'
-      | 'small'
-      | 'strong'
-      | 'mark'
-      | 'em'
-      | 'p'
-      | 'h1'
-      | 'h2'
-      | 'h3'
-      | 'h4'
-      | 'h5'
-      | 'h6';
+    tag?: Utils.TextTags;
   };
 
   type Loading = {

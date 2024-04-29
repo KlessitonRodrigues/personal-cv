@@ -34,7 +34,7 @@ export const OutlineBtn = styled.div<Props.CssProps>(
     justify-content: center;
     align-items: center;
     gap: ${cssSize(2)};
-    color: ${theme.colors.main};
+    color: ${theme.colors.text1};
     cursor: pointer;
 
     &:hover {

@@ -109,5 +109,7 @@
   "extraworks_translationpwa_tech": "ReactJS, Webpack, Styled Components, Google Translation API.",
   "extraworks_quiz": "Simple Quiz App",
   "extraworks_quiz_text": "Simple Quiz app about HTML, CSS and Javascript technologies.",
-  "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker"
+  "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker",
+
+  "profile_years": "Year(s)"
 }

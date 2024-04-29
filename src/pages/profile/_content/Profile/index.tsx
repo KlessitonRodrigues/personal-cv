@@ -7,6 +7,7 @@ import { Row } from 'src/lib/base/StyledComponents/Flex';
 import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/base/StyledComponents/Images';
 import { AvatarBig } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
+import { urls } from 'src/utils/constants/urls';
 
 export const Profile = () => {
   return (
@@ -19,18 +20,24 @@ export const Profile = () => {
           <Text tag="h3" path="header_work" />
           <Text tag="p" path="cv_resume" />
           <Row left responsive gap={8}>
-            <OutlineBtn>
-              <Icons size={8} type="github" />
-              Github
-            </OutlineBtn>
-            <OutlineBtn>
-              <Icons size={8} type="linkedin" />
-              LinkedIn
-            </OutlineBtn>
-            <OutlineBtn>
-              <Icons size={8} type="facebook" />
-              Facebook
-            </OutlineBtn>
+            <a href={urls.githubProfile} target="_blank">
+              <OutlineBtn>
+                <Icons size={8} type="github" />
+                <p>Github</p>
+              </OutlineBtn>
+            </a>
+            <a href={urls.linkedin} target="_blank">
+              <OutlineBtn>
+                <Icons size={8} type="linkedin" />
+                <p>LinkedIn</p>
+              </OutlineBtn>
+            </a>
+            <a href={urls.facebook} target="_blank">
+              <OutlineBtn>
+                <Icons size={8} type="facebook" />
+                <p>Facebook</p>
+              </OutlineBtn>
+            </a>
           </Row>
         </OutdoorContent>
       </Outdoor>
