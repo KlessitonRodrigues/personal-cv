@@ -12,9 +12,9 @@ export const themeColors: Record<string, { main: string; mainBg: string }> = {
 
 export const getColor = () => {
   try {
-    return localStorage.getItem('color') || 'blue';
+    return localStorage.getItem('color') || 'indigo';
   } catch (err) {
-    return 'blue';
+    return 'indigo';
   }
 };
 

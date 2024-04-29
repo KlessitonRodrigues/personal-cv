@@ -18,7 +18,7 @@ export const Experience = () => {
         <Box>
           <Row>
             <Row left>
-              <Icons size={6} type={item.icon} />
+              <Icons size={8} type={item.icon} />
               <h6>{item.name}</h6>
             </Row>
             <Row right>

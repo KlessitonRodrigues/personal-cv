@@ -1,5 +1,5 @@
-import cyberImg from 'src/lib/assets/jpeg/cyber_bg2.jpeg';
-import profile from 'src/lib/assets/jpg/profile.jpg';
+import cyberpunkBg from 'src/lib/assets/images/cyberpunkBg.png';
+import profile from 'src/lib/assets/images/profile.jpg';
 import Icons from 'src/lib/base/Icons';
 import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { Section } from 'src/lib/base/StyledComponents/Containers';
@@ -13,11 +13,13 @@ export const Profile = () => {
   return (
     <Section>
       <Outdoor>
-        <OutdoorImage src={cyberImg} />
+        <OutdoorImage src={cyberpunkBg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
-          <Text tag="h1" path="header_name" />
-          <Text tag="h3" path="header_work" />
+          <b>
+            <Text tag="h2" path="header_name" />
+          </b>
+          <Text tag="h4" path="header_work" />
           <Text tag="p" path="cv_resume" />
           <Row left responsive gap={8}>
             <a href={urls.githubProfile} target="_blank">

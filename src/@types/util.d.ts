@@ -52,7 +52,9 @@ declare namespace Utils {
     | 'postgres'
     | 'nextJS'
     | 'nestJS'
-    | 'expressJS';
+    | 'expressJS'
+    | 'materialui'
+    | 'mantineui';
 
   type TextTags =
     | 'b'

@@ -30,6 +30,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'styledComponents',
   },
   {
+    name: 'Material UI',
+    year: 2020,
+    type: 'frontend',
+    icon: 'materialui',
+  },
+  {
     name: 'ReactJS',
     year: 2020,
     type: 'frontend',
@@ -46,6 +52,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2021,
     type: 'frontend',
     icon: 'nextJS',
+  },
+  {
+    name: 'MantineUI',
+    year: 2021,
+    type: 'frontend',
+    icon: 'mantineui',
   },
   {
     name: 'NodeJS',

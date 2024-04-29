@@ -55,7 +55,7 @@ export const SidebarItem = styled.div<Props.CssProps>(
     gap: ${cssSize(6)};
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
-    ${active === false && `opacity: 0.6;`}
+    ${active === false && `opacity: 0.7;`}
 
     &:hover {
       opacity: 0.8;

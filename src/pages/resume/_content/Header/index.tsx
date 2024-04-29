@@ -1,4 +1,4 @@
-import profileImg from 'src/lib/assets/jpg/profile.jpg';
+import profileImg from 'src/lib/assets/images/profile.jpg';
 import { Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';

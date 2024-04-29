@@ -25,7 +25,9 @@ export const OutdoorImage = styled.div<Props.CssProps>(
     height: ${cssSize(120)};
     background-image: url(${src});
     background-position: center;
-    filter: brightness(0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.8);
   `,
 );
 
