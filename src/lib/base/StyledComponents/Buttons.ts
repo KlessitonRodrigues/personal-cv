@@ -26,3 +26,19 @@ export const MainRoundedBtn = styled(RoundedBtn)(
     color: ${theme.colors.mainText};
   `,
 );
+
+export const OutlineBtn = styled.div<Props.CssProps>(
+  ({ theme, w }) => css`
+    width: ${w ?? 'fit-content'};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: ${cssSize(2)};
+    color: ${theme.colors.text1};
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  `,
+);

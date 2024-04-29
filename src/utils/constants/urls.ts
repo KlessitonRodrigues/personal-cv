@@ -1,6 +1,7 @@
 export const urls = {
   krdsEmail: 'mailto:klessitonrds@gmail.com',
   linkedin: 'http://linkedin.com/in/klessitonrds',
+  facebook: 'https://www.facebook.com/klessitom.rodrigues/',
   github: 'http://github.com/KlessitonRodrigues',
   githubProfile: 'http://github.com/KlessitonRodrigues',
   personalPage: 'https://klessitonrodrigues.github.io/personal-cv/',

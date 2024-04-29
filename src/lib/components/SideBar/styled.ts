@@ -42,7 +42,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     }
 
     @media (max-width: ${screenSize.tablet}px) {
-      ${!active && 'transform: translateX(-10rem);'}
+      ${!active && 'transform: translateX(-5rem);'}
       height: 99%;
     }
   `,
@@ -55,7 +55,7 @@ export const SidebarItem = styled.div<Props.CssProps>(
     gap: ${cssSize(6)};
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
-    ${active === false && `opacity: 0.6;`}
+    ${active === false && `opacity: 0.7;`}
 
     &:hover {
       opacity: 0.8;
@@ -73,10 +73,9 @@ export const SidebarItem = styled.div<Props.CssProps>(
 
 export const Content = styled.div<Props.CssProps>(
   ({ active }) => css`
-    position: relative;
     width: 100%;
     height: 100%;
-    padding-left: ${active ? cssSize(sidebarSizeOpen + 4) : cssSize(sidebarSize)};
+    padding-left: ${active ? cssSize(sidebarSizeOpen + 2) : cssSize(sidebarSize + 2)};
     transition: 0.3s ease-out;
 
     @media (max-width: ${screenSize.tablet}px) {
@@ -90,7 +89,7 @@ export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
     top: ${cssSize(1)};
-    left: ${cssSize(4)};
+    left: ${cssSize(2)};
     z-index: 2;
     display: none;
     width: ${cssSize(16)};
@@ -102,7 +101,7 @@ export const MenuBtn = styled(RoundedBtn)(
     box-shadow: ${theme.shadow.medium};
 
     .icon {
-      animation: 0.5s ${animations.halfSpinning} ease-in;
+      animation: 0.4s ${animations.halfSpinning} linear;
     }
 
     @media (max-width: ${screenSize.tablet}px) {

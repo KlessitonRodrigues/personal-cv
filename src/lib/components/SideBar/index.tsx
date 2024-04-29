@@ -12,19 +12,24 @@ import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
+  const path = location.pathname;
 
   return (
     <Container>
       <SidebarBox active={open}>
         <Column top left gap={8}>
-          <SidebarItem active={false} title="In progress">
-            <Icons type="website" size={8} />
-            <Text tag="p" path="sidebar_link_profile" />
-          </SidebarItem>
-          <SidebarItem active>
-            <Icons type="textDocument" size={8} />
-            <Text tag="p" path="sidebar_link_cv" />
-          </SidebarItem>
+          <a href="/">
+            <SidebarItem active={path === '/'}>
+              <Icons type="website" size={8} />
+              <Text tag="p" path="sidebar_link_profile" />
+            </SidebarItem>
+          </a>
+          <a href="/resume">
+            <SidebarItem active={path === '/resume'}>
+              <Icons type="textDocument" size={8} />
+              <Text tag="p" path="sidebar_link_cv" />
+            </SidebarItem>
+          </a>
         </Column>
 
         <Column bottom left gap={8}>

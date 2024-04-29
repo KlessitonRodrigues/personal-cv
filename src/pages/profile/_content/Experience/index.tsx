@@ -1,96 +1,56 @@
+import { useMemo } from 'react';
+
+import Icons from 'src/lib/base/Icons';
 import { Box, Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Grid, Row } from 'src/lib/base/StyledComponents/Flex';
+import { ProgressStep, ProgressStepBox } from 'src/lib/base/StyledComponents/Progress';
 import Text from 'src/lib/base/Text';
+import { experienceMap } from 'src/utils/constants/experienceMap';
+import { yearsFrom } from 'src/utils/dates';
 
-const ProfileExperience = () => {
+export const Experience = () => {
+  const experienceItems = useMemo(() => {
+    return experienceMap.map(item => {
+      const years = yearsFrom(item.year);
+      const yearsArr = new Array(years).fill(0);
+      return (
+        <Box>
+          <Row>
+            <Row left>
+              <Icons size={8} type={item.icon} />
+              <h6>{item.name}</h6>
+            </Row>
+            <Row right>
+              <small>{item.type}</small>
+            </Row>
+          </Row>
+          <Column left>
+            <small>
+              {years}
+              &nbsp;
+              <Text path="profile_years" />
+            </small>
+            <ProgressStepBox>
+              {yearsArr.map(() => (
+                <ProgressStep />
+              ))}
+            </ProgressStepBox>
+          </Column>
+        </Box>
+      );
+    });
+  }, []);
+
   return (
     <Section>
       <Card>
-        <Column left>
-          <Text tag="h4" path="experience_title" />
-          <Hr />
-        </Column>
-
-        <Column left>
-          <Row left responsive>
-            <Text tag="h6" path="experience_cef" />
-            <Text tag="small" path="experience_cef_date" />
-          </Row>
-          <Text tag="p" path="experience_cef_text" />
-          <Text tag="small" path="experience_cef_tech" />
-        </Column>
-
-        <Column left gap={2}>
-          <Row left responsive>
-            <Text tag="h6" path="experience_westpoint" />
-            <Text tag="small" path="experience_westpoint_date" />
-          </Row>
-          <Text tag="p" path="experience_westpoint_text" />
-          <Grid cols={2}>
-            <Box>
-              <Text tag="h6" path="experience_collums" />
-              <Text tag="p" path="experience_collums_text" />
-              <Text tag="small" path="experience_collums_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_broncos" />
-              <Text tag="p" path="experience_broncos_text" />
-              <Text tag="small" path="experience_broncos_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_vouchio" />
-              <Text tag="p" path="experience_vouchio_text" />
-              <Text tag="small" path="experience_vouchio_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_talentId" />
-              <Text tag="p" path="experience_talentId_text" />
-              <Text tag="small" path="experience_talentId_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_vintage" />
-              <Text tag="p" path="experience_vintage_text" />
-              <Text tag="small" path="experience_vintage_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_quarx" />
-              <Text tag="p" path="experience_quarx_text" />
-              <Text tag="small" path="experience_quarx_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_website" />
-              <Text tag="p" path="experience_website_text" />
-              <Text tag="small" path="experience_website_tech" />
-            </Box>
-            <Box>
-              <Text tag="h6" path="experience_scrap" />
-              <Text tag="p" path="experience_scrap_text" />
-              <Text tag="small" path="experience_scrap_tech" />
-            </Box>
-          </Grid>
-        </Column>
-
-        <Column left>
-          <Row left responsive>
-            <Text tag="h6" path="experience_centralacademy" />
-            <Text tag="small" path="experience_centralacademy_date" />
-          </Row>
-          <Text tag="p" path="experience_centralacademy_text" />
-          <Text tag="small" path="experience_centralacademy_tech" />
-        </Column>
-
-        <Column left>
-          <Row left responsive>
-            <Text tag="h6" path="experience_socialpower" />
-            <Text tag="small" path="experience_socialpower_date" />
-          </Row>
-          <Text tag="p" path="experience_socialpower_text" />
-          <Text tag="small" path="experience_socialpower_tech" />
-        </Column>
+        <Text tag="h3" path="experience_title" />
+        <Hr />
+        <Grid cols={2} responsive gap={4}>
+          {experienceItems}
+        </Grid>
       </Card>
     </Section>
   );
 };
-
-export default ProfileExperience;
