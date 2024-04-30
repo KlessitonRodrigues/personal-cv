@@ -19,7 +19,7 @@ export const Profile = () => {
           <b>
             <Text tag="h2" path="header_name" />
           </b>
-          <Text tag="h4" path="header_work" />
+          <Text tag="h3" path="header_work" />
           <Text tag="p" path="cv_resume" />
           <Row left responsive gap={8}>
             <a href={urls.personalPage} target="_blank">

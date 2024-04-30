@@ -60,7 +60,10 @@ declare namespace Utils {
     | 'expo'
     | 'electron'
     | 'figma'
-    | 'git';
+    | 'git'
+    | 'androidStudio'
+    | 'insomnia'
+    | 'postman';
 
   type TextTags =
     | 'b'

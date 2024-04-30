@@ -16,6 +16,7 @@ import {
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line } from 'react-icons/ri';
 import {
   SiAmazonaws,
+  SiAndroidstudio,
   SiClojure,
   SiCss3,
   SiDocker,
@@ -25,6 +26,7 @@ import {
   SiFigma,
   SiGit,
   SiHtml5,
+  SiInsomnia,
   SiJavascript,
   SiJest,
   SiMantine,
@@ -35,6 +37,7 @@ import {
   SiNodedotjs,
   SiPlaywright,
   SiPostgresql,
+  SiPostman,
   SiPuppeteer,
   SiReact,
   SiSass,
@@ -95,4 +98,7 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   electron: <SiElectron />,
   figma: <SiFigma />,
   git: <SiGit />,
+  androidStudio: <SiAndroidstudio />,
+  insomnia: <SiInsomnia />,
+  postman: <SiPostman />,
 };

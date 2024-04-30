@@ -29,7 +29,7 @@ export const Spinner = styled.div(
     align-items: center;
     justify-content: center;
     margin-bottom: ${cssSize(8)};
-    animation: ${animations.spinning} 0.8s infinite linear;
+    animation: ${animations.spinning} 0.5s infinite linear;
   `,
 );
 

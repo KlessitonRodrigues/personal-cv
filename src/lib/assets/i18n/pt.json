@@ -1,6 +1,8 @@
 {
   "sidebar_link_profile": "Perfil",
   "sidebar_link_cv": "Currículo",
+  "sidebar_theme_light": "Claro",
+  "sidebar_theme_dark": "Escuro",
 
   "header_pdf_btn": "Salvar como PDF",
   "header_name": "KLÉSSITON RODRIGUES DA SILVA",

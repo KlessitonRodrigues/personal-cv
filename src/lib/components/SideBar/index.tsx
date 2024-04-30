@@ -34,18 +34,26 @@ const SideBar = (props: PropsWithChildren) => {
         </Column>
 
         <Column bottom left gap={8}>
-          <SidebarItem onClick={toggleLang}>
+          <SidebarItem onClick={toggleLang} top>
             <Icons type="language" size={8} />
             <p>{lang}</p>
           </SidebarItem>
           <SidebarItem onClick={toggleTheme}>
-            <If check={currentTheme === 'light'}>
-              <Icons type="sun" size={8} />
-            </If>
-            <If check={currentTheme === 'dark'}>
-              <Icons type="moon" size={8} />
-            </If>
-            <p>{currentTheme}</p>
+            <If
+              check={currentTheme === 'light'}
+              true={
+                <>
+                  <Icons type="sun" size={8} />
+                  <Text tag="p" path="sidebar_theme_light" />
+                </>
+              }
+              false={
+                <>
+                  <Icons type="moon" size={8} />
+                  <Text tag="p" path="sidebar_theme_dark" />
+                </>
+              }
+            />
           </SidebarItem>
           <SidebarItem onClick={toggleColor}>
             <Icons type="theme" size={8} />

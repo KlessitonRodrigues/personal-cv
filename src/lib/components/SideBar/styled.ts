@@ -49,13 +49,15 @@ export const SidebarBox = styled.aside<Props.CssProps>(
 );
 
 export const SidebarItem = styled.div<Props.CssProps>(
-  ({ theme, active }) => css`
+  ({ theme, active, top }) => css`
     display: flex;
     align-items: center;
     gap: ${cssSize(6)};
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
     ${active === false && `opacity: 0.7;`}
+    ${top && `text-transform: uppercase;`}
+
 
     &:hover {
       opacity: 0.8;
@@ -88,15 +90,15 @@ export const Content = styled.div<Props.CssProps>(
 export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
-    top: ${cssSize(1)};
-    left: ${cssSize(2)};
+    top: ${cssSize(2)};
+    left: ${cssSize(4)};
     z-index: 2;
     display: none;
     width: ${cssSize(16)};
     height: ${cssSize(16)};
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
-    ${active && `margin-left: ${cssSize(sidebarSizeOpen + 4)};`}
+    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
     transition: 0.3s ease-out;
     box-shadow: ${theme.shadow.medium};
 

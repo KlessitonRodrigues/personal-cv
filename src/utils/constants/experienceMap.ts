@@ -102,6 +102,18 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'postgres',
   },
   {
+    name: 'Insomnia',
+    year: 2021,
+    type: 'devops',
+    icon: 'insomnia',
+  },
+  {
+    name: 'Postman',
+    year: 2021,
+    type: 'devops',
+    icon: 'postman',
+  },
+  {
     name: 'AWS',
     year: 2022,
     type: 'backend',
@@ -166,6 +178,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2023,
     type: 'language',
     icon: 'java',
+  },
+  {
+    name: 'Android Studio',
+    year: 2023,
+    type: 'frontend',
+    icon: 'androidStudio',
   },
   {
     name: 'Spring Boot',
