@@ -1,4 +1,5 @@
 import { PropsWithChildren, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
@@ -18,18 +19,18 @@ const SideBar = (props: PropsWithChildren) => {
     <Container>
       <SidebarBox active={open}>
         <Column top left gap={8}>
-          <a href="/">
+          <Link to="/" reloadDocument>
             <SidebarItem active={path === '/'}>
               <Icons type="website" size={8} />
               <Text tag="p" path="sidebar_link_profile" />
             </SidebarItem>
-          </a>
-          <a href="/resume">
+          </Link>
+          <Link to="/resume" reloadDocument>
             <SidebarItem active={path === '/resume'}>
               <Icons type="textDocument" size={8} />
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
-          </a>
+          </Link>
         </Column>
 
         <Column bottom left gap={8}>
