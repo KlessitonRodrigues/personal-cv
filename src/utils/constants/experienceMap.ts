@@ -24,6 +24,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'javascript',
   },
   {
+    name: 'Figma',
+    year: 2020,
+    type: 'frontend',
+    icon: 'figma',
+  },
+  {
     name: 'Styled Components',
     year: 2020,
     type: 'frontend',
@@ -66,18 +72,6 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'nodejs',
   },
   {
-    name: 'MongoDB',
-    year: 2021,
-    type: 'backend',
-    icon: 'mongoDb',
-  },
-  {
-    name: 'PostgresDB',
-    year: 2021,
-    type: 'backend',
-    icon: 'postgres',
-  },
-  {
     name: 'ExpressJS',
     year: 2021,
     type: 'backend',
@@ -90,10 +84,28 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'docker',
   },
   {
+    name: 'MongoDB',
+    year: 2021,
+    type: 'backend',
+    icon: 'mongoDb',
+  },
+  {
+    name: 'PostgresDB',
+    year: 2021,
+    type: 'backend',
+    icon: 'postgres',
+  },
+  {
     name: 'AWS',
     year: 2022,
     type: 'backend',
     icon: 'aws',
+  },
+  {
+    name: 'ElectronJS',
+    year: 2022,
+    type: 'frontend',
+    icon: 'electron',
   },
   {
     name: 'Jest',
@@ -102,16 +114,28 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'jest',
   },
   {
-    name: 'PlayRight',
+    name: 'Playwright',
     year: 2022,
     type: 'tests',
-    icon: 'html',
+    icon: 'playwright',
   },
   {
     name: 'PuppeterJS',
     year: 2022,
     type: 'tests',
     icon: 'puppeter',
+  },
+  {
+    name: 'React Native',
+    year: 2022,
+    type: 'frontend',
+    icon: 'react',
+  },
+  {
+    name: 'Expo',
+    year: 2022,
+    type: 'devops',
+    icon: 'expo',
   },
   {
     name: 'SvelteJS',
@@ -124,6 +148,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2023,
     type: 'frontend',
     icon: 'tailwind',
+  },
+  {
+    name: 'Clojure',
+    year: 2023,
+    type: 'language',
+    icon: 'clojure',
   },
   {
     name: 'Java',

@@ -16,9 +16,13 @@ import {
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader2Fill } from 'react-icons/ri';
 import {
   SiAmazonaws,
+  SiClojure,
   SiCss3,
   SiDocker,
+  SiElectron,
+  SiExpo,
   SiExpress,
+  SiFigma,
   SiHtml5,
   SiJavascript,
   SiJest,
@@ -27,8 +31,8 @@ import {
   SiMongodb,
   SiNestjs,
   SiNextdotjs,
-  SiNextui,
   SiNodedotjs,
+  SiPlaywright,
   SiPostgresql,
   SiPuppeteer,
   SiReact,
@@ -84,4 +88,9 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   nextJS: <SiNextdotjs />,
   mantineui: <SiMantine />,
   materialui: <SiMaterialdesign />,
+  playwright: <SiPlaywright />,
+  clojure: <SiClojure />,
+  expo: <SiExpo />,
+  electron: <SiElectron />,
+  figma: <SiFigma />,
 };

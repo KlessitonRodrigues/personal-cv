@@ -54,7 +54,12 @@ declare namespace Utils {
     | 'nestJS'
     | 'expressJS'
     | 'materialui'
-    | 'mantineui';
+    | 'mantineui'
+    | 'playwright'
+    | 'clojure'
+    | 'expo'
+    | 'electron'
+    | 'figma';
 
   type TextTags =
     | 'b'

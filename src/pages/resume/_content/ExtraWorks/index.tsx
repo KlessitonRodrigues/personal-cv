@@ -18,17 +18,6 @@ const ProfileExtraWorks = () => {
         <Grid cols={2}>
           <Box>
             <Row left>
-              <a href={urls.jsBackupRep} target="_blank">
-                <Text tag="h6" path="extraworks_jsbackup" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="p" path="extraworks_jsbackup_text" />
-            <Text tag="small" path="extraworks_jsbackup_tech" />
-          </Box>
-
-          <Box>
-            <Row left>
               <a href={urls.personalPageRep} target="_blank">
                 <Text tag="h6" path="extraworks_personalcv" />
               </a>
@@ -36,6 +25,17 @@ const ProfileExtraWorks = () => {
             </Row>
             <Text tag="p" path="extraworks_personalcv_text" />
             <Text tag="small" path="extraworks_personalcv_tech" />
+          </Box>
+
+          <Box>
+            <Row left>
+              <a href={urls.jsBackupRep} target="_blank">
+                <Text tag="h6" path="extraworks_jsbackup" />
+              </a>
+              <Icons size={5} type="link" />
+            </Row>
+            <Text tag="p" path="extraworks_jsbackup_text" />
+            <Text tag="small" path="extraworks_jsbackup_tech" />
           </Box>
 
           <Box>

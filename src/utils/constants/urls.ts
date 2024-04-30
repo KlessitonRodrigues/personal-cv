@@ -4,7 +4,7 @@ export const urls = {
   facebook: 'https://www.facebook.com/klessitom.rodrigues/',
   github: 'http://github.com/KlessitonRodrigues',
   githubProfile: 'http://github.com/KlessitonRodrigues',
-  personalPage: 'https://klessitonrodrigues.github.io/personal-cv/',
+  personalPage: 'https://djc7924qzcvck.cloudfront.net',
   personalPageRep: 'https://github.com/KlessitonRodrigues/personal-cv',
   jsBackupRep: 'https://github.com/KlessitonRodrigues/javascript-krds/',
   gameFinderRepo: 'https://github.com/KlessitonRodrigues/game-finder',

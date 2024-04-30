@@ -6,9 +6,9 @@ const PTText = PTJSON as Utils.TranslationFile;
 
 export const getLanguage = () => {
   try {
-    return localStorage.getItem('lang') || 'en';
+    return localStorage.getItem('lang') || 'pt';
   } catch (err) {
-    return 'en';
+    return 'pt';
   }
 };
 
