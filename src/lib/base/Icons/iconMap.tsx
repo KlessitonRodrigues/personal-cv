@@ -13,7 +13,7 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
-import { RiExpandUpDownFill, RiFileTextLine, RiLoader2Fill } from 'react-icons/ri';
+import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line } from 'react-icons/ri';
 import {
   SiAmazonaws,
   SiClojure,
@@ -49,7 +49,7 @@ import {
 export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   download: <LuDownload />,
   selector: <RiExpandUpDownFill />,
-  spinner: <RiLoader2Fill />,
+  spinner: <RiLoader5Line />,
   github: <FaGithub />,
   template: <RiFileTextLine />,
   language: <LuLanguages />,
