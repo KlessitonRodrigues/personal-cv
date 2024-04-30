@@ -22,16 +22,22 @@ export const Profile = () => {
           <Text tag="h4" path="header_work" />
           <Text tag="p" path="cv_resume" />
           <Row left responsive gap={8}>
-            <a href={urls.githubProfile} target="_blank">
+            <a href={urls.personalPage} target="_blank">
               <OutlineBtn>
-                <Icons size={8} type="github" />
-                <p>Github</p>
+                <Icons size={8} type="website" />
+                <Text tag="p" path="header_page_text" />
               </OutlineBtn>
             </a>
             <a href={urls.linkedin} target="_blank">
               <OutlineBtn>
                 <Icons size={8} type="linkedin" />
                 <p>LinkedIn</p>
+              </OutlineBtn>
+            </a>
+            <a href={urls.githubProfile} target="_blank">
+              <OutlineBtn>
+                <Icons size={8} type="github" />
+                <p>Github</p>
               </OutlineBtn>
             </a>
             <a href={urls.facebook} target="_blank">

@@ -1,4 +1,5 @@
 import { Page, PageContent } from 'src/lib/base/StyledComponents/Containers';
+import DocumentView from 'src/lib/components/DocumentView';
 import SideBar from 'src/lib/components/SideBar';
 
 import { Experience } from './_content/Experience';
@@ -9,8 +10,10 @@ const ProfilePage = () => {
     <Page>
       <SideBar>
         <PageContent>
-          <Profile />
-          <Experience />
+          <DocumentView>
+            <Profile />
+            <Experience />
+          </DocumentView>
         </PageContent>
       </SideBar>
     </Page>
