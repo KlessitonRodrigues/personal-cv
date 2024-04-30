@@ -1,6 +1,5 @@
 {
-  "name": "01-react-template",
-  "version": "1.0.0",
+  "name": "personal-cv",
   "license": "MIT",
   "type": "module",
   "scripts": {

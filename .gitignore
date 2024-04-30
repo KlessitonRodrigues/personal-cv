@@ -1,6 +1,7 @@
 # Folders
 node_modules/
 out/
+cdk.out/
 
 # Files
 *.log
