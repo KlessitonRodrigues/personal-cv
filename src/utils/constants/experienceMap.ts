@@ -54,6 +54,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'typescript',
   },
   {
+    name: 'Git',
+    year: 2020,
+    type: 'devops',
+    icon: 'git',
+  },
+  {
     name: 'NextJS',
     year: 2021,
     type: 'frontend',

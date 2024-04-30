@@ -23,6 +23,7 @@ import {
   SiExpo,
   SiExpress,
   SiFigma,
+  SiGit,
   SiHtml5,
   SiJavascript,
   SiJest,
@@ -93,4 +94,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   expo: <SiExpo />,
   electron: <SiElectron />,
   figma: <SiFigma />,
+  git: <SiGit />,
 };

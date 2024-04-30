@@ -59,7 +59,8 @@ declare namespace Utils {
     | 'clojure'
     | 'expo'
     | 'electron'
-    | 'figma';
+    | 'figma'
+    | 'git';
 
   type TextTags =
     | 'b'
