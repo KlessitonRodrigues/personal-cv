@@ -1,5 +1,5 @@
-import cyberpunkBg from 'src/lib/assets/images/cyberpunkBg.png';
-import profile from 'src/lib/assets/images/profile.jpg';
+import cyberpunkBg from 'src/lib/assets/images/cyberpunkBg_min.png';
+import profile from 'src/lib/assets/images/profile_min.jpg';
 import Icons from 'src/lib/base/Icons';
 import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { Section } from 'src/lib/base/StyledComponents/Containers';
