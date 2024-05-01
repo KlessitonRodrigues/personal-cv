@@ -10,7 +10,7 @@ declare namespace Utils {
     type: ExperienceItemsTypes;
   };
 
-  type ExperienceItemsTypes = 'backend' | 'frontend' | 'devops' | 'language' | 'tests';
+  type ExperienceItemsTypes = 'backend' | 'frontend' | 'infra' | 'language' | 'tests';
 
   type IconTypes =
     | 'download'
@@ -63,7 +63,9 @@ declare namespace Utils {
     | 'git'
     | 'androidStudio'
     | 'insomnia'
-    | 'postman';
+    | 'postman'
+    | 'vccode'
+    | 'heroku';
 
   type TextTags =
     | 'b'

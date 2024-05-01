@@ -18,6 +18,7 @@ import {
   SiAmazonaws,
   SiAndroidstudio,
   SiClojure,
+  SiCodeium,
   SiCss3,
   SiDocker,
   SiElectron,
@@ -25,6 +26,7 @@ import {
   SiExpress,
   SiFigma,
   SiGit,
+  SiHeroku,
   SiHtml5,
   SiInsomnia,
   SiJavascript,
@@ -47,6 +49,8 @@ import {
   SiSvelte,
   SiTailwindcss,
   SiTypescript,
+  SiVisualstudiocode,
+  SiVsco,
 } from 'react-icons/si';
 
 export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
@@ -101,4 +105,6 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   androidStudio: <SiAndroidstudio />,
   insomnia: <SiInsomnia />,
   postman: <SiPostman />,
+  vccode: <SiVisualstudiocode />,
+  heroku: <SiHeroku />,
 };

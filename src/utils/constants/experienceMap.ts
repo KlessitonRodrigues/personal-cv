@@ -24,6 +24,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'javascript',
   },
   {
+    name: 'VScode',
+    year: 2020,
+    type: 'infra',
+    icon: 'vccode',
+  },
+  {
     name: 'Figma',
     year: 2020,
     type: 'frontend',
@@ -56,7 +62,7 @@ export const experienceMap: Utils.ExperienceItems[] = [
   {
     name: 'Git',
     year: 2020,
-    type: 'devops',
+    type: 'infra',
     icon: 'git',
   },
   {
@@ -86,7 +92,7 @@ export const experienceMap: Utils.ExperienceItems[] = [
   {
     name: 'Docker',
     year: 2021,
-    type: 'devops',
+    type: 'infra',
     icon: 'docker',
   },
   {
@@ -104,19 +110,25 @@ export const experienceMap: Utils.ExperienceItems[] = [
   {
     name: 'Insomnia',
     year: 2021,
-    type: 'devops',
+    type: 'infra',
     icon: 'insomnia',
   },
   {
     name: 'Postman',
     year: 2021,
-    type: 'devops',
+    type: 'infra',
     icon: 'postman',
+  },
+  {
+    name: 'Heroku',
+    year: 2021,
+    type: 'infra',
+    icon: 'heroku',
   },
   {
     name: 'AWS',
     year: 2022,
-    type: 'backend',
+    type: 'infra',
     icon: 'aws',
   },
   {
@@ -152,7 +164,7 @@ export const experienceMap: Utils.ExperienceItems[] = [
   {
     name: 'Expo',
     year: 2022,
-    type: 'devops',
+    type: 'infra',
     icon: 'expo',
   },
   {

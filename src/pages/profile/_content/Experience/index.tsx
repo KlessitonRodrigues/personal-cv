@@ -11,18 +11,18 @@ import { yearsFrom } from 'src/utils/dates';
 
 export const Experience = () => {
   const experienceItems = useMemo(() => {
-    return experienceMap.map(item => {
-      const years = yearsFrom(item.year);
+    return experienceMap.map(exp => {
+      const years = yearsFrom(exp.year);
       const yearsArr = new Array(years).fill(0);
       return (
         <Box>
           <Row>
             <Row left>
-              <Icons size={8} type={item.icon} />
-              <h6>{item.name}</h6>
+              <Icons size={8} type={exp.icon} />
+              <h6>{exp.name}</h6>
             </Row>
             <Row right>
-              <small>{item.type}</small>
+              <small>{exp.type}</small>
             </Row>
           </Row>
           <Column left>
