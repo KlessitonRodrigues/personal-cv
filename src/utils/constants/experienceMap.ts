@@ -24,12 +24,6 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'javascript',
   },
   {
-    name: 'VScode',
-    year: 2020,
-    type: 'infra',
-    icon: 'vccode',
-  },
-  {
     name: 'Figma',
     year: 2020,
     type: 'frontend',
