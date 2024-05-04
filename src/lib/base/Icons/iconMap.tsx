@@ -17,8 +17,8 @@ import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line } from 'react-icons/r
 import {
   SiAmazonaws,
   SiAndroidstudio,
+  SiBootstrap,
   SiClojure,
-  SiCodeium,
   SiCss3,
   SiDocker,
   SiElectron,
@@ -50,7 +50,6 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiVisualstudiocode,
-  SiVsco,
 } from 'react-icons/si';
 
 export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
@@ -107,4 +106,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   postman: <SiPostman />,
   vccode: <SiVisualstudiocode />,
   heroku: <SiHeroku />,
+  bootstrap: <SiBootstrap />,
 };

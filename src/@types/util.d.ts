@@ -65,7 +65,8 @@ declare namespace Utils {
     | 'insomnia'
     | 'postman'
     | 'vccode'
-    | 'heroku';
+    | 'heroku'
+    | 'bootstrap';
 
   type TextTags =
     | 'b'

@@ -113,5 +113,6 @@
   "extraworks_quiz_text": "Aplicativo de quiz simples sobre tecnologias HTML, CSS e JavaScript.",
   "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker",
 
-  "profile_years": "Ano(s)"
+  "profile_year": "ano",
+  "profile_years": "anos"
 }

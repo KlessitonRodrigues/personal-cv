@@ -113,5 +113,6 @@
   "extraworks_quiz_text": "Simple Quiz app about HTML, CSS and Javascript technologies.",
   "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker",
 
-  "profile_years": "Year(s)"
+  "profile_year": "year",
+  "profile_years": "years"
 }

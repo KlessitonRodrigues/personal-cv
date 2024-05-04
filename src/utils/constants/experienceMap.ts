@@ -12,22 +12,34 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'css',
   },
   {
-    name: 'SASS',
-    year: 2019,
-    type: 'frontend',
-    icon: 'sass',
-  },
-  {
     name: 'Javascript',
     year: 2019,
     type: 'language',
     icon: 'javascript',
   },
   {
+    name: 'Bootstrap',
+    year: 2019,
+    type: 'backend',
+    icon: 'bootstrap',
+  },
+  {
+    name: 'SASS',
+    year: 2019,
+    type: 'frontend',
+    icon: 'sass',
+  },
+  {
     name: 'Figma',
     year: 2020,
     type: 'frontend',
     icon: 'figma',
+  },
+  {
+    name: 'ReactJS',
+    year: 2020,
+    type: 'frontend',
+    icon: 'react',
   },
   {
     name: 'Styled Components',
@@ -42,10 +54,16 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'materialui',
   },
   {
-    name: 'ReactJS',
+    name: 'NodeJS',
     year: 2020,
-    type: 'frontend',
-    icon: 'react',
+    type: 'backend',
+    icon: 'nodejs',
+  },
+  {
+    name: 'ExpressJS',
+    year: 2020,
+    type: 'backend',
+    icon: 'expressJS',
   },
   {
     name: 'Typescript',
@@ -70,18 +88,6 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2021,
     type: 'frontend',
     icon: 'mantineui',
-  },
-  {
-    name: 'NodeJS',
-    year: 2021,
-    type: 'backend',
-    icon: 'nodejs',
-  },
-  {
-    name: 'ExpressJS',
-    year: 2021,
-    type: 'backend',
-    icon: 'expressJS',
   },
   {
     name: 'Docker',
@@ -174,6 +180,12 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'tailwind',
   },
   {
+    name: 'NestJS',
+    year: 2023,
+    type: 'backend',
+    icon: 'nestJS',
+  },
+  {
     name: 'Clojure',
     year: 2023,
     type: 'language',
@@ -196,12 +208,6 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2023,
     type: 'backend',
     icon: 'springBoot',
-  },
-  {
-    name: 'NestJS',
-    year: 2023,
-    type: 'backend',
-    icon: 'nestJS',
   },
   {
     name: 'SeleniumJS',

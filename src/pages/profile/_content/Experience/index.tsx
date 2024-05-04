@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 
 import Icons from 'src/lib/base/Icons';
+import If from 'src/lib/base/If';
 import { Box, Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Grid, Row } from 'src/lib/base/StyledComponents/Flex';
@@ -29,7 +30,11 @@ export const Experience = () => {
             <small>
               {years}
               &nbsp;
-              <Text path="profile_years" />
+              <If
+                check={years > 1}
+                true={<Text path="profile_years" />}
+                false={<Text path="profile_year" />}
+              />
             </small>
             <ProgressStepBox>
               {yearsArr.map(() => (
