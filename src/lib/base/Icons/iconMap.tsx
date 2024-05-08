@@ -13,7 +13,7 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
-import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line } from 'react-icons/ri';
+import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
 import {
   SiAmazonaws,
   SiAndroidstudio,
@@ -107,4 +107,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   vccode: <SiVisualstudiocode />,
   heroku: <SiHeroku />,
   bootstrap: <SiBootstrap />,
+  whatsapp: <RiWhatsappLine />,
 };

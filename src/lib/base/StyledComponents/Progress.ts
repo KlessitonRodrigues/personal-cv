@@ -32,7 +32,7 @@ export const ProgressStepBox = styled.div<Props.CssProps>(
     width: 100%;
     display: flex;
     align-items: center;
-    gap: ${cssSize(2)};
+    gap: ${cssSize(1)};
   `,
 );
 

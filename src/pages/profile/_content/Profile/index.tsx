@@ -7,9 +7,12 @@ import { Row } from 'src/lib/base/StyledComponents/Flex';
 import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/base/StyledComponents/Images';
 import { AvatarBig } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
+import { isMobileScreen } from 'src/styles/utils';
 import { urls } from 'src/utils/constants/urls';
 
 export const Profile = () => {
+  const isMobile = isMobileScreen();
+
   return (
     <Section>
       <Outdoor>
@@ -40,10 +43,11 @@ export const Profile = () => {
                 <p>Github</p>
               </OutlineBtn>
             </a>
-            <a href={urls.facebook} target="_blank">
+
+            <a href={isMobile ? urls.whatsapp : urls.whatsappWeb} target="_blank">
               <OutlineBtn>
-                <Icons size={8} type="facebook" />
-                <p>Facebook</p>
+                <Icons size={8} type="whatsapp" />
+                <p>WhatsApp</p>
               </OutlineBtn>
             </a>
           </Row>

@@ -12,6 +12,11 @@ export const Outdoor = styled.div<Props.CssProps>(
     padding-top: ${cssSize(70)};
     z-index: 0;
     box-shadow: ${theme.shadow.small};
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: ${theme.shadow.medium};
+    }
   `,
 );
 

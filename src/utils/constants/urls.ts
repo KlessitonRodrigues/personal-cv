@@ -12,4 +12,6 @@ export const urls = {
   encryptEasyRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   quizRepo: 'https://github.com/KlessitonRodrigues/quiz-app',
   translatePwa: 'https://github.com/KlessitonRodrigues/translation-pwa',
+  whatsapp: 'https://wa.me/5589994009646',
+  whatsappWeb: 'https://web.whatsapp.com/send/?phone=5589994009646',
 };

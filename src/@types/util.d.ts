@@ -66,7 +66,8 @@ declare namespace Utils {
     | 'postman'
     | 'vccode'
     | 'heroku'
-    | 'bootstrap';
+    | 'bootstrap'
+    | 'whatsapp';
 
   type TextTags =
     | 'b'

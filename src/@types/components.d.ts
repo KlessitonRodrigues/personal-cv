@@ -3,13 +3,13 @@ declare namespace Props {
     active?: boolean;
     size?: number;
     gap?: number;
-    mb?: number;
     w?: string;
     h?: string;
     maxw?: string;
     maxh?: string;
     p?: string;
     m?: string;
+    mb?: number;
     left?: boolean;
     right?: boolean;
     top?: boolean;

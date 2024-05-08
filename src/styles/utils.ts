@@ -44,3 +44,7 @@ export const gradients = {
   purple: `linear-gradient(180deg, ${mc.purple['400']}, ${mc.purple['500']})`,
   darkPurple: `linear-gradient(180deg, ${mc.purple['600']}, ${mc.purple['700']})`,
 };
+
+export const isMobileScreen = () => {
+  return window.innerWidth <= screenSize.tablet;
+};
