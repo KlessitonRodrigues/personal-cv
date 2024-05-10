@@ -64,11 +64,8 @@ export const SidebarItem = styled.div<Props.CssProps>(
     }
 
     .icon {
-      ${active &&
-      css`
-        padding-bottom: 4px;
-        border-bottom: 4px solid ${theme.colors.mainText};
-      `}
+      ${active && 'padding-bottom: 4px;'}
+      ${active && `border-bottom: 4px solid ${theme.colors.mainText};`}
     }
   `,
 );
