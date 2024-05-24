@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
-import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
+import { Column } from 'src/lib/styled/Flex';
 import { urls } from 'src/utils/constants/urls';
 import { lang, toggleLang } from 'src/utils/i18n';
 import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
@@ -19,13 +19,13 @@ const SideBar = (props: PropsWithChildren) => {
     <Container>
       <SidebarBox active={open}>
         <Column top left gap={8}>
-          <Link to="/" reloadDocument>
+          <Link to="/">
             <SidebarItem active={path === '/'}>
               <Icons type="website" size={8} />
               <Text tag="p" path="sidebar_link_profile" />
             </SidebarItem>
           </Link>
-          <Link to="/resume" reloadDocument>
+          <Link to="/resume">
             <SidebarItem active={path === '/resume'}>
               <Icons type="textDocument" size={8} />
               <Text tag="p" path="sidebar_link_cv" />
@@ -34,9 +34,9 @@ const SideBar = (props: PropsWithChildren) => {
         </Column>
 
         <Column bottom left gap={8}>
-          <SidebarItem onClick={toggleLang} top>
-            <Icons type="language" size={8} />
-            <p>{lang}</p>
+          <SidebarItem onClick={() => toggleLang()} top>
+            <strong>{lang}</strong>
+            <Text tag="p" path={lang} />
           </SidebarItem>
           <SidebarItem onClick={toggleTheme}>
             <If

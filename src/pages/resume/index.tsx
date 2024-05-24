@@ -1,12 +1,11 @@
-import { Page, PageContent } from 'src/lib/base/StyledComponents/Containers';
 import DocumentView from 'src/lib/components/DocumentView';
 import SideBar from 'src/lib/components/SideBar';
-
-import ProfileEducation from './_content/Education';
-import ProfileExperience from './_content/Experience';
-import ProfileExtraWorks from './_content/ExtraWorks';
-import ProfileHeader from './_content/Header';
-import ProfileLanguages from './_content/Languages';
+import ProfileEducation from 'src/lib/sections/resume/Education';
+import ProfileExperience from 'src/lib/sections/resume/Experience';
+import ProfileExtraWorks from 'src/lib/sections/resume/ExtraWorks';
+import ProfileHeader from 'src/lib/sections/resume/Header';
+import ProfileLanguages from 'src/lib/sections/resume/Languages';
+import { Page, PageContent } from 'src/lib/styled/Containers';
 
 const ResumePage = () => {
   return (

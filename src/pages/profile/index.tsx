@@ -1,9 +1,8 @@
-import { Page, PageContent } from 'src/lib/base/StyledComponents/Containers';
 import DocumentView from 'src/lib/components/DocumentView';
 import SideBar from 'src/lib/components/SideBar';
-
-import { Experience } from './_content/Experience';
-import { Profile } from './_content/Profile';
+import { Experience } from 'src/lib/sections/profile/Experience';
+import { Profile } from 'src/lib/sections/profile/Profile';
+import { Page, PageContent } from 'src/lib/styled/Containers';
 
 const ProfilePage = () => {
   return (

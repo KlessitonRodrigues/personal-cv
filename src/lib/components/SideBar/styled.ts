@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
+import { RoundedBtn } from 'src/lib/styled/Buttons';
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
 const sidebarSizeOpen = 80;
@@ -56,8 +56,11 @@ export const SidebarItem = styled.div<Props.CssProps>(
     cursor: pointer;
     min-width: ${cssSize(sidebarSizeOpen)};
     ${active === false && `opacity: 0.7;`}
-    ${top && `text-transform: uppercase;`}
 
+    strong {
+      padding: ${cssSize(0.8)};
+      ${top && `text-transform: uppercase;`}
+    }
 
     &:hover {
       opacity: 0.8;
