@@ -11,12 +11,12 @@ import { experienceMap } from 'src/utils/constants/experienceMap';
 import { yearsFrom } from 'src/utils/dates';
 
 export const Experience = () => {
-  const experienceItems = useMemo(() => {
+  const ExperienceItems = useMemo(() => {
     return experienceMap.map(exp => {
       const years = yearsFrom(exp.year);
       const yearsArr = new Array(years).fill(0);
       return (
-        <Box>
+        <Box key={exp.name}>
           <Row>
             <Row left>
               <Icons size={8} type={exp.icon} />
@@ -37,8 +37,8 @@ export const Experience = () => {
               />
             </small>
             <ProgressStepBox>
-              {yearsArr.map(() => (
-                <ProgressStep />
+              {yearsArr.map((item, i) => (
+                <ProgressStep key={item + i} />
               ))}
             </ProgressStepBox>
           </Column>
@@ -53,7 +53,7 @@ export const Experience = () => {
         <Text tag="h3" path="experience_title" />
         <Hr />
         <Grid cols={2} responsive gap={4}>
-          {experienceItems}
+          {ExperienceItems}
         </Grid>
       </Card>
     </Section>

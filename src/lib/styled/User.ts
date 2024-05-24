@@ -16,7 +16,7 @@ export const Avatar = styled.div<Props.CssProps>(
   `,
 );
 
-export const AvatarBig = styled.image<Props.CssProps>(
+export const AvatarBig = styled.div<Props.CssProps>(
   ({ theme, src }) => css`
     display: flex;
     width: 100%;
