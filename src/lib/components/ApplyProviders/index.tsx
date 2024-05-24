@@ -1,3 +1,4 @@
+import isValidProp from '@emotion/is-prop-valid';
 import { PropsWithChildren } from 'react';
 import { StyleSheetManager, ThemeProvider } from 'styled-components';
 
@@ -7,7 +8,7 @@ import { currentTheme } from 'src/utils/theme';
 
 const ApplyProviders = (props: PropsWithChildren) => {
   return (
-    <StyleSheetManager disableCSSOMInjection>
+    <StyleSheetManager disableCSSOMInjection shouldForwardProp={isValidProp}>
       <ThemeProvider theme={currentTheme === 'light' ? defaultTheme : defaultThemeDark}>
         <GlobalCSS />
         {props.children}
