@@ -1,8 +1,8 @@
 import { antColors as ac, materialColors as mc } from 'src/styles/colors';
 
 export const themeColors: Record<string, { main: string; mainBg: string }> = {
-  indigo: { main: mc.indigo['500'], mainBg: mc.indigo['800'] },
-  purple: { main: mc.purple['500'], mainBg: mc.purple['800'] },
+  indigo: { main: mc.indigo['400'], mainBg: mc.indigo['800'] },
+  purple: { main: mc.purple['400'], mainBg: mc.purple['800'] },
   teal: { main: mc.teal['500'], mainBg: mc.teal['800'] },
   brown: { main: mc.brown['400'], mainBg: mc.brown['700'] },
   grey: { main: mc.blueGrey['500'], mainBg: mc.blueGrey['800'] },
