@@ -18,7 +18,7 @@ const SideBar = (props: PropsWithChildren) => {
   return (
     <Container>
       <SidebarBox active={open}>
-        <Column top left gap={8}>
+        <Column top left gap={6}>
           <Link to="/">
             <SidebarItem active={path === '/'}>
               <Icons type="website" size={8} />
@@ -33,7 +33,7 @@ const SideBar = (props: PropsWithChildren) => {
           </Link>
         </Column>
 
-        <Column bottom left gap={8}>
+        <Column bottom left gap={6}>
           <SidebarItem onClick={() => toggleLang()} top>
             <strong>{lang}</strong>
             <Text tag="p" path={lang} />

@@ -24,7 +24,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     flex-direction: column;
     justify-content: space-between;
     width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
-    padding: ${cssSize(10)} ${cssSize(6)};
+    padding: ${cssSize(8)} ${cssSize(6)};
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
     box-shadow: ${theme.shadow.large};
@@ -67,8 +67,9 @@ export const SidebarItem = styled.div<Props.CssProps>(
     }
 
     .icon {
-      ${active && 'padding-bottom: 4px;'}
-      ${active && `border-bottom: 4px solid ${theme.colors.mainText};`}
+      padding-bottom: 4px;
+      border-bottom: 4px solid transparent;
+      ${active && `border-color: ${theme.colors.mainText};`}
     }
   `,
 );
