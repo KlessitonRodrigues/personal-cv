@@ -1,14 +1,17 @@
-import { materialColors as mc } from 'src/styles/colors';
+import { antColors as ac, materialColors as mc } from 'src/styles/colors';
 
 export const themeColors: Record<string, { main: string; mainBg: string }> = {
-  blue: { main: mc.blue['500'], mainBg: mc.blue['800'] },
-  purple: { main: mc.purple['500'], mainBg: mc.purple['800'] },
-  green: { main: mc.green['500'], mainBg: mc.green['800'] },
-  pink: { main: mc.pink['500'], mainBg: mc.pink['800'] },
-  teal: { main: mc.teal['500'], mainBg: mc.teal['800'] },
   indigo: { main: mc.indigo['500'], mainBg: mc.indigo['800'] },
-  brown: { main: mc.brown['500'], mainBg: mc.brown['800'] },
+  purple: { main: mc.purple['500'], mainBg: mc.purple['800'] },
+  teal: { main: mc.teal['500'], mainBg: mc.teal['800'] },
+  brown: { main: mc.brown['400'], mainBg: mc.brown['700'] },
   grey: { main: mc.blueGrey['500'], mainBg: mc.blueGrey['800'] },
+  blue: { main: ac.blue['500'], mainBg: ac.blue['700'] },
+  green: { main: ac.green['700'], mainBg: ac.green['800'] },
+  magenta: { main: ac.magenta['700'], mainBg: ac.magenta['900'] },
+  gold: { main: ac.gold['800'], mainBg: ac.gold['900'] },
+  lime: { main: ac.lime['700'], mainBg: ac.lime['900'] },
+  cyan: { main: ac.cyan['700'], mainBg: ac.cyan['800'] },
 };
 
 export const getColor = () => {

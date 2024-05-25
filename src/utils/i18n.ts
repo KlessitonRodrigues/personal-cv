@@ -1,5 +1,5 @@
-import ENJSON from 'src/lib/assets/i18n/en.json';
-import PTJSON from 'src/lib/assets/i18n/pt.json';
+import ENJSON from 'src/public/i18n/en.json';
+import PTJSON from 'src/public/i18n/pt.json';
 
 const ENText = ENJSON as Utils.TranslationFile;
 const PTText = PTJSON as Utils.TranslationFile;

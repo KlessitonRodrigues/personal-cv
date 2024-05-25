@@ -1,7 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components';
 
-import '../lib/assets/fonts/roboto500.woff2';
-import '../lib/assets/fonts/roboto700.woff2';
+import '../public/fonts/roboto500.woff2';
+import '../public/fonts/roboto700.woff2';
 import { cssSize, screenSize } from './utils';
 
 export default createGlobalStyle(

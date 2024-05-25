@@ -1,5 +1,3 @@
-import cyberpunkBg from 'src/lib/assets/images/cyberpunkBg_min.png';
-import profile from 'src/lib/assets/images/profile_min.jpg';
 import Icons from 'src/lib/base/Icons';
 import Text from 'src/lib/base/Text';
 import { OutlineBtn } from 'src/lib/styled/Buttons';
@@ -7,6 +5,8 @@ import { Section } from 'src/lib/styled/Containers';
 import { Row } from 'src/lib/styled/Flex';
 import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/styled/Images';
 import { AvatarBig } from 'src/lib/styled/User';
+import cyberpunkBg from 'src/public/images/cyberpunkBg_min.png';
+import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
 import { urls } from 'src/utils/constants/urls';
 
