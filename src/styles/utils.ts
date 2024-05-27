@@ -22,8 +22,8 @@ export const animations = {
     from { transform: translateY(3rem); opacity: 0; } 
     to { opacity: 1 }`,
   fadeLeft: keyframes`
-   from { transform: translateX(3rem); opacity: 0; } 
-   to { opacity: 1 }`,
+    from { transform: translateX(3rem); opacity: 0; } 
+    to { opacity: 1 }`,
   slideUp: keyframes`
     from { transform: translateY(12rem); opacity: 0.4; } 
     to { opacity: 1; }`,
@@ -34,6 +34,9 @@ export const animations = {
     to { transform: rotateZ(360deg); }`,
   halfSpinning: keyframes`
     to { transform: rotateZ(180deg); }`,
+  fullWidth: keyframes`
+    from { width: 0; }
+    to { width: 100%; }`,
 };
 
 export const gradients = {

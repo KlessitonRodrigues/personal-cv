@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
-export const Page = styled.div(
+export const PageContainer = styled.div(
   () => css`
     width: 100%;
     height: 100%;
