@@ -9,7 +9,7 @@ const UdemyCertificates = () => {
       <Card>
         <Row left gap={4}>
           <Icons type="udemy" size={9} />
-          <h2>Udemy</h2>
+          <h3>Udemy</h3>
         </Row>
         <Hr />
       </Card>

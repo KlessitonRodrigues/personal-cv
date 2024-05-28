@@ -14,14 +14,8 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
-import {
-  RiBook2Line,
-  RiExpandUpDownFill,
-  RiFileImageLine,
-  RiFileTextLine,
-  RiLoader5Line,
-  RiWhatsappLine,
-} from 'react-icons/ri';
+import { PiCertificate, PiStudent } from 'react-icons/pi';
+import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
 import {
   SiAmazonaws,
   SiAndroidstudio,
@@ -118,7 +112,7 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   bootstrap: <SiBootstrap />,
   whatsapp: <RiWhatsappLine />,
   udemy: <SiUdemy />,
-  school: <RiBook2Line />,
-  certificates: <RiFileImageLine />,
+  school: <PiStudent />,
+  certificates: <PiCertificate />,
   caretLeft: <LuChevronLeft />,
 };

@@ -69,6 +69,10 @@ export const Box = styled.div<Props.CssProps>(
     border: ${theme.border.small};
     border-radius: ${theme.radius.small};
 
+    &:hover {
+      border: ${theme.border.medium};
+    }
+
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'max-width: 100%;'}
     }

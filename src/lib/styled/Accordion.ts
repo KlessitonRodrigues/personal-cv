@@ -9,11 +9,16 @@ export const AccordionContainer = styled.div<Props.CssProps>(
     border-radius: ${theme.radius.small};
     padding: 0 ${cssSize(6)};
     cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      border: ${theme.border.medium};
+    }
 
     ${AccordionHeader} {
       .icon {
         transition: transform 0.5s;
-        ${active && 'transform: rotateZ(-90deg);'}
+        ${active && 'transform: rotateZ(90deg);'}
       }
     }
 
