@@ -99,12 +99,16 @@ export const MenuBtn = styled(RoundedBtn)(
     height: ${cssSize(16)};
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
-    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
     transition: 0.3s ease-out;
     box-shadow: ${theme.shadow.medium};
+    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
 
-    .icon {
-      animation: 0.4s ${animations.halfSpinning} linear;
+    .icon-menu {
+      animation: 0.5s ${animations.halfSpinning} linear reverse;
+    }
+
+    .icon-close {
+      animation: 0.5s ${animations.halfSpinning} linear;
     }
 
     @media (max-width: ${screenSize.tablet}px) {

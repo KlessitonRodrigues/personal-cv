@@ -8,7 +8,7 @@ const Icons = (props: Props.Icons) => {
   const Icon = useMemo(() => iconMap[type], [type]);
 
   return (
-    <Container className="icon" size={size} style={style} onClick={onPress}>
+    <Container className={'icon icon-' + type} size={size} style={style} onClick={onPress}>
       {Icon}
     </Container>
   );

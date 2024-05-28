@@ -23,7 +23,7 @@ export const PageContent = styled.div(
 
 export const Section = styled.section(
   ({ theme }) => css`
-    margin: ${cssSize(4)} ${cssSize(2)};
+    margin: ${cssSize(4)};
     font-size: ${theme.fontSize.h4};
     color: ${theme.colors.text2};
   `,

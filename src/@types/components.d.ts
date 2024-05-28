@@ -48,4 +48,9 @@ declare namespace Props {
     false?: React.ReactElement;
     children?: React.ReactNode;
   };
+
+  type Accordion = {
+    title: React.ReactElement;
+    content: React.ReactElement;
+  };
 }

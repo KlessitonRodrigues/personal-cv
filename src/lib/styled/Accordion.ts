@@ -18,7 +18,7 @@ export const AccordionContainer = styled.div<Props.CssProps>(
     }
 
     ${AccordionContent} {
-      ${active && `height: ${cssSize(100)};`}
+      ${active && `max-height: ${cssSize(150)};`}
     }
   `,
 );
@@ -29,12 +29,14 @@ export const AccordionHeader = styled.div(
     align-items: center;
     justify-content: space-between;
     padding: ${cssSize(4)} 0;
+    gap: ${cssSize(4)};
   `,
 );
 
 export const AccordionContent = styled.div(
   () => css`
-    height: 0;
+    height: 100%;
+    max-height: 0;
     overflow: hidden;
     transition: 0.5s;
   `,
