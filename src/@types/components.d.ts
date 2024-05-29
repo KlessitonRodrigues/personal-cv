@@ -52,5 +52,6 @@ declare namespace Props {
   type Accordion = {
     title: React.ReactElement;
     content: React.ReactElement;
+    delayLoad?: boolean;
   };
 }

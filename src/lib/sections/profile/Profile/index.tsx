@@ -5,7 +5,7 @@ import { Section } from 'src/lib/styled/Containers';
 import { Row } from 'src/lib/styled/Flex';
 import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/styled/Images';
 import { AvatarBig } from 'src/lib/styled/User';
-import cyberpunkBg from 'src/public/images/cyberpunkBg_min.png';
+import desktopBg from 'src/public/images/desktop.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
 import { urls } from 'src/utils/constants/urls';
@@ -16,7 +16,7 @@ export const Profile = () => {
   return (
     <Section>
       <Outdoor>
-        <OutdoorImage src={cyberpunkBg} />
+        <OutdoorImage src={desktopBg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
           <b>
