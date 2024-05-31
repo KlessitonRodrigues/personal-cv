@@ -31,12 +31,12 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
           </Link>
-          <Link to="/certificates">
-            <SidebarItem active={path === '/certificates'}>
-              <Icons type="certificates" size={8} />
-              <Text tag="p" path="sidebar_link_ct" />
-            </SidebarItem>
-          </Link>
+          {/* <Link to="/certificates">
+              <SidebarItem active={path === '/certificates'}>
+                <Icons type="certificates" size={8} />
+                <Text tag="p" path="sidebar_link_ct" />
+              </SidebarItem>
+              </Link> */}
         </Column>
 
         <Column bottom left gap={6}>
