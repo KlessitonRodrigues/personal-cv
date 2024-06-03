@@ -31,6 +31,12 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
           </Link>
+          {/* <Link to="/certificates">
+              <SidebarItem active={path === '/certificates'}>
+                <Icons type="certificates" size={8} />
+                <Text tag="p" path="sidebar_link_ct" />
+              </SidebarItem>
+              </Link> */}
         </Column>
 
         <Column bottom left gap={6}>
@@ -39,21 +45,14 @@ const SideBar = (props: PropsWithChildren) => {
             <Text tag="p" path={lang} />
           </SidebarItem>
           <SidebarItem onClick={toggleTheme}>
-            <If
-              check={currentTheme === 'light'}
-              true={
-                <>
-                  <Icons type="sun" size={8} />
-                  <Text tag="p" path="sidebar_theme_light" />
-                </>
-              }
-              false={
-                <>
-                  <Icons type="moon" size={8} />
-                  <Text tag="p" path="sidebar_theme_dark" />
-                </>
-              }
-            />
+            <If check={currentTheme === 'light'}>
+              <Icons type="sun" size={8} />
+              <Text tag="p" path="sidebar_theme_light" />
+            </If>
+            <If check={currentTheme === 'dark'}>
+              <Icons type="moon" size={8} />
+              <Text tag="p" path="sidebar_theme_dark" />
+            </If>
           </SidebarItem>
           <SidebarItem onClick={toggleColor}>
             <Icons type="theme" size={8} />
@@ -70,12 +69,11 @@ const SideBar = (props: PropsWithChildren) => {
 
       <Content active={open}>
         <MenuBtn active={open} onClick={() => setOpen(!open)}>
-          <If check={!open}>
-            <Icons size={11} type="menu" />
-          </If>
-          <If check={open}>
-            <Icons size={11} type="close" />
-          </If>
+          <If
+            check={!open}
+            true={<Icons key="0" size={11} type="menu" />}
+            false={<Icons key="1" size={11} type="close" />}
+          />
         </MenuBtn>
         {props.children}
       </Content>

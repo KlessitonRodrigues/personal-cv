@@ -1,6 +1,7 @@
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
 import {
+  LuChevronLeft,
   LuDownload,
   LuFileText,
   LuImage,
@@ -13,6 +14,7 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
+import { PiCertificate, PiStudent } from 'react-icons/pi';
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
 import {
   SiAmazonaws,
@@ -49,6 +51,7 @@ import {
   SiSvelte,
   SiTailwindcss,
   SiTypescript,
+  SiUdemy,
   SiVisualstudiocode,
 } from 'react-icons/si';
 
@@ -108,4 +111,8 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   heroku: <SiHeroku />,
   bootstrap: <SiBootstrap />,
   whatsapp: <RiWhatsappLine />,
+  udemy: <SiUdemy />,
+  school: <PiStudent />,
+  certificates: <PiCertificate />,
+  caretLeft: <LuChevronLeft />,
 };

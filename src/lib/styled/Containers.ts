@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
-export const Page = styled.div(
+export const PageContainer = styled.div(
   () => css`
     width: 100%;
     height: 100%;
@@ -23,7 +23,7 @@ export const PageContent = styled.div(
 
 export const Section = styled.section(
   ({ theme }) => css`
-    margin: ${cssSize(4)} ${cssSize(2)};
+    margin: ${cssSize(4)};
     font-size: ${theme.fontSize.h4};
     color: ${theme.colors.text2};
   `,
@@ -68,6 +68,10 @@ export const Box = styled.div<Props.CssProps>(
     padding: ${cssSize(4)};
     border: ${theme.border.small};
     border-radius: ${theme.radius.small};
+
+    &:hover {
+      border: ${theme.border.medium};
+    }
 
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'max-width: 100%;'}

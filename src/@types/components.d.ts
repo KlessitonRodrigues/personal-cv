@@ -46,6 +46,12 @@ declare namespace Props {
     check: boolean;
     true?: React.ReactElement;
     false?: React.ReactElement;
-    children?: React.ReactElement;
+    children?: React.ReactNode;
+  };
+
+  type Accordion = {
+    title: React.ReactElement;
+    content: React.ReactElement;
+    delayLoad?: boolean;
   };
 }

@@ -67,7 +67,11 @@ declare namespace Utils {
     | 'vccode'
     | 'heroku'
     | 'bootstrap'
-    | 'whatsapp';
+    | 'whatsapp'
+    | 'udemy'
+    | 'school'
+    | 'certificates'
+    | 'caretLeft';
 
   type TextTags =
     | 'b'
