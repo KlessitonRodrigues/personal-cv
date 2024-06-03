@@ -2,6 +2,8 @@
   "pt": "Português",
   "en": "English",
 
+  "loding_title": "Carregando...",
+
   "sidebar_link_profile": "Perfil",
   "sidebar_link_cv": "Currículo",
   "sidebar_link_ct": "Certificações",

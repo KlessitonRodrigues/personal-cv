@@ -104,11 +104,11 @@ export const MenuBtn = styled(RoundedBtn)(
     ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
 
     .icon-menu {
-      animation: 0.5s ${animations.halfSpinning} linear reverse;
+      animation: 0.5s ${animations.halfSpinning} ease-out reverse;
     }
 
     .icon-close {
-      animation: 0.5s ${animations.halfSpinning} linear;
+      animation: 0.5s ${animations.halfSpinning} ease-out;
     }
 
     @media (max-width: ${screenSize.tablet}px) {

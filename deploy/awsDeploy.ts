@@ -31,6 +31,7 @@ export class WebAppStack extends cdk.Stack {
           behaviors: [
             {
               isDefaultBehavior: true,
+              compress: true,
               forwardedValues: {
                 queryString: true,
                 cookies: { forward: 'all' },

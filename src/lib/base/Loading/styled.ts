@@ -35,15 +35,8 @@ export const Spinner = styled.div(
 
 export const Title = styled.p(
   ({ theme }) => css`
-    font-size: ${theme.fontSize.label};
-    margin-bottom: ${cssSize(2)};
-    animation: ${animations.slideUp} 0.5s ease-out;
+    font-size: ${theme.fontSize.h5};
   `,
 );
 
-export const Description = styled.p(
-  ({ theme }) => css`
-    font-size: ${theme.fontSize.verySmall};
-    animation: ${animations.slideUp} 0.5s ease-out;
-  `,
-);
+export const Description = styled.p(() => css``);

@@ -41,8 +41,8 @@ export const defaultTheme: Styles.Theme = {
     small: '0 1px 3px 0 #0003',
   },
   border: {
-    large: `solid 1px ${ac.gray['1000']}`,
-    medium: `solid 1px ${ac.gray['800']}`,
+    large: `solid 1px ${ac.gray['900']}`,
+    medium: `solid 1px ${ac.gray['700']}`,
     small: `solid 1px ${ac.gray['600']}`,
   },
   radius: {
@@ -69,7 +69,7 @@ export const defaultThemeDark = {
     white: ac.gray['300'],
   },
   border: {
-    large: `solid 1px ${ac.gray['1000']}`,
+    large: `solid 1px ${ac.gray['800']}`,
     medium: `solid 1px ${ac.gray['900']}`,
     small: `solid 1px ${ac.gray['900']}`,
   },
