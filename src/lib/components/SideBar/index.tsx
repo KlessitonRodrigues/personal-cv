@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
@@ -13,12 +13,13 @@ import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
   const path = location.pathname;
 
   return (
     <Container>
       <SidebarBox active={open}>
-        <Column top left gap={6}>
+        <Column top left gap={0}>
           <Link to="/">
             <SidebarItem active={path === '/'}>
               <Icons type="website" size={8} />
@@ -31,15 +32,15 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
           </Link>
-          {/* <Link to="/certificates">
-              <SidebarItem active={path === '/certificates'}>
-                <Icons type="certificates" size={8} />
-                <Text tag="p" path="sidebar_link_ct" />
-              </SidebarItem>
-              </Link> */}
+          <Link to="/certification">
+            <SidebarItem active={path === '/certification'}>
+              <Icons type="certificates" size={8} />
+              <Text tag="p" path="sidebar_link_ct" />
+            </SidebarItem>
+          </Link>
         </Column>
 
-        <Column bottom left gap={6}>
+        <Column bottom left gap={0}>
           <SidebarItem onClick={() => toggleLang()} top>
             <strong>{lang}</strong>
             <Text tag="p" path={lang} />

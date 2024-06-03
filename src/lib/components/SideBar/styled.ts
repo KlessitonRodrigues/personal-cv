@@ -24,7 +24,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     flex-direction: column;
     justify-content: space-between;
     width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
-    padding: ${cssSize(8)} ${cssSize(6)};
+    padding: ${cssSize(5)} 0;
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
     box-shadow: ${theme.shadow.large};
@@ -53,23 +53,32 @@ export const SidebarItem = styled.div<Props.CssProps>(
     display: flex;
     align-items: center;
     gap: ${cssSize(6)};
-    cursor: pointer;
+    padding: ${cssSize(4)} ${cssSize(6)};
     min-width: ${cssSize(sidebarSizeOpen)};
+    cursor: pointer;
     ${active === false && `opacity: 0.7;`}
+
+    &:hover {
+      opacity: ${!active && 0.8};
+    }
 
     strong {
       padding: ${cssSize(0.8)};
       ${top && `text-transform: uppercase;`}
     }
 
-    &:hover {
-      opacity: 0.8;
-    }
-
     .icon {
-      padding-bottom: 4px;
-      border-bottom: 4px solid transparent;
-      ${active && `border-color: ${theme.colors.mainText};`}
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 115%;
+        left: 0;
+        width: ${active ? cssSize(8) : 0};
+        height: ${cssSize(1.3)};
+        background-color: ${theme.colors.mainText};
+        transition: width 0.3s;
+      }
     }
   `,
 );
