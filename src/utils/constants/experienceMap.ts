@@ -20,7 +20,7 @@ export const experienceMap: Utils.ExperienceItems[] = [
   {
     name: 'Bootstrap',
     year: 2019,
-    type: 'backend',
+    type: 'frontend',
     icon: 'bootstrap',
   },
   {
