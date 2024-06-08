@@ -42,8 +42,9 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     }
 
     @media (max-width: ${screenSize.tablet}px) {
+      justify-content: flex-start;
+      gap: ${cssSize(18)};
       ${!active && 'transform: translateX(-5rem);'}
-      height: 99%;
     }
   `,
 );

@@ -11,7 +11,7 @@ const Loading = (props: Props.Loading) => {
     <Container>
       <If check={show && type === 'icon'}>
         <Spinner>
-          <Icons type="spinner" size={12} />
+          <Icons type="spinner" size={8} />
         </Spinner>
       </If>
 
