@@ -40,6 +40,17 @@ const ProfileExtraWorks = () => {
 
           <Box>
             <Row left>
+              <a href={urls.nutriacademy} target="_blank">
+                <Text tag="h6" path="extraworks_nutriacademy" />
+              </a>
+              <Icons size={5} type="link" />
+            </Row>
+            <Text tag="p" path="extraworks_nutriacademy_text" />
+            <Text tag="small" path="extraworks_nutriacademy_tech" />
+          </Box>
+
+          <Box>
+            <Row left>
               <a href={urls.gameFinderRepo} target="_blank">
                 <Text tag="h6" path="extraworks_gamefinder" />
               </a>

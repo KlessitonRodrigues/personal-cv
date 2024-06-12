@@ -11,8 +11,8 @@ export const defaultTheme: Styles.Theme = {
     bg2: ac.gray['200'],
     bg3: ac.gray['300'],
     bg4: ac.gray['500'],
-    text1: ac.gray['1000'],
-    text2: ac.gray['900'],
+    text1: ac.gray['900'],
+    text2: ac.gray['800'],
     text3: ac.gray['700'],
     text4: ac.gray['600'],
     gray: mcolors.grey['500'],
@@ -41,9 +41,9 @@ export const defaultTheme: Styles.Theme = {
     small: '0 1px 3px 0 #0003',
   },
   border: {
-    large: `solid 1px ${ac.gray['900']}`,
-    medium: `solid 1px ${ac.gray['700']}`,
-    small: `solid 1px ${ac.gray['600']}`,
+    large: `solid 1px ${ac.gray['800']}`,
+    medium: `solid 1px ${ac.gray['600']}`,
+    small: `solid 1px ${ac.gray['500']}`,
   },
   radius: {
     full: '50%',

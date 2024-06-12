@@ -118,6 +118,9 @@
   "extraworks_quiz": "Aplicativo de Quiz Simples",
   "extraworks_quiz_text": "Aplicativo de quiz simples sobre tecnologias HTML, CSS e JavaScript.",
   "extraworks_quiz_tech": "NextJS, TailwindCSS, NextJS, MongoDB, Docker",
+  "extraworks_nutriacademy": "Nutriacademy",
+  "extraworks_nutriacademy_text": "Test project of an academy subscription.",
+  "extraworks_nutriacademy_tech": "NextJS, Styled Components, AWS Lambdas, MongoDB",
 
   "profile_year": "ano",
   "profile_years": "anos"
