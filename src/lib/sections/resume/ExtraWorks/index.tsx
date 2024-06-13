@@ -95,17 +95,6 @@ const ProfileExtraWorks = () => {
 
           <Box>
             <Row left>
-              <a href={urls.encryptEasyRepo} target="_blank">
-                <Text tag="h6" path="extraworks_taskmanage" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="p" path="extraworks_taskmanage_text" />
-            <Text tag="small" path="extraworks_taskmanage_tech" />
-          </Box>
-
-          <Box>
-            <Row left>
               <a href={urls.translatePwa} target="_blank">
                 <Text tag="h6" path="extraworks_translationpwa" />
               </a>
