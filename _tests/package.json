@@ -1,5 +1,5 @@
 {
-  "name": "01-linkedin-alert",
+  "name": "page-tests",
   "version": "1.0.0",
   "main": "dist/main.js",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "verbose": true,
     "testTimeout": 60000,
     "roots": [
-      "./src/test"
+      "./src/tests"
     ]
   }
 }
