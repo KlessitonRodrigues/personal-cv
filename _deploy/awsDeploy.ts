@@ -10,9 +10,10 @@ export class WebAppStack extends cdk.Stack {
     const distBucket = new s3.Bucket(this, 'ProfileWebsite', {
       autoDeleteObjects: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
-      accessControl: s3.BucketAccessControl.PUBLIC_READ,
-      publicReadAccess: true,
     });
+
+    const distOrigin = new cloudFront.OriginAccessIdentity(this, 'ProfileWebsiteOrigin');
+    distBucket.grantRead(distOrigin);
 
     const distribution = new cloudFront.CloudFrontWebDistribution(this, 'ProfileWebsiteDist', {
       defaultRootObject: 'index.html',
@@ -27,6 +28,7 @@ export class WebAppStack extends cdk.Stack {
         {
           s3OriginSource: {
             s3BucketSource: distBucket,
+            originAccessIdentity: distOrigin,
           },
           behaviors: [
             {
@@ -46,7 +48,6 @@ export class WebAppStack extends cdk.Stack {
       sources: [s3Deploy.Source.asset('../dist')],
       destinationBucket: distBucket,
       distribution,
-      accessControl: s3.BucketAccessControl.PUBLIC_READ,
     });
   }
 }
