@@ -4,9 +4,9 @@
   "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest --runInBand",
-    "test-w": "jest --watch --runInBand",
-    "test-cover": "jest --coverage --runInBand"
+    "test-dev": "NODE_ENV=dev jest --runInBand",
+    "test-build": "NODE_ENV=build jest --runInBand",
+    "test-prod": "NODE_ENV=prod jest --runInBand"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",

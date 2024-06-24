@@ -1,8 +1,8 @@
 {
   "name": "deploy-personal-cv",
   "scripts": {
-    "cdk:synt": "cdk synthesize",
-    "cdk:deploy": "cdk deploy"
+    "cdk-synt": "cdk synthesize",
+    "cdk-deploy": "cdk deploy"
   },
   "devDependencies": {
     "@types/node": "20.11.30",

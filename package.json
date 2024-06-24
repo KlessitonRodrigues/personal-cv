@@ -6,7 +6,12 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview --host",
-    "format": "prettier -c -w ./src"
+    "format": "prettier -c -w ./src",
+    "test-dev": "cd _tests && yarn test-dev",
+    "test-build": "cd _tests && yarn test-build",
+    "test-prod": "cd _tests && yarn test-prod",
+    "cdk-synt": "cd _deploy && yarn cdk-synt",
+    "cdk-deploy": "cd _deploy && yarn cdk-deploy"
   },
   "dependencies": {
     "react": "^18.2.0",

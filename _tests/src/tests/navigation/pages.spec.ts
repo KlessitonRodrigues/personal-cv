@@ -1,8 +1,8 @@
 import { By } from 'selenium-webdriver';
 
-import { environment } from '../../config/env';
+import environment from '../../config/env';
 import webDriver from '../../config/webDriver';
-import { scrollPage } from '../../utils/browserTest';
+import { mobileScreen, scrollPage } from '../../utils/browserTest';
 
 describe('When on home page', () => {
   test('Should scroll pages and use navigation bar', async () => {
@@ -24,7 +24,7 @@ describe('When on home page', () => {
   test('Should scroll pages and use mobile navigation bar', async () => {
     const browser = await webDriver;
     await browser.get(environment.WEBSITEURL);
-    await browser.manage().window().setRect({ width: 450, height: 1080 });
+    await browser.manage().window().setRect(mobileScreen);
     await browser.executeScript(scrollPage(10000));
     await browser.sleep(500);
     await browser.executeScript(scrollPage(0));
