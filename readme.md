@@ -10,7 +10,20 @@
 
 #### 🚀 Start Application
 
-- run "yarn" and "yarn dev"
+- Start development
+
+  ```
+  yarn
+  yarn dev
+  ```
+
+- Start build preview
+
+  ```
+  yarn
+  yarn build
+  yarn preview
+  ```
 
 #### 🤖 Test Application
 
