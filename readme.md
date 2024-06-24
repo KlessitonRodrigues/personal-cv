@@ -12,6 +12,20 @@
 
 - run "yarn" and "yarn dev"
 
+#### 🤖 Test Application
+
+- Test development environment
+
+  ```
+  yarn test-dev
+  ```
+
+- Test production environment
+
+  ```
+  yarn test-prod
+  ```
+
 #### 📦 Deploy Application
 
 - Generate website assets
@@ -31,6 +45,5 @@
 - Deploy
 
   ```
-  cd ./deploy
-  yarn cdk:deploy
+  yarn cdk-deploy
   ```
