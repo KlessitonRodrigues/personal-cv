@@ -10,7 +10,7 @@ import { ProgressStep, ProgressStepBox } from 'src/lib/base/StyledComponents/Pro
 import Text from 'src/lib/base/Text';
 import { yearsFrom } from 'src/utils/dates';
 
-export const Experience = () => {
+const ProfileExperience = () => {
   const ExperienceItems = useMemo(() => {
     return experienceMap.map(exp => {
       const years = yearsFrom(exp.year);
@@ -59,3 +59,5 @@ export const Experience = () => {
     </Section>
   );
 };
+
+export default ProfileExperience;

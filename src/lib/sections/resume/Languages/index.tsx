@@ -3,7 +3,7 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 
-const ProfileLanguages = () => {
+const ResumeLanguages = () => {
   return (
     <Section>
       <Card>
@@ -26,4 +26,4 @@ const ProfileLanguages = () => {
   );
 };
 
-export default ProfileLanguages;
+export default ResumeLanguages;

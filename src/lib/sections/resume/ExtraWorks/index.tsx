@@ -5,7 +5,7 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Grid, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 
-const ProfileExtraWorks = () => {
+const ResumeExtraWorks = () => {
   return (
     <Section>
       <Card>
@@ -109,4 +109,4 @@ const ProfileExtraWorks = () => {
   );
 };
 
-export default ProfileExtraWorks;
+export default ResumeExtraWorks;

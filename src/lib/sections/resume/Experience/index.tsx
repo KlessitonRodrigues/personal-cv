@@ -3,7 +3,7 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Grid, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 
-const ProfileExperience = () => {
+const ResumeExperience = () => {
   return (
     <Section>
       <Card>
@@ -93,4 +93,4 @@ const ProfileExperience = () => {
   );
 };
 
-export default ProfileExperience;
+export default ResumeExperience;

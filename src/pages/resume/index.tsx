@@ -1,20 +1,20 @@
 import DocumentView from 'src/lib/components/DocumentView';
 import Page from 'src/lib/components/Page';
-import ProfileEducation from 'src/lib/sections/resume/Education';
-import ProfileExperience from 'src/lib/sections/resume/Experience';
-import ProfileExtraWorks from 'src/lib/sections/resume/ExtraWorks';
-import ProfileHeader from 'src/lib/sections/resume/Header';
-import ProfileLanguages from 'src/lib/sections/resume/Languages';
+import ResumeEducation from 'src/lib/sections/resume/Education';
+import ResumeExperience from 'src/lib/sections/resume/Experience';
+import ResumeExtraWorks from 'src/lib/sections/resume/ExtraWorks';
+import ResumeHeader from 'src/lib/sections/resume/Header';
+import ResumeLanguages from 'src/lib/sections/resume/Languages';
 
 const ResumePage = () => {
   return (
     <Page>
       <DocumentView>
-        <ProfileHeader />
-        <ProfileExperience />
-        <ProfileEducation />
-        <ProfileExtraWorks />
-        <ProfileLanguages />
+        <ResumeHeader />
+        <ResumeExperience />
+        <ResumeEducation />
+        <ResumeExtraWorks />
+        <ResumeLanguages />
       </DocumentView>
     </Page>
   );

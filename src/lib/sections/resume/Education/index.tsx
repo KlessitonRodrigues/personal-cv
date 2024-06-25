@@ -4,7 +4,7 @@ import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import { List, ListItem } from 'src/lib/base/StyledComponents/List';
 import Text from 'src/lib/base/Text';
 
-const ProfileEducation = () => {
+const ResumeEducation = () => {
   return (
     <Section>
       <Card>
@@ -69,4 +69,4 @@ const ProfileEducation = () => {
   );
 };
 
-export default ProfileEducation;
+export default ResumeEducation;

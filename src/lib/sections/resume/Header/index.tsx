@@ -7,7 +7,7 @@ import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 import { isMobileScreen } from 'src/styles/utils';
 
-const ProfileHeader = () => {
+const ResumeHeader = () => {
   const isMobile = isMobileScreen();
 
   return (
@@ -102,4 +102,4 @@ const ProfileHeader = () => {
   );
 };
 
-export default ProfileHeader;
+export default ResumeHeader;

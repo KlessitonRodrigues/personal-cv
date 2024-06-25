@@ -10,7 +10,7 @@ import desktopBg from 'src/public/images/desktop.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
 
-export const Profile = () => {
+const ProfileHeader = () => {
   const isMobile = isMobileScreen();
 
   return (
@@ -56,3 +56,5 @@ export const Profile = () => {
     </Section>
   );
 };
+
+export default ProfileHeader;
