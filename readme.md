@@ -1,4 +1,4 @@
-# ![logo](https://github.com/KlessitonRodrigues/personal-cv/blob/master/src/public/icons/icon.png) Profile Page
+## ☰ Profile Page
 
 #### Available on: https://djc7924qzcvck.cloudfront.net/
 
