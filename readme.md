@@ -2,13 +2,13 @@
 
 #### Available on: https://djc7924qzcvck.cloudfront.net/
 
-#### 🔨 Frameworks
+### 🔨 Frameworks
 
 - ReactJS
 - Styled Components
 - ViteJS
 
-#### 🚀 Start Application
+### 🚀 Start Application
 
 - Start development
 
@@ -25,7 +25,7 @@
   yarn preview
   ```
 
-#### 🤖 Test Application
+### 🤖 Test Application
 
 - Test development environment
 
@@ -39,7 +39,7 @@
   yarn test-prod
   ```
 
-#### 📦 Deploy Application
+### 📦 Deploy Application
 
 - Generate website assets
 
