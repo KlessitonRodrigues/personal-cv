@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { RoundedBtn } from 'src/lib/styled/Buttons';
+import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
 const sidebarSizeOpen = 80;

@@ -1,10 +1,10 @@
 import Icons from 'src/lib/base/Icons';
+import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
+import { Section } from 'src/lib/base/StyledComponents/Containers';
+import { Row } from 'src/lib/base/StyledComponents/Flex';
+import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/base/StyledComponents/Images';
+import { AvatarBig } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
-import { OutlineBtn } from 'src/lib/styled/Buttons';
-import { Section } from 'src/lib/styled/Containers';
-import { Row } from 'src/lib/styled/Flex';
-import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/styled/Images';
-import { AvatarBig } from 'src/lib/styled/User';
 import desktopBg from 'src/public/images/desktop.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';

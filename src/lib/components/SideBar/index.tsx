@@ -3,8 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
+import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
-import { Column } from 'src/lib/styled/Flex';
 import { urls } from 'src/utils/constants/urls';
 import { lang, toggleLang } from 'src/utils/i18n';
 import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
