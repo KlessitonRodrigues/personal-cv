@@ -1,9 +1,9 @@
+import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/base/Icons';
 import { Box, Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Grid, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
-import { urls } from 'src/utils/constants/urls';
 
 const ProfileExtraWorks = () => {
   return (

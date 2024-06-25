@@ -1,3 +1,4 @@
+import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/base/Icons';
 import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { Card, Section } from 'src/lib/base/StyledComponents/Containers';
@@ -5,7 +6,6 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 import { isMobileScreen } from 'src/styles/utils';
-import { urls } from 'src/utils/constants/urls';
 
 const ProfileHeader = () => {
   const isMobile = isMobileScreen();

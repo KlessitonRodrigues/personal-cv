@@ -1,3 +1,4 @@
+import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/base/Icons';
 import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { Section } from 'src/lib/base/StyledComponents/Containers';
@@ -8,7 +9,6 @@ import Text from 'src/lib/base/Text';
 import desktopBg from 'src/public/images/desktop.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
-import { urls } from 'src/utils/constants/urls';
 
 export const Profile = () => {
   const isMobile = isMobileScreen();
