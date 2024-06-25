@@ -1,16 +1,16 @@
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 
-import ApplyProviders from 'src/lib/components/ApplyProviders';
+import AppProviders from 'src/lib/components/AppProviders';
 import Router from 'src/pages/routes';
 
 const App = () => {
   return (
-    <ApplyProviders>
+    <AppProviders>
       <BrowserRouter>
         <Router />
       </BrowserRouter>
-    </ApplyProviders>
+    </AppProviders>
   );
 };
 

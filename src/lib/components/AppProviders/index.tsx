@@ -6,7 +6,7 @@ import GlobalCSS from 'src/styles/global';
 import { defaultTheme, defaultThemeDark } from 'src/styles/theme';
 import { currentTheme } from 'src/utils/theme';
 
-const ApplyProviders = (props: PropsWithChildren) => {
+const AppProviders = (props: PropsWithChildren) => {
   return (
     <StyleSheetManager disableCSSOMInjection shouldForwardProp={isValidProp}>
       <ThemeProvider theme={currentTheme === 'light' ? defaultTheme : defaultThemeDark}>
@@ -17,4 +17,4 @@ const ApplyProviders = (props: PropsWithChildren) => {
   );
 };
 
-export default ApplyProviders;
+export default AppProviders;
