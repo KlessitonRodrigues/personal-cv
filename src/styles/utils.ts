@@ -37,6 +37,11 @@ export const animations = {
   fullWidth: keyframes`
     from { width: 0; }
     to { width: 100%; }`,
+  line: keyframes`
+    0% { left: -40%; }
+    50% { left: 50%; }
+    100% { left: 140%; }
+  `,
 };
 
 export const gradients = {

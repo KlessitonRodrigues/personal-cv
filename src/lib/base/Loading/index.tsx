@@ -1,28 +1,32 @@
+import { CgSpinner } from 'react-icons/cg';
+
 import { Column } from 'src/lib/base/StyledComponents/Flex';
 import { getText } from 'src/utils/i18n';
 
-import Icons from '../Icons';
 import If from '../If';
-import { Container, Description, FullScreen, Spinner, Title } from './styled';
+import { Container, FullScreen, LoadLine, Spinner, Title } from './styled';
 
 const Loading = (props: Props.Loading) => {
-  const { show, type, title, description } = props;
+  const { show, type, title } = props;
   return (
     <Container>
       <If check={show && type === 'icon'}>
         <Spinner>
-          <Icons type="spinner" size={8} />
+          <CgSpinner size={32} />
         </Spinner>
+      </If>
+
+      <If check={show && type === 'line'}>
+        <LoadLine />
       </If>
 
       <If check={show && type === 'fullScreen'}>
         <FullScreen>
           <Spinner>
-            <Icons type="spinner" size={12} />
+            <CgSpinner size={32} />
           </Spinner>
           <Column gap={4}>
             <Title>{title || getText('loding_title')}</Title>
-            <Description>{description}</Description>
           </Column>
         </FullScreen>
       </If>

@@ -37,7 +37,7 @@ declare namespace Props {
 
   type Loading = {
     show: boolean;
-    type: 'fullScreen' | 'icon';
+    type: 'fullScreen' | 'icon' | 'line';
     title?: string;
     description?: string;
   };
