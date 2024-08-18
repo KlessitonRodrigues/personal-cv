@@ -33,10 +33,6 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     overflow: hidden;
     text-transform: capitalize;
 
-    &:hover {
-      width: ${cssSize(sidebarSizeOpen)};
-    }
-
     a {
       text-decoration: none;
     }
@@ -45,6 +41,12 @@ export const SidebarBox = styled.aside<Props.CssProps>(
       justify-content: flex-start;
       gap: ${cssSize(18)};
       ${!active && 'transform: translateX(-5rem);'}
+    }
+
+    @media (min-width: ${screenSize.tablet}px) {
+      &:hover {
+        width: ${cssSize(sidebarSizeOpen)};
+      }
     }
   `,
 );

@@ -9,7 +9,7 @@ import ResumePage from './resume';
 const Router = () => {
   return (
     <SideBar>
-      <Routes location={location}>
+      <Routes>
         <Route path="/*" element={<ProfilePage />} />
         <Route path="/resume" element={<ResumePage />} />
         <Route path="/certification" element={<CertificatesPage />} />
