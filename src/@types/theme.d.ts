@@ -21,10 +21,10 @@ declare namespace Styles {
       black: string;
     };
     fontSize: {
-      body: string;
+      md: string;
       label: string;
-      small: string;
-      verySmall: string;
+      sm: string;
+      xs: string;
       h1: string;
       h2: string;
       h3: string;
@@ -33,20 +33,20 @@ declare namespace Styles {
       h6: string;
     };
     border: {
-      small: string;
-      medium: string;
-      large: string;
+      sm: string;
+      md: string;
+      lg: string;
     };
     radius: {
-      small: string;
-      medium: string;
-      large: string;
+      sm: string;
+      md: string;
+      lg: string;
       full: string;
     };
     shadow: {
-      small: string;
-      medium: string;
-      large: string;
+      sm: string;
+      md: string;
+      lg: string;
     };
   };
 }

@@ -10,7 +10,7 @@ export const Avatar = styled.div<Props.CssProps>(
     max-width: ${cssSize(30)};
     max-height: ${cssSize(45)};
     padding: ${cssSize(30)} ${cssSize(25)};
-    border-radius: ${theme.radius.medium};
+    border-radius: ${theme.radius.md};
     background-image: url(${src});
     background-size: cover;
   `,

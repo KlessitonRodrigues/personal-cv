@@ -27,8 +27,8 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     padding: ${cssSize(5)} 0;
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
-    box-shadow: ${theme.shadow.large};
-    border-radius: ${theme.radius.large};
+    box-shadow: ${theme.shadow.lg};
+    border-radius: ${theme.radius.lg};
     transition: 0.3s ease-out;
     overflow: hidden;
     text-transform: capitalize;
@@ -112,7 +112,7 @@ export const MenuBtn = styled(RoundedBtn)(
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
     transition: 0.3s ease-out;
-    box-shadow: ${theme.shadow.medium};
+    box-shadow: ${theme.shadow.md};
     ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
 
     .icon-menu {

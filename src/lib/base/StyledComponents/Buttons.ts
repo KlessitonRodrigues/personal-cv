@@ -11,11 +11,11 @@ export const RoundedBtn = styled.button<Props.CssProps>(
     height: ${h ?? cssSize(12)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
-    border-radius: ${theme.radius.small};
-    box-shadow: ${theme.shadow.small};
+    border-radius: ${theme.radius.sm};
+    box-shadow: ${theme.shadow.sm};
 
     &:hover {
-      box-shadow: ${theme.shadow.medium};
+      box-shadow: ${theme.shadow.md};
     }
   `,
 );

@@ -6,7 +6,7 @@ export const ProgressLine = styled.div<Props.CssProps>(
   ({ theme, w }) => css`
     width: 100%;
     background-color: ${theme.colors.bg4};
-    border-radius: ${theme.radius.small};
+    border-radius: ${theme.radius.sm};
     overflow: hidden;
 
     &::after {
@@ -17,7 +17,7 @@ export const ProgressLine = styled.div<Props.CssProps>(
       padding-top: ${cssSize(2.5)};
       background-color: ${theme.colors.main};
       color: ${theme.colors.mainText};
-      border-radius: ${theme.radius.small};
+      border-radius: ${theme.radius.sm};
       font-size: 12px;
       font-weight: bold;
       line-height: 0;
@@ -40,6 +40,6 @@ export const ProgressStep = styled.div<Props.CssProps>(
   ({ theme, half }) => css`
     padding: ${cssSize(1)} ${cssSize(half ? 3 : 6)};
     background-color: ${theme.colors.main};
-    border-radius: ${theme.radius.large};
+    border-radius: ${theme.radius.lg};
   `,
 );

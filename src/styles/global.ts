@@ -16,7 +16,7 @@ export default createGlobalStyle(
       font-size: 16px;
     }
     body {
-      font-size: ${theme.fontSize.body};
+      font-size: ${theme.fontSize.md};
       min-height: 100vh;
     }
     html,
@@ -49,7 +49,7 @@ export default createGlobalStyle(
       font-size: ${theme.fontSize.h6};
     }
     p {
-      font-size: ${theme.fontSize.body};
+      font-size: ${theme.fontSize.md};
       line-height: 22px;
     }
     ul {
@@ -66,13 +66,13 @@ export default createGlobalStyle(
     em {
       font-style: normal;
       font-weight: normal;
-      font-size: ${theme.fontSize.small};
+      font-size: ${theme.fontSize.sm};
     }
     mark {
-      font-size: ${theme.fontSize.small};
+      font-size: ${theme.fontSize.sm};
     }
     small {
-      font-size: ${theme.fontSize.small};
+      font-size: ${theme.fontSize.sm};
     }
     label > b {
       font-size: ${theme.fontSize.label};
@@ -87,7 +87,7 @@ export default createGlobalStyle(
       background-color: transparent;
       outline: none;
       border: none;
-      border-radius: ${theme.radius.small};
+      border-radius: ${theme.radius.sm};
       cursor: pointer;
     }
     div::-webkit-scrollbar {

@@ -32,8 +32,8 @@ export const ListItem = styled.li(
 export const ListItemBox = styled(ListItem)(
   ({ theme }) => css`
     padding: ${cssSize(4)};
-    border: ${theme.border.small};
-    border-radius: ${theme.radius.small};
+    border: ${theme.border.sm};
+    border-radius: ${theme.radius.sm};
 
     &::after {
       display: none;

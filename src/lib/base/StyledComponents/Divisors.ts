@@ -7,7 +7,7 @@ export const Hr = styled.hr<Props.CssProps>(
     width: 100%;
     margin: ${m ?? 0};
     margin-bottom: ${cssSize(2)};
-    border-bottom: ${theme.border.small};
+    border-bottom: ${theme.border.sm};
     animation: ${animations.fullWidth} 0s;
     animation-duration: ${active ? '0.9s' : 0};
   `,

@@ -34,7 +34,7 @@ export const Spinner = styled.div(
 
 export const Title = styled.p(
   ({ theme }) => css`
-    font-size: ${theme.fontSize.body};
+    font-size: ${theme.fontSize.md};
     font-weight: bold;
   `,
 );

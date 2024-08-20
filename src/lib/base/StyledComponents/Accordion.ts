@@ -5,14 +5,14 @@ import { cssSize } from 'src/styles/utils';
 export const AccordionContainer = styled.div<Props.CssProps>(
   ({ theme, active }) => css`
     width: 100%;
-    border: ${theme.border.small};
-    border-radius: ${theme.radius.small};
+    border: ${theme.border.sm};
+    border-radius: ${theme.radius.sm};
     padding: 0 ${cssSize(6)};
     cursor: pointer;
     transition: 0.3s;
 
     &:hover {
-      border: ${theme.border.medium};
+      border: ${theme.border.md};
     }
 
     ${AccordionHeader} {

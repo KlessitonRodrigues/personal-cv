@@ -10,7 +10,7 @@ export const Image = styled.img<Props.CssProps>(
     padding: ${cssSize(1)};
     max-height: ${h ?? '100%'};
     max-width: ${w ?? 'auto'};
-    border-radius: ${theme.border.medium};
+    border-radius: ${theme.border.md};
     overflow: hidden;
   `,
 );
@@ -19,16 +19,16 @@ export const Outdoor = styled.div<Props.CssProps>(
   ({ theme }) => css`
     width: 100%;
     overflow: hidden;
-    border-radius: ${theme.radius.medium};
+    border-radius: ${theme.radius.md};
     position: relative;
     background-color: ${theme.colors.bg1};
     padding-top: ${cssSize(70)};
     z-index: 0;
-    box-shadow: ${theme.shadow.small};
+    box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
 
     &:hover {
-      box-shadow: ${theme.shadow.medium};
+      box-shadow: ${theme.shadow.md};
     }
   `,
 );

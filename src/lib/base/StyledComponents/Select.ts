@@ -10,8 +10,8 @@ export const SelectBox = styled.label(
     font-size: ${theme.fontSize.label};
     background-color: ${theme.colors.bg3};
     color: ${theme.colors.text1};
-    border-radius: ${theme.radius.small};
-    box-shadow: ${theme.shadow.medium};
+    border-radius: ${theme.radius.sm};
+    box-shadow: ${theme.shadow.md};
 
     &:hover {
       background-color: ${theme.colors.bg4};
@@ -22,7 +22,7 @@ export const SelectBox = styled.label(
 export const Select = styled.select(
   ({ theme }) => css`
     color: ${theme.colors.text2};
-    font-size: ${theme.fontSize.small};
+    font-size: ${theme.fontSize.sm};
     font-weight: 600;
 
     &::-webkit-scrollbar {

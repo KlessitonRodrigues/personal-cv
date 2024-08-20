@@ -39,12 +39,12 @@ export const Card = styled.div(
     padding: ${cssSize(8)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
-    border-radius: ${theme.radius.medium};
-    box-shadow: ${theme.shadow.small};
+    border-radius: ${theme.radius.md};
+    box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
 
     &:hover {
-      box-shadow: ${theme.shadow.medium};
+      box-shadow: ${theme.shadow.md};
     }
   `,
 );
@@ -66,8 +66,8 @@ export const Box = styled.div<Props.CssProps>(
     justify-content: flex-start;
     gap: ${cssSize(2)};
     padding: ${cssSize(4)};
-    border: ${theme.border.small};
-    border-radius: ${theme.radius.small};
+    border: ${theme.border.sm};
+    border-radius: ${theme.radius.sm};
 
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'max-width: 100%;'}
