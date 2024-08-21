@@ -56,3 +56,7 @@ export const gradients = {
 export const isMobileScreen = () => {
   return window.innerWidth <= screenSize.tablet;
 };
+
+export const isNativeMobileScreen = () => {
+  return location.pathname.includes('.html');
+};

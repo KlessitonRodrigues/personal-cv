@@ -1,10 +1,12 @@
 import styled, { css } from 'styled-components';
 
 import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
-import { animations, cssSize, screenSize } from 'src/styles/utils';
+import { animations, cssSize, isNativeMobileScreen, screenSize } from 'src/styles/utils';
 
+const isNative = isNativeMobileScreen();
 const sidebarSizeOpen = 80;
 const sidebarSize = 20;
+const topOffset = isNative ? 12 : 2;
 
 export const Container = styled.div(
   () => css`
@@ -17,7 +19,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
   ({ theme, active }) => css`
     position: fixed;
     left: ${cssSize(2)};
-    top: ${cssSize(1)};
+    top: ${cssSize(topOffset)};
     z-index: 2;
     height: 99%;
     display: flex;
@@ -95,7 +97,7 @@ export const Content = styled.div<Props.CssProps>(
 
     @media (max-width: ${screenSize.tablet}px) {
       padding-left: 0;
-      padding-top: ${cssSize(16)};
+      padding-top: ${cssSize(topOffset + 14)};
     }
   `,
 );
@@ -103,7 +105,7 @@ export const Content = styled.div<Props.CssProps>(
 export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
-    top: ${cssSize(2)};
+    top: ${cssSize(topOffset)};
     left: ${cssSize(4)};
     z-index: 2;
     display: none;

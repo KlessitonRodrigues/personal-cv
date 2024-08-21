@@ -9,6 +9,10 @@
     <content src="./app/index.html" />
     <icon src="./www/resources/icon.png" />
 
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#00000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+
     <!-- Android Resources -->
     <platform name="android">
         <preference name="AndroidWindowSplashScreenIconBackgroundColor" value="#ffffff" />
