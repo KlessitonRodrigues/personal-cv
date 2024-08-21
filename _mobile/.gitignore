@@ -25,3 +25,8 @@ node_modules/
 /plugins/
 /platforms/
 /www/app/
+
+# key files
+
+*.keystore
+build.json

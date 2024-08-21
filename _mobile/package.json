@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build-android": "cordova build android --debug",
-    "build-android-prod": "cordova build android --release",
+    "build-android-prod": "cordova build android --release --buildConfig=./build.json",
     "build-electron": "cordova build electron --debug",
     "build-electron-prod": "cordova build electron --release",
     "add-android": "cordova platform add android",
