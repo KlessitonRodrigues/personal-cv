@@ -57,6 +57,8 @@ export const isMobileScreen = () => {
   return window.innerWidth <= screenSize.tablet;
 };
 
-export const isNativeMobileScreen = () => {
-  return location.pathname.includes('.html');
+export const isEmbbedMobile = () => {
+  const isBuiltIn = location.pathname.includes('.html');
+  const isMobile = window.innerWidth <= screenSize.tablet;
+  return isBuiltIn && isMobile;
 };
