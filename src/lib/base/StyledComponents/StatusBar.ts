@@ -12,6 +12,6 @@ export const StatusBar = styled.div<Props.CssProps>(
     width: 100%;
     height: ${cssSize(10)};
     background-color: ${theme.colors.black};
-    opacity: ${active ? 0.5 : 0};
+    opacity: ${active ? 0.65 : 0};
   `,
 );
