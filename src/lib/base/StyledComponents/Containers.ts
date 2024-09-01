@@ -23,7 +23,7 @@ export const PageContent = styled.div(
 
 export const Section = styled.section(
   ({ theme }) => css`
-    margin: ${cssSize(4)};
+    margin: ${cssSize(4)} ${cssSize(2)};
     font-size: ${theme.fontSize.h4};
     color: ${theme.colors.text2};
   `,
@@ -39,7 +39,7 @@ export const Card = styled.div(
     padding: ${cssSize(8)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
-    border-radius: ${theme.radius.md};
+    border-radius: ${theme.radius.lg};
     box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
 

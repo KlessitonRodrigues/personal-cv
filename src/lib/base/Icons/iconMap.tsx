@@ -17,7 +17,7 @@ import {
 import { PiCertificate, PiStudent } from 'react-icons/pi';
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
 import {
-  SiAmazonaws,
+  SiAmazon,
   SiAndroidstudio,
   SiBootstrap,
   SiClojure,
@@ -80,7 +80,7 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   typescript: <SiTypescript />,
   docker: <SiDocker />,
   styledComponents: <SiStyledcomponents />,
-  aws: <SiAmazonaws />,
+  aws: <SiAmazon />,
   mongoDb: <SiMongodb />,
   nodejs: <SiNodedotjs />,
   sass: <SiSass />,

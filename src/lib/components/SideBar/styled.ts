@@ -6,6 +6,7 @@ import { animations, cssSize, screenSize } from 'src/styles/utils';
 const sidebarSizeOpen = 80;
 const sidebarSize = 20;
 const topOffset = 2;
+const leftOffset = 2;
 
 export const Container = styled.div(
   () => css`
@@ -18,7 +19,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
   ({ theme, active }) => css`
     position: fixed;
     left: ${cssSize(2)};
-    top: ${cssSize(topOffset)};
+    top: ${cssSize(2)};
     z-index: 2;
     height: 99%;
     display: flex;
@@ -40,7 +41,8 @@ export const SidebarBox = styled.aside<Props.CssProps>(
 
     @media (max-width: ${screenSize.tablet}px) {
       height: 95%;
-      ${!active && 'transform: translateX(-5rem);'}
+      top: ${cssSize(topOffset)};
+      ${!active && 'transform: translateX(-5rem);'};
     }
 
     @media (min-width: ${screenSize.tablet}px) {
@@ -104,7 +106,7 @@ export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
     top: ${cssSize(topOffset)};
-    left: ${cssSize(4)};
+    left: ${cssSize(2)};
     z-index: 2;
     display: none;
     width: ${cssSize(16)};
@@ -113,7 +115,7 @@ export const MenuBtn = styled(RoundedBtn)(
     color: ${theme.colors.mainText};
     transition: 0.3s ease-out;
     box-shadow: ${theme.shadow.md};
-    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
+    ${active && `margin-left: ${cssSize(sidebarSizeOpen + leftOffset)};`}
 
     .icon-menu {
       animation: 0.5s ${animations.halfSpinning} ease-out reverse;

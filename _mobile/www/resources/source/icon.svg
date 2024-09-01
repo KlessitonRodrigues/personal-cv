@@ -7,13 +7,13 @@
       <stop offset="0.82" style="stop-color: rgb(255, 255, 255);"/>
       <stop offset="1" style="stop-color: rgb(192, 192, 192);"/>
     </linearGradient>
-    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 7 7 0 1 #0008">
+    <filter id="drop-shadow-filter-0" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%" height="200%" bx:preset="drop-shadow 1 5 5 0 1 #000a">
       <feGaussianBlur in="SourceAlpha" stdDeviation="0"/>
-      <feOffset dx="7" dy="7"/>
+      <feOffset dx="5" dy="5"/>
       <feComponentTransfer result="offsetblur">
         <feFuncA id="spread-ctrl" type="linear" slope="2"/>
       </feComponentTransfer>
-      <feFlood flood-color="#0008"/>
+      <feFlood flood-color="#000a"/>
       <feComposite in2="offsetblur" operator="in"/>
       <feMerge>
         <feMergeNode/>
