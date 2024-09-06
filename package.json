@@ -11,7 +11,9 @@
     "test-build": "cd _tests && yarn test-build",
     "test-prod": "cd _tests && yarn test-prod",
     "cdk-synt": "cd _deploy && yarn cdk-synt",
-    "cdk-deploy": "cd _deploy && yarn cdk-deploy"
+    "cdk-deploy": "cd _deploy && yarn cdk-deploy",
+    "run-android": "cd _mobile && yarn run-android",
+    "run-web": "cd _mobile && yarn run-web"
   },
   "dependencies": {
     "react": "^18.2.0",

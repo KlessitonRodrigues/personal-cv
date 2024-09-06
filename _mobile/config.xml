@@ -17,6 +17,8 @@
     </platform>
 
     <!-- Hooks -->
+    <hook type="before_serve" src="scripts/beforeBuild.js" />
+
     <platform name="android">
         <hook type="before_build" src="scripts/beforeBuild.js" />
         <hook type="before_run" src="scripts/beforeBuild.js" />
@@ -24,7 +26,7 @@
     <platform name="electron">
         <hook type="before_build" src="scripts/beforeBuild.js" />
         <hook type="before_run" src="scripts/beforeBuild.js" />
-    </platform>
+    </platform>   
 
     <!-- Security Related Settings -->
     <allow-intent href="http://*/*" />
