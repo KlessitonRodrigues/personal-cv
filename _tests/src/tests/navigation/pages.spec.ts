@@ -33,8 +33,6 @@ describe('When on home page', () => {
     await browser.sleep(500);
     await browser.findElement(By.css('a[href="/resume"]')).click();
     await browser.sleep(500);
-    await browser.findElement(By.css('.icon-close')).click();
-    await browser.sleep(500);
     await browser.executeScript(scrollPage(10000));
     await browser.sleep(500);
     await browser.executeScript(scrollPage(0));
