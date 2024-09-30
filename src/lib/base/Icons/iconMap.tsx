@@ -14,11 +14,12 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
-import { PiCertificate, PiStudent } from 'react-icons/pi';
+import { PiCertificate, PiChartBarHorizontal, PiStudent } from 'react-icons/pi';
 import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
 import {
   SiAmazon,
   SiAndroidstudio,
+  SiApachecordova,
   SiBootstrap,
   SiClojure,
   SiCss3,
@@ -115,4 +116,6 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   school: <PiStudent />,
   certificates: <PiCertificate />,
   caretLeft: <LuChevronLeft />,
+  projects: <PiChartBarHorizontal />,
+  cordova: <SiApachecordova />,
 };

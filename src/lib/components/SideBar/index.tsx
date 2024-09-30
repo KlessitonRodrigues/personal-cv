@@ -39,6 +39,12 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_ct" />
             </SidebarItem>
           </Link>
+          <Link to="/projects" onClick={closeSidebar}>
+            <SidebarItem active={path === '/projects'}>
+              <Icons type="projects" size={8} />
+              <Text tag="p" path="sidebar_link_projects" />
+            </SidebarItem>
+          </Link>
         </Column>
 
         <Column bottom left gap={0}>

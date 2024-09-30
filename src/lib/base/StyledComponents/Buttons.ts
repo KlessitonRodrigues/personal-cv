@@ -38,7 +38,7 @@ export const OutlineBtn = styled.div<Props.CssProps>(
     cursor: pointer;
 
     &:hover {
-      opacity: 0.6;
+      color: ${theme.colors.main};
     }
   `,
 );

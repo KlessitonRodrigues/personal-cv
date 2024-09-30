@@ -71,7 +71,9 @@ declare namespace Utils {
     | 'udemy'
     | 'school'
     | 'certificates'
-    | 'caretLeft';
+    | 'caretLeft'
+    | 'projects'
+    | 'cordova';
 
   type TextTags =
     | 'b'

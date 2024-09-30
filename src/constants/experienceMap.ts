@@ -210,9 +210,15 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'springBoot',
   },
   {
-    name: 'SeleniumJS',
+    name: 'Selenium',
     year: 2023,
     type: 'tests',
     icon: 'selenium',
+  },
+  {
+    name: 'Apache Cordova',
+    year: 2023,
+    type: 'frontend',
+    icon: 'cordova',
   },
 ];
