@@ -90,18 +90,22 @@ export default createGlobalStyle(
       border-radius: ${theme.radius.sm};
       cursor: pointer;
     }
+    body::-webkit-scrollbar,
     div::-webkit-scrollbar {
-      width: ${cssSize(3)};
+      width: ${cssSize(3.5)};
     }
+    body::-webkit-scrollbar-track,
     div::-webkit-scrollbar-track {
       background: #0000;
     }
+    body::-webkit-scrollbar-thumb,
     div::-webkit-scrollbar-thumb {
-      background: ${theme.colors.gray};
-      border-radius: 2px;
-    }
-    div::-webkit-scrollbar-thumb:hover {
       background: ${theme.colors.main};
+      border-radius: 0px;
+    }
+    body::-webkit-scrollbar-thumb:hover,
+    div::-webkit-scrollbar-thumb:hover {
+      background: ${theme.colors.mainBg};
     }
     #root {
       width: 100%;

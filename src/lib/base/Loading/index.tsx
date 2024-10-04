@@ -8,16 +8,17 @@ import { Container, FullScreen, LoadLine, Spinner, Title } from './styled';
 
 const Loading = (props: Props.Loading) => {
   const { show, type, title } = props;
+
   return (
     <Container>
+      <If check={show && type === 'line'}>
+        <LoadLine />
+      </If>
+
       <If check={show && type === 'icon'}>
         <Spinner>
           <CgSpinner size={32} />
         </Spinner>
-      </If>
-
-      <If check={show && type === 'line'}>
-        <LoadLine />
       </If>
 
       <If check={show && type === 'fullScreen'}>

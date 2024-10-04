@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { animations, cssSize, screenSize } from 'src/styles/utils';
+import { animations, cssSize, gradients, screenSize } from 'src/styles/utils';
 
 export const Container = styled.div(() => css``);
 
@@ -9,15 +9,15 @@ export const FullScreen = styled.div(
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #0009;
     color: ${theme.colors.white};
-    z-index: 2;
+    z-index: 5;
   `,
 );
 
@@ -40,9 +40,9 @@ export const Title = styled.p(
 );
 
 export const LoadLine = styled.div(
-  ({ theme }) => css`
+  () => css`
     width: 100%;
-    height: ${cssSize(2)};
+    height: ${cssSize(3)};
     position: fixed;
     top: 0;
     left: 0;
@@ -53,19 +53,12 @@ export const LoadLine = styled.div(
     &:before {
       content: '';
       position: absolute;
-      left: -50%;
+      left: 0%;
       height: ${cssSize(2)};
-      width: 50%;
+      width: 0%;
       border-radius: ${cssSize(1)};
-      background-color: ${theme.colors.mainBg};
-      animation: ${animations.line} 1.5s linear infinite;
-      animation-delay: 1s;
-    }
-
-    @media (max-width: ${screenSize.laptopS}px) {
-      &:before {
-        animation-duration: 1s;
-      }
+      background-image: ${gradients.blueAndGreen};
+      animation: ${animations.progress} 5s linear forwards;
     }
   `,
 );

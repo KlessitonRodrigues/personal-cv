@@ -28,11 +28,12 @@ export const ProgressLine = styled.div<Props.CssProps>(
 );
 
 export const ProgressStepBox = styled.div<Props.CssProps>(
-  () => css`
+  ({ theme }) => css`
     width: 100%;
     display: flex;
     align-items: center;
     gap: ${cssSize(1)};
+    background-color: ${theme.colors.bg3};
   `,
 );
 

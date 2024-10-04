@@ -37,10 +37,14 @@ export const animations = {
   fullWidth: keyframes`
     from { width: 0; }
     to { width: 100%; }`,
-  line: keyframes`
-    0% { left: -40%; }
-    50% { left: 50%; }
-    100% { left: 140%; }
+  progress: keyframes`
+    0% { width: 0; }
+    5% { width: 5%; }
+    10% { width: 10%; }
+    20% { width: 15%; }
+    50% { width: 20%; }
+    75% { width: 40%; }
+    100% { width: 90%; }
   `,
 };
 
@@ -51,6 +55,7 @@ export const gradients = {
   darkBlue: `linear-gradient(180deg, ${mc.blue['700']}, ${mc.blue['800']})`,
   purple: `linear-gradient(180deg, ${mc.purple['400']}, ${mc.purple['500']})`,
   darkPurple: `linear-gradient(180deg, ${mc.purple['600']}, ${mc.purple['700']})`,
+  blueAndGreen: `linear-gradient(90deg, ${mc.blue['500']}, ${mc.green['500']})`,
 };
 
 export const isMobileScreen = () => {

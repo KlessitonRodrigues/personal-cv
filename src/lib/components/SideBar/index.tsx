@@ -75,16 +75,15 @@ const SideBar = (props: PropsWithChildren) => {
         </Column>
       </SidebarBox>
 
-      <Content active={open}>
-        <MenuBtn active={open} onClick={() => setOpen(!open)}>
-          <If
-            check={!open}
-            true={<Icons key="0" size={11} type="menu" />}
-            false={<Icons key="1" size={11} type="close" />}
-          />
-        </MenuBtn>
-        {props.children}
-      </Content>
+      <MenuBtn active={open} onClick={() => setOpen(!open)}>
+        <If
+          check={!open}
+          true={<Icons key="0" size={11} type="menu" />}
+          false={<Icons key="1" size={11} type="close" />}
+        />
+      </MenuBtn>
+
+      <Content active={open}>{props.children}</Content>
     </Container>
   );
 };

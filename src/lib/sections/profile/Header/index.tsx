@@ -7,16 +7,19 @@ import { Outdoor, OutdoorContent, OutdoorImage } from 'src/lib/base/StyledCompon
 import { AvatarBig } from 'src/lib/base/StyledComponents/User';
 import Text from 'src/lib/base/Text';
 import desktopBg from 'src/public/images/desktop.min.jpg';
+import desktopDarkBg from 'src/public/images/desktop_dark.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
+import { getThemeMode } from 'src/utils/theme';
 
 const ProfileHeader = () => {
   const isMobile = isMobileScreen();
+  const isDarkMode = getThemeMode() === 'dark';
 
   return (
     <Section>
       <Outdoor>
-        <OutdoorImage src={desktopBg} />
+        <OutdoorImage src={isDarkMode ? desktopDarkBg : desktopBg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
           <b>

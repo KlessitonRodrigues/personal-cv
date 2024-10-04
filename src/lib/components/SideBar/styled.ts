@@ -27,13 +27,12 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     justify-content: space-between;
     width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
     padding: ${cssSize(5)} 0;
-    background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
-    box-shadow: ${theme.shadow.lg};
     border-radius: ${theme.radius.lg};
-    transition: 0.3s ease-out;
     overflow: hidden;
     text-transform: capitalize;
+    background-color: ${theme.colors.mainBg};
+    transition: all 0.3s ease-out;
 
     a {
       text-decoration: none;
@@ -94,6 +93,7 @@ export const Content = styled.div<Props.CssProps>(
     height: 100%;
     padding-left: ${active ? cssSize(sidebarSizeOpen + 2) : cssSize(sidebarSize + 2)};
     transition: 0.3s ease-out;
+    ${active && `filter: brightness(0.4);`}
 
     @media (max-width: ${screenSize.tablet}px) {
       padding-left: 0;
