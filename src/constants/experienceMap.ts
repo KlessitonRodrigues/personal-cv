@@ -221,4 +221,10 @@ export const experienceMap: Utils.ExperienceItems[] = [
     type: 'frontend',
     icon: 'cordova',
   },
+  {
+    name: 'Cypress',
+    year: 2024,
+    type: 'frontend',
+    icon: 'cypress',
+  },
 ];

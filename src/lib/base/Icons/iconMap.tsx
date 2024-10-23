@@ -23,6 +23,7 @@ import {
   SiBootstrap,
   SiClojure,
   SiCss3,
+  SiCypress,
   SiDocker,
   SiElectron,
   SiExpo,
@@ -118,4 +119,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   caretLeft: <LuChevronLeft />,
   projects: <PiChartBarHorizontal />,
   cordova: <SiApachecordova />,
+  cypress: <SiCypress />,
 };

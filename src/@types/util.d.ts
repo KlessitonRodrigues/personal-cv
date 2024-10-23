@@ -73,7 +73,8 @@ declare namespace Utils {
     | 'certificates'
     | 'caretLeft'
     | 'projects'
-    | 'cordova';
+    | 'cordova'
+    | 'cypress';
 
   type TextTags =
     | 'b'

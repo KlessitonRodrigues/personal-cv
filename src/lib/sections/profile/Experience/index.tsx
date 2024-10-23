@@ -1,5 +1,3 @@
-import { useMemo } from 'react';
-
 import { experienceMap } from 'src/constants/experienceMap';
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
@@ -10,43 +8,53 @@ import { ProgressStep, ProgressStepBox } from 'src/lib/base/StyledComponents/Pro
 import Text from 'src/lib/base/Text';
 import { yearsFrom } from 'src/utils/dates';
 
-const ProfileExperience = () => {
-  const ExperienceItems = useMemo(() => {
-    return experienceMap.map(exp => {
-      const years = yearsFrom(exp.year);
-      const yearsArr = new Array(years).fill(0);
-      return (
-        <Box key={exp.name}>
-          <Row>
-            <Row left>
-              <Icons size={8} type={exp.icon} />
-              <h6>{exp.name}</h6>
-            </Row>
-            <Row right>
-              <small>{exp.type}</small>
-            </Row>
-          </Row>
-          <Column left>
-            <small>
-              {years}
-              &nbsp;
-              <If
-                check={years > 1}
-                true={<Text path="profile_years" />}
-                false={<Text path="profile_year" />}
-              />
-            </small>
-            <ProgressStepBox>
-              {yearsArr.map((item, i) => (
-                <ProgressStep key={item + i} />
-              ))}
-            </ProgressStepBox>
-          </Column>
-        </Box>
-      );
-    });
-  }, []);
+const ExperienceItems = experienceMap.map(exp => {
+  const years = yearsFrom(exp.year);
+  const yearsArr = new Array(years).fill(0);
+  return (
+    <Box key={exp.name}>
+      <Row>
+        <Row left>
+          <Icons size={8} type={exp.icon} />
+          <h6>{exp.name}</h6>
+        </Row>
+        <Row right>
+          <small>{exp.type}</small>
+        </Row>
+      </Row>
+      <Column left>
+        <small>
+          <If check={years > 1}>
+            {years}
+            &nbsp;
+            <Text path="profile_years" />
+          </If>
+          <If check={years === 1}>
+            {years}
+            &nbsp;
+            <Text path="profile_year" />
+          </If>
+          <If check={years === 0}>
+            -1 &nbsp;
+            <Text path="profile_year" />
+          </If>
+        </small>
+        <ProgressStepBox>
+          <If check={yearsArr.length >= 1}>
+            {yearsArr.map((item, i) => (
+              <ProgressStep key={item + i} />
+            ))}
+          </If>
+          <If check={yearsArr.length === 0}>
+            <ProgressStep half />
+          </If>
+        </ProgressStepBox>
+      </Column>
+    </Box>
+  );
+});
 
+const ProfileExperience = () => {
   return (
     <Section>
       <Card>
