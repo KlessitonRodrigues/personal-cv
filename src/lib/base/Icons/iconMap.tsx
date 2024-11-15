@@ -10,6 +10,7 @@ import {
   LuMenu,
   LuMoon,
   LuPaintbrush,
+  LuPrinter,
   LuSun,
   LuUser,
   LuX,
@@ -120,4 +121,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   projects: <PiChartBarHorizontal />,
   cordova: <SiApachecordova />,
   cypress: <SiCypress />,
+  pritter: <LuPrinter />,
 };

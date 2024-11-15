@@ -74,7 +74,8 @@ declare namespace Utils {
     | 'caretLeft'
     | 'projects'
     | 'cordova'
-    | 'cypress';
+    | 'cypress'
+    | 'pritter';
 
   type TextTags =
     | 'b'

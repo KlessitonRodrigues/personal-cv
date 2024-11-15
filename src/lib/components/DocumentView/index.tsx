@@ -20,7 +20,10 @@ const DocumentView = (props: PropsWithChildren) => {
     <Container>
       <DocumentButtons>
         <MainRoundedBtn onClick={onDownload}>
-          <Icons size={7} type="download" />
+          <Icons size={6} type="pritter" />
+        </MainRoundedBtn>
+        <MainRoundedBtn onClick={onDownload}>
+          <Icons size={6} type="download" />
         </MainRoundedBtn>
       </DocumentButtons>
 

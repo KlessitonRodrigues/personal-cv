@@ -13,9 +13,10 @@ export const RoundedBtn = styled.button<Props.CssProps>(
     color: ${theme.colors.text2};
     border-radius: ${theme.radius.sm};
     box-shadow: ${theme.shadow.sm};
+    transition: opacity 0.1s;
 
     &:hover {
-      box-shadow: ${theme.shadow.md};
+      opacity: 0.6;
     }
   `,
 );
