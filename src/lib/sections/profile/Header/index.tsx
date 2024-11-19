@@ -1,4 +1,5 @@
 import { urls } from 'src/constants/urls';
+import useTheme from 'src/hooks/useTheme';
 import Icons from 'src/lib/base/Icons';
 import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { Section } from 'src/lib/base/StyledComponents/Containers';
@@ -10,16 +11,15 @@ import desktopBg from 'src/public/images/desktop.min.jpg';
 import desktopDarkBg from 'src/public/images/desktop_dark.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { isMobileScreen } from 'src/styles/utils';
-import { getThemeMode } from 'src/utils/theme';
 
 const ProfileHeader = () => {
+  const themeCtx = useTheme();
   const isMobile = isMobileScreen();
-  const isDarkMode = getThemeMode() === 'dark';
 
   return (
     <Section>
       <Outdoor>
-        <OutdoorImage src={isDarkMode ? desktopDarkBg : desktopBg} />
+        <OutdoorImage src={themeCtx.isDark ? desktopDarkBg : desktopBg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
           <b>

@@ -35,7 +35,7 @@ const ExperienceItems = experienceMap.map(exp => {
             <Text path="profile_year" />
           </If>
           <If check={years === 0}>
-            -1 &nbsp;
+            - 1 &nbsp;
             <Text path="profile_year" />
           </If>
         </small>

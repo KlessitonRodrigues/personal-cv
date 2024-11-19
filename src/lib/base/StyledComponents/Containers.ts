@@ -41,7 +41,7 @@ export const Card = styled.div(
     color: ${theme.colors.text2};
     border-radius: ${theme.radius.lg};
     box-shadow: ${theme.shadow.sm};
-    transition: 0.3s;
+    transition: background 0.5s;
 
     &:hover {
       box-shadow: ${theme.shadow.md};

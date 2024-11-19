@@ -2,17 +2,18 @@ import { PropsWithChildren, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { urls } from 'src/constants/urls';
+import useTheme from 'src/hooks/useTheme';
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 import { lang, toggleLang } from 'src/utils/i18n';
-import { currentColor, currentTheme, toggleColor, toggleTheme } from 'src/utils/theme';
 
 import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
+  const themeCtx = useTheme();
   const location = useLocation();
   const path = location.pathname;
   const closeSidebar = () => setOpen(false);
@@ -52,19 +53,19 @@ const SideBar = (props: PropsWithChildren) => {
             <strong>{lang}</strong>
             <Text tag="p" path={lang} />
           </SidebarItem>
-          <SidebarItem onClick={toggleTheme}>
-            <If check={currentTheme === 'light'}>
+          <SidebarItem onClick={() => themeCtx.setDark(!themeCtx.isDark)}>
+            <If check={!themeCtx.isDark}>
               <Icons type="sun" size={8} />
               <Text tag="p" path="sidebar_theme_light" />
             </If>
-            <If check={currentTheme === 'dark'}>
+            <If check={themeCtx.isDark}>
               <Icons type="moon" size={8} />
               <Text tag="p" path="sidebar_theme_dark" />
             </If>
           </SidebarItem>
-          <SidebarItem onClick={toggleColor}>
+          <SidebarItem onClick={themeCtx.toggleColor}>
             <Icons type="theme" size={8} />
-            <p>{currentColor}</p>
+            <p>{themeCtx.color}</p>
           </SidebarItem>
           <a href={urls.personalPageRep} target="_blank">
             <SidebarItem>

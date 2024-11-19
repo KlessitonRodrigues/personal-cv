@@ -46,6 +46,7 @@ export const OutdoorImage = styled.div<Props.CssProps>(
     background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(0.8);
+    transition: 1s;
   `,
 );
 

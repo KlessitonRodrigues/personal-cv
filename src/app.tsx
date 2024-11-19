@@ -1,16 +1,17 @@
 import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 
-import AppProviders from 'src/lib/components/AppProviders';
 import Router from 'src/pages/routes';
+
+import { ThemeProvider } from './hooks/useTheme';
 
 const App = () => {
   return (
-    <AppProviders>
+    <ThemeProvider>
       <MemoryRouter basename="/">
         <Router />
       </MemoryRouter>
-    </AppProviders>
+    </ThemeProvider>
   );
 };
 

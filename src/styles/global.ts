@@ -26,6 +26,7 @@ export default createGlobalStyle(
       background-color: ${theme.colors.bg4};
       color: ${theme.colors.text4};
       overflow-x: hidden;
+      transition: background 0.3s;
     }
     h1 {
       font-size: ${theme.fontSize.h1};

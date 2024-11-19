@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 
+import AppProviders from 'src/lib/components/AppProviders';
 import SideBar from 'src/lib/components/SideBar';
 
 import CertificatesPage from './certificates';
@@ -9,7 +10,7 @@ import ResumePage from './resume';
 
 const Router = () => {
   return (
-    <>
+    <AppProviders>
       <SideBar>
         <Routes>
           <Route path="/*" element={<ProfilePage />} />
@@ -18,7 +19,7 @@ const Router = () => {
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </SideBar>
-    </>
+    </AppProviders>
   );
 };
 
