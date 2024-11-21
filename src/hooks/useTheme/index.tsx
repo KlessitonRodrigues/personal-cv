@@ -8,7 +8,7 @@ export const ThemeProvider = (props: PropsWithChildren) => {
   const [color, setColor] = useState<Hooks.ThemeColors>('indigo');
 
   const toggleColor = () => {
-    const colors: Hooks.ThemeColors[] = ['indigo', 'blue', 'purple', 'magenta', 'green'];
+    const colors: Hooks.ThemeColors[] = ['indigo', 'purple', 'blue', 'magenta', 'green'];
     setColor(colors[colors.indexOf(color) + 1] || 'indigo');
   };
 

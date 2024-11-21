@@ -1,12 +1,15 @@
 import Page from 'src/lib/components/Page';
+import SideBar from 'src/lib/components/SideBar';
 import MoneyManager from 'src/lib/sections/projects/MoneyManager';
 
 const ProjectsPage = () => {
   return (
-    <Page>
-      <MoneyManager />
-    </Page>
+    <SideBar>
+      <Page>
+        <MoneyManager />
+      </Page>
+    </SideBar>
   );
 };
 
-export default ProjectsPage;
+export const Component = ProjectsPage;

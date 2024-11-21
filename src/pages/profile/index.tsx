@@ -1,14 +1,17 @@
 import Page from 'src/lib/components/Page';
+import SideBar from 'src/lib/components/SideBar';
 import ProfileExperience from 'src/lib/sections/profile/Experience';
 import ProfileHeader from 'src/lib/sections/profile/Header';
 
 const ProfilePage = () => {
   return (
-    <Page>
-      <ProfileHeader />
-      <ProfileExperience />
-    </Page>
+    <SideBar>
+      <Page>
+        <ProfileHeader />
+        <ProfileExperience />
+      </Page>
+    </SideBar>
   );
 };
 
-export default ProfilePage;
+export const Component = ProfilePage;

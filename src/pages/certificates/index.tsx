@@ -1,14 +1,17 @@
 import Page from 'src/lib/components/Page';
+import SideBar from 'src/lib/components/SideBar';
 import AcademyCertificates from 'src/lib/sections/certificates/Academy';
 import UdemyCertificates from 'src/lib/sections/certificates/Udemy';
 
 const CertificatesPage = () => {
   return (
-    <Page>
-      <AcademyCertificates />
-      <UdemyCertificates />
-    </Page>
+    <SideBar>
+      <Page>
+        <AcademyCertificates />
+        <UdemyCertificates />
+      </Page>
+    </SideBar>
   );
 };
 
-export default CertificatesPage;
+export const Component = CertificatesPage;
