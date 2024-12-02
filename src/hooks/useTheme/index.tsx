@@ -1,16 +1,26 @@
-import { PropsWithChildren, createContext, useContext, useMemo, useState } from 'react';
+import { PropsWithChildren, createContext, useContext, useEffect, useMemo, useState } from 'react';
+
+import { getLocalTheme, saveLocalTheme } from 'src/styles/theme';
 
 // @ts-ignore
 const ThemeCtx = createContext<Hooks.UseThemeCtx>(null);
 
+const colors: Hooks.ThemeColors[] = ['indigo', 'purple', 'blue', 'magenta', 'green'];
+
+const localTheme = getLocalTheme();
+
 export const ThemeProvider = (props: PropsWithChildren) => {
-  const [isDark, setDark] = useState(false);
-  const [color, setColor] = useState<Hooks.ThemeColors>('indigo');
+  const [isDark, setDark] = useState(localTheme.mode === 'dark');
+  const [color, setColor] = useState(localTheme.color);
 
   const toggleColor = () => {
-    const colors: Hooks.ThemeColors[] = ['indigo', 'purple', 'blue', 'magenta', 'green'];
-    setColor(colors[colors.indexOf(color) + 1] || 'indigo');
+    const nextColor = colors[colors.indexOf(color) + 1] || 'indigo';
+    setColor(nextColor);
   };
+
+  useEffect(() => {
+    saveLocalTheme(isDark ? 'dark' : 'light', color);
+  }, [isDark, color]);
 
   const context: Hooks.UseThemeCtx = {
     isDark,

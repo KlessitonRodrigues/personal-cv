@@ -21,6 +21,7 @@ declare namespace Props {
     reverse?: boolean;
     half?: boolean;
     src?: string;
+    hide?: boolean;
   };
 
   type Icons = {

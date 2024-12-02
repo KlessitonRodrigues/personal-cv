@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { urls } from 'src/constants/urls';
@@ -13,35 +13,41 @@ import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
+  const [hidable, setHidable] = useState(false);
   const themeCtx = useTheme();
   const location = useLocation();
   const path = location.pathname;
   const closeSidebar = () => setOpen(false);
 
+  useEffect(() => {
+    const timer = setTimeout(() => setHidable(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Container>
-      <SidebarBox active={open}>
+      <SidebarBox active={open} hide={hidable}>
         <Column top left gap={0}>
           <Link to="/" onClick={closeSidebar}>
-            <SidebarItem active={path === '/'}>
+            <SidebarItem active={hidable && path === '/'}>
               <Icons type="website" size={8} />
               <Text tag="p" path="sidebar_link_profile" />
             </SidebarItem>
           </Link>
           <Link to="/resume" onClick={closeSidebar}>
-            <SidebarItem active={path === '/resume'}>
+            <SidebarItem active={hidable && path === '/resume'}>
               <Icons type="textDocument" size={8} />
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
           </Link>
           <Link to="/certification" onClick={closeSidebar}>
-            <SidebarItem active={path === '/certification'}>
+            <SidebarItem active={hidable && path === '/certification'}>
               <Icons type="certificates" size={8} />
               <Text tag="p" path="sidebar_link_ct" />
             </SidebarItem>
           </Link>
           <Link to="/projects" onClick={closeSidebar}>
-            <SidebarItem active={path === '/projects'}>
+            <SidebarItem active={hidable && path === '/projects'}>
               <Icons type="projects" size={8} />
               <Text tag="p" path="sidebar_link_projects" />
             </SidebarItem>

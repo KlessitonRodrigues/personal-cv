@@ -79,3 +79,14 @@ export const getTheme = (dark: boolean, color: Hooks.ThemeColors) => {
 
   return theme;
 };
+
+export const getLocalTheme = () => {
+  const mode = localStorage.getItem('theme_mode') || 'light';
+  const color = localStorage.getItem('theme_color') || 'indigo';
+  return { mode, color } as { mode: 'light' | 'dark'; color: Hooks.ThemeColors };
+};
+
+export const saveLocalTheme = (mode: 'light' | 'dark', color: Hooks.ThemeColors) => {
+  if (mode) localStorage.setItem('theme_mode', mode);
+  if (color) localStorage.setItem('theme_color', color);
+};
