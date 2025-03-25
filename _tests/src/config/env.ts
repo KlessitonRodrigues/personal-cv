@@ -1,12 +1,13 @@
-const nodeEnv = process.env.NODE_ENV;
+const NODE_ENV = process.env.NODE_ENV as 'dev' | 'build' | 'prod';
 
-let WEBSITEURL = '';
-if (nodeEnv === 'dev') WEBSITEURL = 'http://localhost:5173/';
-if (nodeEnv === 'build') WEBSITEURL = 'http://localhost:4173/';
-if (nodeEnv === 'prod') WEBSITEURL = 'https://djc7924qzcvck.cloudfront.net/';
+let CURRENT_URL = '';
+if (NODE_ENV === 'dev') CURRENT_URL = 'http://localhost:5173/';
+if (NODE_ENV === 'build') CURRENT_URL = 'http://localhost:4173/';
+if (NODE_ENV === 'prod') CURRENT_URL = 'https://djc7924qzcvck.cloudfront.net/';
 
-const environment = {
-  WEBSITEURL,
+const env = {
+  CURRENT_URL,
+  NODE_ENV,
 };
 
-export default environment;
+export default env;

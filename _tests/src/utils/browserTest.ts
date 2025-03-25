@@ -1,7 +1,7 @@
-import environment from '../config/env';
+import env from '../config/env';
 
 export const testWebsiteUrl = () => {
-  const url = environment.WEBSITEURL;
+  const url = env.CURRENT_URL;
   fetch(url).catch(() => {
     throw new Error('No website available on ' + url);
   });
