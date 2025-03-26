@@ -55,6 +55,7 @@ export const getTheme = (dark: boolean, color: Hooks.ThemeColors) => {
     },
     radius: {
       full: '50%',
+      xl: cssSize(6),
       lg: cssSize(5),
       md: cssSize(4),
       sm: cssSize(3),

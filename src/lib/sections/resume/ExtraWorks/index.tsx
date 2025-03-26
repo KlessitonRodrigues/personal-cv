@@ -51,28 +51,6 @@ const ResumeExtraWorks = () => {
 
           <Box>
             <Row left>
-              <a href={urls.gameFinderRepo} target="_blank">
-                <Text tag="h6" path="extraworks_gamefinder" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="p" path="extraworks_gamefinder_text" />
-            <Text tag="small" path="extraworks_gamefinder_tech" />
-          </Box>
-
-          <Box>
-            <Row left>
-              <a href={urls.consoleUIRepo} target="_blank">
-                <Text tag="h6" path="extraworks_consoleui" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="p" path="extraworks_consoleui_text" />
-            <Text tag="small" path="extraworks_consoleui_tech" />
-          </Box>
-
-          <Box>
-            <Row left>
               <a href={urls.quizRepo} target="_blank">
                 <Text tag="h6" path="extraworks_quiz" />
               </a>
@@ -84,24 +62,13 @@ const ResumeExtraWorks = () => {
 
           <Box>
             <Row left>
-              <a href={urls.encryptEasyRepo} target="_blank">
-                <Text tag="h6" path="extraworks_easyencrypt" />
+              <a href={urls.awsProxyApiRepo} target="_blank">
+                <Text tag="h6" path="extraworks_aws_proxy_api" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_easyencrypt_text" />
-            <Text tag="small" path="extraworks_easyencrypt_tech" />
-          </Box>
-
-          <Box>
-            <Row left>
-              <a href={urls.translatePwa} target="_blank">
-                <Text tag="h6" path="extraworks_translationpwa" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="p" path="extraworks_translationpwa_text" />
-            <Text tag="small" path="extraworks_translationpwa_tech" />
+            <Text tag="p" path="extraworks_aws_proxy_api_text" />
+            <Text tag="small" path="extraworks_aws_proxy_api_tech" />
           </Box>
         </Grid>
       </Card>

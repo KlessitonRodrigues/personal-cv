@@ -3,13 +3,14 @@ import styled, { css } from 'styled-components';
 import { cssSize, screenSize } from 'src/styles/utils';
 
 const FlexItems = styled.div<Props.CssProps>(
-  ({ w, h }) => css`
+  ({ w, h, fit }) => css`
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     ${w && `width: ${w};`}
     ${h && `height: ${h};`}
+    ${fit && `width: fit-content;`}
   `,
 );
 

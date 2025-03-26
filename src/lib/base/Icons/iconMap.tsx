@@ -16,7 +16,13 @@ import {
   LuX,
 } from 'react-icons/lu';
 import { PiCertificate, PiChartBarHorizontal, PiStudent } from 'react-icons/pi';
-import { RiExpandUpDownFill, RiFileTextLine, RiLoader5Line, RiWhatsappLine } from 'react-icons/ri';
+import {
+  RiExpandUpDownFill,
+  RiFileTextLine,
+  RiLoader5Line,
+  RiQuillPenLine,
+  RiWhatsappLine,
+} from 'react-icons/ri';
 import {
   SiAmazon,
   SiAndroidstudio,
@@ -49,6 +55,7 @@ import {
   SiReact,
   SiSass,
   SiSelenium,
+  SiShadcnui,
   SiSpringboot,
   SiStyledcomponents,
   SiSvelte,
@@ -122,4 +129,6 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   cordova: <SiApachecordova />,
   cypress: <SiCypress />,
   pritter: <LuPrinter />,
+  quill: <RiQuillPenLine />,
+  shadcn: <SiShadcnui />,
 };

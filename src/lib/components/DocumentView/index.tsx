@@ -1,28 +1,33 @@
 import { PropsWithChildren, useState } from 'react';
 
+import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/base/Icons';
 import Loading from 'src/lib/base/Loading';
 import { MainRoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
-import { openPrintDialog } from 'src/utils/pdf';
+import { downloadPdfFile, openPrintDialog } from 'src/utils/pdf';
 
 import { Container, Content, Document, DocumentButtons } from './styled';
 
 const DocumentView = (props: PropsWithChildren) => {
   const [loading, setLoading] = useState(false);
 
-  const onDownload = async () => {
+  const onOpenPrintDialog = async () => {
     setLoading(true);
     await openPrintDialog();
     setLoading(false);
   };
 
+  const onDownloadResume = () => {
+    downloadPdfFile(urls.resumeFileUrl, 'resume.pdf');
+  };
+
   return (
     <Container>
       <DocumentButtons>
-        <MainRoundedBtn onClick={onDownload}>
+        <MainRoundedBtn onClick={onOpenPrintDialog}>
           <Icons size={6} type="pritter" />
         </MainRoundedBtn>
-        <MainRoundedBtn onClick={onDownload}>
+        <MainRoundedBtn onClick={onDownloadResume}>
           <Icons size={6} type="download" />
         </MainRoundedBtn>
       </DocumentButtons>

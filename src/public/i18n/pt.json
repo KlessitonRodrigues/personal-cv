@@ -27,6 +27,10 @@
   "cv_resume": "Desenvolvedor Fullstack com experiência em aplicações Web e Mobile utilizando o ecossistema ReactJS e também desenvolvendo APIs através de frameworks como NestJS ou Spring Boot, bom conhecimento em serviços AWS e sistemas em nuvem. Gosto de ser criativo e sempre tento desenvolver minha própria solução para o problema e também aprender diferentes tipos de tecnologias e formas mais produtivas de melhorar a qualidade do código e entregar aplicações mais rapidamente.",
 
   "experience_title": "Experiência",
+  "experience_accourdous": "Software de Gestão Imobiliária Accourdous",
+  "experience_accourdous_date": "2024/05 - 2025/03",
+  "experience_accourdous_text": "Plataforma online para gestão de aluguéis, compra e venda de imóveis, com sistema de emissão de contratos e anúncio de propriedades, além de notificação e gestão de faturas.",
+  "experience_accourdous_tech": "ReactJS, NextJS, TailwindCSS, Shadcn UI, Quill Text Editor, Cypress",
   "experience_cef": "Centro Educacional de Floriano",
   "experience_cef_date": "2024/01 - 2024/03",
   "experience_cef_text": "Plataforma online para gerenciar alunos e suas atividades escolares, com painel do professor, seção de blog e pagamentos de cursos.",
@@ -96,7 +100,7 @@
   "extraworks_title": "Trabalhos Extras",
   "extraworks_text": "Alguns projetos pessoais feitos para estudar novas tecnologias e aprimorar meu conhecimento.",
   "extraworks_jsbackup": "Repositório de Backup de JavaScript",
-  "extraworks_jsbackup_text": "Repositório para salvar testes relacionados à linguagem JavaScript e frameworks, com mais de 100 subprojetos.",
+  "extraworks_jsbackup_text": "Repositório para salvar testes relacionados à linguagem JavaScript e frameworks, com mais de 100 projetos de teste.",
   "extraworks_jsbackup_tech": "JavaScript e TypeScript",
   "extraworks_gamefinder": "Localizador de Jogos",
   "extraworks_gamefinder_text": "Aplicativo web para descobrir novos jogos com mais de 50.000 jogos filtrados por plataforma, categoria e ano de lançamento.",
@@ -122,7 +126,9 @@
   "extraworks_nutriacademy": "Nutriacademy",
   "extraworks_nutriacademy_text": "Projeto de Academia com formulários de inscrição e login usando serviços da AWS.",
   "extraworks_nutriacademy_tech": "NextJS, Styled Components, AWS Lambdas, MongoDB",
-
+  "extraworks_aws_proxy_api": "AWS Proxy API",
+  "extraworks_aws_proxy_api_text": "API usando serviços da Amazon Web Services, que permite realizar requisições através do navegador sem limitações",
+  "extraworks_aws_proxy_api_tech": "AWS Services, NodeJs, ExpressJS, Jest",
   "profile_year": "ano",
   "profile_years": "anos"
 }

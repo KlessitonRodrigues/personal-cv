@@ -217,7 +217,7 @@ export const experienceMap: Utils.ExperienceItems[] = [
   },
   {
     name: 'Apache Cordova',
-    year: 2023,
+    year: 2024,
     type: 'frontend',
     icon: 'cordova',
   },
@@ -226,5 +226,17 @@ export const experienceMap: Utils.ExperienceItems[] = [
     year: 2024,
     type: 'frontend',
     icon: 'cypress',
+  },
+  {
+    name: 'Quill Text Editor',
+    year: 2024,
+    type: 'frontend',
+    icon: 'quill',
+  },
+  {
+    name: 'Shadcn UI',
+    year: 2025,
+    type: 'frontend',
+    icon: 'shadcn',
   },
 ];

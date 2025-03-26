@@ -3,14 +3,22 @@ import styled, { css } from 'styled-components';
 import { cssSize } from 'src/styles/utils';
 
 export const Image = styled.img<Props.CssProps>(
-  ({ theme, w, h }) => css`
+  ({ w, h }) => css`
     display: block;
     margin: auto;
     width: 100%;
-    padding: ${cssSize(1)};
     max-height: ${h ?? '100%'};
-    max-width: ${w ?? 'auto'};
-    border-radius: ${theme.border.md};
+    max-width: ${w ?? 'unset'};
+  `,
+);
+
+export const ImageContainer = styled.div<Props.CssProps>(
+  ({ theme, w, h }) => css`
+    width: 100%;
+    max-height: ${h ?? '100%'};
+    max-width: ${w ?? 'unset'};
+    box-shadow: ${theme.shadow.md};
+    border-radius: ${theme.radius.lg};
     overflow: hidden;
   `,
 );

@@ -41,6 +41,7 @@ declare namespace Styles {
       sm: string;
       md: string;
       lg: string;
+      xl: string;
       full: string;
     };
     shadow: {

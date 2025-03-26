@@ -11,8 +11,11 @@ export const urls = {
   consoleUIRepo: 'https://github.com/KlessitonRodrigues/game-station',
   encryptEasyRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   quizRepo: 'https://github.com/KlessitonRodrigues/quiz-app',
+  awsProxyApiRepo: 'https://github.com/KlessitonRodrigues/aws-cors-proxy',
   translatePwa: 'https://github.com/KlessitonRodrigues/translation-pwa',
   nutriacademy: 'https://github.com/KlessitonRodrigues/acadenutri-project',
   whatsapp: 'https://wa.me/5589994009646',
   whatsappWeb: 'https://web.whatsapp.com/send/?phone=5589994009646',
+  resumeFileUrl:
+    'https://profilewebsitestack-profilewebsite34aa6aeb-kpf3tyowfuoq.s3.us-east-1.amazonaws.com/_public/KlessitonRDS.pdf',
 };

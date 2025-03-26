@@ -14,6 +14,15 @@ const ResumeExperience = () => {
 
         <Column left>
           <Row left responsive>
+            <Text tag="h6" path="experience_accourdous" />
+            <Text tag="small" path="experience_accourdous_date" />
+          </Row>
+          <Text tag="p" path="experience_accourdous_text" />
+          <Text tag="small" path="experience_accourdous_tech" />
+        </Column>
+
+        <Column left>
+          <Row left responsive>
             <Text tag="h6" path="experience_cef" />
             <Text tag="small" path="experience_cef_date" />
           </Row>

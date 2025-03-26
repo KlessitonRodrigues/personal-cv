@@ -1,12 +1,14 @@
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
-import MoneyManager from 'src/lib/sections/projects/MoneyManager';
+import AwsCorsProxyProject from 'src/lib/sections/projects/awsCorsProxy';
+import ProfileProject from 'src/lib/sections/projects/profileProject';
 
 const ProjectsPage = () => {
   return (
     <SideBar>
       <Page>
-        <MoneyManager />
+        <ProfileProject />
+        <AwsCorsProxyProject />
       </Page>
     </SideBar>
   );

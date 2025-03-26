@@ -75,7 +75,9 @@ declare namespace Utils {
     | 'projects'
     | 'cordova'
     | 'cypress'
-    | 'pritter';
+    | 'pritter'
+    | 'quill'
+    | 'shadcn';
 
   type TextTags =
     | 'b'

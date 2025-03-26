@@ -19,3 +19,12 @@ export const openPrintDialog = async () => {
   await new Promise(r => setTimeout(r, 100));
   iFrame.remove();
 };
+
+export const downloadPdfFile = (url: string, name: string) => {
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = name;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
