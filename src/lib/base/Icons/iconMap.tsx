@@ -15,7 +15,7 @@ import {
   LuUser,
   LuX,
 } from 'react-icons/lu';
-import { PiCertificate, PiChartBarHorizontal, PiStudent } from 'react-icons/pi';
+import { PiAndroidLogoBold, PiCertificate, PiChartBarHorizontal, PiStudent } from 'react-icons/pi';
 import {
   RiExpandUpDownFill,
   RiFileTextLine,
@@ -131,4 +131,5 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   pritter: <LuPrinter />,
   quill: <RiQuillPenLine />,
   shadcn: <SiShadcnui />,
+  android: <PiAndroidLogoBold />,
 };

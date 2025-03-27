@@ -77,7 +77,8 @@ declare namespace Utils {
     | 'cypress'
     | 'pritter'
     | 'quill'
-    | 'shadcn';
+    | 'shadcn'
+    | 'android';
 
   type TextTags =
     | 'b'

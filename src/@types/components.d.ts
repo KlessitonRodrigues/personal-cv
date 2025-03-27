@@ -57,4 +57,11 @@ declare namespace Props {
     content: React.ReactElement;
     delayLoad?: boolean;
   };
+
+  type LinkAndIcon = {
+    url?: string;
+    icon?: Utils.IconTypes;
+    label?: string;
+    path?: string;
+  };
 }

@@ -18,7 +18,7 @@ export const ImageContainer = styled.div<Props.CssProps>(
     max-height: ${h ?? '100%'};
     max-width: ${w ?? 'unset'};
     box-shadow: ${theme.shadow.md};
-    border-radius: ${theme.radius.lg};
+    border-radius: ${theme.radius.sm};
     overflow: hidden;
   `,
 );

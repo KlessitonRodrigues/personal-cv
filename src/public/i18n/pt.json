@@ -126,9 +126,9 @@
   "extraworks_nutriacademy": "Nutriacademy",
   "extraworks_nutriacademy_text": "Projeto de Academia com formulários de inscrição e login usando serviços da AWS.",
   "extraworks_nutriacademy_tech": "NextJS, Styled Components, AWS Lambdas, MongoDB",
-  "extraworks_aws_proxy_api": "AWS Proxy API",
-  "extraworks_aws_proxy_api_text": "API usando serviços da Amazon Web Services, que permite realizar requisições através do navegador sem limitações",
-  "extraworks_aws_proxy_api_tech": "AWS Services, NodeJs, ExpressJS, Jest",
+  "extraworks_aws_proxy_api": "Proxy API usando AWS Services",
+  "extraworks_aws_proxy_api_text": "API usando serviços da Amazon Web Services, que permite realizar requisições através do navegador sem limitações.",
+  "extraworks_aws_proxy_api_tech": "AWS Services, NodeJS, ExpressJS, Jest",
   "profile_year": "ano",
   "profile_years": "anos"
 }

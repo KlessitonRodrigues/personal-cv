@@ -1,6 +1,5 @@
 import { urls } from 'src/constants/urls';
-import Icons from 'src/lib/base/Icons';
-import { OutlineBtn } from 'src/lib/base/StyledComponents/Buttons';
+import LinkAndIcon from 'src/lib/base/Links/LinkAndIcon';
 import { Card, Section } from 'src/lib/base/StyledComponents/Containers';
 import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
@@ -71,31 +70,14 @@ const ResumeHeader = () => {
           <Text tag="p" path="cv_resume" />
         </Column>
         <Row left responsive gap={8}>
-          <a href={urls.personalPage} target="_blank">
-            <OutlineBtn>
-              <Icons size={8} type="website" />
-              <Text tag="p" path="header_page_text" />
-            </OutlineBtn>
-          </a>
-          <a href={urls.linkedin} target="_blank">
-            <OutlineBtn>
-              <Icons size={8} type="linkedin" />
-              <p>LinkedIn</p>
-            </OutlineBtn>
-          </a>
-          <a href={urls.githubProfile} target="_blank">
-            <OutlineBtn>
-              <Icons size={8} type="github" />
-              <p>Github</p>
-            </OutlineBtn>
-          </a>
-
-          <a href={isMobile ? urls.whatsapp : urls.whatsappWeb} target="_blank">
-            <OutlineBtn>
-              <Icons size={8} type="whatsapp" />
-              <p>WhatsApp</p>
-            </OutlineBtn>
-          </a>
+          <LinkAndIcon icon="website" path="header_page_text" url={urls.personalPage} />
+          <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
+          <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
+          <LinkAndIcon
+            icon="whatsapp"
+            label="WhatsApp"
+            url={isMobile ? urls.whatsapp : urls.whatsappWeb}
+          />
         </Row>
       </Card>
     </Section>
