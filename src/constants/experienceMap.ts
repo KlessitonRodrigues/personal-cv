@@ -144,12 +144,6 @@ export const experienceMap: Utils.ExperienceItems[] = [
     icon: 'jest',
   },
   {
-    name: 'Playwright',
-    year: 2022,
-    type: 'tests',
-    icon: 'playwright',
-  },
-  {
     name: 'PuppeterJS',
     year: 2022,
     type: 'tests',

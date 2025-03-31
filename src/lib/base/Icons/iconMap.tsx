@@ -49,7 +49,6 @@ import {
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
-  SiPlaywright,
   SiPostgresql,
   SiPostman,
   SiPuppeteer,
@@ -63,7 +62,7 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiUdemy,
-  SiVisualstudiocode,
+  SiVsco,
 } from 'react-icons/si';
 
 export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
@@ -109,7 +108,6 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   nextJS: <SiNextdotjs />,
   mantineui: <SiMantine />,
   materialui: <SiMaterialdesign />,
-  playwright: <SiPlaywright />,
   clojure: <SiClojure />,
   expo: <SiExpo />,
   electron: <SiElectron />,
@@ -118,7 +116,6 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   androidStudio: <SiAndroidstudio />,
   insomnia: <SiInsomnia />,
   postman: <SiPostman />,
-  vccode: <SiVisualstudiocode />,
   heroku: <SiHeroku />,
   bootstrap: <SiBootstrap />,
   whatsapp: <RiWhatsappLine />,
