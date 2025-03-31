@@ -8,7 +8,8 @@ import If from 'src/lib/base/If';
 import LineSelector from 'src/lib/base/Selectors/LineSelector';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
-import { changeLanguage, getText, lang } from 'src/utils/i18n';
+import { getText, lang } from 'src/utils/i18n';
+import { changeLanguage } from 'src/utils/localStorage';
 
 import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 

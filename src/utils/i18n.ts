@@ -1,23 +1,10 @@
 import ENJSON from 'src/public/i18n/en.json';
 import PTJSON from 'src/public/i18n/pt.json';
 
+import { getLanguage } from './localStorage';
+
 const ENText = ENJSON as Utils.TranslationFile;
 const PTText = PTJSON as Utils.TranslationFile;
-
-export const getLanguage = () => {
-  try {
-    return localStorage.getItem('lang') || 'PT';
-  } catch (err) {
-    return 'PT';
-  }
-};
-
-export const changeLanguage = (lang: string) => {
-  try {
-    localStorage.setItem('lang', lang);
-    location.reload();
-  } catch (err) {}
-};
 
 export const lang = getLanguage();
 

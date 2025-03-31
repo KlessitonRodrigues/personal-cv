@@ -6,6 +6,5 @@ declare namespace Hooks {
     color: ThemeColors;
     setDark: (value: boolean) => any;
     setColor: (value: ThemeColors) => any;
-    toggleColor: () => void;
   };
 }
