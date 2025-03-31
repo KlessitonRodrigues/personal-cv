@@ -9,7 +9,7 @@ const LinkAndIcon = (props: Props.LinkAndIcon) => {
     <a href={url} target="_blank">
       <OutlineBtn>
         <Icons size={9} type={icon || 'link'} />
-        <small>{label}</small>
+        <p>{label}</p>
         {path && <Text tag="p" path={path} />}
       </OutlineBtn>
     </a>

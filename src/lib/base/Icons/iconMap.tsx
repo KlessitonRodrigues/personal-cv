@@ -2,6 +2,7 @@ import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
 import {
   LuChevronLeft,
+  LuChevronRight,
   LuDownload,
   LuFileText,
   LuImage,
@@ -125,6 +126,7 @@ export const iconMap: Record<Props.Icons['type'], React.ReactElement> = {
   school: <PiStudent />,
   certificates: <PiCertificate />,
   caretLeft: <LuChevronLeft />,
+  caretRight: <LuChevronRight />,
   projects: <PiChartBarHorizontal />,
   cordova: <SiApachecordova />,
   cypress: <SiCypress />,

@@ -17,13 +17,14 @@ declare namespace Props {
     wrap?: boolean;
     rows?: number;
     cols?: number;
-    responsive?: boolean;
+    responsive?: boolean | 'reverse-left';
     reverse?: boolean;
     half?: boolean;
     src?: string;
     hidden?: boolean;
     full?: boolean;
     fit?: boolean;
+    between?: boolean;
   };
 
   type Icons = {
@@ -34,8 +35,9 @@ declare namespace Props {
   };
 
   type Text = {
-    path: string;
+    path?: string;
     tag?: Utils.TextTags;
+    children?: React.ReactNode;
   };
 
   type Loading = {

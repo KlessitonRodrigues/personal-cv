@@ -15,10 +15,11 @@ const FlexItems = styled.div<Props.CssProps>(
 );
 
 export const Row = styled(FlexItems)(
-  ({ gap, left, right, top, bottom, wrap, responsive }) => css`
+  ({ gap, left, right, top, bottom, wrap, between, responsive }) => css`
     gap: ${cssSize(gap ?? 2)};
     ${left && 'justify-content: flex-start;'}
     ${right && 'justify-content: flex-end;'}
+    ${between && 'justify-content: space-between;'}
     ${top && 'align-items: flex-start;'}
     ${bottom && 'align-items: flex-end;'}
     ${wrap && 'flex-wrap: wrap;'}
@@ -29,6 +30,7 @@ export const Row = styled(FlexItems)(
       ${responsive && bottom && 'justify-content: flex-end;'}
       ${responsive && left && 'align-items: flex-start;'}
       ${responsive && right && 'align-items: flex-end;'}
+      ${responsive === 'reverse-left' && 'flex-direction: column-reverse; align-items: flex-start;'}
     }
   `,
 );

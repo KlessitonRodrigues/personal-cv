@@ -72,6 +72,7 @@ declare namespace Utils {
     | 'school'
     | 'certificates'
     | 'caretLeft'
+    | 'caretRight'
     | 'projects'
     | 'cordova'
     | 'cypress'

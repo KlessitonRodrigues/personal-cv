@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
-const sidebarSizeOpen = 70;
+const sidebarSizeOpen = 80;
 const sidebarSize = 20;
 const topOffset = 2;
 const leftOffset = 2;
@@ -16,7 +16,7 @@ export const Container = styled.div(
 );
 
 export const SidebarBox = styled.aside<Props.CssProps>(
-  ({ theme, active, hide }) => css`
+  ({ theme, active, hidden }) => css`
     position: fixed;
     left: ${cssSize(2)};
     top: ${cssSize(2)};
@@ -38,7 +38,8 @@ export const SidebarBox = styled.aside<Props.CssProps>(
     }
 
     @media (max-width: ${screenSize.tablet}px) {
-      height: 95%;
+      justify-content: flex-start;
+      gap: ${cssSize(14)};
       top: ${cssSize(topOffset)};
       width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
       ${!active && 'transform: translateX(-5rem);'};
@@ -46,7 +47,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
 
     @media (min-width: ${screenSize.tablet}px) {
       width: ${cssSize(sidebarSizeOpen)};
-      ${hide && `width: ${cssSize(sidebarSize)};`}
+      ${hidden && `width: ${cssSize(sidebarSize)};`}
       &:hover {
         width: ${cssSize(sidebarSizeOpen)};
       }

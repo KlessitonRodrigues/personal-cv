@@ -1,11 +1,11 @@
 import { getText } from 'src/utils/i18n';
 
 const Text = (props: Props.Text) => {
-  const { path, tag } = props;
-  const text = getText(path);
+  const { path, tag, children } = props;
+  const text = path ? getText(path) : children;
 
-  if (tag === 'b') return <b>{text}</b>;
   if (tag === 'p') return <p>{text}</p>;
+  if (tag === 'b') return <b>{text}</b>;
   if (tag === 'h1') return <h1>{text}</h1>;
   if (tag === 'h2') return <h2>{text}</h2>;
   if (tag === 'h3') return <h3>{text}</h3>;

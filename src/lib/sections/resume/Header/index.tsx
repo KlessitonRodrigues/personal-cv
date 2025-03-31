@@ -5,6 +5,7 @@ import { Hr } from 'src/lib/base/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
 import { isMobileScreen } from 'src/styles/utils';
+import { lang } from 'src/utils/i18n';
 
 const ResumeHeader = () => {
   const isMobile = isMobileScreen();
@@ -14,9 +15,12 @@ const ResumeHeader = () => {
       <Card>
         <Row top gap={8} responsive>
           <Column left>
-            <b>
-              <Text tag="h1" path="header_name" />
-            </b>
+            <Row between responsive="reverse-left">
+              <b>
+                <Text tag="h1" path="header_name" />
+              </b>
+              <Text tag="b">{lang?.toLocaleUpperCase()}</Text>
+            </Row>
             <Text tag="h3" path="header_work" />
             <Row top responsive>
               <Column left gap={2}>

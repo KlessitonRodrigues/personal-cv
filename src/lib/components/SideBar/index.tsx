@@ -5,9 +5,10 @@ import { urls } from 'src/constants/urls';
 import useTheme from 'src/hooks/useTheme';
 import Icons from 'src/lib/base/Icons';
 import If from 'src/lib/base/If';
+import LineSelector from 'src/lib/base/Selectors/LineSelector';
 import { Column } from 'src/lib/base/StyledComponents/Flex';
 import Text from 'src/lib/base/Text';
-import { lang, toggleLang } from 'src/utils/i18n';
+import { changeLanguage, getText, lang } from 'src/utils/i18n';
 
 import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
@@ -26,7 +27,7 @@ const SideBar = (props: PropsWithChildren) => {
 
   return (
     <Container>
-      <SidebarBox active={open} hide={hidable}>
+      <SidebarBox active={open} hidden={hidable}>
         <Column top left gap={0}>
           <Link to="/" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/'}>
@@ -55,24 +56,47 @@ const SideBar = (props: PropsWithChildren) => {
         </Column>
 
         <Column bottom left gap={0}>
-          <SidebarItem onClick={() => toggleLang()} top>
-            <strong>{lang}</strong>
-            <Text tag="p" path={lang} />
+          <SidebarItem>
+            <strong>{lang?.toUpperCase()}</strong>
+            <LineSelector
+              value={lang}
+              onChange={item => changeLanguage(item.value)}
+              items={[
+                { value: 'PT', label: 'Português' },
+                { value: 'EN', label: 'English' },
+              ]}
+            />
           </SidebarItem>
-          <SidebarItem onClick={() => themeCtx.setDark(!themeCtx.isDark)}>
-            <If check={!themeCtx.isDark}>
-              <Icons type="sun" size={8} />
-              <Text tag="p" path="sidebar_theme_light" />
-            </If>
-            <If check={themeCtx.isDark}>
-              <Icons type="moon" size={8} />
-              <Text tag="p" path="sidebar_theme_dark" />
-            </If>
+          <SidebarItem>
+            <If
+              check={themeCtx.isDark}
+              true={<Icons type="moon" size={8} />}
+              false={<Icons type="sun" size={8} />}
+            />
+            <LineSelector
+              value={themeCtx.isDark ? '1' : '0'}
+              onChange={item => themeCtx.setDark(!!Number(item.value))}
+              items={[
+                { value: '0', label: getText('sidebar_theme_light') },
+                { value: '1', label: getText('sidebar_theme_dark') },
+              ]}
+            />
           </SidebarItem>
-          <SidebarItem onClick={themeCtx.toggleColor}>
+          <SidebarItem>
             <Icons type="theme" size={8} />
-            <p>{themeCtx.color}</p>
+            <LineSelector
+              value={themeCtx.color}
+              onChange={item => themeCtx.setColor(item.value as Hooks.ThemeColors)}
+              items={[
+                { value: 'indigo', label: themeCtx.color },
+                { value: 'blue', label: themeCtx.color },
+                { value: 'purple', label: themeCtx.color },
+                { value: 'magenta', label: themeCtx.color },
+                { value: 'green', label: themeCtx.color },
+              ]}
+            />
           </SidebarItem>
+
           <a href={urls.personalPageRep} target="_blank">
             <SidebarItem>
               <Icons type="github" size={8} />
