@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { RoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
 import { animations, cssSize, screenSize } from 'src/styles/utils';
 
-const sidebarSizeOpen = 80;
+const sidebarSizeOpen = 90;
 const sidebarSize = 20;
 const topOffset = 2;
 const leftOffset = 2;
