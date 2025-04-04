@@ -24,10 +24,10 @@ const DocumentView = (props: PropsWithChildren) => {
   return (
     <Container>
       <DocumentButtons>
-        <RoundedBtnMain onClick={onOpenPrintDialog}>
+        <RoundedBtnMain w={12} h={12} onClick={onOpenPrintDialog}>
           <Icons size={6} type="pritter" />
         </RoundedBtnMain>
-        <RoundedBtnMain onClick={onDownloadResume}>
+        <RoundedBtnMain w={12} h={12} onClick={onDownloadResume}>
           <Icons size={6} type="download" />
         </RoundedBtnMain>
       </DocumentButtons>

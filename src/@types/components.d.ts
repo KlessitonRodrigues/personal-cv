@@ -3,8 +3,8 @@ declare namespace Props {
     active?: boolean;
     size?: number;
     gap?: number;
-    w?: string;
-    h?: string;
+    w?: string | number;
+    h?: string | number;
     maxw?: string;
     maxh?: string;
     p?: string;

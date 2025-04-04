@@ -7,8 +7,8 @@ export const RoundedBtn = styled.button<Props.CssProps>(
     display: flex;
     align-items: center;
     justify-content: center;
-    width: ${w ?? cssSize(12)};
-    height: ${h ?? cssSize(12)};
+    width: ${cssSize(w || 10)};
+    height: ${cssSize(h || 10)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
     border-radius: ${theme.radius.sm};

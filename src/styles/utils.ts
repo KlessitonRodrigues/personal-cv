@@ -2,7 +2,10 @@ import { keyframes } from 'styled-components';
 
 import { materialColors as mc } from './colors';
 
-export const cssSize = (n: number) => `${(n * 0.2).toFixed(1)}rem`;
+export const cssSize = (size: number | string) => {
+  if (typeof size == 'string') return size;
+  return `${(size * 0.2).toFixed(1)}rem`;
+};
 
 export const screenSize = {
   mobileS: 320,
