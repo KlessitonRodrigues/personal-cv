@@ -1,4 +1,5 @@
 import Icons from '../../Icons';
+import { OutlineBtnTransparent } from '../../StyledComponents/Buttons';
 import { Row } from '../../StyledComponents/Flex';
 
 type LineSelectorProps = {
@@ -24,13 +25,13 @@ const LineSelector = (props: LineSelectorProps) => {
 
   return (
     <Row gap={0}>
-      <Row left onClick={previousItem}>
+      <OutlineBtnTransparent onClick={previousItem}>
         <Icons type="caretLeft" size={6} />
-      </Row>
-      <label>{item?.label}</label>
-      <Row right onClick={nextItem}>
+      </OutlineBtnTransparent>
+      <Row>{item?.label}</Row>
+      <OutlineBtnTransparent right onClick={nextItem}>
         <Icons type="caretRight" size={6} />
-      </Row>
+      </OutlineBtnTransparent>
     </Row>
   );
 };

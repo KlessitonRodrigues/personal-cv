@@ -21,7 +21,7 @@ export const RoundedBtn = styled.button<Props.CssProps>(
   `,
 );
 
-export const MainRoundedBtn = styled(RoundedBtn)(
+export const RoundedBtnMain = styled(RoundedBtn)(
   ({ theme }) => css`
     background-color: ${theme.colors.mainBg};
     color: ${theme.colors.mainText};
@@ -41,5 +41,13 @@ export const OutlineBtn = styled.div<Props.CssProps>(
     &:hover {
       color: ${theme.colors.main};
     }
+  `,
+);
+
+export const OutlineBtnTransparent = styled(RoundedBtn)(
+  ({ theme }) => css`
+    background-color: transparent;
+    color: ${theme.colors.mainText};
+    border: 1px solid ${theme.colors.gray};
   `,
 );

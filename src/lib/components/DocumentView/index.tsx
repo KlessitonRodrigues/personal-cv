@@ -3,7 +3,7 @@ import { PropsWithChildren, useState } from 'react';
 import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/base/Icons';
 import Loading from 'src/lib/base/Loading';
-import { MainRoundedBtn } from 'src/lib/base/StyledComponents/Buttons';
+import { RoundedBtnMain } from 'src/lib/base/StyledComponents/Buttons';
 import { downloadPdfFile, openPrintDialog } from 'src/utils/pdf';
 
 import { Container, Content, Document, DocumentButtons } from './styled';
@@ -24,12 +24,12 @@ const DocumentView = (props: PropsWithChildren) => {
   return (
     <Container>
       <DocumentButtons>
-        <MainRoundedBtn onClick={onOpenPrintDialog}>
+        <RoundedBtnMain onClick={onOpenPrintDialog}>
           <Icons size={6} type="pritter" />
-        </MainRoundedBtn>
-        <MainRoundedBtn onClick={onDownloadResume}>
+        </RoundedBtnMain>
+        <RoundedBtnMain onClick={onDownloadResume}>
           <Icons size={6} type="download" />
-        </MainRoundedBtn>
+        </RoundedBtnMain>
       </DocumentButtons>
 
       <Document id="doc-content">
