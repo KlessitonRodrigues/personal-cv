@@ -9,4 +9,8 @@ export const testWebsiteUrl = () => {
 
 export const scrollPage = (top: number) => `window.scrollTo({ top: ${top}, behavior: 'smooth' });`;
 
-export const mobileScreen = { width: 450, height: 1080 };
+export const screenSize = {
+  mobile: { width: 450, height: 1080 },
+  laptop: { width: 768, height: 1080 },
+  desktop: { width: 1280, height: 1080 },
+};

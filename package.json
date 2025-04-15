@@ -7,13 +7,13 @@
     "build": "vite build",
     "preview": "vite preview --host",
     "format": "prettier -c -w ./src",
-    "test-dev": "cd _tests && yarn test-dev",
-    "test-build": "cd _tests && yarn test-build",
-    "test-prod": "cd _tests && yarn test-prod",
-    "cdk-synt": "cd _deploy && yarn cdk-synt",
-    "cdk-deploy": "cd _deploy && yarn cdk-deploy",
-    "run-android": "cd _mobile && yarn run-android",
-    "run-web": "cd _mobile && yarn run-web"
+    "test-dev": "cd _tests && npm run test-dev",
+    "test-build": "cd _tests && npm run test-build",
+    "test-prod": "cd _tests && npm run test-prod",
+    "cdk-synt": "cd _deploy && npm run cdk-synt",
+    "cdk-deploy": "cd _deploy && npm run cdk-deploy",
+    "run-android": "cd _mobile && npm run run-android",
+    "run-web": "cd _mobile && npm run run-web"
   },
   "dependencies": {
     "react": "^19.1.0",

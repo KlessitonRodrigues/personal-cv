@@ -4,11 +4,17 @@ import { Options } from 'selenium-webdriver/chrome';
 import { testWebsiteUrl } from '../utils/browserTest';
 import env from './env';
 
-const options = new Options();
+const initWebdriver = () => {
+  testWebsiteUrl();
 
-if (env.NODE_ENV === 'prod') options.addArguments('--headless');
-const webDriver = new Builder().forBrowser(Browser.CHROME).setChromeOptions(options).build();
+  const options = new Options();
+  if (env.NODE_ENV === 'prod') options.addArguments('--headless');
 
-testWebsiteUrl();
+  const browser = new Builder();
+  browser.forBrowser(Browser.CHROME);
+  browser.setChromeOptions(options);
+  return browser.build();
+};
 
+const webDriver = initWebdriver();
 export default webDriver;
