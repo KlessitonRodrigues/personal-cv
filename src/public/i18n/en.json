@@ -132,6 +132,9 @@
   "extraworks_console_ui": "Console UI in React",
   "extraworks_console_ui_text": "Application that provides a console interface similar to those of PS5/Xbox for PCs.",
   "extraworks_console_ui_tech": "ReactJS, Webpack, Styled Components and ElectronJS.",
+  "extraworks_game_finder": "Game Finder",
+  "extraworks_game_finder_text": "Web application to discover new games with more than 50,000 games filtered by platform, category, and release year.",
+  "extraworks_game_finder_tech": "ReactJS, ViteJS and Styled Components.",
   "profile_year": "year",
   "profile_years": "years"
 }
