@@ -9,6 +9,7 @@ export const urls = {
   jsBackupRep: 'https://github.com/KlessitonRodrigues/javascript-krds/',
   gameFinderRepo: 'https://github.com/KlessitonRodrigues/game-finder',
   consoleUIRepo: 'https://github.com/KlessitonRodrigues/game-station',
+  consoleUIPage: 'https://klessitonrodrigues.github.io/game-station/',
   encryptEasyRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   quizRepo: 'https://github.com/KlessitonRodrigues/quiz-app',
   awsProxyApiRepo: 'https://github.com/KlessitonRodrigues/aws-cors-proxy',

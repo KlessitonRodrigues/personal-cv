@@ -28,7 +28,7 @@
 
   "experience_title": "Experiência",
   "experience_accourdous": "Software de Gestão Imobiliária Accourdous",
-  "experience_accourdous_date": "2024/05 - 2025/03",
+  "experience_accourdous_date": "2024/05 - 2025/05",
   "experience_accourdous_text": "Plataforma online para gestão de aluguéis, compra e venda de imóveis, com sistema de emissão de contratos e anúncio de propriedades, além de notificação e gestão de faturas.",
   "experience_accourdous_tech": "ReactJS, NextJS, TailwindCSS, Shadcn UI, Quill Text Editor, Cypress",
   "experience_cef": "Centro Educacional de Floriano",
@@ -129,6 +129,9 @@
   "extraworks_aws_proxy_api": "Proxy API usando AWS Services",
   "extraworks_aws_proxy_api_text": "API usando serviços da Amazon Web Services, que permite realizar requisições através do navegador sem limitações.",
   "extraworks_aws_proxy_api_tech": "AWS Services, NodeJS, ExpressJS, Jest",
+  "extraworks_console_ui": "Interface de Console em React",
+  "extraworks_console_ui_text": "Aplicativo que fornece uma interface de console semelhante às do PS5/Xbox para PCs.",
+  "extraworks_console_ui_tech": "ReactJS, Webpack, Styled Components e ElectronJS.",
   "profile_year": "ano",
   "profile_years": "anos"
 }
