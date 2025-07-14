@@ -8,6 +8,7 @@ const FlexItems = styled.div<Props.CssProps>(
     display: flex;
     justify-content: center;
     align-items: center;
+
     ${w && `width: ${w};`}
     ${h && `height: ${h};`}
     ${fit && `width: fit-content;`}

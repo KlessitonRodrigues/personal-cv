@@ -13,7 +13,7 @@ const CodeListFilters = () => {
             <Icons size={8} type={'javascript'} />
             <Text tag="h5">JavaScript</Text>
           </Row>
-          <Text tag="em" path="shared_js_code" />
+          <Text tag="small" path="shared_js_code" />
         </Column>
         <Column left gap={4}>
           {codeBlockLinks.javascript.map((link, i) => (

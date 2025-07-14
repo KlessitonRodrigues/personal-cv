@@ -18,7 +18,8 @@ export const urls = {
   nutriacademy: 'https://github.com/KlessitonRodrigues/acadenutri-project',
   whatsapp: 'https://wa.me/5589994009646',
   whatsappWeb: 'https://web.whatsapp.com/send/?phone=5589994009646',
-  resumeFileUrl: 'https://profile.klessitonrds.com/public/KlessitonRDS.pdf',
+  resumeFileUrl:
+    'https://drive.google.com/file/d/1y57_MNaq0HvCzmfLZK74kOiveEJAAG1B/view?usp=sharing',
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
 };
 
