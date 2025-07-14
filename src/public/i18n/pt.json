@@ -145,5 +145,8 @@
   "shared_js_code_2": "Barra de notificações usando ReactJS",
   "shared_js_code_3": "Mapear objetos JavaScript para requisições FormData",
   "shared_js_code_4": "Usando Gamepad API para controlar jogos no navegador",
-  "shared_js_code_5": "Criar arquivos PDF no navegador usando componentes de ReactJS"
+  "shared_js_code_5": "Criar arquivos PDF no navegador usando componentes de ReactJS",
+  "shared_js_code_6": "Formulário com validação de campos usando ReactJS",
+  "shared_js_code_7": "Paleta de cores de Material UI, Atlassian UI e TailwindCSS",
+  "shared_js_code_8": "Converter requisições ExpressJS para eventos da AWS Lambda"
 }

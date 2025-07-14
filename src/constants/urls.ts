@@ -31,5 +31,8 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/9473c5e1fc49a812e9a939bde8798db0',
     'https://gist.github.com/KlessitonRodrigues/5a2e0f55d2b0dc2bf33ca7a415c592af',
     'https://gist.github.com/KlessitonRodrigues/0455ecfd225104682a60cc8a78932d0f',
+    'https://gist.github.com/KlessitonRodrigues/83bdad7e5f906703e29b7966a00f3b0f',
+    'https://gist.github.com/KlessitonRodrigues/7aca14f76e3d8f703e4e936ad222ee34',
+    'https://gist.github.com/KlessitonRodrigues/397e3941c3cdf0dac93078e1f1ccac5e',
   ],
 };
