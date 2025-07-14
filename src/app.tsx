@@ -4,7 +4,7 @@ import { RouterProvider, createBrowserRouter, createMemoryRouter } from 'react-r
 import Router from 'src/pages/routes';
 
 import { ThemeProvider } from './hooks/useTheme';
-import If from './lib/base/If';
+import If from './lib/common/If';
 import AppProviders from './lib/components/AppProviders';
 import { isEmbbedMobile } from './styles/utils';
 

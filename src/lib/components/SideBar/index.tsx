@@ -3,11 +3,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { urls } from 'src/constants/urls';
 import useTheme from 'src/hooks/useTheme';
-import Icons from 'src/lib/base/Icons';
-import If from 'src/lib/base/If';
-import LineSelector from 'src/lib/base/Selectors/LineSelector';
-import { Column } from 'src/lib/base/StyledComponents/Flex';
-import Text from 'src/lib/base/Text';
+import Icons from 'src/lib/common/Icons';
+import If from 'src/lib/common/If';
+import LineSelector from 'src/lib/common/Selectors/LineSelector';
+import { Column } from 'src/lib/common/StyledComponents/Flex';
+import Text from 'src/lib/common/Text';
 import { getText, lang } from 'src/utils/i18n';
 import { changeLanguage } from 'src/utils/localStorage';
 
@@ -52,6 +52,12 @@ const SideBar = (props: PropsWithChildren) => {
             <SidebarItem active={hidable && path === '/projects'}>
               <Icons type="projects" size={8} />
               <Text tag="p" path="sidebar_link_projects" />
+            </SidebarItem>
+          </Link>
+          <Link to="/code" onClick={closeSidebar}>
+            <SidebarItem active={hidable && path === '/code'}>
+              <Icons type="codeBlock" size={8} />
+              <Text tag="p" path="sidebar_link_code" />
             </SidebarItem>
           </Link>
         </Column>

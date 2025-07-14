@@ -1,6 +1,6 @@
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
-import AcademyCertificates from 'src/lib/sections/certificates/Academy';
+import AcademyCertificates from 'src/pages/certificates/_content/Academy';
 
 const CertificatesPage = () => {
   return (

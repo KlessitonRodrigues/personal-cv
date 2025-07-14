@@ -1,9 +1,9 @@
 import { PropsWithChildren, useState } from 'react';
 
 import { urls } from 'src/constants/urls';
-import Icons from 'src/lib/base/Icons';
-import Loading from 'src/lib/base/Loading';
-import { RoundedBtnMain } from 'src/lib/base/StyledComponents/Buttons';
+import Icons from 'src/lib/common/Icons';
+import Loading from 'src/lib/common/Loading';
+import { RoundedBtnMain } from 'src/lib/common/StyledComponents/Buttons';
 import { downloadPdfFile, openPrintDialog } from 'src/utils/pdf';
 
 import { Container, Content, Document, DocumentButtons } from './styled';

@@ -1,7 +1,7 @@
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
-import ProfileExperience from 'src/lib/sections/profile/Experience';
-import ProfileHeader from 'src/lib/sections/profile/Header';
+import ProfileExperience from 'src/pages/profile/_content/Experience';
+import ProfileHeader from 'src/pages/profile/_content/Header';
 
 const ProfilePage = () => {
   return (

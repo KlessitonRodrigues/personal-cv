@@ -6,6 +6,7 @@ const Router = createRoutesFromElements(
     <Route path="/resume" lazy={() => import('./resume')} />
     <Route path="/certification" lazy={() => import('./certificates')} />
     <Route path="/projects" lazy={() => import('./projects')} />
+    <Route path="/code" lazy={() => import('./code')} />
   </>,
 );
 

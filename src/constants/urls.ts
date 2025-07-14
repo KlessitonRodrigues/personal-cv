@@ -21,3 +21,13 @@ export const urls = {
   resumeFileUrl: 'https://profile.klessitonrds.com/public/KlessitonRDS.pdf',
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
 };
+
+export const codeBlockLinks = {
+  javascript: [
+    'https://gist.github.com/KlessitonRodrigues/457db1ecfe9f938936bb3364072d425a',
+    'https://gist.github.com/KlessitonRodrigues/c21d37c0b73ee51732f3e0351e9b6bb9',
+    'https://gist.github.com/KlessitonRodrigues/956f997f9f239aebced49f340144c7cd',
+    'https://gist.github.com/KlessitonRodrigues/9473c5e1fc49a812e9a939bde8798db0',
+    'https://gist.github.com/KlessitonRodrigues/5a2e0f55d2b0dc2bf33ca7a415c592af',
+  ],
+};

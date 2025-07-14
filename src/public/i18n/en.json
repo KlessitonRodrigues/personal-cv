@@ -8,6 +8,7 @@
   "sidebar_link_cv": "Resume",
   "sidebar_link_ct": "Certifications",
   "sidebar_link_projects": "Projects",
+  "sidebar_link_code": "Code",
   "sidebar_theme_light": "Light",
   "sidebar_theme_dark": "Dark",
 
@@ -136,5 +137,12 @@
   "extraworks_game_finder_text": "Web application to discover new games with more than 50,000 games filtered by platform, category, and release year.",
   "extraworks_game_finder_tech": "ReactJS, ViteJS and Styled Components.",
   "profile_year": "year",
-  "profile_years": "years"
+  "profile_years": "years",
+
+  "shared_js_code": "Shared JavaScript Code",
+  "shared_js_code_0": "Capture images from HTML elements",
+  "shared_js_code_1": "Optimize image upload in the browser",
+  "shared_js_code_2": "Notification bar using ReactJS",
+  "shared_js_code_3": "Map JavaScript objects to FormData requests",
+  "shared_js_code_4": "Using Gamepad API to control games in the browser"
 }

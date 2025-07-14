@@ -27,13 +27,6 @@ declare namespace Props {
     between?: boolean;
   };
 
-  type Icons = {
-    size?: number;
-    onPress?: () => void;
-    style?: React.CSSProperties;
-    type: Utils.IconTypes;
-  };
-
   type Text = {
     path?: string;
     tag?: Utils.TextTags;
@@ -58,12 +51,5 @@ declare namespace Props {
     title: React.ReactElement;
     content: React.ReactElement;
     delayLoad?: boolean;
-  };
-
-  type LinkAndIcon = {
-    url?: string;
-    icon?: Utils.IconTypes;
-    label?: string;
-    path?: string;
   };
 }
