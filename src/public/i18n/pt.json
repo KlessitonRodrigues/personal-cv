@@ -144,5 +144,6 @@
   "shared_js_code_1": "Otimizar upload de imagens no navegador",
   "shared_js_code_2": "Barra de notificações usando ReactJS",
   "shared_js_code_3": "Mapear objetos JavaScript para requisições FormData",
-  "shared_js_code_4": "Usando Gamepad API para controlar jogos no navegador"
+  "shared_js_code_4": "Usando Gamepad API para controlar jogos no navegador",
+  "shared_js_code_5": "Criar arquivos PDF no navegador usando componentes de ReactJS"
 }

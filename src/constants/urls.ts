@@ -29,5 +29,6 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/956f997f9f239aebced49f340144c7cd',
     'https://gist.github.com/KlessitonRodrigues/9473c5e1fc49a812e9a939bde8798db0',
     'https://gist.github.com/KlessitonRodrigues/5a2e0f55d2b0dc2bf33ca7a415c592af',
+    'https://gist.github.com/KlessitonRodrigues/0455ecfd225104682a60cc8a78932d0f',
   ],
 };
