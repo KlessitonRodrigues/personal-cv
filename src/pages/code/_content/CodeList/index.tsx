@@ -1,5 +1,6 @@
 import { codeBlockLinks } from 'src/constants/urls';
 import Icons from 'src/lib/common/Icons';
+import { OutlineBtn } from 'src/lib/common/StyledComponents/Buttons';
 import { Card, Section } from 'src/lib/common/StyledComponents/Containers';
 import { Column, Row } from 'src/lib/common/StyledComponents/Flex';
 import Text from 'src/lib/common/Text';
@@ -18,10 +19,11 @@ const CodeListFilters = () => {
         <Column left gap={4}>
           {codeBlockLinks.javascript.map((link, i) => (
             <a key={i} href={link} target="_blank">
-              <Row left>
+              <OutlineBtn>
+                <Icons size={5} type="caretRight" />
                 <Text tag="p" path={`shared_js_code_${i}`} />
                 <Icons size={5} type="link" />
-              </Row>
+              </OutlineBtn>
             </a>
           ))}
         </Column>

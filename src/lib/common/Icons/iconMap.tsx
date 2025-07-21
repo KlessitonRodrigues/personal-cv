@@ -21,6 +21,7 @@ import {
   PiCertificate,
   PiChartBarHorizontal,
   PiCodeBlock,
+  PiDotOutlineFill,
   PiStudent,
 } from 'react-icons/pi';
 import {
@@ -139,4 +140,5 @@ export const iconMap = {
   shadcn: <SiShadcnui />,
   android: <PiAndroidLogoBold />,
   codeBlock: <PiCodeBlock />,
+  dot: <PiDotOutlineFill />,
 };

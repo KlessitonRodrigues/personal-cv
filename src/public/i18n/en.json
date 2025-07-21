@@ -148,5 +148,6 @@
   "shared_js_code_5": "Create PDF files in the browser using ReactJS components",
   "shared_js_code_6": "Form with field validation using ReactJS",
   "shared_js_code_7": "Color palette from Material UI, Atlassian UI and TailwindCSS",
-  "shared_js_code_8": "Convert ExpressJS requests to AWS Lambda events"
+  "shared_js_code_8": "Convert ExpressJS requests to AWS Lambda events",
+  "shared_js_code_9": "Preview images with Zoom on mouse position in ReactJS"
 }
