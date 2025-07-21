@@ -5,8 +5,8 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 const imagePlugin = ViteImageOptimizer({
   jpg: { quality: 15 },
-  png: { quality: 15 },
   jpeg: { quality: 15 },
+  png: { quality: 5, colors: 64, dither: 0.5 },
 });
 
 export default defineConfig({
