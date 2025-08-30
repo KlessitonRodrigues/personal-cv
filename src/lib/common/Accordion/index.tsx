@@ -10,7 +10,13 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import Icons from '../Icons';
 import If from '../If';
 
-const Accordion = (props: Props.Accordion) => {
+type IAccordionProps = {
+  title: React.ReactElement;
+  content: React.ReactElement;
+  delayLoad?: boolean;
+};
+
+const Accordion = (props: IAccordionProps) => {
   const { title, content, delayLoad } = props;
   const [active, setActive] = useState(false);
   const [delay, setDelay] = useState(!!delayLoad);

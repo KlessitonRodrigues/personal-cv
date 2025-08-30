@@ -6,7 +6,14 @@ import { getText } from 'src/utils/i18n';
 import If from '../If';
 import { Container, FullScreen, LoadLine, Spinner, Title } from './styled';
 
-const Loading = (props: Props.Loading) => {
+type ILoadingProps = {
+  show: boolean;
+  type: 'fullScreen' | 'icon' | 'line';
+  title?: string;
+  description?: string;
+};
+
+const Loading = (props: ILoadingProps) => {
   const { show, type, title } = props;
 
   return (

@@ -1,4 +1,15 @@
-export const experienceMap: Utils.ExperienceItems[] = [
+import { IconsType } from 'src/lib/common/Icons/iconMap';
+
+export type ExperienceItemsTypes = 'backend' | 'frontend' | 'infra' | 'language' | 'tests';
+
+export type ExperienceItems = {
+  name: string;
+  year: number;
+  icon: IconsType;
+  type: ExperienceItemsTypes;
+};
+
+export const experienceMap: ExperienceItems[] = [
   {
     name: 'HTML',
     year: 2020,

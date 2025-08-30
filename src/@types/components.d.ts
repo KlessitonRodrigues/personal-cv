@@ -26,30 +26,4 @@ declare namespace Props {
     fit?: boolean;
     between?: boolean;
   };
-
-  type Text = {
-    path?: string;
-    tag?: Utils.TextTags;
-    children?: React.ReactNode;
-  };
-
-  type Loading = {
-    show: boolean;
-    type: 'fullScreen' | 'icon' | 'line';
-    title?: string;
-    description?: string;
-  };
-
-  type If = {
-    check: boolean;
-    true?: React.ReactElement;
-    false?: React.ReactElement;
-    children?: React.ReactNode;
-  };
-
-  type Accordion = {
-    title: React.ReactElement;
-    content: React.ReactElement;
-    delayLoad?: boolean;
-  };
 }

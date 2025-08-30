@@ -1,6 +1,26 @@
 import { getText } from 'src/utils/i18n';
 
-const Text = (props: Props.Text) => {
+type ITextProps = {
+  path?: string;
+  tag?:
+    | 'div'
+    | 'p'
+    | 'b'
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'h5'
+    | 'h6'
+    | 'span'
+    | 'small'
+    | 'strong'
+    | 'mark'
+    | 'em';
+  children?: React.ReactNode;
+};
+
+const Text = (props: ITextProps) => {
   const { path, tag, children } = props;
   const text = path ? getText(path) : children;
 

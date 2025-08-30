@@ -4,6 +4,8 @@ out/
 cdk.out/
 dist/
 coverage/
+_tests/
+.expo/
 
 # Files
 *.log

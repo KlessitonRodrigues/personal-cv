@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "personal-cv",
+    "slug": "personal-cv",
+    "version": "1.0.0",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.klessiton.personalcv"
+    },
+    "extra": {}
+  }
+}

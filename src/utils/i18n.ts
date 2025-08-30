@@ -3,8 +3,8 @@ import PTJSON from 'src/public/i18n/pt.json';
 
 import { getLanguage } from './localStorage';
 
-const ENText = ENJSON as Utils.TranslationFile;
-const PTText = PTJSON as Utils.TranslationFile;
+const ENText = ENJSON as Record<string, string>;
+const PTText = PTJSON as Record<string, string>;
 
 export const lang = getLanguage();
 

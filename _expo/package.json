@@ -1,0 +1,27 @@
+{
+  "name": "personal-cv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "eas build -p android --profile preview",
+    "build-local": "eas build -p android --profile development --local"
+  },
+  "dependencies": {
+    "expo": "^53.0.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-web": "^0.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "eas-cli": "^16.17.4",
+    "expo-dev-client": "~5.2.4",
+    "expo-status-bar": "^2.2.3",
+    "react-native-webview": "13.13.5"
+  }
+}

@@ -1,9 +1,16 @@
 import { PropsWithChildren, createContext, useContext, useEffect, useMemo, useState } from 'react';
 
-import { getLocalTheme, saveLocalTheme } from 'src/styles/theme';
+import { IThemeColors, getLocalTheme, saveLocalTheme } from 'src/styles/theme';
+
+type IUseThemeCtx = {
+  isDark: boolean;
+  color: IThemeColors;
+  setDark: (value: boolean) => any;
+  setColor: (value: IThemeColors) => any;
+};
 
 // @ts-ignore
-const ThemeCtx = createContext<Hooks.UseThemeCtx>(null);
+const ThemeCtx = createContext<IUseThemeCtx>(null);
 
 const localTheme = getLocalTheme();
 
@@ -15,7 +22,7 @@ export const ThemeProvider = (props: PropsWithChildren) => {
     saveLocalTheme(isDark ? 'dark' : 'light', color);
   }, [isDark, color]);
 
-  const context: Hooks.UseThemeCtx = {
+  const context: IUseThemeCtx = {
     isDark,
     color,
     setDark,
