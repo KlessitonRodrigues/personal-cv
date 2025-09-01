@@ -8,6 +8,7 @@ import If from 'src/lib/common/If';
 import LineSelector from 'src/lib/common/Selectors/LineSelector';
 import { Column } from 'src/lib/common/StyledComponents/Flex';
 import Text from 'src/lib/common/Text';
+import { IThemeColors } from 'src/styles/theme';
 import { getText, lang } from 'src/utils/i18n';
 import { changeLanguage } from 'src/utils/localStorage';
 
@@ -93,7 +94,7 @@ const SideBar = (props: PropsWithChildren) => {
             <Icons type="theme" size={8} />
             <LineSelector
               value={themeCtx.color}
-              onChange={item => themeCtx.setColor(item.value as Hooks.ThemeColors)}
+              onChange={item => themeCtx.setColor(item.value as IThemeColors)}
               items={[
                 { value: 'indigo', label: themeCtx.color },
                 { value: 'blue', label: themeCtx.color },

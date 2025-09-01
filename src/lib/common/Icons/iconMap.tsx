@@ -19,8 +19,8 @@ import {
 import {
   PiAndroidLogoBold,
   PiCertificate,
-  PiChartBarHorizontal,
   PiCodeBlock,
+  PiDevices,
   PiDotOutlineFill,
   PiStudent,
 } from 'react-icons/pi';
@@ -132,7 +132,7 @@ export const iconMap = {
   certificates: <PiCertificate />,
   caretLeft: <LuChevronLeft />,
   caretRight: <LuChevronRight />,
-  projects: <PiChartBarHorizontal />,
+  projects: <PiDevices />,
   cordova: <SiApachecordova />,
   cypress: <SiCypress />,
   pritter: <LuPrinter />,

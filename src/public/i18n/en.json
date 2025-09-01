@@ -140,6 +140,9 @@
   "extraworks_game_finder": "Game Finder",
   "extraworks_game_finder_text": "Web application to discover new games with more than 50,000 games filtered by platform, category, and release year.",
   "extraworks_game_finder_tech": "ReactJS, ViteJS and Styled Components.",
+  "extraworks_sellerapp": "Sales Table",
+  "extraworks_sellerapp_text": "Test application using Ant Design components. Form validation using React Hook Form and Zod. Text translation using i18n.",
+  "extraworks_sellerapp_tech": "ReactJS, ViteJS, Ant Design, React Hook Form and Zod.",
   "profile_year": "year",
   "profile_years": "years",
 
