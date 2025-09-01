@@ -21,6 +21,8 @@ export const urls = {
   resumeFileUrl:
     'https://drive.google.com/file/d/1y57_MNaq0HvCzmfLZK74kOiveEJAAG1B/view?usp=sharing',
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
+  sellerRepo: 'https://github.com/KlessitonRodrigues/seller-app',
+  sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
 };
 
 export const codeBlockLinks = {

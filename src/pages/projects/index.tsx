@@ -4,6 +4,7 @@ import AwsCorsProxyProject from 'src/pages/projects/_content/awsCorsProxy';
 import ConsoleUIProject from 'src/pages/projects/_content/consoleUI';
 import GameFinderProject from 'src/pages/projects/_content/gameFinder';
 import ProfileProject from 'src/pages/projects/_content/profileProject';
+import SellerAppProject from 'src/pages/projects/_content/sellerApp';
 
 const ProjectsPage = () => {
   return (
@@ -11,8 +12,9 @@ const ProjectsPage = () => {
       <Page>
         <ProfileProject />
         <AwsCorsProxyProject />
-        <ConsoleUIProject />
         <GameFinderProject />
+        <SellerAppProject />
+        <ConsoleUIProject />
       </Page>
     </SideBar>
   );
