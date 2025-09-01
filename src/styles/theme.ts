@@ -56,8 +56,8 @@ export type IThemeProps = {
   };
 };
 
-export const getTheme = (dark: boolean, color: Hooks.ThemeColors) => {
-  const colors: Record<Hooks.ThemeColors, any> = {
+export const getTheme = (dark: boolean, color: IThemeColors) => {
+  const colors: Record<IThemeColors, any> = {
     indigo: { main: material.indigo['400'], mainBg: material.indigo['800'] },
     purple: { main: material.purple['400'], mainBg: material.purple['800'] },
     blue: { main: ant.blue['500'], mainBg: ant.blue['800'] },
@@ -138,10 +138,10 @@ export const getTheme = (dark: boolean, color: Hooks.ThemeColors) => {
 export const getLocalTheme = () => {
   const mode = localStorage.getItem('theme_mode') || 'light';
   const color = localStorage.getItem('theme_color') || 'indigo';
-  return { mode, color } as { mode: 'light' | 'dark'; color: Hooks.ThemeColors };
+  return { mode, color } as { mode: 'light' | 'dark'; color: IThemeColors };
 };
 
-export const saveLocalTheme = (mode: 'light' | 'dark', color: Hooks.ThemeColors) => {
+export const saveLocalTheme = (mode: 'light' | 'dark', color: IThemeColors) => {
   if (mode) localStorage.setItem('theme_mode', mode);
   if (color) localStorage.setItem('theme_color', color);
 };

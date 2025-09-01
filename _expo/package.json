@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "eas-cli": "^16.17.4",
     "expo-dev-client": "~5.2.4",
     "expo-status-bar": "^2.2.3",
     "react-native-webview": "13.13.5"
