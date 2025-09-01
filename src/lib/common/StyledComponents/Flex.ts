@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize, screenSize } from 'src/styles/utils';
+import { IStyledProps, cssSize, screenSize } from 'src/styles/utils';
 
-const FlexItems = styled.div<Props.CssProps>(
+const FlexItems = styled.div<IStyledProps>(
   ({ w, h, fit }) => css`
     width: 100%;
     display: flex;
@@ -47,7 +47,7 @@ export const Column = styled(FlexItems)(
   `,
 );
 
-export const Grid = styled.div<Props.CssProps>(
+export const Grid = styled.div<IStyledProps>(
   ({ gap, rows, cols }) => css`
     width: 100%;
     display: grid;

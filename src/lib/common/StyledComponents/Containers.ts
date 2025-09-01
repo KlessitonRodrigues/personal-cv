@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { animations, cssSize, screenSize } from 'src/styles/utils';
+import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
 
 export const PageContainer = styled.div(
   () => css`
@@ -56,7 +56,7 @@ export const TransparentCard = styled(Card)(
   `,
 );
 
-export const Box = styled.div<Props.CssProps>(
+export const Box = styled.div<IStyledProps>(
   ({ theme, w, maxw, responsive }) => css`
     width: ${w ?? '100%'};
     max-width: ${maxw ?? '100%'};

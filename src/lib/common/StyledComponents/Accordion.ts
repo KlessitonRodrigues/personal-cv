@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const AccordionContainer = styled.div<Props.CssProps>(
+export const AccordionContainer = styled.div<IStyledProps>(
   ({ theme, active }) => css`
     width: 100%;
     border: ${theme.border.sm};

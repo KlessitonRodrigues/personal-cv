@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const Image = styled.img<Props.CssProps>(
+export const Image = styled.img<IStyledProps>(
   ({ w, h }) => css`
     display: block;
     margin: auto;
@@ -12,7 +12,7 @@ export const Image = styled.img<Props.CssProps>(
   `,
 );
 
-export const ImageContainer = styled.div<Props.CssProps>(
+export const ImageContainer = styled.div<IStyledProps>(
   ({ theme, w, h }) => css`
     width: 100%;
     max-height: ${h ?? '100%'};
@@ -23,7 +23,7 @@ export const ImageContainer = styled.div<Props.CssProps>(
   `,
 );
 
-export const Outdoor = styled.div<Props.CssProps>(
+export const Outdoor = styled.div<IStyledProps>(
   ({ theme }) => css`
     width: 100%;
     overflow: hidden;
@@ -41,7 +41,7 @@ export const Outdoor = styled.div<Props.CssProps>(
   `,
 );
 
-export const OutdoorImage = styled.div<Props.CssProps>(
+export const OutdoorImage = styled.div<IStyledProps>(
   ({ src }) => css`
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ export const OutdoorImage = styled.div<Props.CssProps>(
   `,
 );
 
-export const OutdoorContent = styled.div<Props.CssProps>(
+export const OutdoorContent = styled.div<IStyledProps>(
   () => css`
     display: flex;
     flex-direction: column;

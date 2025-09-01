@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { animations, cssSize } from 'src/styles/utils';
+import { IStyledProps, animations, cssSize } from 'src/styles/utils';
 
-export const Hr = styled.hr<Props.CssProps>(
+export const Hr = styled.hr<IStyledProps>(
   ({ theme, m, active }) => css`
     width: 100%;
     margin: ${m ?? 0};

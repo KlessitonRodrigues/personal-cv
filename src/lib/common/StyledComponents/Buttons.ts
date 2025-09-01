@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const RoundedBtn = styled.button<Props.CssProps>(
+export const RoundedBtn = styled.button<IStyledProps>(
   ({ theme, w, h }) => css`
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ export const RoundedBtnMain = styled(RoundedBtn)(
   `,
 );
 
-export const OutlineBtn = styled.div<Props.CssProps>(
+export const OutlineBtn = styled.div<IStyledProps>(
   ({ theme, w }) => css`
     width: ${w ?? 'fit-content'};
     display: flex;

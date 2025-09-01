@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { RoundedBtn } from 'src/lib/common/StyledComponents/Buttons';
-import { animations, cssSize, screenSize } from 'src/styles/utils';
+import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
 
 const sidebarSizeOpen = 90;
 const sidebarSize = 20;
@@ -15,7 +15,7 @@ export const Container = styled.div(
   `,
 );
 
-export const SidebarBox = styled.aside<Props.CssProps>(
+export const SidebarBox = styled.aside<IStyledProps>(
   ({ theme, active, hidden }) => css`
     position: fixed;
     left: ${cssSize(2)};
@@ -55,7 +55,7 @@ export const SidebarBox = styled.aside<Props.CssProps>(
   `,
 );
 
-export const SidebarItem = styled.div<Props.CssProps>(
+export const SidebarItem = styled.div<IStyledProps>(
   ({ theme, active, top }) => css`
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@ export const SidebarItem = styled.div<Props.CssProps>(
   `,
 );
 
-export const Content = styled.div<Props.CssProps>(
+export const Content = styled.div<IStyledProps>(
   ({ active }) => css`
     width: 100%;
     height: 100%;

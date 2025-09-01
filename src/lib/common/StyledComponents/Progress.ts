@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const ProgressLine = styled.div<Props.CssProps>(
+export const ProgressLine = styled.div<IStyledProps>(
   ({ theme, w }) => css`
     width: 100%;
     background-color: ${theme.colors.bg4};
@@ -27,7 +27,7 @@ export const ProgressLine = styled.div<Props.CssProps>(
   `,
 );
 
-export const ProgressStepBox = styled.div<Props.CssProps>(
+export const ProgressStepBox = styled.div<IStyledProps>(
   ({ theme }) => css`
     width: 100%;
     display: flex;
@@ -37,7 +37,7 @@ export const ProgressStepBox = styled.div<Props.CssProps>(
   `,
 );
 
-export const ProgressStep = styled.div<Props.CssProps>(
+export const ProgressStep = styled.div<IStyledProps>(
   ({ theme, half }) => css`
     padding: ${cssSize(1)} ${cssSize(half ? 3 : 6)};
     background-color: ${theme.colors.main};

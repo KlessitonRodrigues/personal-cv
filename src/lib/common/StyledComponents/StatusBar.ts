@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const StatusBar = styled.div<Props.CssProps>(
+export const StatusBar = styled.div<IStyledProps>(
   ({ theme, active }) => css`
     position: fixed;
     top: 0;

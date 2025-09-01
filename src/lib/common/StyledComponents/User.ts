@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/utils';
 
-export const Avatar = styled.div<Props.CssProps>(
+export const Avatar = styled.div<IStyledProps>(
   ({ theme, src }) => css`
     display: flex;
     width: 100%;
@@ -16,7 +16,7 @@ export const Avatar = styled.div<Props.CssProps>(
   `,
 );
 
-export const AvatarBig = styled.div<Props.CssProps>(
+export const AvatarBig = styled.div<IStyledProps>(
   ({ theme, src }) => css`
     display: flex;
     width: 100%;

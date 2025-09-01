@@ -2,6 +2,34 @@ import { keyframes } from 'styled-components';
 
 import { materialColors as mc } from './colors';
 
+export type IStyledProps = {
+  active?: boolean;
+  size?: number;
+  gap?: number;
+  w?: string | number;
+  h?: string | number;
+  maxw?: string;
+  maxh?: string;
+  p?: string;
+  m?: string;
+  mb?: number;
+  left?: boolean;
+  right?: boolean;
+  top?: boolean;
+  bottom?: boolean;
+  wrap?: boolean;
+  rows?: number;
+  cols?: number;
+  responsive?: boolean | 'reverse-left';
+  reverse?: boolean;
+  half?: boolean;
+  src?: string;
+  hidden?: boolean;
+  full?: boolean;
+  fit?: boolean;
+  between?: boolean;
+};
+
 export const cssSize = (size: number | string) => {
   if (typeof size == 'string') return size;
   return `${(size * 0.2).toFixed(1)}rem`;
