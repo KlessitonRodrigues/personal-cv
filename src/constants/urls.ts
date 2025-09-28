@@ -19,7 +19,7 @@ export const urls = {
   whatsapp: 'https://wa.me/5589994009646',
   whatsappWeb: 'https://web.whatsapp.com/send/?phone=5589994009646',
   resumeFileUrl:
-    'https://drive.google.com/file/d/1y57_MNaq0HvCzmfLZK74kOiveEJAAG1B/view?usp=sharing',
+    'https://drive.google.com/file/d/1a3zHHhUk5vgs39nxiYyWzSskrkIkQwgV/view?usp=sharing',
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
   sellerRepo: 'https://github.com/KlessitonRodrigues/seller-app',
   sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
