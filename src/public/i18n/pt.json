@@ -152,7 +152,9 @@
   "shared_js_code_4": "Usando Gamepad API para controlar jogos no navegador",
   "shared_js_code_5": "Criar arquivos PDF no navegador usando componentes de ReactJS",
   "shared_js_code_6": "Formulário com validação de campos usando ReactJS",
-  "shared_js_code_7": "Paleta de cores de Material UI, Atlassian UI e TailwindCSS",
+  "shared_js_code_7": "Paleta de cores de Material UI, Atlassian UI, Ant Design e TailwindCSS",
   "shared_js_code_8": "Converter requisições ExpressJS para eventos da AWS Lambda",
-  "shared_js_code_9": "Visualizar imagens com Zoom na posição do mouse em ReactJS"
+  "shared_js_code_9": "Visualizar imagens com Zoom na posição do mouse em ReactJS",
+  "shared_js_code_10": "Criar gráficos de barras usando React Apex Charts",
+  "shared_js_code_11": "Formatar strings de data e hora em JavaScript"
 }
