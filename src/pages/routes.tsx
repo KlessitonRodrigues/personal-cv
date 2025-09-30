@@ -1,12 +1,18 @@
 import { Route, createRoutesFromElements } from 'react-router-dom';
 
+import CertificatesPage from './certificates';
+import CodePage from './code';
+import ProfilePage from './profile';
+import ProjectsPage from './projects';
+import ResumePage from './resume';
+
 const Router = createRoutesFromElements(
   <>
-    <Route path="/*" lazy={() => import('./profile')} />
-    <Route path="/resume" lazy={() => import('./resume')} />
-    <Route path="/certification" lazy={() => import('./certificates')} />
-    <Route path="/projects" lazy={() => import('./projects')} />
-    <Route path="/code" lazy={() => import('./code')} />
+    <Route path="/*" Component={ProfilePage} />
+    <Route path="/resume" Component={ResumePage} />
+    <Route path="/certification" Component={CertificatesPage} />
+    <Route path="/projects" Component={ProjectsPage} />
+    <Route path="/code" Component={CodePage} />
   </>,
 );
 

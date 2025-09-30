@@ -12,4 +12,4 @@ const CertificatesPage = () => {
   );
 };
 
-export const Component = CertificatesPage;
+export default CertificatesPage;

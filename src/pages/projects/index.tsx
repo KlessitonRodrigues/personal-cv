@@ -20,4 +20,4 @@ const ProjectsPage = () => {
   );
 };
 
-export const Component = ProjectsPage;
+export default ProjectsPage;
