@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  eas-builder:
+    build: .
+    container_name: eas-local-builder
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ~/.eas:/root/.eas # persist credentials and local cache
+      - ~/.expo:/root/.expo
+    environment:
+      - EXPO_TOKEN=${EXPO_TOKEN}
+      - EAS_NO_VCS=1 # disables git checks for local build
+    tty: true

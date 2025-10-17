@@ -60,3 +60,23 @@
   ```
   yarn cdk-deploy
   ```
+
+### Generate Mobile App
+
+- build container
+
+  ```
+  docker-compose up -d --build
+  ```
+
+- access the container
+
+  ```
+  docker exec -it eas-local-builder bash
+  ```
+
+- generete apk file
+
+  ```
+  eas build --platform android --profile development --local
+  ```

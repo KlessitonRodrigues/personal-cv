@@ -10,4 +10,5 @@ _tests/
 # Files
 *.log
 *.env
+*.apk
 
