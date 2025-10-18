@@ -5,9 +5,7 @@
 This is a multi-platform personal portfolio built with React + TypeScript, supporting:
 
 - **Web**: Vite SPA (AWS CloudFront)
-- **Mobile (Cordova)**: Android/Electron via `_mobile/`
 - **Mobile (Expo)**: React Native via `_expo/`
-- **Native**: Platform-specific via `_native/`
 
 ## Architecture & Patterns
 
@@ -24,14 +22,13 @@ This is a multi-platform personal portfolio built with React + TypeScript, suppo
 - **Local Dev**: `yarn dev` (with --host), `yarn build`, `yarn preview`
 - **Testing**: Selenium-based in `_tests/` (Jest + Selenium, 60s timeout). Use `yarn test-dev`, `yarn test-build`, `yarn test-prod` for different targets.
 - **Multi-Platform**:
-  - Cordova: `yarn run-android`, `yarn run-web`
-  - Expo: `cd _expo/personal-cv && expo start --android`
-  - AWS: `yarn build && yarn cdk-deploy` (requires AWS credentials)
+  - Expo: `cd _expo && yarn android` or `expo start --android`
+  - AWS: `yarn build && cd _aws && yarn cdk-deploy` (requires AWS credentials)
 
 ## Deployment & Infrastructure
 
 - **AWS CDK**: `_aws/` contains infra code. S3 + CloudFront with SPA routing (404 → index.html). Asset hashing via Vite chunk files.
-- **Platform Folders**: Each (`_deploy/`, `_mobile/`, `_expo/`, `_tests/`) has its own `package.json` and scripts.
+- **Platform Folders**: Each (`_aws/`, `_expo/`, `_tests/`) has its own `package.json` and scripts.
 
 ## Project-Specific Conventions
 
