@@ -78,5 +78,5 @@
 - generete apk file
 
   ```
-  eas build --platform android --profile development --local
+  eas build -p android --profile development --local
   ```

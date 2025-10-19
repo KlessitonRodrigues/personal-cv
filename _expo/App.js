@@ -8,13 +8,13 @@ const statusBar = {
   backgroundColor: '#d9d9d9',
 };
 
-const url = 'https://profile.klessitonrds.com/';
+const uri = 'https://profile.klessitonrds.com/';
 
 export default function App() {
   return (
     <View style={statusBar}>
       <StatusBar style="dark" />
-      <WebView style={{ flex: 1 }} source={{ url }} />
+      <WebView style={{ flex: 1 }} source={{ uri }} />
     </View>
   );
 }

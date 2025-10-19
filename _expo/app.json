@@ -3,9 +3,7 @@
     "name": "personal-cv",
     "slug": "personal-cv",
     "version": "1.0.0",
-    "platforms": [
-      "android"
-    ],
+    "platforms": ["android"],
     "android": {
       "package": "com.klessiton.personalcv"
     },
@@ -13,6 +11,9 @@
       "eas": {
         "projectId": "cdd08edc-0085-4cf1-8a29-fb7e4dc16dda"
       }
+    },
+    "expo": {
+      "sdkVersion": "40.0.0"
     }
   }
 }

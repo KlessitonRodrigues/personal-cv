@@ -8,7 +8,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "build": "eas build -p android --profile preview",
-    "build-local": "eas build -p android --profile development --local"
+    "build-local": "eas build -p android --profile development --local",
+    "start-container": "docker-compose up -d --build",
+    "stop-container": "docker-compose down",
+    "build-container": "docker exec -it eas-local-builder bash -c 'eas build -p android --profile development --local'"
   },
   "dependencies": {
     "expo": "^53.0.4",
