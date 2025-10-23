@@ -9,38 +9,38 @@ describe('When on home page', () => {
     const browser = await webDriver;
     await browser.get(env.CURRENT_URL);
     await browser.manage().window().setRect(screenSize.desktop);
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(10000));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(0));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.findElement(By.css('aside')).click();
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.findElement(By.css('a[href="/resume"]')).click();
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(10000));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(0));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
   });
 
   test('Should scroll pages and use mobile navigation bar', async () => {
     const browser = await webDriver;
     await browser.get(env.CURRENT_URL);
     await browser.manage().window().setRect(screenSize.mobile);
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(10000));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(0));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.findElement(By.css('.icon-menu')).click();
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.findElement(By.css('a[href="/resume"]')).click();
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(10000));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
     await browser.executeScript(scrollPage(0));
-    await browser.sleep(3000);
+    await browser.sleep(env.STEP_TIME);
   });
 
   afterAll(async () => {

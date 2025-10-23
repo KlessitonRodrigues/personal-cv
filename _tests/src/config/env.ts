@@ -10,6 +10,7 @@ if (NODE_ENV === 'prod') CURRENT_URL = URLS.prodUrl;
 const env = {
   CURRENT_URL,
   NODE_ENV,
+  STEP_TIME: 500,
 };
 
 export default env;
