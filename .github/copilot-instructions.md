@@ -1,62 +1,37 @@
-# Personal CV Project — AI Coding Agent Instructions
 
-## Project Overview
+# Personal CV — AI Coding Agent Instructions (concise)
 
-This is a multi-platform personal portfolio built with React + TypeScript, supporting:
+This repo is a multi-platform personal portfolio (Web via Vite, Mobile via Expo) written in React + TypeScript. The notes below highlight patterns, workflows, and precise locations you will use frequently.
 
-- **Web**: Vite SPA (AWS CloudFront)
-- **Mobile (Expo)**: React Native via `_expo/`
+- **Routing & Platform detection:** `src/app.tsx` decides between `createBrowserRouter` and `createMemoryRouter` using `isEmbbedMobile()` (it checks for `.html` in pathname + screen size). Check `src/pages/routes.tsx` for lazy-loaded routes via `React.lazy()`.
 
-## Architecture & Patterns
+- **Component & folder conventions:** Components live in their own folder with an `index.ts` barrel export (PascalCase folder names). Shared UI lives under `src/lib/common/` (e.g., `If`, `Icons`, `Loading`) and styled tokens under `src/lib/common/StyledComponents/`.
 
-- **Conditional Routing**: `src/app.tsx` chooses router (`createMemoryRouter` for embedded/mobile, `createBrowserRouter` for web) using `isEmbbedMobile()` (checks `.html` in pathname and screen size).
-- **Lazy Route Loading**: All routes in `src/pages/routes.tsx` are lazy-loaded with `React.lazy()`.
-- **Component Structure**: Each component in its own folder with `index.ts` barrel export. Use the custom `If` component (`src/lib/common/If/`) for conditional rendering.
-- **Styling**: Theme-aware via `src/styles/theme.ts` (`getTheme`). Color schemes in `src/styles/colors.ts`. Use `cssSize()` for rem units. Responsive breakpoints in `screenSize`.
-- **Types**: Global types in `src/@types/` (see `Props.*`, `Utils.*`, etc). Path mapping via `vite-tsconfig-paths`.
-- **Internationalization**: JSON-based (`src/public/i18n/en.json`, `pt.json`). Use `getText(path)` (auto-fallback to 'NO_TEXT').
-- **Asset Optimization**: Images compressed in Vite config (JPG: 15%, PNG: 5%).
+- **Styling & theme:** Theme utilities in `src/styles/theme.ts` and colors in `src/styles/colors.ts`. Use `cssSize()` helpers and the `screenSize` breakpoints defined in `src/styles/theme.ts`.
 
-## Developer Workflows
+- **Types & path aliases:** Global types in `src/@types/` (Namespaces: `Props.*`, `Utils.*`, `Styles.*`, `Hooks.*`). Project uses `vite-tsconfig-paths` — prefer path aliases when importing.
 
-- **Local Dev**: `yarn dev` (with --host), `yarn build`, `yarn preview`
-- **Testing**: Selenium-based in `_tests/` (Jest + Selenium, 60s timeout). Use `yarn test-dev`, `yarn test-build`, `yarn test-prod` for different targets.
-- **Multi-Platform**:
-  - Expo: `cd _expo && yarn android` or `expo start --android`
-  - AWS: `yarn build && cd _aws && yarn cdk-deploy` (requires AWS credentials)
+- **I18n:** JSON files in `public/i18n/` (e.g., `en.json`, `pt.json`). Use `getText(path)` from `src/utils/i18n.ts` which returns `'NO_TEXT'` fallback.
 
-## Deployment & Infrastructure
+- **Assets & Vite config:** Image compression is handled in `vite.config.ts` (JPG/PNG optimization). If images look degraded, adjust compression settings there.
 
-- **AWS CDK**: `_aws/` contains infra code. S3 + CloudFront with SPA routing (404 → index.html). Asset hashing via Vite chunk files.
-- **Platform Folders**: Each (`_aws/`, `_expo/`, `_tests/`) has its own `package.json` and scripts.
+- **Platform folders:**
+  - `_expo/` — React Native app entry (`App.js`, `app.json`). Use `cd _expo && yarn android` or `expo start` for device testing.
+  - `_aws/` — CDK infra and deployment scripts (see `_aws/awsDeploy.ts`, `cdk.json`). Deploy requires AWS credentials.
+  - `_tests/` — Selenium/Jest tests. WebDriver config in `_tests/config/webDriver.ts`.
 
-## Project-Specific Conventions
+- **Scripts & testing:** Top-level `package.json` includes `yarn dev`, `yarn build`, `yarn preview`. Tests use Selenium-based suites; `yarn test-dev`, `yarn test-build`, `yarn test-prod` map to environments — inspect `_tests/package.json` for details.
 
-- **Mobile Routing**: Always check `isEmbbedMobile()` for mobile-specific logic.
-- **WhatsApp Links**: Switch between web/mobile URLs based on platform.
-- **TypeScript Namespaces**: Use `Props.*`, `Utils.*`, `Styles.*`, `Hooks.*` for global types.
-- **Component Naming**: PascalCase folders, `index.ts` barrels. Utilities: camelCase. Types: `*.d.ts` in `src/@types/`.
+- **Common patterns & gotchas:**
+  - Mobile routing uses pathname detection not UA — look for `isEmbbedMobile()` usages.
+  - Use the `If` component (`src/lib/common/If/index.ts`) for terse conditional rendering.
+  - Lazy routes and Suspense boundaries are the expected pattern for pages.
 
-## Common Pitfalls
+- **When changing UI or routes:** Update `src/pages/routes.tsx` and corresponding lazy imports. Follow existing barrel export patterns and update i18n keys in `public/i18n/*.json`.
 
-1. **Routing**: Mobile routing depends on pathname, not user agent.
-2. **Image Quality**: Asset compression is aggressive—check `vite.config.ts` if images look degraded.
-3. **Test Modes**: Each test command targets a different environment/config.
-4. **AWS Deploy**: Requires manual AWS credential setup before `cdk-deploy`.
+- **Where to look for examples:**
+  - `src/pages/profile/_content/Experience/index.tsx` — example of page composition using shared components.
+  - `src/lib/common/Icons/` — how icons are organized and exported.
+  - `_tests/navigation/pages.spec.ts` — integration test examples against the SPA.
 
-## Key Files & Directories
-
-- `src/app.tsx`: Router selection logic
-- `src/pages/routes.tsx`: Route definitions (lazy-loaded)
-- `src/styles/theme.ts`, `src/styles/colors.ts`: Theme and color system
-- `src/@types/`: Global TypeScript types
-- `_aws/`: AWS CDK infra
-- `_tests/`: Selenium test suite
-
----
-
-**For AI agents:**
-
-- Always use the platform detection helpers for routing/UI logic.
-- Follow the folder/component conventions for new code.
-- Reference the above files for examples of project patterns.
+If anything is unclear or you want the file expanded with more examples (CLI commands, tests, or specific file snippets), tell me which area to expand. 
