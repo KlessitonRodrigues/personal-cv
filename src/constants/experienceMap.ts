@@ -53,6 +53,12 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'react',
   },
   {
+    name: 'Redux',
+    year: 2021,
+    type: 'frontend',
+    icon: 'redux',
+  },
+  {
     name: 'Styled Components',
     year: 2021,
     type: 'frontend',
@@ -179,7 +185,7 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'svelte',
   },
   {
-    name: 'TailwindJS',
+    name: 'Tailwind',
     year: 2024,
     type: 'frontend',
     icon: 'tailwind',

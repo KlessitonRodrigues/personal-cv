@@ -60,6 +60,7 @@ import {
   SiPostman,
   SiPuppeteer,
   SiReact,
+  SiRedux,
   SiSass,
   SiSelenium,
   SiShadcnui,
@@ -141,4 +142,5 @@ export const iconMap = {
   android: <PiAndroidLogoBold />,
   codeBlock: <PiCodeBlock />,
   dot: <PiDotOutlineFill />,
+  redux: <SiRedux />,
 };
