@@ -39,3 +39,6 @@ COPY . .
 # Default command: bash shell
 CMD ["bash"]
 
+# Default command: run prod
+CMD ["npm", "run", "build-local"]
+
