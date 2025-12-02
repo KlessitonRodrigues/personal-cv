@@ -40,5 +40,6 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/94939cdb6d7b62afe7967b58a9871f30',
     'https://gist.github.com/KlessitonRodrigues/59c8591e6542585bee0c9871b805ff06',
     'https://gist.github.com/KlessitonRodrigues/adb04ee937b6af5f2255c242a93bc9f8',
+    'https://gist.github.com/KlessitonRodrigues/d40ba073f299a1fb9b5f972ee8930d18',
   ],
 };

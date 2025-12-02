@@ -13,6 +13,13 @@ const initWebdriver = () => {
   const browser = new Builder();
   browser.forBrowser(Browser.CHROME);
   browser.setChromeOptions(options);
+  
+  // Use remote Selenium server if SELENIUM_URL is set (Docker environment)
+  const seleniumUrl = process.env.SELENIUM_URL;
+  if (seleniumUrl) {
+    browser.usingServer(seleniumUrl);
+  }
+  
   return browser.build();
 };
 
