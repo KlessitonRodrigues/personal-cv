@@ -23,6 +23,8 @@ export const urls = {
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
   sellerRepo: 'https://github.com/KlessitonRodrigues/seller-app',
   sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
+  multiStepFormRepo: 'https://github.com/KlessitonRodrigues/appointment-multi-step-form',
+  multiStepFormApp: 'https://d2fvz3twxtlqif.cloudfront.net/',
 };
 
 export const codeBlockLinks = {

@@ -141,6 +141,9 @@
   "extraworks_sellerapp": "Tabela de Vendas",
   "extraworks_sellerapp_text": "Aplicação de teste usando components de Ant Design. Validação de formulários usando React Hook Form e Zod. Tradução de textos usando i18n.",
   "extraworks_sellerapp_tech": "ReactJS, ViteJS, Ant Design, React Hook Form e Zod.",
+  "extraworks_multistepform": "Formulário de Múltiplas Etapas em React",
+  "extraworks_multistepform_text": "Aplicação de formulário de múltiplas etapas com barra de progresso, validação de formulários usando React Hook Form e Zod.",
+  "extraworks_multistepform_tech": "ReactJS, ViteJS, Styled Components, React Hook Form e Zod.",
   "profile_year": "ano",
   "profile_years": "anos",
 

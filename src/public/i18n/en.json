@@ -29,7 +29,7 @@
 
   "experience_title": "Experience",
   "experience_harmat": "Harmat Management Software",
-  "experience_harmat_date": "2025/04 - 2025/08",
+  "experience_harmat_date": "2025/04 - 2025/011",
   "experience_harmat_text": "Online platform for pest control service management, with visit scheduling, work order issuance, inventory control and billing. I participated in form creation and interactive maps creation for pest control.",
   "experience_harmat_tech": "ReactJS, NextJS, TailwindCSS, Ant Design, .Net, C#",
   "experience_accourdous": "Accourdous Real Estate Management Software",
@@ -143,6 +143,9 @@
   "extraworks_sellerapp": "Sales Table",
   "extraworks_sellerapp_text": "Test application using Ant Design components. Form validation using React Hook Form and Zod. Text translation using i18n.",
   "extraworks_sellerapp_tech": "ReactJS, ViteJS, Ant Design, React Hook Form and Zod.",
+  "extraworks_multistepform": "Multi Step Form in React",
+  "extraworks_multistepform_text": "Multi-step form application with progress bar, form validation using React Hook Form and Zod.",
+  "extraworks_multistepform_tech": "ReactJS, ViteJS, Styled Components, React Hook Form and Zod.",
   "profile_year": "year",
   "profile_years": "years",
 

@@ -6,11 +6,14 @@ import GameFinderProject from 'src/pages/projects/_content/gameFinder';
 import ProfileProject from 'src/pages/projects/_content/profileProject';
 import SellerAppProject from 'src/pages/projects/_content/sellerApp';
 
+import MultiStepFormProject from './_content/MultiStepForm';
+
 const ProjectsPage = () => {
   return (
     <SideBar>
       <Page>
         <ProfileProject />
+        <MultiStepFormProject />
         <AwsCorsProxyProject />
         <GameFinderProject />
         <SellerAppProject />
