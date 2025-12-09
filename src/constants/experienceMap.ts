@@ -185,7 +185,7 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'svelte',
   },
   {
-    name: 'Tailwind',
+    name: 'TailwindCSS',
     year: 2024,
     type: 'frontend',
     icon: 'tailwind',
