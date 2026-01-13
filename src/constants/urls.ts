@@ -25,6 +25,12 @@ export const urls = {
   sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
   multiStepFormRepo: 'https://github.com/KlessitonRodrigues/appointment-multi-step-form',
   multiStepFormApp: 'https://d2fvz3twxtlqif.cloudfront.net/',
+  reactNotes:
+    'https://docs.google.com/document/d/1Nb_ajiDP2hpvKfuwKytyR_j1G8qndmITWeLaycPUmWk/edit?usp=sharing',
+  nodejsNotes:
+    'https://docs.google.com/document/d/1HdTvNUp4F0syO05T8cNIL1K6hUvahqhV5Cy9Tow5AMw/edit?usp=sharing',
+  javaNotes: '',
+  htmlNotes: '',
 };
 
 export const codeBlockLinks = {
@@ -43,5 +49,10 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/59c8591e6542585bee0c9871b805ff06',
     'https://gist.github.com/KlessitonRodrigues/adb04ee937b6af5f2255c242a93bc9f8',
     'https://gist.github.com/KlessitonRodrigues/d40ba073f299a1fb9b5f972ee8930d18',
+  ],
+  aipropmts: [
+    'https://gist.github.com/KlessitonRodrigues/3c8f5e3f4f4f4e1f6f6f6f6f6f6f6f6f',
+    'https://gist.github.com/KlessitonRodrigues/4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90',
+    'https://gist.github.com/KlessitonRodrigues/4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90',
   ],
 };

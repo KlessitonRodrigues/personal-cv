@@ -22,6 +22,7 @@ import {
   PiCodeBlock,
   PiDevices,
   PiDotOutlineFill,
+  PiNotebook,
   PiStudent,
 } from 'react-icons/pi';
 import {
@@ -56,6 +57,7 @@ import {
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
+  SiOpenai,
   SiPostgresql,
   SiPostman,
   SiPuppeteer,
@@ -143,4 +145,6 @@ export const iconMap = {
   codeBlock: <PiCodeBlock />,
   dot: <PiDotOutlineFill />,
   redux: <SiRedux />,
+  openAI: <SiOpenai />,
+  notebook: <PiNotebook />,
 };

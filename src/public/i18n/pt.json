@@ -27,7 +27,7 @@
   "cv_resume": "Desenvolvedor Fullstack com experiência em aplicações Web e Mobile utilizando o ecossistema ReactJS e também desenvolvendo APIs através de frameworks como NestJS ou Spring Boot, bom conhecimento em serviços AWS e sistemas em nuvem. Gosto de ser criativo e sempre tento desenvolver minha própria solução para o problema e também aprender diferentes tipos de tecnologias e formas mais produtivas de melhorar a qualidade do código e entregar aplicações mais rapidamente.",
   "experience_title": "Experiência",
   "experience_harmat": "Software de Gestão Harmat",
-  "experience_harmat_date": "2025/04 - 2025/11",
+  "experience_harmat_date": "2025/04 - 2025/12",
   "experience_harmat_text": "Plataforma online para gestão de serviços de controle de pragas, com agendamento de visitas, emissão de ordens de serviço, controle de estoque e faturamento. Participei da criação de formulários e da criação de mapas interativos para controle de pragas.",
   "experience_harmat_tech": "ReactJS, NextJS, TailwindCSS, Ant Design, .Net, C#",
   "experience_accourdous": "Software de Gestão Imobiliária Accourdous",
@@ -76,7 +76,7 @@
 
   "education_title": "Educação",
   "education_udemy_title": "Certificados Udemy",
-  "education_udemy_date": "2020/01 - 2023/12",
+  "education_udemy_date": "2020/01 - 2026/01",
   "education_udemy_course_1": "Aplicações ReactJS com Redux",
   "education_udemy_course_2": "Design de MVP com Figma",
   "education_udemy_course_3": "Fundamentos do NestJS",
@@ -92,6 +92,14 @@
   "education_school": "Escola, Técnico em Informática.",
   "education_school_title": "Centro Estadual de Educação Profissional Professora Maria Amália",
   "education_school_date": "2014/02 - 2016/11",
+
+  "certificates_title": "Certificados",
+  "certificates_notebook": "Caderno",
+  "certificates_notebook_text": "Anotações e materiais pessoais feitos durante meus estudos em linguagens de programação e frameworks.",
+  "certificates_notebook_react": "React",
+  "certificates_notebook_nodejs": "Node.js",
+  "certificates_notebook_java": "Java",
+  "certificates_notebook_html": "HTML",
 
   "language_title": "Idiomas",
   "language_pt_title": "Português",
@@ -146,6 +154,12 @@
   "extraworks_multistepform_tech": "ReactJS, ViteJS, Styled Components, React Hook Form e Zod.",
   "profile_year": "ano",
   "profile_years": "anos",
+
+  "shared_ai_code": "Prompts de IA Compartilhados",
+  "shared_ai_code_0": "Bootstrap ViteJS com TailwindCSS e deploy AWS",
+  "shared_ai_code_1": "Bootstrap ViteJS com Styled Components e deploy AWS",
+  "shared_ai_code_2": "Bootstrap NextJS com TailwindCSS e deploy AWS",
+  "shared_ai_code_3": "Bootstrap API NestJS com TypeORM e PostgreSQL",
 
   "shared_js_code": "Código Compartilhado em JavaScript",
   "shared_js_code_0": "Capturar images apartir de elementos HTML",

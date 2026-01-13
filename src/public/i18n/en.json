@@ -29,7 +29,7 @@
 
   "experience_title": "Experience",
   "experience_harmat": "Harmat Management Software",
-  "experience_harmat_date": "2025/04 - 2025/011",
+  "experience_harmat_date": "2025/04 - 2025/12",
   "experience_harmat_text": "Online platform for pest control service management, with visit scheduling, work order issuance, inventory control and billing. I participated in form creation and interactive maps creation for pest control.",
   "experience_harmat_tech": "ReactJS, NextJS, TailwindCSS, Ant Design, .Net, C#",
   "experience_accourdous": "Accourdous Real Estate Management Software",
@@ -78,7 +78,7 @@
 
   "education_title": "Education",
   "education_udemy_title": "Udemy Certificates",
-  "education_udemy_date": "2020/01 - 2023/12",
+  "education_udemy_date": "2020/01 - 2026/01",
   "education_udemy_course_1": "ReactJS Applications with Redux",
   "education_udemy_course_2": "Design of MVP with Figma",
   "education_udemy_course_3": "NestJS Fundamentals",
@@ -94,6 +94,14 @@
   "education_school": "School, Computer Technician.",
   "education_school_title": "Centro Estadual de Educação Profissional Professora Maria Amália",
   "education_school_date": "2014/02 - 2016/11",
+
+  "certificates_title": "Certificates",
+  "certificates_notebook": "Notebook",
+  "certificates_notebook_text": "Notes and personal materials made during my studies in programming languages and frameworks.",
+  "certificates_notebook_react": "React",
+  "certificates_notebook_nodejs": "Node.js",
+  "certificates_notebook_java": "Java",
+  "certificates_notebook_html": "HTML",
 
   "language_title": "Languages",
   "language_pt_title": "Portuguese",
@@ -148,6 +156,12 @@
   "extraworks_multistepform_tech": "ReactJS, ViteJS, Styled Components, React Hook Form and Zod.",
   "profile_year": "year",
   "profile_years": "years",
+
+  "shared_ai_code": "Shared AI Prompts",
+  "shared_ai_code_1": "Bootstrap ViteJS with Styled Components and AWS deployment",
+  "shared_ai_code_0": "Bootstrap ViteJS with TailwindCSS and AWS deployment",
+  "shared_ai_code_2": "Bootstrap NextJS with TailwindCSS and AWS deployment",
+  "shared_ai_code_3": "Bootstrap NestJS API with TypeORM and PostgreSQL",
 
   "shared_js_code": "Shared JavaScript Code",
   "shared_js_code_0": "Capture images from HTML elements",

@@ -8,26 +8,49 @@ import Text from 'src/lib/common/Text';
 const CodeListFilters = () => {
   return (
     <Section>
-      <Card>
-        <Column left gap={4}>
-          <Row left>
-            <Icons size={8} type={'javascript'} />
-            <Text tag="h5">JavaScript</Text>
-          </Row>
-          <Text tag="small" path="shared_js_code" />
-        </Column>
-        <Column left gap={4}>
-          {codeBlockLinks.javascript.map((link, i) => (
-            <a key={i} href={link} target="_blank">
-              <OutlineBtn>
-                <Icons size={5} type="caretRight" />
-                <Text tag="p" path={`shared_js_code_${i}`} />
-                <Icons size={5} type="link" />
-              </OutlineBtn>
-            </a>
-          ))}
-        </Column>
-      </Card>
+      <Column left gap={4}>
+        <Card>
+          <Column left gap={4}>
+            <Row left>
+              <Icons size={8} type={'openAI'} />
+              <Text tag="h5">AI Prompts</Text>
+            </Row>
+            <Text tag="small" path="shared_ai_code" />
+          </Column>
+          <Column left gap={4}>
+            {codeBlockLinks.aipropmts.map((link, i) => (
+              <a key={i} href={link} target="_blank">
+                <OutlineBtn>
+                  <Icons size={5} type="caretRight" />
+                  <Text tag="p" path={`shared_ai_code_${i}`} />
+                  <Icons size={5} type="link" />
+                </OutlineBtn>
+              </a>
+            ))}
+          </Column>
+        </Card>
+
+        <Card>
+          <Column left gap={4}>
+            <Row left>
+              <Icons size={8} type={'javascript'} />
+              <Text tag="h5">JavaScript</Text>
+            </Row>
+            <Text tag="small" path="shared_js_code" />
+          </Column>
+          <Column left gap={4}>
+            {codeBlockLinks.javascript.map((link, i) => (
+              <a key={i} href={link} target="_blank">
+                <OutlineBtn>
+                  <Icons size={5} type="caretRight" />
+                  <Text tag="p" path={`shared_js_code_${i}`} />
+                  <Icons size={5} type="link" />
+                </OutlineBtn>
+              </a>
+            ))}
+          </Column>
+        </Card>
+      </Column>
     </Section>
   );
 };
