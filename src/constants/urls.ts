@@ -30,7 +30,9 @@ export const urls = {
   nodejsNotes:
     'https://docs.google.com/document/d/1HdTvNUp4F0syO05T8cNIL1K6hUvahqhV5Cy9Tow5AMw/edit?usp=sharing',
   javaNotes: '',
-  htmlNotes: '',
+  htmlNotes:
+    'https://docs.google.com/document/d/1f42EU_Lg_6JBeGjlabw9AKdFyurN_Gob1bk3CqpgpYk/edit?usp=sharing',
+  awsNotes: '',
 };
 
 export const codeBlockLinks = {

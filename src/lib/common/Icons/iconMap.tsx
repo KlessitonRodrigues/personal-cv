@@ -34,6 +34,7 @@ import {
 } from 'react-icons/ri';
 import {
   SiAmazon,
+  SiAmazonwebservices,
   SiAndroidstudio,
   SiApachecordova,
   SiBootstrap,
@@ -101,7 +102,7 @@ export const iconMap = {
   typescript: <SiTypescript />,
   docker: <SiDocker />,
   styledComponents: <SiStyledcomponents />,
-  aws: <SiAmazon />,
+  aws: <SiAmazonwebservices />,
   mongoDb: <SiMongodb />,
   nodejs: <SiNodedotjs />,
   sass: <SiSass />,

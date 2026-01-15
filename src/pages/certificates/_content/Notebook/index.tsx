@@ -1,5 +1,6 @@
 import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/common/Icons';
+import If from 'src/lib/common/If';
 import LinkAndIcon from 'src/lib/common/Links/LinkAndIcon';
 import { Card, Section } from 'src/lib/common/StyledComponents/Containers';
 import { Hr } from 'src/lib/common/StyledComponents/Divisors';
@@ -19,11 +20,6 @@ const NotebookLinks = () => {
         <Text tag="small" path="certificates_notebook_text" />
         <Row left gap={6}>
           <LinkAndIcon
-            icon="html"
-            label={getText('certificates_notebook_html')}
-            url={urls.htmlNotes}
-          />
-          <LinkAndIcon
             icon="react"
             label={getText('certificates_notebook_react')}
             url={urls.reactNotes}
@@ -33,6 +29,23 @@ const NotebookLinks = () => {
             label={getText('certificates_notebook_nodejs')}
             url={urls.nodejsNotes}
           />
+          <If check={false}>
+            <LinkAndIcon
+              icon="html"
+              label={getText('certificates_notebook_html')}
+              url={urls.htmlNotes}
+            />
+            <LinkAndIcon
+              icon="aws"
+              label={getText('certificates_notebook_aws')}
+              url={urls.awsNotes}
+            />
+            <LinkAndIcon
+              icon="java"
+              label={getText('certificates_notebook_java')}
+              url={urls.javaNotes}
+            />
+          </If>
         </Row>
       </Card>
     </Section>

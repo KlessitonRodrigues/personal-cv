@@ -102,6 +102,7 @@
   "certificates_notebook_nodejs": "Node.js",
   "certificates_notebook_java": "Java",
   "certificates_notebook_html": "HTML",
+  "certificates_notebook_aws": "AWS",
 
   "language_title": "Languages",
   "language_pt_title": "Portuguese",
