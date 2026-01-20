@@ -46,6 +46,9 @@ const ResumeEducation = () => {
             <ListItem>
               <Text tag="p" path="education_udemy_course_9" />
             </ListItem>
+            <ListItem>
+              <Text tag="p" path="education_udemy_course_10" />
+            </ListItem>
           </List>
         </Column>
 
