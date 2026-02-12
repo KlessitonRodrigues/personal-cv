@@ -53,6 +53,7 @@ import {
   SiInsomnia,
   SiJavascript,
   SiJest,
+  SiLlvm,
   SiMantine,
   SiMaterialdesign,
   SiMongodb,
@@ -150,5 +151,6 @@ export const iconMap = {
   openAI: <SiOpenai />,
   notebook: <PiNotebook />,
   daisyUI: <SiDaisyui />,
+  transformers: <SiJavascript />,
   huggingFace: <SiHuggingface />,
 };

@@ -257,7 +257,13 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'daisyUI',
   },
   {
-    name: 'HuggingFace',
+    name: 'Transformers.js',
+    year: 2026,
+    type: 'infra',
+    icon: 'transformers',
+  },
+  {
+    name: 'Hugging Face',
     year: 2026,
     type: 'infra',
     icon: 'huggingFace',
