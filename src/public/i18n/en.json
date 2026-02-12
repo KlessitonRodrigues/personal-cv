@@ -25,7 +25,7 @@
   "header_page_text": "Profile Page",
 
   "cv_resume_title": "Resume",
-  "cv_resume": "Fullstack developer with experience in Web and Mobile applications using ReactJS ecosystem and also developing APIs through frameworks such as NestJS or Spring Boot, good knowledge of AWS services and cloud systems. I like to be creative and always try to develop my own solution for the problem and also to learn different kind of technologies and more productive ways to improve code quality and deliver applications faster.",
+  "cv_resume": "Fullstack developer with experience in Web and Mobile applications using the ReactJS ecosystem, building APIs with NodeJS frameworks such as ExpressJS and NestJS, and working with cloud services like AWS Lambda, S3, SES, SQS, and DynamoDB, among others. Able to assist in maintaining systems built in Java, C#, or Clojure. I like to be creative and develop my own solutions to problems, while continuously learning different technologies and ways to improve productivity and code quality.",
 
   "experience_title": "Experience",
   "experience_harmat": "Harmat Management Software",
