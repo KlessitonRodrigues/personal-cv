@@ -98,9 +98,9 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       label: '0.8rem',
     },
     shadow: {
-      lg: '0 1px 7px 0 #0007',
-      md: '0 1px 5px 0 #0005',
-      sm: '0 1px 3px 0 #0003',
+      lg: '1px 1px 6px 0 #0007',
+      md: '1px 1px 4px 0 #0005',
+      sm: '1px 1px 2px 0 #0003',
     },
     border: {
       lg: `solid 1px ${ant.gray['800']}`,

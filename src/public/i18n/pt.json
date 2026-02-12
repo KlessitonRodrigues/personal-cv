@@ -153,6 +153,9 @@
   "extraworks_multistepform": "Formulário de Múltiplas Etapas em React",
   "extraworks_multistepform_text": "Aplicação de formulário de múltiplas etapas com barra de progresso, validação de formulários usando React Hook Form e Zod.",
   "extraworks_multistepform_tech": "ReactJS, ViteJS, Styled Components, React Hook Form e Zod.",
+  "extraworks_authentication_form": "Formulário de Autenticação",
+  "extraworks_authentication_form_text": "Formulário de autenticação com validação de email e senha, alternância de visibilidade da senha e botão de envio com estado de carregamento.",
+  "extraworks_authentication_form_tech": "NextJS, DaisyUI, AWS Lambdas, AWS DynamoDB",
   "profile_year": "ano",
   "profile_years": "anos",
 

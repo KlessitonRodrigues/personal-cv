@@ -33,7 +33,6 @@ import {
   RiWhatsappLine,
 } from 'react-icons/ri';
 import {
-  SiAmazon,
   SiAmazonwebservices,
   SiAndroidstudio,
   SiApachecordova,
@@ -41,6 +40,7 @@ import {
   SiClojure,
   SiCss3,
   SiCypress,
+  SiDaisyui,
   SiDocker,
   SiElectron,
   SiExpo,
@@ -49,6 +49,7 @@ import {
   SiGit,
   SiHeroku,
   SiHtml5,
+  SiHuggingface,
   SiInsomnia,
   SiJavascript,
   SiJest,
@@ -148,4 +149,6 @@ export const iconMap = {
   redux: <SiRedux />,
   openAI: <SiOpenai />,
   notebook: <PiNotebook />,
+  daisyUI: <SiDaisyui />,
+  huggingFace: <SiHuggingface />,
 };
