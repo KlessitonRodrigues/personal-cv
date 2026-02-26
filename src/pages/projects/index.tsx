@@ -1,25 +1,24 @@
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
-import AwsCorsProxyProject from 'src/pages/projects/_content/awsCorsProxy';
-import ConsoleUIProject from 'src/pages/projects/_content/consoleUI';
-import GameFinderProject from 'src/pages/projects/_content/gameFinder';
-import ProfileProject from 'src/pages/projects/_content/profileProject';
-import SellerAppProject from 'src/pages/projects/_content/sellerApp';
-
-import MultiStepFormProject from './_content/MultiStepForm';
-import AuthenticationFormProject from './_content/authenticationForm';
+import AuthenticationFormProjectSection from 'src/lib/sections/projects/AuthFormSection';
+import AwsCorsProxyProjectSection from 'src/lib/sections/projects/AwsCorsProxySection';
+import ConsoleUIProjectSection from 'src/lib/sections/projects/ConsoleUISection';
+import GameFinderProjectSection from 'src/lib/sections/projects/GameFinderSection';
+import MultiStepFormProjectSection from 'src/lib/sections/projects/MultiStepFormSection';
+import ProfileProjectSection from 'src/lib/sections/projects/ProfileProjectSection';
+import SellerAppProjectSection from 'src/lib/sections/projects/SellerAppSection';
 
 const ProjectsPage = () => {
   return (
     <SideBar>
       <Page>
-        <ProfileProject />
-        <AuthenticationFormProject />
-        <MultiStepFormProject />
-        <AwsCorsProxyProject />
-        <GameFinderProject />
-        <SellerAppProject />
-        <ConsoleUIProject />
+        <ProfileProjectSection />
+        <AuthenticationFormProjectSection />
+        <MultiStepFormProjectSection />
+        <AwsCorsProxyProjectSection />
+        <GameFinderProjectSection />
+        <SellerAppProjectSection />
+        <ConsoleUIProjectSection />
       </Page>
     </SideBar>
   );
