@@ -51,3 +51,13 @@ export const OutlineBtnTransparent = styled(RoundedBtn)(
     border: 1px solid ${theme.colors.gray};
   `,
 );
+
+export const ColorBtn = styled.div<{ color: string }>(
+  ({ theme, color }) => css`
+    width: ${cssSize(8)};
+    height: ${cssSize(6)};
+    background-color: ${color};
+    color: ${theme.colors.mainText};
+    box-shadow: ${theme.shadow.sm};
+  `,
+);

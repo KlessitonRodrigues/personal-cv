@@ -1,8 +1,11 @@
+import { BiCog } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
+import { HiCog } from 'react-icons/hi';
 import {
   LuChevronLeft,
   LuChevronRight,
+  LuCog,
   LuDownload,
   LuFileText,
   LuImage,
@@ -53,7 +56,6 @@ import {
   SiInsomnia,
   SiJavascript,
   SiJest,
-  SiLlvm,
   SiMantine,
   SiMaterialdesign,
   SiMongodb,
@@ -153,4 +155,5 @@ export const iconMap = {
   daisyUI: <SiDaisyui />,
   transformers: <SiJavascript />,
   huggingFace: <SiHuggingface />,
+  settings: <BiCog />,
 };

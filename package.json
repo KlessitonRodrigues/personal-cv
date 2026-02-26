@@ -19,6 +19,7 @@
     "@types/react-dom": "^19.2.3",
     "@types/styled-components": "^5.1.36",
     "@vitejs/plugin-react": "^5.1.1",
+    "flag-icons": "^7.5.0",
     "prettier": "^3.7.3",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.9.6",

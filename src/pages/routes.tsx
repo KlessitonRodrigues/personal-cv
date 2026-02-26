@@ -5,6 +5,7 @@ import CodePage from './code';
 import ProfilePage from './profile';
 import ProjectsPage from './projects';
 import ResumePage from './resume';
+import SettingsPage from './settings';
 
 const Router = createRoutesFromElements(
   <>
@@ -13,6 +14,7 @@ const Router = createRoutesFromElements(
     <Route path="/certification" Component={CertificatesPage} />
     <Route path="/projects" Component={ProjectsPage} />
     <Route path="/code" Component={CodePage} />
+    <Route path="/settings" Component={SettingsPage} />
   </>,
 );
 

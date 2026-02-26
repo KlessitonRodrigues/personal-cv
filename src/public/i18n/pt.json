@@ -1,6 +1,8 @@
 {
   "pt": "Português",
   "en": "English",
+  "es": "Español",
+  "fr": "Français",
 
   "loding_title": "Carregando...",
 
@@ -8,6 +10,7 @@
   "sidebar_link_cv": "Currículo",
   "sidebar_link_ct": "Certificações",
   "sidebar_link_projects": "Projetos",
+  "sidebar_link_settings": "Configurações",
   "sidebar_link_code": "Código",
   "sidebar_theme_light": "Claro",
   "sidebar_theme_dark": "Escuro",
@@ -101,6 +104,7 @@
   "certificates_notebook_nodejs": "Node.js",
   "certificates_notebook_java": "Java",
   "certificates_notebook_html": "HTML",
+  "certificates_notebook_aws": "AWS",
 
   "language_title": "Idiomas",
   "language_pt_title": "Português",
@@ -158,6 +162,25 @@
   "extraworks_authentication_form_tech": "NextJS, DaisyUI, AWS Lambdas, AWS DynamoDB",
   "profile_year": "ano",
   "profile_years": "anos",
+
+  "settings_title": "Configurações",
+  "settings_language": "Idioma",
+  "settings_theme": "Tema",
+  "settings_color": "Cor",
+  "language_portuguese": "Português",
+  "language_english": "Inglês",
+  "language_spanish": "Espanhol",
+  "language_french": "Francês",
+  "theme_light": "Claro",
+  "theme_dark": "Escuro",
+  "color_indigo": "Índigo",
+  "color_blue": "Azul",
+  "color_green": "Verde",
+  "color_red": "Vermelho",
+  "color_yellow": "Amarelo",
+  "color_purple": "Roxo",
+  "color_orange": "Laranja",
+  "color_pink": "Rosa",
 
   "shared_ai_code": "Prompts de IA Compartilhados",
   "shared_ai_code_0": "Bootstrap ViteJS com TailwindCSS e deploy AWS",

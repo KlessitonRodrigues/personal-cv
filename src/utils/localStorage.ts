@@ -1,8 +1,8 @@
 export const getLanguage = () => {
   try {
-    return localStorage.getItem('lang') || 'PT';
+    return (localStorage.getItem('lang') || 'pt').toLowerCase();
   } catch (err) {
-    return 'PT';
+    return 'pt';
   }
 };
 

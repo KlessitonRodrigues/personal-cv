@@ -39,7 +39,7 @@ export const Card = styled.div(
     padding: ${cssSize(8)};
     background-color: ${theme.colors.bg1};
     color: ${theme.colors.text2};
-    border-radius: ${theme.radius.lg};
+    border-radius: ${theme.radius.sm};
     box-shadow: ${theme.shadow.sm};
     transition: background 0.5s;
 

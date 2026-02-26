@@ -2,7 +2,16 @@ import { antColors as ant, materialColors as material } from 'src/styles/colors'
 
 import { cssSize } from './utils';
 
-export type IThemeColors = 'indigo' | 'purple' | 'blue' | 'magenta' | 'green';
+export type IThemeColors =
+  | 'indigo'
+  | 'purple'
+  | 'blue'
+  | 'magenta'
+  | 'green'
+  | 'red'
+  | 'yellow'
+  | 'orange'
+  | 'pink';
 
 export type IThemeProps = {
   colors: {
@@ -63,6 +72,10 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
     blue: { main: ant.blue['500'], mainBg: ant.blue['800'] },
     magenta: { main: ant.magenta['700'], mainBg: ant.magenta['900'] },
     green: { main: ant.green['700'], mainBg: ant.green['900'] },
+    red: { main: ant.red['700'], mainBg: ant.red['900'] },
+    yellow: { main: ant.gold['700'], mainBg: ant.gold['900'] },
+    orange: { main: ant.orange['700'], mainBg: ant.orange['900'] },
+    pink: { main: material.pink['700'], mainBg: material.pink['900'] },
   };
 
   const theme: IThemeProps = {
@@ -82,6 +95,8 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       red: ant.red['800'],
       blue: ant.blue['500'],
       green: material.lightGreen['800'],
+      orange: ant.orange['700'],
+      pink: material.pink['700'],
       white: material.white,
       black: ant.gray['1300'],
     },

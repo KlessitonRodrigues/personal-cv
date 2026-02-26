@@ -1,23 +1,16 @@
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import { urls } from 'src/constants/urls';
-import useTheme from 'src/hooks/useTheme';
 import Icons from 'src/lib/common/Icons';
 import If from 'src/lib/common/If';
-import LineSelector from 'src/lib/common/Selectors/LineSelector';
 import { Column } from 'src/lib/common/StyledComponents/Flex';
 import Text from 'src/lib/common/Text';
-import { IThemeColors } from 'src/styles/theme';
-import { getText, lang } from 'src/utils/i18n';
-import { changeLanguage } from 'src/utils/localStorage';
 
 import { Container, Content, MenuBtn, SidebarBox, SidebarItem } from './styled';
 
 const SideBar = (props: PropsWithChildren) => {
   const [open, setOpen] = useState(false);
   const [hidable, setHidable] = useState(false);
-  const themeCtx = useTheme();
   const location = useLocation();
   const path = location.pathname;
   const closeSidebar = () => setOpen(false);
@@ -61,56 +54,12 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_code" />
             </SidebarItem>
           </Link>
-        </Column>
-
-        <Column bottom left gap={0}>
-          <SidebarItem>
-            <strong>{lang?.toUpperCase()}</strong>
-            <LineSelector
-              value={lang}
-              onChange={item => changeLanguage(item.value)}
-              items={[
-                { value: 'PT', label: 'Português' },
-                { value: 'EN', label: 'English' },
-              ]}
-            />
-          </SidebarItem>
-          <SidebarItem>
-            <If
-              check={themeCtx.isDark}
-              true={<Icons type="moon" size={8} />}
-              false={<Icons type="sun" size={8} />}
-            />
-            <LineSelector
-              value={themeCtx.isDark ? '1' : '0'}
-              onChange={item => themeCtx.setDark(!!Number(item.value))}
-              items={[
-                { value: '0', label: getText('sidebar_theme_light') },
-                { value: '1', label: getText('sidebar_theme_dark') },
-              ]}
-            />
-          </SidebarItem>
-          <SidebarItem>
-            <Icons type="theme" size={8} />
-            <LineSelector
-              value={themeCtx.color}
-              onChange={item => themeCtx.setColor(item.value as IThemeColors)}
-              items={[
-                { value: 'indigo', label: themeCtx.color },
-                { value: 'blue', label: themeCtx.color },
-                { value: 'purple', label: themeCtx.color },
-                { value: 'magenta', label: themeCtx.color },
-                { value: 'green', label: themeCtx.color },
-              ]}
-            />
-          </SidebarItem>
-
-          <a href={urls.personalPageRep} target="_blank">
-            <SidebarItem>
-              <Icons type="github" size={8} />
-              <p>Github</p>
+          <Link to="/settings" onClick={closeSidebar}>
+            <SidebarItem active={hidable && path === '/settings'}>
+              <Icons type="settings" size={8} />
+              <Text tag="p" path="sidebar_link_settings" />
             </SidebarItem>
-          </a>
+          </Link>
         </Column>
       </SidebarBox>
 

@@ -3,12 +3,14 @@ import styled, { css } from 'styled-components';
 import { IStyledProps, cssSize } from 'src/styles/utils';
 
 export const Image = styled.img<IStyledProps>(
-  ({ w, h }) => css`
+  ({ w, h, maxh, maxw }) => css`
     display: block;
     margin: auto;
-    width: 100%;
-    max-height: ${h ?? '100%'};
-    max-width: ${w ?? 'unset'};
+    width: ${w ?? '100%'};
+    height: ${h ?? 'auto'};
+    max-height: ${maxh ?? '100%'};
+    max-width: ${maxw ?? 'unset'};
+    object-fit: cover;
   `,
 );
 
