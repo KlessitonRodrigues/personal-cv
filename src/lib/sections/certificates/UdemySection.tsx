@@ -14,18 +14,18 @@ const UdemyCertificatesSection = () => {
       <Card>
         <Row left gap={4}>
           <Icons type="udemy" size={9} />
-          <h3>Udemy</h3>
+          <Text tag="h3">Udemy</Text>
         </Row>
         <Hr />
         <Accordion
           delayLoad
           title={<Text tag="p" path="education_udemy_course_1" />}
-          content={<Image src={reactReduxImg} w="45rem" h="30rem" />}
+          content={<Image src={reactReduxImg} maxw="45rem" maxh="30rem" />}
         />
         <Accordion
           delayLoad
           title={<Text tag="p" path="education_udemy_course_2" />}
-          content={<Image src={reactReduxFullImg} w="45rem" h="30rem" />}
+          content={<Image src={reactReduxFullImg} maxw="45rem" maxh="30rem" />}
         />
       </Card>
     </Section>

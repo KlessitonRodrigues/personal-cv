@@ -26,37 +26,37 @@ const SideBar = (props: PropsWithChildren) => {
         <Column top left gap={0}>
           <Link to="/" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/'}>
-              <Icons type="website" size={8} />
+              <Icons type="website" size={9} />
               <Text tag="p" path="sidebar_link_profile" />
             </SidebarItem>
           </Link>
           <Link to="/resume" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/resume'}>
-              <Icons type="textDocument" size={8} />
+              <Icons type="textDocument" size={9} />
               <Text tag="p" path="sidebar_link_cv" />
             </SidebarItem>
           </Link>
           <Link to="/certification" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/certification'}>
-              <Icons type="certificates" size={8} />
+              <Icons type="certificates" size={9} />
               <Text tag="p" path="sidebar_link_ct" />
             </SidebarItem>
           </Link>
           <Link to="/projects" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/projects'}>
-              <Icons type="projects" size={8} />
+              <Icons type="projects" size={9} />
               <Text tag="p" path="sidebar_link_projects" />
             </SidebarItem>
           </Link>
           <Link to="/code" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/code'}>
-              <Icons type="codeBlock" size={8} />
+              <Icons type="codeBlock" size={9} />
               <Text tag="p" path="sidebar_link_code" />
             </SidebarItem>
           </Link>
           <Link to="/settings" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/settings'}>
-              <Icons type="settings" size={8} />
+              <Icons type="settings" size={9} />
               <Text tag="p" path="sidebar_link_settings" />
             </SidebarItem>
           </Link>

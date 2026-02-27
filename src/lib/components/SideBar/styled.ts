@@ -4,7 +4,7 @@ import { RoundedBtn } from 'src/lib/common/StyledComponents/Buttons';
 import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
 
 const sidebarSizeOpen = 90;
-const sidebarSize = 20;
+const sidebarSize = 23;
 const topOffset = 2;
 const leftOffset = 2;
 
@@ -18,20 +18,19 @@ export const Container = styled.div(
 export const SidebarBox = styled.aside<IStyledProps>(
   ({ theme, active, hidden }) => css`
     position: fixed;
-    left: ${cssSize(2)};
-    top: ${cssSize(2)};
+    left: 0;
+    top: 0;
     z-index: 2;
-    height: 99%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: ${cssSize(5)} 0;
+    padding: ${cssSize(16)} 0;
     color: ${theme.colors.mainText};
-    border-radius: ${theme.radius.lg};
     overflow: hidden;
     text-transform: capitalize;
     background-color: ${theme.colors.mainBg};
-    transition: all 0.3s ease-out;
+    transition: all 0.1s ease-out;
 
     a {
       text-decoration: none;
@@ -40,7 +39,7 @@ export const SidebarBox = styled.aside<IStyledProps>(
     @media (max-width: ${screenSize.tablet}px) {
       justify-content: flex-start;
       gap: ${cssSize(14)};
-      top: ${cssSize(topOffset)};
+      top: 0;
       width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
       ${!active && 'transform: translateX(-5rem);'};
     }
@@ -60,7 +59,7 @@ export const SidebarItem = styled.div<IStyledProps>(
     display: flex;
     align-items: center;
     gap: ${cssSize(6)};
-    padding: ${cssSize(4)} ${cssSize(6)};
+    padding: ${cssSize(4)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
     ${active === false && `opacity: 0.7;`}
@@ -81,7 +80,7 @@ export const SidebarItem = styled.div<IStyledProps>(
         position: absolute;
         top: 115%;
         left: 0;
-        width: ${active ? cssSize(8) : 0};
+        width: ${active ? cssSize(9) : 0};
         height: ${cssSize(1.3)};
         background-color: ${theme.colors.mainText};
         transition: width 0.3s;
