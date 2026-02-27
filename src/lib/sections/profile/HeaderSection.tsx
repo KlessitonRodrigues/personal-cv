@@ -16,29 +16,31 @@ const ProfileHeaderSection = () => {
   const isMobile = isMobileScreen();
 
   return (
-    <Section>
-      <Outdoor>
-        <OutdoorImage src={themeCtx.isDark ? desktopDarkBg : desktopBg} />
-        <OutdoorContent>
-          <AvatarBig src={profile} />
-          <b>
-            <Text tag="h2" path="header_name" />
-          </b>
-          <Text tag="h3" path="header_work" />
-          <Text tag="p" path="cv_resume" />
-          <Row left responsive gap={8}>
-            <LinkAndIcon icon="website" path="header_page_text" url={urls.personalPage} />
-            <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
-            <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
-            <LinkAndIcon
-              icon="whatsapp"
-              label="WhatsApp"
-              url={isMobile ? urls.whatsapp : urls.whatsappWeb}
-            />
-          </Row>
-        </OutdoorContent>
-      </Outdoor>
-    </Section>
+    <Row>
+      <Section>
+        <Outdoor>
+          <OutdoorImage src={themeCtx.isDark ? desktopDarkBg : desktopBg} />
+          <OutdoorContent>
+            <AvatarBig src={profile} />
+            <b>
+              <Text tag="h2" path="header_name" />
+            </b>
+            <Text tag="h3" path="header_work" />
+            <Text tag="p" path="cv_resume" />
+            <Row left responsive gap={8}>
+              <LinkAndIcon icon="website" path="header_page_text" url={urls.personalPage} />
+              <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
+              <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
+              <LinkAndIcon
+                icon="whatsapp"
+                label="WhatsApp"
+                url={isMobile ? urls.whatsapp : urls.whatsappWeb}
+              />
+            </Row>
+          </OutdoorContent>
+        </Outdoor>
+      </Section>
+    </Row>
   );
 };
 
