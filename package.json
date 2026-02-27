@@ -9,26 +9,26 @@
     "format": "prettier -c -w ./src"
   },
   "dependencies": {
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
-    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
-    "@types/react": "^19.2.7",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@types/styled-components": "^5.1.36",
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^5.1.4",
     "flag-icons": "^7.5.0",
-    "prettier": "^3.7.3",
+    "prettier": "^3.8.1",
     "react-icons": "^5.5.0",
-    "react-router-dom": "^7.9.6",
+    "react-router-dom": "^7.13.1",
     "sharp": "^0.34.5",
-    "styled-components": "^6.1.16",
+    "styled-components": "^6.3.11",
     "svgo": "^4.0.0",
     "typescript": "^5.9.3",
-    "vite": "^7.2.6",
+    "vite": "^7.3.1",
     "vite-plugin-image-optimizer": "^2.0.3",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite-tsconfig-paths": "^6.1.1"
   }
 }

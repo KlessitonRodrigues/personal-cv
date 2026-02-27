@@ -14,16 +14,16 @@
     "build-container": "docker exec -it eas-local-builder bash -c 'eas build -p android --profile development --local'"
   },
   "dependencies": {
-    "expo": "^53.0.4",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "react-native": "0.79.5",
-    "react-native-web": "^0.20.0"
+    "expo": "^55.0.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-native": "0.84.0",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "expo-dev-client": "~5.2.4",
-    "expo-status-bar": "^2.2.3",
-    "react-native-webview": "13.13.5"
+    "@babel/core": "^7.29.0",
+    "expo-dev-client": "~55.0.10",
+    "expo-status-bar": "^55.0.4",
+    "react-native-webview": "13.16.0"
   }
 }
