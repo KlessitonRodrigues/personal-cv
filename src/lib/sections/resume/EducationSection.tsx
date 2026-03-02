@@ -1,3 +1,5 @@
+import { urls } from 'src/constants/urls';
+import LinkAndIcon from 'src/lib/common/Links/LinkAndIcon';
 import { Card, Section } from 'src/lib/common/StyledComponents/Containers';
 import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/common/StyledComponents/Flex';
@@ -9,7 +11,10 @@ const ResumeEducationSection = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h4" path="education_title" />
+          <Row between>
+            <Text tag="h4" path="education_title" />
+            <LinkAndIcon icon="link" size={5} url={urls.personalPageCertificates} label="link" />
+          </Row>
           <Hr />
         </Column>
 

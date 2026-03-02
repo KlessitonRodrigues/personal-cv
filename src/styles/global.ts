@@ -68,6 +68,7 @@ export default createGlobalStyle(
       font-style: normal;
       font-weight: normal;
       font-size: ${theme.fontSize.sm};
+      opacity: 0.8;
     }
     mark {
       font-size: ${theme.fontSize.sm};

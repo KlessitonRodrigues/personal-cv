@@ -58,7 +58,7 @@ const ProfileExperienceSection = () => {
   return (
     <Section>
       <Card>
-        <Text tag="h3" path="experience_title" />
+        <Text id="experience" tag="h3" path="experience_title" />
         <Hr />
         <Grid cols={2} responsive gap={4}>
           {ExperienceItems}

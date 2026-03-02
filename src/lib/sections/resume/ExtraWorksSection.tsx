@@ -1,8 +1,10 @@
 import { urls } from 'src/constants/urls';
 import Icons from 'src/lib/common/Icons';
-import { Box, Card, Section } from 'src/lib/common/StyledComponents/Containers';
+import LinkAndIcon from 'src/lib/common/Links/LinkAndIcon';
+import { Card, Section } from 'src/lib/common/StyledComponents/Containers';
 import { Hr } from 'src/lib/common/StyledComponents/Divisors';
-import { Column, Grid, Row } from 'src/lib/common/StyledComponents/Flex';
+import { Column, Row } from 'src/lib/common/StyledComponents/Flex';
+import { List, ListItem } from 'src/lib/common/StyledComponents/List';
 import Text from 'src/lib/common/Text';
 
 const ExtraWorksSection = () => {
@@ -10,67 +12,95 @@ const ExtraWorksSection = () => {
     <Section>
       <Card>
         <Column left>
-          <Text tag="h4" path="extraworks_title" />
+          <Row between>
+            <Text tag="h4" path="extraworks_title" />
+            <LinkAndIcon icon="link" size={5} url={urls.personalPageProjects} label="link" />
+          </Row>
           <Hr />
           <Text tag="p" path="extraworks_text" />
         </Column>
 
-        <Grid cols={2}>
-          <Box>
+        <List>
+          <ListItem>
             <Row left>
               <a href={urls.personalPageRep} target="_blank">
                 <Text tag="h6" path="extraworks_personalcv" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_personalcv_text" />
-            <Text tag="small" path="extraworks_personalcv_tech" />
-          </Box>
+            <Text tag="em" path="extraworks_personalcv_text" />
+          </ListItem>
 
-          <Box>
+          <ListItem>
             <Row left>
-              <a href={urls.jsBackupRep} target="_blank">
-                <Text tag="h6" path="extraworks_jsbackup" />
+              <a href={urls.authenticationFormRepo} target="_blank">
+                <Text tag="h6" path="extraworks_authentication_form" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_jsbackup_text" />
-            <Text tag="small" path="extraworks_jsbackup_tech" />
-          </Box>
+            <Text tag="em" path="extraworks_authentication_form_text" />
+          </ListItem>
 
-          <Box>
+          <ListItem>
             <Row left>
-              <a href={urls.nutriacademy} target="_blank">
-                <Text tag="h6" path="extraworks_nutriacademy" />
+              <a href={urls.multiStepFormRepo} target="_blank">
+                <Text tag="h6" path="extraworks_multistepform" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_nutriacademy_text" />
-            <Text tag="small" path="extraworks_nutriacademy_tech" />
-          </Box>
+            <Text tag="em" path="extraworks_multistepform_text" />
+          </ListItem>
 
-          <Box>
+          <ListItem>
             <Row left>
-              <a href={urls.quizRepo} target="_blank">
-                <Text tag="h6" path="extraworks_quiz" />
+              <a href={urls.sellerRepo} target="_blank">
+                <Text tag="h6" path="extraworks_sellerapp" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_quiz_text" />
-            <Text tag="small" path="extraworks_quiz_tech" />
-          </Box>
+            <Text tag="em" path="extraworks_sellerapp_text" />
+          </ListItem>
 
-          <Box>
+          <ListItem>
+            <Row left>
+              <a href={urls.gameFinderPage} target="_blank">
+                <Text tag="h6" path="extraworks_gamefinder" />
+              </a>
+              <Icons size={5} type="link" />
+            </Row>
+            <Text tag="em" path="extraworks_gamefinder_text" />
+          </ListItem>
+
+          <ListItem>
+            <Row left>
+              <a href={urls.consoleUIRepo} target="_blank">
+                <Text tag="h6" path="extraworks_consoleui" />
+              </a>
+              <Icons size={5} type="link" />
+            </Row>
+            <Text tag="em" path="extraworks_consoleui_text" />
+          </ListItem>
+
+          <ListItem>
+            <Row left>
+              <a href={urls.encryptEasyRepo} target="_blank">
+                <Text tag="h6" path="extraworks_easyencrypt" />
+              </a>
+              <Icons size={5} type="link" />
+            </Row>
+            <Text tag="em" path="extraworks_easyencrypt_text" />
+          </ListItem>
+
+          <ListItem>
             <Row left>
               <a href={urls.awsProxyApiRepo} target="_blank">
                 <Text tag="h6" path="extraworks_aws_proxy_api" />
               </a>
               <Icons size={5} type="link" />
             </Row>
-            <Text tag="p" path="extraworks_aws_proxy_api_text" />
-            <Text tag="small" path="extraworks_aws_proxy_api_tech" />
-          </Box>
-        </Grid>
+            <Text tag="em" path="extraworks_aws_proxy_api_text" />
+          </ListItem>
+        </List>
       </Card>
     </Section>
   );

@@ -14,13 +14,12 @@ export const ListItem = styled.li(
   ({ theme }) => css`
     list-style: none;
     position: relative;
-    margin-bottom: ${cssSize(1)};
+    margin-bottom: ${cssSize(2)};
 
     &::after {
       content: '';
       padding: 2.5px;
       border: 1px solid ${theme.colors.text1};
-      background-color: ${theme.colors.text1};
       border-radius: 50%;
       position: absolute;
       left: -18px;

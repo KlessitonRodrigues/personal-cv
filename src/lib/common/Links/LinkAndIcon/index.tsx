@@ -8,15 +8,16 @@ type ILinkAndIcon = {
   icon?: IconsType;
   label?: string;
   path?: string;
+  size?: number;
 };
 
 const LinkAndIcon = (props: ILinkAndIcon) => {
-  const { url, icon, label, path } = props;
+  const { url, icon, label, path, size } = props;
 
   return (
     <a href={url} target="_blank">
       <OutlineBtn>
-        <Icons size={9} type={icon || 'link'} />
+        <Icons size={size || 9} type={icon || 'link'} />
         <p>{label}</p>
         {path && <Text tag="p" path={path} />}
       </OutlineBtn>

@@ -1,3 +1,4 @@
+import ScrollToHashOnLoad from 'src/lib/common/Links/ScrollToHash';
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
 import ProfileExperienceSection from 'src/lib/sections/profile/ExperienceSection';
@@ -9,6 +10,7 @@ const ProfilePage = () => {
       <Page>
         <ProfileHeaderSection />
         <ProfileExperienceSection />
+        <ScrollToHashOnLoad />
       </Page>
     </SideBar>
   );
