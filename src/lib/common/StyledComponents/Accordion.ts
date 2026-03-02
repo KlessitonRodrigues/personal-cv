@@ -9,7 +9,6 @@ export const AccordionContainer = styled.div<IStyledProps>(
     border-radius: ${theme.radius.sm};
     padding: 0 ${cssSize(6)};
     cursor: pointer;
-    transition: 0.3s;
 
     &:hover {
       border: ${theme.border.md};
@@ -23,7 +22,7 @@ export const AccordionContainer = styled.div<IStyledProps>(
     }
 
     ${AccordionContent} {
-      ${active && `max-height: ${cssSize(150)};`}
+      ${active && `max-height: ${cssSize(180)}; padding-bottom: ${cssSize(4)};`}
     }
   `,
 );
@@ -43,6 +42,6 @@ export const AccordionContent = styled.div(
     height: 100%;
     max-height: 0;
     overflow: hidden;
-    transition: 0.5s;
+    transition: max-height 0.6s;
   `,
 );
