@@ -1,11 +1,9 @@
 import { BiCog } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
-import { HiCog } from 'react-icons/hi';
 import {
   LuChevronLeft,
   LuChevronRight,
-  LuCog,
   LuDownload,
   LuFileText,
   LuImage,
@@ -21,12 +19,12 @@ import {
 } from 'react-icons/lu';
 import {
   PiAndroidLogoBold,
-  PiCertificate,
-  PiCodeBlock,
-  PiDevices,
+  PiCertificateBold,
+  PiCodeBlockBold,
+  PiDevicesBold,
   PiDotOutlineFill,
-  PiNotebook,
-  PiStudent,
+  PiNotebookBold,
+  PiStudentBold,
 } from 'react-icons/pi';
 import {
   RiExpandUpDownFill,
@@ -136,22 +134,22 @@ export const iconMap = {
   bootstrap: <SiBootstrap />,
   whatsapp: <RiWhatsappLine />,
   udemy: <SiUdemy />,
-  school: <PiStudent />,
-  certificates: <PiCertificate />,
+  school: <PiStudentBold />,
+  certificates: <PiCertificateBold />,
   caretLeft: <LuChevronLeft />,
   caretRight: <LuChevronRight />,
-  projects: <PiDevices />,
+  projects: <PiDevicesBold />,
   cordova: <SiApachecordova />,
   cypress: <SiCypress />,
   pritter: <LuPrinter />,
   quill: <RiQuillPenLine />,
   shadcn: <SiShadcnui />,
   android: <PiAndroidLogoBold />,
-  codeBlock: <PiCodeBlock />,
+  codeBlock: <PiCodeBlockBold />,
   dot: <PiDotOutlineFill />,
   redux: <SiRedux />,
   openAI: <SiOpenai />,
-  notebook: <PiNotebook />,
+  notebook: <PiNotebookBold />,
   daisyUI: <SiDaisyui />,
   transformers: <SiJavascript />,
   huggingFace: <SiHuggingface />,
