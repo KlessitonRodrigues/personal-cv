@@ -1,3 +1,5 @@
+import { IThemeColors } from 'src/styles/theme';
+
 export const getLanguage = () => {
   try {
     return (localStorage.getItem('lang') || 'pt').toLowerCase();
@@ -15,7 +17,7 @@ export const changeLanguage = (lang: string) => {
 
 export const getColor = () => {
   try {
-    return localStorage.getItem('color') || 'indigo';
+    return (localStorage.getItem('color') as IThemeColors) || 'indigo';
   } catch (err) {
     return 'indigo';
   }

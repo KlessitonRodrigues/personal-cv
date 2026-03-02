@@ -65,22 +65,22 @@ export type IThemeProps = {
   };
 };
 
-export const getTheme = (dark: boolean, color: IThemeColors) => {
-  const colors: Record<IThemeColors, any> = {
-    indigo: { main: material.indigo['400'], mainBg: material.indigo['800'] },
-    purple: { main: material.purple['400'], mainBg: material.purple['800'] },
-    blue: { main: ant.blue['500'], mainBg: ant.blue['800'] },
-    magenta: { main: ant.magenta['700'], mainBg: ant.magenta['900'] },
-    green: { main: ant.green['700'], mainBg: ant.green['900'] },
-    red: { main: ant.red['700'], mainBg: ant.red['900'] },
-    yellow: { main: ant.gold['700'], mainBg: ant.gold['900'] },
-    orange: { main: ant.orange['700'], mainBg: ant.orange['900'] },
-    pink: { main: material.pink['700'], mainBg: material.pink['900'] },
-  };
+export const themeColors: Record<IThemeColors, any> = {
+  indigo: { main: material.indigo['400'], mainBg: material.indigo['900'] },
+  purple: { main: material.purple['400'], mainBg: material.purple['900'] },
+  blue: { main: material.blue['400'], mainBg: material.blue['900'] },
+  green: { main: material.green['400'], mainBg: material.green['900'] },
+  magenta: { main: ant.magenta['600'], mainBg: ant.magenta['900'] },
+  red: { main: ant.red['600'], mainBg: ant.red['900'] },
+  yellow: { main: ant.gold['600'], mainBg: ant.gold['900'] },
+  orange: { main: ant.orange['600'], mainBg: ant.orange['900'] },
+  pink: { main: material.pink['600'], mainBg: material.pink['900'] },
+};
 
+export const getTheme = (dark: boolean, color: IThemeColors) => {
   const theme: IThemeProps = {
     colors: {
-      ...colors[color],
+      ...themeColors[color],
       mainText: material.grey['50'],
       bg1: ant.gray['100'],
       bg2: ant.gray['200'],

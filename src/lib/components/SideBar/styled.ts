@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { RoundedBtn } from 'src/lib/common/StyledComponents/Buttons';
 import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
 
-const sidebarSizeOpen = 90;
+const sidebarSizeOpen = 80;
 const sidebarSize = 23;
 const topOffset = 2;
 const leftOffset = 2;
@@ -25,13 +25,13 @@ export const SidebarBox = styled.aside<IStyledProps>(
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: ${cssSize(16)} 0;
+    padding: ${cssSize(8)} 0;
     color: ${theme.colors.mainText};
     overflow: hidden;
     text-transform: capitalize;
     background-color: ${theme.colors.mainBg};
-    box-shadow: ${theme.shadow.md};
-    transition: all 0.1s ease-out;
+    box-shadow: ${theme.shadow.lg};
+    transition: width 0.15s ease-out;
 
     a {
       text-decoration: none;
@@ -45,7 +45,7 @@ export const SidebarBox = styled.aside<IStyledProps>(
       ${!active && 'transform: translateX(-5rem);'};
     }
 
-    @media (min-width: ${screenSize.tablet}px) {
+    @media (min-width: ${screenSize.tablet + 1}px) {
       width: ${cssSize(sidebarSizeOpen)};
       ${hidden && `width: ${cssSize(sidebarSize)};`}
       &:hover {
@@ -63,7 +63,7 @@ export const SidebarItem = styled.div<IStyledProps>(
     padding: ${cssSize(4)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
-    ${active === false && `opacity: 0.7;`}
+    ${active === false && `opacity: 0.65;`}
 
     &:hover {
       opacity: ${!active && 0.8};
@@ -82,7 +82,7 @@ export const SidebarItem = styled.div<IStyledProps>(
         top: 115%;
         left: 0;
         width: ${active ? cssSize(9) : 0};
-        height: ${cssSize(1.3)};
+        height: ${cssSize(1.2)};
         background-color: ${theme.colors.mainText};
         transition: width 0.3s;
       }
