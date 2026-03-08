@@ -65,6 +65,7 @@ import {
   SiPostman,
   SiPuppeteer,
   SiReact,
+  SiReacthookform,
   SiRedux,
   SiSass,
   SiSelenium,
@@ -154,4 +155,5 @@ export const iconMap = {
   transformers: <SiJavascript />,
   huggingFace: <SiHuggingface />,
   settings: <BiCog />,
+  reactHookForm: <SiReacthookform />,
 };

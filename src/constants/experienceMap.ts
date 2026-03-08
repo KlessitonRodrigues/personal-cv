@@ -107,6 +107,12 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'mantineui',
   },
   {
+    name: 'React Hook Form',
+    year: 2023,
+    type: 'frontend',
+    icon: 'reactHookForm',
+  },
+  {
     name: 'Docker',
     year: 2023,
     type: 'infra',

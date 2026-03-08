@@ -70,11 +70,11 @@ export const themeColors: Record<IThemeColors, any> = {
   purple: { main: material.purple['400'], mainBg: material.purple['900'] },
   blue: { main: material.blue['400'], mainBg: material.blue['900'] },
   green: { main: material.green['400'], mainBg: material.green['900'] },
-  magenta: { main: ant.magenta['600'], mainBg: ant.magenta['900'] },
-  red: { main: ant.red['600'], mainBg: ant.red['900'] },
-  yellow: { main: ant.gold['600'], mainBg: ant.gold['900'] },
-  orange: { main: ant.orange['600'], mainBg: ant.orange['900'] },
-  pink: { main: material.pink['600'], mainBg: material.pink['900'] },
+  magenta: { main: ant.magenta['700'], mainBg: ant.magenta['900'] },
+  red: { main: ant.red['700'], mainBg: ant.red['900'] },
+  yellow: { main: ant.gold['700'], mainBg: ant.gold['900'] },
+  orange: { main: ant.orange['700'], mainBg: ant.orange['900'] },
+  pink: { main: material.pink['700'], mainBg: material.pink['900'] },
 };
 
 export const getTheme = (dark: boolean, color: IThemeColors) => {
