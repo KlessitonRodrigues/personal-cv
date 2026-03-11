@@ -5,6 +5,7 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Row } from 'src/lib/common/StyledComponents/Flex';
 import { Image } from 'src/lib/common/StyledComponents/Images';
 import Text from 'src/lib/common/Text';
+import jsTsImg from 'src/public/images/udemy_js_ts.jpg';
 import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
 import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
@@ -19,18 +20,19 @@ const UdemyCertificatesSection = () => {
         </Row>
         <Hr />
         <Accordion
-          delayLoad
           title={<Text tag="p" path="education_udemy_course_1" />}
+          content={<Image src={jsTsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_2" />}
           content={<Image src={reactReduxImg} maxw="45rem" maxh="30rem" />}
         />
         <Accordion
-          delayLoad
-          title={<Text tag="p" path="education_udemy_course_2" />}
+          title={<Text tag="p" path="education_udemy_course_3" />}
           content={<Image src={reactHooksImg} maxw="45rem" maxh="30rem" />}
         />
         <Accordion
-          delayLoad
-          title={<Text tag="p" path="education_udemy_course_3" />}
+          title={<Text tag="p" path="education_udemy_course_4" />}
           content={<Image src={nextJsImg} maxw="45rem" maxh="30rem" />}
         />
       </Card>

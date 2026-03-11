@@ -17,7 +17,6 @@ const AcademyCertificatesSection = () => {
         </Row>
         <Hr />
         <Accordion
-          delayLoad
           title={<Text tag="p" path="education_school" />}
           content={<Image src={schoolImg} maxw="45rem" maxh="30rem" />}
         />

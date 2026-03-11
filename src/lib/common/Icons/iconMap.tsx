@@ -39,6 +39,7 @@ import {
   SiApachecordova,
   SiBootstrap,
   SiClojure,
+  SiCodecademy,
   SiCss3,
   SiCypress,
   SiDaisyui,
@@ -156,4 +157,5 @@ export const iconMap = {
   huggingFace: <SiHuggingface />,
   settings: <BiCog />,
   reactHookForm: <SiReacthookform />,
+  codecademy: <SiCodecademy />,
 };
