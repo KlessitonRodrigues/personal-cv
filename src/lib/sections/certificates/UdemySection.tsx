@@ -5,7 +5,9 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Row } from 'src/lib/common/StyledComponents/Flex';
 import { Image } from 'src/lib/common/StyledComponents/Images';
 import Text from 'src/lib/common/Text';
+import englishImg from 'src/public/images/udemy_english.jpg';
 import jsTsImg from 'src/public/images/udemy_js_ts.jpg';
+import nestJsImg from 'src/public/images/udemy_nestjs.jpg';
 import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
 import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
@@ -34,6 +36,14 @@ const UdemyCertificatesSection = () => {
         <Accordion
           title={<Text tag="p" path="education_udemy_course_4" />}
           content={<Image src={nextJsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_11" />}
+          content={<Image src={englishImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_6" />}
+          content={<Image src={nestJsImg} maxw="45rem" maxh="30rem" />}
         />
       </Card>
     </Section>
