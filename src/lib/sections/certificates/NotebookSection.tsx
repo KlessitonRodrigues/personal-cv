@@ -29,6 +29,11 @@ const NotebookLinksSection = () => {
             label={getText('certificates_notebook_nodejs')}
             url={urls.nodejsNotes}
           />
+          <LinkAndIcon
+            icon="docker"
+            label={getText('certificates_notebook_docker')}
+            url={urls.dockerNotes}
+          />
           <If check={false}>
             <LinkAndIcon
               icon="html"

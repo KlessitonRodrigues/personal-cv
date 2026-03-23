@@ -16,8 +16,8 @@ const AuthenticationFormProjectSection = () => {
             <Text tag="p" path="extraworks_authentication_form_text" />
             <Text tag="small" path="extraworks_authentication_form_tech" />
             <Row left fit gap={4}>
-              <LinkAndIcon icon="github" label="GitHub" url={urls.authenticationFormRepo} />
               <LinkAndIcon icon="website" label="Website" url={urls.authenticationFormApp} />
+              <LinkAndIcon icon="github" label="GitHub" url={urls.authenticationFormRepo} />
             </Row>
           </Column>
           <ImageContainer>

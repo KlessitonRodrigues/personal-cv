@@ -36,6 +36,8 @@ export const urls = {
   htmlNotes:
     'https://docs.google.com/document/d/1f42EU_Lg_6JBeGjlabw9AKdFyurN_Gob1bk3CqpgpYk/edit?usp=sharing',
   awsNotes: '',
+  dockerNotes:
+    'https://docs.google.com/document/d/1HFCjaIOiGRbasevAepz6PwZeH_OAt4nJLXd8jLRI9Gc/edit?usp=sharing',
   authenticationFormRepo: 'https://github.com/KlessitonRodrigues/authentication-form',
   authenticationFormApp: 'https://dv6xqa9ixk4bs.cloudfront.net/',
 };
