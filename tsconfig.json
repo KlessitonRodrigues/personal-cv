@@ -16,7 +16,6 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "sourceMap": true,
-    "baseUrl": ".",
     "paths": {
       "src/*": ["./src/*"]
     },

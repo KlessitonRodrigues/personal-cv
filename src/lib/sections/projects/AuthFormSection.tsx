@@ -4,7 +4,7 @@ import { Card, Section } from 'src/lib/common/StyledComponents/Containers';
 import { Column, Row } from 'src/lib/common/StyledComponents/Flex';
 import { Image, ImageContainer } from 'src/lib/common/StyledComponents/Images';
 import Text from 'src/lib/common/Text';
-import authFormImg from 'src/public/images/auth_form_2.png';
+import authFormImg from 'src/public/images/auth_form.png';
 
 const AuthenticationFormProjectSection = () => {
   return (
