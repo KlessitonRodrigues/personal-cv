@@ -20,6 +20,11 @@ const NotebookLinksSection = () => {
         <Text tag="small" path="certificates_notebook_text" />
         <Row left gap={6}>
           <LinkAndIcon
+            icon="html"
+            label={getText('certificates_notebook_html')}
+            url={urls.htmlNotes}
+          />
+          <LinkAndIcon
             icon="react"
             label={getText('certificates_notebook_react')}
             url={urls.reactNotes}
@@ -35,11 +40,6 @@ const NotebookLinksSection = () => {
             url={urls.dockerNotes}
           />
           <If check={false}>
-            <LinkAndIcon
-              icon="html"
-              label={getText('certificates_notebook_html')}
-              url={urls.htmlNotes}
-            />
             <LinkAndIcon
               icon="aws"
               label={getText('certificates_notebook_aws')}

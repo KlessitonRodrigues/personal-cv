@@ -30,7 +30,7 @@
   "cv_resume": "Desenvolvedor Fullstack com experiência em aplicações Web e Mobile utilizando o ecossistema ReactJS, construção de API's usando NodeJS frameworks como ExpressJS ou NestJS e na utilização de serviços em nuvem como AWS lambda, S3, SES, SQS, DynamoDB entre outros, capacidade de auxiliar na manutenção de sistemas feitos em Java, C# ou Clojure. Gosto de ser criativo e tentar desenvolver minha própria solução para o problema, assim como gosto de aprender diferentes tipos de tecnologias e formas de melhorar produtividade e qualidade do código.",
   "experience_title": "Experiência",
   "experience_harmat": "Software de Gestão Harmat",
-  "experience_harmat_date": "2025/04 - 2025/12",
+  "experience_harmat_date": "2025/04 - 2026/02",
   "experience_harmat_text": "Plataforma online para gestão de serviços de controle de pragas, com agendamento de visitas, emissão de ordens de serviço, controle de estoque e faturamento. Participei da criação de formulários e da criação de mapas interativos para controle de pragas.",
   "experience_harmat_tech": "ReactJS, NextJS, TailwindCSS, Ant Design, .Net, C#",
   "experience_accourdous": "Software de Gestão Imobiliária Accourdous",

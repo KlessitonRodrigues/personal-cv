@@ -3,6 +3,11 @@ import { RouterProvider, createBrowserRouter, createMemoryRouter } from 'react-r
 
 import Router from 'src/pages/routes';
 
+import '../../authentication-form/applications/authentication/public/images/beach_bg_01.jpg';
+import '../../authentication-form/applications/authentication/public/images/beach_bg_02.jpg';
+import '../../authentication-form/applications/authentication/public/images/beach_bg_03.jpg';
+import '../../authentication-form/applications/authentication/public/images/beach_bg_04.jpg';
+import '../../authentication-form/applications/authentication/public/images/beach_bg_05.jpg';
 import { ThemeProvider } from './hooks/useTheme';
 import If from './lib/common/If';
 import AppProviders from './lib/components/AppProviders';
