@@ -23,7 +23,7 @@ const ExtraWorksSection = () => {
         <List>
           <ListItem>
             <Row left>
-              <a href={urls.personalPageRep} target="_blank">
+              <a href={urls.personalPage} target="_blank">
                 <Text tag="h6" path="extraworks_personalcv" />
               </a>
               <Icons size={5} type="link" />
@@ -33,7 +33,7 @@ const ExtraWorksSection = () => {
 
           <ListItem>
             <Row left>
-              <a href={urls.authenticationFormRepo} target="_blank">
+              <a href={urls.authenticationFormApp} target="_blank">
                 <Text tag="h6" path="extraworks_authentication_form" />
               </a>
               <Icons size={5} type="link" />
@@ -43,7 +43,7 @@ const ExtraWorksSection = () => {
 
           <ListItem>
             <Row left>
-              <a href={urls.multiStepFormRepo} target="_blank">
+              <a href={urls.multiStepFormApp} target="_blank">
                 <Text tag="h6" path="extraworks_multistepform" />
               </a>
               <Icons size={5} type="link" />
@@ -53,7 +53,7 @@ const ExtraWorksSection = () => {
 
           <ListItem>
             <Row left>
-              <a href={urls.sellerRepo} target="_blank">
+              <a href={urls.sellerApp} target="_blank">
                 <Text tag="h6" path="extraworks_sellerapp" />
               </a>
               <Icons size={5} type="link" />
@@ -69,26 +69,6 @@ const ExtraWorksSection = () => {
               <Icons size={5} type="link" />
             </Row>
             <Text tag="em" path="extraworks_gamefinder_text" />
-          </ListItem>
-
-          <ListItem>
-            <Row left>
-              <a href={urls.consoleUIRepo} target="_blank">
-                <Text tag="h6" path="extraworks_consoleui" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="em" path="extraworks_consoleui_text" />
-          </ListItem>
-
-          <ListItem>
-            <Row left>
-              <a href={urls.encryptEasyRepo} target="_blank">
-                <Text tag="h6" path="extraworks_easyencrypt" />
-              </a>
-              <Icons size={5} type="link" />
-            </Row>
-            <Text tag="em" path="extraworks_easyencrypt_text" />
           </ListItem>
 
           <ListItem>

@@ -6,6 +6,7 @@ import { Row } from 'src/lib/common/StyledComponents/Flex';
 import { Image } from 'src/lib/common/StyledComponents/Images';
 import Text from 'src/lib/common/Text';
 import schoolImg from 'src/public/images/diploma_medio-min.jpg';
+import highSchoolImg from 'src/public/images/diploma_superior.jpg';
 
 const AcademyCertificatesSection = () => {
   return (
@@ -19,6 +20,10 @@ const AcademyCertificatesSection = () => {
         <Accordion
           title={<Text tag="p" path="education_school" />}
           content={<Image src={schoolImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_ifpi" />}
+          content={<Image src={highSchoolImg} maxw="35rem" maxh="45rem" />}
         />
       </Card>
     </Section>

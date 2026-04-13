@@ -22,7 +22,7 @@ export const AccordionContainer = styled.div<IStyledProps>(
     }
 
     ${AccordionContent} {
-      ${active && `max-height: ${cssSize(180)}; padding-bottom: ${cssSize(4)};`}
+      ${active && `max-height: ${cssSize(250)}; padding-bottom: ${cssSize(4)};`}
     }
   `,
 );

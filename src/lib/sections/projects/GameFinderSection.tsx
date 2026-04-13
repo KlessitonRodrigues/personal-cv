@@ -16,8 +16,8 @@ const GameFinderProjectSection = () => {
             <Text tag="p" path="extraworks_game_finder_text" />
             <Text tag="small" path="extraworks_game_finder_tech" />
             <Row left gap={4}>
-              <LinkAndIcon icon="website" label="Website" url={urls.gameFinderRepo} />
-              <LinkAndIcon icon="github" label="GitHub" url={urls.gameFinderPage} />
+              <LinkAndIcon icon="website" label="Website" url={urls.gameFinderPage} />
+              <LinkAndIcon icon="github" label="GitHub" url={urls.gameFinderRepo} />
             </Row>
           </Column>
           <ImageContainer>
