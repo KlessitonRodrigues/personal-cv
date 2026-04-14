@@ -135,11 +135,11 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
     theme.colors.bg1 = ant.gray['1300'];
     theme.colors.bg2 = ant.gray['1200'];
     theme.colors.bg3 = ant.gray['1000'];
-    theme.colors.bg4 = ant.gray['900'];
-    theme.colors.text1 = ant.gray['500'];
-    theme.colors.text2 = ant.gray['600'];
-    theme.colors.text3 = ant.gray['700'];
-    theme.colors.text4 = ant.gray['800'];
+    theme.colors.bg4 = ant.gray['800'];
+    theme.colors.text1 = ant.gray['400'];
+    theme.colors.text2 = ant.gray['500'];
+    theme.colors.text3 = ant.gray['600'];
+    theme.colors.text4 = ant.gray['700'];
     theme.colors.gray = ant.gray['600'];
     theme.colors.white = ant.gray['300'];
     theme.border.lg = `solid 1px ${ant.gray['800']}`;
