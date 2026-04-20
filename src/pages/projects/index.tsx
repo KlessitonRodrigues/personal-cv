@@ -24,4 +24,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export const Component = ProjectsPage;

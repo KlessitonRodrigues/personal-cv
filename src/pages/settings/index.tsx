@@ -12,4 +12,4 @@ const SettingsPage = () => {
   );
 };
 
-export default SettingsPage;
+export const Component = SettingsPage;

@@ -16,4 +16,4 @@ const CertificatesPage = () => {
   );
 };
 
-export default CertificatesPage;
+export const Component = CertificatesPage;

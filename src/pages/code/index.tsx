@@ -12,4 +12,4 @@ const CodePage = () => {
   );
 };
 
-export default CodePage;
+export const Component = CodePage;

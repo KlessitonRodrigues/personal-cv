@@ -22,22 +22,22 @@ const languageOptions = [
   {
     label: getText('language_portuguese'),
     value: 'pt',
-    content: <Image src={BrSVG} w={cssSize(10)} h={cssSize(8)} />,
+    content: <Image src={BrSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
   },
   {
     label: getText('language_english'),
     value: 'en',
-    content: <Image src={UsSVG} w={cssSize(10)} h={cssSize(8)} />,
+    content: <Image src={UsSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
   },
   {
     label: getText('language_spanish'),
     value: 'es',
-    content: <Image src={EsSVG} w={cssSize(10)} h={cssSize(8)} />,
+    content: <Image src={EsSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
   },
   {
     label: getText('language_french'),
     value: 'fr',
-    content: <Image src={FrSVG} w={cssSize(10)} h={cssSize(8)} />,
+    content: <Image src={FrSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
   },
 ];
 

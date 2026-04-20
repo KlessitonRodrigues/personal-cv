@@ -23,4 +23,4 @@ const ResumePage = () => {
   );
 };
 
-export default ResumePage;
+export const Component = ResumePage;

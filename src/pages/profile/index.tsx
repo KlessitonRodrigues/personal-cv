@@ -16,4 +16,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export const Component = ProfilePage;
