@@ -22,7 +22,7 @@ export const urls = {
   whatsapp: 'https://wa.me/5589994009646',
   whatsappWeb: 'https://web.whatsapp.com/send/?phone=5589994009646',
   resumeFileUrl:
-    'https://drive.google.com/file/d/16QhwPIjL4fGmI5CXORVt7JQWDhe1ys2V/view?usp=sharing',
+    'https://drive.google.com/file/d/1PptTizwJSIoWUER3xLwrXauPKoiQBv2K/view?usp=sharing',
   profileApp: 'https://drive.google.com/file/d/10lIDWq6BrBkh9h7mt2ieXhRlNx1izAOU/view?usp=sharing',
   sellerRepo: 'https://github.com/KlessitonRodrigues/seller-app',
   sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
