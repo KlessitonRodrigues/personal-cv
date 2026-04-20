@@ -35,15 +35,6 @@ const ResumeExperienceSection = () => {
           <Text tag="small" path="experience_accourdous_tech" />
         </Column>
 
-        <Column left>
-          <Row left responsive>
-            <Text tag="h6" path="experience_cef" />
-            <Text tag="small" path="experience_cef_date" />
-          </Row>
-          <Text tag="p" path="experience_cef_text" />
-          <Text tag="small" path="experience_cef_tech" />
-        </Column>
-
         <Column left gap={2}>
           <Row left responsive>
             <Text tag="h6" path="experience_westpoint" />

@@ -48,7 +48,12 @@ export const SidebarBox = styled.aside<IStyledProps>(
     @media (min-width: ${screenSize.tablet + 1}px) {
       width: ${cssSize(sidebarSizeOpen)};
       ${hidden && `width: ${cssSize(sidebarSize)};`}
+
       &:hover {
+        width: ${cssSize(sidebarSizeOpen)};
+      }
+
+      @media (min-width: ${screenSize.desktopS}px) {
         width: ${cssSize(sidebarSizeOpen)};
       }
     }
@@ -63,7 +68,7 @@ export const SidebarItem = styled.div<IStyledProps>(
     padding: ${cssSize(4)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
-    ${active === false && `opacity: 0.65;`}
+    ${active === false && `opacity: 0.6;`}
 
     &:hover {
       opacity: ${!active && 0.8};
@@ -101,6 +106,10 @@ export const Content = styled.div<IStyledProps>(
     @media (max-width: ${screenSize.tablet}px) {
       padding-left: 0;
       padding-top: ${cssSize(topOffset + 14)};
+    }
+
+    @media (min-width: ${screenSize.desktopS}px) {
+      padding-left: ${cssSize(80)};
     }
   `,
 );
