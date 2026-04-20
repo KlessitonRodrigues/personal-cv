@@ -1,5 +1,6 @@
 {
-  "name": "deploy-personal-cv",
+  "name": "@services/cloudfront-deploy",
+  "version": "1.0.0",
   "scripts": {
     "cdk-synt": "cdk synthesize",
     "cdk-deploy": "cdk deploy"

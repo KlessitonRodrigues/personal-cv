@@ -9,7 +9,7 @@ type IUseThemeCtx = {
   setColor: (value: IThemeColors) => any;
 };
 
-// @ts-ignore
+// @ts-expect-error typeError
 const ThemeCtx = createContext<IUseThemeCtx>(null);
 
 const localTheme = getLocalTheme();

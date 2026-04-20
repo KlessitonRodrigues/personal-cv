@@ -1,3 +1,8 @@
+import BrSVG from 'flag-icons/flags/1x1/br.svg';
+import EsSVG from 'flag-icons/flags/1x1/es.svg';
+import FrSVG from 'flag-icons/flags/1x1/fr.svg';
+import UsSVG from 'flag-icons/flags/1x1/us.svg';
+
 import useTheme from 'src/hooks/useTheme';
 import Icons from 'src/lib/common/Icons';
 import { ColorBtn } from 'src/lib/common/StyledComponents/Buttons';
@@ -12,11 +17,6 @@ import { IThemeColors } from 'src/styles/theme';
 import { cssSize } from 'src/styles/utils';
 import { getText } from 'src/utils/i18n';
 import { changeLanguage, getLanguage } from 'src/utils/localStorage';
-
-import BrSVG from '/node_modules/flag-icons/flags/1x1/br.svg';
-import EsSVG from '/node_modules/flag-icons/flags/1x1/es.svg';
-import FrSVG from '/node_modules/flag-icons/flags/1x1/fr.svg';
-import UsSVG from '/node_modules/flag-icons/flags/1x1/us.svg';
 
 const languageOptions = [
   {

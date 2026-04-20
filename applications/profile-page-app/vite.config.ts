@@ -13,11 +13,4 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), imagePlugin],
   appType: 'spa',
   base: '',
-  build: {
-    rollupOptions: {
-      output: {
-        chunkFileNames: 'chunk-[hash].js',
-      },
-    },
-  },
 });

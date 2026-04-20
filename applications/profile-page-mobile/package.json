@@ -1,5 +1,5 @@
 {
-  "name": "personal-cv",
+  "name": "@applications/profile-page-mobile",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,18 +7,20 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "eas build -p android --profile preview",
-    "build-local": "eas build -p android --profile development --local",
+    "android-build": "eas build -p android --profile preview",
+    "android-build-local": "eas build -p android --profile development --local",
     "start-container": "docker-compose up -d --build",
     "stop-container": "docker-compose down",
     "build-container": "docker exec -it eas-local-builder bash -c 'eas build -p android --profile development --local'"
   },
   "dependencies": {
     "expo": "^55.0.3",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
     "react-native": "0.84.0",
     "react-native-web": "^0.21.2"
+  },
+  "peerDependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",

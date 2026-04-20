@@ -1,6 +1,6 @@
-import { BiCog } from 'react-icons/bi';
+import { BiCog, BiLogoAws } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
+import { FaAws, FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
@@ -34,13 +34,12 @@ import {
   RiWhatsappLine,
 } from 'react-icons/ri';
 import {
-  SiAmazonwebservices,
   SiAndroidstudio,
   SiApachecordova,
   SiBootstrap,
   SiClojure,
   SiCodecademy,
-  SiCss3,
+  SiCss,
   SiCypress,
   SiDaisyui,
   SiDocker,
@@ -101,12 +100,12 @@ export const iconMap = {
   linkedin: <FaLinkedin />,
   facebook: <FaFacebook />,
   html: <SiHtml5 />,
-  css: <SiCss3 />,
+  css: <SiCss />,
   javascript: <SiJavascript />,
   typescript: <SiTypescript />,
   docker: <SiDocker />,
   styledComponents: <SiStyledcomponents />,
-  aws: <SiAmazonwebservices />,
+  aws: <BiLogoAws />,
   mongoDb: <SiMongodb />,
   nodejs: <SiNodedotjs />,
   sass: <SiSass />,

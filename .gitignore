@@ -6,6 +6,7 @@ dist/
 coverage/
 _tests/
 .expo/
+.turbo/
 
 # Files
 *.log
