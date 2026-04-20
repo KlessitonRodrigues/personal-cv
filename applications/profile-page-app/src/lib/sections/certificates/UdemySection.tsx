@@ -5,6 +5,7 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Row } from 'src/lib/common/StyledComponents/Flex';
 import { Image } from 'src/lib/common/StyledComponents/Images';
 import Text from 'src/lib/common/Text';
+import awsServelessImg from 'src/public/images/udemy_aws.jpg';
 import clojureImg from 'src/public/images/udemy_clojure.jpg';
 import dockerImg from 'src/public/images/udemy_docker.jpg';
 import englishImg from 'src/public/images/udemy_english.jpg';
@@ -54,6 +55,10 @@ const UdemyCertificatesSection = () => {
         <Accordion
           title={<Text tag="p" path="education_udemy_course_12" />}
           content={<Image src={englishImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_8" />}
+          content={<Image src={awsServelessImg} maxw="45rem" maxh="30rem" />}
         />
       </Card>
     </Section>
