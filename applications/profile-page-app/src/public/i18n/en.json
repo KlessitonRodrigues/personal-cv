@@ -108,6 +108,7 @@
   "certificates_notebook_html": "HTML",
   "certificates_notebook_aws": "AWS",
   "certificates_notebook_docker": "Docker",
+  "certificates_notebook_english": "English",
 
   "language_title": "Languages",
   "language_pt_title": "Portuguese",
@@ -163,6 +164,9 @@
   "extraworks_authentication_form": "Authentication Form",
   "extraworks_authentication_form_text": "Authentication form with email and password validation, password visibility toggle and submit button with loading state.",
   "extraworks_authentication_form_tech": "NextJS, DaisyUI, AWS Lambdas, AWS DynamoDB",
+  "extraworks_landing_page_template": "Landing Page Template",
+  "extraworks_landing_page_template_text": "Landing page template with reusable components and responsive design, translation support and customizable theme, made with NextJS and DaisyUI.",
+  "extraworks_landing_page_template_tech": "NextJS, DaisyUI, AWS Cloudfront",
   "profile_year": "year",
   "profile_years": "years",
 

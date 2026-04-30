@@ -17,6 +17,7 @@ export const urls = {
   encryptEasyRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   quizRepo: 'https://github.com/KlessitonRodrigues/quiz-app',
   awsProxyApiRepo: 'https://github.com/KlessitonRodrigues/aws-cors-proxy',
+
   translatePwa: 'https://github.com/KlessitonRodrigues/translation-pwa',
   nutriacademy: 'https://github.com/KlessitonRodrigues/acadenutri-project',
   whatsapp: 'https://wa.me/5589994009646',
@@ -36,6 +37,10 @@ export const urls = {
   htmlNotes:
     'https://docs.google.com/document/d/1f42EU_Lg_6JBeGjlabw9AKdFyurN_Gob1bk3CqpgpYk/edit?usp=sharing',
   awsNotes: '',
+  englishNotes:
+    'https://docs.google.com/document/d/1KUi9xjH95lnTfsGjIZpop6SSen0-_ypKUGze3mHu4Jk/edit?usp=sharing',
+  landingPageTemplateRepo: 'https://github.com/KlessitonRodrigues/landing-page-showcase',
+  landingPageTemplateApp: 'https://djzuplelkcucg.cloudfront.net',
   dockerNotes:
     'https://docs.google.com/document/d/1HFCjaIOiGRbasevAepz6PwZeH_OAt4nJLXd8jLRI9Gc/edit?usp=sharing',
   authenticationFormRepo: 'https://github.com/KlessitonRodrigues/authentication-form',

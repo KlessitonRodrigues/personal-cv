@@ -20,10 +20,16 @@ const NotebookLinksSection = () => {
         <Text tag="small" path="certificates_notebook_text" />
         <Row left gap={6}>
           <LinkAndIcon
+            icon="language"
+            label={getText('certificates_notebook_english')}
+            url={urls.englishNotes}
+          />
+          <LinkAndIcon
             icon="html"
             label={getText('certificates_notebook_html')}
             url={urls.htmlNotes}
           />
+
           <LinkAndIcon
             icon="react"
             label={getText('certificates_notebook_react')}

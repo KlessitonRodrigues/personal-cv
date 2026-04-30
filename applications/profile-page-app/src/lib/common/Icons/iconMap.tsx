@@ -25,6 +25,7 @@ import {
   PiDotOutlineFill,
   PiNotebookBold,
   PiStudentBold,
+  PiTranslateBold,
 } from 'react-icons/pi';
 import {
   RiExpandUpDownFill,
@@ -86,7 +87,7 @@ export const iconMap = {
   spinner: <RiLoader5Line />,
   github: <FaGithub />,
   template: <RiFileTextLine />,
-  language: <LuLanguages />,
+  language: <PiTranslateBold />,
   link: <LuLink />,
   textDocument: <LuFileText />,
   image: <LuImage />,

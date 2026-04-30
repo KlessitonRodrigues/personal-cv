@@ -110,6 +110,7 @@
   "certificates_notebook_html": "HTML",
   "certificates_notebook_aws": "AWS",
   "certificates_notebook_docker": "Docker",
+  "certificates_notebook_english": "Inglés",
 
   "language_title": "Idiomas",
   "language_pt_title": "Portugués",
@@ -165,6 +166,9 @@
   "extraworks_authentication_form": "Formulario de Autenticación",
   "extraworks_authentication_form_text": "Formulario de autenticación con validación de email y contraseña, alternancia de visibilidad de la contraseña y botón de envío con estado de carga.",
   "extraworks_authentication_form_tech": "NextJS, DaisyUI, AWS Lambdas, AWS DynamoDB",
+  "extraworks_landing_page_template": "Plantilla de Página de Aterrizaje",
+  "extraworks_landing_page_template_text": "Plantilla de página de aterrizaje con componentes reutilizables y diseño responsivo, soporte de traducción y tema personalizable, hecha con NextJS y DaisyUI.",
+  "extraworks_landing_page_template_tech": "NextJS, DaisyUI, AWS Cloudfront",
   "profile_year": "año",
   "profile_years": "años",
 

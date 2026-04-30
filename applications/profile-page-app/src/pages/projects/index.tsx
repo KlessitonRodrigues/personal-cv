@@ -4,6 +4,7 @@ import AuthenticationFormProjectSection from 'src/lib/sections/projects/AuthForm
 import AwsCorsProxyProjectSection from 'src/lib/sections/projects/AwsCorsProxySection';
 import ConsoleUIProjectSection from 'src/lib/sections/projects/ConsoleUISection';
 import GameFinderProjectSection from 'src/lib/sections/projects/GameFinderSection';
+import LandingPageTemplateProjectSection from 'src/lib/sections/projects/LandingPageTemplete';
 import MultiStepFormProjectSection from 'src/lib/sections/projects/MultiStepFormSection';
 import ProfileProjectSection from 'src/lib/sections/projects/ProfileProjectSection';
 import SellerAppProjectSection from 'src/lib/sections/projects/SellerAppSection';
@@ -13,6 +14,7 @@ const ProjectsPage = () => {
     <SideBar>
       <Page>
         <ProfileProjectSection />
+        <LandingPageTemplateProjectSection />
         <AuthenticationFormProjectSection />
         <MultiStepFormProjectSection />
         <AwsCorsProxyProjectSection />
