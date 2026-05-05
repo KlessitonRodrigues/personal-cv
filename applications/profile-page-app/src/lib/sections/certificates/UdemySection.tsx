@@ -13,6 +13,7 @@ import jsTsImg from 'src/public/images/udemy_js_ts.jpg';
 import nestJsImg from 'src/public/images/udemy_nestjs.jpg';
 import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
+import reactNativeImg from 'src/public/images/udemy_react_native.jpg';
 import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
 
 const UdemyCertificatesSection = () => {
@@ -39,6 +40,10 @@ const UdemyCertificatesSection = () => {
         <Accordion
           title={<Text tag="p" path="education_udemy_course_4" />}
           content={<Image src={nextJsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_13" />}
+          content={<Image src={reactNativeImg} maxw="45rem" maxh="30rem" />}
         />
         <Accordion
           title={<Text tag="p" path="education_udemy_course_6" />}

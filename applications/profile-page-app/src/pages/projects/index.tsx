@@ -2,7 +2,6 @@ import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
 import AuthenticationFormProjectSection from 'src/lib/sections/projects/AuthFormSection';
 import AwsCorsProxyProjectSection from 'src/lib/sections/projects/AwsCorsProxySection';
-import ConsoleUIProjectSection from 'src/lib/sections/projects/ConsoleUISection';
 import GameFinderProjectSection from 'src/lib/sections/projects/GameFinderSection';
 import LandingPageTemplateProjectSection from 'src/lib/sections/projects/LandingPageTemplete';
 import MultiStepFormProjectSection from 'src/lib/sections/projects/MultiStepFormSection';
@@ -20,7 +19,6 @@ const ProjectsPage = () => {
         <AwsCorsProxyProjectSection />
         <GameFinderProjectSection />
         <SellerAppProjectSection />
-        <ConsoleUIProjectSection />
       </Page>
     </SideBar>
   );

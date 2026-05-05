@@ -40,6 +40,9 @@ const ResumeEducationSection = () => {
               <Text tag="p" path="education_udemy_course_5" />
             </ListItem>
             <ListItem>
+              <Text tag="p" path="education_udemy_course_13" />
+            </ListItem>
+            <ListItem>
               <Text tag="p" path="education_udemy_course_6" />
             </ListItem>
             <ListItem>

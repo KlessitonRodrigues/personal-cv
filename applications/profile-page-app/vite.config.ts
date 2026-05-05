@@ -4,9 +4,9 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 const imagePlugin = ViteImageOptimizer({
-  jpg: { quality: 25 },
-  jpeg: { quality: 25 },
-  png: { quality: 5, colors: 64, dither: 0.5 },
+  jpg: { quality: 20 },
+  jpeg: { quality: 20 },
+  png: { quality: 20 },
 });
 
 export default defineConfig({
