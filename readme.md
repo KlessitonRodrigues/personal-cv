@@ -1,6 +1,6 @@
 ## ☰ Profile Page
 
-#### Available on: https://djc7924qzcvck.cloudfront.net/
+#### Available on: https://profile.klessitonrds.com/
 
 ### 🔨 Frameworks
 
