@@ -1,13 +1,12 @@
 import { BiCog, BiLogoAws } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaAws, FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
+import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
   LuDownload,
   LuFileText,
   LuImage,
-  LuLanguages,
   LuLink,
   LuMenu,
   LuMoon,
@@ -49,6 +48,7 @@ import {
   SiExpress,
   SiFigma,
   SiGit,
+  SiGradle,
   SiHeroku,
   SiHtml5,
   SiHuggingface,
@@ -58,6 +58,7 @@ import {
   SiMantine,
   SiMaterialdesign,
   SiMongodb,
+  SiMongoose,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
@@ -70,13 +71,16 @@ import {
   SiRedux,
   SiSass,
   SiSelenium,
+  SiSequelize,
   SiShadcnui,
   SiSpringboot,
   SiStyledcomponents,
   SiSvelte,
   SiTailwindcss,
+  SiTypeorm,
   SiTypescript,
   SiUdemy,
+  SiZod,
 } from 'react-icons/si';
 
 export type IconsType = keyof typeof iconMap;
@@ -158,4 +162,9 @@ export const iconMap = {
   settings: <BiCog />,
   reactHookForm: <SiReacthookform />,
   codecademy: <SiCodecademy />,
+  typeorm: <SiTypeorm />,
+  zod: <SiZod />,
+  sequelize: <SiSequelize />,
+  mongoose: <SiMongoose />,
+  gradle: <SiGradle />,
 };

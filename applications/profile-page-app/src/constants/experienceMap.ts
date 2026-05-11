@@ -41,10 +41,10 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'sass',
   },
   {
-    name: 'Figma',
-    year: 2022,
-    type: 'frontend',
-    icon: 'figma',
+    name: 'Git',
+    year: 2021,
+    type: 'infra',
+    icon: 'git',
   },
   {
     name: 'ReactJS',
@@ -71,6 +71,12 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'materialui',
   },
   {
+    name: 'Figma',
+    year: 2022,
+    type: 'frontend',
+    icon: 'figma',
+  },
+  {
     name: 'NodeJS',
     year: 2022,
     type: 'backend',
@@ -89,16 +95,40 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'typescript',
   },
   {
-    name: 'Git',
+    name: 'MongoDB',
+    year: 2022,
+    type: 'backend',
+    icon: 'mongoDb',
+  },
+  {
+    name: 'Mongoose',
+    year: 2022,
+    type: 'backend',
+    icon: 'mongoose',
+  },
+  {
+    name: 'Jest',
+    year: 2022,
+    type: 'tests',
+    icon: 'jest',
+  },
+  {
+    name: 'Insomnia',
     year: 2022,
     type: 'infra',
-    icon: 'git',
+    icon: 'insomnia',
   },
   {
     name: 'NextJS',
     year: 2023,
     type: 'frontend',
     icon: 'nextJS',
+  },
+  {
+    name: 'TailwindCSS',
+    year: 2023,
+    type: 'frontend',
+    icon: 'tailwind',
   },
   {
     name: 'MantineUI',
@@ -113,16 +143,22 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'reactHookForm',
   },
   {
+    name: 'Zod',
+    year: 2023,
+    type: 'frontend',
+    icon: 'zod',
+  },
+  {
     name: 'Docker',
     year: 2023,
     type: 'infra',
     icon: 'docker',
   },
   {
-    name: 'MongoDB',
+    name: 'Sequelize',
     year: 2023,
     type: 'backend',
-    icon: 'mongoDb',
+    icon: 'sequelize',
   },
   {
     name: 'PostgresDB',
@@ -131,16 +167,16 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'postgres',
   },
   {
-    name: 'Insomnia',
-    year: 2023,
-    type: 'infra',
-    icon: 'insomnia',
-  },
-  {
     name: 'Postman',
     year: 2023,
     type: 'infra',
     icon: 'postman',
+  },
+  {
+    name: 'Clojure',
+    year: 2023,
+    type: 'language',
+    icon: 'clojure',
   },
   {
     name: 'Heroku',
@@ -161,22 +197,16 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'electron',
   },
   {
-    name: 'Jest',
-    year: 2024,
-    type: 'tests',
-    icon: 'jest',
-  },
-  {
     name: 'PuppeterJS',
     year: 2024,
     type: 'tests',
     icon: 'puppeter',
   },
   {
-    name: 'React Native',
+    name: 'Android Studio',
     year: 2024,
     type: 'frontend',
-    icon: 'react',
+    icon: 'androidStudio',
   },
   {
     name: 'Expo',
@@ -185,16 +215,22 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'expo',
   },
   {
-    name: 'SvelteJS',
+    name: 'React Native',
+    year: 2024,
+    type: 'frontend',
+    icon: 'react',
+  },
+  {
+    name: 'Gradle',
+    year: 2024,
+    type: 'infra',
+    icon: 'gradle',
+  },
+  {
+    name: 'Svelte',
     year: 2024,
     type: 'frontend',
     icon: 'svelte',
-  },
-  {
-    name: 'TailwindCSS',
-    year: 2024,
-    type: 'frontend',
-    icon: 'tailwind',
   },
   {
     name: 'NestJS',
@@ -203,28 +239,10 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'nestJS',
   },
   {
-    name: 'Clojure',
-    year: 2025,
-    type: 'language',
-    icon: 'clojure',
-  },
-  {
-    name: 'Java',
-    year: 2025,
-    type: 'language',
-    icon: 'java',
-  },
-  {
-    name: 'Android Studio',
-    year: 2025,
-    type: 'frontend',
-    icon: 'androidStudio',
-  },
-  {
-    name: 'Spring Boot',
-    year: 2025,
+    name: 'TypeORM',
+    year: 2024,
     type: 'backend',
-    icon: 'springBoot',
+    icon: 'typeorm',
   },
   {
     name: 'Selenium',
@@ -233,22 +251,10 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'selenium',
   },
   {
-    name: 'Apache Cordova',
-    year: 2025,
-    type: 'frontend',
-    icon: 'cordova',
-  },
-  {
     name: 'Cypress',
     year: 2025,
     type: 'frontend',
     icon: 'cypress',
-  },
-  {
-    name: 'Quill Text Editor',
-    year: 2025,
-    type: 'frontend',
-    icon: 'quill',
   },
   {
     name: 'Shadcn UI',
@@ -261,17 +267,5 @@ export const experienceMap: ExperienceItems[] = [
     year: 2026,
     type: 'frontend',
     icon: 'daisyUI',
-  },
-  {
-    name: 'Transformers.js',
-    year: 2026,
-    type: 'infra',
-    icon: 'transformers',
-  },
-  {
-    name: 'Hugging Face',
-    year: 2026,
-    type: 'infra',
-    icon: 'huggingFace',
   },
 ];
