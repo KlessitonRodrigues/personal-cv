@@ -7,6 +7,7 @@ import LandingPageTemplateProjectSection from 'src/lib/sections/projects/Landing
 import MultiStepFormProjectSection from 'src/lib/sections/projects/MultiStepFormSection';
 import ProfileProjectSection from 'src/lib/sections/projects/ProfileProjectSection';
 import SellerAppProjectSection from 'src/lib/sections/projects/SellerAppSection';
+import TranslationAppProjectSection from 'src/lib/sections/projects/TranslationApp';
 
 const ProjectsPage = () => {
   return (
@@ -15,6 +16,7 @@ const ProjectsPage = () => {
         <ProfileProjectSection />
         <LandingPageTemplateProjectSection />
         <AuthenticationFormProjectSection />
+        <TranslationAppProjectSection />
         <MultiStepFormProjectSection />
         <AwsCorsProxyProjectSection />
         <GameFinderProjectSection />

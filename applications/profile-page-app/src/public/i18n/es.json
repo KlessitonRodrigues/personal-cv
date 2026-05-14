@@ -170,6 +170,9 @@
   "extraworks_landing_page_template": "Plantilla de Página de Aterrizaje",
   "extraworks_landing_page_template_text": "Plantilla de página de aterrizaje con componentes reutilizables y diseño responsivo, soporte de traducción y tema personalizable, hecha con NextJS y DaisyUI.",
   "extraworks_landing_page_template_tech": "NextJS, DaisyUI, AWS Cloudfront",
+  "extraworks_translation_pwa": "Aplicación de Traducción",
+  "extraworks_translation_pwa_text": "Sitio de traducción con soporte para varios idiomas.",
+  "extraworks_translation_pwa_tech": "NextJS, DaisyUI, API de Traducción de Google y funciones Lambda de AWS.",
   "profile_year": "año",
   "profile_years": "años",
 

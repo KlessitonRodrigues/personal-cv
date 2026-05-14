@@ -170,6 +170,9 @@
   "extraworks_landing_page_template": "Modèle de Page de Destination",
   "extraworks_landing_page_template_text": "Modèle de page de destination avec composants réutilisables et design responsive, support de traduction et thème personnalisable, réalisé avec NextJS et DaisyUI.",
   "extraworks_landing_page_template_tech": "NextJS, DaisyUI, AWS Cloudfront",
+  "extraworks_translation_pwa": "Application de Traduction",
+  "extraworks_translation_pwa_text": "Site de traduction avec prise en charge de plusieurs langues.",
+  "extraworks_translation_pwa_tech": "NextJS, DaisyUI, API de Traduction et fonctions Lambda de AWS.",
   "profile_year": "an",
   "profile_years": "ans",
 

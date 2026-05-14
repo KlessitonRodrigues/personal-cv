@@ -186,7 +186,7 @@ export const experienceMap: ExperienceItems[] = [
   },
   {
     name: 'AWS',
-    year: 2024,
+    year: 2023,
     type: 'infra',
     icon: 'aws',
   },
@@ -227,12 +227,6 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'gradle',
   },
   {
-    name: 'Svelte',
-    year: 2024,
-    type: 'frontend',
-    icon: 'svelte',
-  },
-  {
     name: 'NestJS',
     year: 2024,
     type: 'backend',
@@ -263,8 +257,14 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'shadcn',
   },
   {
+    name: 'Svelte',
+    year: 2025,
+    type: 'frontend',
+    icon: 'svelte',
+  },
+  {
     name: 'Daisy UI',
-    year: 2026,
+    year: 2025,
     type: 'frontend',
     icon: 'daisyUI',
   },

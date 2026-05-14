@@ -45,6 +45,8 @@ export const urls = {
     'https://docs.google.com/document/d/1HFCjaIOiGRbasevAepz6PwZeH_OAt4nJLXd8jLRI9Gc/edit?usp=sharing',
   authenticationFormRepo: 'https://github.com/KlessitonRodrigues/authentication-form',
   authenticationFormApp: 'https://dv6xqa9ixk4bs.cloudfront.net/',
+  translationApp: 'https://d2zk0yjdtgvfp5.cloudfront.net/',
+  translationAppRepo: 'https://github.com/KlessitonRodrigues/translation-pwa',
 };
 
 export const codeBlockLinks = {

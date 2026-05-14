@@ -168,6 +168,9 @@
   "extraworks_landing_page_template": "Landing Page Template",
   "extraworks_landing_page_template_text": "Landing page template with reusable components and responsive design, translation support and customizable theme, made with NextJS and DaisyUI.",
   "extraworks_landing_page_template_tech": "NextJS, DaisyUI, AWS Cloudfront",
+  "extraworks_translation_pwa": "Translation App",
+  "extraworks_translation_pwa_text": "Translation website with multiple language support. Night theme and multiple language support.",
+  "extraworks_translation_pwa_tech": "NextJS, DaisyUI, Translation API and AWS Lambda functions.",
   "profile_year": "year",
   "profile_years": "years",
 
