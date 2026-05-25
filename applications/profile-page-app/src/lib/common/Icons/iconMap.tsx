@@ -1,6 +1,6 @@
 import { BiCog, BiLogoAws } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaFacebook, FaGithub, FaJava, FaLinkedin } from 'react-icons/fa6';
+import { FaFacebook, FaJava, FaLinkedinIn } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
@@ -22,6 +22,7 @@ import {
   PiCodeBlockBold,
   PiDevicesBold,
   PiDotOutlineFill,
+  PiGithubLogoBold,
   PiNotebookBold,
   PiStudentBold,
   PiTranslateBold,
@@ -29,6 +30,7 @@ import {
 import {
   RiExpandUpDownFill,
   RiFileTextLine,
+  RiLinkedinFill,
   RiLoader5Line,
   RiQuillPenLine,
   RiWhatsappLine,
@@ -89,7 +91,7 @@ export const iconMap = {
   download: <LuDownload />,
   selector: <RiExpandUpDownFill />,
   spinner: <RiLoader5Line />,
-  github: <FaGithub />,
+  github: <PiGithubLogoBold />,
   template: <RiFileTextLine />,
   language: <PiTranslateBold />,
   link: <LuLink />,
@@ -102,7 +104,7 @@ export const iconMap = {
   website: <CgWebsite />,
   menu: <LuMenu />,
   close: <LuX />,
-  linkedin: <FaLinkedin />,
+  linkedin: <RiLinkedinFill />,
   facebook: <FaFacebook />,
   html: <SiHtml5 />,
   css: <SiCss />,

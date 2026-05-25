@@ -5,8 +5,8 @@ import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils'
 
 const sidebarSizeOpen = 80;
 const sidebarSize = 23;
-const topOffset = 2;
-const leftOffset = 2;
+const topOffset = 4;
+const leftOffset = 4;
 
 export const Container = styled.div(
   () => css`
@@ -18,19 +18,20 @@ export const Container = styled.div(
 export const SidebarBox = styled.aside<IStyledProps>(
   ({ theme, active, hidden }) => css`
     position: fixed;
-    left: 0;
-    top: 0;
+    left: ${cssSize(leftOffset)};
+    top: ${cssSize(topOffset)};
     z-index: 2;
-    height: 100%;
+    height: 97%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: ${cssSize(8)} 0;
-    color: ${theme.colors.mainText};
+    color: ${theme.colors.text1};
     overflow: hidden;
     text-transform: capitalize;
-    background-color: ${theme.colors.mainBg};
-    box-shadow: ${theme.shadow.lg};
+    background-color: ${theme.colors.bg1};
+    box-shadow: ${theme.shadow.sm};
+    border-radius: ${theme.radius.lg};
     transition: width 0.15s ease-out;
 
     a {
@@ -40,9 +41,8 @@ export const SidebarBox = styled.aside<IStyledProps>(
     @media (max-width: ${screenSize.tablet}px) {
       justify-content: flex-start;
       gap: ${cssSize(14)};
-      top: 0;
       width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
-      ${!active && 'transform: translateX(-5rem);'};
+      ${!active && `transform: translateX(-${cssSize(sidebarSize + leftOffset)});`};
     }
 
     @media (min-width: ${screenSize.tablet + 1}px) {
@@ -61,34 +61,34 @@ export const SidebarBox = styled.aside<IStyledProps>(
 );
 
 export const SidebarItem = styled.div<IStyledProps>(
-  ({ theme, active, top }) => css`
+  ({ theme, active }) => css`
     display: flex;
     align-items: center;
     gap: ${cssSize(6)};
     padding: ${cssSize(4)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
-    ${active === false && `opacity: 0.6;`}
 
-    &:hover {
-      opacity: ${!active && 0.8};
+    p {
+      ${active === false && `opacity: 0.7;`}
     }
 
-    strong {
-      padding: ${cssSize(0.8)};
-      ${top && `text-transform: uppercase;`}
+    &:hover {
+      background-color: ${!active && theme.colors.bg3};
     }
 
     .icon {
       position: relative;
+      color: ${theme.colors.main};
+
       &::after {
         content: '';
         position: absolute;
         top: 115%;
         left: 0;
         width: ${active ? cssSize(9) : 0};
-        height: ${cssSize(1.2)};
-        background-color: ${theme.colors.mainText};
+        height: ${cssSize(1.3)};
+        background-color: ${theme.colors.main};
         transition: width 0.3s;
       }
     }
@@ -99,9 +99,11 @@ export const Content = styled.div<IStyledProps>(
   ({ active }) => css`
     width: 100%;
     height: 100%;
-    padding-left: ${active ? cssSize(sidebarSizeOpen + 2) : cssSize(sidebarSize + 2)};
+    padding-left: ${active
+      ? cssSize(sidebarSizeOpen + leftOffset)
+      : cssSize(sidebarSize + leftOffset)};
     transition: 0.3s ease-out;
-    ${active && `filter: brightness(0.4);`}
+    ${active && `filter: brightness(0.2);`}
 
     @media (max-width: ${screenSize.tablet}px) {
       padding-left: 0;
@@ -118,7 +120,7 @@ export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
     top: ${cssSize(topOffset)};
-    left: ${cssSize(2)};
+    left: ${cssSize(leftOffset)};
     z-index: 2;
     display: none;
     width: ${cssSize(16)};

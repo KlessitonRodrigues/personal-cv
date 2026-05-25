@@ -18,7 +18,7 @@ const NotebookLinksSection = () => {
         </Row>
         <Hr />
         <Text tag="small" path="certificates_notebook_text" />
-        <Row left gap={6}>
+        <Row left responsive gap={6}>
           <LinkAndIcon
             icon="language"
             label={getText('certificates_notebook_english')}
