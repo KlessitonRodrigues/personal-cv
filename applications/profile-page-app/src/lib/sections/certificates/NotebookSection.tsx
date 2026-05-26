@@ -20,28 +20,28 @@ const NotebookLinksSection = () => {
         <Text tag="small" path="certificates_notebook_text" />
         <Row left responsive gap={6}>
           <LinkAndIcon
-            icon="language"
+            icon="textDocument"
             label={getText('certificates_notebook_english')}
             url={urls.englishNotes}
           />
           <LinkAndIcon
-            icon="html"
+            icon="textDocument"
             label={getText('certificates_notebook_html')}
             url={urls.htmlNotes}
           />
 
           <LinkAndIcon
-            icon="react"
+            icon="textDocument"
             label={getText('certificates_notebook_react')}
             url={urls.reactNotes}
           />
           <LinkAndIcon
-            icon="nodejs"
+            icon="textDocument"
             label={getText('certificates_notebook_nodejs')}
             url={urls.nodejsNotes}
           />
           <LinkAndIcon
-            icon="docker"
+            icon="textDocument"
             label={getText('certificates_notebook_docker')}
             url={urls.dockerNotes}
           />

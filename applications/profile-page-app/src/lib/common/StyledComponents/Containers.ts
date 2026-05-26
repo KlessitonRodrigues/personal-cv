@@ -16,8 +16,8 @@ export const PageContent = styled.div(
     height: 100%;
     margin: auto;
     margin-bottom: ${cssSize(10)};
-    max-width: ${screenSize.laptopM}px;
-    animation: 0.5s ${animations.fadeLeft} ease-out;
+    max-width: ${screenSize.laptopL}px;
+    animation: 0.5s ${animations.fadeIn} ease-out;
   `,
 );
 

@@ -3,57 +3,67 @@ import styled, { css } from 'styled-components';
 import { RoundedBtn } from 'src/lib/common/StyledComponents/Buttons';
 import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
 
-const sidebarSizeOpen = 80;
-const sidebarSize = 23;
+const sidebarSizeOpen = 90;
+const sidebarSize = 24;
 const topOffset = 4;
-const leftOffset = 4;
+const leftOffset = 2;
+const contentSize = screenSize.desktopS;
 
 export const Container = styled.div(
   () => css`
-    width: 100%;
+    position: relative;
+    width: ${contentSize}px;
     height: 100%;
+    margin: 0 auto;
+    padding: 0 ${cssSize(12)};
+    user-select: none;
+    display: flex;
+
+    @media (max-width: ${contentSize}px) {
+      width: 100%;
+      padding: 0;
+    }
   `,
 );
 
 export const SidebarBox = styled.aside<IStyledProps>(
   ({ theme, active, hidden }) => css`
     position: fixed;
-    left: ${cssSize(leftOffset)};
-    top: ${cssSize(topOffset)};
-    z-index: 2;
-    height: 97%;
+    top: 0;
+    left: auto;
+    z-index: 1;
+    margin-top: ${cssSize(topOffset)};
+    height: 98vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: ${cssSize(8)} 0;
+    padding: ${cssSize(2)} 0;
     color: ${theme.colors.text1};
     overflow: hidden;
     text-transform: capitalize;
     background-color: ${theme.colors.bg1};
     box-shadow: ${theme.shadow.sm};
-    border-radius: ${theme.radius.lg};
-    transition: width 0.15s ease-out;
+    border-radius: ${theme.radius.md};
+    transition:
+      width 0.15s ease-in-out,
+      transform 0.3s ease-in-out;
 
     a {
       text-decoration: none;
     }
 
-    @media (max-width: ${screenSize.tablet}px) {
+    @media (max-width: ${contentSize}px) {
       justify-content: flex-start;
       gap: ${cssSize(14)};
       width: ${active ? cssSize(sidebarSizeOpen) : cssSize(sidebarSize)};
       ${!active && `transform: translateX(-${cssSize(sidebarSize + leftOffset)});`};
     }
 
-    @media (min-width: ${screenSize.tablet + 1}px) {
+    @media (min-width: ${contentSize + 1}px) {
       width: ${cssSize(sidebarSizeOpen)};
       ${hidden && `width: ${cssSize(sidebarSize)};`}
 
       &:hover {
-        width: ${cssSize(sidebarSizeOpen)};
-      }
-
-      @media (min-width: ${screenSize.desktopS}px) {
         width: ${cssSize(sidebarSizeOpen)};
       }
     }
@@ -64,8 +74,8 @@ export const SidebarItem = styled.div<IStyledProps>(
   ({ theme, active }) => css`
     display: flex;
     align-items: center;
-    gap: ${cssSize(6)};
-    padding: ${cssSize(4)} ${cssSize(8)};
+    gap: ${cssSize(8)};
+    padding: ${cssSize(5)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
 
@@ -95,27 +105,6 @@ export const SidebarItem = styled.div<IStyledProps>(
   `,
 );
 
-export const Content = styled.div<IStyledProps>(
-  ({ active }) => css`
-    width: 100%;
-    height: 100%;
-    padding-left: ${active
-      ? cssSize(sidebarSizeOpen + leftOffset)
-      : cssSize(sidebarSize + leftOffset)};
-    transition: 0.3s ease-out;
-    ${active && `filter: brightness(0.2);`}
-
-    @media (max-width: ${screenSize.tablet}px) {
-      padding-left: 0;
-      padding-top: ${cssSize(topOffset + 14)};
-    }
-
-    @media (min-width: ${screenSize.desktopS}px) {
-      padding-left: ${cssSize(80)};
-    }
-  `,
-);
-
 export const MenuBtn = styled(RoundedBtn)(
   ({ theme, active }) => css`
     position: fixed;
@@ -129,7 +118,7 @@ export const MenuBtn = styled(RoundedBtn)(
     color: ${theme.colors.mainText};
     transition: 0.3s ease-out;
     box-shadow: ${theme.shadow.md};
-    ${active && `margin-left: ${cssSize(sidebarSizeOpen + leftOffset)};`}
+    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
 
     .icon-menu {
       animation: 0.5s ${animations.halfSpinning} ease-out reverse;
@@ -139,8 +128,22 @@ export const MenuBtn = styled(RoundedBtn)(
       animation: 0.5s ${animations.halfSpinning} ease-out;
     }
 
-    @media (max-width: ${screenSize.tablet}px) {
+    @media (max-width: ${contentSize}px) {
       display: flex;
+    }
+  `,
+);
+
+export const Content = styled.div<IStyledProps>(
+  ({ active }) => css`
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-out;
+    ${active && `filter: brightness(0.2);`}
+
+    @media (max-width: ${contentSize}px) {
+      padding-left: 0;
+      padding-top: ${cssSize(topOffset + 14)};
     }
   `,
 );

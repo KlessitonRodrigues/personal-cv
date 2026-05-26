@@ -42,7 +42,7 @@ export const screenSize = {
   tablet: 768,
   laptopS: 900,
   laptopM: 1024,
-  laptopL: 1280,
+  laptopL: 1180,
   desktopS: 1440,
   desktopM: 1980,
   desktopL: 2560,
@@ -53,7 +53,8 @@ export const animations = {
     from { transform: translateY(3rem); opacity: 0; } 
     to { opacity: 1 }`,
   fadeLeft: keyframes`
-    from { transform: translateX(3rem); opacity: 0; } 
+    from { transform: translateX(3rem); opacity: 0; }
+    50% { opacity: 0.4; } 
     to { opacity: 1 }`,
   slideUp: keyframes`
     from { transform: translateY(12rem); opacity: 0.4; } 

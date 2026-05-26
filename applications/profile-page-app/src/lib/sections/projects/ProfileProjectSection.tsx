@@ -17,7 +17,6 @@ const ProfileProjectSection = () => {
             <Text tag="small" path="extraworks_personalcv_tech" />
             <Row left gap={4}>
               <LinkAndIcon icon="website" label="Website" url={urls.personalPage} />
-              <LinkAndIcon icon="android" label="Android" url={urls.profileApp} />
               <LinkAndIcon icon="github" label="GitHub" url={urls.personalPageRep} />
             </Row>
           </Column>

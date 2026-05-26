@@ -14,7 +14,6 @@ export const Document = styled.div(() => css``);
 
 export const Content = styled.div(
   () => css`
-    padding: 0 ${cssSize(10)};
     @media (max-width: ${screenSize.tablet}px) {
       padding: 0;
     }
@@ -30,7 +29,7 @@ export const DocumentButtons = styled.div(
     gap: ${cssSize(2)};
     position: absolute;
     top: 0;
-    left: 97%;
+    left: 101%;
     z-index: 2;
 
     @media (max-width: ${screenSize.laptopL}px) {

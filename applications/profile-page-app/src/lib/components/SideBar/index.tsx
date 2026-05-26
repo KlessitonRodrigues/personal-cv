@@ -62,7 +62,6 @@ const SideBar = (props: PropsWithChildren) => {
           </Link>
         </Column>
       </SidebarBox>
-
       <MenuBtn active={open} onClick={() => setOpen(!open)}>
         <If
           check={!open}
@@ -70,7 +69,6 @@ const SideBar = (props: PropsWithChildren) => {
           false={<Icons key="1" size={11} type="close" />}
         />
       </MenuBtn>
-
       <Content active={open}>{props.children}</Content>
     </Container>
   );
