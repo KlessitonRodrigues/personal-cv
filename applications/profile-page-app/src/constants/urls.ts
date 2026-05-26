@@ -17,7 +17,6 @@ export const urls = {
   encryptEasyRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   quizRepo: 'https://github.com/KlessitonRodrigues/quiz-app',
   awsProxyApiRepo: 'https://github.com/KlessitonRodrigues/aws-cors-proxy',
-
   translatePwa: 'https://github.com/KlessitonRodrigues/translation-pwa',
   nutriacademy: 'https://github.com/KlessitonRodrigues/acadenutri-project',
   whatsapp: 'https://wa.me/5589994009646',
@@ -29,16 +28,6 @@ export const urls = {
   sellerApp: 'https://d3gdtm9jf7vvod.cloudfront.net/',
   multiStepFormRepo: 'https://github.com/KlessitonRodrigues/appointment-multi-step-form',
   multiStepFormApp: 'https://d2fvz3twxtlqif.cloudfront.net/',
-  reactNotes:
-    'https://docs.google.com/document/d/1Nb_ajiDP2hpvKfuwKytyR_j1G8qndmITWeLaycPUmWk/edit?usp=sharing',
-  nodejsNotes:
-    'https://docs.google.com/document/d/1HdTvNUp4F0syO05T8cNIL1K6hUvahqhV5Cy9Tow5AMw/edit?usp=sharing',
-  javaNotes: '',
-  htmlNotes:
-    'https://docs.google.com/document/d/1f42EU_Lg_6JBeGjlabw9AKdFyurN_Gob1bk3CqpgpYk/edit?usp=sharing',
-  awsNotes: '',
-  englishNotes:
-    'https://docs.google.com/document/d/1KUi9xjH95lnTfsGjIZpop6SSen0-_ypKUGze3mHu4Jk/edit?usp=sharing',
   landingPageTemplateRepo: 'https://github.com/KlessitonRodrigues/landing-page-showcase',
   landingPageTemplateApp: 'https://djzuplelkcucg.cloudfront.net',
   dockerNotes:
@@ -47,6 +36,21 @@ export const urls = {
   authenticationFormApp: 'https://dv6xqa9ixk4bs.cloudfront.net/',
   translationApp: 'https://d2zk0yjdtgvfp5.cloudfront.net/',
   translationAppRepo: 'https://github.com/KlessitonRodrigues/translation-pwa',
+};
+
+export const notesURls = {
+  react:
+    'https://docs.google.com/document/d/e/2PACX-1vTtlkZGFmGvzVtDiqDRJHPJh-l2P53gzvxskZfCdGrnOsHCqQcLARlaHTUf9NIcT7vwMUo2P7UrGqXh/pub',
+  nodejs:
+    'https://docs.google.com/document/d/e/2PACX-1vTTF0sshQrbscEAsC6Xm_ElRIfYsqHX4EwE_A3WO9gFLW45yC-Z3n1FupZcmMEGTl826pGqyYHkYCvB/pub',
+  html: 'https://docs.google.com/document/d/e/2PACX-1vT9qdMguclwczY-E0tGhh1eiVos7q62V-rdu67ax_HrLOgoCAdNEEQ5TjjLw98vaPlop0PZ_ei6yxvL/pub',
+  english:
+    'https://docs.google.com/document/d/e/2PACX-1vSXQmbB38dXaB4Wjkwrqy6JsxW7ks0XM5fcAS8gz5VHhsHygiQjDMVKVtOOp3vgXz_IybAaoAi7_V28/pub',
+  docker:
+    'https://docs.google.com/document/d/e/2PACX-1vT7SGvm_yRvpJU1LO8kXa7zlVN7qSNMT3D5jiDC5edSgfqm20yP6COgFNBao85-1njmh6OUhZ_1d_B_/pub',
+  git: '',
+  java: '',
+  aws: '',
 };
 
 export const codeBlockLinks = {

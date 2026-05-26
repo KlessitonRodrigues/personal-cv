@@ -101,15 +101,8 @@
   "education_school_date": "2014/02 - 2016/11",
 
   "certificates_title": "Certificados",
-  "certificates_notebook": "Caderno",
-  "certificates_notebook_text": "Anotações e materiais pessoais feitos durante meus estudos em linguagens de programação e frameworks.",
-  "certificates_notebook_react": "React",
-  "certificates_notebook_nodejs": "Node.js",
-  "certificates_notebook_java": "Java",
-  "certificates_notebook_html": "HTML",
-  "certificates_notebook_aws": "AWS",
-  "certificates_notebook_docker": "Docker",
-  "certificates_notebook_english": "Inglês",
+  "certificates_notebook": "Notas e Artigos",
+  "certificates_notebook_text": "Anotações e artigos criados durante estudos em linguagens de programação e frameworks.",
 
   "language_title": "Idiomas",
   "language_pt_title": "Português",

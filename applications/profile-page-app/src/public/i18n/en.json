@@ -103,13 +103,6 @@
   "certificates_title": "Certificates",
   "certificates_notebook": "Notebook",
   "certificates_notebook_text": "Notes and personal materials made during my studies in programming languages and frameworks.",
-  "certificates_notebook_react": "React",
-  "certificates_notebook_nodejs": "Node.js",
-  "certificates_notebook_java": "Java",
-  "certificates_notebook_html": "HTML",
-  "certificates_notebook_aws": "AWS",
-  "certificates_notebook_docker": "Docker",
-  "certificates_notebook_english": "English",
 
   "language_title": "Languages",
   "language_pt_title": "Portuguese",
