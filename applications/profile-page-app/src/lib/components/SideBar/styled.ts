@@ -16,7 +16,6 @@ export const Container = styled.div(
     height: 100%;
     margin: 0 auto;
     padding: 0 ${cssSize(12)};
-    user-select: none;
     display: flex;
 
     @media (max-width: ${contentSize}px) {
