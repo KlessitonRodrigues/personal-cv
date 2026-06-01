@@ -15,9 +15,10 @@ export const PageContent = styled.div(
     width: 100%;
     height: 100%;
     margin: auto;
+    min-height: 97vh;
     margin-bottom: ${cssSize(10)};
     max-width: ${screenSize.laptopL}px;
-    animation: 0.5s ${animations.fadeIn} ease-out;
+    animation: 0.5s ${animations.fadeIn} ease-in-out;
   `,
 );
 

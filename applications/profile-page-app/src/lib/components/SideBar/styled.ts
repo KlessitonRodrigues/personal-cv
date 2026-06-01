@@ -51,6 +51,10 @@ export const SidebarBox = styled.aside<IStyledProps>(
       text-decoration: none;
     }
 
+    &:hover {
+      box-shadow: ${theme.shadow.lg};
+    }
+
     @media (max-width: ${contentSize}px) {
       justify-content: flex-start;
       gap: ${cssSize(14)};

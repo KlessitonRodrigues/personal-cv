@@ -5,7 +5,6 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Column, Row } from 'src/lib/common/StyledComponents/Flex';
 import Text from 'src/lib/common/Text';
 import { isMobileScreen } from 'src/styles/utils';
-import { lang } from 'src/utils/i18n';
 
 const ResumeHeaderSection = () => {
   const isMobile = isMobileScreen();
@@ -19,7 +18,6 @@ const ResumeHeaderSection = () => {
               <b>
                 <Text tag="h1" path="header_name" />
               </b>
-              <Text tag="b">{lang?.toLocaleUpperCase()}</Text>
             </Row>
             <Text tag="h3" path="header_work" />
             <Row top responsive>

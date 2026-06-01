@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "postbuild": "ts-node src/utils/compressImages.ts",
+    "postbuild": "node ./src/utils/compressImages.js",
     "preview": "vite preview --host",
     "format": "prettier -c -w ./src"
   },
@@ -28,7 +28,6 @@
     "react-router-dom": "^7.13.1",
     "sharp": "^0.34.5",
     "styled-components": "^6.3.11",
-    "svgo": "^4.0.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
     "vite-tsconfig-paths": "^6.1.1"
