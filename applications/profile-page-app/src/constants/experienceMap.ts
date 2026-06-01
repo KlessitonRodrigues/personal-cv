@@ -119,6 +119,12 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'insomnia',
   },
   {
+    name: 'Amazon Web Services',
+    year: 2022,
+    type: 'infra',
+    icon: 'aws',
+  },
+  {
     name: 'NextJS',
     year: 2023,
     type: 'frontend',
@@ -167,6 +173,12 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'postgres',
   },
   {
+    name: 'Datagrip',
+    year: 2023,
+    type: 'infra',
+    icon: 'datagrip',
+  },
+  {
     name: 'Postman',
     year: 2023,
     type: 'infra',
@@ -185,16 +197,16 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'heroku',
   },
   {
-    name: 'AWS',
-    year: 2023,
-    type: 'infra',
-    icon: 'aws',
-  },
-  {
     name: 'ElectronJS',
     year: 2024,
     type: 'frontend',
     icon: 'electron',
+  },
+  {
+    name: 'Shadcn UI',
+    year: 2024,
+    type: 'frontend',
+    icon: 'shadcn',
   },
   {
     name: 'PuppeterJS',
@@ -251,20 +263,32 @@ export const experienceMap: ExperienceItems[] = [
     icon: 'cypress',
   },
   {
-    name: 'Shadcn UI',
-    year: 2025,
-    type: 'frontend',
-    icon: 'shadcn',
-  },
-  {
     name: 'Svelte',
     year: 2025,
     type: 'frontend',
     icon: 'svelte',
   },
   {
-    name: 'Daisy UI',
+    name: 'Ant Design',
     year: 2025,
+    type: 'frontend',
+    icon: 'antdesign',
+  },
+  {
+    name: 'Zustand',
+    year: 2025,
+    type: 'frontend',
+    icon: 'zustand',
+  },
+  {
+    name: 'Tanstack',
+    year: 2025,
+    type: 'frontend',
+    icon: 'tanstack',
+  },
+  {
+    name: 'Daisy UI',
+    year: 2026,
     type: 'frontend',
     icon: 'daisyUI',
   },

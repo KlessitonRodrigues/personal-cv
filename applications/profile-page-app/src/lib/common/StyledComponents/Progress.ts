@@ -39,8 +39,9 @@ export const ProgressStepBox = styled.div<IStyledProps>(
 
 export const ProgressStep = styled.div<IStyledProps>(
   ({ theme, half }) => css`
+    height: ${cssSize(2.5)};
     padding: ${cssSize(1)} ${cssSize(half ? 3 : 6)};
     background-color: ${theme.colors.main};
-    border-radius: ${theme.radius.lg};
+    border-radius: ${theme.radius.md};
   `,
 );

@@ -13,6 +13,7 @@ import {
   LuPaintbrush,
   LuPrinter,
   LuSun,
+  LuTreePalm,
   LuUser,
   LuX,
 } from 'react-icons/lu';
@@ -28,6 +29,7 @@ import {
   PiTranslateBold,
 } from 'react-icons/pi';
 import {
+  RiBearSmileLine,
   RiExpandUpDownFill,
   RiFileTextLine,
   RiLinkedinFill,
@@ -37,6 +39,7 @@ import {
 } from 'react-icons/ri';
 import {
   SiAndroidstudio,
+  SiAntdesign,
   SiApachecordova,
   SiBootstrap,
   SiClojure,
@@ -44,6 +47,7 @@ import {
   SiCss,
   SiCypress,
   SiDaisyui,
+  SiDatagrip,
   SiDocker,
   SiElectron,
   SiExpo,
@@ -169,4 +173,8 @@ export const iconMap = {
   sequelize: <SiSequelize />,
   mongoose: <SiMongoose />,
   gradle: <SiGradle />,
+  datagrip: <SiDatagrip />,
+  antdesign: <SiAntdesign />,
+  zustand: <RiBearSmileLine />,
+  tanstack: <LuTreePalm />,
 };
