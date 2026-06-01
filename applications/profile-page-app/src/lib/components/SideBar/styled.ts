@@ -32,7 +32,7 @@ export const SidebarBox = styled.aside<IStyledProps>(
     left: auto;
     z-index: 1;
     margin-top: ${cssSize(topOffset)};
-    height: 98vh;
+    height: 97.5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
