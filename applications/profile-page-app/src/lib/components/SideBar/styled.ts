@@ -81,6 +81,7 @@ export const SidebarItem = styled.div<IStyledProps>(
     padding: ${cssSize(5)} ${cssSize(8)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
+    font-weight: bold;
 
     p {
       ${active === false && `opacity: 0.7;`}
