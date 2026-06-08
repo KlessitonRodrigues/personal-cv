@@ -18,12 +18,12 @@ const NotebookLinksSection = () => {
         <Hr />
         <Text tag="small" path="certificates_notebook_text" />
         <Row left responsive gap={6}>
-          <LinkAndIcon icon="textDocument" label="English" url={notesURls.english} />
-          <LinkAndIcon icon="textDocument" label="Html" url={notesURls.html} />
-          <LinkAndIcon icon="textDocument" label="React" url={notesURls.react} />
-          <LinkAndIcon icon="textDocument" label="Node.js" url={notesURls.nodejs} />
-          <LinkAndIcon icon="textDocument" label="Git" url={notesURls.git} />
-          <LinkAndIcon icon="textDocument" label="Docker" url={notesURls.docker} />
+          <LinkAndIcon icon="notebook" label="Html" url={notesURls.html} />
+          <LinkAndIcon icon="notebook" label="React" url={notesURls.react} />
+          <LinkAndIcon icon="notebook" label="Node.js" url={notesURls.nodejs} />
+          <LinkAndIcon icon="notebook" label="Git" url={notesURls.git} />
+          <LinkAndIcon icon="notebook" label="Docker" url={notesURls.docker} />
+          <LinkAndIcon icon="notebook" label="English" url={notesURls.english} />
           <If check={false}>
             <LinkAndIcon icon="aws" label="AWS" url={notesURls.aws} />
             <LinkAndIcon icon="java" label="Java" url={notesURls.java} />

@@ -48,7 +48,7 @@ export const notesURls = {
     'https://docs.google.com/document/d/e/2PACX-1vSXQmbB38dXaB4Wjkwrqy6JsxW7ks0XM5fcAS8gz5VHhsHygiQjDMVKVtOOp3vgXz_IybAaoAi7_V28/pub',
   docker:
     'https://docs.google.com/document/d/e/2PACX-1vT7SGvm_yRvpJU1LO8kXa7zlVN7qSNMT3D5jiDC5edSgfqm20yP6COgFNBao85-1njmh6OUhZ_1d_B_/pub',
-  git: '',
+  git: 'https://docs.google.com/document/d/e/2PACX-1vTncN-jRT3RzpPrhi0SylCGIYx3jS8quOWyBoM1Wy3-bZUSJ180eMpBJjW047fXo_0dMK4Zbml_IAhP/pub',
   java: '',
   aws: '',
 };
