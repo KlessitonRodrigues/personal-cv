@@ -17,8 +17,8 @@ const LinkAndIcon = (props: ILinkAndIcon) => {
   return (
     <a href={url} target="_blank">
       <OutlineBtn>
-        <Icons size={size || 9} type={icon || 'link'} />
-        <p>{label}</p>
+        <Icons size={size || 10} type={icon || 'link'} />
+        {label && <p>{label}</p>}
         {path && <Text tag="p" path={path} />}
       </OutlineBtn>
     </a>

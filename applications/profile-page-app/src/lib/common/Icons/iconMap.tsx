@@ -1,6 +1,6 @@
 import { BiCog, BiLogoAws } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
-import { FaFacebook, FaJava, FaLinkedinIn } from 'react-icons/fa6';
+import { FaFacebook, FaJava } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,

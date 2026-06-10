@@ -23,16 +23,6 @@ const ResumeHeaderSection = () => {
             <Row top responsive>
               <Column left gap={2}>
                 <label>
-                  <Text tag="b" path="header_city" />
-                  <Text tag="h6" path="header_city_name" />
-                </label>
-                <label>
-                  <Text tag="b" path="header_address" />
-                  <Text tag="h6" path="header_address_name" />
-                </label>
-              </Column>
-              <Column left gap={2}>
-                <label>
                   <b>Email</b>
                   <h6>
                     <a href={urls.krdsEmail} target="blank">
@@ -40,27 +30,38 @@ const ResumeHeaderSection = () => {
                     </a>
                   </h6>
                 </label>
+
+                <label>
+                  <Text tag="b" path="header_city" />
+                  <Text tag="h6" path="header_city_name" />
+                </label>
+              </Column>
+              <Column left gap={2}>
+                <label>
+                  <Text tag="b" path="header_page" />
+                  <a href={urls.personalPage} target="blank">
+                    <Text tag="h6" path="header_page_text" />
+                  </a>
+                </label>
                 <label>
                   <Text tag="b" path="header_phone" />
-                  <Text tag="h6" path="header_phone_number" />
+                  <a href={urls.whatsappWeb} target="blank">
+                    <Text tag="h6" path="header_phone_number" />
+                  </a>
                 </label>
               </Column>
               <Column left>
                 <label>
                   <b>LinkedIn</b>
-                  <h6>
-                    <a href={urls.linkedin} target="blank">
-                      Klessitonrds
-                    </a>
-                  </h6>
+                  <a href={urls.linkedin} target="blank">
+                    <h6>Klessitonrds</h6>
+                  </a>
                 </label>
                 <label>
                   <b>Github</b>
-                  <h6>
-                    <a href={urls.github} target="blank">
-                      KlessitonRodrigues
-                    </a>
-                  </h6>
+                  <a href={urls.github} target="blank">
+                    <h6>KlessitonRodrigues</h6>
+                  </a>
                 </label>
               </Column>
             </Row>
@@ -71,8 +72,10 @@ const ResumeHeaderSection = () => {
           <Hr />
           <Text tag="p" path="cv_resume" />
         </Column>
-        <Row left responsive gap={8}>
+        <Row left responsive>
           <LinkAndIcon icon="website" path="header_page_text" url={urls.personalPage} />
+        </Row>
+        <Row left responsive gap={8}>
           <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
           <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
           <LinkAndIcon

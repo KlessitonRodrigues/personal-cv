@@ -25,7 +25,7 @@
   "header_phone": "Téléphone",
   "header_phone_number": "+55 (89) 994009646",
   "header_page": "Page",
-  "header_page_text": "Page de Profil",
+  "header_page_text": "profile.klessitonrds.com",
 
   "cv_resume_title": "CV",
   "cv_resume": "Développeur Fullstack avec de l'expérience dans les applications Web et Mobile utilisant l'écosystème ReactJS, la création d'API avec des frameworks NodeJS comme ExpressJS et NestJS, et l'utilisation de services cloud tels que AWS Lambda, S3, SES, SQS et DynamoDB, entre autres. Capable d'aider à la maintenance de systèmes développés en Java, C# ou Clojure. J'aime être créatif et développer mes propres solutions aux problèmes, ainsi qu'apprendre différentes technologies et façons d'améliorer la productivité et la qualité du code.",
