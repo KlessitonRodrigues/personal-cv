@@ -3,7 +3,6 @@ import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
 import ResumeEducationSection from 'src/lib/sections/resume/EducationSection';
 import ResumeExperienceSection from 'src/lib/sections/resume/ExperienceSection';
-import ExtraWorksSection from 'src/lib/sections/resume/ExtraWorksSection';
 import ResumeHeaderSection from 'src/lib/sections/resume/HeaderSection';
 import LanguagesSection from 'src/lib/sections/resume/LanguagesSection';
 
@@ -15,7 +14,6 @@ const ResumePage = () => {
           <ResumeHeaderSection />
           <ResumeExperienceSection />
           <ResumeEducationSection />
-          <ExtraWorksSection />
           <LanguagesSection />
         </DocumentView>
       </Page>

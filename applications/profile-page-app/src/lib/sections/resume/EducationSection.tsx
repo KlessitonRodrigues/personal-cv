@@ -21,7 +21,6 @@ const ResumeEducationSection = () => {
         <Column left gap={0}>
           <Row left responsive>
             <Text tag="h6" path="education_udemy_title" />
-            <Text tag="small" path="education_udemy_date" />
           </Row>
           <List>
             <ListItem>
@@ -43,19 +42,22 @@ const ResumeEducationSection = () => {
               <Text tag="p" path="education_udemy_course_13" />
             </ListItem>
             <ListItem>
-              <Text tag="p" path="education_udemy_course_6" />
-            </ListItem>
-            <ListItem>
               <Text tag="p" path="education_udemy_course_7" />
             </ListItem>
             <ListItem>
               <Text tag="p" path="education_udemy_course_8" />
             </ListItem>
             <ListItem>
+              <Text tag="p" path="education_udemy_course_6" />
+            </ListItem>
+            <ListItem>
               <Text tag="p" path="education_udemy_course_9" />
             </ListItem>
             <ListItem>
               <Text tag="p" path="education_udemy_course_10" />
+            </ListItem>
+            <ListItem>
+              <Text tag="p" path="education_udemy_course_12" />
             </ListItem>
           </List>
         </Column>
