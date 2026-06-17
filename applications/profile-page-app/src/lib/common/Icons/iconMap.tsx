@@ -1,9 +1,10 @@
-import { BiCog, BiCompass, BiLogoAws } from 'react-icons/bi';
+import { BiCog, BiCompass, BiLogoAws, BiLogoVisualStudio } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaJava } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
+  LuDatabaseZap,
   LuDownload,
   LuFileText,
   LuImage,
@@ -25,6 +26,8 @@ import {
   PiDevicesBold,
   PiDotOutlineFill,
   PiFileCSharp,
+  PiFileCode,
+  PiFileText,
   PiGithubLogoBold,
   PiNotebookBold,
   PiStudentBold,
@@ -43,6 +46,7 @@ import {
   SiAndroidstudio,
   SiAntdesign,
   SiApachecordova,
+  SiBitbucket,
   SiBootstrap,
   SiClaude,
   SiClojure,
@@ -78,6 +82,7 @@ import {
   SiPuppeteer,
   SiReact,
   SiReacthookform,
+  SiReactrouter,
   SiRedux,
   SiSass,
   SiSelenium,
@@ -91,6 +96,7 @@ import {
   SiTypeorm,
   SiTypescript,
   SiUdemy,
+  SiVite,
   SiYaak,
   SiZod,
 } from 'react-icons/si';
@@ -124,6 +130,7 @@ export const iconMap = {
   styledComponents: <SiStyledcomponents />,
   aws: <BiLogoAws />,
   mongoDb: <SiMongodb />,
+  dynamodb: <LuDatabaseZap />,
   nodejs: <SiNodedotjs />,
   sass: <SiSass />,
   springBoot: <SiSpringboot />,
@@ -191,4 +198,8 @@ export const iconMap = {
   claude: <SiClaude />,
   nativeBase: <PiCode />,
   strapi: <SiStrapi />,
+  bitbucket: <SiBitbucket />,
+  vscode: <BiLogoVisualStudio />,
+  reactrouter: <SiReactrouter />,
+  vite: <SiVite />,
 };

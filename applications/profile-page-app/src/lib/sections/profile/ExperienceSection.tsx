@@ -27,7 +27,7 @@ const ProfileExperienceSection = () => {
         {categoryKeys.map(key => (
           <Box key={key}>
             <Text tag="h6" path={'experience_category_' + key} />
-            <Grid cols={3} responsive>
+            <Grid cols={2} responsive>
               {experienceMap[key].map(renderExperienceItem)}
             </Grid>
           </Box>
