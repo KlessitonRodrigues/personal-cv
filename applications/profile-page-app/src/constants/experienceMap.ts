@@ -1,295 +1,83 @@
 import { IconsType } from 'src/lib/common/Icons/iconMap';
 
-export type ExperienceItemsTypes = 'backend' | 'frontend' | 'infra' | 'language' | 'tests';
+export type ExperienceItemsTypes =
+  | 'backend'
+  | 'frontend'
+  | 'infra'
+  | 'language'
+  | 'mobile'
+  | 'tests'
+  | 'tools';
 
-export type ExperienceItems = {
+export type ExperienceItem = {
   name: string;
-  year: number;
   icon: IconsType;
-  type: ExperienceItemsTypes;
 };
 
-export const experienceMap: ExperienceItems[] = [
-  {
-    name: 'HTML',
-    year: 2021,
-    type: 'frontend',
-    icon: 'html',
-  },
-  {
-    name: 'CSS',
-    year: 2021,
-    type: 'frontend',
-    icon: 'css',
-  },
-  {
-    name: 'Javascript',
-    year: 2021,
-    type: 'language',
-    icon: 'javascript',
-  },
-  {
-    name: 'Bootstrap',
-    year: 2021,
-    type: 'frontend',
-    icon: 'bootstrap',
-  },
-  {
-    name: 'SASS',
-    year: 2021,
-    type: 'frontend',
-    icon: 'sass',
-  },
-  {
-    name: 'Git',
-    year: 2021,
-    type: 'infra',
-    icon: 'git',
-  },
-  {
-    name: 'ReactJS',
-    year: 2022,
-    type: 'frontend',
-    icon: 'react',
-  },
-  {
-    name: 'Redux',
-    year: 2022,
-    type: 'frontend',
-    icon: 'redux',
-  },
-  {
-    name: 'Styled Components',
-    year: 2022,
-    type: 'frontend',
-    icon: 'styledComponents',
-  },
-  {
-    name: 'Material UI',
-    year: 2022,
-    type: 'frontend',
-    icon: 'materialui',
-  },
-  {
-    name: 'Figma',
-    year: 2022,
-    type: 'frontend',
-    icon: 'figma',
-  },
-  {
-    name: 'NodeJS',
-    year: 2022,
-    type: 'backend',
-    icon: 'nodejs',
-  },
-  {
-    name: 'ExpressJS',
-    year: 2022,
-    type: 'backend',
-    icon: 'expressJS',
-  },
-  {
-    name: 'Typescript',
-    year: 2022,
-    type: 'language',
-    icon: 'typescript',
-  },
-  {
-    name: 'MongoDB',
-    year: 2022,
-    type: 'backend',
-    icon: 'mongoDb',
-  },
-  {
-    name: 'Mongoose',
-    year: 2022,
-    type: 'backend',
-    icon: 'mongoose',
-  },
-  {
-    name: 'Jest',
-    year: 2022,
-    type: 'tests',
-    icon: 'jest',
-  },
-  {
-    name: 'Insomnia',
-    year: 2022,
-    type: 'infra',
-    icon: 'insomnia',
-  },
-  {
-    name: 'Amazon Web Services',
-    year: 2022,
-    type: 'infra',
-    icon: 'aws',
-  },
-  {
-    name: 'NextJS',
-    year: 2023,
-    type: 'frontend',
-    icon: 'nextJS',
-  },
-  {
-    name: 'TailwindCSS',
-    year: 2023,
-    type: 'frontend',
-    icon: 'tailwind',
-  },
-  {
-    name: 'MantineUI',
-    year: 2023,
-    type: 'frontend',
-    icon: 'mantineui',
-  },
-  {
-    name: 'React Hook Form',
-    year: 2023,
-    type: 'frontend',
-    icon: 'reactHookForm',
-  },
-  {
-    name: 'Zod',
-    year: 2023,
-    type: 'frontend',
-    icon: 'zod',
-  },
-  {
-    name: 'Docker',
-    year: 2023,
-    type: 'infra',
-    icon: 'docker',
-  },
-  {
-    name: 'Sequelize',
-    year: 2023,
-    type: 'backend',
-    icon: 'sequelize',
-  },
-  {
-    name: 'PostgresDB',
-    year: 2023,
-    type: 'backend',
-    icon: 'postgres',
-  },
-  {
-    name: 'Datagrip',
-    year: 2023,
-    type: 'infra',
-    icon: 'datagrip',
-  },
-  {
-    name: 'Postman',
-    year: 2023,
-    type: 'infra',
-    icon: 'postman',
-  },
-  {
-    name: 'Clojure',
-    year: 2023,
-    type: 'language',
-    icon: 'clojure',
-  },
-  {
-    name: 'Heroku',
-    year: 2023,
-    type: 'infra',
-    icon: 'heroku',
-  },
-  {
-    name: 'ElectronJS',
-    year: 2024,
-    type: 'frontend',
-    icon: 'electron',
-  },
-  {
-    name: 'Shadcn UI',
-    year: 2024,
-    type: 'frontend',
-    icon: 'shadcn',
-  },
-  {
-    name: 'PuppeterJS',
-    year: 2024,
-    type: 'tests',
-    icon: 'puppeter',
-  },
-  {
-    name: 'Android Studio',
-    year: 2024,
-    type: 'frontend',
-    icon: 'androidStudio',
-  },
-  {
-    name: 'Expo',
-    year: 2024,
-    type: 'infra',
-    icon: 'expo',
-  },
-  {
-    name: 'React Native',
-    year: 2024,
-    type: 'frontend',
-    icon: 'react',
-  },
-  {
-    name: 'Gradle',
-    year: 2024,
-    type: 'infra',
-    icon: 'gradle',
-  },
-  {
-    name: 'NestJS',
-    year: 2024,
-    type: 'backend',
-    icon: 'nestJS',
-  },
-  {
-    name: 'TypeORM',
-    year: 2024,
-    type: 'backend',
-    icon: 'typeorm',
-  },
-  {
-    name: 'Selenium',
-    year: 2025,
-    type: 'tests',
-    icon: 'selenium',
-  },
-  {
-    name: 'Cypress',
-    year: 2025,
-    type: 'frontend',
-    icon: 'cypress',
-  },
-  {
-    name: 'Svelte',
-    year: 2025,
-    type: 'frontend',
-    icon: 'svelte',
-  },
-  {
-    name: 'Ant Design',
-    year: 2025,
-    type: 'frontend',
-    icon: 'antdesign',
-  },
-  {
-    name: 'Zustand',
-    year: 2025,
-    type: 'frontend',
-    icon: 'zustand',
-  },
-  {
-    name: 'Tanstack',
-    year: 2025,
-    type: 'frontend',
-    icon: 'tanstack',
-  },
-  {
-    name: 'Daisy UI',
-    year: 2026,
-    type: 'frontend',
-    icon: 'daisyUI',
-  },
-];
+export type ExperienceMap = Record<ExperienceItemsTypes, ExperienceItem[]>;
+
+export const experienceMap: ExperienceMap = {
+  language: [
+    { name: 'Javascript', icon: 'javascript' },
+    { name: 'Typescript', icon: 'typescript' },
+    { name: 'C#', icon: 'csharp' },
+    { name: 'Clojure', icon: 'clojure' },
+    { name: 'Java', icon: 'java' },
+  ],
+  frontend: [
+    { name: 'HTML', icon: 'html' },
+    { name: 'CSS', icon: 'css' },
+    { name: 'Bootstrap', icon: 'bootstrap' },
+    { name: 'SASS', icon: 'sass' },
+    { name: 'ReactJS', icon: 'react' },
+    { name: 'Redux', icon: 'redux' },
+    { name: 'Styled Components', icon: 'styledComponents' },
+    { name: 'Material UI', icon: 'materialui' },
+    { name: 'Figma', icon: 'figma' },
+    { name: 'NextJS', icon: 'nextJS' },
+    { name: 'TailwindCSS', icon: 'tailwind' },
+    { name: 'Mantine UI', icon: 'mantineui' },
+    { name: 'React Hook Form', icon: 'reactHookForm' },
+    { name: 'Zod', icon: 'zod' },
+    { name: 'ElectronJS', icon: 'electron' },
+    { name: 'Shadcn UI', icon: 'shadcn' },
+    { name: 'Svelte', icon: 'svelte' },
+    { name: 'Ant Design UI', icon: 'antdesign' },
+    { name: 'Zustand', icon: 'zustand' },
+    { name: 'Tanstack', icon: 'tanstack' },
+    { name: 'Daisy UI', icon: 'daisyUI' },
+  ],
+  backend: [
+    { name: 'NodeJS', icon: 'nodejs' },
+    { name: 'ExpressJS', icon: 'expressJS' },
+    { name: 'MongoDB', icon: 'mongoDb' },
+    { name: 'Mongoose', icon: 'mongoose' },
+    { name: 'Sequelize', icon: 'sequelize' },
+    { name: 'PostgresDB', icon: 'postgres' },
+    { name: 'NestJS', icon: 'nestJS' },
+    { name: 'TypeORM', icon: 'typeorm' },
+  ],
+  mobile: [
+    { name: 'React Native', icon: 'react' },
+    { name: 'Expo', icon: 'expo' },
+    { name: 'Android Studio', icon: 'androidStudio' },
+    { name: 'Gradle', icon: 'gradle' },
+  ],
+  infra: [
+    { name: 'Git', icon: 'git' },
+    { name: 'Amazon Web Services', icon: 'aws' },
+    { name: 'Docker', icon: 'docker' },
+    { name: 'Heroku', icon: 'heroku' },
+  ],
+  tests: [
+    { name: 'Jest', icon: 'jest' },
+    { name: 'PuppeterJS', icon: 'puppeter' },
+    { name: 'Selenium', icon: 'selenium' },
+    { name: 'Cypress', icon: 'cypress' },
+  ],
+  tools: [
+    { name: 'Insomnia', icon: 'insomnia' },
+    { name: 'Postman', icon: 'postman' },
+    { name: 'Datagrip', icon: 'datagrip' },
+  ],
+};

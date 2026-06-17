@@ -25,6 +25,15 @@
   "header_page_text": "profile.klessitonrds.com",
   "cv_resume_title": "Resume",
   "cv_resume": "Fullstack developer with experience in Web and Mobile applications using React and its frameworks, building APIs with Node.js using Express or Nest.js, and using cloud services such as AWS and Google Cloud. Able to support maintenance and development of systems built with Java, C#, or Clojure. I enjoy learning different technologies and ways to improve productivity and code quality, and I like being creative and proposing ways to improve the development process through reports and automated tests.",
+
+  "experience_category_language": "Programming Languages",
+  "experience_category_frontend": "Frontend Development",
+  "experience_category_backend": "Backend Development",
+  "experience_category_mobile": "Mobile Development",
+  "experience_category_infra": "Infrastructure and DevOps",
+  "experience_category_tests": "Automated Testing",
+  "experience_category_tools": "Development Tools",
+
   "experience_title": "Experience",
   "experience_harmat": "Harmat Management Software",
   "experience_harmat_date": "04/2025 - 04/2026",

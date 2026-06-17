@@ -19,6 +19,10 @@ export const PageContent = styled.div(
     margin-bottom: ${cssSize(10)};
     max-width: ${screenSize.laptopL}px;
     animation: 0.5s ${animations.fadeIn} ease-in-out;
+
+    @media print {
+      padding: ${cssSize(20)} 0;
+    }
   `,
 );
 
@@ -68,7 +72,7 @@ export const Box = styled.div<IStyledProps>(
     gap: ${cssSize(2)};
     padding: ${cssSize(4)};
     border: ${theme.border.sm};
-    border-radius: ${theme.radius.sm};
+    border-radius: ${theme.radius.md};
     break-inside: avoid;
 
     @media (max-width: ${screenSize.laptopS}px) {

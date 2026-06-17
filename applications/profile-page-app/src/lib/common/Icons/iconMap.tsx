@@ -23,6 +23,7 @@ import {
   PiCodeBlockBold,
   PiDevicesBold,
   PiDotOutlineFill,
+  PiFileCSharp,
   PiGithubLogoBold,
   PiNotebookBold,
   PiStudentBold,
@@ -177,4 +178,5 @@ export const iconMap = {
   antdesign: <SiAntdesign />,
   zustand: <RiBearSmileLine />,
   tanstack: <LuTreePalm />,
+  csharp: <PiFileCSharp />,
 };
