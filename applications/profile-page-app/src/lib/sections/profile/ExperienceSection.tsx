@@ -5,11 +5,13 @@ import { Hr } from 'src/lib/common/StyledComponents/Divisors';
 import { Grid, Row } from 'src/lib/common/StyledComponents/Flex';
 import Text from 'src/lib/common/Text';
 
+const categoryKeys = Object.keys(experienceMap) as (keyof typeof experienceMap)[];
+
 const renderExperienceItem = ({ name, icon }: ExperienceItem) => {
   return (
-    <Box key={name} gap={2}>
+    <Box key={name}>
       <Row left gap={4}>
-        <Icons type={icon} size={6} />
+        <Icons type={icon} size={7} />
         <Text tag="p">{name}</Text>
       </Row>
     </Box>
@@ -17,8 +19,6 @@ const renderExperienceItem = ({ name, icon }: ExperienceItem) => {
 };
 
 const ProfileExperienceSection = () => {
-  const categoryKeys = Object.keys(experienceMap) as (keyof typeof experienceMap)[];
-
   return (
     <Section>
       <Card>
@@ -27,7 +27,7 @@ const ProfileExperienceSection = () => {
         {categoryKeys.map(key => (
           <Box key={key}>
             <Text tag="h6" path={'experience_category_' + key} />
-            <Grid cols={2} responsive>
+            <Grid cols={3} responsive>
               {experienceMap[key].map(renderExperienceItem)}
             </Grid>
           </Box>

@@ -1,4 +1,4 @@
-import { BiCog, BiLogoAws } from 'react-icons/bi';
+import { BiCog, BiCompass, BiLogoAws } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaJava } from 'react-icons/fa6';
 import {
@@ -20,6 +20,7 @@ import {
 import {
   PiAndroidLogoBold,
   PiCertificateBold,
+  PiCode,
   PiCodeBlockBold,
   PiDevicesBold,
   PiDotOutlineFill,
@@ -43,6 +44,7 @@ import {
   SiAntdesign,
   SiApachecordova,
   SiBootstrap,
+  SiClaude,
   SiClojure,
   SiCodecademy,
   SiCss,
@@ -55,6 +57,7 @@ import {
   SiExpress,
   SiFigma,
   SiGit,
+  SiGithubcopilot,
   SiGradle,
   SiHeroku,
   SiHtml5,
@@ -81,12 +84,14 @@ import {
   SiSequelize,
   SiShadcnui,
   SiSpringboot,
+  SiStrapi,
   SiStyledcomponents,
   SiSvelte,
   SiTailwindcss,
   SiTypeorm,
   SiTypescript,
   SiUdemy,
+  SiYaak,
   SiZod,
 } from 'react-icons/si';
 
@@ -179,4 +184,11 @@ export const iconMap = {
   zustand: <RiBearSmileLine />,
   tanstack: <LuTreePalm />,
   csharp: <PiFileCSharp />,
+  yaak: <SiYaak />,
+  compass: <BiCompass />,
+  copilot: <SiGithubcopilot />,
+  codex: <SiOpenai />,
+  claude: <SiClaude />,
+  nativeBase: <PiCode />,
+  strapi: <SiStrapi />,
 };

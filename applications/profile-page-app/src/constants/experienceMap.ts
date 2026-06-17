@@ -7,22 +7,21 @@ export type ExperienceItemsTypes =
   | 'language'
   | 'mobile'
   | 'tests'
-  | 'tools';
+  | 'tools'
+  | 'ai_tools';
 
 export type ExperienceItem = {
   name: string;
   icon: IconsType;
 };
 
-export type ExperienceMap = Record<ExperienceItemsTypes, ExperienceItem[]>;
-
-export const experienceMap: ExperienceMap = {
+export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
   language: [
     { name: 'Javascript', icon: 'javascript' },
     { name: 'Typescript', icon: 'typescript' },
-    { name: 'C#', icon: 'csharp' },
     { name: 'Clojure', icon: 'clojure' },
     { name: 'Java', icon: 'java' },
+    { name: 'C#', icon: 'csharp' },
   ],
   frontend: [
     { name: 'HTML', icon: 'html' },
@@ -33,7 +32,6 @@ export const experienceMap: ExperienceMap = {
     { name: 'Redux', icon: 'redux' },
     { name: 'Styled Components', icon: 'styledComponents' },
     { name: 'Material UI', icon: 'materialui' },
-    { name: 'Figma', icon: 'figma' },
     { name: 'NextJS', icon: 'nextJS' },
     { name: 'TailwindCSS', icon: 'tailwind' },
     { name: 'Mantine UI', icon: 'mantineui' },
@@ -54,11 +52,13 @@ export const experienceMap: ExperienceMap = {
     { name: 'Mongoose', icon: 'mongoose' },
     { name: 'Sequelize', icon: 'sequelize' },
     { name: 'PostgresDB', icon: 'postgres' },
+    { name: 'Strapi', icon: 'strapi' },
     { name: 'NestJS', icon: 'nestJS' },
     { name: 'TypeORM', icon: 'typeorm' },
   ],
   mobile: [
     { name: 'React Native', icon: 'react' },
+    { name: 'Native Base', icon: 'nativeBase' },
     { name: 'Expo', icon: 'expo' },
     { name: 'Android Studio', icon: 'androidStudio' },
     { name: 'Gradle', icon: 'gradle' },
@@ -71,13 +71,21 @@ export const experienceMap: ExperienceMap = {
   ],
   tests: [
     { name: 'Jest', icon: 'jest' },
-    { name: 'PuppeterJS', icon: 'puppeter' },
+    { name: 'Puppeter', icon: 'puppeter' },
     { name: 'Selenium', icon: 'selenium' },
     { name: 'Cypress', icon: 'cypress' },
   ],
   tools: [
+    { name: 'Figma', icon: 'figma' },
     { name: 'Insomnia', icon: 'insomnia' },
     { name: 'Postman', icon: 'postman' },
+    { name: 'MongoDB Compass', icon: 'compass' },
     { name: 'Datagrip', icon: 'datagrip' },
+    { name: 'Yaak', icon: 'yaak' },
+  ],
+  ai_tools: [
+    { name: 'Copilot', icon: 'copilot' },
+    { name: 'Codex', icon: 'codex' },
+    { name: 'Claude', icon: 'claude' },
   ],
 };
