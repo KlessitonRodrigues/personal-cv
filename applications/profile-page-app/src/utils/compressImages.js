@@ -26,8 +26,9 @@ for (const file of files) {
   else img = img.jpeg({ quality: 25, mozjpeg: true });
 
   const out = await img.toBuffer();
+  const fileName = path.basename(file);
   await fs.writeFile(file, out);
   console.log(
-    `${file} (${(buf.length / 1024).toFixed(0)}KB -> ${(out.length / 1024).toFixed(0)}KB)`,
+    `- ${fileName}: ${(buf.length / 1024).toFixed(0)}KB -> ${(out.length / 1024).toFixed(0)}KB`,
   );
 }
