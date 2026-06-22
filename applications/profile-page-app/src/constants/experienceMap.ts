@@ -8,6 +8,7 @@ export type ExperienceItemsTypes =
   | 'mobile'
   | 'tests'
   | 'tools'
+  | 'management_tools'
   | 'ai_tools';
 
 export type ExperienceItem = {
@@ -88,6 +89,12 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Android Studio', icon: 'androidStudio' },
     { name: 'Datagrip', icon: 'datagrip' },
     { name: 'Yaak', icon: 'yaak' },
+  ],
+  management_tools: [
+    { name: 'Jira', icon: 'jira' },
+    { name: 'Trello', icon: 'trello' },
+    { name: 'Notion', icon: 'notion' },
+    { name: 'Shortcut', icon: 'shortcut' },
   ],
   ai_tools: [
     { name: 'Copilot', icon: 'copilot' },
