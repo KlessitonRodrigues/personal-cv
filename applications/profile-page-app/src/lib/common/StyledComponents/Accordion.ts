@@ -31,7 +31,6 @@ export const AccordionHeader = styled.div(
   () => css`
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: ${cssSize(4)} 0;
     gap: ${cssSize(4)};
   `,

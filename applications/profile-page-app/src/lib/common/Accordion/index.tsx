@@ -21,8 +21,8 @@ const Accordion = (props: IAccordionProps) => {
   return (
     <AccordionContainer active={active} onClick={() => setActive(!active)}>
       <AccordionHeader>
+        <Icons type="caretRight" size={7} />
         {title}
-        <Icons type="caretLeft" size={8} />
       </AccordionHeader>
       <AccordionContent>
         <Hr />
