@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+import { useEffect, useState } from 'react';
 
-import { IconsType, iconMap } from './iconMap';
+import type { IconsType } from './iconMap';
 import { Container } from './styled';
 
 export type IIcons = {
@@ -12,7 +12,11 @@ export type IIcons = {
 
 const Icons = (props: IIcons) => {
   const { type, size, style, onPress } = props;
-  const Icon = useMemo(() => iconMap[type], [type]);
+  const [Icon, setIcon] = useState<React.ReactNode>(null);
+
+  useEffect(() => {
+    import('./iconMap').then(({ iconMap }) => setIcon(iconMap[type]));
+  }, [type]);
 
   return (
     <Container className={'icon icon-' + type} size={size} style={style} onClick={onPress}>

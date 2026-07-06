@@ -1,6 +1,4 @@
 import BrSVG from 'flag-icons/flags/1x1/br.svg';
-import EsSVG from 'flag-icons/flags/1x1/es.svg';
-import FrSVG from 'flag-icons/flags/1x1/fr.svg';
 import UsSVG from 'flag-icons/flags/1x1/us.svg';
 
 import useTheme from 'src/hooks/useTheme';
@@ -28,16 +26,6 @@ const languageOptions = [
     label: getText('language_english'),
     value: 'en',
     content: <Image src={UsSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
-  },
-  {
-    label: getText('language_spanish'),
-    value: 'es',
-    content: <Image src={EsSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
-  },
-  {
-    label: getText('language_french'),
-    value: 'fr',
-    content: <Image src={FrSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
   },
 ];
 

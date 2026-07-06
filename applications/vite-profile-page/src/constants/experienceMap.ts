@@ -99,7 +99,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
   ],
   ai_tools: [
     { name: 'Copilot', icon: 'copilot' },
-    { name: 'Codex', icon: 'codex' },
+    { name: 'Codex', icon: 'openAI' },
     { name: 'Claude', icon: 'claude' },
   ],
 };

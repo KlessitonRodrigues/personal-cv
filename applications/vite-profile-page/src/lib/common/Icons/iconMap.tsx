@@ -1,4 +1,4 @@
-import { BiCog, BiCompass, BiLogoAws, BiLogoVisualStudio } from 'react-icons/bi';
+import { BiCog, BiCompass, BiLogoAws, BiLogoHeroku, BiLogoVisualStudio } from 'react-icons/bi';
 import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaJava } from 'react-icons/fa6';
 import {
@@ -30,6 +30,7 @@ import {
   PiFileText,
   PiGithubLogoBold,
   PiNotebookBold,
+  PiOpenAiLogo,
   PiStudentBold,
   PiTranslateBold,
 } from 'react-icons/pi';
@@ -63,7 +64,6 @@ import {
   SiGit,
   SiGithubcopilot,
   SiGradle,
-  SiHeroku,
   SiHtml5,
   SiHuggingface,
   SiInsomnia,
@@ -78,7 +78,6 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiNotion,
-  SiOpenai,
   SiPostgresql,
   SiPostman,
   SiPuppeteer,
@@ -106,9 +105,7 @@ import {
   SiZod,
 } from 'react-icons/si';
 
-export type IconsType = keyof typeof iconMap;
-
-export const iconMap = {
+const iconMap = {
   download: <LuDownload />,
   selector: <RiExpandUpDownFill />,
   spinner: <RiLoader5Line />,
@@ -160,7 +157,7 @@ export const iconMap = {
   androidStudio: <SiAndroidstudio />,
   insomnia: <SiInsomnia />,
   postman: <SiPostman />,
-  heroku: <SiHeroku />,
+  heroku: <BiLogoHeroku />,
   bootstrap: <SiBootstrap />,
   whatsapp: <RiWhatsappLine />,
   udemy: <SiUdemy />,
@@ -178,7 +175,7 @@ export const iconMap = {
   codeBlock: <PiCodeBlockBold />,
   dot: <PiDotOutlineFill />,
   redux: <SiRedux />,
-  openAI: <SiOpenai />,
+  openAI: <PiOpenAiLogo />,
   notebook: <PiNotebookBold />,
   daisyUI: <SiDaisyui />,
   transformers: <SiJavascript />,
@@ -199,7 +196,6 @@ export const iconMap = {
   yaak: <SiYaak />,
   compass: <BiCompass />,
   copilot: <SiGithubcopilot />,
-  codex: <SiOpenai />,
   claude: <SiClaude />,
   nativeBase: <PiCode />,
   strapi: <SiStrapi />,
@@ -213,3 +209,7 @@ export const iconMap = {
   shortcut: <SiShortcut />,
   vitest: <SiVitest />,
 };
+
+export type IconsType = keyof typeof iconMap;
+
+export { iconMap };
