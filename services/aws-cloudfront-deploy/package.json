@@ -1,5 +1,5 @@
 {
-  "name": "@services/cloudfront-deploy",
+  "name": "@services/aws-cloudfront-deploy",
   "version": "1.0.0",
   "scripts": {
     "cdk-synt": "cdk synthesize",

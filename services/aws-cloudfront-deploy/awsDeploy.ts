@@ -3,7 +3,7 @@ import * as cloudFront from 'aws-cdk-lib/aws-cloudfront';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as s3Deploy from 'aws-cdk-lib/aws-s3-deployment';
 
-const profilePagePath = '../../applications/profile-page-app/dist';
+const profilePagePath = '../../applications/vite-profile-page/dist';
 
 export class WebAppStack extends cdk.Stack {
   constructor(scope: cdk.App, props?: cdk.StackProps) {
