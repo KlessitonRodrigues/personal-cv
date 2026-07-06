@@ -76,9 +76,10 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
   ],
   tests: [
     { name: 'Jest', icon: 'jest' },
+    { name: 'Cypress', icon: 'cypress' },
+    { name: 'Vitest', icon: 'vitest' },
     { name: 'Puppeter', icon: 'puppeter' },
     { name: 'Selenium', icon: 'selenium' },
-    { name: 'Cypress', icon: 'cypress' },
   ],
   tools: [
     { name: 'Visual Studio Code', icon: 'vscode' },

@@ -101,6 +101,7 @@ import {
   SiTypescript,
   SiUdemy,
   SiVite,
+  SiVitest,
   SiYaak,
   SiZod,
 } from 'react-icons/si';
@@ -210,4 +211,5 @@ export const iconMap = {
   notion: <SiNotion />,
   trello: <SiTrello />,
   shortcut: <SiShortcut />,
+  vitest: <SiVitest />,
 };
