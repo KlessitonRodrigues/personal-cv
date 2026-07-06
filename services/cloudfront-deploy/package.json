@@ -6,13 +6,13 @@
     "cdk-deploy": "cdk deploy"
   },
   "devDependencies": {
-    "@types/node": "25.3.2",
-    "aws-cdk": "2.1108.0",
+    "@types/node": "26.1.0",
+    "aws-cdk": "2.1129.0",
     "ts-node": "^10.9.2",
-    "typescript": "~5.9.3"
+    "typescript": "~6.0.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.240.0",
+    "aws-cdk-lib": "^2.261.0",
     "constructs": "^10.5.1"
   },
   "peerDependencies": {
