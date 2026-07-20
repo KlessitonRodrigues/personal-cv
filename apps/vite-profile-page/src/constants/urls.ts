@@ -36,6 +36,8 @@ export const urls = {
   authenticationFormApp: 'https://dv6xqa9ixk4bs.cloudfront.net/',
   translationApp: 'https://d2zk0yjdtgvfp5.cloudfront.net/',
   translationAppRepo: 'https://github.com/KlessitonRodrigues/translation-pwa',
+  awsAuthApiRepo: 'https://github.com/KlessitonRodrigues/aws-auth-api-with-jwt-token',
+  nestAuthApiRepo: 'https://github.com/KlessitonRodrigues/nestjs-auth-api-with-jwt',
 };
 
 export const notesURls = {

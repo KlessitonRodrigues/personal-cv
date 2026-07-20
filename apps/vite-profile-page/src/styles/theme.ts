@@ -3,15 +3,7 @@ import { antColors as ant, materialColors as material } from 'src/styles/colors'
 import { cssSize } from './utils';
 
 export type IThemeColors =
-  | 'indigo'
-  | 'purple'
-  | 'blue'
-  | 'magenta'
-  | 'green'
-  | 'red'
-  | 'yellow'
-  | 'orange'
-  | 'pink';
+  'indigo' | 'purple' | 'blue' | 'magenta' | 'green' | 'red' | 'yellow' | 'orange' | 'pink';
 
 export type IThemeProps = {
   colors: {
@@ -85,7 +77,7 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       bg1: ant.gray['100'],
       bg2: ant.gray['200'],
       bg3: ant.gray['400'],
-      bg4: ant.gray['600'],
+      bg4: ant.gray['500'],
       text1: ant.gray['900'],
       text2: ant.gray['800'],
       text3: ant.gray['700'],

@@ -1,27 +1,24 @@
+import projectsMap from 'src/constants/projectMap';
 import Page from 'src/lib/components/Page';
 import SideBar from 'src/lib/components/SideBar';
-import AuthenticationFormProjectSection from 'src/lib/sections/projects/AuthFormSection';
-import AwsCorsProxyProjectSection from 'src/lib/sections/projects/AwsCorsProxySection';
-import GameFinderProjectSection from 'src/lib/sections/projects/GameFinderSection';
-import LandingPageTemplateProjectSection from 'src/lib/sections/projects/LandingPageTemplete';
-import MultiStepFormProjectSection from 'src/lib/sections/projects/MultiStepFormSection';
-import ProfileProjectSection from 'src/lib/sections/projects/ProfileProjectSection';
-import SellerAppProjectSection from 'src/lib/sections/projects/SellerAppSection';
-import TranslationAppProjectSection from 'src/lib/sections/projects/TranslationApp';
+import ProjectSection from 'src/lib/sections/projects/ProjectSections';
+
+const ProjectList = projectsMap.map(project => (
+  <ProjectSection
+    key={project.title}
+    title={project.title}
+    description={project.description}
+    technologies={project.technologies}
+    websiteUrl={project.websiteUrl || ''}
+    githubUrl={project.githubUrl || ''}
+    imageSrc={project.imageSrc || ''}
+  />
+));
 
 const ProjectsPage = () => {
   return (
     <SideBar>
-      <Page>
-        <ProfileProjectSection />
-        <LandingPageTemplateProjectSection />
-        <AuthenticationFormProjectSection />
-        <TranslationAppProjectSection />
-        <MultiStepFormProjectSection />
-        <AwsCorsProxyProjectSection />
-        <GameFinderProjectSection />
-        <SellerAppProjectSection />
-      </Page>
+      <Page>{ProjectList}</Page>
     </SideBar>
   );
 };
