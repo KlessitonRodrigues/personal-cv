@@ -188,11 +188,11 @@
   "color_orange": "Laranja",
   "color_pink": "Rosa",
 
-  "shared_ai_code": "Prompts de IA Compartilhados",
-  "shared_ai_code_0": "Bootstrap ViteJS com TailwindCSS e deploy AWS",
-  "shared_ai_code_1": "Bootstrap ViteJS com Styled Components e deploy AWS",
-  "shared_ai_code_2": "Bootstrap NextJS com TailwindCSS e deploy AWS",
-  "shared_ai_code_3": "Bootstrap API NestJS com TypeORM e PostgreSQL",
+  "shared_ai_code": "Instruções de IA",
+  "shared_ai_code_0": "Aplicação React com viteJS e styled-components",
+  "shared_ai_code_1": "Aplicação NextJS com TailwindCSS e DaisyUI",
+  "shared_ai_code_2": "API com AWS Lambda e NodeJS",
+  "shared_ai_code_3": "API com NestJS e TypeORM",
 
   "shared_js_code": "Código Compartilhado em JavaScript",
   "shared_js_code_0": "Capturar images apartir de elementos HTML",

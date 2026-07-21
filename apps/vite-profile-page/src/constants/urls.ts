@@ -73,8 +73,9 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/d40ba073f299a1fb9b5f972ee8930d18',
   ],
   aipropmts: [
-    'https://gist.github.com/KlessitonRodrigues/3c8f5e3f4f4f4e1f6f6f6f6f6f6f6f6f',
-    'https://gist.github.com/KlessitonRodrigues/4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90',
-    'https://gist.github.com/KlessitonRodrigues/4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f90',
+    '',
+    '',
+    'https://gist.github.com/KlessitonRodrigues/81303fbda37f8e397539e91456074ca2',
+    'https://gist.github.com/KlessitonRodrigues/196d048470f2c9724f28221c5cdd563d',
   ],
 };
