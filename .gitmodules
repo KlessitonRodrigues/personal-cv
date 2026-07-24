@@ -1,0 +1,3 @@
+[submodule "packages/ai-instruction-files"]
+	path = packages/ai-instruction-files
+	url = git@github.com:KlessitonRodrigues/ai-instruction-files.git

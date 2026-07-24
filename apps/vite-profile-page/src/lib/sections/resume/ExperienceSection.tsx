@@ -19,8 +19,8 @@ const ResumeExperienceSection = () => {
 
         <Column left>
           <Row left responsive>
-            <Text tag="h6" path="experience_harmat" />
-            <Text tag="small" path="experience_harmat_date" />
+            <Text tag="h6" path="experience_harmat" /> -
+            <Text tag="small" path="experience_harmat_job" />
           </Row>
           <Text tag="p" path="experience_harmat_text" />
           <Text tag="small" path="experience_harmat_tech" />
@@ -28,8 +28,8 @@ const ResumeExperienceSection = () => {
 
         <Column left>
           <Row left responsive>
-            <Text tag="h6" path="experience_accourdous" />
-            <Text tag="small" path="experience_accourdous_date" />
+            <Text tag="h6" path="experience_accourdous" /> -
+            <Text tag="small" path="experience_accourdous_job" />
           </Row>
           <Text tag="p" path="experience_accourdous_text" />
           <Text tag="small" path="experience_accourdous_tech" />
@@ -37,8 +37,8 @@ const ResumeExperienceSection = () => {
 
         <Column left gap={2}>
           <Row left responsive>
-            <Text tag="h6" path="experience_westpoint" />
-            <Text tag="small" path="experience_westpoint_date" />
+            <Text tag="h6" path="experience_westpoint" /> -
+            <Text tag="small" path="experience_westpoint_job" />
           </Row>
           <Text tag="p" path="experience_westpoint_text" />
           <Box>

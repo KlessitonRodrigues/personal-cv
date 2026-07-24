@@ -9,6 +9,7 @@ const CodeListSection = () => {
   return (
     <Section>
       <Column left gap={4}>
+        {/*}
         <Card>
           <Column left gap={4}>
             <Row left>
@@ -28,6 +29,7 @@ const CodeListSection = () => {
             ))}
           </Column>
         </Card>
+        */}
 
         <Card>
           <Column left gap={4}>
