@@ -1,4 +1,5 @@
 import { BiCog, BiCompass, BiLogoAws, BiLogoHeroku, BiLogoVisualStudio } from 'react-icons/bi';
+import { CgWebsite } from 'react-icons/cg';
 import { FaFacebook, FaJava } from 'react-icons/fa6';
 import {
   LuChevronLeft,
@@ -26,7 +27,6 @@ import {
   PiDotOutlineFill,
   PiFileCSharp,
   PiGithubLogoBold,
-  PiNewspaperClippingBold,
   PiNotebookBold,
   PiOpenAiLogo,
   PiStudentBold,
@@ -117,7 +117,7 @@ const iconMap = {
   theme: <LuPaintbrush />,
   sun: <LuSun />,
   moon: <LuMoon />,
-  website: <PiNewspaperClippingBold />,
+  website: <CgWebsite />,
   menu: <LuMenu />,
   close: <LuX />,
   linkedin: <RiLinkedinFill />,
