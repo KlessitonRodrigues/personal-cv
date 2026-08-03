@@ -1,10 +1,10 @@
-import DocumentView from 'src/lib/components/DocumentView';
-import Page from 'src/lib/components/Page';
-import SideBar from 'src/lib/components/SideBar';
-import ResumeEducationSection from 'src/lib/sections/resume/EducationSection';
-import ResumeExperienceSection from 'src/lib/sections/resume/ExperienceSection';
-import ResumeHeaderSection from 'src/lib/sections/resume/HeaderSection';
-import LanguagesSection from 'src/lib/sections/resume/LanguagesSection';
+import DocumentView from 'src/components/common/DocumentView';
+import Page from 'src/components/common/Page';
+import SideBar from 'src/components/common/SideBar';
+import ResumeEducationSection from 'src/components/resume/resume.certifications';
+import ResumeExperienceSection from 'src/components/resume/resume.experience';
+import ResumeHeaderSection from 'src/components/resume/resume.header';
+import LanguagesSection from 'src/components/resume/resume.languages';
 
 const ResumePage = () => {
   return (

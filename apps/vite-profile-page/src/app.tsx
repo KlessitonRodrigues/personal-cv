@@ -3,8 +3,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import Router from 'src/pages/routes';
 
+import AppProviders from './components/common/AppProviders';
 import { ThemeProvider } from './hooks/useTheme';
-import AppProviders from './lib/components/AppProviders';
 
 const App = () => {
   return (

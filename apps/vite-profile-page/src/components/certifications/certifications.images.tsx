@@ -1,0 +1,95 @@
+import Accordion from 'src/components/common/Accordion';
+import Icons from 'src/components/common/Icons';
+import { Card, Section } from 'src/components/common/StyledComponents/Containers';
+import { Hr } from 'src/components/common/StyledComponents/Divisors';
+import { Row } from 'src/components/common/StyledComponents/Flex';
+import { Image } from 'src/components/common/StyledComponents/Images';
+import Text from 'src/components/common/Text';
+import schoolImg from 'src/public/images/diploma_medio-min.jpg';
+import highSchoolImg from 'src/public/images/diploma_superior.jpg';
+import awsServelessImg from 'src/public/images/udemy_aws.jpg';
+import clojureImg from 'src/public/images/udemy_clojure.jpg';
+import dockerImg from 'src/public/images/udemy_docker.jpg';
+import englishImg from 'src/public/images/udemy_english.jpg';
+import jsTsImg from 'src/public/images/udemy_js_ts.jpg';
+import nestJsImg from 'src/public/images/udemy_nestjs.jpg';
+import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
+import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
+import reactNativeImg from 'src/public/images/udemy_react_native.jpg';
+import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
+
+export const SchoolCertifications = () => {
+  return (
+    <Section>
+      <Card>
+        <Row left gap={4}>
+          <Icons type="school" size={9} />
+          <Text tag="h3" path="education_title" />
+        </Row>
+        <Hr />
+        <Accordion
+          title={<Text tag="p" path="education_school" />}
+          content={<Image src={schoolImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_ifpi" />}
+          content={<Image src={highSchoolImg} maxw="35rem" maxh="45rem" />}
+        />
+      </Card>
+    </Section>
+  );
+};
+
+export const UdemyCertifications = () => {
+  return (
+    <Section>
+      <Card>
+        <Row left gap={4}>
+          <Icons type="udemy" size={9} />
+          <Text tag="h3">Udemy</Text>
+        </Row>
+        <Hr />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_1" />}
+          content={<Image src={jsTsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_2" />}
+          content={<Image src={reactReduxImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_3" />}
+          content={<Image src={reactHooksImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_4" />}
+          content={<Image src={nextJsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_13" />}
+          content={<Image src={reactNativeImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_6" />}
+          content={<Image src={nestJsImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_7" />}
+          content={<Image src={dockerImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_10" />}
+          content={<Image src={clojureImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_12" />}
+          content={<Image src={englishImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_8" />}
+          content={<Image src={awsServelessImg} maxw="45rem" maxh="30rem" />}
+        />
+      </Card>
+    </Section>
+  );
+};

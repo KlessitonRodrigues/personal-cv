@@ -1,7 +1,7 @@
+import Page from 'src/components/common/Page';
+import SideBar from 'src/components/common/SideBar';
+import ProjectSection from 'src/components/projects/projects.list';
 import projectsMap from 'src/constants/projectMap';
-import Page from 'src/lib/components/Page';
-import SideBar from 'src/lib/components/SideBar';
-import ProjectSection from 'src/lib/sections/projects/ProjectSections';
 
 const ProjectList = projectsMap.map(project => (
   <ProjectSection

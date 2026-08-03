@@ -1,8 +1,8 @@
-import ScrollToHashOnLoad from 'src/lib/common/Links/ScrollToHash';
-import Page from 'src/lib/components/Page';
-import SideBar from 'src/lib/components/SideBar';
-import ProfileExperienceSection from 'src/lib/sections/profile/ExperienceSection';
-import ProfileHeaderSection from 'src/lib/sections/profile/HeaderSection';
+import ScrollToHashOnLoad from 'src/components/common/Links/ScrollToHash';
+import Page from 'src/components/common/Page';
+import SideBar from 'src/components/common/SideBar';
+import ProfileExperienceSection from 'src/components/profile/profile.experience';
+import ProfileHeaderSection from 'src/components/profile/profile.header';
 
 const ProfilePage = () => {
   return (
