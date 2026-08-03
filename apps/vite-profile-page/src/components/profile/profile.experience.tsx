@@ -1,9 +1,10 @@
-import Icons from 'src/components/common/Icons';
-import { Box, Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-import { Grid, Row } from 'src/components/common/StyledComponents/Flex';
-import Text from 'src/components/common/Text';
-import { ExperienceItem, experienceMap } from 'src/constants/experienceMap';
+import { ExperienceItem, experienceMap } from 'src/constants/constants.experience.map';
+
+import Icons from '../common/common.icons';
+import Text from '../common/common.text';
+import { Box, Card, Section } from '../common/styled/styled.containers';
+import { Hr } from '../common/styled/styled.divisors';
+import { Grid, Row } from '../common/styled/styled.flex';
 
 const categoryKeys = Object.keys(experienceMap) as (keyof typeof experienceMap)[];
 

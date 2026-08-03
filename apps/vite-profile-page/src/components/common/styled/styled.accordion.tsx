@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { IStyledProps, cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/styles.utils';
 
 export const AccordionContainer = styled.div<IStyledProps>(
   ({ theme, active }) => css`

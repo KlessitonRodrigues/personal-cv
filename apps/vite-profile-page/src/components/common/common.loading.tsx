@@ -1,8 +1,8 @@
 import { CgSpinner } from 'react-icons/cg';
 import styled, { css } from 'styled-components';
 
-import { animations, cssSize, gradients } from 'src/styles/utils';
-import { getText } from 'src/utils/i18n';
+import { animations, cssSize, gradients } from 'src/styles/styles.utils';
+import { getText } from 'src/utils/utils.i18n';
 
 import If from './common.if';
 import { Column } from './styled/styled.flex';

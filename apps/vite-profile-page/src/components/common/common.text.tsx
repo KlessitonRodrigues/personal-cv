@@ -1,4 +1,4 @@
-import { getText } from 'src/utils/i18n';
+import { getText } from 'src/utils/utils.i18n';
 
 type ITextProps = {
   id?: string;

@@ -1,6 +1,6 @@
-import ScrollToHashOnLoad from 'src/components/common/Links/ScrollToHash';
-import Page from 'src/components/common/Page';
-import SideBar from 'src/components/common/SideBar';
+import ScrollToHashOnLoad from 'src/components/common/common.link.scroll.to.hash';
+import Page from 'src/components/common/common.page';
+import SideBar from 'src/components/common/common.sidebar';
 import ProfileExperienceSection from 'src/components/profile/profile.experience';
 import ProfileHeaderSection from 'src/components/profile/profile.header';
 

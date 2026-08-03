@@ -1,9 +1,9 @@
 import { PropsWithChildren, useState } from 'react';
 import styled, { css } from 'styled-components';
 
-import { urls } from 'src/constants/urls';
-import { cssSize, screenSize } from 'src/styles/utils';
-import { downloadPdfFile, openPrintDialog } from 'src/utils/pdf';
+import { urls } from 'src/constants/constants.urls';
+import { cssSize, screenSize } from 'src/styles/styles.utils';
+import { downloadPdfFile, openPrintDialog } from 'src/utils/utils.pdf';
 
 import Icons from './common.icons';
 import Loading from './common.loading';

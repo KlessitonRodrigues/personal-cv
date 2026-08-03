@@ -1,6 +1,6 @@
 import { keyframes } from 'styled-components';
 
-import { materialColors as mc } from './colors';
+import { materialColors as mc } from './styles.colors';
 
 export type IStyledProps = {
   active?: boolean;

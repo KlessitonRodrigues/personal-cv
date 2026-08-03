@@ -3,8 +3,8 @@ import {
   SchoolCertifications,
   UdemyCertifications,
 } from 'src/components/certifications/certifications.images';
-import Page from 'src/components/common/Page';
-import SideBar from 'src/components/common/SideBar';
+import Page from 'src/components/common/common.page';
+import SideBar from 'src/components/common/common.sidebar';
 
 const CertificationPage = () => {
   return (

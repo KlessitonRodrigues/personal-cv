@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { animations, cssSize, gradients } from 'src/styles/utils';
+import { animations, cssSize, gradients } from 'src/styles/styles.utils';
 
 export const Modal = styled.div<{ show: boolean }>(
   ({ show }) => css`

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { materialColors as mc } from 'src/styles/colors';
+import { materialColors as mc } from 'src/styles/styles.colors';
 
 export const GradidentBg = styled.div(
   () => css`

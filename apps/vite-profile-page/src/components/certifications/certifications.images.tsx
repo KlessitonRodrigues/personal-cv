@@ -1,10 +1,3 @@
-import Accordion from 'src/components/common/Accordion';
-import Icons from 'src/components/common/Icons';
-import { Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-import { Row } from 'src/components/common/StyledComponents/Flex';
-import { Image } from 'src/components/common/StyledComponents/Images';
-import Text from 'src/components/common/Text';
 import schoolImg from 'src/public/images/diploma_medio-min.jpg';
 import highSchoolImg from 'src/public/images/diploma_superior.jpg';
 import awsServelessImg from 'src/public/images/udemy_aws.jpg';
@@ -17,6 +10,14 @@ import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
 import reactNativeImg from 'src/public/images/udemy_react_native.jpg';
 import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
+
+import Accordion from '../common/common.accordion';
+import Icons from '../common/common.icons';
+import Text from '../common/common.text';
+import { Card, Section } from '../common/styled/styled.containers';
+import { Hr } from '../common/styled/styled.divisors';
+import { Row } from '../common/styled/styled.flex';
+import { Image } from '../common/styled/styled.image';
 
 export const SchoolCertifications = () => {
   return (

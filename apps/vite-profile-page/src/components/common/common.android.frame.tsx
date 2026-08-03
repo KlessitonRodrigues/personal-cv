@@ -1,4 +1,4 @@
-import { checkIframe } from 'src/utils/html';
+import { checkIframe } from 'src/utils/utils.html';
 
 interface IAndroidEmulatorProps {
   url: string;

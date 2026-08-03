@@ -1,9 +1,9 @@
-import If from 'src/components/common/If';
-import LinkAndIcon from 'src/components/common/Links/LinkAndIcon';
-import { Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Column, Row } from 'src/components/common/StyledComponents/Flex';
-import { Image, ImageContainer } from 'src/components/common/StyledComponents/Images';
-import Text from 'src/components/common/Text';
+import If from '../common/common.if';
+import LinkAndIcon from '../common/common.link.and.icon';
+import Text from '../common/common.text';
+import { Card, Section } from '../common/styled/styled.containers';
+import { Column, Row } from '../common/styled/styled.flex';
+import { Image, ImageContainer } from '../common/styled/styled.image';
 
 type ProjectSectionProps = {
   title: string;

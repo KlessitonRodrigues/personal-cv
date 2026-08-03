@@ -1,6 +1,6 @@
 import CodeListSection from 'src/components/coding/coding.javascript';
-import Page from 'src/components/common/Page';
-import SideBar from 'src/components/common/SideBar';
+import Page from 'src/components/common/common.page';
+import SideBar from 'src/components/common/common.sidebar';
 
 const CodePage = () => {
   return (

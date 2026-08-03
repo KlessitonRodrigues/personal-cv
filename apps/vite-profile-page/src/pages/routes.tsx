@@ -1,11 +1,11 @@
 import { Route, createRoutesFromElements } from 'react-router-dom';
 
-import CertificationPage from './certification';
-import CodePage from './code';
-import ProfilePage from './profile';
-import ProjectsPage from './projects';
-import ResumePage from './resume';
-import SettingsPage from './settings';
+import CertificationPage from './page.certification';
+import CodePage from './page.coding';
+import ProfilePage from './page.profile';
+import ProjectsPage from './page.projects';
+import ResumePage from './page.resume';
+import SettingsPage from './page.settings';
 
 const Router = createRoutesFromElements(
   <>

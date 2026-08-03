@@ -1,9 +1,10 @@
-import LinkAndIcon from 'src/components/common/Links/LinkAndIcon';
-import { Box, Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-import { Column, Row } from 'src/components/common/StyledComponents/Flex';
-import Text from 'src/components/common/Text';
-import { urls } from 'src/constants/urls';
+import { urls } from 'src/constants/constants.urls';
+
+import LinkAndIcon from '../common/common.link.and.icon';
+import Text from '../common/common.text';
+import { Box, Card, Section } from '../common/styled/styled.containers';
+import { Hr } from '../common/styled/styled.divisors';
+import { Column, Row } from '../common/styled/styled.flex';
 
 const ResumeExperienceSection = () => {
   return (

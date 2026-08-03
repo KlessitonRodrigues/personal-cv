@@ -1,6 +1,6 @@
-import { antColors as ant, materialColors as material } from 'src/styles/colors';
+import { antColors as ant, materialColors as material } from 'src/styles/styles.colors';
 
-import { cssSize } from './utils';
+import { cssSize } from './styles.utils';
 
 export type IThemeColors =
   'indigo' | 'purple' | 'blue' | 'magenta' | 'green' | 'red' | 'yellow' | 'orange' | 'pink';

@@ -1,6 +1,6 @@
-import { themeColors } from 'src/styles/theme';
+import { themeColors } from 'src/styles/styles.theme';
 
-import { getColor, getThemeMode } from './localStorage';
+import { getColor, getThemeMode } from './utils.local.storage';
 
 export const currentColor = getColor();
 export const currenMainColor = themeColors[currentColor];

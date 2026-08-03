@@ -1,22 +1,19 @@
-import LinkAndIcon from 'src/components/common/Links/LinkAndIcon';
-import { Section } from 'src/components/common/StyledComponents/Containers';
-import { Row } from 'src/components/common/StyledComponents/Flex';
-import {
-  Outdoor,
-  OutdoorContent,
-  OutdoorImage,
-} from 'src/components/common/StyledComponents/Images';
-import { AvatarBig } from 'src/components/common/StyledComponents/User';
-import Text from 'src/components/common/Text';
-import { urls } from 'src/constants/urls';
-import useTheme from 'src/hooks/useTheme';
+import { urls } from 'src/constants/constants.urls';
+import hooksUseTheme from 'src/hooks/hooks.use.theme';
 import desktopBg from 'src/public/images/desktop.min.jpg';
 import desktopDarkBg from 'src/public/images/desktop_dark.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
-import { isMobileScreen } from 'src/styles/utils';
+import { isMobileScreen } from 'src/styles/styles.utils';
+
+import LinkAndIcon from '../common/common.link.and.icon';
+import Text from '../common/common.text';
+import { Section } from '../common/styled/styled.containers';
+import { Row } from '../common/styled/styled.flex';
+import { Outdoor, OutdoorContent, OutdoorImage } from '../common/styled/styled.image';
+import { AvatarBig } from '../common/styled/styled.user';
 
 const ProfileHeaderSection = () => {
-  const themeCtx = useTheme();
+  const themeCtx = hooksUseTheme();
   const isMobile = isMobileScreen();
 
   return (

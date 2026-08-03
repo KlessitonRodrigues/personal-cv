@@ -7,7 +7,7 @@ import githubPageImg from 'src/public/images/github.png';
 import landingPageTemplateImg from 'src/public/images/landing_page_template.png';
 import translationAppImg from 'src/public/images/translation_app.png';
 
-import { urls } from './urls';
+import { urls } from './constants.urls';
 
 const projectsMap = [
   {

@@ -1,6 +1,6 @@
 import { PropsWithChildren, createContext, useContext, useEffect, useMemo, useState } from 'react';
 
-import { IThemeColors, getLocalTheme, saveLocalTheme } from 'src/styles/theme';
+import { IThemeColors, getLocalTheme, saveLocalTheme } from 'src/styles/styles.theme';
 
 type IUseThemeCtx = {
   isDark: boolean;

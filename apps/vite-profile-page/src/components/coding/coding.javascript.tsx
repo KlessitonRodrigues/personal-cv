@@ -1,9 +1,10 @@
-import Icons from 'src/components/common/Icons';
-import { OutlineBtn } from 'src/components/common/StyledComponents/Buttons';
-import { Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Column, Row } from 'src/components/common/StyledComponents/Flex';
-import Text from 'src/components/common/Text';
-import { codeBlockLinks } from 'src/constants/urls';
+import { codeBlockLinks } from 'src/constants/constants.urls';
+
+import Icons from '../common/common.icons';
+import Text from '../common/common.text';
+import { OutlineBtn } from '../common/styled/styled.buttons';
+import { Card, Section } from '../common/styled/styled.containers';
+import { Column, Row } from '../common/styled/styled.flex';
 
 const CodeListSection = () => {
   return (

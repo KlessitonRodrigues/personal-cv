@@ -1,4 +1,4 @@
-import { IconsType } from 'src/components/common/Icons/iconMap';
+import { IconsType } from 'src/components/common/common.icons.map';
 
 export type ExperienceItemsTypes =
   | 'backend'

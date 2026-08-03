@@ -1,4 +1,4 @@
-import { IThemeColors } from 'src/styles/theme';
+import { IThemeColors } from 'src/styles/styles.theme';
 
 export const getLanguage = () => {
   try {

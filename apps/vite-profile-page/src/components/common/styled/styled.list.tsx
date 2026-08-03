@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { cssSize } from 'src/styles/styles.utils';
 
 export const List = styled.ol(
   () => css`

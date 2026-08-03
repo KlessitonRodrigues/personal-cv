@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { IStyledProps, cssSize, screenSize } from 'src/styles/utils';
+import { IStyledProps, cssSize, screenSize } from 'src/styles/styles.utils';
 
 const FlexItems = styled.div<IStyledProps>(
   ({ w, h, fit }) => css`

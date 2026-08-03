@@ -1,20 +1,21 @@
 import BrSVG from 'flag-icons/flags/1x1/br.svg';
 import UsSVG from 'flag-icons/flags/1x1/us.svg';
 
-import Icons from 'src/components/common/Icons';
-import OptionList from 'src/components/common/OptionList';
-import { ColorBtn } from 'src/components/common/StyledComponents/Buttons';
-import { Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-import { Column } from 'src/components/common/StyledComponents/Flex';
-import { Image } from 'src/components/common/StyledComponents/Images';
-import Text from 'src/components/common/Text';
-import useTheme from 'src/hooks/useTheme';
-import { materialColors } from 'src/styles/colors';
-import { IThemeColors } from 'src/styles/theme';
-import { cssSize } from 'src/styles/utils';
-import { getText } from 'src/utils/i18n';
-import { changeLanguage, getLanguage } from 'src/utils/localStorage';
+import useTheme from 'src/hooks/hooks.use.theme';
+import { materialColors } from 'src/styles/styles.colors';
+import { IThemeColors } from 'src/styles/styles.theme';
+import { cssSize } from 'src/styles/styles.utils';
+import { getText } from 'src/utils/utils.i18n';
+import { changeLanguage, getLanguage } from 'src/utils/utils.local.storage';
+
+import Icons from '../common/common.icons';
+import OptionList from '../common/common.option.list';
+import Text from '../common/common.text';
+import { ColorBtn } from '../common/styled/styled.buttons';
+import { Card, Section } from '../common/styled/styled.containers';
+import { Hr } from '../common/styled/styled.divisors';
+import { Column } from '../common/styled/styled.flex';
+import { Image } from '../common/styled/styled.image';
 
 const languageOptions = [
   {

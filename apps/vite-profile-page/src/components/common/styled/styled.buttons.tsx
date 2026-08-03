@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { IStyledProps, cssSize } from 'src/styles/utils';
+import { IStyledProps, cssSize } from 'src/styles/styles.utils';
 
 export const RoundedBtn = styled.button<IStyledProps>(
   ({ theme, w, h }) => css`

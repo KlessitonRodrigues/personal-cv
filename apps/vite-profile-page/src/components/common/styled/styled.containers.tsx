@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/utils';
+import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/styles.utils';
 
 export const PageContainer = styled.div(
   () => css`

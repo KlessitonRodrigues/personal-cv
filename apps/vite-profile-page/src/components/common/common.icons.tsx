@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 
-import { cssSize } from 'src/styles/utils';
+import { cssSize } from 'src/styles/styles.utils';
 
 import { IconsType } from './common.icons.map';
 

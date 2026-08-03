@@ -1,11 +1,12 @@
-import Icons from 'src/components/common/Icons';
-import If from 'src/components/common/If';
-import LinkAndIcon from 'src/components/common/Links/LinkAndIcon';
-import { Card, Section } from 'src/components/common/StyledComponents/Containers';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-import { Row } from 'src/components/common/StyledComponents/Flex';
-import Text from 'src/components/common/Text';
-import { notesURls } from 'src/constants/urls';
+import { notesURls } from 'src/constants/constants.urls';
+
+import Icons from '../common/common.icons';
+import If from '../common/common.if';
+import LinkAndIcon from '../common/common.link.and.icon';
+import Text from '../common/common.text';
+import { Card, Section } from '../common/styled/styled.containers';
+import { Hr } from '../common/styled/styled.divisors';
+import { Row } from '../common/styled/styled.flex';
 
 export const CertificationsNotes = () => {
   return (

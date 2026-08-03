@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { IStyledProps, animations, cssSize } from 'src/styles/utils';
+import { IStyledProps, animations, cssSize } from 'src/styles/styles.utils';
 
 export const Hr = styled.hr<IStyledProps>(
   ({ theme, m, active }) => css`
