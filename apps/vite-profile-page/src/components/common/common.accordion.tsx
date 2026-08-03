@@ -1,13 +1,8 @@
 import { useState } from 'react';
 
-import {
-  AccordionContainer,
-  AccordionContent,
-  AccordionHeader,
-} from 'src/components/common/StyledComponents/Accordion';
-import { Hr } from 'src/components/common/StyledComponents/Divisors';
-
-import Icons from '../Icons';
+import Icons from './common.icons';
+import { AccordionContainer, AccordionContent, AccordionHeader } from './styled/styled.accordion';
+import { Hr } from './styled/styled.divisors';
 
 type IAccordionProps = {
   title: React.ReactElement;

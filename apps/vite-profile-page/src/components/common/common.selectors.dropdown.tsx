@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-import Icons from '../../Icons';
+import Icons from './common.icons';
 import {
   SelectBox,
   SelectItemsList,
   SelectListItem,
   SelectTitle,
   SelectTrigger,
-} from '../../StyledComponents/Select';
+} from './styled/styled.select';
 
 type DropdownItem = {
   value: string;

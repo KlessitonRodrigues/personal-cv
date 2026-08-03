@@ -1,12 +1,49 @@
 import { PropsWithChildren, useState } from 'react';
+import styled, { css } from 'styled-components';
 
-import Icons from 'src/components/common/Icons';
-import Loading from 'src/components/common/Loading';
-import { RoundedBtnMain } from 'src/components/common/StyledComponents/Buttons';
 import { urls } from 'src/constants/urls';
+import { cssSize, screenSize } from 'src/styles/utils';
 import { downloadPdfFile, openPrintDialog } from 'src/utils/pdf';
 
-import { Container, Content, Document, DocumentButtons } from './styled';
+import Icons from './common.icons';
+import Loading from './common.loading';
+import { RoundedBtnMain } from './styled/styled.buttons';
+
+export const Container = styled.div(
+  () => css`
+    width: 100%;
+    margin: auto;
+    position: relative;
+  `,
+);
+
+export const Document = styled.div(() => css``);
+
+export const Content = styled.div(
+  () => css`
+    @media (max-width: ${screenSize.tablet}px) {
+      padding: 0;
+    }
+  `,
+);
+
+export const DocumentButtons = styled.div(
+  () => css`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: ${cssSize(2)};
+    position: absolute;
+    top: 0;
+    left: 101%;
+    z-index: 2;
+
+    @media (max-width: ${screenSize.laptopL}px) {
+      display: none;
+    }
+  `,
+);
 
 const DocumentView = (props: PropsWithChildren) => {
   const [loading, setLoading] = useState(false);

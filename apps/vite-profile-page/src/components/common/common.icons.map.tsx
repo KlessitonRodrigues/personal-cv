@@ -68,6 +68,7 @@ import {
   SiJavascript,
   SiJest,
   SiJira,
+  SiLmstudio,
   SiMantine,
   SiMaterialdesign,
   SiMongodb,
@@ -79,6 +80,7 @@ import {
   SiPostgresql,
   SiPostman,
   SiPuppeteer,
+  SiQwen,
   SiReact,
   SiReacthookform,
   SiReactrouter,
@@ -206,6 +208,8 @@ const iconMap = {
   trello: <SiTrello />,
   shortcut: <SiShortcut />,
   vitest: <SiVitest />,
+  lmStudio: <SiLmstudio />,
+  qwenAI: <SiQwen />,
 };
 
 export type IconsType = keyof typeof iconMap;

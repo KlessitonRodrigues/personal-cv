@@ -1,7 +1,17 @@
 import { useEffect, useState } from 'react';
+import styled, { css } from 'styled-components';
 
-import type { IconsType } from './iconMap';
-import { Container } from './styled';
+import { cssSize } from 'src/styles/utils';
+
+import { IconsType } from './common.icons.map';
+
+export const Container = styled.span<{ size?: number }>(
+  ({ size }) => css`
+    display: inline-flex;
+    font-size: ${cssSize(size || 6)};
+    cursor: pointer;
+  `,
+);
 
 export type IIcons = {
   size?: number;
@@ -15,7 +25,7 @@ const Icons = (props: IIcons) => {
   const [Icon, setIcon] = useState<React.ReactNode>(null);
 
   useEffect(() => {
-    import('./iconMap').then(({ iconMap }) => setIcon(iconMap[type]));
+    import('./common.icons.map').then(({ iconMap }) => setIcon(iconMap[type]));
   }, [type]);
 
   return (

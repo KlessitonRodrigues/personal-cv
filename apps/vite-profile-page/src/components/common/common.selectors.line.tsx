@@ -1,6 +1,6 @@
-import Icons from '../../Icons';
-import { OutlineBtnTransparent } from '../../StyledComponents/Buttons';
-import { Row } from '../../StyledComponents/Flex';
+import Icons from './common.icons';
+import { OutlineBtnTransparent } from './styled/styled.buttons';
+import { Row } from './styled/styled.flex';
 
 type LineSelectorProps = {
   value: string;

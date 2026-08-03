@@ -1,7 +1,7 @@
-import Icons from '../../Icons';
-import { IconsType } from '../../Icons/iconMap';
-import { OutlineBtn } from '../../StyledComponents/Buttons';
-import Text from '../../Text';
+import Icons from './common.icons';
+import type { IconsType } from './common.icons.map';
+import Text from './common.text';
+import { OutlineBtn } from './styled/styled.buttons';
 
 type ILinkAndIcon = {
   url?: string;
