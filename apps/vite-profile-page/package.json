@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "postbuild": "node ./src/utils/compressImages.js",
+    "postbuild": "node ./src/utils/utils.image.compressor.js",
     "preview": "vite preview --host",
     "format": "prettier -c -w ./src"
   },
