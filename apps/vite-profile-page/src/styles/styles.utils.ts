@@ -89,13 +89,3 @@ export const gradients = {
   darkPurple: `linear-gradient(180deg, ${mc.purple['600']}, ${mc.purple['700']})`,
   blueAndGreen: `linear-gradient(90deg, ${mc.blue['500']}, ${mc.green['500']})`,
 };
-
-export const isMobileScreen = () => {
-  return window.innerWidth <= screenSize.tablet;
-};
-
-export const isEmbbedMobile = () => {
-  const isBuiltIn = location.pathname.includes('.html');
-  const isMobile = window.innerWidth <= screenSize.tablet;
-  return isBuiltIn && isMobile;
-};

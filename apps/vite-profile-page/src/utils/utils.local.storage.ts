@@ -1,46 +1,28 @@
 import { IThemeColors } from 'src/styles/styles.theme';
 
 export const getLanguage = () => {
-  try {
-    return (localStorage.getItem('lang') || 'pt').toLowerCase();
-  } catch (err) {
-    return 'pt';
-  }
+  return (localStorage.getItem('lang') || 'pt').toLowerCase();
 };
 
 export const changeLanguage = (lang: string) => {
-  try {
-    localStorage.setItem('lang', lang);
-    location.reload();
-  } catch (err) {}
+  localStorage.setItem('lang', lang);
+  location.reload();
 };
 
 export const getColor = () => {
-  try {
-    return (localStorage.getItem('color') as IThemeColors) || 'indigo';
-  } catch (err) {
-    return 'indigo';
-  }
+  return (localStorage.getItem('color') as IThemeColors) || 'indigo';
 };
 
 export const setColor = (color: string) => {
-  try {
-    localStorage.setItem('color', color);
-    location.reload();
-  } catch (err) {}
+  localStorage.setItem('color', color);
+  location.reload();
 };
 
 export const getThemeMode = () => {
-  try {
-    return localStorage.getItem('theme') || 'light';
-  } catch (err) {
-    return 'light';
-  }
+  return localStorage.getItem('theme') || 'light';
 };
 
 export const setThemeMode = (color: string) => {
-  try {
-    localStorage.setItem('theme', color);
-    location.reload();
-  } catch (err) {}
+  localStorage.setItem('theme', color);
+  location.reload();
 };
