@@ -185,10 +185,10 @@
   "color_pink": "Pink",
 
   "shared_ai_code": "AI Instructions",
-  "shared_ai_code_0": "React application with ViteJS and Styled-Components",
-  "shared_ai_code_1": "NextJS application with TailwindCSS and DaisyUI",
-  "shared_ai_code_2": "API with AWS Lambda and NodeJS",
-  "shared_ai_code_3": "API with NestJS and TypeORM",
+  "shared_ai_code_0": "API with AWS Lambda and NodeJS",
+  "shared_ai_code_1": "API with NestJS and TypeORM",
+  "shared_ai_code_2": "React application with ViteJS and Styled-Components",
+  "shared_ai_code_3": "NextJS application with TailwindCSS and DaisyUI",
 
   "shared_js_code": "Shared JavaScript Code",
   "shared_js_code_0": "Capture images from HTML elements",

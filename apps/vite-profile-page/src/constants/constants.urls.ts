@@ -41,8 +41,14 @@ export const urls = {
 };
 
 export const notesURls = {
+  javascript:
+    'https://docs.google.com/document/d/e/2PACX-1vQhIArjw0fwEVdE8UoQ4LrZan8Cmmju1CNMMpX_0IU-2hZv8iSOn58joiu7-yTtqWujIWb4MTNDhoIW/pub',
+  typescript:
+    'https://docs.google.com/document/d/e/2PACX-1vQAAtlF4gON22zFDeT4hL2LZIkFC1yjLIFV0T4vrv9eP3D1yPdw4SEA-AVY3SS0vagaVBDXsauWPCcX/pub',
   react:
     'https://docs.google.com/document/d/e/2PACX-1vTtlkZGFmGvzVtDiqDRJHPJh-l2P53gzvxskZfCdGrnOsHCqQcLARlaHTUf9NIcT7vwMUo2P7UrGqXh/pub',
+  nextjs:
+    'https://docs.google.com/document/d/e/2PACX-1vQTIA1KFwHQfPvTQVVxgZZ12wajNvZEgD9ixjSKiUMiQknlUGhUapq6Xi1fT8eFdOEq06lpIt9XoGKV/pub',
   nodejs:
     'https://docs.google.com/document/d/e/2PACX-1vTTF0sshQrbscEAsC6Xm_ElRIfYsqHX4EwE_A3WO9gFLW45yC-Z3n1FupZcmMEGTl826pGqyYHkYCvB/pub',
   html: 'https://docs.google.com/document/d/e/2PACX-1vT9qdMguclwczY-E0tGhh1eiVos7q62V-rdu67ax_HrLOgoCAdNEEQ5TjjLw98vaPlop0PZ_ei6yxvL/pub',
@@ -72,9 +78,7 @@ export const codeBlockLinks = {
     'https://gist.github.com/KlessitonRodrigues/adb04ee937b6af5f2255c242a93bc9f8',
     'https://gist.github.com/KlessitonRodrigues/d40ba073f299a1fb9b5f972ee8930d18',
   ],
-  aipropmts: [
-    '',
-    '',
+  aiprompts: [
     'https://gist.github.com/KlessitonRodrigues/81303fbda37f8e397539e91456074ca2',
     'https://gist.github.com/KlessitonRodrigues/196d048470f2c9724f28221c5cdd563d',
   ],

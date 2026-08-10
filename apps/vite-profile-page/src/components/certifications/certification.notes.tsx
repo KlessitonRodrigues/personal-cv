@@ -1,7 +1,6 @@
 import { notesURls } from 'src/constants/constants.urls';
 
 import Icons from '../common/common.icons';
-import If from '../common/common.if';
 import LinkAndIcon from '../common/common.link.and.icon';
 import Text from '../common/common.text';
 import { Card, Section } from '../common/styled/styled.containers';
@@ -13,22 +12,25 @@ export const CertificationsNotes = () => {
     <Section>
       <Card>
         <Row left gap={4}>
-          <Icons type="notebook" size={9} />
+          <Icons type="notebook" size={8} />
           <Text tag="h3" path="certificates_notebook" />
         </Row>
         <Hr />
         <Text tag="small" path="certificates_notebook_text" />
         <Row left responsive gap={6}>
-          <LinkAndIcon icon="notebook" label="Html" url={notesURls.html} />
-          <LinkAndIcon icon="notebook" label="React" url={notesURls.react} />
-          <LinkAndIcon icon="notebook" label="Node.js" url={notesURls.nodejs} />
-          <LinkAndIcon icon="notebook" label="Git" url={notesURls.git} />
-          <LinkAndIcon icon="notebook" label="Docker" url={notesURls.docker} />
-          <LinkAndIcon icon="notebook" label="English" url={notesURls.english} />
-          <If check={false}>
-            <LinkAndIcon icon="aws" label="AWS" url={notesURls.aws} />
-            <LinkAndIcon icon="java" label="Java" url={notesURls.java} />
-          </If>
+          <LinkAndIcon size={5} icon="link" label="HTML" url={notesURls.html} />
+          <LinkAndIcon size={5} icon="link" label="JavaScript" url={notesURls.javascript} />
+          <LinkAndIcon size={5} icon="link" label="TypeScript" url={notesURls.typescript} />
+          <LinkAndIcon size={5} icon="link" label="ReactJS" url={notesURls.react} />
+          <LinkAndIcon size={5} icon="link" label="NextJS" url={notesURls.nextjs} />
+          <LinkAndIcon size={5} icon="link" label="NodeJS" url={notesURls.nodejs} />
+          <LinkAndIcon size={5} icon="link" label="Git" url={notesURls.git} />
+          <LinkAndIcon size={5} icon="link" label="Docker" url={notesURls.docker} />
+          <LinkAndIcon size={5} icon="link" label="English" url={notesURls.english} />
+          {/*
+          <LinkAndIcon size={5} icon="link" label="AWS" url={notesURls.aws} />
+          <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />
+          */}
         </Row>
       </Card>
     </Section>

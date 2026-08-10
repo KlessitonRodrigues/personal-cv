@@ -196,10 +196,10 @@
   "color_pink": "Rosa",
 
   "shared_ai_code": "Instruções de IA",
-  "shared_ai_code_0": "Aplicação React com ViteJS e Styled-Components",
-  "shared_ai_code_1": "Aplicação NextJS com TailwindCSS e DaisyUI",
-  "shared_ai_code_2": "API com AWS Lambda e NodeJS",
-  "shared_ai_code_3": "API com NestJS e TypeORM",
+  "shared_ai_code_0": "API com AWS Lambda e NodeJS",
+  "shared_ai_code_1": "API com NestJS e TypeORM",
+  "shared_ai_code_2": "Aplicação React com ViteJS e Styled-Components",
+  "shared_ai_code_3": "Aplicação NextJS com TailwindCSS e DaisyUI",
 
   "shared_js_code": "Código Compartilhado em JavaScript",
   "shared_js_code_0": "Capturar imagens a partir de elementos HTML",

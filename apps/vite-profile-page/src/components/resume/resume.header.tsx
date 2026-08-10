@@ -1,5 +1,4 @@
 import { urls } from 'src/constants/constants.urls';
-import { isMobileScreen } from 'src/styles/styles.utils';
 
 import LinkAndIcon from '../common/common.link.and.icon';
 import Text from '../common/common.text';
@@ -8,8 +7,6 @@ import { Hr } from '../common/styled/styled.divisors';
 import { Column, Row } from '../common/styled/styled.flex';
 
 const ResumeHeaderSection = () => {
-  const isMobile = isMobileScreen();
-
   return (
     <Section>
       <Card>
@@ -79,11 +76,7 @@ const ResumeHeaderSection = () => {
         <Row left responsive gap={8}>
           <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
           <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
-          <LinkAndIcon
-            icon="whatsapp"
-            label="WhatsApp"
-            url={isMobile ? urls.whatsapp : urls.whatsappWeb}
-          />
+          <LinkAndIcon icon="whatsapp" label="WhatsApp" url={urls.whatsappWeb} />
         </Row>
       </Card>
     </Section>

@@ -3,7 +3,6 @@ import hooksUseTheme from 'src/hooks/hooks.use.theme';
 import desktopBg from 'src/public/images/desktop.min.jpg';
 import desktopDarkBg from 'src/public/images/desktop_dark.min.jpg';
 import profile from 'src/public/images/profile_min.jpg';
-import { isMobileScreen } from 'src/styles/styles.utils';
 
 import LinkAndIcon from '../common/common.link.and.icon';
 import Text from '../common/common.text';
@@ -14,7 +13,6 @@ import { AvatarBig } from '../common/styled/styled.user';
 
 const ProfileHeaderSection = () => {
   const themeCtx = hooksUseTheme();
-  const isMobile = isMobileScreen();
 
   return (
     <Section>
@@ -33,11 +31,7 @@ const ProfileHeaderSection = () => {
           <Row left responsive gap={8}>
             <LinkAndIcon icon="linkedin" label="LinkedIn" url={urls.linkedin} />
             <LinkAndIcon icon="github" label="Github" url={urls.githubProfile} />
-            <LinkAndIcon
-              icon="whatsapp"
-              label="WhatsApp"
-              url={isMobile ? urls.whatsapp : urls.whatsappWeb}
-            />
+            <LinkAndIcon icon="whatsapp" label="WhatsApp" url={urls.whatsappWeb} />
           </Row>
         </OutdoorContent>
       </Outdoor>

@@ -18,7 +18,7 @@ const CodeListSection = () => {
             </Row>
           </Column>
           <Column left gap={4}>
-            {codeBlockLinks.aipropmts.map((link, i) => (
+            {codeBlockLinks.aiprompts.map((link, i) => (
               <a key={i} href={link} target="_blank">
                 <OutlineBtn>
                   <Icons size={5} type="caretRight" />
