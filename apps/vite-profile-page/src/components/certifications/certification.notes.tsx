@@ -1,4 +1,4 @@
-import { notesURls } from 'src/constants/constants.urls';
+import { gistNotesLinks } from 'src/constants/constants.urls';
 
 import Icons from '../common/common.icons';
 import LinkAndIcon from '../common/common.link.and.icon';
@@ -17,16 +17,20 @@ export const CertificationsNotes = () => {
         </Row>
         <Hr />
         <Text tag="small" path="certificates_notebook_text" />
-        <Row left responsive gap={6}>
-          <LinkAndIcon size={5} icon="link" label="HTML" url={notesURls.html} />
-          <LinkAndIcon size={5} icon="link" label="JavaScript" url={notesURls.javascript} />
-          <LinkAndIcon size={5} icon="link" label="TypeScript" url={notesURls.typescript} />
-          <LinkAndIcon size={5} icon="link" label="ReactJS" url={notesURls.react} />
-          <LinkAndIcon size={5} icon="link" label="NextJS" url={notesURls.nextjs} />
-          <LinkAndIcon size={5} icon="link" label="NodeJS" url={notesURls.nodejs} />
-          <LinkAndIcon size={5} icon="link" label="Git" url={notesURls.git} />
-          <LinkAndIcon size={5} icon="link" label="Docker" url={notesURls.docker} />
-          <LinkAndIcon size={5} icon="link" label="English" url={notesURls.english} />
+        <Row left wrap gap={4}>
+          <LinkAndIcon size={5} icon="link" label="HTML" url={gistNotesLinks.html} />
+          <LinkAndIcon size={5} icon="link" label="CSS" url={gistNotesLinks.css} />
+          <LinkAndIcon size={5} icon="link" label="JavaScript" url={gistNotesLinks.javascript} />
+          <LinkAndIcon size={5} icon="link" label="TypeScript" url={gistNotesLinks.typescript} />
+          <LinkAndIcon size={5} icon="link" label="ReactJS" url={gistNotesLinks.react} />
+          <LinkAndIcon size={5} icon="link" label="NextJS" url={gistNotesLinks.nextjs} />
+          <LinkAndIcon size={5} icon="link" label="NodeJS" url={gistNotesLinks.nodejs} />
+          <LinkAndIcon size={5} icon="link" label="NestJS" url={gistNotesLinks.nestjs} />
+          <LinkAndIcon size={5} icon="link" label="MongoDB" url={gistNotesLinks.mongodb} />
+          <LinkAndIcon size={5} icon="link" label="Git" url={gistNotesLinks.git} />
+          <LinkAndIcon size={5} icon="link" label="Docker" url={gistNotesLinks.docker} />
+          <LinkAndIcon size={5} icon="link" label="Regex" url={gistNotesLinks.regex} />
+          <LinkAndIcon size={5} icon="link" label="English" url={gistNotesLinks.english} />
           {/*
           <LinkAndIcon size={5} icon="link" label="AWS" url={notesURls.aws} />
           <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />

@@ -61,6 +61,24 @@ export const notesURls = {
   aws: '',
 };
 
+export const gistNotesLinks = {
+  javascript: 'https://gist.github.com/KlessitonRodrigues/f5feac01ed2af40cdb80ac7663b467d2',
+  typescript: 'https://gist.github.com/KlessitonRodrigues/e21bd5d91366e4d914b548696b47e56a',
+  react: 'https://gist.github.com/KlessitonRodrigues/d0a158d5593c0b61351e300acdf21bcb',
+  nextjs: 'https://gist.github.com/KlessitonRodrigues/ddc06ac871f5d6e225ecc7b9aca3318c',
+  nodejs: 'https://gist.github.com/KlessitonRodrigues/9432e4a5f88f07f3595d275ec843b8e7',
+  mongodb: 'https://gist.github.com/KlessitonRodrigues/7b20f439bb822436ccf18c7a98240080',
+  nestjs: 'https://gist.github.com/KlessitonRodrigues/7c6e3317003e4d8cf816a1fc31aca4cb',
+  html: 'https://gist.github.com/KlessitonRodrigues/1561f1cc6bd0fe2eb0e3b61e81100e7e',
+  css: 'https://gist.github.com/KlessitonRodrigues/1184dbfea1e6715fa8b04e10aa64c40c',
+  english: 'https://gist.github.com/KlessitonRodrigues/cd80057392a661c23c4eecba08a3c515',
+  docker: 'https://gist.github.com/KlessitonRodrigues/d6ee8df93d5811af3664a9f9a206bb81',
+  git: 'https://gist.github.com/KlessitonRodrigues/5cc50b059fa145fccedef2f4ba88c680',
+  regex: 'https://gist.github.com/KlessitonRodrigues/2a5047861874993fd1e1130715ce97f3',
+  java: '',
+  aws: '',
+};
+
 export const codeBlockLinks = {
   javascript: [
     'https://gist.github.com/KlessitonRodrigues/457db1ecfe9f938936bb3364072d425a',
