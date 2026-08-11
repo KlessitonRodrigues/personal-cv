@@ -77,6 +77,7 @@ export const gistNotesLinks = {
   regex: 'https://gist.github.com/KlessitonRodrigues/2a5047861874993fd1e1130715ce97f3',
   java: '',
   aws: 'https://gist.github.com/KlessitonRodrigues/67d9000fcd5cf34275ade8c0e87e9d33',
+  markdown: 'https://gist.github.com/KlessitonRodrigues/452f769d1d30d80812948d50ece9f4ac',
 };
 
 export const codeBlockLinks = {

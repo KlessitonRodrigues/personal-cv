@@ -30,9 +30,9 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="Git" url={gistNotesLinks.git} />
           <LinkAndIcon size={5} icon="link" label="Docker" url={gistNotesLinks.docker} />
           <LinkAndIcon size={5} icon="link" label="Regex" url={gistNotesLinks.regex} />
+          <LinkAndIcon size={5} icon="link" label="Markdown" url={gistNotesLinks.markdown} />
           <LinkAndIcon size={5} icon="link" label="English" url={gistNotesLinks.english} />
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />
-
           {/*
           <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />
           */}
