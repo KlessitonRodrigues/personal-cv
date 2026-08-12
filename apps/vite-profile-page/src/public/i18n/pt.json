@@ -173,6 +173,9 @@
   "extraworks_nestjs_auth_api": "API de Autenticação NestJS",
   "extraworks_nestjs_auth_api_text": "API de autenticação usando NestJS e JWT.",
   "extraworks_nestjs_auth_api_tech": "NestJS, TypeORM, PostgreSQL, JWT.",
+  "extraworks_easy_encrypt": "Easy Encrypt",
+  "extraworks_easy_encrypt_text": "Aplicativo web e móvel para criptografar texto simples.",
+  "extraworks_easy_encrypt_tech": "React, Styled Components, CryptoJS, Github Actions.",
   "profile_year": "ano",
   "profile_years": "anos",
 

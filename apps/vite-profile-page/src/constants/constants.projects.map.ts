@@ -3,6 +3,7 @@ import multistepFormImg from 'src//public/images/multistep_form.png';
 import profileImg from 'src//public/images/profile_img.png';
 import sellerAppImg from 'src//public/images/seller_app.png';
 import authFormImg from 'src/public/images/auth_form.png';
+import easyEncryptImg from 'src/public/images/easy_encrypt.png';
 import githubPageImg from 'src/public/images/github.png';
 import landingPageTemplateImg from 'src/public/images/landing_page_template.png';
 import translationAppImg from 'src/public/images/translation_app.png';
@@ -87,7 +88,6 @@ const projectsMap = [
     githubUrl: urls.consoleUIRepo,
     imageSrc: githubPageImg,
   },
-
   {
     title: 'extraworks_sellerapp',
     description: 'extraworks_sellerapp_text',
@@ -95,6 +95,14 @@ const projectsMap = [
     websiteUrl: urls.sellerApp,
     githubUrl: urls.sellerRepo,
     imageSrc: sellerAppImg,
+  },
+  {
+    title: 'extraworks_easy_encrypt',
+    description: 'extraworks_easy_encrypt_text',
+    technologies: 'extraworks_easy_encrypt_tech',
+    websiteUrl: urls.easyEncryptApp,
+    githubUrl: urls.easyEncryptRepo,
+    imageSrc: easyEncryptImg,
   },
 ];
 

@@ -38,6 +38,8 @@ export const urls = {
   translationAppRepo: 'https://github.com/KlessitonRodrigues/translation-pwa',
   awsAuthApiRepo: 'https://github.com/KlessitonRodrigues/aws-auth-api-with-jwt-token',
   nestAuthApiRepo: 'https://github.com/KlessitonRodrigues/nestjs-auth-api-with-jwt',
+  easyEncryptApp: 'https://klessitonrodrigues.github.io/easy-encrypt/',
+  easyEncryptRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
 };
 
 export const notesURls = {
