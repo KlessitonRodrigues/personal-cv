@@ -176,6 +176,9 @@
   "extraworks_easy_encrypt": "Easy Encrypt",
   "extraworks_easy_encrypt_text": "Aplicativo web e móvel para criptografar texto simples.",
   "extraworks_easy_encrypt_tech": "React, Styled Components, CryptoJS, Github Actions.",
+  "reshade_preset": "Reshade Preset",
+  "reshade_preset_text": "Preset de Reshade para melhorar cores e texturas em jogos, com diferentes configurações de cores.",
+  "reshade_preset_tech": "Reshade, HLSL.",
   "profile_year": "ano",
   "profile_years": "anos",
 

@@ -163,6 +163,13 @@
   "extraworks_nestjs_auth_api": "NestJS Authentication API",
   "extraworks_nestjs_auth_api_text": "Authentication API using NestJS and JWT.",
   "extraworks_nestjs_auth_api_tech": "NestJS, TypeORM, PostgreSQL, JWT.",
+  "extraworks_easy_encrypt": "Easy Encrypt",
+  "extraworks_easy_encrypt_text": "Web and mobile application to encrypt plain text.",
+  "extraworks_easy_encrypt_tech": "React, Styled Components, CryptoJS, Github Actions.",
+  "reshade_preset": "Reshade Preset",
+  "reshade_preset_text": "Reshade preset to improve colors and textures in games, with different color settings.",
+  "reshade_preset_tech": "Reshade, HLSL.",
+
   "profile_year": "year",
   "profile_years": "years",
   "settings_title": "Settings",

@@ -40,6 +40,7 @@ export const urls = {
   nestAuthApiRepo: 'https://github.com/KlessitonRodrigues/nestjs-auth-api-with-jwt',
   easyEncryptApp: 'https://klessitonrodrigues.github.io/easy-encrypt/',
   easyEncryptRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
+  reshadePresetRepo: 'https://github.com/KlessitonRodrigues/reshade-better-color-and-texture',
 };
 
 export const notesURls = {

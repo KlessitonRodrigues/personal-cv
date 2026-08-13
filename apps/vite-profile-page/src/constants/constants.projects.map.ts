@@ -104,6 +104,14 @@ const projectsMap = [
     githubUrl: urls.easyEncryptRepo,
     imageSrc: easyEncryptImg,
   },
+  {
+    title: 'reshade_preset',
+    description: 'reshade_preset_text',
+    technologies: 'reshade_preset_tech',
+    websiteUrl: '',
+    githubUrl: urls.reshadePresetRepo,
+    imageSrc: githubPageImg,
+  },
 ];
 
 export default projectsMap;
