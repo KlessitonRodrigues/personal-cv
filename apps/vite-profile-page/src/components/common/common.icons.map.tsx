@@ -1,13 +1,6 @@
-import {
-  BiCog,
-  BiCompass,
-  BiLogoAws,
-  BiLogoHeroku,
-  BiLogoVisualStudio,
-  BiText,
-} from 'react-icons/bi';
-import { CgPen, CgWebsite } from 'react-icons/cg';
-import { FaFacebook, FaJava, FaPenFancy, FaRegPenToSquare } from 'react-icons/fa6';
+import { BiCog, BiCompass, BiLogoAws, BiLogoHeroku, BiLogoVisualStudio } from 'react-icons/bi';
+import { CgWebsite } from 'react-icons/cg';
+import { FaFacebook, FaJava, FaRegPenToSquare } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
@@ -34,10 +27,7 @@ import {
   PiDotOutlineFill,
   PiFileCSharp,
   PiGithubLogoBold,
-  PiNotebookBold,
   PiOpenAiLogo,
-  PiPenNib,
-  PiPencilSlash,
   PiStudentBold,
   PiTranslateBold,
 } from 'react-icons/pi';

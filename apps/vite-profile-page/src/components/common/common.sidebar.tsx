@@ -43,7 +43,7 @@ export const SidebarBox = styled.aside<IStyledProps>(
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: ${cssSize(2)} 0;
+    padding: ${cssSize(4)} ${cssSize(2)};
     color: ${theme.colors.text1};
     overflow: hidden;
     text-transform: capitalize;
@@ -85,33 +85,21 @@ export const SidebarItem = styled.div<IStyledProps>(
     display: flex;
     align-items: center;
     gap: ${cssSize(8)};
-    padding: ${cssSize(5)} ${cssSize(8)};
+    padding: ${cssSize(5)} ${cssSize(6)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
     font-weight: bold;
+    color: ${active ? theme.colors.mainText : theme.colors.text1};
+    ${active && `background-color: ${active && theme.colors.main};`}
+    border-radius: ${theme.radius.md} 0 0 ${theme.radius.md};
+    transition: 0.3s ease-out;
 
     p {
-      ${active === false && `opacity: 0.7;`}
+      ${!active && `opacity: 0.7;`}
     }
 
     &:hover {
       background-color: ${!active && theme.colors.bg3};
-    }
-
-    .icon {
-      position: relative;
-      color: ${theme.colors.main};
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 115%;
-        left: 0;
-        width: ${active ? cssSize(9) : 0};
-        height: ${cssSize(1.3)};
-        background-color: ${theme.colors.main};
-        transition: width 0.3s;
-      }
     }
   `,
 );

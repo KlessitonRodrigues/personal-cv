@@ -25,11 +25,13 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="ReactJS" url={gistNotesLinks.react} />
           <LinkAndIcon size={5} icon="link" label="NextJS" url={gistNotesLinks.nextjs} />
           <LinkAndIcon size={5} icon="link" label="NodeJS" url={gistNotesLinks.nodejs} />
-          <LinkAndIcon size={5} icon="link" label="NestJS" url={gistNotesLinks.nestjs} />
           <LinkAndIcon size={5} icon="link" label="MongoDB" url={gistNotesLinks.mongodb} />
+          <LinkAndIcon size={5} icon="link" label="NestJS" url={gistNotesLinks.nestjs} />
+          <LinkAndIcon size={5} icon="link" label="SQL" url={gistNotesLinks.sql} />
           <LinkAndIcon size={5} icon="link" label="Git" url={gistNotesLinks.git} />
           <LinkAndIcon size={5} icon="link" label="Docker" url={gistNotesLinks.docker} />
           <LinkAndIcon size={5} icon="link" label="Regex" url={gistNotesLinks.regex} />
+          <LinkAndIcon size={5} icon="link" label="Scrum" url={gistNotesLinks.scrum} />
           <LinkAndIcon size={5} icon="link" label="Markdown" url={gistNotesLinks.markdown} />
           <LinkAndIcon size={5} icon="link" label="English" url={gistNotesLinks.english} />
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />

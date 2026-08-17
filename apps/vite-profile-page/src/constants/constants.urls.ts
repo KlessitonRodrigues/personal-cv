@@ -81,6 +81,8 @@ export const gistNotesLinks = {
   java: '',
   aws: 'https://gist.github.com/KlessitonRodrigues/67d9000fcd5cf34275ade8c0e87e9d33',
   markdown: 'https://gist.github.com/KlessitonRodrigues/452f769d1d30d80812948d50ece9f4ac',
+  scrum: 'https://gist.github.com/KlessitonRodrigues/f1d96f7dc64ba0d8cf11a77273974049',
+  sql: 'https://gist.github.com/KlessitonRodrigues/060af7fde0c300c50bb3994ead74433f',
 };
 
 export const codeBlockLinks = {
