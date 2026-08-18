@@ -22,7 +22,7 @@ export const Container = styled.div(
     width: ${contentSize}px;
     height: 100%;
     margin: 0 auto;
-    padding: 0 ${cssSize(12)};
+    padding: 0 ${cssSize(14)};
     display: flex;
 
     @media (max-width: ${contentSize}px) {
@@ -85,21 +85,21 @@ export const SidebarItem = styled.div<IStyledProps>(
     display: flex;
     align-items: center;
     gap: ${cssSize(8)};
-    padding: ${cssSize(5)} ${cssSize(6)};
+    padding: ${cssSize(6)} ${cssSize(6)};
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
     font-weight: bold;
-    color: ${active ? theme.colors.mainText : theme.colors.text1};
-    ${active && `background-color: ${active && theme.colors.main};`}
     border-radius: ${theme.radius.md} 0 0 ${theme.radius.md};
     transition: 0.3s ease-out;
+    color: ${active ? theme.colors.mainText : theme.colors.text1};
+    ${active && `background-color: ${theme.colors.main};`}
 
     p {
       ${!active && `opacity: 0.7;`}
     }
 
     &:hover {
-      background-color: ${!active && theme.colors.bg3};
+      background-color: ${!active && theme.colors.bg4};
     }
   `,
 );

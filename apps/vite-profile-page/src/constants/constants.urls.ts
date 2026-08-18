@@ -83,6 +83,7 @@ export const gistNotesLinks = {
   markdown: 'https://gist.github.com/KlessitonRodrigues/452f769d1d30d80812948d50ece9f4ac',
   scrum: 'https://gist.github.com/KlessitonRodrigues/f1d96f7dc64ba0d8cf11a77273974049',
   sql: 'https://gist.github.com/KlessitonRodrigues/060af7fde0c300c50bb3994ead74433f',
+  linux: 'https://gist.github.com/KlessitonRodrigues/6db0401d73c39bb76731ed69a32452bf',
 };
 
 export const codeBlockLinks = {
