@@ -187,12 +187,6 @@ const SideBar = (props: PropsWithChildren) => {
               <Text tag="p" path="sidebar_link_projects" />
             </SidebarItem>
           </Link>
-          <Link to="/code" onClick={closeSidebar}>
-            <SidebarItem active={hidable && path === '/code'}>
-              <Icons type="codeBlock" size={9} />
-              <Text tag="p" path="sidebar_link_code" />
-            </SidebarItem>
-          </Link>
           <Link to="/settings" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/settings'}>
               <Icons type="settings" size={9} />

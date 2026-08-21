@@ -1,7 +1,6 @@
 import { Route, createRoutesFromElements } from 'react-router-dom';
 
 import CertificationPage from './page.certification';
-import CodePage from './page.coding';
 import ProfilePage from './page.profile';
 import ProjectsPage from './page.projects';
 import ResumePage from './page.resume';
@@ -13,7 +12,6 @@ const Router = createRoutesFromElements(
     <Route path="/resume" Component={ResumePage} />
     <Route path="/certification" Component={CertificationPage} />
     <Route path="/projects" Component={ProjectsPage} />
-    <Route path="/code" Component={CodePage} />
     <Route path="/settings" Component={SettingsPage} />
   </>,
 );
