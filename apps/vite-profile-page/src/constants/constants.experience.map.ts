@@ -40,6 +40,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'React Hook Form', icon: 'reactHookForm' },
     { name: 'Zod', icon: 'zod' },
     { name: 'Vite', icon: 'vite' },
+    { name: 'Storybook', icon: 'storybook' },
     { name: 'Electron', icon: 'electron' },
     { name: 'Shadcn UI', icon: 'shadcn' },
     { name: 'Svelte', icon: 'svelte' },
@@ -58,6 +59,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'PostgresDB', icon: 'postgres' },
     { name: 'Strapi', icon: 'strapi' },
     { name: 'NestJS', icon: 'nestJS' },
+    { name: 'PrismaORM', icon: 'prisma' },
     { name: 'TypeORM', icon: 'typeorm' },
   ],
   mobile: [

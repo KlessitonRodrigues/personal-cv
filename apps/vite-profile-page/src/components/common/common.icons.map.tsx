@@ -78,6 +78,7 @@ import {
   SiNotion,
   SiPostgresql,
   SiPostman,
+  SiPrisma,
   SiPuppeteer,
   SiQwen,
   SiReact,
@@ -90,6 +91,7 @@ import {
   SiShadcnui,
   SiShortcut,
   SiSpringboot,
+  SiStorybook,
   SiStrapi,
   SiStyledcomponents,
   SiSvelte,
@@ -209,6 +211,8 @@ const iconMap = {
   vitest: <SiVitest />,
   lmStudio: <SiLmstudio />,
   qwenAI: <SiQwen />,
+  storybook: <SiStorybook />,
+  prisma: <SiPrisma />,
 };
 
 export type IconsType = keyof typeof iconMap;
