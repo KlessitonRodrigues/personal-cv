@@ -37,5 +37,5 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy CDK
-        run: npx cdk deploy --require-approval never
+        run: yarn cdk deploy --require-approval never
         working-directory: services/aws-cloudfront-deploy
