@@ -23,7 +23,7 @@ export const AvatarBig = styled.div<IStyledProps>(
     height: 100%;
     max-width: ${cssSize(40)};
     max-height: ${cssSize(40)};
-    padding: ${cssSize(25)} ${cssSize(25)};
+    padding: ${cssSize(28)};
     background-color: ${theme.colors.bg2};
     background-image: url(${src});
     background-repeat: no-repeat;

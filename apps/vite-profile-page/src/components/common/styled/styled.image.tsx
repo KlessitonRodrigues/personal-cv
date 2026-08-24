@@ -32,7 +32,7 @@ export const Outdoor = styled.div<IStyledProps>(
     border-radius: ${theme.radius.md};
     position: relative;
     background-color: ${theme.colors.bg1};
-    padding-top: ${cssSize(70)};
+    padding-top: ${cssSize(72)};
     z-index: 0;
     box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
@@ -50,7 +50,7 @@ export const OutdoorImage = styled.div<IStyledProps>(
     left: 0;
     z-index: -1;
     width: 100%;
-    height: ${cssSize(120)};
+    height: ${cssSize(130)};
     background-image: url(${src});
     background-position: center;
     background-size: cover;

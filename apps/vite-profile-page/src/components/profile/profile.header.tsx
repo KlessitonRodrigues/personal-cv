@@ -1,7 +1,5 @@
 import { urls } from 'src/constants/constants.urls';
-import hooksUseTheme from 'src/hooks/hooks.use.theme';
-import desktopBg from 'src/public/images/desktop.min.jpg';
-import desktopDarkBg from 'src/public/images/desktop_dark.min.jpg';
+import profileBgImg from 'src/public/images/profile_bg.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 
 import LinkAndIcon from '../common/common.link.and.icon';
@@ -12,12 +10,10 @@ import { Outdoor, OutdoorContent, OutdoorImage } from '../common/styled/styled.i
 import { AvatarBig } from '../common/styled/styled.user';
 
 const ProfileHeaderSection = () => {
-  const themeCtx = hooksUseTheme();
-
   return (
     <Section>
       <Outdoor>
-        <OutdoorImage src={themeCtx.isDark ? desktopDarkBg : desktopBg} />
+        <OutdoorImage src={profileBgImg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
           <b>
