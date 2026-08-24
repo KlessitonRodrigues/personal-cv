@@ -23,7 +23,7 @@ jobs:
           cache: yarn
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --production=true
+        run: yarn install --frozen-lockfile
 
       - name: Build profile page
         run: yarn build
