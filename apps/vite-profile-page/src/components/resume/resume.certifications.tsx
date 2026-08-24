@@ -5,7 +5,6 @@ import Text from '../common/common.text';
 import { Card, Section } from '../common/styled/styled.containers';
 import { Hr } from '../common/styled/styled.divisors';
 import { Column, Row } from '../common/styled/styled.flex';
-import { List, ListItem } from '../common/styled/styled.list';
 
 const ResumeEducationSection = () => {
   return (
@@ -22,45 +21,9 @@ const ResumeEducationSection = () => {
         <Column left gap={0}>
           <Row left responsive>
             <Text tag="h6" path="education_udemy_title" />
+            <Text tag="small">{new Date().getFullYear()}</Text>
           </Row>
-          <List>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_1" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_2" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_3" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_4" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_5" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_13" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_7" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_8" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_6" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_9" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_10" />
-            </ListItem>
-            <ListItem>
-              <Text tag="p" path="education_udemy_course_12" />
-            </ListItem>
-          </List>
+          <Text tag="p" path="education_udemy_course" />
         </Column>
 
         <Column left>
