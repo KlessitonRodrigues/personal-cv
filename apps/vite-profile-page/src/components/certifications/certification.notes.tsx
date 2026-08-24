@@ -36,11 +36,12 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="English" url={gistNotesLinks.english} />
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />
           <LinkAndIcon size={5} icon="link" label="Linux" url={gistNotesLinks.linux} />
+          <LinkAndIcon size={5} icon="link" label="GitHub" url={gistNotesLinks.github} />
           {/*
-                    <LinkAndIcon size={5} icon="link" label="Java" url={gistNotesLinks.linux} />
-          <LinkAndIcon size={5} icon="link" label=".Net" url={gistNotesLinks.linux} />
-          <LinkAndIcon size={5} icon="link" label="Clojure" url={gistNotesLinks.linux} />
-          <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />
+            <LinkAndIcon size={5} icon="link" label="Java" url={gistNotesLinks.linux} />
+            <LinkAndIcon size={5} icon="link" label=".Net" url={gistNotesLinks.linux} />
+            <LinkAndIcon size={5} icon="link" label="Clojure" url={gistNotesLinks.linux} />
+            <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />
           */}
         </Row>
       </Card>
