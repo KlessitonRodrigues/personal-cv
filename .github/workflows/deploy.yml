@@ -19,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: yarn
 
       - name: Install dependencies
@@ -36,9 +36,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Install CDK
-        run: yarn global add aws-cdk
-
       - name: Deploy CDK
         run: npx cdk deploy --require-approval never
-        working-directory: infrastructure
+        working-directory: services/aws-cloudfront-deploy
