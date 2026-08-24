@@ -20,13 +20,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: yarn
 
       - name: Install dependencies
-        run: npm i
+        run: yarn install --frozen-lockfile --production=true
 
       - name: Build profile page
-        run: npm run build
+        run: yarn build
         working-directory: apps/vite-profile-page
 
       - name: Configure AWS credentials
@@ -37,7 +37,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Install CDK
-        run: npm install -g aws-cdk
+        run: yarn global add aws-cdk
 
       - name: Deploy CDK
         run: npx cdk deploy --require-approval never
