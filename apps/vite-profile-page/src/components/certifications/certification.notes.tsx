@@ -26,6 +26,7 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="NextJS" url={gistNotesLinks.nextjs} />
           <LinkAndIcon size={5} icon="link" label="NodeJS" url={gistNotesLinks.nodejs} />
           <LinkAndIcon size={5} icon="link" label="MongoDB" url={gistNotesLinks.mongodb} />
+          <LinkAndIcon size={5} icon="link" label="Clojure" url={gistNotesLinks.clojure} />
           <LinkAndIcon size={5} icon="link" label="NestJS" url={gistNotesLinks.nestjs} />
           <LinkAndIcon size={5} icon="link" label="SQL" url={gistNotesLinks.sql} />
           <LinkAndIcon size={5} icon="link" label="Git" url={gistNotesLinks.git} />
@@ -37,12 +38,6 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />
           <LinkAndIcon size={5} icon="link" label="Linux" url={gistNotesLinks.linux} />
           <LinkAndIcon size={5} icon="link" label="GitHub" url={gistNotesLinks.github} />
-          {/*
-            <LinkAndIcon size={5} icon="link" label="Java" url={gistNotesLinks.linux} />
-            <LinkAndIcon size={5} icon="link" label=".Net" url={gistNotesLinks.linux} />
-            <LinkAndIcon size={5} icon="link" label="Clojure" url={gistNotesLinks.linux} />
-            <LinkAndIcon size={5} icon="link" label="Java" url={notesURls.java} />
-          */}
         </Row>
       </Card>
     </Section>

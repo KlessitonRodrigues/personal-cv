@@ -89,8 +89,8 @@ export const SidebarItem = styled.div<IStyledProps>(
     min-width: ${cssSize(sidebarSizeOpen)};
     cursor: pointer;
     font-weight: bold;
-    border-radius: ${theme.radius.md} 0 0 ${theme.radius.md};
     transition: 0.3s ease-out;
+    border-radius: ${theme.radius.lg} 0 0 ${theme.radius.lg};
     color: ${active ? theme.colors.mainText : theme.colors.text1};
     ${active && `background-color: ${theme.colors.main};`}
 
@@ -162,7 +162,7 @@ const SideBar = (props: PropsWithChildren) => {
   return (
     <Container>
       <SidebarBox active={open} hidden={hidable}>
-        <Column top left gap={0}>
+        <Column top left gap={1}>
           <Link to="/" onClick={closeSidebar}>
             <SidebarItem active={hidable && path === '/'}>
               <Icons type="website" size={9} />
