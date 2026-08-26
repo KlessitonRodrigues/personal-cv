@@ -10,6 +10,7 @@ import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import reactHooksImg from 'src/public/images/udemy_react_hooks.jpg';
 import reactNativeImg from 'src/public/images/udemy_react_native.jpg';
 import reactReduxImg from 'src/public/images/udemy_react_redux.jpg';
+import webpackImg from 'src/public/images/udemy_webpack.jpg';
 
 import Accordion from '../common/common.accordion';
 import Icons from '../common/common.icons';
@@ -89,6 +90,10 @@ export const UdemyCertifications = () => {
         <Accordion
           title={<Text tag="p" path="education_udemy_course_8" />}
           content={<Image src={awsServelessImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
+          title={<Text tag="p" path="education_udemy_course_14" />}
+          content={<Image src={webpackImg} maxw="45rem" maxh="30rem" />}
         />
       </Card>
     </Section>
