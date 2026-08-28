@@ -87,6 +87,7 @@ export const gistNotesLinks = {
   github: 'https://gist.github.com/KlessitonRodrigues/9cf15ae28b20e6bf0782e53e36da9297',
   clojure: 'https://gist.github.com/KlessitonRodrigues/d04d4c919e8de025a68c6da8fab7212e',
   csharp: 'https://gist.github.com/KlessitonRodrigues/ee498081c3f4ed3a5099f44545fd67a0',
+  dotnet: 'https://gist.github.com/KlessitonRodrigues/c8775473115cd506f9c3ed8d79a4a1a5',
 };
 
 export const codeBlockLinks = {
