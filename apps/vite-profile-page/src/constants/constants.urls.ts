@@ -41,6 +41,7 @@ export const urls = {
   easyEncryptApp: 'https://klessitonrodrigues.github.io/easy-encrypt/',
   easyEncryptRepo: 'https://github.com/KlessitonRodrigues/easy-encrypt',
   reshadePresetRepo: 'https://github.com/KlessitonRodrigues/reshade-better-color-and-texture',
+  daisyuiStorybookRepo: 'https://github.com/KlessitonRodrigues/daisy-ui-components',
 };
 
 export const notesURls = {

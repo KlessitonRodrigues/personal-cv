@@ -3,6 +3,7 @@ import multistepFormImg from 'src//public/images/multistep_form.png';
 import profileImg from 'src//public/images/profile_img.png';
 import sellerAppImg from 'src//public/images/seller_app.png';
 import authFormImg from 'src/public/images/auth_form.png';
+import daisyuiStorybookImg from 'src/public/images/daisyui_storybook.png';
 import easyEncryptImg from 'src/public/images/easy_encrypt.png';
 import githubPageImg from 'src/public/images/github.png';
 import landingPageTemplateImg from 'src/public/images/landing_page_template.png';
@@ -18,6 +19,14 @@ const projectsMap = [
     websiteUrl: urls.personalPage,
     githubUrl: urls.personalPageRep,
     imageSrc: profileImg,
+  },
+  {
+    title: 'extraworks_dayui_storybook',
+    description: 'extraworks_dayui_storybook_text',
+    technologies: 'extraworks_dayui_storybook_tech',
+    // websiteUrl: urls.daisyuiStorybookApp,
+    githubUrl: urls.daisyuiStorybookRepo,
+    imageSrc: daisyuiStorybookImg,
   },
   {
     title: 'extraworks_landing_page_template',
