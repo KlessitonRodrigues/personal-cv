@@ -24,7 +24,7 @@ const projectsMap = [
     title: 'extraworks_dayui_storybook',
     description: 'extraworks_dayui_storybook_text',
     technologies: 'extraworks_dayui_storybook_tech',
-    // websiteUrl: urls.daisyuiStorybookApp,
+    websiteUrl: urls.daisyuiStorybookApp,
     githubUrl: urls.daisyuiStorybookRepo,
     imageSrc: daisyuiStorybookImg,
   },
