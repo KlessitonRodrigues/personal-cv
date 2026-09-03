@@ -90,6 +90,7 @@ export const gistNotesLinks = {
   clojure: 'https://gist.github.com/KlessitonRodrigues/d04d4c919e8de025a68c6da8fab7212e',
   csharp: 'https://gist.github.com/KlessitonRodrigues/ee498081c3f4ed3a5099f44545fd67a0',
   dotnet: 'https://gist.github.com/KlessitonRodrigues/c8775473115cd506f9c3ed8d79a4a1a5',
+  python: 'https://gist.github.com/KlessitonRodrigues/b3771061121c93e3e3d2aaf07e2b26a3',
 };
 
 export const codeBlockLinks = {
