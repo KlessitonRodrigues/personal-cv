@@ -23,6 +23,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Clojure', icon: 'clojure' },
     { name: 'Java', icon: 'java' },
     { name: 'C#', icon: 'csharp' },
+    { name: 'Python', icon: 'python' },
   ],
   frontend: [
     { name: 'HTML', icon: 'html' },

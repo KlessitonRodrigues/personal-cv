@@ -80,6 +80,7 @@ import {
   SiPostman,
   SiPrisma,
   SiPuppeteer,
+  SiPython,
   SiQwen,
   SiReact,
   SiReacthookform,
@@ -213,6 +214,7 @@ const iconMap = {
   qwenAI: <SiQwen />,
   storybook: <SiStorybook />,
   prisma: <SiPrisma />,
+  python: <SiPython />,
 };
 
 export type IconsType = keyof typeof iconMap;
