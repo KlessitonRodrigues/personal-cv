@@ -40,6 +40,7 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />
           <LinkAndIcon size={5} icon="link" label="Linux" url={gistNotesLinks.linux} />
           <LinkAndIcon size={5} icon="link" label="Python" url={gistNotesLinks.python} />
+          <LinkAndIcon size={5} icon="link" label="Data Science" url={gistNotesLinks.dataScience} />
           <LinkAndIcon size={5} icon="link" label="GitHub" url={gistNotesLinks.github} />
         </Row>
       </Card>
