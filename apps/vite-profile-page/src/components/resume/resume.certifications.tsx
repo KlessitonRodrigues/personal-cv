@@ -34,13 +34,16 @@ const ResumeEducationSection = () => {
               <Text tag="p" path="education_udemy_course_4" />
             </ListItem>
             <ListItem>
-              <Text tag="p" path="education_udemy_course_6" />
-            </ListItem>
-            <ListItem>
               <Text tag="p" path="education_udemy_course_13" />
             </ListItem>
             <ListItem>
+              <Text tag="p" path="education_udemy_course_6" />
+            </ListItem>
+            <ListItem>
               <Text tag="p" path="education_udemy_course_8" />
+            </ListItem>
+            <ListItem>
+              <Text tag="p" path="education_udemy_course_15" />
             </ListItem>
             <ListItem>
               <Link to={urls.personalPageCertificates}>
