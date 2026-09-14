@@ -21,7 +21,6 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Javascript', icon: 'javascript' },
     { name: 'Typescript', icon: 'typescript' },
     { name: 'Clojure', icon: 'clojure' },
-    { name: 'Java', icon: 'java' },
     { name: 'C#', icon: 'csharp' },
     { name: 'Python', icon: 'python' },
   ],
