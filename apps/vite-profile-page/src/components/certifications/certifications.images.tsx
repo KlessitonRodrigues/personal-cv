@@ -5,6 +5,7 @@ import clojureImg from 'src/public/images/udemy_clojure.jpg';
 import dockerImg from 'src/public/images/udemy_docker.jpg';
 import englishImg from 'src/public/images/udemy_english.jpg';
 import jsTsImg from 'src/public/images/udemy_js_ts.jpg';
+import nestJsMicroservicesImg from 'src/public/images/udemy_nest_microservices.jpg';
 import nestJsImg from 'src/public/images/udemy_nestjs.jpg';
 import nextJsImg from 'src/public/images/udemy_nextjs.jpg';
 import pythonImg from 'src/public/images/udemy_python.jpg';
@@ -77,6 +78,10 @@ export const UdemyCertifications = () => {
           content={<Image src={nestJsImg} maxw="45rem" maxh="30rem" />}
         />
         <Accordion
+          title={<Text tag="p" path="education_udemy_course_16" />}
+          content={<Image src={nestJsMicroservicesImg} maxw="45rem" maxh="30rem" />}
+        />
+        <Accordion
           title={<Text tag="p" path="education_udemy_course_7" />}
           content={<Image src={dockerImg} maxw="45rem" maxh="30rem" />}
         />
@@ -88,6 +93,7 @@ export const UdemyCertifications = () => {
           title={<Text tag="p" path="education_udemy_course_12" />}
           content={<Image src={englishImg} maxw="45rem" maxh="30rem" />}
         />
+
         <Accordion
           title={<Text tag="p" path="education_udemy_course_8" />}
           content={<Image src={awsServelessImg} maxw="45rem" maxh="30rem" />}
