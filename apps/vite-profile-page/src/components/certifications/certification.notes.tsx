@@ -37,7 +37,7 @@ export const CertificationsNotes = () => {
           <LinkAndIcon size={5} icon="link" label="English" url={gistNotesLinks.english} />
           <LinkAndIcon size={5} icon="link" label="C#" url={gistNotesLinks.csharp} />
           <LinkAndIcon size={5} icon="link" label=".NET" url={gistNotesLinks.dotnet} />
-          <LinkAndIcon size={5} icon="link" label="GoF" url={gistNotesLinks.gof} />
+          <LinkAndIcon size={5} icon="link" label="Design Patterns" url={gistNotesLinks.patterns} />
           <LinkAndIcon size={5} icon="link" label="AWS" url={gistNotesLinks.aws} />
           <LinkAndIcon size={5} icon="link" label="Linux" url={gistNotesLinks.linux} />
           <LinkAndIcon size={5} icon="link" label="Python" url={gistNotesLinks.python} />
