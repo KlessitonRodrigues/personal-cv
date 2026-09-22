@@ -92,6 +92,7 @@ export const gistNotesLinks = {
   dotnet: 'https://gist.github.com/KlessitonRodrigues/c8775473115cd506f9c3ed8d79a4a1a5',
   python: 'https://gist.github.com/KlessitonRodrigues/b3771061121c93e3e3d2aaf07e2b26a3',
   dataScience: 'https://gist.github.com/KlessitonRodrigues/249a013d946f96a94d3f3460d21bd5d1',
+  gof: 'https://gist.github.com/KlessitonRodrigues/6c2624ee32457269dfb916445fc50b8a',
 };
 
 export const codeBlockLinks = {
