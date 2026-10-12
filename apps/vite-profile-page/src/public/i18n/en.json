@@ -24,7 +24,7 @@
   "header_page": "Page",
   "header_page_text": "profile.klessitonrds.com",
   "cv_resume_title": "Resume",
-  "cv_resume": "Fullstack developer with experience in Web and Mobile applications using React and its frameworks, building APIs with Node.js using Express or Nest.js, and using cloud services such as AWS and Google Cloud. Able to support maintenance and development of systems built with Python, C#, or Clojure. I enjoy learning different technologies and ways to improve productivity and code quality, and I like being creative and proposing ways to improve the development process through reports and automated tests.",
+  "cv_resume": "Full Stack Developer (Typescript, C# and Python) with experience in building and optimizing applications in Next.js, componentization and testing of micro-frontends using Storybook. Experienced in developing and testing microservice-based APIs in Nest.js, .NET, Django, and integrating with noSQL (MongoDB, DynamoDB) and SQL (PostgresDB) databases. Experienced in developing low operational cost Serverless services on AWS for integration with payment webhooks, authentication, and monitoring. Currently studying process automation through AI and developing agents with software architecture rules.",
 
   "experience_category_language": "Programming Languages",
   "experience_category_frontend": "Frontend Development",

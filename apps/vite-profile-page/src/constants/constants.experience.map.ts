@@ -100,9 +100,8 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Shortcut', icon: 'shortcut' },
   ],
   ai_tools: [
-    { name: 'LM Studio', icon: 'lmStudio' },
     { name: 'Copilot', icon: 'copilot' },
     { name: 'Claude', icon: 'claude' },
-    { name: 'Qwen', icon: 'qwenAI' },
+    { name: 'AWS Badrock', icon: 'aws' },
   ],
 };
