@@ -1,7 +1,6 @@
 import gameFinderImg from 'src//public/images/game_finder_img.png';
 import multistepFormImg from 'src//public/images/multistep_form.png';
 import profileImg from 'src//public/images/profile_img.png';
-import sellerAppImg from 'src//public/images/seller_app.png';
 import authFormImg from 'src/public/images/auth_form.png';
 import daisyuiStorybookImg from 'src/public/images/daisyui_storybook.png';
 import easyEncryptImg from 'src/public/images/easy_encrypt.png';
@@ -53,14 +52,6 @@ const projectsMap = [
     imageSrc: authFormImg,
   },
   {
-    title: 'extraworks_multistepform',
-    description: 'extraworks_multistepform_text',
-    technologies: 'extraworks_multistepform_tech',
-    websiteUrl: urls.multiStepFormApp,
-    githubUrl: urls.multiStepFormRepo,
-    imageSrc: multistepFormImg,
-  },
-  {
     title: 'extraworks_game_finder',
     description: 'extraworks_game_finder_text',
     technologies: 'extraworks_game_finder_tech',
@@ -90,20 +81,12 @@ const projectsMap = [
     imageSrc: githubPageImg,
   },
   {
-    title: 'extraworks_console_ui',
-    description: 'extraworks_console_ui_text',
-    technologies: 'extraworks_console_ui_tech',
-    websiteUrl: urls.consoleUIPage,
-    githubUrl: urls.consoleUIRepo,
-    imageSrc: githubPageImg,
-  },
-  {
-    title: 'extraworks_sellerapp',
-    description: 'extraworks_sellerapp_text',
-    technologies: 'extraworks_sellerapp_tech',
-    websiteUrl: urls.sellerApp,
-    githubUrl: urls.sellerRepo,
-    imageSrc: sellerAppImg,
+    title: 'extraworks_multistepform',
+    description: 'extraworks_multistepform_text',
+    technologies: 'extraworks_multistepform_tech',
+    websiteUrl: urls.multiStepFormApp,
+    githubUrl: urls.multiStepFormRepo,
+    imageSrc: multistepFormImg,
   },
   {
     title: 'extraworks_easy_encrypt',
@@ -112,14 +95,6 @@ const projectsMap = [
     websiteUrl: urls.easyEncryptApp,
     githubUrl: urls.easyEncryptRepo,
     imageSrc: easyEncryptImg,
-  },
-  {
-    title: 'reshade_preset',
-    description: 'reshade_preset_text',
-    technologies: 'reshade_preset_tech',
-    websiteUrl: '',
-    githubUrl: urls.reshadePresetRepo,
-    imageSrc: githubPageImg,
   },
 ];
 

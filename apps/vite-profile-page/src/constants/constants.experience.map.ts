@@ -102,6 +102,6 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
   ai_tools: [
     { name: 'Copilot', icon: 'copilot' },
     { name: 'Claude', icon: 'claude' },
-    { name: 'AWS Badrock', icon: 'aws' },
+    { name: 'AWS Bedrock', icon: 'aws' },
   ],
 };
