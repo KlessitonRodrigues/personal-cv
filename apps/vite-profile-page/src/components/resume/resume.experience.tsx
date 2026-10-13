@@ -48,6 +48,11 @@ const ResumeExperienceSection = () => {
             <Text tag="small" path="experience_collums_tech" />
           </Box>
           <Box>
+            <Text tag="h6" path="experience_collums_data_import" />
+            <Text tag="p" path="experience_collums_data_import_text" />
+            <Text tag="small" path="experience_collums_data_import_tech" />
+          </Box>
+          <Box>
             <Text tag="h6" path="experience_talentId" />
             <Text tag="p" path="experience_talentId_text" />
             <Text tag="small" path="experience_talentId_tech" />
