@@ -58,7 +58,7 @@ export type IThemeProps = {
 };
 
 export const themeColors: Record<IThemeColors, any> = {
-  indigo: { main: material.indigo['400'], mainBg: material.indigo['900'] },
+  indigo: { main: material.indigo['300'], mainBg: material.indigo['900'] },
   purple: { main: material.purple['400'], mainBg: material.purple['900'] },
   blue: { main: material.blue['400'], mainBg: material.blue['900'] },
   green: { main: material.green['400'], mainBg: material.green['900'] },
