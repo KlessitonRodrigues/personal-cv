@@ -1,10 +1,6 @@
-import BrSVG from 'flag-icons/flags/1x1/br.svg';
-import UsSVG from 'flag-icons/flags/1x1/us.svg';
-
 import useTheme from 'src/hooks/hooks.use.theme';
 import { materialColors } from 'src/styles/styles.colors';
 import { IThemeColors } from 'src/styles/styles.theme';
-import { cssSize } from 'src/styles/styles.utils';
 import { getText } from 'src/utils/utils.i18n';
 import { changeLanguage, getLanguage } from 'src/utils/utils.local.storage';
 
@@ -15,18 +11,17 @@ import { ColorBtn } from '../common/styled/styled.buttons';
 import { Card, Section } from '../common/styled/styled.containers';
 import { Hr } from '../common/styled/styled.divisors';
 import { Column } from '../common/styled/styled.flex';
-import { Image } from '../common/styled/styled.image';
 
 const languageOptions = [
   {
     label: getText('language_portuguese'),
     value: 'pt',
-    content: <Image src={BrSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
+    content: <Text tag="h6">PT</Text>,
   },
   {
     label: getText('language_english'),
     value: 'en',
-    content: <Image src={UsSVG} loading="lazy" decoding="async" w={cssSize(10)} h={cssSize(8)} />,
+    content: <Text tag="h6">EN</Text>,
   },
 ];
 

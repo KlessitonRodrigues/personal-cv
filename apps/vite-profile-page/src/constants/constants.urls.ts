@@ -45,27 +45,6 @@ export const urls = {
   daisyuiStorybookApp: 'https://d13kfbsffq39mx.cloudfront.net/',
 };
 
-export const notesURls = {
-  javascript:
-    'https://docs.google.com/document/d/e/2PACX-1vQhIArjw0fwEVdE8UoQ4LrZan8Cmmju1CNMMpX_0IU-2hZv8iSOn58joiu7-yTtqWujIWb4MTNDhoIW/pub',
-  typescript:
-    'https://docs.google.com/document/d/e/2PACX-1vQAAtlF4gON22zFDeT4hL2LZIkFC1yjLIFV0T4vrv9eP3D1yPdw4SEA-AVY3SS0vagaVBDXsauWPCcX/pub',
-  react:
-    'https://docs.google.com/document/d/e/2PACX-1vTtlkZGFmGvzVtDiqDRJHPJh-l2P53gzvxskZfCdGrnOsHCqQcLARlaHTUf9NIcT7vwMUo2P7UrGqXh/pub',
-  nextjs:
-    'https://docs.google.com/document/d/e/2PACX-1vQTIA1KFwHQfPvTQVVxgZZ12wajNvZEgD9ixjSKiUMiQknlUGhUapq6Xi1fT8eFdOEq06lpIt9XoGKV/pub',
-  nodejs:
-    'https://docs.google.com/document/d/e/2PACX-1vTTF0sshQrbscEAsC6Xm_ElRIfYsqHX4EwE_A3WO9gFLW45yC-Z3n1FupZcmMEGTl826pGqyYHkYCvB/pub',
-  html: 'https://docs.google.com/document/d/e/2PACX-1vT9qdMguclwczY-E0tGhh1eiVos7q62V-rdu67ax_HrLOgoCAdNEEQ5TjjLw98vaPlop0PZ_ei6yxvL/pub',
-  english:
-    'https://docs.google.com/document/d/e/2PACX-1vSXQmbB38dXaB4Wjkwrqy6JsxW7ks0XM5fcAS8gz5VHhsHygiQjDMVKVtOOp3vgXz_IybAaoAi7_V28/pub',
-  docker:
-    'https://docs.google.com/document/d/e/2PACX-1vT7SGvm_yRvpJU1LO8kXa7zlVN7qSNMT3D5jiDC5edSgfqm20yP6COgFNBao85-1njmh6OUhZ_1d_B_/pub',
-  git: 'https://docs.google.com/document/d/e/2PACX-1vTncN-jRT3RzpPrhi0SylCGIYx3jS8quOWyBoM1Wy3-bZUSJ180eMpBJjW047fXo_0dMK4Zbml_IAhP/pub',
-  java: '',
-  aws: '',
-};
-
 export const gistNotesLinks = {
   javascript: 'https://gist.github.com/KlessitonRodrigues/f5feac01ed2af40cdb80ac7663b467d2',
   typescript: 'https://gist.github.com/KlessitonRodrigues/e21bd5d91366e4d914b548696b47e56a',
@@ -80,7 +59,6 @@ export const gistNotesLinks = {
   docker: 'https://gist.github.com/KlessitonRodrigues/d6ee8df93d5811af3664a9f9a206bb81',
   git: 'https://gist.github.com/KlessitonRodrigues/5cc50b059fa145fccedef2f4ba88c680',
   regex: 'https://gist.github.com/KlessitonRodrigues/2a5047861874993fd1e1130715ce97f3',
-  java: '',
   aws: 'https://gist.github.com/KlessitonRodrigues/67d9000fcd5cf34275ade8c0e87e9d33',
   markdown: 'https://gist.github.com/KlessitonRodrigues/452f769d1d30d80812948d50ece9f4ac',
   scrum: 'https://gist.github.com/KlessitonRodrigues/f1d96f7dc64ba0d8cf11a77273974049',

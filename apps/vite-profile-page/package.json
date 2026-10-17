@@ -21,7 +21,6 @@
     "@types/react-dom": "^19.2.3",
     "@types/styled-components": "^5.1.36",
     "@vitejs/plugin-react": "^6.0.3",
-    "flag-icons": "^7.5.0",
     "glob": "^13.0.6",
     "prettier": "^3.9.4",
     "react-icons": "^5.7.0",

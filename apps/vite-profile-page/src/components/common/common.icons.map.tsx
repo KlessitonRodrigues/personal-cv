@@ -42,6 +42,7 @@ import {
 } from 'react-icons/ri';
 import {
   SiAndroidstudio,
+  SiAngular,
   SiAntdesign,
   SiApachecordova,
   SiBitbucket,
@@ -215,6 +216,7 @@ const iconMap = {
   storybook: <SiStorybook />,
   prisma: <SiPrisma />,
   python: <SiPython />,
+  angular: <SiAngular />,
 };
 
 export type IconsType = keyof typeof iconMap;
