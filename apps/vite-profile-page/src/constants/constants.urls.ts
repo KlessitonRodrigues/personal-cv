@@ -43,6 +43,8 @@ export const urls = {
   reshadePresetRepo: 'https://github.com/KlessitonRodrigues/reshade-better-color-and-texture',
   daisyuiStorybookRepo: 'https://github.com/KlessitonRodrigues/daisy-ui-components',
   daisyuiStorybookApp: 'https://d13kfbsffq39mx.cloudfront.net/',
+  jsonTranslatorRepo: 'https://github.com/KlessitonRodrigues/aws-serveless-json-translator',
+  jsonTranslatorSwagger: 'https://klessitonrodrigues.github.io/aws-serveless-json-translator/',
 };
 
 export const gistNotesLinks = {

@@ -98,6 +98,7 @@ import {
   SiStrapi,
   SiStyledcomponents,
   SiSvelte,
+  SiSwagger,
   SiTailwindcss,
   SiTrello,
   SiTypeorm,
@@ -219,6 +220,7 @@ const iconMap = {
   python: <SiPython />,
   angular: <SiAngular />,
   clickup: <SiClickup />,
+  swagger: <SiSwagger />,
 };
 
 export type IconsType = keyof typeof iconMap;

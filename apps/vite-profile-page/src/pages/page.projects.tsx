@@ -12,6 +12,7 @@ const ProjectList = projectsMap.map(project => (
     websiteUrl={project.websiteUrl || ''}
     githubUrl={project.githubUrl || ''}
     imageSrc={project.imageSrc || ''}
+    swaggerUrl={project.swaggerUrl || ''}
   />
 ));
 

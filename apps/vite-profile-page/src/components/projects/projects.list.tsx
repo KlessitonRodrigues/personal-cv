@@ -12,10 +12,11 @@ type ProjectSectionProps = {
   websiteUrl: string;
   githubUrl: string;
   imageSrc: string;
+  swaggerUrl: string;
 };
 
 const ProjectSection = (props: ProjectSectionProps) => {
-  const { title, description, technologies, websiteUrl, githubUrl, imageSrc } = props;
+  const { title, description, technologies, websiteUrl, githubUrl, imageSrc, swaggerUrl } = props;
 
   return (
     <Section>
@@ -28,6 +29,9 @@ const ProjectSection = (props: ProjectSectionProps) => {
             <Row left gap={4}>
               <If check={!!websiteUrl}>
                 <LinkAndIcon icon="website" label="Website" url={websiteUrl} />
+              </If>
+              <If check={!!swaggerUrl}>
+                <LinkAndIcon icon="swagger" label="Swagger" url={swaggerUrl} />
               </If>
               <If check={!!githubUrl}>
                 <LinkAndIcon icon="github" label="GitHub" url={githubUrl} />

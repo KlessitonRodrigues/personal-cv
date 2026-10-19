@@ -1,6 +1,7 @@
 import gameFinderImg from 'src//public/images/game_finder_img.png';
 import multistepFormImg from 'src//public/images/multistep_form.png';
 import profileImg from 'src//public/images/profile_img.png';
+import apiRoutesImg from 'src/public/images/api_routes.png';
 import authFormImg from 'src/public/images/auth_form.png';
 import daisyuiStorybookImg from 'src/public/images/daisyui_storybook.png';
 import easyEncryptImg from 'src/public/images/easy_encrypt.png';
@@ -60,25 +61,36 @@ const projectsMap = [
     imageSrc: gameFinderImg,
   },
   {
+    title: 'extraworks_json_translator',
+    description: 'extraworks_json_translator_text',
+    technologies: 'extraworks_json_translator_tech',
+    swaggerUrl: urls.jsonTranslatorSwagger,
+    githubUrl: urls.jsonTranslatorRepo,
+    imageSrc: apiRoutesImg,
+  },
+  {
     title: 'extraworks_aws_proxy_api',
     description: 'extraworks_aws_proxy_api_text',
     technologies: 'extraworks_aws_proxy_api_tech',
+    swaggerUrl: urls.jsonTranslatorSwagger,
     githubUrl: urls.awsProxyApiRepo,
-    imageSrc: githubPageImg,
+    imageSrc: apiRoutesImg,
   },
   {
     title: 'extraworks_aws_auth_api',
     description: 'extraworks_aws_auth_api_text',
     technologies: 'extraworks_aws_auth_api_tech',
+    swaggerUrl: urls.jsonTranslatorSwagger,
     githubUrl: urls.awsAuthApiRepo,
-    imageSrc: githubPageImg,
+    imageSrc: apiRoutesImg,
   },
   {
     title: 'extraworks_nestjs_auth_api',
     description: 'extraworks_nestjs_auth_api_text',
     technologies: 'extraworks_nestjs_auth_api_tech',
+    swaggerUrl: urls.jsonTranslatorSwagger,
     githubUrl: urls.nestAuthApiRepo,
-    imageSrc: githubPageImg,
+    imageSrc: apiRoutesImg,
   },
   {
     title: 'extraworks_multistepform',
