@@ -95,6 +95,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Trello', icon: 'trello' },
     { name: 'Notion', icon: 'notion' },
     { name: 'Shortcut', icon: 'shortcut' },
+    { name: 'ClickUp', icon: 'clickup' },
   ],
   ai_tools: [
     { name: 'Copilot', icon: 'copilot' },

@@ -48,6 +48,7 @@ import {
   SiBitbucket,
   SiBootstrap,
   SiClaude,
+  SiClickup,
   SiClojure,
   SiCodecademy,
   SiCss,
@@ -217,6 +218,7 @@ const iconMap = {
   prisma: <SiPrisma />,
   python: <SiPython />,
   angular: <SiAngular />,
+  clickup: <SiClickup />,
 };
 
 export type IconsType = keyof typeof iconMap;
