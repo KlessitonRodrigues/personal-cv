@@ -108,6 +108,13 @@ const projectsMap = [
     githubUrl: urls.easyEncryptRepo,
     imageSrc: easyEncryptImg,
   },
+  {
+    title: 'extraworks_jsbackup',
+    description: 'extraworks_jsbackup_text',
+    technologies: 'extraworks_jsbackup_tech',
+    githubUrl: urls.jsBackupRepo,
+    imageSrc: githubPageImg,
+  },
 ];
 
 export default projectsMap;

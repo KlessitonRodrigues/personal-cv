@@ -9,7 +9,7 @@ export const urls = {
   personalPageProjects: 'https://profile.klessitonrds.com/projects',
   personalPageCertificates: 'https://profile.klessitonrds.com/certification',
   personalPageRep: 'https://github.com/KlessitonRodrigues/personal-cv',
-  jsBackupRep: 'https://github.com/KlessitonRodrigues/javascript-krds/',
+  jsBackupRepo: 'https://github.com/KlessitonRodrigues/javascript-krds/',
   gameFinderPage: 'https://klessitonrodrigues.github.io/game-finder/',
   gameFinderRepo: 'https://github.com/KlessitonRodrigues/game-finder',
   consoleUIRepo: 'https://github.com/KlessitonRodrigues/game-station',

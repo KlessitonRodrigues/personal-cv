@@ -3,6 +3,8 @@ import PTJSON from 'src/public/i18n/pt.json';
 
 import { getLanguage } from './utils.local.storage';
 
+console.log(String(JSON.stringify({ json: PTJSON, targetLanguage: 'pt' })));
+
 const ENText = ENJSON as Record<string, string>;
 const PTText = PTJSON as Record<string, string>;
 
