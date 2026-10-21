@@ -101,5 +101,6 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Copilot', icon: 'copilot' },
     { name: 'Claude', icon: 'claude' },
     { name: 'AWS Bedrock', icon: 'aws' },
+    { name: 'Open Code', icon: 'openCode' },
   ],
 };

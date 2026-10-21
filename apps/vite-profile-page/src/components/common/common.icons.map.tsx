@@ -78,6 +78,7 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiNotion,
+  SiOpencode,
   SiPostgresql,
   SiPostman,
   SiPrisma,
@@ -221,6 +222,7 @@ const iconMap = {
   angular: <SiAngular />,
   clickup: <SiClickup />,
   swagger: <SiSwagger />,
+  openCode: <SiOpencode />,
 };
 
 export type IconsType = keyof typeof iconMap;
