@@ -23,6 +23,11 @@ const languageOptions = [
     value: 'en',
     content: <Text tag="h6">EN</Text>,
   },
+  {
+    label: getText('language_spanish'),
+    value: 'es',
+    content: <Text tag="h6">ES</Text>,
+  },
 ];
 
 const themeOptions = [
