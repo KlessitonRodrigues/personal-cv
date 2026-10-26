@@ -12,7 +12,7 @@ type ProjectSectionProps = {
   websiteUrl: string;
   githubUrl: string;
   imageSrc: string;
-  swaggerUrl: string;
+  swaggerUrl?: string;
 };
 
 const ProjectSection = (props: ProjectSectionProps) => {

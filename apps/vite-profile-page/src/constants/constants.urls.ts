@@ -48,6 +48,8 @@ export const urls = {
   daisyuiStorybookApp: 'https://d13kfbsffq39mx.cloudfront.net/',
   jsonTranslatorRepo: 'https://github.com/KlessitonRodrigues/aws-serveless-json-translator',
   jsonTranslatorSwagger: 'https://klessitonrodrigues.github.io/aws-serveless-json-translator/',
+  currencyAppRepo: 'https://github.com/KlessitonRodrigues/currency-app-frontend',
+  currencyApiRepo: 'https://github.com/KlessitonRodrigues/currency-app-backend',
 };
 
 export const gistNotesLinks = {
