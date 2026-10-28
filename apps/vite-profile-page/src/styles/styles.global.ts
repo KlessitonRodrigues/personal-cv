@@ -24,8 +24,6 @@ export default createGlobalStyle(
     body {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
-
-      background-attachment: fixed;
       color: ${theme.colors.text4};
       overflow-x: hidden;
       transition: background 0.3s;
