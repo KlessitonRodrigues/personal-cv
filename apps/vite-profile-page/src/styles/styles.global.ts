@@ -24,13 +24,7 @@ export default createGlobalStyle(
     body {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
-      background-color: ${theme.colors.bg4};
-      background-image: linear-gradient(
-        145deg,
-        color-mix(in srgb, ${theme.colors.main} 10%, ${theme.colors.bg4}) 25%,
-        color-mix(in srgb, ${theme.colors.main} 50%, ${theme.colors.bg4}) 75%,
-        ${theme.colors.main} 150%
-      );
+
       background-attachment: fixed;
       color: ${theme.colors.text4};
       overflow-x: hidden;

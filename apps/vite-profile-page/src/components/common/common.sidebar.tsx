@@ -2,6 +2,7 @@ import { PropsWithChildren, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
+import BackgroundStars from 'src/components/background/background.stars';
 import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/styles.utils';
 
 import Icons from './common.icons';
@@ -161,6 +162,7 @@ const SideBar = (props: PropsWithChildren) => {
 
   return (
     <Container>
+      <BackgroundStars icons={['star', 'circle']} />
       <SidebarBox active={open} hidden={hidable}>
         <Column top left gap={1}>
           <Link to="/" onClick={closeSidebar}>

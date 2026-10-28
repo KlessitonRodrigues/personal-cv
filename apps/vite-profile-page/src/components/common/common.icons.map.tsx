@@ -4,6 +4,7 @@ import { FaFacebook, FaJava, FaRegPenToSquare } from 'react-icons/fa6';
 import {
   LuChevronLeft,
   LuChevronRight,
+  LuCircle,
   LuDatabaseZap,
   LuDownload,
   LuExternalLink,
@@ -13,6 +14,7 @@ import {
   LuMoon,
   LuPaintbrush,
   LuPrinter,
+  LuStar,
   LuSun,
   LuTreePalm,
   LuUser,
@@ -223,6 +225,8 @@ const iconMap = {
   clickup: <SiClickup />,
   swagger: <SiSwagger />,
   openCode: <SiOpencode />,
+  star: <LuStar />,
+  circle: <LuCircle />,
 };
 
 export type IconsType = keyof typeof iconMap;
