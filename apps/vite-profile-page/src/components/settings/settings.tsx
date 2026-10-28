@@ -10,7 +10,7 @@ import Text from '../common/common.text';
 import { ColorBtn } from '../common/styled/styled.buttons';
 import { Card, Section } from '../common/styled/styled.containers';
 import { Hr } from '../common/styled/styled.divisors';
-import { Column } from '../common/styled/styled.flex';
+import { Column, Row } from '../common/styled/styled.flex';
 
 const languageOptions = [
   {
@@ -90,7 +90,6 @@ const SettingsSection = () => {
 
         <Column left gap={4}>
           <Text tag="h6" path="settings_language" />
-
           <OptionList
             options={languageOptions}
             value={getLanguage()}

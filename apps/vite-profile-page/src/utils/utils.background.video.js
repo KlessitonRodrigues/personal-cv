@@ -7,8 +7,19 @@ import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { BiLogoAws } from 'react-icons/bi';
+import { FaAws, FaNodeJs, FaPython, FaReact } from 'react-icons/fa6';
+import { IoLogoJavascript } from 'react-icons/io';
 import { LuCircle, LuStar } from 'react-icons/lu';
-import { SiNodedotjs, SiPython, SiReact, SiSharp } from 'react-icons/si';
+import {
+  SiDotnet,
+  SiJavascript,
+  SiNodedotjs,
+  SiPython,
+  SiReact,
+  SiSharp,
+  SiTypescript,
+} from 'react-icons/si';
 import sharp from 'sharp';
 
 const run = promisify(execFile);
@@ -18,10 +29,12 @@ const run = promisify(execFile);
 // src/components/common/common.icons.map.tsx - add more icons here by
 // importing them from `react-icons` and registering them below.
 const iconMap = {
-  node: SiNodedotjs,
-  react: SiReact,
-  python: SiPython,
-  csharp: SiSharp,
+  js: IoLogoJavascript,
+  aws: FaAws,
+  node: FaNodeJs,
+  react: FaReact,
+  python: FaPython,
+  csharp: SiDotnet,
 };
 
 const randomBetween = (min, max) => min + Math.random() * (max - min);
@@ -78,18 +91,18 @@ const buildFrameSvg = ({
  */
 export const generateBackgroundVideo = async ({
   output,
-  icons = ['node', 'react', 'python', 'csharp'],
-  count = 90,
+  icons = Object.keys(iconMap),
+  count = 60,
   width = 1920,
   height = 1080,
-  fps = 24,
-  duration = 10,
-  iconSize = 24,
+  fps = 60,
+  duration = 20,
+  iconSize = 32,
   iconColor = '#ffffff',
-  iconOpacity = 0.5,
-  gradientColors = ['#7986cb', '#3f51b5'],
-  gradientAngle = 145,
-  spread = 120,
+  iconOpacity = 0.6,
+  gradientColors = ['#9fa8da', '#3f51b5'],
+  gradientAngle = 60,
+  spread = 360,
 }) => {
   if (!icons.length) throw new Error('`icons` must contain at least one icon name');
   if (!output) throw new Error('`output` file path is required');
