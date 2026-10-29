@@ -109,16 +109,16 @@ export const generateBackgroundVideo = async ({
   output,
   icons = Object.keys(iconMap),
   count = 40,
-  width = 1600,
-  height = 900,
+  width = 1920,
+  height = 1080,
   fps = 16,
-  duration = 30,
-  iconSize = 20,
+  duration = 25,
+  iconSize = 24,
   iconColor = '#ffffff',
   iconOpacity = 1,
   gradientColors = ['#616161', '#616161'],
   gradientAngle = 60,
-  spread = 125,
+  spread = 200,
 }) => {
   if (!icons.length) throw new Error('`icons` must contain at least one icon name');
   if (!output) throw new Error('`output` file path is required');
