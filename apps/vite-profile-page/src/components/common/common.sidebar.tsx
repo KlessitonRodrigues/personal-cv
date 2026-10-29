@@ -2,10 +2,8 @@ import { PropsWithChildren, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
-import BackgroundVideo from 'src/components/background/background.video';
 import { IStyledProps, animations, cssSize, screenSize } from 'src/styles/styles.utils';
 
-import backgroundVideoSrc from '../../public/videos/background.stars.mp4';
 import Icons from './common.icons';
 import If from './common.if';
 import Text from './common.text';
@@ -163,7 +161,6 @@ const SideBar = (props: PropsWithChildren) => {
 
   return (
     <Container>
-      <BackgroundVideo src={backgroundVideoSrc} />
       <SidebarBox active={open} hidden={hidable}>
         <Column top left gap={1}>
           <Link to="/" onClick={closeSidebar}>

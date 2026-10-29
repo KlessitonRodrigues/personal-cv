@@ -109,7 +109,6 @@ export default createGlobalStyle(
     div::-webkit-scrollbar-thumb:hover {
       background: ${theme.colors.mainBg};
     }
-
     #root {
       width: 100%;
       height: 100%;
