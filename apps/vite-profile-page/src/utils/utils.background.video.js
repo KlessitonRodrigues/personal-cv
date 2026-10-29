@@ -31,10 +31,6 @@ import sharp from 'sharp';
 
 const run = promisify(execFile);
 
-// Plain-JS icon map used only by this generator (no JSX allowed in a script
-// run directly by node). Mirrors a subset of
-// src/components/common/common.icons.map.tsx - add more icons here by
-// importing them from `react-icons` and registering them below.
 const iconMap = {
   js: SiJavascript,
   aws: FaAws,
