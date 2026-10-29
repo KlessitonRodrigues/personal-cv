@@ -7,17 +7,23 @@ import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { BiLogoVisualStudio } from 'react-icons/bi';
 import { FaAws } from 'react-icons/fa6';
 import {
+  SiDocker,
   SiDotnet,
+  SiGit,
   SiGithub,
+  SiGithubcopilot,
   SiJavascript,
+  SiJest,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPython,
   SiReact,
   SiSharp,
+  SiTailwindcss,
   SiTypescript,
   SiVscodium,
 } from 'react-icons/si';
@@ -40,7 +46,11 @@ const iconMap = {
   github: SiGithub,
   nest: SiNestjs,
   next: SiNextdotjs,
-  vscode: SiVscodium,
+  vscode: BiLogoVisualStudio,
+  copilot: SiGithubcopilot,
+  docker: SiDocker,
+  jest: SiJest,
+  git: SiGit,
 };
 
 const randomBetween = (min, max) => min + Math.random() * (max - min);
@@ -98,17 +108,17 @@ const buildFrameSvg = ({
 export const generateBackgroundVideo = async ({
   output,
   icons = Object.keys(iconMap),
-  count = 60,
+  count = 40,
   width = 1600,
   height = 900,
-  fps = 24,
-  duration = 20,
-  iconSize = 24,
+  fps = 16,
+  duration = 30,
+  iconSize = 20,
   iconColor = '#ffffff',
   iconOpacity = 1,
-  gradientColors = ['#757575', '#757575'],
+  gradientColors = ['#616161', '#616161'],
   gradientAngle = 60,
-  spread = 360,
+  spread = 125,
 }) => {
   if (!icons.length) throw new Error('`icons` must contain at least one icon name');
   if (!output) throw new Error('`output` file path is required');
