@@ -16,12 +16,12 @@ export const Option = styled.div(
       align-items: center;
       justify-content: center;
       border-radius: ${cssSize(2)};
-      border: ${theme.border.sm};
+      border: ${theme.border.md};
       padding: ${cssSize(2)};
     }
 
     &:hover > div {
-      border: ${theme.border.md};
+      border: ${theme.border.lg};
     }
 
     &[data-active='true'] {
@@ -30,6 +30,7 @@ export const Option = styled.div(
       }
       & > label b {
         color: ${theme.colors.main};
+        font-weight: bold;
       }
     }
 

@@ -1,8 +1,11 @@
+import { languageOptions } from 'src/constants/constants.list.options';
 import { urls } from 'src/constants/constants.urls';
 import profileBgImg from 'src/public/images/profile_bg.jpg';
 import profile from 'src/public/images/profile_min.jpg';
+import { changeLanguage, getLanguage } from 'src/utils/utils.local.storage';
 
 import LinkAndIcon from '../common/common.link.and.icon';
+import OptionList from '../common/common.option.list';
 import Text from '../common/common.text';
 import { Section } from '../common/styled/styled.containers';
 import { Row } from '../common/styled/styled.flex';
@@ -16,6 +19,11 @@ const ProfileHeaderSection = () => {
         <OutdoorImage src={profileBgImg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
+          <OptionList
+            options={languageOptions}
+            value={getLanguage()}
+            onSelect={lang => changeLanguage(lang)}
+          />
           <b>
             <Text tag="h2" path="header_name" />
           </b>

@@ -32,7 +32,7 @@ export const Outdoor = styled.div<IStyledProps>(
     border-radius: ${theme.radius.md};
     position: relative;
     background-color: ${theme.colors.bg1};
-    padding-top: ${cssSize(72)};
+    padding-top: ${cssSize(75)};
     z-index: 0;
     box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
@@ -55,7 +55,7 @@ export const OutdoorImage = styled.div<IStyledProps>(
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.85);
+    filter: brightness(0.7);
   `,
 );
 

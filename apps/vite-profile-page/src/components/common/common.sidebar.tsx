@@ -113,11 +113,11 @@ export const MenuBtn = styled(RoundedBtn)(
     display: none;
     width: ${cssSize(16)};
     height: ${cssSize(16)};
-    background-color: ${theme.colors.mainBg};
-    color: ${theme.colors.mainText};
+    background-color: ${theme.colors.bg1};
+    color: ${theme.colors.text1};
     transition: 0.3s ease-out;
     box-shadow: ${theme.shadow.md};
-    ${active && `margin-left: ${cssSize(sidebarSizeOpen)};`}
+    ${active && `margin-left: ${cssSize(sidebarSizeOpen + 4)};`}
 
     .icon-menu {
       animation: 0.5s ${animations.halfSpinning} ease-out reverse;
