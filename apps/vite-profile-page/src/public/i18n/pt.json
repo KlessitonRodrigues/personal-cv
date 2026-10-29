@@ -26,7 +26,7 @@
   "header_phone_number": "+55 (89) 994009646",
   "header_page": "Página",
   "header_page_text": "profile.klessitonrds.com",
-  "cv_resume_title": "Currículo",
+  "cv_resume_title": "Resumo",
   "cv_resume": "Desenvolvedor Full Stack (Typescript, C# e Python) com experiência na construção e otimização de aplicações responsivas em Next.js, componentização e teste de micro-frontends usando storybook. experiência no desenvolvimento e teste de API's baseados em micro-serviços em Nest.js, .NET, Django e na integração com banco de dados noSQL (MongoDB, DynamoDB) e SQL (PostgresDB). Experiência no desenvolvimento de serviços Serverless de baixo custo operacional na AWS para integração com webhooks de pagamento, autenticação ou serviços de monitoramento. Atualmente estudando automação de processos por IA e desenvolvimento de agentes com regras de arquitetura de software e validação de etapas por testes (CI/CD).",
 
   "experience_category_language": "Linguagens de Programação",
