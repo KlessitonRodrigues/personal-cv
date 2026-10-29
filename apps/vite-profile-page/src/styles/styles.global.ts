@@ -118,6 +118,10 @@ export default createGlobalStyle(
     .custom-bg {
       fill: ${theme.colors.mainBg};
     }
+    #background-video {
+      filter: ${theme.colors.videoFilter};
+      transition: filter 0.1s ease;
+    }
 
     @media (max-width: ${screenSize.tablet}px) {
       html {

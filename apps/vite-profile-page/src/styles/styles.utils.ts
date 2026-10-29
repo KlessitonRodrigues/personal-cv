@@ -89,3 +89,41 @@ export const gradients = {
   darkPurple: `linear-gradient(180deg, ${mc.purple['600']}, ${mc.purple['700']})`,
   blueAndGreen: `linear-gradient(90deg, ${mc.blue['500']}, ${mc.green['500']})`,
 };
+
+export const hexToHsl = (hex: string) => {
+  const cleaned = hex.replace('#', '');
+  const isShort = cleaned.length === 3;
+
+  let r = parseInt(isShort ? cleaned[0] + cleaned[0] : cleaned.substring(0, 2), 16);
+  let g = parseInt(isShort ? cleaned[1] + cleaned[1] : cleaned.substring(2, 4), 16);
+  let b = parseInt(isShort ? cleaned[2] + cleaned[2] : cleaned.substring(4, 6), 16);
+
+  r /= 255;
+  g /= 255;
+  b /= 255;
+
+  const max = Math.max(r, g, b);
+  const min = Math.min(r, g, b);
+  const l = (max + min) / 2;
+  const d = max - min;
+
+  let h = 0;
+  const s = d === 0 ? 0 : d / (1 - Math.abs(2 * l - 1));
+
+  if (d !== 0) {
+    switch (max) {
+      case r:
+        h = ((g - b) / d) % 6;
+        break;
+      case g:
+        h = (b - r) / d + 2;
+        break;
+      default:
+        h = (r - g) / d + 4;
+    }
+    h *= 60;
+    if (h < 0) h += 360;
+  }
+
+  return { h, s, l };
+};

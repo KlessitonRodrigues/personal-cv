@@ -1,6 +1,18 @@
 import { antColors as ant, materialColors as material } from 'src/styles/styles.colors';
 
-import { cssSize } from './styles.utils';
+import { cssSize, hexToHsl } from './styles.utils';
+
+// CSS `sepia(1)` tints the video to a hue of ~30deg, used as the baseline
+// before rotating it towards the active theme color's own hue.
+const SEPIA_BASE_HUE = 30;
+
+export const getVideoFilter = (mainColor: string, dark: boolean) => {
+  const { h } = hexToHsl(mainColor);
+  const rotate = Math.round(h - SEPIA_BASE_HUE);
+  const brightness = dark ? 0.5 : 1;
+
+  return `grayscale(0.3) sepia(0.6) saturate(3.5) hue-rotate(${rotate}deg) brightness(${brightness})`;
+};
 
 export type IThemeColors =
   'indigo' | 'purple' | 'blue' | 'magenta' | 'green' | 'red' | 'yellow' | 'orange' | 'pink';
@@ -25,6 +37,7 @@ export type IThemeProps = {
     green: string;
     white: string;
     black: string;
+    videoFilter: string;
   };
   fontSize: {
     md: string;
@@ -91,6 +104,7 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       pink: material.pink['700'],
       white: material.white,
       black: ant.gray['1300'],
+      videoFilter: getVideoFilter(themeColors[color].main, dark),
     },
     fontSize: {
       h1: '1.5rem',
