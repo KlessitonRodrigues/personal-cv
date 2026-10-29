@@ -10,16 +10,20 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { BiLogoVisualStudio } from 'react-icons/bi';
 import { FaAws } from 'react-icons/fa6';
 import {
+  SiCss,
   SiDocker,
   SiDotnet,
   SiGit,
   SiGithub,
   SiGithubcopilot,
+  SiHtml5,
   SiJavascript,
   SiJest,
+  SiMongodb,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
+  SiPostgresql,
   SiPython,
   SiReact,
   SiSharp,
@@ -47,6 +51,10 @@ const iconMap = {
   docker: SiDocker,
   jest: SiJest,
   git: SiGit,
+  mongodb: SiMongodb,
+  postgresql: SiPostgresql,
+  css: SiCss,
+  html: SiHtml5,
 };
 
 const randomBetween = (min, max) => min + Math.random() * (max - min);
