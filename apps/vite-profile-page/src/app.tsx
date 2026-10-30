@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 import Router from 'src/pages/routes';
+import 'src/utils/utils.i18n';
 
 import AppProviders from './components/common/common.providers';
 import { ThemeProvider } from './hooks/hooks.use.theme';

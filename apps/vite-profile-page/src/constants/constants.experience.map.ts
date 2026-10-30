@@ -71,7 +71,6 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'BitBucket', icon: 'bitbucket' },
     { name: 'Amazon Web Services', icon: 'aws' },
     { name: 'Docker', icon: 'docker' },
-    { name: 'Heroku', icon: 'heroku' },
   ],
   tests: [
     { name: 'Jest', icon: 'jest' },

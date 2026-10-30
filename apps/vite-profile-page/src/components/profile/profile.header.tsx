@@ -1,8 +1,11 @@
-import { languageOptions } from 'src/constants/constants.list.options';
+import { useTranslation } from 'react-i18next';
+
+import { getLanguageOptions } from 'src/constants/constants.list.options';
 import { urls } from 'src/constants/constants.urls';
 import profileBgImg from 'src/public/images/profile_bg.jpg';
 import profile from 'src/public/images/profile_min.jpg';
-import { changeLanguage, getLanguage } from 'src/utils/utils.local.storage';
+import { changeLanguage } from 'src/utils/utils.i18n';
+import { getLanguage } from 'src/utils/utils.local.storage';
 
 import LinkAndIcon from '../common/common.link.and.icon';
 import OptionList from '../common/common.option.list';
@@ -13,6 +16,9 @@ import { Outdoor, OutdoorContent, OutdoorImage } from '../common/styled/styled.i
 import { AvatarBig } from '../common/styled/styled.user';
 
 const ProfileHeaderSection = () => {
+  const { t } = useTranslation();
+  const languageOptions = getLanguageOptions(t);
+
   return (
     <Section>
       <Outdoor>

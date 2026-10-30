@@ -1,4 +1,4 @@
-import { getText } from 'src/utils/utils.i18n';
+import { useTranslation } from 'react-i18next';
 
 type ITextProps = {
   id?: string;
@@ -22,8 +22,9 @@ type ITextProps = {
 };
 
 const Text = (props: ITextProps) => {
+  const { t } = useTranslation();
   const { id, path, tag, children } = props;
-  const text = path ? getText(path) : children;
+  const text = path ? t(path) : children;
 
   if (tag === 'p') return <p id={id}>{text}</p>;
   if (tag === 'b') return <b id={id}>{text}</b>;

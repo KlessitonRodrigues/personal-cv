@@ -1,7 +1,14 @@
-import { colorOptions, languageOptions, themeOptions } from 'src/constants/constants.list.options';
+import { useTranslation } from 'react-i18next';
+
+import {
+  getColorOptions,
+  getLanguageOptions,
+  getThemeOptions,
+} from 'src/constants/constants.list.options';
 import useTheme from 'src/hooks/hooks.use.theme';
 import { IThemeColors } from 'src/styles/styles.theme';
-import { changeLanguage, getLanguage } from 'src/utils/utils.local.storage';
+import { changeLanguage } from 'src/utils/utils.i18n';
+import { getLanguage } from 'src/utils/utils.local.storage';
 
 import OptionList from '../common/common.option.list';
 import Text from '../common/common.text';
@@ -10,7 +17,13 @@ import { Hr } from '../common/styled/styled.divisors';
 import { Column } from '../common/styled/styled.flex';
 
 const SettingsSection = () => {
+  const { t } = useTranslation();
   const { color, setColor, isDark, setDark } = useTheme();
+
+  const colorOptions = getColorOptions(t);
+  const languageOptions = getLanguageOptions(t);
+  const themeOptions = getThemeOptions(t);
+
   return (
     <Section>
       <Card>

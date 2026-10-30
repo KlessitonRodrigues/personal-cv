@@ -1,70 +1,71 @@
+import type { TFunction } from 'i18next';
+
 import Icons from 'src/components/common/common.icons';
 import Text from 'src/components/common/common.text';
 import { ColorBtn } from 'src/components/common/styled/styled.buttons';
 import { materialColors } from 'src/styles/styles.colors';
-import { getText } from 'src/utils/utils.i18n';
 
-export const themeOptions = [
-  { label: getText('theme_light'), value: 'light', content: <Icons type="sun" size={7} /> },
-  { label: getText('theme_dark'), value: 'dark', content: <Icons type="moon" size={7} /> },
+export const getThemeOptions = (t: TFunction) => [
+  { label: t('theme_light'), value: 'light', content: <Icons type="sun" size={7} /> },
+  { label: t('theme_dark'), value: 'dark', content: <Icons type="moon" size={7} /> },
 ];
 
-export const colorOptions = [
+export const getColorOptions = (t: TFunction) => [
   {
-    label: getText('color_indigo'),
+    label: t('color_indigo'),
     value: 'indigo',
     content: <ColorBtn color={materialColors.indigo['600']} />,
   },
   {
-    label: getText('color_blue'),
+    label: t('color_blue'),
     value: 'blue',
     content: <ColorBtn color={materialColors.blue['600']} />,
   },
   {
-    label: getText('color_green'),
+    label: t('color_green'),
     value: 'green',
     content: <ColorBtn color={materialColors.green['600']} />,
   },
   {
-    label: getText('color_red'),
+    label: t('color_red'),
     value: 'red',
     content: <ColorBtn color={materialColors.red['600']} />,
   },
   {
-    label: getText('color_yellow'),
+    label: t('color_yellow'),
     value: 'yellow',
     content: <ColorBtn color={materialColors.yellow['600']} />,
   },
   {
-    label: getText('color_purple'),
+    label: t('color_purple'),
     value: 'purple',
     content: <ColorBtn color={materialColors.purple['600']} />,
   },
   {
-    label: getText('color_orange'),
+    label: t('color_orange'),
     value: 'orange',
     content: <ColorBtn color={materialColors.orange['600']} />,
   },
   {
-    label: getText('color_pink'),
+    label: t('color_pink'),
     value: 'pink',
     content: <ColorBtn color={materialColors.pink['600']} />,
   },
 ];
 
-export const languageOptions = [
+export const getLanguageOptions = (t: TFunction) => [
   {
-    label: 'Portuguese',
+    label: t('language_portuguese'),
     value: 'pt',
     content: <Text tag="h6">PT</Text>,
   },
   {
-    label: 'English',
+    label: t('language_english'),
     value: 'en',
     content: <Text tag="h6">EN</Text>,
   },
   {
-    label: 'Spanish',
+    label: t('language_spanish'),
     value: 'es',
     content: <Text tag="h6">ES</Text>,
   },

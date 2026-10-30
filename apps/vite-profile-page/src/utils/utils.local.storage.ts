@@ -4,11 +4,6 @@ export const getLanguage = () => {
   return (localStorage.getItem('lang') || 'pt').toLowerCase();
 };
 
-export const changeLanguage = (lang: string) => {
-  localStorage.setItem('lang', lang);
-  location.reload();
-};
-
 export const getColor = () => {
   return (localStorage.getItem('color') as IThemeColors) || 'indigo';
 };

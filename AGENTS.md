@@ -56,7 +56,7 @@ The main profile/CV website (web app).
 - react-icons
 - sharp (image compression, used in `postbuild`)
 - Prettier (`@trivago/prettier-plugin-sort-imports`)
-- i18n via JSON files (en/es/pt)
+- i18next + react-i18next (JSON resources in en/es/pt)
 
 **File structure:**
 ```

@@ -12,8 +12,10 @@
     "generate:background-video": "node ./src/utils/utils.background.video.js"
   },
   "dependencies": {
+    "i18next": "^26.5.12",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "react-i18next": "^17.1.9"
   },
   "devDependencies": {
     "@emotion/is-prop-valid": "^1.2.2",
