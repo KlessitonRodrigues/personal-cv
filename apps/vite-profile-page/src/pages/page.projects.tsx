@@ -1,5 +1,4 @@
 import Page from 'src/components/common/common.page';
-import SideBar from 'src/components/common/common.sidebar';
 import ProjectSection from 'src/components/projects/projects.list';
 import projectsMap from 'src/constants/constants.projects.map';
 
@@ -17,11 +16,7 @@ const ProjectList = projectsMap.map(project => (
 ));
 
 const ProjectsPage = () => {
-  return (
-    <SideBar>
-      <Page>{ProjectList}</Page>
-    </SideBar>
-  );
+  return <Page>{ProjectList}</Page>;
 };
 
 export default ProjectsPage;
