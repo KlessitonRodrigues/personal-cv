@@ -35,13 +35,13 @@ export class WebAppStack extends cdk.Stack {
       enforceSSL: true,
     });
 
-    const cachePolicy = (id: string, ttl: cdk.Duration) =>
+    const cachePolicy = (id: string, ttl: cdk.Duration, enableCompression = true) =>
       new cloudFront.CachePolicy(this, id, {
         cookieBehavior: cloudFront.CacheCookieBehavior.none(),
         queryStringBehavior: cloudFront.CacheQueryStringBehavior.none(),
         headerBehavior: cloudFront.CacheHeaderBehavior.none(),
-        enableAcceptEncodingBrotli: true,
-        enableAcceptEncodingGzip: true,
+        enableAcceptEncodingBrotli: enableCompression,
+        enableAcceptEncodingGzip: enableCompression,
         minTtl: ttl,
         defaultTtl: ttl,
         maxTtl: ttl,
@@ -51,7 +51,11 @@ export class WebAppStack extends cdk.Stack {
       'ProfileWebsiteAssetsCachePolicy',
       cdk.Duration.days(365),
     );
-    const htmlCachePolicy = cachePolicy('ProfileWebsiteHtmlCachePolicy', cdk.Duration.seconds(0));
+    const htmlCachePolicy = cachePolicy(
+      'ProfileWebsiteHtmlCachePolicy',
+      cdk.Duration.seconds(0),
+      false,
+    );
 
     const securityHeaders: cloudFront.ResponseSecurityHeadersBehavior = {
       contentSecurityPolicy: {
@@ -142,7 +146,7 @@ export class WebAppStack extends cdk.Stack {
         viewerProtocolPolicy: cloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: htmlCachePolicy,
         responseHeadersPolicy: htmlResponseHeadersPolicy,
-        compress: true,
+        compress: false,
       },
       additionalBehaviors: {
         '/assets/*': {
