@@ -102,17 +102,6 @@ Deploys the built `vite-profile-page` static site to AWS (S3 + CloudFront) using
    yarn workspace @services/aws-cloudfront-deploy cdk-deploy
    ```
 
-The stack can be configured with environment variables or CDK context (for example `-c domainName=...`):
-
-| Variable / context | Description |
-| --- | --- |
-| `DOMAIN_NAME` / `domainName` | Custom domain served by CloudFront |
-| `HOSTED_ZONE_ID` / `hostedZoneId` | Route53 hosted zone ID; enables the ACM certificate and A/AAAA alias records |
-| `HOSTED_ZONE_NAME` / `hostedZoneName` | Hosted zone name; defaults to the domain without its first label |
-| `IS_PRODUCTION` / `isProduction` | Defaults to `true` (bucket retained). Set to `false` for disposable environments to auto-delete the bucket |
-
-Custom domains require deploying to `us-east-1` so the ACM certificate can be attached to CloudFront.
-
 ### CI/CD
 
 Pushes to `master` trigger [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml), which builds the web app and runs `cdk deploy` automatically using the `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` repository secrets.
