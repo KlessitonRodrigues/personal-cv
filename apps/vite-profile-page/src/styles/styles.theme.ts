@@ -105,9 +105,9 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       label: '0.8rem',
     },
     shadow: {
-      lg: '1px 1px 8px 0 #0004',
-      md: '1px 1px 6px 0 #0003',
-      sm: '1px 1px 4px 0 #0002',
+      lg: '1px 1px 7px 0 #0006',
+      md: '1px 1px 5px 0 #0006',
+      sm: '1px 1px 3px 0 #0004',
     },
     border: {
       lg: `solid 1px ${ant.gray['800']}`,
@@ -137,6 +137,9 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
     theme.border.lg = `solid 1px ${ant.gray['800']}`;
     theme.border.md = `solid 1px ${ant.gray['900']}`;
     theme.border.sm = `solid 1px ${ant.gray['900']}`;
+    theme.shadow.lg = '0 0 0 1px #fff5';
+    theme.shadow.md = '0 0 0 1px #fff4';
+    theme.shadow.sm = '0 0 0 1px #fff3';
   }
 
   return theme;
