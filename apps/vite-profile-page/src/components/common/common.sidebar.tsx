@@ -48,7 +48,7 @@ export const SidebarBox = styled.aside<IStyledProps>(
     overflow: hidden;
     text-transform: capitalize;
     background-color: ${theme.colors.bg1};
-    box-shadow: ${theme.shadow.sm};
+    box-shadow: ${theme.shadow.md};
     border-radius: ${theme.radius.md};
     transition:
       width 0.15s ease-in-out,

@@ -105,8 +105,8 @@ export const getTheme = (dark: boolean, color: IThemeColors) => {
       label: '0.8rem',
     },
     shadow: {
-      lg: '1px 1px 8px 0 #0006',
-      md: '1px 1px 6px 0 #0004',
+      lg: '1px 1px 8px 0 #0004',
+      md: '1px 1px 6px 0 #0003',
       sm: '1px 1px 4px 0 #0002',
     },
     border: {
