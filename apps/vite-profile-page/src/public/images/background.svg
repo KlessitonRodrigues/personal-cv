@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <rect width="1920" height="1080" style="fill: var(--background-base, #F4F4F4)" />
+  <polygon points="0,0 1920,0 1920,950.40 0,777.60" style="fill: var(--background-main, #7986cb)" />
+  <circle cx="89.05" cy="520.40" r="162.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.15624879708047956" /><circle cx="1334.23" cy="164.55" r="162.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.13881906906608493" /><circle cx="1817.15" cy="298.32" r="162.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.16074469613377007" />
+</svg>

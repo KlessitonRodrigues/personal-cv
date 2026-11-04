@@ -9,7 +9,7 @@
     "postbuild": "node ./src/utils/utils.image.compressor.js",
     "preview": "vite preview --host",
     "format": "prettier -c -w ./src",
-    "generate:background-video": "node ./src/utils/utils.background.video.js"
+    "generate:background": "node ./src/utils/utils.background.js"
   },
   "dependencies": {
     "i18next": "^26.5.12",
