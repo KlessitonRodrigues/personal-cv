@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
   <rect width="1920" height="1080" style="fill: var(--background-base, #F4F4F4)" />
-  <path d="M 0,0 L 1920,0 L 1920,896.40 Q 946.55,959.40 0,723.60 Z" style="fill: var(--background-main, #7986cb)" />
-  <circle cx="261.23" cy="289.93" r="216.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.34039159792009743" /><circle cx="1647.49" cy="825.19" r="216.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.32703009792603555" />
+  <path d="M 0,0 L 1920,0 L 1920,788.40 Q 953.73,771.72 0,615.60 Z" style="fill: var(--background-main, #7986cb)" />
+  <circle cx="1757.71" cy="614.46" r="216.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.1532723650801927" /><circle cx="1339.64" cy="395.99" r="216.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.32695270613767213" /><circle cx="156.23" cy="257.98" r="216.00" style="fill: var(--background-base, #F4F4F4)" opacity="0.2456701709656045" />
 </svg>

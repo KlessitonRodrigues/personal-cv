@@ -4,13 +4,13 @@ import { fileURLToPath } from 'node:url';
 
 const WIDTH = 1920;
 const HEIGHT = 1080;
-const DEFAULT_LINE_HEIGHT = 0.75;
+const DEFAULT_LINE_HEIGHT = 0.65;
 const DEFAULT_INCLINATION = 0.08;
 const DEFAULT_INVERT_INCLINATION = false;
-const DEFAULT_LINE_RADIUS = 150;
+const DEFAULT_LINE_RADIUS = 70;
 const DEFAULT_SEED = String(Date.now());
-const CIRCLE_MIN = 2;
-const CIRCLE_MAX = 4;
+const CIRCLE_MIN = 3;
+const CIRCLE_MAX = 3;
 const MAIN_COLOR = '#7986cb';
 const BASE_COLOR = '#F4F4F4';
 const DEFAULT_CIRCLE = {

@@ -1,14 +1,14 @@
-import gameFinderImg from 'src//public/images/game_finder_img.png';
-import multistepFormImg from 'src//public/images/multistep_form.png';
-import profileImg from 'src//public/images/profile_img.png';
 import apiRoutesImg from 'src/public/images/api_routes.png';
 import authFormImg from 'src/public/images/auth_form.png';
 import currencyApiImg from 'src/public/images/currency_api.png';
 import currencyAppImg from 'src/public/images/currency_app.png';
 import daisyuiStorybookImg from 'src/public/images/daisyui_storybook.png';
 import easyEncryptImg from 'src/public/images/easy_encrypt.png';
+import gameFinderImg from 'src/public/images/game_finder_img.png';
 import githubPageImg from 'src/public/images/github.png';
 import landingPageTemplateImg from 'src/public/images/landing_page_template.png';
+import multistepFormImg from 'src/public/images/multistep_form.png';
+import profileImg from 'src/public/images/profile_frames.svg';
 import translationAppImg from 'src/public/images/translation_app.png';
 
 import { urls } from './constants.urls';
