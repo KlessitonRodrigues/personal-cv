@@ -1,7 +1,8 @@
 import { useTranslation } from 'react-i18next';
 
-import { getLanguageOptions } from 'src/constants/constants.list.options';
+import { getLanguageOptions, getThemeOptions } from 'src/constants/constants.list.options';
 import { urls } from 'src/constants/constants.urls';
+import useTheme from 'src/hooks/hooks.use.theme';
 import profileBgImg from 'src/public/images/profile_bg.jpg';
 import profile from 'src/public/images/profile_min.jpg';
 import { changeLanguage } from 'src/utils/utils.i18n';
@@ -17,7 +18,9 @@ import { AvatarBig } from '../common/styled/styled.user';
 
 const ProfileHeaderSection = () => {
   const { t } = useTranslation();
+  const { isDark, setDark } = useTheme();
   const languageOptions = getLanguageOptions(t);
+  const themeOptions = getThemeOptions(t);
 
   return (
     <Section>
@@ -25,11 +28,18 @@ const ProfileHeaderSection = () => {
         <OutdoorImage src={profileBgImg} />
         <OutdoorContent>
           <AvatarBig src={profile} />
-          <OptionList
-            options={languageOptions}
-            value={getLanguage()}
-            onSelect={lang => changeLanguage(lang)}
-          />
+          <Row between>
+            <OptionList
+              options={languageOptions}
+              value={getLanguage()}
+              onSelect={lang => changeLanguage(lang)}
+            />
+            <OptionList
+              value={isDark ? 'dark' : 'light'}
+              options={themeOptions}
+              onSelect={value => setDark(value === 'dark')}
+            />
+          </Row>
           <b>
             <Text tag="h2" path="header_name" />
           </b>

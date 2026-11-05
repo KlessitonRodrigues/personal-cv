@@ -15,7 +15,7 @@ const OptionList = (props: OptionListProps) => {
   const { options, value, onSelect } = props;
 
   return (
-    <Row left gap={2} wrap>
+    <Row left gap={0} wrap fit>
       {options.map(option => (
         <Option
           key={option.label}

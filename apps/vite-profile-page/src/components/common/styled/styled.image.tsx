@@ -32,7 +32,7 @@ export const Outdoor = styled.div<IStyledProps>(
     border-radius: ${theme.radius.md};
     position: relative;
     background-color: ${theme.colors.bg1};
-    padding-top: ${cssSize(75)};
+    padding-top: ${cssSize(70)};
     z-index: 0;
     box-shadow: ${theme.shadow.sm};
     transition: 0.3s;
@@ -65,7 +65,7 @@ export const OutdoorContent = styled.div<IStyledProps>(
     flex-direction: column;
     gap: ${cssSize(4)};
     background-color: transparent;
-    padding: ${cssSize(6)};
+    padding: ${cssSize(4)} ${cssSize(8)};
     z-index: 1;
   `,
 );
