@@ -16,6 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Initialize submodules
+        run: git submodule update --init --recursive
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
