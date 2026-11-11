@@ -38,4 +38,4 @@ jobs:
 
       - name: Deploy CDK
         run: yarn cdk deploy --require-approval never
-        working-directory: services/aws-cloudfront-deploy
+        working-directory: services/aws-vitejs-deploy
