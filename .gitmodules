@@ -1,3 +1,3 @@
 [submodule "services/aws-vitejs-deploy"]
 	path = services/aws-vitejs-deploy
-	url = git@github.com:KlessitonRodrigues/aws-vitejs-deploy.git
+	url = https://github.com/KlessitonRodrigues/aws-vitejs-deploy.git
