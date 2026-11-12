@@ -1,3 +1,6 @@
 [submodule "services/aws-vitejs-deploy"]
 	path = services/aws-vitejs-deploy
 	url = https://github.com/KlessitonRodrigues/aws-vitejs-deploy.git
+[submodule "services/aws-website-translator"]
+	path = services/aws-website-translator
+	url = https://github.com/KlessitonRodrigues/aws-website-translator.git
