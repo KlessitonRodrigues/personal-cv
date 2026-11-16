@@ -52,6 +52,7 @@ export default createGlobalStyle(
     p {
       font-size: ${theme.fontSize.md};
       line-height: 22px;
+      break-inside: avoid;
     }
     ul {
       list-style: none;

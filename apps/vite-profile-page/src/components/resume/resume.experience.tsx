@@ -86,6 +86,28 @@ const ResumeExperienceSection = () => {
             </Column>
           </LeftLineBox>
         </Column>
+
+        <Column left>
+          <Text tag="h6" path="experience_school" />
+          <Row left responsive>
+            <Text tag="small" path="experience_school_job" />
+            -
+            <Text tag="p" path="experience_school_date" />
+          </Row>
+          <Text tag="p" path="experience_school_text" />
+          <LeftLineBox>
+            <Column left>
+              <Text tag="h6" path="experience_school_cef" />
+              <Text tag="p" path="experience_school_cef_text" />
+              <Text tag="small" path="experience_school_cef_tech" />
+            </Column>
+            <Column left>
+              <Text tag="h6" path="experience_school_social_power" />
+              <Text tag="p" path="experience_school_social_power_text" />
+              <Text tag="small" path="experience_school_social_power_tech" />
+            </Column>
+          </LeftLineBox>
+        </Column>
       </Card>
     </Section>
   );

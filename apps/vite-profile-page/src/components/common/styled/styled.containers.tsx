@@ -73,7 +73,6 @@ export const Box = styled.div<IStyledProps>(
     padding: ${cssSize(4)};
     border: ${theme.border.sm};
     border-radius: ${theme.radius.md};
-    break-inside: avoid;
 
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'max-width: 100%;'}
