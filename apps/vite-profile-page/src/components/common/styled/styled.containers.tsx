@@ -80,3 +80,12 @@ export const Box = styled.div<IStyledProps>(
     }
   `,
 );
+
+export const LeftLineBox = styled(Box)(
+  ({ theme }) => css`
+    border: none;
+    border-radius: 0;
+    border-left: 2px solid ${theme.colors.bg4};
+    gap: ${cssSize(8)};
+  `,
+);
