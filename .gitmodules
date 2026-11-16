@@ -4,3 +4,6 @@
 [submodule "services/aws-website-translator"]
 	path = services/aws-website-translator
 	url = https://github.com/KlessitonRodrigues/aws-website-translator.git
+[submodule "services/expo-webview-release"]
+	path = services/expo-webview-release
+	url = https://github.com/KlessitonRodrigues/expo-webview-release.git
