@@ -9,6 +9,7 @@ type ProjectSectionProps = {
   title: string;
   description: string;
   technologies: string;
+  category: string;
   websiteUrl: string;
   githubUrl: string;
   imageSrc: string;
@@ -16,13 +17,23 @@ type ProjectSectionProps = {
 };
 
 const ProjectSection = (props: ProjectSectionProps) => {
-  const { title, description, technologies, websiteUrl, githubUrl, imageSrc, swaggerUrl } = props;
+  const {
+    title,
+    description,
+    technologies,
+    category,
+    websiteUrl,
+    githubUrl,
+    imageSrc,
+    swaggerUrl,
+  } = props;
 
   return (
     <Section>
       <Card>
         <Row responsive gap={4}>
           <Column left gap={4}>
+            <Text tag="small" path={category} />
             <Text tag="h2" path={title} />
             <Text tag="p" path={description} />
             <Text tag="small" path={technologies} />

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444"/>
+    </marker>
+
+    <clipPath id="badgeClip"><circle r="15"/></clipPath>
+
+    <!-- JSON document icon -->
+    <g id="doc">
+      <path d="M 2 2 H 42 L 58 20 V 74 H 2 Z" fill="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 42 2 V 20 H 58 Z" fill="none" stroke-width="4" stroke-linejoin="round"/>
+      <text x="30" y="50" text-anchor="middle" font-size="19" font-weight="700" fill="currentColor">{ }</text>
+    </g>
+
+    <!-- browser window icon -->
+    <g id="browser">
+      <rect x="-52" y="-42" width="104" height="88" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="4"/>
+      <line x1="-52" y1="-18" x2="52" y2="-18" stroke="#2563eb" stroke-width="4"/>
+      <circle cx="-38" cy="-30" r="4" fill="#2563eb"/>
+      <circle cx="-24" cy="-30" r="4" fill="#93c5fd"/>
+      <circle cx="-10" cy="-30" r="4" fill="#93c5fd"/>
+      <g transform="translate(0 18)">
+        <circle r="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+        <ellipse rx="7" ry="16" fill="none" stroke="#0284c7" stroke-width="2"/>
+        <line x1="-16" y1="0" x2="16" y2="0" stroke="#0284c7" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- API Gateway icon (request/response arrows) -->
+    <g id="gateway">
+      <rect x="-50" y="-42" width="100" height="84" rx="12" fill="#ffffff" stroke="#8b5cf6" stroke-width="4"/>
+      <g stroke="#8b5cf6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M -28 -11 H 14 M 14 -11 L 3 -21 M 14 -11 L 3 -1"/>
+        <path d="M 28 15 H -14 M -14 15 L -3 5 M -14 15 L -3 25"/>
+      </g>
+    </g>
+
+    <!-- AWS Lambda icon -->
+    <g id="lambda">
+      <rect x="-50" y="-42" width="100" height="84" rx="12" fill="#ff9900"/>
+      <text y="16" text-anchor="middle" font-size="54" font-weight="700" fill="#ffffff">&#955;</text>
+    </g>
+
+    <!-- globe icon -->
+    <g id="globe">
+      <circle r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+      <ellipse rx="13" ry="30" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+      <path d="M -26 -13 H 26 M -26 13 H 26" stroke="#0284c7" stroke-width="2.5" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+
+  <!-- title -->
+  <text x="960" y="110" text-anchor="middle" font-size="44" font-weight="800" fill="#0f172a">AWS CORS Proxy — Request Flow &amp; Services</text>
+  <text x="960" y="152" text-anchor="middle" font-size="22" fill="#64748b">Serverless CORS proxy with API Gateway and AWS Lambda</text>
+
+  <!-- blocked direct request -->
+  <path d="M 230 390 C 700 250 1220 250 1656 388" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowRed)"/>
+  <text x="945" y="262" text-anchor="middle" font-size="19" font-weight="600" fill="#ef4444">direct browser fetch blocked by CORS &#10005;</text>
+
+  <!-- stage tags -->
+  <text x="230" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#2563eb">CLIENT</text>
+  <text x="700" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#8b5cf6">API GATEWAY</text>
+  <text x="1190" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#ea580c">COMPUTE</text>
+  <text x="1660" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#16a34a">TARGET</text>
+
+  <!-- AWS Cloud boundary -->
+  <rect x="530" y="366" width="810" height="290" rx="18" fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="12 9"/>
+  <text x="556" y="390" font-size="18" font-weight="700" letter-spacing="2" fill="#64748b">AWS CLOUD</text>
+
+  <!-- ===== stage 1 : browser client ===== -->
+  <use href="#browser" transform="translate(230 455) scale(1.35)"/>
+  <text x="230" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Browser Client</text>
+  <text x="230" y="612" text-anchor="middle" font-size="18" fill="#64748b">fetch() blocked by CORS</text>
+
+  <!-- ===== stage 2 : API Gateway ===== -->
+  <use href="#gateway" transform="translate(700 455) scale(1.35)"/>
+  <text x="700" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">API Gateway</text>
+  <text x="700" y="612" text-anchor="middle" font-size="18" fill="#64748b">REST API · GET /proxy · OPTIONS</text>
+
+  <!-- ===== stage 3 : Lambda ===== -->
+  <use href="#lambda" transform="translate(1190 455) scale(1.35)"/>
+  <text x="1190" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">CorsProxy Lambda</text>
+  <text x="1190" y="612" text-anchor="middle" font-size="18" fill="#64748b">Node.js 18 · url query param</text>
+
+  <!-- ===== stage 4 : external URL ===== -->
+  <use href="#globe" transform="translate(1660 455) scale(1.4)"/>
+  <text x="1660" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">External URL</text>
+  <text x="1660" y="612" text-anchor="middle" font-size="18" fill="#64748b">e.g. https://example.com</text>
+
+  <!-- ===== arrows ===== -->
+  <line x1="296" y1="455" x2="594" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="445" y="426" text-anchor="middle" font-size="19" fill="#334155">GET /proxy?url=&#8230;</text>
+
+  <line x1="754" y1="455" x2="1136" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="945" y="426" text-anchor="middle" font-size="19" fill="#334155">Lambda integration</text>
+
+  <line x1="1244" y1="455" x2="1592" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="1420" y="426" text-anchor="middle" font-size="19" fill="#334155">https.get(url)</text>
+
+  <!-- ===== response return path ===== -->
+  <path d="M 1660 648 V 845 H 276" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <use href="#doc" transform="translate(620 772) scale(0.8)" stroke="#64748b" color="#64748b"/>
+  <text x="650" y="878" text-anchor="middle" font-size="17" font-weight="600" fill="#64748b">JSON response</text>
+  <text x="1180" y="832" text-anchor="middle" font-size="17" fill="#64748b">200 { content: "&#60;html&#62;&#8230;&#60;/html&#62;" } + Access-Control-Allow-Origin: *</text>
+
+  <!-- ===== legend ===== -->
+  <use href="#browser" transform="translate(330 938) scale(0.5)"/>
+  <text x="380" y="944" font-size="18" fill="#475569">Browser client</text>
+
+  <use href="#gateway" transform="translate(610 938) scale(0.5)"/>
+  <text x="662" y="944" font-size="18" fill="#475569">API Gateway (REST API)</text>
+
+  <use href="#lambda" transform="translate(940 938) scale(0.5)"/>
+  <text x="992" y="944" font-size="18" fill="#475569">AWS Lambda (Node.js 18)</text>
+
+  <use href="#globe" transform="translate(1260 938) scale(0.42)"/>
+  <text x="1310" y="944" font-size="18" fill="#475569">External target URL</text>
+
+  <use href="#doc" transform="translate(1530 930) scale(0.55)" stroke="#334155" color="#334155"/>
+  <text x="1582" y="944" font-size="18" fill="#475569">JSON response (CORS headers)</text>
+</svg>

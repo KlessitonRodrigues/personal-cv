@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+
+    <clipPath id="badgeClip"><circle r="15"/></clipPath>
+
+    <!-- JSON document icon -->
+    <g id="doc">
+      <path d="M 2 2 H 42 L 58 20 V 74 H 2 Z" fill="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 42 2 V 20 H 58 Z" fill="none" stroke-width="4" stroke-linejoin="round"/>
+      <text x="30" y="50" text-anchor="middle" font-size="19" font-weight="700" fill="currentColor">{ }</text>
+    </g>
+
+    <!-- browser window icon -->
+    <g id="browser">
+      <rect x="-52" y="-42" width="104" height="88" rx="10" fill="#ffffff" stroke="#2563eb" stroke-width="4"/>
+      <line x1="-52" y1="-18" x2="52" y2="-18" stroke="#2563eb" stroke-width="4"/>
+      <circle cx="-38" cy="-30" r="4" fill="#2563eb"/>
+      <circle cx="-24" cy="-30" r="4" fill="#93c5fd"/>
+      <circle cx="-10" cy="-30" r="4" fill="#93c5fd"/>
+      <g transform="translate(0 18)">
+        <circle r="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+        <ellipse rx="7" ry="16" fill="none" stroke="#0284c7" stroke-width="2"/>
+        <line x1="-16" y1="0" x2="16" y2="0" stroke="#0284c7" stroke-width="2"/>
+      </g>
+    </g>
+
+    <!-- controllers icon (route endpoints) -->
+    <g id="controller">
+      <rect x="-50" y="-42" width="100" height="84" rx="12" fill="#ffffff" stroke="#8b5cf6" stroke-width="4"/>
+      <rect x="-30" y="-26" width="60" height="16" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
+      <rect x="-30" y="-2" width="60" height="16" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
+      <rect x="-30" y="22" width="60" height="16" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
+    </g>
+
+    <!-- gear icon (services) -->
+    <g id="service">
+      <g fill="#ea580c">
+        <rect x="-7" y="-32" width="14" height="16" rx="4"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(45)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(90)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(135)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(180)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(225)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(270)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(315)"/>
+      </g>
+      <circle r="25" fill="#ea580c"/>
+      <circle r="11" fill="#f8fafc"/>
+    </g>
+
+    <!-- database cylinder (PostgreSQL) -->
+    <g id="db">
+      <path d="M -34 -20 L -34 24 C -34 33 -19 38 0 38 C 19 38 34 33 34 24 L 34 -20" fill="#dcfce7" stroke="#16a34a" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-20" rx="34" ry="10" fill="#bbf7d0" stroke="#16a34a" stroke-width="3"/>
+      <path d="M -34 0 C -34 9 -19 14 0 14 C 19 14 34 9 34 0" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+    </g>
+
+    <!-- globe icon (OAuth providers / client) -->
+    <g id="globe">
+      <circle r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+      <ellipse rx="13" ry="30" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+      <path d="M -26 -13 H 26 M -26 13 H 26" stroke="#0284c7" stroke-width="2.5" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+
+  <!-- title -->
+  <text x="960" y="110" text-anchor="middle" font-size="44" font-weight="800" fill="#0f172a">NestJS Auth API with JWT — Request Flow &amp; Services</text>
+  <text x="960" y="152" text-anchor="middle" font-size="22" fill="#64748b">JWT auth, password recovery, OAuth sign-in, and user CRUD backed by PostgreSQL</text>
+
+  <!-- OAuth providers -->
+  <use href="#globe" transform="translate(1290 200) scale(0.55)"/>
+  <text x="1290" y="252" text-anchor="middle" font-size="17" font-weight="600" fill="#0f172a">Google</text>
+
+  <use href="#globe" transform="translate(1390 200) scale(0.55)"/>
+  <text x="1390" y="252" text-anchor="middle" font-size="17" font-weight="600" fill="#0f172a">GitHub</text>
+
+  <path d="M 1240 415 L 1330 232" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <text x="1370" y="322" text-anchor="start" font-size="17" fill="#64748b">fetch() user info ·</text>
+  <text x="1370" y="346" text-anchor="start" font-size="17" fill="#64748b">creates user if new</text>
+
+  <!-- stage tags -->
+  <text x="230" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#2563eb">CLIENT</text>
+  <text x="700" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#8b5cf6">CONTROLLERS</text>
+  <text x="1190" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#ea580c">SERVICES</text>
+  <text x="1660" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#16a34a">DATABASE</text>
+
+  <!-- ===== stage 1 : browser client ===== -->
+  <use href="#browser" transform="translate(230 455) scale(1.35)"/>
+  <text x="230" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">HTTP Client</text>
+  <text x="230" y="612" text-anchor="middle" font-size="18" fill="#64748b">fetch() JSON requests</text>
+
+  <!-- ===== stage 2 : controllers ===== -->
+  <use href="#controller" transform="translate(700 455) scale(1.35)"/>
+  <text x="700" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">NestJS Controllers</text>
+  <text x="700" y="612" text-anchor="middle" font-size="18" fill="#64748b">POST /auth/* · /users CRUD</text>
+  <text x="700" y="636" text-anchor="middle" font-size="15" fill="#94a3b8">ZodValidationPipe (nestjs-zod)</text>
+
+  <!-- ===== stage 3 : services ===== -->
+  <use href="#service" transform="translate(1190 455) scale(1.35)"/>
+  <text x="1190" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Auth &amp; User Services</text>
+  <text x="1190" y="612" text-anchor="middle" font-size="18" fill="#64748b">bcrypt hash · jwt sign · recovery codes</text>
+  <text x="1190" y="636" text-anchor="middle" font-size="15" fill="#94a3b8">TypeORM Repository&lt;UserEntity&gt;</text>
+
+  <!-- ===== stage 4 : database ===== -->
+  <use href="#db" transform="translate(1660 455) scale(1.4)"/>
+  <text x="1660" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">PostgreSQL</text>
+  <text x="1660" y="612" text-anchor="middle" font-size="18" fill="#64748b">users table · synchronize: true</text>
+
+  <!-- ===== arrows ===== -->
+  <line x1="296" y1="455" x2="594" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="445" y="426" text-anchor="middle" font-size="19" fill="#334155">POST /auth/signin</text>
+
+  <line x1="754" y1="455" x2="1136" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="945" y="426" text-anchor="middle" font-size="19" fill="#334155">validated DTO</text>
+
+  <line x1="1244" y1="455" x2="1592" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="1420" y="426" text-anchor="middle" font-size="19" fill="#334155">findOne(email) · save()</text>
+
+  <!-- ===== response return path ===== -->
+  <path d="M 1660 648 V 845 H 276" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <use href="#doc" transform="translate(620 772) scale(0.8)" stroke="#64748b" color="#64748b"/>
+  <text x="650" y="878" text-anchor="middle" font-size="17" font-weight="600" fill="#64748b">JWT response</text>
+  <text x="1180" y="832" text-anchor="middle" font-size="17" fill="#64748b">200 { accessToken: "&#60;jwt&#62;", email, name } — signed with JWT_SECRET · expiresIn 1h</text>
+
+  <!-- ===== legend ===== -->
+  <use href="#browser" transform="translate(330 938) scale(0.5)"/>
+  <text x="380" y="944" font-size="18" fill="#475569">HTTP client</text>
+
+  <use href="#controller" transform="translate(560 938) scale(0.5)"/>
+  <text x="612" y="944" font-size="18" fill="#475569">NestJS controllers</text>
+
+  <use href="#service" transform="translate(850 932) scale(0.38)"/>
+  <text x="882" y="944" font-size="18" fill="#475569">Auth &amp; User services</text>
+
+  <use href="#db" transform="translate(1150 928) scale(0.42)"/>
+  <text x="1182" y="944" font-size="18" fill="#475569">PostgreSQL (users)</text>
+
+  <use href="#globe" transform="translate(1420 938) scale(0.42)"/>
+  <text x="1464" y="944" font-size="18" fill="#475569">OAuth providers</text>
+
+  <use href="#doc" transform="translate(1650 930) scale(0.55)" stroke="#334155" color="#334155"/>
+  <text x="1702" y="944" font-size="18" fill="#475569">JWT response</text>
+
+  <!-- footnote -->
+  <text x="960" y="1020" text-anchor="middle" font-size="16" fill="#94a3b8">AppModule → DatabaseModule · SwaggerModule (/docs) · UserModule · AuthModule — bootstrap: src/main.ts</text>
+</svg>
