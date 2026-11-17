@@ -8,6 +8,7 @@ const ProjectList = projectsMap.map(project => (
     title={project.title}
     description={project.description}
     technologies={project.technologies}
+    category={project.category}
     websiteUrl={project.websiteUrl || ''}
     githubUrl={project.githubUrl || ''}
     imageSrc={project.imageSrc || ''}

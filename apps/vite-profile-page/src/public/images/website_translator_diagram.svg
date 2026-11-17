@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+
+    <clipPath id="badgeClip"><circle r="15"/></clipPath>
+
+    <!-- JSON document icon -->
+    <g id="doc">
+      <path d="M 2 2 H 42 L 58 20 V 74 H 2 Z" fill="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M 42 2 V 20 H 58 Z" fill="none" stroke-width="4" stroke-linejoin="round"/>
+      <text x="30" y="50" text-anchor="middle" font-size="19" font-weight="700" fill="currentColor">{ }</text>
+    </g>
+
+    <!-- language badges -->
+    <g id="badge-en">
+      <circle r="16" fill="#2563eb"/>
+      <text y="4" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">EN</text>
+    </g>
+    <g id="badge-pt">
+      <circle r="15" fill="#16a34a"/>
+      <path d="M -9 0 L 0 -6.5 L 9 0 L 0 6.5 Z" fill="#facc15"/>
+      <circle r="2.6" fill="#1d4ed8"/>
+    </g>
+    <g id="badge-es">
+      <circle r="15" fill="#c60b1e" clip-path="url(#badgeClip)"/>
+      <rect x="-15" y="-5" width="30" height="10" fill="#ffc400" clip-path="url(#badgeClip)"/>
+      <circle r="15" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    </g>
+
+    <!-- gear icon (local processing) -->
+    <g id="gear">
+      <g fill="#7c3aed">
+        <rect x="-7" y="-32" width="14" height="16" rx="4"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(45)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(90)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(135)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(180)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(225)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(270)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(315)"/>
+      </g>
+      <circle r="25" fill="#7c3aed"/>
+      <circle r="11" fill="#f8fafc"/>
+    </g>
+
+    <!-- AWS cloud icon (Amazon Bedrock) -->
+    <g id="cloud">
+      <path d="M 30 70 C 12 70 0 58 0 44 C 0 32 9 22 21 20 C 25 8 37 0 51 0 C 66 0 78 10 80 24 C 92 26 100 35 100 47 C 100 61 89 70 76 70 Z" fill="#ff9900"/>
+      <text x="50" y="47" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff">{ }</text>
+    </g>
+
+    <!-- globe icon -->
+    <g id="globe">
+      <circle r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+      <ellipse rx="13" ry="30" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+      <path d="M -26 -13 H 26 M -26 13 H 26" stroke="#0284c7" stroke-width="2.5" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+
+  <!-- title -->
+  <text x="960" y="110" text-anchor="middle" font-size="44" font-weight="800" fill="#0f172a">Website Translator — Data Flow &amp; Services</text>
+  <text x="960" y="152" text-anchor="middle" font-size="22" fill="#64748b">Translate website JSON content with Amazon Bedrock</text>
+
+  <!-- stage tags -->
+  <text x="230" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#2563eb">INPUT</text>
+  <text x="650" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#7c3aed">PROCESSING</text>
+  <text x="1160" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#ea580c">AWS SERVICE</text>
+  <text x="1660" y="345" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#16a34a">OUTPUT</text>
+
+  <!-- ===== stage 1 : source JSON ===== -->
+  <use href="#doc" transform="translate(185 398) scale(1.5)" stroke="#2563eb" color="#2563eb"/>
+  <use href="#badge-en" transform="translate(283 404)"/>
+  <text x="230" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Source JSON</text>
+  <text x="230" y="612" text-anchor="middle" font-size="18" fill="#64748b">English site strings</text>
+
+  <!-- ===== stage 2 : processing ===== -->
+  <use href="#gear" transform="translate(650 452) scale(1.5)"/>
+  <text x="650" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Change Detection</text>
+  <text x="650" y="612" text-anchor="middle" font-size="18" fill="#64748b">Diff &amp; 50-string batches</text>
+
+  <!-- ===== stage 3 : Amazon Bedrock ===== -->
+  <use href="#cloud" transform="translate(1090 396) scale(1.4)"/>
+  <text x="1160" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Amazon Bedrock</text>
+  <text x="1160" y="612" text-anchor="middle" font-size="18" fill="#64748b">LLM translation service</text>
+
+  <!-- ===== stage 4 : output JSON ===== -->
+  <use href="#doc" transform="translate(1580 398) scale(1.3)" stroke="#16a34a" color="#16a34a"/>
+  <use href="#badge-pt" transform="translate(1592 404)"/>
+  <use href="#doc" transform="translate(1658 428) scale(1.3)" stroke="#16a34a" color="#16a34a"/>
+  <use href="#badge-es" transform="translate(1670 434)"/>
+  <text x="1660" y="580" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Translated JSON</text>
+  <text x="1660" y="612" text-anchor="middle" font-size="18" fill="#64748b">Portuguese &amp; Spanish</text>
+
+  <!-- ===== arrows ===== -->
+  <line x1="302" y1="455" x2="548" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="425" y="426" text-anchor="middle" font-size="19" fill="#334155">JSON object</text>
+
+  <line x1="737" y1="455" x2="1053" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="895" y="426" text-anchor="middle" font-size="19" fill="#334155">changed strings (batches of 50)</text>
+
+  <line x1="1264" y1="455" x2="1548" y2="455" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="1406" y="426" text-anchor="middle" font-size="19" fill="#334155">translated strings (JSON)</text>
+
+  <!-- ===== snapshot feedback loop ===== -->
+  <path d="M 1660 645 V 845 H 692" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <use href="#doc" transform="translate(620 772) scale(0.8)" stroke="#64748b" color="#64748b"/>
+  <text x="650" y="878" text-anchor="middle" font-size="17" font-weight="600" fill="#64748b">Change Snapshot</text>
+  <text x="1180" y="832" text-anchor="middle" font-size="17" fill="#64748b">snapshot updated — used to detect changes on the next run</text>
+
+  <!-- ===== legend ===== -->
+  <use href="#doc" transform="translate(320 915) scale(0.55)" stroke="#334155" color="#334155"/>
+  <text x="372" y="944" font-size="18" fill="#475569">JSON file (data)</text>
+
+  <use href="#gear" transform="translate(646 938) scale(0.42)"/>
+  <text x="688" y="944" font-size="18" fill="#475569">Local processing (Node.js)</text>
+
+  <use href="#cloud" transform="translate(992 920) scale(0.45)"/>
+  <text x="1054" y="944" font-size="18" fill="#475569">AWS service (Amazon Bedrock)</text>
+
+  <use href="#globe" transform="translate(1392 938) scale(0.42)"/>
+  <text x="1436" y="944" font-size="18" fill="#475569">Languages (EN &#8594; PT / ES)</text>
+</svg>

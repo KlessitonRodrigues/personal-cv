@@ -50,6 +50,10 @@ export const urls = {
   jsonTranslatorSwagger: 'https://klessitonrodrigues.github.io/aws-serveless-json-translator/',
   currencyAppRepo: 'https://github.com/KlessitonRodrigues/currency-app-frontend',
   currencyApiRepo: 'https://github.com/KlessitonRodrigues/currency-app-backend',
+  awsWebsiteTranslatorRepo: 'https://github.com/KlessitonRodrigues/aws-website-translator',
+  awsViteJsDeployRepo: 'https://github.com/KlessitonRodrigues/aws-vitejs-deploy',
+  awsNextJsStaticDeploy: 'https://github.com/KlessitonRodrigues/aws-nextjs-static-deploy',
+  expoWebviewRelease: 'https://github.com/KlessitonRodrigues/expo-webview-release',
 };
 
 export const gistNotesLinks = {

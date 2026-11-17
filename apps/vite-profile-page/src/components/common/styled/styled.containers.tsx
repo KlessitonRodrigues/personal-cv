@@ -73,10 +73,18 @@ export const Box = styled.div<IStyledProps>(
     padding: ${cssSize(4)};
     border: ${theme.border.sm};
     border-radius: ${theme.radius.md};
-    break-inside: avoid;
 
     @media (max-width: ${screenSize.laptopS}px) {
       ${responsive && 'max-width: 100%;'}
     }
+  `,
+);
+
+export const LeftLineBox = styled(Box)(
+  ({ theme }) => css`
+    border: none;
+    border-radius: 0;
+    border-left: 2px solid ${theme.colors.bg4};
+    gap: ${cssSize(8)};
   `,
 );

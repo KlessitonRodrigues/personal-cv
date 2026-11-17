@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowSlate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+
+    <!-- folder icon (Next.js build output) -->
+    <g id="folder">
+      <path d="M -36 -20 H -12 L -4 -12 H -36 Z" fill="#bfdbfe" stroke="#2563eb" stroke-width="3" stroke-linejoin="round"/>
+      <rect x="-36" y="-12" width="72" height="40" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+    </g>
+
+    <!-- server icon (server side rendering) -->
+    <g id="server">
+      <rect x="-34" y="-26" width="68" height="20" rx="4" fill="#e0e7ff" stroke="#4f46e5" stroke-width="3"/>
+      <rect x="-34" y="4" width="68" height="20" rx="4" fill="#e0e7ff" stroke="#4f46e5" stroke-width="3"/>
+      <circle cx="-23" cy="-16" r="3.5" fill="#4f46e5"/>
+      <circle cx="-23" cy="14" r="3.5" fill="#4f46e5"/>
+      <line x1="-12" y1="-16" x2="24" y2="-16" stroke="#4f46e5" stroke-width="3" stroke-linecap="round"/>
+      <line x1="-12" y1="14" x2="24" y2="14" stroke="#4f46e5" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- gear icon (CDK deploy) -->
+    <g id="gear">
+      <g fill="#7c3aed">
+        <rect x="-7" y="-32" width="14" height="16" rx="4"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(45)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(90)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(135)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(180)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(225)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(270)"/>
+        <rect x="-7" y="-32" width="14" height="16" rx="4" transform="rotate(315)"/>
+      </g>
+      <circle r="25" fill="#7c3aed"/>
+      <circle r="11" fill="#f8fafc"/>
+    </g>
+
+    <!-- bucket icon (Amazon S3) -->
+    <g id="bucket">
+      <path d="M -34 -20 L -26 26 C -24 35 -13 40 0 40 C 13 40 24 35 26 26 L 34 -20" fill="#ffedd5" stroke="#ea580c" stroke-width="3" stroke-linejoin="round"/>
+      <ellipse cx="0" cy="-20" rx="34" ry="10" fill="#fdba74" stroke="#ea580c" stroke-width="3"/>
+      <text x="0" y="18" text-anchor="middle" font-size="19" font-weight="700" fill="#c2410c">S3</text>
+    </g>
+
+    <!-- cloud icon (Amazon CloudFront) -->
+    <g id="cfcloud">
+      <path d="M 30 70 C 12 70 0 58 0 44 C 0 32 9 22 21 20 C 25 8 37 0 51 0 C 66 0 78 10 80 24 C 92 26 100 35 100 47 C 100 61 89 70 76 70 Z" fill="#ff9900"/>
+      <path d="M 56 18 L 42 42 H 52 L 45 58 L 64 34 H 53 L 60 18 Z" fill="#ffffff"/>
+    </g>
+
+    <!-- globe icon (users) -->
+    <g id="globe">
+      <circle r="30" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+      <ellipse rx="13" ry="30" fill="none" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="-30" y1="0" x2="30" y2="0" stroke="#0284c7" stroke-width="2.5"/>
+      <path d="M -26 -13 H 26 M -26 13 H 26" stroke="#0284c7" stroke-width="2.5" fill="none"/>
+    </g>
+  </defs>
+
+  <rect width="1920" height="1080" fill="#f8fafc"/>
+
+  <!-- title -->
+  <text x="960" y="95" text-anchor="middle" font-size="44" font-weight="800" fill="#0f172a">Next.js Static Export Deployment — AWS CDK</text>
+  <text x="960" y="138" text-anchor="middle" font-size="22" fill="#64748b">Static export uploaded to a private S3 bucket and served through Amazon CloudFront</text>
+
+  <!-- band labels -->
+  <text x="960" y="265" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#2563eb">DEPLOYMENT FLOW</text>
+  <text x="710" y="620" text-anchor="middle" font-size="20" font-weight="700" letter-spacing="4" fill="#16a34a">SERVING FLOW</text>
+
+  <!-- ===== deployment flow ===== -->
+
+  <!-- card: server side rendering -->
+  <rect x="145" y="300" width="310" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="300" cy="360" r="46" fill="#eef2ff"/>
+  <use href="#server" transform="translate(300 362)"/>
+  <text x="300" y="430" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">Server Side Rendering</text>
+  <text x="300" y="458" text-anchor="middle" font-size="16" fill="#64748b">renders pages server-side</text>
+  <text x="300" y="481" text-anchor="middle" font-size="14.5" fill="#94a3b8">prerendered HTML output</text>
+
+  <!-- card: Next.js build -->
+  <rect x="585" y="300" width="310" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="740" cy="360" r="46" fill="#eff6ff"/>
+  <use href="#folder" transform="translate(740 362) scale(1.1)"/>
+  <text x="740" y="430" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">Next.js Build</text>
+  <text x="740" y="458" text-anchor="middle" font-size="16" fill="#64748b">applications/translation-app/out</text>
+  <text x="740" y="481" text-anchor="middle" font-size="14.5" fill="#94a3b8">static export assets</text>
+
+  <!-- card: CDK BucketDeployment -->
+  <rect x="1025" y="300" width="310" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="1180" cy="360" r="46" fill="#f5f3ff"/>
+  <use href="#gear" transform="translate(1180 362) scale(1.05)"/>
+  <text x="1180" y="430" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">CDK BucketDeployment</text>
+  <text x="1180" y="458" text-anchor="middle" font-size="16" fill="#64748b">uploads Source.asset</text>
+  <text x="1180" y="481" text-anchor="middle" font-size="14.5" fill="#94a3b8">invalidates CloudFront cache</text>
+
+  <!-- card: S3 bucket -->
+  <rect x="1465" y="300" width="310" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="1620" cy="360" r="46" fill="#fff7ed"/>
+  <use href="#bucket" transform="translate(1620 364) scale(1.05)"/>
+  <text x="1620" y="430" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">S3 Bucket</text>
+  <text x="1620" y="458" text-anchor="middle" font-size="16" fill="#64748b">{stackName}-website-bucket</text>
+  <text x="1620" y="481" text-anchor="middle" font-size="14.5" fill="#94a3b8">private · auto-delete · DESTROY</text>
+
+  <!-- ===== serving flow ===== -->
+
+  <!-- card: users -->
+  <rect x="300" y="650" width="320" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="460" cy="712" r="46" fill="#f0f9ff"/>
+  <use href="#globe" transform="translate(460 712) scale(1.15)"/>
+  <text x="460" y="780" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">Users</text>
+  <text x="460" y="808" text-anchor="middle" font-size="16" fill="#64748b">browsers / end users</text>
+  <text x="460" y="831" text-anchor="middle" font-size="14.5" fill="#94a3b8">HTTPS requests</text>
+
+  <!-- card: CloudFront -->
+  <rect x="800" y="650" width="320" height="195" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#cardShadow)"/>
+  <circle cx="960" cy="712" r="46" fill="#fffbeb"/>
+  <use href="#cfcloud" transform="translate(905 674) scale(1.1)"/>
+  <text x="960" y="780" text-anchor="middle" font-size="25" font-weight="700" fill="#0f172a">CloudFront</text>
+  <text x="960" y="808" text-anchor="middle" font-size="16" fill="#64748b">{stackName}-distribution</text>
+  <text x="960" y="831" text-anchor="middle" font-size="14.5" fill="#94a3b8">URL rewrite · 403/404 → /index.html</text>
+
+  <!-- ===== arrows : deployment ===== -->
+  <line x1="459" y1="397" x2="581" y2="397" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="520" y="380" text-anchor="middle" font-size="16" fill="#334155">render pages</text>
+
+  <line x1="899" y1="397" x2="1021" y2="397" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="960" y="380" text-anchor="middle" font-size="16" fill="#334155">Source.asset</text>
+
+  <line x1="1339" y1="397" x2="1461" y2="397" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="1400" y="380" text-anchor="middle" font-size="16" fill="#334155">upload assets</text>
+
+  <!-- ===== arrows : serving ===== -->
+  <line x1="624" y1="747" x2="792" y2="747" stroke="#334155" stroke-width="3.5" marker-end="url(#arrowDark)"/>
+  <text x="708" y="730" text-anchor="middle" font-size="16" fill="#334155">HTTPS GET</text>
+
+  <!-- invalidation : BucketDeployment -> CloudFront -->
+  <line x1="1180" y1="499" x2="976" y2="644" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <text x="1095" y="570" text-anchor="middle" font-size="15" fill="#64748b">cache invalidation</text>
+
+  <!-- origin fetch : CloudFront -> S3 via OAI -->
+  <path d="M 1284 747 H 1620 V 503" fill="none" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrowSlate)"/>
+  <rect x="1500" y="587" width="240" height="46" rx="23" fill="#fff7ed" stroke="#fdba74" stroke-width="2" filter="url(#cardShadow)"/>
+  <text x="1620" y="616" text-anchor="middle" font-size="15" font-weight="600" fill="#c2410c">Origin Access Identity</text>
+
+  <!-- ===== legend ===== -->
+  <use href="#server" transform="translate(230 930) scale(0.5)"/>
+  <text x="270" y="946" font-size="17" fill="#475569">Server side rendering</text>
+
+  <use href="#folder" transform="translate(490 934) scale(0.5)"/>
+  <text x="522" y="946" font-size="17" fill="#475569">Next.js static export</text>
+
+  <use href="#gear" transform="translate(745 932) scale(0.38)"/>
+  <text x="777" y="946" font-size="17" fill="#475569">AWS CDK (deploy time)</text>
+
+  <use href="#bucket" transform="translate(1045 928) scale(0.42)"/>
+  <text x="1077" y="946" font-size="17" fill="#475569">Amazon S3</text>
+
+  <use href="#cfcloud" transform="translate(1265 916) scale(0.42)"/>
+  <text x="1321" y="946" font-size="17" fill="#475569">Amazon CloudFront</text>
+
+  <use href="#globe" transform="translate(1585 932) scale(0.42)"/>
+  <text x="1619" y="946" font-size="17" fill="#475569">End users</text>
+
+  <!-- footnote -->
+  <text x="960" y="1020" text-anchor="middle" font-size="16" fill="#94a3b8">Stack: TranslationAppPageStack (src/src.translationApp.ts) · Config: src/config + .env (STACK_NAME) · Deploy: yarn cdk-deploy</text>
+</svg>
