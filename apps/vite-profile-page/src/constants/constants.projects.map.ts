@@ -52,7 +52,7 @@ const projectsMap = [
     description: 'extraworks_website_translator_text',
     technologies: 'extraworks_website_translator_tech',
     category: 'experience_category_automation',
-    githubUrl: urls.jsonTranslatorRepo,
+    githubUrl: urls.awsWebsiteTranslatorRepo,
     imageSrc: websiteTranlatorDiagramImg,
   },
   {
@@ -96,7 +96,7 @@ const projectsMap = [
     description: 'extraworks_vitejs_deploy_text',
     technologies: 'extraworks_vitejs_deploy_tech',
     category: 'experience_category_service',
-    githubUrl: urls.awsProxyApiRepo,
+    githubUrl: urls.awsViteJsDeployRepo,
     imageSrc: viteJsDeployDiagramImg,
   },
   {
@@ -104,7 +104,7 @@ const projectsMap = [
     description: 'extraworks_aws_nextjs_static_text',
     technologies: 'extraworks_aws_nextjs_static_tech',
     category: 'experience_category_service',
-    githubUrl: urls.awsAuthApiRepo,
+    githubUrl: urls.awsNextJsStaticDeploy,
     imageSrc: nextjsDeployToAWSDiagramImg,
   },
   {
@@ -121,7 +121,7 @@ const projectsMap = [
     description: 'extraworks_expo_build_docker_text',
     technologies: 'extraworks_expo_build_docker_tech',
     category: 'experience_category_service',
-    githubUrl: urls.nestAuthApiRepo,
+    githubUrl: urls.expoWebviewRelease,
     imageSrc: expoWebviewReleaseDiagramImg,
   },
   {
