@@ -27,7 +27,7 @@ This is a Yarn (v1) workspaces monorepo managed with **Turborepo**, containing t
 │   ├── vite-profile-page/
 │   └── expo-profile-app/
 └── services/
-    └── aws-cloudfront-deploy/
+    └── aws-vitejs-deploy/
 ```
 
 ### Root scripts
@@ -154,7 +154,7 @@ yarn build-container        # run EAS local build inside the docker container
 
 ## services/
 
-### services/aws-cloudfront-deploy
+### services/aws-vitejs-deploy
 
 Infrastructure-as-code service that deploys the built `vite-profile-page` static site to AWS (S3 + CloudFront) using AWS CDK.
 
@@ -167,7 +167,7 @@ Infrastructure-as-code service that deploys the built `vite-profile-page` static
 
 **File structure:**
 ```
-services/aws-cloudfront-deploy/
+services/aws-vitejs-deploy/
 ├── awsDeploy.ts        # CDK stack definition (S3 + CloudFront deployment)
 ├── cdk.json
 ├── tsconfig.json
@@ -195,6 +195,6 @@ AWS_DEFAULT_REGION=us-east-1
 ## Typical Workflow
 
 1. `apps/vite-profile-page` is built (`yarn build`) to produce static assets.
-2. `services/aws-cloudfront-deploy` deploys those assets to AWS via CDK (`yarn cdk-deploy`).
+2. `services/aws-vitejs-deploy` deploys those assets to AWS via CDK (`yarn cdk-deploy`).
 3. `apps/expo-profile-app` wraps the deployed/local web page in a WebView to produce a mobile APK via EAS Build (optionally inside a Docker container for local builds).
 4. CI/CD is handled via `.github/workflows/deploy.yml`.

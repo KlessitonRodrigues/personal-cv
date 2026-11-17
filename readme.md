@@ -14,14 +14,14 @@ This is a [Yarn (v1) workspaces](https://classic.yarnpkg.com/en/docs/workspaces/
 │   ├── vite-profile-page/     # Web app (React + Vite)
 │   └── expo-profile-app/      # Mobile wrapper (Expo + WebView)
 └── services/
-    └── aws-cloudfront-deploy/ # Infra-as-code (AWS CDK, S3 + CloudFront)
+    └── aws-vitejs-deploy/ # Infra-as-code (AWS CDK, S3 + CloudFront)
 ```
 
 | Workspace | Description | Stack |
 | --- | --- | --- |
 | [`apps/vite-profile-page`](./apps/vite-profile-page) | The CV/profile website | React 19, TypeScript, Vite, styled-components |
 | [`apps/expo-profile-app`](./apps/expo-profile-app) | Mobile app that wraps the website in a WebView | Expo, React Native |
-| [`services/aws-cloudfront-deploy`](./services/aws-cloudfront-deploy) | Deploys the built website to AWS | AWS CDK (S3 + CloudFront) |
+| [`services/aws-vitejs-deploy`](./services/aws-vitejs-deploy) | Deploys the built website to AWS | AWS CDK (S3 + CloudFront) |
 
 ## 🚀 Getting Started
 
@@ -77,7 +77,7 @@ yarn workspace @apps/expo-profile-app build-container      # run the local EAS b
 yarn workspace @apps/expo-profile-app stop-container       # stop the container
 ```
 
-## ☁️ Deployment — `services/aws-cloudfront-deploy`
+## ☁️ Deployment — `services/aws-vitejs-deploy`
 
 Deploys the built `vite-profile-page` static site to AWS (S3 + CloudFront) using AWS CDK.
 
@@ -98,8 +98,8 @@ Deploys the built `vite-profile-page` static site to AWS (S3 + CloudFront) using
 3. Synthesize / deploy the CDK stack:
 
    ```bash
-   yarn workspace @services/aws-cloudfront-deploy cdk-synt
-   yarn workspace @services/aws-cloudfront-deploy cdk-deploy
+    yarn workspace @services/aws-vitejs-deploy cdk-synt
+    yarn workspace @services/aws-vitejs-deploy cdk-deploy
    ```
 
 ### CI/CD
