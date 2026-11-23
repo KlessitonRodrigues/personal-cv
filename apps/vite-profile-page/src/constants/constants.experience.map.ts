@@ -18,9 +18,7 @@ export type ExperienceItem = {
 
 export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
   language: [
-    { name: 'Javascript', icon: 'javascript' },
     { name: 'Typescript', icon: 'typescript' },
-    { name: 'Clojure', icon: 'clojure' },
     { name: 'C#', icon: 'csharp' },
     { name: 'Python', icon: 'python' },
   ],
@@ -34,17 +32,13 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Material UI', icon: 'materialui' },
     { name: 'NextJS', icon: 'nextJS' },
     { name: 'TailwindCSS', icon: 'tailwind' },
-    { name: 'Mantine UI', icon: 'mantineui' },
     { name: 'React Hook Form', icon: 'reactHookForm' },
     { name: 'Zod', icon: 'zod' },
     { name: 'Vite', icon: 'vite' },
     { name: 'Storybook', icon: 'storybook' },
-    { name: 'Electron', icon: 'electron' },
     { name: 'Shadcn UI', icon: 'shadcn' },
-    { name: 'Ant Design UI', icon: 'antdesign' },
     { name: 'Zustand', icon: 'zustand' },
     { name: 'Tanstack', icon: 'tanstack' },
-    { name: 'Daisy UI', icon: 'daisyUI' },
   ],
   backend: [
     { name: 'NodeJS', icon: 'nodejs' },
@@ -58,6 +52,11 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'NestJS', icon: 'nestJS' },
     { name: 'PrismaORM', icon: 'prisma' },
     { name: 'TypeORM', icon: 'typeorm' },
+    { name: 'RabbitMQ', icon: 'rabbitMQ' },
+    { name: 'Terraform', icon: 'terraform' },
+    { name: 'Dotnet', icon: 'dotnet' },
+    { name: 'django', icon: 'django' },
+    { name: 'flask', icon: 'flask' },
   ],
   mobile: [
     { name: 'React Native', icon: 'react' },
@@ -76,8 +75,7 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'Jest', icon: 'jest' },
     { name: 'Cypress', icon: 'cypress' },
     { name: 'Vitest', icon: 'vitest' },
-    { name: 'Puppeter', icon: 'puppeter' },
-    { name: 'Selenium', icon: 'selenium' },
+    { name: 'Storybook', icon: 'storybook' },
   ],
   tools: [
     { name: 'Visual Studio Code', icon: 'vscode' },
