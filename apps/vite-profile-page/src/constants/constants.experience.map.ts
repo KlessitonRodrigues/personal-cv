@@ -35,7 +35,6 @@ export const experienceMap: Record<ExperienceItemsTypes, ExperienceItem[]> = {
     { name: 'React Hook Form', icon: 'reactHookForm' },
     { name: 'Zod', icon: 'zod' },
     { name: 'Vite', icon: 'vite' },
-    { name: 'Storybook', icon: 'storybook' },
     { name: 'Shadcn UI', icon: 'shadcn' },
     { name: 'Zustand', icon: 'zustand' },
     { name: 'Tanstack', icon: 'tanstack' },

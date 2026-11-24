@@ -2,20 +2,20 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const WIDTH = 1920;
+const WIDTH = 3840;
 const HEIGHT = 1080;
-const DEFAULT_LINE_HEIGHT = 0.8;
+const DEFAULT_LINE_HEIGHT = 0.85;
 const DEFAULT_INCLINATION = 0.08;
 const DEFAULT_INVERT_INCLINATION = false;
-const DEFAULT_LINE_RADIUS = 70;
-const DEFAULT_SEED = String(Date.now());
-const CIRCLE_MIN = 4;
-const CIRCLE_MAX = 4;
+const DEFAULT_LINE_RADIUS = 90;
+const DEFAULT_SEED = '409';
+const CIRCLE_MIN = 8;
+const CIRCLE_MAX = 8;
 const MAIN_COLOR = '#7986cb';
 const BASE_COLOR = '#F4F4F4';
 const DEFAULT_CIRCLE = {
   size: 0.2,
-  opacity: { min: 0.1, max: 0.6 },
+  opacity: { min: 0.1, max: 0.7 },
 };
 
 const randomBetween = (random, min, max) => min + random() * (max - min);
@@ -89,16 +89,26 @@ const createBackground = ({
     return y;
   };
 
-  const circles = Array.from({ length: amount }, () => {
-    const margin = size * 0.08;
+  const circles = [];
+  const margin = size * 0.08;
+  const maxAttempts = amount * 100;
+
+  for (let attempt = 0; attempt < maxAttempts && circles.length < amount; attempt++) {
     const cx = randomBetween(random, margin, width - margin);
     const minY = margin;
     const maxY = lineY(cx) - margin * 0.75;
     const cy = randomBetween(random, minY, Math.max(minY + size * 0.01, maxY));
     const opacity = randomBetween(random, minOpacity, maxOpacity);
+    const overlaps = circles.some(placed => {
+      const distance = Math.hypot(placed.cx - cx, placed.cy - cy);
 
-    return { cx, cy, r: radius, opacity };
-  });
+      return distance < placed.r + radius;
+    });
+
+    if (!overlaps) {
+      circles.push({ cx, cy, r: radius, opacity });
+    }
+  }
 
   return { left, right, circles, controlX, controlY };
 };

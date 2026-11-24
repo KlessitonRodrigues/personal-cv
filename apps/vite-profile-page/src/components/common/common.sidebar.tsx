@@ -70,7 +70,6 @@ export const SidebarBox = styled.aside<IStyledProps>(
     }
 
     @media (min-width: ${contentSize + 1}px) {
-      width: ${cssSize(sidebarSizeOpen)};
       ${hidden && `width: ${cssSize(sidebarSize)};`}
 
       &:hover {
